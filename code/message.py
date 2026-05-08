@@ -86,6 +86,8 @@ def evidence_quality(evidence: list) -> float:
 class MessageBoard:
     def __init__(self):
         self._messages: list[Message] = []
+        self._group_members: dict[str, set[str]] = {}
+        self._friends: set[frozenset] = set()
 
     def post(self, msg: Message) -> None:
         if msg.channel not in CHANNELS:
@@ -102,13 +104,29 @@ class MessageBoard:
         return [
             msg
             for msg in self._select(channel="private", since=since)
-            if not msg.receiver_ids or receiver_id in msg.receiver_ids
+            if receiver_id in msg.receiver_ids and self._are_friends(msg.sender_id, receiver_id)
         ]
 
-    def get_moments(self, since: str = None) -> list[Message]:
-        return self._select(channel="moments", since=since)
+    def get_moments(self, since: str = None, viewer_groups: Iterable[str] | None = None) -> list[Message]:
+        messages = self._select(channel="moments", since=since)
+        if viewer_groups is None:
+            return messages
+        groups = set(viewer_groups)
+        if not groups:
+            return []
+        return [
+            msg
+            for msg in messages
+            if any(msg.sender_id in self._group_members.get(group, set()) for group in groups)
+        ]
 
-    def get_visible(self, receiver_id: str, channels: Iterable[str] | None = None, since: str = None) -> list[Message]:
+    def get_visible(
+        self,
+        receiver_id: str,
+        channels: Iterable[str] | None = None,
+        since: str = None,
+        agent_groups: Iterable[str] | None = None,
+    ) -> list[Message]:
         allowed = set(channels or CHANNELS)
         visible: list[Message] = []
         if "public" in allowed:
@@ -116,8 +134,15 @@ class MessageBoard:
         if "private" in allowed:
             visible.extend(self.get_private(receiver_id=receiver_id, since=since))
         if "moments" in allowed:
-            visible.extend(self.get_moments(since=since))
+            visible.extend(self.get_moments(since=since, viewer_groups=agent_groups))
         return [msg for msg in visible if msg.sender_id != receiver_id]
+
+    def sync_groups(self, social_graph) -> None:
+        self._group_members = {
+            group: set(members)
+            for group, members in getattr(social_graph, "_groups", {}).items()
+        }
+        self._friends = getattr(social_graph, "_friends", set())
 
     def to_dataframe(self) -> pd.DataFrame:
         columns = [
@@ -154,3 +179,6 @@ class MessageBoard:
             return selected
         cutoff = pd.Timestamp(since)
         return [msg for msg in selected if pd.Timestamp(msg.timestamp) >= cutoff]
+
+    def _are_friends(self, sender_id: str, receiver_id: str) -> bool:
+        return frozenset([sender_id, receiver_id]) in self._friends

@@ -1,0 +1,7 @@
+agent_a,agent_b
+ContrarianAgent,PersuaderAgent
+ContrarianAgent,SocialGraphAgent
+FreeRiderAgent,SocialGraphAgent
+PersuaderAgent,SocialGraphAgent
+PersuaderAgent,TruthfulReporterAgent
+SocialGraphAgent,TruthfulReporterAgent

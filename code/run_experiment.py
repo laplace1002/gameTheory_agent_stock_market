@@ -7,6 +7,7 @@ os.makedirs(os.environ["MPLCONFIGDIR"], exist_ok=True)
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import yaml
 
 from aggregation import hedge_weights
 from agents import (
@@ -72,13 +73,15 @@ def run(
     out_dir="outputs",
     initial_cash=100000,
     fee_rate=0.001,
-    experiment="baseline",
+    experiment="full_social",
     rebalance_every=5,
+    scenario_name="case1",
 ):
     if experiment not in EXPERIMENTS:
         known = ", ".join(sorted(EXPERIMENTS))
         raise ValueError(f"unknown experiment '{experiment}', choose one of: {known}")
 
+    scenario = load_scenario(scenario_name)
     out_dir = Path(out_dir)
     (out_dir / "tables").mkdir(parents=True, exist_ok=True)
     (out_dir / "figures").mkdir(parents=True, exist_ok=True)
@@ -88,7 +91,14 @@ def run(
     reputation = ReputationTracker()
     social_graph = SocialGraph()
     agents = build_agents(social_graph)
-    social_graph.build_initial_graph(agents)
+    social_graph.load_scenario(scenario, agents)
+    board.sync_groups(social_graph)
+    _run_friend_request_round(
+        agents=agents,
+        social_graph=social_graph,
+        board=board,
+        rules=scenario.get("friend_request_rules", {}),
+    )
     channels = EXPERIMENTS[experiment]["channels"]
     _set_agent_channels(agents, channels)
 
@@ -109,7 +119,7 @@ def run(
     social_graph.update_weights(total_returns)
     reputation_scores = reputation.to_dataframe()
     social_edges = social_graph.to_dataframe()
-    centrality_scores = _centrality_dataframe(social_graph, experiment)
+    centrality_scores = _centrality_dataframe(social_graph, experiment, scenario_name)
     belief_history = _belief_history_dataframe(agents)
     aggregation_history = _append_hedge_weights(
         aggregation_history,
@@ -118,6 +128,8 @@ def run(
         last_date=str(prices["date"].max())[:10],
     )
     agent_registry = _agent_registry_dataframe(agents)
+    friendships = social_graph.friendships_dataframe()
+    group_memberships = social_graph.groups_dataframe()
 
     prices.to_csv(out_dir / "tables" / "market_history.csv", index=False)
     equity.to_csv(out_dir / "tables" / "equity_curve.csv", index=False)
@@ -130,13 +142,29 @@ def run(
     centrality_scores.to_csv(out_dir / "tables" / "centrality_scores.csv", index=False)
     aggregation_history.to_csv(out_dir / "tables" / "aggregation_history.csv", index=False)
     agent_registry.to_csv(out_dir / "tables" / "agent_registry.csv", index=False)
+    friendships.to_csv(out_dir / "tables" / "friendships.csv", index=False)
+    group_memberships.to_csv(out_dir / "tables" / "group_memberships.csv", index=False)
 
     _write_figures(prices, equity, metrics, out_dir)
 
-    print(f"实验完成：{experiment}")
+    print(f"实验完成：{experiment} / {scenario_name}")
     print("核心结果已保存到：")
     print(out_dir / "tables" / "performance_metrics.csv")
     return equity, trade_log, metrics
+
+
+def load_scenarios() -> dict:
+    path = Path(__file__).parent.parent / "config" / "social_scenarios.yaml"
+    with open(path, encoding="utf-8") as file:
+        return yaml.safe_load(file)["scenarios"]
+
+
+def load_scenario(scenario_name: str) -> dict:
+    scenarios = load_scenarios()
+    if scenario_name not in scenarios:
+        known = ", ".join(sorted(scenarios))
+        raise ValueError(f"unknown scenario '{scenario_name}', choose one of: {known}")
+    return scenarios[scenario_name]
 
 
 def _simulate_population(
@@ -173,7 +201,13 @@ def _simulate_population(
 
             _publish_messages(agents, history, board, reputation, social_graph, channels, date_str, step)
             for agent in _communicating_agents(agents):
-                agent.update_belief(board, reputation, current_date=date_str, channels=channels)
+                agent.update_belief(
+                    board,
+                    reputation,
+                    current_date=date_str,
+                    channels=channels,
+                    agent_groups=social_graph.get_agent_groups(agent.name),
+                )
 
             aggregation_rows.extend(_centrality_rows(social_graph, date_str, method="pagerank"))
             for agent in agents:
@@ -216,6 +250,8 @@ def _publish_messages(agents, history, board, reputation, social_graph, channels
     for agent in _communicating_agents(agents):
         channel = _choose_channel(agent, channels, step)
         receivers = _private_receivers(agent.name, agents, social_graph) if channel == "private" else []
+        if channel == "private" and not receivers:
+            continue
         msg = agent.generate_message(history, board, date_str, channel=channel, receiver_ids=receivers)
         if msg is None:
             continue
@@ -276,6 +312,22 @@ def _communicating_agents(agents) -> list:
     return [agent for agent in agents if isinstance(agent, CommunicatingAgent)]
 
 
+def _run_friend_request_round(agents, social_graph, board, rules, n_rounds=3) -> None:
+    communicating = _communicating_agents(agents)
+    for _ in range(n_rounds):
+        for agent in communicating:
+            candidates = [
+                candidate
+                for candidate in communicating
+                if candidate.name != agent.name and not social_graph.are_friends(agent.name, candidate.name)
+            ]
+            candidates.sort(key=lambda candidate: -social_graph._strategy_similarity(agent, candidate))
+            for candidate in candidates[:2]:
+                social_graph.send_friend_request(agent.name, candidate.name)
+        social_graph.process_requests(agents, rules)
+        board.sync_groups(social_graph)
+
+
 def _choose_channel(agent, channels, step) -> str:
     if len(channels) == 1:
         return channels[0]
@@ -293,10 +345,11 @@ def _choose_channel(agent, channels, step) -> str:
 
 
 def _private_receivers(agent_name, agents, social_graph) -> list:
-    followers = social_graph.get_followers(agent_name)
-    if followers:
-        return followers
-    return [agent.name for agent in _communicating_agents(agents) if agent.name != agent_name]
+    return [
+        agent.name
+        for agent in _communicating_agents(agents)
+        if agent.name != agent_name and social_graph.are_friends(agent_name, agent.name)
+    ]
 
 
 def _centrality_rows(social_graph, date, method) -> list[dict]:
@@ -306,12 +359,12 @@ def _centrality_rows(social_graph, date, method) -> list[dict]:
     ]
 
 
-def _centrality_dataframe(social_graph, experiment) -> pd.DataFrame:
+def _centrality_dataframe(social_graph, experiment, scenario_name) -> pd.DataFrame:
     rows = [
-        {"experiment": experiment, "agent": agent, "pagerank": float(value)}
+        {"experiment": experiment, "scenario": scenario_name, "agent": agent, "pagerank": float(value)}
         for agent, value in social_graph.centrality().items()
     ]
-    return pd.DataFrame(rows, columns=["experiment", "agent", "pagerank"])
+    return pd.DataFrame(rows, columns=["experiment", "scenario", "agent", "pagerank"])
 
 
 def _belief_history_dataframe(agents) -> pd.DataFrame:
@@ -408,6 +461,7 @@ if __name__ == "__main__":
     parser.add_argument("--initial_cash", type=float, default=100000)
     parser.add_argument("--fee_rate", type=float, default=0.001)
     parser.add_argument("--rebalance_every", type=int, default=5)
-    parser.add_argument("--experiment", choices=sorted(EXPERIMENTS), default="baseline")
+    parser.add_argument("--experiment", choices=sorted(EXPERIMENTS), default="full_social")
+    parser.add_argument("--scenario", choices=sorted(load_scenarios()), default="case1")
     args = parser.parse_args()
-    run(args.prices, args.out, args.initial_cash, args.fee_rate, args.experiment, args.rebalance_every)
+    run(args.prices, args.out, args.initial_cash, args.fee_rate, args.experiment, args.rebalance_every, args.scenario)

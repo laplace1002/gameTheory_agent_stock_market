@@ -1,0 +1,6 @@
+group,agent
+stock_chat,ContrarianAgent
+stock_chat,FreeRiderAgent
+stock_chat,PersuaderAgent
+stock_chat,SocialGraphAgent
+stock_chat,TruthfulReporterAgent

@@ -79,6 +79,8 @@ aggregation = read_table("aggregation_history.csv")
 centrality = read_table("centrality_scores.csv")
 market = read_table("market_history.csv")
 registry = read_table("agent_registry.csv")
+friendships = read_table("friendships.csv")
+groups = read_table("group_memberships.csv")
 
 if metrics.empty or equity.empty:
     st.warning("还没有找到实验结果。请先运行：python code/run_experiment.py --experiment full_social")
@@ -141,6 +143,11 @@ with network_tab:
     c1.plotly_chart(network_figure(social_edges, centrality), width="stretch", key="network_social_graph")
     if not social_edges.empty:
         c2.dataframe(social_edges.sort_values("weight", ascending=False), width="stretch", hide_index=True)
+    f1, f2 = st.columns(2)
+    if not friendships.empty:
+        f1.dataframe(friendships, width="stretch", hide_index=True)
+    if not groups.empty:
+        f2.dataframe(groups, width="stretch", hide_index=True)
     if not centrality.empty:
         st.plotly_chart(px.bar(centrality, x="agent", y="pagerank", color="agent"), width="stretch", key="network_pagerank_bar")
 

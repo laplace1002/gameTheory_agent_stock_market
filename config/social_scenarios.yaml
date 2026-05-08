@@ -1,0 +1,40 @@
+scenarios:
+  case1:
+    description: "TruthfulReporterAgent and PersuaderAgent start as friends; all communicating agents share one stock group."
+    friendships:
+      - [TruthfulReporterAgent, PersuaderAgent]
+    groups:
+      stock_chat:
+        - TruthfulReporterAgent
+        - PersuaderAgent
+        - FreeRiderAgent
+        - ContrarianAgent
+        - SocialGraphAgent
+    friend_request_rules:
+      strategy_similarity_threshold: 0.6
+      max_friends: 5
+
+  case2:
+    description: "No initial friendships; two groups test self-organized cooperation."
+    friendships: []
+    groups:
+      growth_group:
+        - MomentumAgent
+        - TruthfulReporterAgent
+        - PersuaderAgent
+      value_group:
+        - MeanReversionAgent
+        - LowVolatilityAgent
+        - FreeRiderAgent
+        - ContrarianAgent
+    friend_request_rules:
+      strategy_similarity_threshold: 0.4
+      max_friends: 3
+
+  case3:
+    description: "All communicating agents are friends; no group-level moments isolation."
+    friendships: all
+    groups: {}
+    friend_request_rules:
+      strategy_similarity_threshold: 0.0
+      max_friends: 99

@@ -208,9 +208,14 @@ class CommunicatingAgent(BaseAgent):
             claim_type="trend",
         )
 
-    def update_belief(self, board, reputation, current_date: str | None = None, channels=None) -> None:
+    def update_belief(self, board, reputation, current_date: str | None = None, channels=None, agent_groups=None) -> None:
         since = self._message_window_start(current_date)
-        visible = board.get_visible(self.name, channels=channels or self.enabled_channels, since=since)
+        visible = board.get_visible(
+            self.name,
+            channels=channels or self.enabled_channels,
+            since=since,
+            agent_groups=agent_groups,
+        )
         if not visible:
             return
         before = {
@@ -234,15 +239,18 @@ class CommunicatingAgent(BaseAgent):
         own_decision = self.own_strategy.target_weights(history, cash, positions)
         latest_date = own_decision.date
         tickers = sorted(history["ticker"].unique())
+        prior_beliefs = {ticker: self.belief.get_belief(ticker) for ticker in tickers}
+        social_weights = self.belief.to_weights(tickers)
         own_signals = self._weights_to_signals(own_decision.target_weights, tickers)
-        for ticker, signal in own_signals.items():
-            self.belief.update_from_own_signal(ticker, signal, latest_date)
 
-        belief_weights = self.belief.to_weights(tickers)
-        if sum(belief_weights.values()) <= 1e-12:
+        if sum(social_weights.values()) <= 1e-12:
             target = own_decision.target_weights
         else:
-            target = self._blend_weights(own_decision.target_weights, belief_weights, own_alpha=0.65, tickers=tickers)
+            target = self._blend_weights(own_decision.target_weights, social_weights, own_alpha=0.65, tickers=tickers)
+
+        for ticker, own_signal in own_signals.items():
+            combined_signal = clamp_signal(0.65 * own_signal + 0.35 * prior_beliefs.get(ticker, 0.0))
+            self.belief.update_from_own_signal(ticker, combined_signal, latest_date)
         return AgentDecision(self.name, latest_date, self._normalize(target), f"{self.name}: own strategy blended with communicated beliefs.")
 
     def _choose_channel(self, requested_channel):
@@ -339,9 +347,14 @@ class ContrarianAgent(CommunicatingAgent):
     def __init__(self, own_strategy=None):
         super().__init__(own_strategy=own_strategy or DrawdownBuyerAgent(), name="ContrarianAgent")
 
-    def update_belief(self, board, reputation, current_date: str | None = None, channels=None) -> None:
+    def update_belief(self, board, reputation, current_date: str | None = None, channels=None, agent_groups=None) -> None:
         since = self._message_window_start(current_date)
-        visible = board.get_visible(self.name, channels=channels or self.enabled_channels, since=since)
+        visible = board.get_visible(
+            self.name,
+            channels=channels or self.enabled_channels,
+            since=since,
+            agent_groups=agent_groups,
+        )
         if not visible:
             return
         grouped = {}

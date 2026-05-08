@@ -1,0 +1,17 @@
+project_name: AI Agent Virtual Stock Market
+tickers:
+  - AAPL
+  - MSFT
+  - GOOGL
+  - AMZN
+  - NVDA
+  - TSLA
+start_date: "2022-01-01"
+end_date: "2025-12-31"
+initial_cash: 100000
+fee_rate: 0.001
+rebalance_every: 5
+modes:
+  - separate_agents
+  - committee_team
+  - dynamic_team

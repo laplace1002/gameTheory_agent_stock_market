@@ -1,0 +1,13 @@
+agent,class,communicating,own_strategy
+MomentumAgent,MomentumAgent,False,
+MeanReversionAgent,MeanReversionAgent,False,
+LowVolatilityAgent,LowVolatilityAgent,False,
+DrawdownBuyerAgent,DrawdownBuyerAgent,False,
+RandomAgent,RandomAgent,False,
+CommitteeTeamAgent,CommitteeTeamAgent,False,
+DynamicTeamAgent,DynamicTeamAgent,False,
+TruthfulReporterAgent,TruthfulReporterAgent,True,MomentumAgent
+PersuaderAgent,PersuaderAgent,True,MeanReversionAgent
+FreeRiderAgent,FreeRiderAgent,True,LowVolatilityAgent
+ContrarianAgent,ContrarianAgent,True,DrawdownBuyerAgent
+SocialGraphAgent,SocialGraphAgent,True,DynamicTeamAgent

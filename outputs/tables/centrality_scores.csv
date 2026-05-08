@@ -1,0 +1,13 @@
+experiment,agent,pagerank
+full_social,MomentumAgent,0.0786009660989645
+full_social,MeanReversionAgent,0.0786009660989645
+full_social,LowVolatilityAgent,0.0786009660989645
+full_social,DrawdownBuyerAgent,0.0786009660989645
+full_social,RandomAgent,0.045195555506904586
+full_social,CommitteeTeamAgent,0.11200637669102441
+full_social,DynamicTeamAgent,0.11200637669102441
+full_social,TruthfulReporterAgent,0.045195555506904586
+full_social,PersuaderAgent,0.045195555506904586
+full_social,FreeRiderAgent,0.045195555506904586
+full_social,ContrarianAgent,0.045195555506904586
+full_social,SocialGraphAgent,0.23560560468757

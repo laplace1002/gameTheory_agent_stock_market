@@ -1,0 +1,11 @@
+source,target,weight
+MomentumAgent,MeanReversionAgent,1.4900139240999997
+MomentumAgent,DynamicTeamAgent,1.4900139240999997
+MeanReversionAgent,LowVolatilityAgent,1.110848644100001
+MeanReversionAgent,DynamicTeamAgent,1.110848644100001
+LowVolatilityAgent,DrawdownBuyerAgent,1.6426586036999986
+LowVolatilityAgent,CommitteeTeamAgent,1.6426586036999986
+DrawdownBuyerAgent,MomentumAgent,1.3871817343
+DrawdownBuyerAgent,CommitteeTeamAgent,1.3871817343
+CommitteeTeamAgent,SocialGraphAgent,1.520151459
+DynamicTeamAgent,SocialGraphAgent,1.520151459

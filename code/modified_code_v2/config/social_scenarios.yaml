@@ -1,0 +1,72 @@
+scenarios:
+  baseline_isolated:
+    topology: isolated
+    friendships: []
+    groups: {}
+    friend_request_rules:
+      strategy_similarity_threshold: 0.45
+      max_friends: 3
+
+  chain_influence:
+    topology: chain
+    friendships:
+      - [MomentumAgent, TruthfulReporterAgent]
+      - [MeanReversionAgent, PersuaderAgent]
+      - [LowVolatilityAgent, FreeRiderAgent]
+    groups:
+      Trend Lab: [MomentumAgent, TruthfulReporterAgent, DynamicTeamAgent]
+      Risk Desk: [LowVolatilityAgent, FreeRiderAgent, CommitteeTeamAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.45
+      max_friends: 4
+
+  dense_market:
+    topology: dense
+    friendships: all
+    groups:
+      Market Hall:
+        - MomentumAgent
+        - MeanReversionAgent
+        - LowVolatilityAgent
+        - DrawdownBuyerAgent
+        - RandomAgent
+        - CommitteeTeamAgent
+        - DynamicTeamAgent
+        - TruthfulReporterAgent
+        - PersuaderAgent
+        - FreeRiderAgent
+        - ContrarianAgent
+        - SocialGraphAgent
+    friend_request_rules:
+      strategy_similarity_threshold: 0.20
+      max_friends: 12
+
+  echo_chambers:
+    topology: echo_chambers
+    friendships:
+      - [MomentumAgent, TruthfulReporterAgent]
+      - [MeanReversionAgent, PersuaderAgent]
+      - [MeanReversionAgent, ContrarianAgent]
+      - [LowVolatilityAgent, FreeRiderAgent]
+      - [CommitteeTeamAgent, DynamicTeamAgent]
+    groups:
+      Momentum 圈: [MomentumAgent, TruthfulReporterAgent, DynamicTeamAgent]
+      Reversion 圈: [MeanReversionAgent, PersuaderAgent, ContrarianAgent]
+      Risk 圈: [LowVolatilityAgent, FreeRiderAgent, CommitteeTeamAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.60
+      max_friends: 5
+
+  core_periphery:
+    topology: core_periphery
+    core: [SocialGraphAgent, DynamicTeamAgent, CommitteeTeamAgent]
+    friendships:
+      - [SocialGraphAgent, DynamicTeamAgent]
+      - [SocialGraphAgent, CommitteeTeamAgent]
+      - [DynamicTeamAgent, CommitteeTeamAgent]
+    groups:
+      Core Desk: [SocialGraphAgent, DynamicTeamAgent, CommitteeTeamAgent]
+      Outer Desk: [MomentumAgent, MeanReversionAgent, LowVolatilityAgent, DrawdownBuyerAgent, RandomAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.35
+      max_friends: 6

@@ -1,0 +1,13 @@
+experiment,scenario,agent,pagerank
+full_social,core_periphery,MomentumAgent,0.05128551908183682
+full_social,core_periphery,MeanReversionAgent,0.05128551908183682
+full_social,core_periphery,LowVolatilityAgent,0.05128551908183682
+full_social,core_periphery,DrawdownBuyerAgent,0.05128551908183682
+full_social,core_periphery,RandomAgent,0.05128551908183682
+full_social,core_periphery,CommitteeTeamAgent,0.17947677608782295
+full_social,core_periphery,DynamicTeamAgent,0.17947677608782295
+full_social,core_periphery,TruthfulReporterAgent,0.05128551908183682
+full_social,core_periphery,PersuaderAgent,0.05128551908183682
+full_social,core_periphery,FreeRiderAgent,0.05128551908183682
+full_social,core_periphery,ContrarianAgent,0.05128551908183682
+full_social,core_periphery,SocialGraphAgent,0.17947677608782298

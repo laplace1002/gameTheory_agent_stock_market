@@ -1,0 +1,13 @@
+agent,class,communicating,own_strategy,enabled_channels
+MomentumAgent,CommunicatingAgent,True,MomentumAgent,"public, private, moments"
+MeanReversionAgent,CommunicatingAgent,True,MeanReversionAgent,"public, private, moments"
+LowVolatilityAgent,CommunicatingAgent,True,LowVolatilityAgent,"public, private, moments"
+DrawdownBuyerAgent,CommunicatingAgent,True,DrawdownBuyerAgent,"public, private, moments"
+RandomAgent,CommunicatingAgent,True,RandomAgent,"public, private, moments"
+CommitteeTeamAgent,CommunicatingAgent,True,CommitteeTeamAgent,"public, private, moments"
+DynamicTeamAgent,CommunicatingAgent,True,DynamicTeamAgent,"public, private, moments"
+TruthfulReporterAgent,TruthfulReporterAgent,True,MomentumAgent,"public, private, moments"
+PersuaderAgent,PersuaderAgent,True,MeanReversionAgent,"public, private, moments"
+FreeRiderAgent,FreeRiderAgent,True,LowVolatilityAgent,"public, private, moments"
+ContrarianAgent,ContrarianAgent,True,DrawdownBuyerAgent,"public, private, moments"
+SocialGraphAgent,SocialGraphAgent,True,DynamicTeamAgent,"public, private, moments"

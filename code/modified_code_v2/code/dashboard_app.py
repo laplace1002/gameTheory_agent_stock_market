@@ -4,13 +4,67 @@ import ast
 import html
 import json
 import math
+import os
+import re
 import time
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 import streamlit.components.v1 as components
+import yaml
+
+
+LIVE_SOURCE_LABEL = "LLM API 实时交互"
+REPLAY_SOURCE_LABEL = "本地事件回放"
+LIVE_STATE_DIR = Path("outputs/live_state")
+LIVE_STATE_PATH = LIVE_STATE_DIR / "state.json"
+LIVE_TABLE_DIR = LIVE_STATE_DIR / "tables"
+LIVE_RUNS_DIR = LIVE_STATE_DIR / "runs"
+DEFAULT_LIVE_SCENARIO = "core_periphery"
+DEFAULT_STARTING_CASH = 100_000.0
+LIVE_STATE_SCHEMA_VERSION = 3
+
+LIVE_TICKER_PRICES = {
+    "AAPL": 190.0,
+    "MSFT": 430.0,
+    "NVDA": 920.0,
+    "TSLA": 175.0,
+    "SPY": 520.0,
+    "QQQ": 445.0,
+    "XLE": 95.0,
+    "UUP": 29.0,
+}
+
+RELATIONSHIP_LABELS = {
+    "friendship": "好友关系",
+    "influence": "影响关系",
+}
+
+RELATIONSHIP_COLORS = {
+    "friendship": "#16a34a",
+    "influence": "#64748b",
+}
+
+LIVE_AGENT_PROFILES = {
+    "MomentumAgent": "追涨型交易 agent，偏好近期强势资产，表达直接，重视趋势延续。",
+    "MeanReversionAgent": "均值回归 agent，偏好被过度抛售后的反弹机会，谨慎质疑市场共识。",
+    "LowVolatilityAgent": "低波动 agent，重视回撤、仓位控制和风险预算。",
+    "DrawdownBuyerAgent": "回撤买入 agent，寻找跌深后的价值修复机会。",
+    "RandomAgent": "探索型 agent，会引入随机视角，偶尔提出非共识交易想法。",
+    "TruthfulReporterAgent": "诚实报告 agent，只分享自己认为证据较强的市场信号。",
+    "PersuaderAgent": "说服型 agent，会主动影响其他人，但仍要给出可解释理由。",
+    "FreeRiderAgent": "观察型 agent，倾向先听别人观点，再选择性发言。",
+    "ContrarianAgent": "逆向 agent，经常挑战拥挤交易和过度乐观叙事。",
+    "CommitteeTeamAgent": "委员会 agent，会综合多个信号后给出平衡判断。",
+    "DynamicTeamAgent": "动态协作 agent，会根据当前对话调整合作、观察或竞争。",
+    "SocialGraphAgent": "社交图谱 agent，关注好友关系、影响力和信息传播路径。",
+}
 
 
 APP_CSS = """
@@ -152,9 +206,11 @@ COMPONENT_CSS = """
 <style>
 * { box-sizing: border-box; }
 body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1f2328; }
+html, body { height: 100%; overflow: hidden; }
 .feed-panel {
     height: 100%; overflow-y: auto; padding: 10px; background: #0f172a;
     border-radius: 16px; border: 1px solid #1f2937;
+    overscroll-behavior: contain;
 }
 .feed-row {
     background: #111827; color: #d1d5db; border: 1px solid #253044;
@@ -173,6 +229,7 @@ body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sa
 .badge-hold { background: #f1f5f9; color: #475569; }
 .badge-pnl { background: #ede9fe; color: #5b21b6; }
 .wechat-phone {
+    min-height: 0;
     height: 100%; overflow: hidden; display: flex; flex-direction: column;
     background: #ededed; border: 1px solid #d7d7d7; border-radius: 18px;
 }
@@ -181,7 +238,14 @@ body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sa
     display: flex; align-items: center; justify-content: center;
     font-weight: 800; color: #111827; flex: 0 0 auto;
 }
-.wechat-body { flex: 1 1 auto; overflow-y: auto; padding: 14px; }
+.wechat-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 14px;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
+}
 .wechat-input {
     height: 48px; background: #f7f7f7; border-top: 1px solid #d7d7d7;
     display: flex; align-items: center; gap: 8px; padding: 8px 12px; color: #9ca3af; font-size: 13px;
@@ -220,6 +284,7 @@ body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sa
 
 
 def main():
+    load_dotenv_files()
     st.set_page_config(page_title="同步交易大厅 / ChatLab", layout="wide")
     st.markdown(APP_CSS, unsafe_allow_html=True)
     st.markdown(
@@ -251,24 +316,46 @@ def main():
         return candidates or [Path("outputs/tables")]
 
 
-    output_dirs = discover_output_dirs()
-    selected_out = st.sidebar.selectbox("结果目录", [str(path) for path in output_dirs], index=0)
-    OUT_DIR = Path(selected_out)
+    data_source = st.sidebar.radio("数据源", [LIVE_SOURCE_LABEL, REPLAY_SOURCE_LABEL], index=0)
+    live_api_mode = data_source == LIVE_SOURCE_LABEL
 
-    metrics = read_table(OUT_DIR, "performance_metrics.csv")
-    equity = read_table(OUT_DIR, "equity_curve.csv")
-    trades = read_table(OUT_DIR, "trade_log.csv")
-    messages = read_table(OUT_DIR, "message_log.csv")
-    social_edges = read_table(OUT_DIR, "social_graph_edges.csv")
-    centrality = read_table(OUT_DIR, "centrality_scores.csv")
-    friendships = read_table(OUT_DIR, "friendships.csv")
-    groups = read_table(OUT_DIR, "group_memberships.csv")
-    social_events = read_table(OUT_DIR, "social_events.csv")
-    event_log = read_table(OUT_DIR, "unified_event_log.csv")
-    state_history = read_table(OUT_DIR, "agent_state_history.csv")
-    market = read_table(OUT_DIR, "market_history.csv")
-    registry = read_table(OUT_DIR, "agent_registry.csv")
-    strategy_history = read_table(OUT_DIR, "strategy_choice_history.csv")
+    if live_api_mode:
+        OUT_DIR = Path("LLM API realtime")
+        (
+            metrics,
+            equity,
+            trades,
+            messages,
+            social_edges,
+            centrality,
+            friendships,
+            groups,
+            social_events,
+            event_log,
+            state_history,
+            market,
+            registry,
+            strategy_history,
+        ) = load_live_api_tables()
+    else:
+        output_dirs = discover_output_dirs()
+        selected_out = st.sidebar.selectbox("结果目录", [str(path) for path in output_dirs], index=0)
+        OUT_DIR = Path(selected_out)
+
+        metrics = read_table(OUT_DIR, "performance_metrics.csv")
+        equity = read_table(OUT_DIR, "equity_curve.csv")
+        trades = read_table(OUT_DIR, "trade_log.csv")
+        messages = read_table(OUT_DIR, "message_log.csv")
+        social_edges = read_table(OUT_DIR, "social_graph_edges.csv")
+        centrality = read_table(OUT_DIR, "centrality_scores.csv")
+        friendships = read_table(OUT_DIR, "friendships.csv")
+        groups = read_table(OUT_DIR, "group_memberships.csv")
+        social_events = read_table(OUT_DIR, "social_events.csv")
+        event_log = read_table(OUT_DIR, "unified_event_log.csv")
+        state_history = read_table(OUT_DIR, "agent_state_history.csv")
+        market = read_table(OUT_DIR, "market_history.csv")
+        registry = read_table(OUT_DIR, "agent_registry.csv")
+        strategy_history = read_table(OUT_DIR, "strategy_choice_history.csv")
 
     if event_log.empty:
         event_log = build_legacy_event_log(trades, messages, social_events, equity)
@@ -279,6 +366,9 @@ def main():
     event_log = normalize_events(event_log)
     state_history = normalize_state_history(state_history, equity, trades)
     agents = sorted(infer_agents(state_history, equity, registry, event_log))
+    if live_api_mode:
+        agents = list(LIVE_AGENT_PROFILES)
+        render_live_sidebar_controls(event_log, agents, friendships)
 
     cursor_id, auto_mode, auto_scroll, visible_event_types = render_global_controls(event_log)
     current_event = event_log[event_log["event_id"] <= cursor_id].tail(1)
@@ -297,15 +387,1405 @@ def main():
         render_trading_hall(state_now, events_until, cursor_id, visible_event_types, auto_scroll)
 
     with tab_chat:
-        render_chatlab(agents, events_until, friendships, cursor_id, auto_scroll)
+        render_chatlab(agents, events_until, friendships, cursor_id, auto_scroll, live_api_mode=live_api_mode)
 
     with tab_social:
-        render_social_view(social_edges, centrality, friendships, groups, events_until, cursor_id, auto_scroll)
+        render_social_view(
+            social_edges,
+            centrality,
+            friendships,
+            groups,
+            events_until,
+            cursor_id,
+            auto_scroll,
+            live_api_mode=live_api_mode,
+        )
 
     with tab_tables:
         render_tables(event_log, state_history, messages, trades, social_events, metrics, strategy_history)
 
+    if live_api_mode:
+        run_live_agent_autoplay(event_log, agents, friendships)
     run_auto_advance(event_log, cursor_id, auto_mode)
+
+
+# ----------------------------- live LLM API data source -----------------------------
+
+
+def load_dotenv_files() -> None:
+    for env_path in dotenv_search_paths():
+        if env_path.exists():
+            load_dotenv_file(env_path)
+
+
+def dotenv_values() -> dict[str, str]:
+    values = {}
+    for env_path in dotenv_search_paths():
+        if not env_path.exists():
+            continue
+        values.update(parse_env_file(env_path))
+    return values
+
+
+def get_llm_setting(name: str, default: str = "") -> str:
+    return os.getenv(name) or dotenv_values().get(name, default)
+
+
+def has_llm_api_config() -> bool:
+    return bool(get_llm_setting("OPENAI_API_KEY") and get_llm_setting("OPENAI_MODEL", "gpt-4o-mini"))
+
+
+def dotenv_search_paths() -> list[Path]:
+    script_dir = Path(__file__).resolve().parent
+    search_dirs = [Path.cwd(), script_dir, script_dir.parent, script_dir.parents[2]]
+    names = [".env", "env.txt"]
+    candidates = [directory / name for directory in search_dirs for name in names]
+    unique = []
+    seen = set()
+    for path in candidates:
+        resolved = path.resolve()
+        if resolved not in seen:
+            unique.append(path)
+            seen.add(resolved)
+    return unique
+
+
+def load_dotenv_file(path: Path) -> None:
+    for key, value in parse_env_file(path).items():
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+def parse_env_file(path: Path) -> dict[str, str]:
+    values = {}
+    for raw_line in path.read_text(encoding="utf-8-sig").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        if line.startswith("export "):
+            line = line[len("export ") :].strip()
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key:
+            values[key] = value
+    return values
+
+
+def load_live_api_tables():
+    init_live_session_state()
+    event_log = pd.DataFrame(st.session_state.live_events)
+    state_history = pd.DataFrame(st.session_state.live_state_history)
+    registry = pd.DataFrame(
+        [{"agent": agent, "description": persona} for agent, persona in LIVE_AGENT_PROFILES.items()]
+    )
+    friendships = pd.DataFrame(st.session_state.live_friendships, columns=["agent_a", "agent_b"])
+    groups = live_groups_dataframe()
+    social_edges = live_social_edges_dataframe()
+    centrality = live_centrality_dataframe(social_edges)
+    messages = live_messages_table(event_log)
+    trades = live_trades_table(event_log)
+    equity = live_equity_table(state_history)
+    return (
+        live_metrics_table(state_history),
+        equity,
+        trades,
+        messages,
+        social_edges,
+        centrality,
+        friendships,
+        groups,
+        live_social_events_table(event_log),
+        event_log,
+        state_history,
+        pd.DataFrame(),
+        registry,
+        pd.DataFrame(),
+    )
+
+
+def init_live_session_state() -> None:
+    if st.session_state.get("live_state_loaded"):
+        migrate_live_session_state()
+        return
+    state = normalize_live_state(load_live_state_from_disk() or create_initial_live_state())
+    st.session_state.live_events = state["events"]
+    st.session_state.live_state_history = state["state_history"]
+    st.session_state.live_friendships = [tuple(pair) for pair in state["friendships"]]
+    st.session_state.live_groups = state.get("groups", {})
+    st.session_state.live_influence_edges = state.get("influence_edges", [])
+    st.session_state.live_scenario = state.get("scenario", DEFAULT_LIVE_SCENARIO)
+    auto_state = state.get("auto", {})
+    st.session_state.live_auto_agents = bool(auto_state.get("enabled", False))
+    st.session_state.live_auto_interval = int(auto_state.get("interval", 12))
+    st.session_state.live_auto_channel = "full"
+    st.session_state.live_auto_last_ts = float(auto_state.get("last_ts", 0.0))
+    st.session_state.live_auto_round = int(auto_state.get("round", 0))
+    st.session_state.live_current_run = state.get("current_run", {})
+    st.session_state.live_active_run_id = ""
+    st.session_state.live_active_round_id = ""
+    st.session_state.live_state_loaded = True
+    st.session_state.live_state_schema_version = int(state.get("schema_version", LIVE_STATE_SCHEMA_VERSION))
+    migrate_live_session_state()
+    refresh_live_friend_counts()
+    persist_live_state()
+
+
+def normalize_live_state(state: dict) -> dict:
+    now = current_event_timestamp()
+    existing_agents = {row.get("agent") for row in state.get("state_history", [])}
+    for agent in LIVE_AGENT_PROFILES:
+        if agent in existing_agents:
+            continue
+        state.setdefault("state_history", []).append(
+            {
+                "date": now[:10],
+                "agent": agent,
+                "equity": DEFAULT_STARTING_CASH,
+                "cash": DEFAULT_STARTING_CASH,
+                "pnl": 0.0,
+                "pnl_pct": 0.0,
+                "positions_json": "{}",
+                "position_summary": "cash only",
+                "last_action": "等待 LLM API 交互",
+                "friend_count": 0,
+                "friends": "",
+            }
+        )
+    state["friendships"] = [
+        list(pair)
+        for pair in sorted(
+            {
+                tuple(sorted([str(pair[0]), str(pair[1])]))
+                for pair in state.get("friendships", [])
+                if len(pair) == 2 and str(pair[0]) in LIVE_AGENT_PROFILES and str(pair[1]) in LIVE_AGENT_PROFILES
+            }
+        )
+    ]
+    state["schema_version"] = LIVE_STATE_SCHEMA_VERSION
+    state.setdefault("groups", {})
+    state.setdefault("influence_edges", [])
+    state.setdefault("current_run", {})
+    state.setdefault("auto", {"enabled": False, "interval": 12, "channel": "full", "last_ts": 0.0, "round": 0})
+    normalize_live_state_history_money(state.get("state_history", []))
+    return state
+
+
+def migrate_live_session_state() -> None:
+    changed = False
+    rows = st.session_state.get("live_state_history", [])
+    if normalize_live_state_history_money(rows):
+        changed = True
+    if st.session_state.get("live_auto_channel") != "full":
+        st.session_state.live_auto_channel = "full"
+        changed = True
+    if int(st.session_state.get("live_state_schema_version", 0)) < LIVE_STATE_SCHEMA_VERSION:
+        st.session_state.live_state_schema_version = LIVE_STATE_SCHEMA_VERSION
+        changed = True
+    if "live_current_run" not in st.session_state:
+        st.session_state.live_current_run = {}
+        changed = True
+    st.session_state.setdefault("live_active_run_id", "")
+    st.session_state.setdefault("live_active_round_id", "")
+    if changed:
+        refresh_live_friend_counts()
+        persist_live_state()
+
+
+def normalize_live_state_history_money(rows: list[dict]) -> bool:
+    changed = False
+    for row in rows:
+        if row.get("agent") not in LIVE_AGENT_PROFILES:
+            continue
+        positions = parse_positions_json(row.get("positions_json", "{}"))
+        cash = safe_float(row.get("cash", 0.0))
+        equity = safe_float(row.get("equity", 0.0))
+        if not positions and cash == 0.0 and equity == 0.0:
+            row["cash"] = DEFAULT_STARTING_CASH
+            row["equity"] = DEFAULT_STARTING_CASH
+            row["pnl"] = 0.0
+            row["pnl_pct"] = 0.0
+            row["position_summary"] = "cash only"
+            changed = True
+        elif positions and not row.get("position_summary"):
+            row["position_summary"] = format_positions(positions)
+            changed = True
+    return changed
+
+
+def load_live_state_from_disk() -> dict | None:
+    if not LIVE_STATE_PATH.exists():
+        return None
+    try:
+        state = json.loads(LIVE_STATE_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+    if not isinstance(state, dict) or not state.get("events"):
+        return None
+    state.setdefault("state_history", [])
+    state.setdefault("friendships", [])
+    state.setdefault("groups", {})
+    state.setdefault("influence_edges", [])
+    state.setdefault("current_run", {})
+    state.setdefault("auto", {})
+    return state
+
+
+def create_initial_live_state() -> dict:
+    scenario_name = get_llm_setting("LIVE_SCENARIO", DEFAULT_LIVE_SCENARIO)
+    scenario = load_live_scenario(scenario_name)
+    if not scenario:
+        scenario_name = DEFAULT_LIVE_SCENARIO
+        scenario = load_live_scenario(scenario_name)
+    now = current_event_timestamp()
+    friendships = initial_friendships_from_scenario(scenario)
+    groups = initial_groups_from_scenario(scenario)
+    influence_edges = initial_influence_edges_from_scenario(scenario)
+    state_history = [
+        {
+            "date": now[:10],
+            "agent": agent,
+            "equity": DEFAULT_STARTING_CASH,
+            "cash": DEFAULT_STARTING_CASH,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "positions_json": "{}",
+            "position_summary": "cash only",
+            "last_action": "等待 LLM API 交互",
+            "friend_count": 0,
+            "friends": "",
+        }
+        for agent in LIVE_AGENT_PROFILES
+    ]
+    return {
+        "schema_version": LIVE_STATE_SCHEMA_VERSION,
+        "scenario": scenario_name,
+        "events": [
+            {
+                "event_id": 1,
+                "date": now[:10],
+                "event_time": now,
+                "source": "system",
+                "event_type": "session_start",
+                "agent": "System",
+                "counterparty": "",
+                "channel": "system",
+                "ticker": "",
+                "side": "",
+                "shares": 0,
+                "price": 0.0,
+                "notional": 0.0,
+                "cash": 0.0,
+                "equity": 0.0,
+                "pnl": 0.0,
+                "pnl_pct": 0.0,
+                "detail": f"LLM API 实时交互会话已启动，初始社交图谱来自 YAML 场景 {scenario_name}。",
+                "payload": json.dumps({"scenario": scenario_name}, ensure_ascii=False),
+            }
+        ],
+        "state_history": state_history,
+        "friendships": [list(pair) for pair in friendships],
+        "groups": groups,
+        "influence_edges": influence_edges,
+        "current_run": {},
+        "auto": {"enabled": False, "interval": 12, "channel": "full", "last_ts": 0.0, "round": 0},
+    }
+
+
+def load_live_scenario(name: str) -> dict:
+    path = Path(__file__).resolve().parent.parent / "config" / "social_scenarios.yaml"
+    if not path.exists():
+        return {}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    scenarios = data.get("scenarios", data)
+    return scenarios.get(name, {}) if isinstance(scenarios, dict) else {}
+
+
+def initial_friendships_from_scenario(scenario: dict) -> list[tuple[str, str]]:
+    friendships = scenario.get("friendships", []) if scenario else []
+    agents = list(LIVE_AGENT_PROFILES)
+    if friendships == "all":
+        return [(a, b) for index, a in enumerate(agents) for b in agents[index + 1 :]]
+    pairs = []
+    for pair in friendships or []:
+        if len(pair) != 2:
+            continue
+        a, b = str(pair[0]), str(pair[1])
+        if a in LIVE_AGENT_PROFILES and b in LIVE_AGENT_PROFILES and a != b:
+            pairs.append(tuple(sorted([a, b])))
+    return sorted(set(pairs))
+
+
+def initial_groups_from_scenario(scenario: dict) -> dict[str, list[str]]:
+    groups = {}
+    for group, members in (scenario.get("groups", {}) if scenario else {}).items():
+        groups[str(group)] = [str(member) for member in members if str(member) in LIVE_AGENT_PROFILES]
+    return groups
+
+
+def initial_influence_edges_from_scenario(scenario: dict) -> list[dict]:
+    agents = list(LIVE_AGENT_PROFILES)
+    edges = []
+    explicit_edges = (scenario or {}).get("influence_edges", []) or []
+    if explicit_edges:
+        for edge in explicit_edges:
+            if len(edge) < 2:
+                continue
+            source, target = str(edge[0]), str(edge[1])
+            if source in LIVE_AGENT_PROFILES and target in LIVE_AGENT_PROFILES and source != target:
+                edges.append(
+                    {
+                        "source": source,
+                        "target": target,
+                        "weight": float(edge[2]) if len(edge) >= 3 else 1.0,
+                        "kind": "influence",
+                    }
+                )
+        return dedupe_influence_edges(edges)
+
+    topology = (scenario or {}).get("topology", "")
+    if topology == "chain":
+        for source, target in zip(agents, agents[1:] + agents[:1]):
+            edges.append({"source": source, "target": target, "weight": 1.0, "kind": "influence"})
+    elif topology == "dense":
+        for source in agents:
+            for target in agents:
+                if source != target:
+                    edges.append({"source": source, "target": target, "weight": 0.6, "kind": "influence"})
+    elif topology == "core_periphery":
+        core = [agent for agent in (scenario or {}).get("core", []) if agent in LIVE_AGENT_PROFILES]
+        core = core or ["SocialGraphAgent", "DynamicTeamAgent", "CommitteeTeamAgent"]
+        for source, target in zip(core, core[1:] + core[:1]):
+            if source != target:
+                edges.append({"source": source, "target": target, "weight": 1.0, "kind": "influence"})
+        periphery = [agent for agent in agents if agent not in core]
+        for index, target in enumerate(periphery):
+            source = core[index % len(core)]
+            edges.append({"source": source, "target": target, "weight": 0.7, "kind": "influence"})
+    return dedupe_influence_edges(edges)
+
+
+def dedupe_influence_edges(edges: list[dict]) -> list[dict]:
+    deduped = {}
+    for edge in edges:
+        source, target = str(edge.get("source", "")), str(edge.get("target", ""))
+        if source not in LIVE_AGENT_PROFILES or target not in LIVE_AGENT_PROFILES or source == target:
+            continue
+        key = (source, target)
+        deduped[key] = {
+            "source": source,
+            "target": target,
+            "weight": float(edge.get("weight", 1.0)),
+            "kind": "influence",
+        }
+    return [deduped[key] for key in sorted(deduped)]
+
+
+def persist_live_state() -> None:
+    LIVE_STATE_DIR.mkdir(parents=True, exist_ok=True)
+    state = {
+        "schema_version": LIVE_STATE_SCHEMA_VERSION,
+        "scenario": st.session_state.get("live_scenario", DEFAULT_LIVE_SCENARIO),
+        "events": st.session_state.get("live_events", []),
+        "state_history": st.session_state.get("live_state_history", []),
+        "friendships": [list(pair) for pair in st.session_state.get("live_friendships", [])],
+        "groups": st.session_state.get("live_groups", {}),
+        "influence_edges": st.session_state.get("live_influence_edges", []),
+        "current_run": st.session_state.get("live_current_run", {}),
+        "auto": current_live_auto_state(),
+    }
+    LIVE_STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    export_live_tables(state)
+
+
+def current_live_auto_state() -> dict:
+    return {
+        "enabled": bool(st.session_state.get("live_auto_agents", False)),
+        "interval": int(st.session_state.get("live_auto_interval", 12)),
+        "channel": "full",
+        "last_ts": float(st.session_state.get("live_auto_last_ts", 0.0)),
+        "round": int(st.session_state.get("live_auto_round", 0)),
+    }
+
+
+def request_live_agent_start() -> None:
+    st.session_state.live_start_all_requested = True
+    st.session_state.live_auto_agents = True
+    st.session_state.live_auto_agents_enabled = True
+
+
+def request_live_agent_stop() -> None:
+    st.session_state.live_auto_agents = False
+    st.session_state.live_auto_agents_enabled = False
+    pause_live_run()
+
+
+def request_live_agent_resume() -> None:
+    st.session_state.live_resume_requested = True
+    st.session_state.live_auto_agents = True
+    st.session_state.live_auto_agents_enabled = True
+
+
+def begin_new_live_run() -> dict:
+    now = current_event_timestamp()
+    run_id = f"run_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}"
+    run = {
+        "id": run_id,
+        "status": "running",
+        "started_at": now,
+        "updated_at": now,
+        "round_count": 0,
+        "path": str(LIVE_RUNS_DIR / run_id),
+    }
+    run_dir = LIVE_RUNS_DIR / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    write_live_run_metadata(run)
+    st.session_state.live_current_run = run
+    return run
+
+
+def write_live_run_metadata(run: dict, **updates) -> None:
+    run_id = str(run.get("id", ""))
+    if not run_id:
+        return
+    run_dir = LIVE_RUNS_DIR / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    metadata_path = run_dir / "metadata.json"
+    existing = {}
+    if metadata_path.exists():
+        try:
+            existing = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            existing = {}
+    metadata = {**existing, **run, **updates, "updated_at": current_event_timestamp()}
+    (run_dir / "metadata.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def ensure_live_run() -> dict:
+    run = st.session_state.get("live_current_run") or {}
+    if not run.get("id"):
+        run = begin_new_live_run()
+    run["status"] = "running" if st.session_state.get("live_auto_agents", False) else run.get("status", "running")
+    run["updated_at"] = current_event_timestamp()
+    st.session_state.live_current_run = run
+    return run
+
+
+def pause_live_run() -> None:
+    run = st.session_state.get("live_current_run") or {}
+    if run:
+        run["status"] = "paused"
+        run["updated_at"] = current_event_timestamp()
+        st.session_state.live_current_run = run
+        write_live_run_metadata(run)
+
+
+def live_event_context() -> dict:
+    return {
+        "run_id": st.session_state.get("live_active_run_id", ""),
+        "round_id": st.session_state.get("live_active_round_id", ""),
+    }
+
+
+def export_live_tables(state: dict) -> None:
+    LIVE_TABLE_DIR.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(state.get("events", [])).to_csv(LIVE_TABLE_DIR / "unified_event_log.csv", index=False)
+    pd.DataFrame(state.get("state_history", [])).to_csv(LIVE_TABLE_DIR / "agent_state_history.csv", index=False)
+    pd.DataFrame(state.get("friendships", []), columns=["agent_a", "agent_b"]).to_csv(
+        LIVE_TABLE_DIR / "friendships.csv",
+        index=False,
+    )
+    live_groups_dataframe(state.get("groups", {})).to_csv(LIVE_TABLE_DIR / "group_memberships.csv", index=False)
+    live_social_edges_dataframe(state).to_csv(LIVE_TABLE_DIR / "social_graph_edges.csv", index=False)
+    events = pd.DataFrame(state.get("events", []))
+    state_history = pd.DataFrame(state.get("state_history", []))
+    live_trades_table(events).to_csv(LIVE_TABLE_DIR / "trade_log.csv", index=False)
+    live_equity_table(state_history).to_csv(LIVE_TABLE_DIR / "equity_curve.csv", index=False)
+    live_metrics_table(state_history).to_csv(LIVE_TABLE_DIR / "performance_metrics.csv", index=False)
+
+
+def live_groups_dataframe(groups: dict | None = None) -> pd.DataFrame:
+    groups = groups if groups is not None else st.session_state.get("live_groups", {})
+    rows = []
+    for group, members in (groups or {}).items():
+        for agent in members:
+            rows.append({"group": group, "agent": agent})
+    return pd.DataFrame(rows, columns=["group", "agent"])
+
+
+def live_social_edges_dataframe(state: dict | None = None) -> pd.DataFrame:
+    if state is None:
+        influence_edges = st.session_state.get("live_influence_edges", [])
+        friendships = st.session_state.get("live_friendships", [])
+    else:
+        influence_edges = state.get("influence_edges", [])
+        friendships = [tuple(pair) for pair in state.get("friendships", [])]
+    rows = [
+        {
+            "source": edge.get("source", ""),
+            "target": edge.get("target", ""),
+            "weight": float(edge.get("weight", 1.0)),
+            "kind": edge.get("kind", "influence"),
+        }
+        for edge in influence_edges
+    ]
+    for a, b in friendships:
+        rows.append({"source": a, "target": b, "weight": 1.0, "kind": "friendship"})
+        rows.append({"source": b, "target": a, "weight": 1.0, "kind": "friendship"})
+    return pd.DataFrame(rows, columns=["source", "target", "weight", "kind"])
+
+
+def live_centrality_dataframe(edges: pd.DataFrame) -> pd.DataFrame:
+    agents = list(LIVE_AGENT_PROFILES)
+    if edges.empty:
+        return pd.DataFrame({"agent": agents, "pagerank": [1 / len(agents)] * len(agents)})
+    scores = {agent: 1.0 for agent in agents}
+    for _, row in edges.iterrows():
+        scores[str(row.get("target", ""))] = scores.get(str(row.get("target", "")), 1.0) + float(row.get("weight", 1.0))
+    total = sum(scores.values()) or 1.0
+    return pd.DataFrame(
+        [{"agent": agent, "pagerank": float(scores.get(agent, 0.0)) / total} for agent in sorted(scores)]
+    )
+
+
+def current_event_timestamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def live_messages_table(event_log: pd.DataFrame) -> pd.DataFrame:
+    if event_log.empty:
+        return pd.DataFrame()
+    messages = event_log[event_log["event_type"] == "message"].copy()
+    if messages.empty:
+        return pd.DataFrame()
+    rows = []
+    for _, row in messages.iterrows():
+        payload = parse_payload(row.get("payload", ""))
+        rows.append(
+            {
+                "message_id": int(row.get("event_id", 0)),
+                "timestamp": row.get("event_time", ""),
+                "sender_id": row.get("agent", ""),
+                "channel": row.get("channel", ""),
+                "receiver_ids": payload.get("receiver_ids", []),
+                "tickers": [row.get("ticker", "")] if row.get("ticker", "") else [],
+                "direction": payload.get("direction", ""),
+                "confidence": payload.get("confidence", ""),
+                "natural_language": row.get("detail", ""),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def live_social_events_table(event_log: pd.DataFrame) -> pd.DataFrame:
+    if event_log.empty:
+        return pd.DataFrame()
+    social = event_log[event_log["event_type"].astype(str).str.startswith("friend")].copy()
+    if social.empty:
+        return pd.DataFrame()
+    return social.rename(columns={"agent": "sender", "counterparty": "receiver"})[
+        ["date", "event_type", "sender", "receiver", "detail"]
+    ]
+
+
+def live_trades_table(event_log: pd.DataFrame) -> pd.DataFrame:
+    if event_log.empty:
+        return pd.DataFrame()
+    trades = event_log[event_log["event_type"] == "trade"].copy()
+    if trades.empty:
+        return pd.DataFrame()
+    return trades[
+        ["date", "agent", "ticker", "side", "shares", "price", "notional", "cash", "equity", "pnl", "pnl_pct", "detail"]
+    ].reset_index(drop=True)
+
+
+def live_equity_table(state_history: pd.DataFrame) -> pd.DataFrame:
+    if state_history.empty:
+        return pd.DataFrame()
+    columns = ["date", "agent", "equity", "cash", "pnl", "pnl_pct"]
+    available = [column for column in columns if column in state_history.columns]
+    return state_history[available].copy()
+
+
+def live_metrics_table(state_history: pd.DataFrame) -> pd.DataFrame:
+    if state_history.empty:
+        return pd.DataFrame()
+    latest = state_history.copy()
+    latest["_seq"] = range(len(latest))
+    latest = latest.sort_values(["agent", "_seq"]).groupby("agent", as_index=False).tail(1)
+    return latest[["agent", "equity", "cash", "pnl", "pnl_pct"]].sort_values("pnl", ascending=False)
+
+
+def append_live_message_event(agent: str, channel: str, receivers: list[str], detail: str, ticker: str = "") -> None:
+    now = current_event_timestamp()
+    event_id = next_live_event_id()
+    st.session_state.live_events.append(
+        {
+            "event_id": event_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "llm_api",
+            "event_type": "message",
+            "agent": agent,
+            "counterparty": ", ".join(receivers),
+            "channel": channel,
+            "ticker": ticker,
+            "side": "",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": 0.0,
+            "equity": 0.0,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "detail": detail,
+            "payload": json.dumps({"receiver_ids": receivers, "llm_generated": True}, ensure_ascii=False),
+            **live_event_context(),
+        }
+    )
+    update_live_agent_action(agent, f"{channel}: {truncate(detail, 90)}")
+    update_live_graph_from_message(agent, channel, receivers, detail)
+    st.session_state.event_cursor = event_id
+    persist_live_state()
+
+
+def append_live_trade_event(agent: str, trade_plan: dict, detail_prefix: str = "") -> None:
+    trade = normalize_trade_plan(agent, trade_plan)
+    state = latest_live_agent_state(agent)
+    positions = parse_positions_json(state.get("positions_json", "{}"))
+    cash = safe_float(state.get("cash", DEFAULT_STARTING_CASH), DEFAULT_STARTING_CASH)
+    side, ticker, price, requested_shares = trade["side"], trade["ticker"], trade["price"], trade["shares"]
+    available = int(positions.get(ticker, 0))
+    shares = requested_shares
+
+    if side == "BUY":
+        affordable = int(cash // price)
+        shares = max(0, min(shares, affordable))
+    elif side == "SELL":
+        shares = max(0, min(shares, available))
+
+    if side not in {"BUY", "SELL"} or shares <= 0:
+        append_live_hold_event(agent, trade, reason=trade.get("rationale") or "本轮没有可执行交易。")
+        return
+
+    notional = round(shares * price, 2)
+    if side == "BUY":
+        positions[ticker] = available + shares
+        cash = round(cash - notional, 2)
+    else:
+        remaining = available - shares
+        if remaining > 0:
+            positions[ticker] = remaining
+        else:
+            positions.pop(ticker, None)
+        cash = round(cash + notional, 2)
+
+    event_id = next_live_event_id()
+    equity = calculate_live_equity(cash, positions, event_id)
+    pnl = round(equity - DEFAULT_STARTING_CASH, 2)
+    pnl_pct = pnl / DEFAULT_STARTING_CASH if DEFAULT_STARTING_CASH else 0.0
+    now = current_event_timestamp()
+    rationale = trade.get("rationale", "")
+    detail = f"{side} {shares} {ticker} @ {price:.2f}"
+    if rationale:
+        detail = f"{detail}；{rationale}"
+    if detail_prefix:
+        detail = f"{detail_prefix}{detail}"
+    st.session_state.live_events.append(
+        {
+            "event_id": event_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "llm_api",
+            "event_type": "trade",
+            "agent": agent,
+            "counterparty": "",
+            "channel": "portfolio",
+            "ticker": ticker,
+            "side": side,
+            "shares": shares,
+            "price": price,
+            "notional": notional,
+            "cash": cash,
+            "equity": equity,
+            "pnl": pnl,
+            "pnl_pct": pnl_pct,
+            "detail": detail,
+            "payload": json.dumps({"positions": positions, "llm_generated": True}, ensure_ascii=False),
+            **live_event_context(),
+        }
+    )
+    append_live_state_snapshot(agent, cash, equity, pnl, pnl_pct, positions, detail)
+    st.session_state.event_cursor = event_id
+    persist_live_state()
+
+
+def append_live_hold_event(agent: str, trade_plan: dict, reason: str = "") -> None:
+    state = latest_live_agent_state(agent)
+    positions = parse_positions_json(state.get("positions_json", "{}"))
+    cash = safe_float(state.get("cash", DEFAULT_STARTING_CASH), DEFAULT_STARTING_CASH)
+    event_id = next_live_event_id()
+    equity = calculate_live_equity(cash, positions, event_id)
+    pnl = round(equity - DEFAULT_STARTING_CASH, 2)
+    pnl_pct = pnl / DEFAULT_STARTING_CASH if DEFAULT_STARTING_CASH else 0.0
+    now = current_event_timestamp()
+    ticker = str(trade_plan.get("ticker") or "").upper()
+    detail = reason or trade_plan.get("rationale") or "HOLD：等待更清晰的信号。"
+    if not str(detail).upper().startswith("HOLD"):
+        detail = f"HOLD：{detail}"
+    st.session_state.live_events.append(
+        {
+            "event_id": event_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "llm_api",
+            "event_type": "hold",
+            "agent": agent,
+            "counterparty": "",
+            "channel": "portfolio",
+            "ticker": ticker,
+            "side": "HOLD",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": cash,
+            "equity": equity,
+            "pnl": pnl,
+            "pnl_pct": pnl_pct,
+            "detail": detail,
+            "payload": json.dumps({"positions": positions, "llm_generated": True}, ensure_ascii=False),
+            **live_event_context(),
+        }
+    )
+    append_live_state_snapshot(agent, cash, equity, pnl, pnl_pct, positions, detail)
+    st.session_state.event_cursor = event_id
+    persist_live_state()
+
+
+def append_live_state_snapshot(
+    agent: str,
+    cash: float,
+    equity: float,
+    pnl: float,
+    pnl_pct: float,
+    positions: dict[str, int],
+    last_action: str,
+) -> None:
+    st.session_state.live_state_history.append(
+        {
+            "date": current_event_timestamp()[:10],
+            "agent": agent,
+            "equity": round(equity, 2),
+            "cash": round(cash, 2),
+            "pnl": round(pnl, 2),
+            "pnl_pct": pnl_pct,
+            "positions_json": json.dumps({k: v for k, v in sorted(positions.items()) if v}, ensure_ascii=False),
+            "position_summary": format_positions(positions),
+            "last_action": truncate(last_action, 140),
+            "friend_count": 0,
+            "friends": "",
+            **live_event_context(),
+        }
+    )
+    refresh_live_friend_counts()
+
+
+def append_live_friendship(agent_a: str, agent_b: str) -> None:
+    if not agent_a or not agent_b or agent_a == agent_b:
+        return
+    pair = tuple(sorted([agent_a, agent_b]))
+    existing = {tuple(sorted(pair_item)) for pair_item in st.session_state.live_friendships}
+    if pair in existing:
+        return
+    st.session_state.live_friendships.append(pair)
+    now = current_event_timestamp()
+    event_id = next_live_event_id()
+    st.session_state.live_events.append(
+        {
+            "event_id": event_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "user",
+            "event_type": "friend_accept",
+            "agent": agent_a,
+            "counterparty": agent_b,
+            "channel": "friend_request",
+            "ticker": "",
+            "side": "",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": 0.0,
+            "equity": 0.0,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "detail": f"{agent_a} 与 {agent_b} 已建立好友关系。",
+            "payload": "{}",
+            **live_event_context(),
+        }
+    )
+    refresh_live_friend_counts()
+    st.session_state.event_cursor = event_id
+    persist_live_state()
+
+
+def append_live_event(row: dict) -> None:
+    st.session_state.live_events.append(row)
+
+
+def reset_live_social_graph_from_yaml() -> None:
+    scenario_name = st.session_state.get("live_scenario") or get_llm_setting("LIVE_SCENARIO", DEFAULT_LIVE_SCENARIO)
+    scenario = load_live_scenario(str(scenario_name))
+    if not scenario:
+        scenario_name = DEFAULT_LIVE_SCENARIO
+        scenario = load_live_scenario(DEFAULT_LIVE_SCENARIO)
+    st.session_state.live_scenario = str(scenario_name)
+    st.session_state.live_friendships = initial_friendships_from_scenario(scenario)
+    st.session_state.live_groups = initial_groups_from_scenario(scenario)
+    st.session_state.live_influence_edges = initial_influence_edges_from_scenario(scenario)
+    refresh_live_friend_counts()
+    now = current_event_timestamp()
+    event_id = next_live_event_id()
+    append_live_event(
+        {
+            "event_id": event_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "system",
+            "event_type": "social_graph_reload",
+            "agent": "System",
+            "counterparty": "",
+            "channel": "system",
+            "ticker": "",
+            "side": "",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": 0.0,
+            "equity": 0.0,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "detail": f"已按 YAML 场景 {scenario_name} 重新加载好友关系、群组和初始影响关系。",
+            "payload": json.dumps({"scenario": scenario_name}, ensure_ascii=False),
+        }
+    )
+    st.session_state.event_cursor = event_id
+    persist_live_state()
+
+
+def update_live_graph_from_message(agent: str, channel: str, receivers: list[str], detail: str) -> None:
+    if channel == "public":
+        reinforce_live_influence(agent, [name for name in LIVE_AGENT_PROFILES if name != agent])
+        return
+    if channel != "private":
+        reinforce_live_influence(agent, receivers)
+        return
+    for receiver in receivers:
+        if not receiver or receiver == agent:
+            continue
+        if live_are_friends(agent, receiver):
+            reinforce_live_influence(agent, [receiver])
+            continue
+        add_live_friend_request_and_accept(agent, receiver, detail)
+        reinforce_live_influence(agent, [receiver])
+
+
+def add_live_friend_request_and_accept(agent: str, receiver: str, detail: str) -> None:
+    now = current_event_timestamp()
+    request_id = next_live_event_id()
+    append_live_event(
+        {
+            "event_id": request_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "llm_api",
+            "event_type": "friend_request",
+            "agent": agent,
+            "counterparty": receiver,
+            "channel": "friend_request",
+            "ticker": "",
+            "side": "",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": 0.0,
+            "equity": 0.0,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "detail": f"{agent} 向 {receiver} 发起好友申请：{truncate(detail, 120)}",
+            "payload": json.dumps({"trigger": truncate(detail, 120)}, ensure_ascii=False),
+            **live_event_context(),
+        }
+    )
+    pair = tuple(sorted([agent, receiver]))
+    st.session_state.live_friendships.append(pair)
+    accept_id = next_live_event_id()
+    append_live_event(
+        {
+            "event_id": accept_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "llm_api",
+            "event_type": "friend_accept",
+            "agent": receiver,
+            "counterparty": agent,
+            "channel": "friend_request",
+            "ticker": "",
+            "side": "",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": 0.0,
+            "equity": 0.0,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "detail": f"{receiver} 通过了 {agent} 的好友申请，社交图谱已更新。",
+            "payload": "{}",
+            **live_event_context(),
+        }
+    )
+    refresh_live_friend_counts()
+
+
+def live_are_friends(agent_a: str, agent_b: str) -> bool:
+    pair = tuple(sorted([agent_a, agent_b]))
+    return pair in {tuple(sorted(item)) for item in st.session_state.get("live_friendships", [])}
+
+
+def reinforce_live_influence(source: str, targets: list[str]) -> None:
+    if not targets:
+        return
+    edges = st.session_state.get("live_influence_edges", [])
+    for target in targets:
+        if not target or target == source:
+            continue
+        found = False
+        for edge in edges:
+            if edge.get("source") == source and edge.get("target") == target:
+                edge["weight"] = min(5.0, float(edge.get("weight", 1.0)) + 0.08)
+                found = True
+                break
+        if not found:
+            edges.append({"source": source, "target": target, "weight": 0.8, "kind": "influence"})
+    st.session_state.live_influence_edges = edges
+
+
+def next_live_event_id() -> int:
+    events = st.session_state.get("live_events", [])
+    if not events:
+        return 1
+    return max(int(event.get("event_id", 0)) for event in events) + 1
+
+
+def update_live_agent_action(agent: str, action: str) -> None:
+    rows = st.session_state.get("live_state_history", [])
+    if not rows:
+        return
+    for row in reversed(rows):
+        if row.get("agent") == agent:
+            row["date"] = current_event_timestamp()[:10]
+            row["last_action"] = action
+            break
+
+
+def refresh_live_friend_counts() -> None:
+    friend_lookup = {agent: [] for agent in LIVE_AGENT_PROFILES}
+    unique_pairs = sorted({tuple(sorted(pair)) for pair in st.session_state.get("live_friendships", [])})
+    st.session_state.live_friendships = unique_pairs
+    for a, b in unique_pairs:
+        friend_lookup.setdefault(a, []).append(b)
+        friend_lookup.setdefault(b, []).append(a)
+    for row in st.session_state.get("live_state_history", []):
+        friends = sorted(friend_lookup.get(row.get("agent"), []))
+        row["friend_count"] = len(friends)
+        row["friends"] = ", ".join(friends)
+
+
+def latest_live_agent_state(agent: str) -> dict:
+    for row in reversed(st.session_state.get("live_state_history", [])):
+        if row.get("agent") == agent:
+            return dict(row)
+    return {
+        "agent": agent,
+        "cash": DEFAULT_STARTING_CASH,
+        "equity": DEFAULT_STARTING_CASH,
+        "pnl": 0.0,
+        "pnl_pct": 0.0,
+        "positions_json": "{}",
+        "position_summary": "cash only",
+        "last_action": "等待 LLM API 交互",
+    }
+
+
+def normalize_trade_plan(agent: str, trade_plan: dict | None) -> dict:
+    plan = trade_plan if isinstance(trade_plan, dict) else {}
+    side = str(plan.get("side", "HOLD")).strip().upper()
+    if side not in {"BUY", "SELL", "HOLD"}:
+        side = "HOLD"
+    ticker = normalize_ticker(plan.get("ticker") or default_ticker_for_agent(agent))
+    price = safe_float(plan.get("price", 0.0), 0.0)
+    reference_price = live_reference_price(ticker, next_live_event_id())
+    if price <= 0 or price < reference_price * 0.2 or price > reference_price * 5:
+        price = reference_price
+    shares = int(max(0, safe_float(plan.get("shares", 0), 0.0)))
+    if side in {"BUY", "SELL"} and shares <= 0:
+        shares = 5 + stable_index(agent + ticker + side, 11)
+    return {
+        "side": side,
+        "ticker": ticker,
+        "shares": min(shares, 100),
+        "price": round(price, 2),
+        "rationale": truncate(str(plan.get("rationale", "") or ""), 160),
+    }
+
+
+def trade_plan_from_agent_plan(agent: str, plan: dict) -> dict:
+    trade = plan.get("trade") if isinstance(plan.get("trade"), dict) else {}
+    normalized = normalize_trade_plan(agent, trade)
+    text = collect_plan_text(plan)
+    inferred_side = infer_trade_side_from_text(text)
+
+    if normalized["side"] == "HOLD" and inferred_side in {"BUY", "SELL"}:
+        ticker = str(trade.get("ticker") or infer_ticker_from_text(text) or default_ticker_for_agent(agent))
+        inferred = {
+            **trade,
+            "side": inferred_side,
+            "ticker": ticker,
+            "shares": trade.get("shares") or infer_shares_from_text(agent, ticker, text),
+            "price": trade.get("price", 0),
+            "rationale": trade.get("rationale")
+            or f"从 Agent 文本中识别到交易意图：{truncate(text, 100)}",
+        }
+        return inferred
+
+    if normalized["side"] in {"BUY", "SELL"}:
+        if not trade.get("ticker"):
+            trade = {**trade, "ticker": infer_ticker_from_text(text) or normalized["ticker"]}
+        if not trade.get("rationale"):
+            trade = {**trade, "rationale": f"结构化交易指令：{normalized['side']} {normalized['ticker']}"}
+    return trade
+
+
+def collect_plan_text(plan: dict) -> str:
+    parts = []
+    trade = plan.get("trade")
+    if isinstance(trade, dict):
+        parts.extend(str(trade.get(key, "")) for key in ["side", "ticker", "rationale"])
+    for key in ["public_message", "moment"]:
+        value = plan.get(key)
+        if value:
+            parts.append(str(value))
+    for key in ["private_message", "friend_request"]:
+        value = plan.get(key)
+        if isinstance(value, dict):
+            parts.extend(str(item) for item in value.values() if item)
+        elif value:
+            parts.append(str(value))
+    return " ".join(parts)
+
+
+def infer_trade_side_from_text(text: str) -> str:
+    work = str(text or "").lower()
+    buy_terms = [
+        "加仓",
+        "买入",
+        "增持",
+        "建仓",
+        "加多",
+        "做多",
+        "重仓接",
+        "接回调",
+        "先接",
+        "进场接",
+        "继续买",
+    ]
+    sell_terms = ["减仓", "卖出", "清仓", "止盈", "加空", "做空", "开空", "short", "sell"]
+    hold_terms = ["持有现金", "现金继续", "继续拿现金", "不动", "观望", "等待", "不碰", "再考虑", "维持"]
+    if any(term in work for term in buy_terms) or re.search(r"\bbuy\b", work):
+        return "BUY"
+    if any(term in work for term in sell_terms):
+        return "SELL"
+    if any(term in work for term in hold_terms):
+        return "HOLD"
+    return ""
+
+
+def infer_ticker_from_text(text: str) -> str:
+    work = str(text or "").upper()
+    for ticker in LIVE_TICKER_PRICES:
+        if ticker in work:
+            return ticker
+    lowered = work.lower()
+    if any(term in work for term in ["AI", "半导体", "芯片", "算力"]):
+        return "NVDA"
+    if any(term in work for term in ["能源", "原油", "石油", "OIL"]):
+        return "XLE"
+    if any(term in work for term in ["美元", "避险", "USD"]):
+        return "UUP"
+    if any(term in work for term in ["科技", "纳指", "NASDAQ", "QQQ"]):
+        return "QQQ"
+    if any(term in work for term in ["大盘", "指数", "标普", "SPY"]):
+        return "SPY"
+    return ""
+
+
+def infer_shares_from_text(agent: str, ticker: str, text: str) -> int:
+    price = live_reference_price(normalize_ticker(ticker), next_live_event_id())
+    percent_match = re.search(r"(\d+(?:\.\d+)?)\s*%\s*仓位", str(text or ""))
+    if percent_match:
+        percent = min(50.0, max(1.0, safe_float(percent_match.group(1), 5.0)))
+        return max(1, int(DEFAULT_STARTING_CASH * percent / 100.0 / price))
+    if "翻倍" in str(text):
+        return 20 + stable_index(agent + ticker, 16)
+    if any(term in str(text) for term in ["重仓", "大幅"]):
+        return 20 + stable_index(agent + ticker, 21)
+    return 5 + stable_index(agent + ticker, 16)
+
+
+def normalize_ticker(value) -> str:
+    ticker = "".join(ch for ch in str(value or "").upper() if ch.isalnum() or ch in {".", "-"}).strip(".-")
+    if ticker in LIVE_TICKER_PRICES:
+        return ticker
+    return list(LIVE_TICKER_PRICES)[stable_index(ticker or "SPY", len(LIVE_TICKER_PRICES))]
+
+
+def default_ticker_for_agent(agent: str) -> str:
+    tickers = list(LIVE_TICKER_PRICES)
+    return tickers[stable_index(agent, len(tickers))]
+
+
+def live_reference_price(ticker: str, event_id: int) -> float:
+    base = LIVE_TICKER_PRICES.get(ticker, LIVE_TICKER_PRICES["SPY"])
+    drift = ((stable_index(f"{ticker}-{event_id}", 17) - 8) / 1000.0) + ((event_id % 7) - 3) / 2000.0
+    return round(max(1.0, base * (1 + drift)), 2)
+
+
+def calculate_live_equity(cash: float, positions: dict[str, int], event_id: int) -> float:
+    holdings = sum(int(shares) * live_reference_price(ticker, event_id) for ticker, shares in positions.items())
+    return round(cash + holdings, 2)
+
+
+def parse_positions_json(value) -> dict[str, int]:
+    if isinstance(value, dict):
+        raw = value
+    else:
+        try:
+            raw = json.loads(str(value or "{}"))
+        except json.JSONDecodeError:
+            raw = {}
+    positions = {}
+    for ticker, shares in raw.items() if isinstance(raw, dict) else []:
+        normalized = normalize_ticker(ticker)
+        amount = int(max(0, safe_float(shares, 0.0)))
+        if amount:
+            positions[normalized] = positions.get(normalized, 0) + amount
+    return positions
+
+
+def format_positions(positions: dict[str, int]) -> str:
+    active = [f"{ticker} {shares}" for ticker, shares in sorted(positions.items()) if shares]
+    return ", ".join(active) if active else "cash only"
+
+
+def call_llm_agent(agent: str, channel: str, receivers: list[str], instruction: str, recent_events: pd.DataFrame) -> str:
+    load_dotenv_files()
+    api_key = get_llm_setting("OPENAI_API_KEY")
+    base_url = get_llm_setting("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+    model = get_llm_setting("OPENAI_MODEL", "gpt-4o-mini")
+    if not api_key:
+        raise RuntimeError("缺少 API key。请在 .env、env.txt 或系统环境变量中设置 OPENAI_API_KEY。")
+    if not model:
+        raise RuntimeError("缺少模型名。请在 .env、env.txt 或系统环境变量中设置 OPENAI_MODEL。")
+
+    payload = {
+        "model": model,
+        "temperature": env_float("LLM_TEMPERATURE", 0.7),
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    f"你是 {agent}。你的角色设定：{LIVE_AGENT_PROFILES.get(agent, '交易 agent')} "
+                    "你正在一个多智能体股票交易社交系统中互动。"
+                    "请用中文、第一人称、简洁地发言。不要输出 Markdown，不要解释自己是 AI。"
+                    "你的回复会直接进入交易大厅 ChatLab。"
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    f"频道：{channel}\n"
+                    f"接收方：{', '.join(receivers) if receivers else '所有人'}\n"
+                    f"最近对话：\n{recent_chat_context(recent_events)}\n\n"
+                    f"本轮任务：{instruction}\n"
+                    "请生成这一条 agent 消息，长度控制在 1-3 句话。"
+                ),
+            },
+        ],
+    }
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=env_int("LLM_TIMEOUT", 60)) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
+    try:
+        return str(data["choices"][0]["message"]["content"]).strip()
+    except (KeyError, IndexError, TypeError) as exc:
+        raise RuntimeError(f"LLM API 返回格式无法解析：{data}") from exc
+
+
+def call_llm_agent_plan(
+    agent: str,
+    agents: list[str],
+    friendships_df: pd.DataFrame,
+    recent_events: pd.DataFrame,
+) -> dict:
+    load_dotenv_files()
+    api_key = get_llm_setting("OPENAI_API_KEY")
+    base_url = get_llm_setting("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+    model = get_llm_setting("OPENAI_MODEL", "gpt-4o-mini")
+    if not api_key:
+        raise RuntimeError("缺少 API key。请在 .env、env.txt 或系统环境变量中设置 OPENAI_API_KEY。")
+    if not model:
+        raise RuntimeError("缺少模型名。请在 .env、env.txt 或系统环境变量中设置 OPENAI_MODEL。")
+
+    peers = [name for name in agents if name != agent]
+    friends = friends_for_agent(friendships_df, agent)
+    payload = {
+        "model": model,
+        "temperature": env_float("LLM_TEMPERATURE", 0.7),
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    f"你是 {agent}。角色设定：{LIVE_AGENT_PROFILES.get(agent, '交易 agent')} "
+                    "你在一个多智能体股票交易社交系统中同时交易和社交。"
+                    "你必须只输出一个 JSON 对象，不要输出 Markdown、代码块或额外解释。"
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    "本轮需要一次性决定你的所有行为：交易、公聊、私聊、朋友圈、好友申请。\n"
+                    f"可交易 ticker：{', '.join(LIVE_TICKER_PRICES)}\n"
+                    f"其他 Agent：{', '.join(peers)}\n"
+                    f"当前好友：{', '.join(friends) if friends else '暂无'}\n"
+                    f"你的组合状态：{agent_portfolio_context(agent)}\n"
+                    f"最近事件：\n{recent_event_context(recent_events)}\n\n"
+                    "输出 JSON schema：\n"
+                    "{\n"
+                    '  "trade": {"side": "BUY|SELL|HOLD", "ticker": "AAPL", "shares": 1, "price": 0, "rationale": "交易理由"},\n'
+                    '  "public_message": "发到群聊的一句话",\n'
+                    '  "private_message": {"to": "某个 Agent", "content": "私聊内容"},\n'
+                    '  "moment": "朋友圈动态",\n'
+                    '  "friend_request": {"to": "某个非好友 Agent", "reason": "申请理由"}\n'
+                    "}\n"
+                    "要求：trade 必须存在，优先给出可执行的 BUY 或 SELL，只有风险理由明确时才 HOLD；"
+                    "public_message 必须存在；如果消息里说加仓、买入、减仓、卖出，trade.side 必须与消息一致；"
+                    "private_message、moment、friend_request 可为空字符串或 null。"
+                ),
+            },
+        ],
+    }
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=env_int("LLM_TIMEOUT", 60)) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
+    try:
+        content = str(data["choices"][0]["message"]["content"]).strip()
+    except (KeyError, IndexError, TypeError) as exc:
+        raise RuntimeError(f"LLM API 返回格式无法解析：{data}") from exc
+    plan = extract_json_object(content)
+    if not plan:
+        plan = {"trade": {"side": "HOLD", "rationale": "LLM 输出不是 JSON，已作为群聊消息保留。"}, "public_message": content}
+    return plan
+
+
+def extract_json_object(text: str) -> dict:
+    try:
+        parsed = json.loads(text)
+        return parsed if isinstance(parsed, dict) else {}
+    except json.JSONDecodeError:
+        pass
+    start = text.find("{")
+    end = text.rfind("}")
+    if start == -1 or end == -1 or end <= start:
+        return {}
+    try:
+        parsed = json.loads(text[start : end + 1])
+        return parsed if isinstance(parsed, dict) else {}
+    except json.JSONDecodeError:
+        return {}
+
+
+def recent_chat_context(events: pd.DataFrame, limit: int = 18) -> str:
+    if events.empty:
+        return "暂无历史对话。"
+    chat = events[events["event_type"] == "message"].sort_values("event_id").tail(limit)
+    if chat.empty:
+        return "暂无历史对话。"
+    lines = []
+    for _, row in chat.iterrows():
+        receivers = event_receivers(row)
+        target = f" -> {', '.join(receivers)}" if receivers else ""
+        lines.append(
+            f"#{int(row.get('event_id', 0))} [{row.get('channel', '')}] "
+            f"{row.get('agent', '')}{target}: {row.get('detail', '')}"
+        )
+    return "\n".join(lines)
+
+
+def recent_event_context(events: pd.DataFrame, limit: int = 28) -> str:
+    if events.empty:
+        return "暂无历史事件。"
+    work = events[events["event_type"].isin(["message", "trade", "hold", "friend_request", "friend_accept"])].tail(limit)
+    if work.empty:
+        return "暂无历史事件。"
+    lines = []
+    for _, row in work.iterrows():
+        event_type = row.get("event_type", "")
+        channel = row.get("channel", "")
+        ticker = row.get("ticker", "")
+        side = row.get("side", "")
+        lines.append(
+            f"#{int(row.get('event_id', 0))} [{event_type}/{channel}] "
+            f"{row.get('agent', '')} {side} {ticker}: {truncate(str(row.get('detail', '')), 120)}"
+        )
+    return "\n".join(lines)
+
+
+def agent_portfolio_context(agent: str) -> str:
+    state = latest_live_agent_state(agent)
+    return (
+        f"cash={money(state.get('cash', DEFAULT_STARTING_CASH))}, "
+        f"equity={money(state.get('equity', DEFAULT_STARTING_CASH))}, "
+        f"pnl={money(state.get('pnl', 0))}, "
+        f"positions={state.get('position_summary') or 'cash only'}"
+    )
 
 
 # ----------------------------- data normalization -----------------------------
@@ -369,7 +1849,8 @@ def normalize_state_history(state_df: pd.DataFrame, equity_df: pd.DataFrame, tra
             out[col] = ""
     if "friend_count" not in out.columns:
         out["friend_count"] = 0
-    return out.sort_values(["date", "agent"])
+    out["_seq"] = range(len(out))
+    return out.sort_values(["date", "agent", "_seq"]).drop(columns=["_seq"])
 
 
 def build_legacy_event_log(trades_df, messages_df, social_events_df, equity_df) -> pd.DataFrame:
@@ -455,6 +1936,96 @@ def infer_agents(state_df, equity_df, registry_df, event_df) -> set[str]:
 
 
 # ----------------------------- global playback -----------------------------
+
+
+def render_live_sidebar_controls(events: pd.DataFrame, agents: list[str], friendships_df: pd.DataFrame) -> None:
+    st.sidebar.markdown("### LLM Agent 总控")
+    if has_llm_api_config():
+        st.sidebar.caption("API：已读取 env.txt / .env / 系统环境变量")
+    else:
+        st.sidebar.warning("API：缺少 OPENAI_API_KEY 或 OPENAI_MODEL")
+
+    if st.session_state.pop("live_force_auto_off", False):
+        st.session_state.live_auto_agents = False
+        st.session_state.live_auto_agents_enabled = False
+    if "live_auto_agents_enabled" not in st.session_state:
+        st.session_state.live_auto_agents_enabled = bool(st.session_state.get("live_auto_agents", False))
+
+    st.sidebar.slider("自动轮次间隔秒", 3, 120, step=1, key="live_auto_interval")
+    auto_enabled = st.sidebar.toggle("持续自动运行全部行为", key="live_auto_agents_enabled")
+    st.session_state.live_auto_agents = bool(auto_enabled)
+    st.sidebar.caption("每轮会并发调用所有 Agent，并生成交易、公聊、私聊、朋友圈和好友申请。")
+
+    st.sidebar.button(
+        "一键启动所有 Agent",
+        type="primary",
+        use_container_width=True,
+        key="start_all_live_agents",
+        on_click=request_live_agent_start,
+    )
+    if st.session_state.pop("live_start_all_requested", False):
+        if not has_llm_api_config():
+            st.sidebar.error("无法启动：请先检查 env.txt 里的 LLM API 配置。")
+            st.session_state.live_force_auto_off = True
+        else:
+            run = begin_new_live_run()
+            with st.spinner("正在并发启动所有 Agent 的完整行为..."):
+                try:
+                    generate_live_agent_round(agents=agents, events_until=events, friendships_df=friendships_df)
+                    st.session_state.live_auto_last_ts = time.time()
+                    persist_live_state()
+                    rerun_app()
+                except RuntimeError as exc:
+                    st.session_state.live_auto_agents = False
+                    st.session_state.live_force_auto_off = True
+                    st.session_state.live_active_run_id = ""
+                    st.session_state.live_active_round_id = ""
+                    run["status"] = "error"
+                    run["error"] = str(exc)
+                    run["updated_at"] = current_event_timestamp()
+                    st.session_state.live_current_run = run
+                    persist_live_state()
+                    st.sidebar.error(str(exc))
+
+    if st.sidebar.button("停止自动生成", use_container_width=True, key="stop_all_live_agents", on_click=request_live_agent_stop):
+        persist_live_state()
+        st.sidebar.success("已停止自动生成。")
+
+    st.sidebar.button(
+        "继续上一次生成",
+        use_container_width=True,
+        key="resume_live_agents",
+        on_click=request_live_agent_resume,
+    )
+    if st.session_state.pop("live_resume_requested", False):
+        if not has_llm_api_config():
+            st.sidebar.error("无法继续：请先检查 env.txt 里的 LLM API 配置。")
+            st.session_state.live_force_auto_off = True
+        elif not (st.session_state.get("live_current_run") or {}).get("id"):
+            st.sidebar.error("没有可继续的上一轮生成。请先点一次“一键启动所有 Agent”。")
+            st.session_state.live_force_auto_off = True
+        else:
+            with st.spinner("正在继续上一次 Agent 生成..."):
+                try:
+                    generate_live_agent_round(agents=agents, events_until=events, friendships_df=friendships_df)
+                    st.session_state.live_auto_last_ts = time.time()
+                    persist_live_state()
+                    rerun_app()
+                except RuntimeError as exc:
+                    st.session_state.live_auto_agents = False
+                    st.session_state.live_force_auto_off = True
+                    st.session_state.live_active_run_id = ""
+                    st.session_state.live_active_round_id = ""
+                    pause_live_run()
+                    persist_live_state()
+                    st.sidebar.error(str(exc))
+
+    round_count = int(st.session_state.get("live_auto_round", 0))
+    st.sidebar.caption(f"已完成自动轮次：{round_count}")
+    run = st.session_state.get("live_current_run") or {}
+    if run.get("id"):
+        st.sidebar.caption(f"当前生成目录：outputs/live_state/runs/{run['id']}")
+    sync_live_auto_settings()
 
 
 def render_global_controls(events: pd.DataFrame):
@@ -648,13 +2219,15 @@ def latest_activity_by_agent(events: pd.DataFrame) -> dict[str, str]:
 # ----------------------------- ChatLab -----------------------------
 
 
-def render_chatlab(agents, events_until, friendships_df, cursor_id, auto_scroll):
+def render_chatlab(agents, events_until, friendships_df, cursor_id, auto_scroll, live_api_mode=False):
     st.markdown("#### ChatLab：点击 Agent 后同步查看公聊、私聊、朋友圈、好友申请")
     if not agents:
         st.info("没有 Agent。")
         return
     if st.session_state.get("selected_chat_agent") not in agents:
         st.session_state.selected_chat_agent = agents[0]
+    if live_api_mode:
+        render_live_llm_controls(agents, events_until, friendships_df)
 
     left, right = st.columns([0.27, 0.73], gap="large")
     with left:
@@ -697,6 +2270,294 @@ def render_chatlab(agents, events_until, friendships_df, cursor_id, auto_scroll)
         with request_tab:
             req = friend_request_events(events_until, selected)
             render_requests_window(req, selected, cursor_id, auto_scroll)
+
+
+def render_live_llm_controls(agents, events_until, friendships_df):
+    selected = st.session_state.get("selected_chat_agent", agents[0])
+    with st.expander("单 Agent 调试", expanded=False):
+        if has_llm_api_config():
+            st.caption("API 状态：已从 env.txt / .env / 系统环境变量读取配置。")
+        else:
+            st.warning("API 状态：缺少 OPENAI_API_KEY 或 OPENAI_MODEL。请检查 env.txt。")
+        st.caption("全局的一键启动和持续自动运行已移到左侧边栏；这里仅保留单个 Agent 的人工调试入口。")
+
+        c1, c2, c3 = st.columns([1, 1, 1])
+        sender_index = agents.index(selected) if selected in agents else 0
+        sender = c1.selectbox("发言 Agent", agents, index=sender_index, key="live_sender_agent")
+        channel = c2.selectbox(
+            "频道",
+            ["public", "private", "moments"],
+            format_func=lambda value: {"public": "群聊", "private": "私聊", "moments": "朋友圈"}[value],
+            key="live_channel",
+        )
+        ticker = c3.text_input("Ticker / 主题", value="", key="live_ticker").strip().upper()
+
+        possible_receivers = [agent for agent in agents if agent != sender]
+        if channel == "private":
+            receivers = st.multiselect("私聊接收方", possible_receivers, key="live_receivers")
+        elif channel == "moments":
+            receivers = friends_for_agent(friendships_df, sender)
+            st.caption("朋友圈可见好友：" + (", ".join(receivers) if receivers else "暂无好友，仅自己可见"))
+        else:
+            receivers = []
+
+        instruction = st.text_area(
+            "给这个 Agent 的本轮任务 / 用户输入",
+            value="结合当前对话，给出你的市场观点或回应其他 agent。",
+            height=90,
+            key="live_instruction",
+        )
+        b1, b2 = st.columns([1, 1])
+        if b1.button("调用 LLM 生成并发送", type="primary", use_container_width=True):
+            if channel == "private" and not receivers:
+                st.error("私聊需要至少选择一个接收方。")
+            else:
+                with st.spinner(f"正在调用 LLM 生成 {sender} 的消息..."):
+                    try:
+                        content = call_llm_agent(sender, channel, receivers, instruction, events_until)
+                        append_live_message_event(sender, channel, receivers, content, ticker)
+                        st.session_state.selected_chat_agent = sender
+                        st.success("消息已写入实时事件流。")
+                        rerun_app()
+                    except RuntimeError as exc:
+                        st.error(str(exc))
+        if b2.button("直接发送用户输入", use_container_width=True):
+            if channel == "private" and not receivers:
+                st.error("私聊需要至少选择一个接收方。")
+            else:
+                append_live_message_event(sender, channel, receivers, instruction, ticker)
+                st.session_state.selected_chat_agent = sender
+                rerun_app()
+
+        with st.popover("好友关系"):
+            friend_target = st.selectbox("添加好友", possible_receivers, key="live_friend_target")
+            if st.button("建立好友关系", use_container_width=True):
+                append_live_friendship(sender, friend_target)
+                rerun_app()
+            current_friends = friends_for_agent(friendships_df, sender)
+            st.caption("当前好友：" + (", ".join(current_friends) if current_friends else "暂无"))
+
+
+def run_live_agent_autoplay(events_until: pd.DataFrame, agents: list[str], friendships_df: pd.DataFrame) -> None:
+    if not st.session_state.get("live_auto_agents", False):
+        return
+    if not has_llm_api_config():
+        st.session_state.live_auto_agents = False
+        st.session_state.live_force_auto_off = True
+        st.error("自动生成已停止：缺少 OPENAI_API_KEY 或 OPENAI_MODEL。请检查 env.txt。")
+        return
+    interval = int(st.session_state.get("live_auto_interval", 12))
+    last_ts = float(st.session_state.get("live_auto_last_ts", 0.0))
+    now_ts = time.time()
+    if now_ts - last_ts < interval:
+        time.sleep(max(0.2, min(2.0, interval - (now_ts - last_ts))))
+        rerun_app()
+        return
+    try:
+        generate_live_agent_round(agents=agents, events_until=events_until, friendships_df=friendships_df)
+        st.session_state.live_auto_last_ts = time.time()
+        persist_live_state()
+    except RuntimeError as exc:
+        st.session_state.live_auto_agents = False
+        st.session_state.live_force_auto_off = True
+        st.session_state.live_active_run_id = ""
+        st.session_state.live_active_round_id = ""
+        pause_live_run()
+        persist_live_state()
+        st.error(f"自动生成已停止：{exc}")
+        return
+    time.sleep(0.2)
+    rerun_app()
+
+
+def generate_live_agent_round(
+    agents: list[str],
+    events_until: pd.DataFrame,
+    friendships_df: pd.DataFrame,
+    channel: str = "full",
+) -> None:
+    usable_agents = [agent for agent in agents if agent in LIVE_AGENT_PROFILES]
+    if not usable_agents:
+        raise RuntimeError("没有可用于 LLM 交互的 agent。")
+    run = ensure_live_run()
+    round_number = int(run.get("round_count", 0)) + 1
+    round_id = f"round_{round_number:03d}"
+    st.session_state.live_active_run_id = run["id"]
+    st.session_state.live_active_round_id = round_id
+    start_event_id = next_live_event_id()
+    context = events_until.copy()
+    jobs = [{"sender": sender} for sender in usable_agents]
+
+    max_workers = max(1, min(len(jobs), env_int("LLM_MAX_WORKERS", len(jobs))))
+    results = []
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(
+                call_llm_agent_plan,
+                job["sender"],
+                usable_agents,
+                friendships_df,
+                context,
+            ): job
+            for job in jobs
+        }
+        for future in as_completed(futures):
+            job = futures[future]
+            results.append({**job, "plan": future.result()})
+
+    order = {job["sender"]: index for index, job in enumerate(jobs)}
+    for row in sorted(results, key=lambda item: order[item["sender"]]):
+        append_live_agent_plan_events(row["sender"], row["plan"], usable_agents, friendships_df)
+    end_event_id = next_live_event_id() - 1
+    run["round_count"] = round_number
+    run["status"] = "running" if st.session_state.get("live_auto_agents", False) else "paused"
+    run["updated_at"] = current_event_timestamp()
+    st.session_state.live_current_run = run
+    st.session_state.live_auto_round = int(st.session_state.get("live_auto_round", 0)) + 1
+    export_live_run_round(run, round_id, start_event_id, end_event_id, results)
+    st.session_state.live_active_run_id = ""
+    st.session_state.live_active_round_id = ""
+    persist_live_state()
+
+
+def sync_live_auto_settings() -> None:
+    persist_live_state()
+
+
+def export_live_run_round(run: dict, round_id: str, start_event_id: int, end_event_id: int, results: list[dict]) -> None:
+    run_id = str(run.get("id", ""))
+    if not run_id:
+        return
+    run_dir = LIVE_RUNS_DIR / run_id
+    round_dir = run_dir / "rounds" / round_id
+    round_dir.mkdir(parents=True, exist_ok=True)
+    events = pd.DataFrame(st.session_state.get("live_events", []))
+    states = pd.DataFrame(st.session_state.get("live_state_history", []))
+    if events.empty:
+        round_events = pd.DataFrame()
+        run_events = pd.DataFrame()
+    else:
+        event_ids = pd.to_numeric(events.get("event_id"), errors="coerce").fillna(0).astype(int)
+        round_events = events[(event_ids >= start_event_id) & (event_ids <= end_event_id)].copy()
+        run_events = events[events.get("run_id", "").astype(str) == run_id].copy() if "run_id" in events.columns else pd.DataFrame()
+    if states.empty or "run_id" not in states.columns:
+        round_states = pd.DataFrame()
+        run_states = pd.DataFrame()
+    else:
+        round_states = states[
+            (states["run_id"].astype(str) == run_id) & (states["round_id"].astype(str) == round_id)
+        ].copy()
+        run_states = states[states["run_id"].astype(str) == run_id].copy()
+
+    round_events.to_csv(round_dir / "unified_event_log.csv", index=False)
+    round_states.to_csv(round_dir / "agent_state_history.csv", index=False)
+    live_trades_table(round_events).to_csv(round_dir / "trade_log.csv", index=False)
+    live_messages_table(round_events).to_csv(round_dir / "message_log.csv", index=False)
+    live_social_events_table(round_events).to_csv(round_dir / "social_events.csv", index=False)
+    (round_dir / "raw_llm_plans.json").write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    tables_dir = run_dir / "tables"
+    tables_dir.mkdir(parents=True, exist_ok=True)
+    run_events.to_csv(tables_dir / "unified_event_log.csv", index=False)
+    run_states.to_csv(tables_dir / "agent_state_history.csv", index=False)
+    live_trades_table(run_events).to_csv(tables_dir / "trade_log.csv", index=False)
+    live_messages_table(run_events).to_csv(tables_dir / "message_log.csv", index=False)
+    live_social_events_table(run_events).to_csv(tables_dir / "social_events.csv", index=False)
+    live_social_edges_dataframe().to_csv(tables_dir / "social_graph_edges.csv", index=False)
+    pd.DataFrame(st.session_state.get("live_friendships", []), columns=["agent_a", "agent_b"]).to_csv(
+        tables_dir / "friendships.csv",
+        index=False,
+    )
+    live_groups_dataframe().to_csv(tables_dir / "group_memberships.csv", index=False)
+    write_live_run_metadata(
+        run,
+        last_round_id=round_id,
+        last_round_start_event_id=start_event_id,
+        last_round_end_event_id=end_event_id,
+    )
+
+
+def append_live_agent_plan_events(agent: str, plan: dict, agents: list[str], friendships_df: pd.DataFrame) -> None:
+    if not isinstance(plan, dict):
+        plan = {}
+    trade = trade_plan_from_agent_plan(agent, plan)
+    append_live_trade_event(agent, trade)
+    ticker = normalize_trade_plan(agent, trade).get("ticker", "")
+
+    public_message = coerce_plan_text(plan.get("public_message"))
+    if not public_message:
+        public_message = f"我本轮完成了交易判断，当前组合：{agent_portfolio_context(agent)}。"
+    append_live_message_event(agent, "public", [], public_message, ticker=ticker)
+
+    private_message = plan.get("private_message")
+    if isinstance(private_message, dict):
+        target = normalize_agent_target(private_message.get("to"), agent, agents)
+        content = coerce_plan_text(private_message.get("content"))
+        if target and content:
+            append_live_message_event(agent, "private", [target], content, ticker=ticker)
+
+    moment = coerce_plan_text(plan.get("moment"))
+    if moment:
+        current_friendships = pd.DataFrame(st.session_state.get("live_friendships", []), columns=["agent_a", "agent_b"])
+        append_live_message_event(agent, "moments", friends_for_agent(current_friendships, agent), moment, ticker=ticker)
+
+    friend_request = plan.get("friend_request")
+    if isinstance(friend_request, dict):
+        target = normalize_agent_target(friend_request.get("to"), agent, agents)
+        reason = coerce_plan_text(friend_request.get("reason")) or "希望建立信息共享关系。"
+        if target and not live_are_friends(agent, target):
+            add_live_friend_request_and_accept(agent, target, reason)
+            reinforce_live_influence(agent, [target])
+            st.session_state.event_cursor = next_live_event_id() - 1
+            persist_live_state()
+
+
+def coerce_plan_text(value) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, dict):
+        return ""
+    text = str(value).strip()
+    if text.lower() in {"", "null", "none"}:
+        return ""
+    return truncate(text, 320)
+
+
+def normalize_agent_target(value, sender: str, agents: list[str]) -> str:
+    target = str(value or "").strip()
+    if target in agents and target != sender:
+        return target
+    candidates = [agent for agent in agents if agent != sender]
+    if not candidates:
+        return ""
+    return candidates[stable_index(target or sender, len(candidates))]
+
+
+def auto_receivers_for(
+    sender: str,
+    agents: list[str],
+    friendships_df: pd.DataFrame,
+    channel: str,
+    index: int,
+) -> list[str]:
+    if channel == "public":
+        return []
+    friends = friends_for_agent(friendships_df, sender)
+    if channel == "moments":
+        return friends
+    candidates = friends or [agent for agent in agents if agent != sender]
+    if not candidates:
+        return []
+    return [candidates[index % len(candidates)]]
+
+
+def auto_agent_instruction(sender: str, channel: str, receivers: list[str]) -> str:
+    if channel == "private":
+        target = ", ".join(receivers) if receivers else "对方"
+        return f"你正在和 {target} 私聊。请结合最近上下文，推进一次具体交易讨论或信息交换。"
+    if channel == "moments":
+        return "你正在发朋友圈。请发布一条市场观察、持仓态度或社交策略动态。"
+    return "你正在群聊。请回应最近市场/其他 agent 观点，并给出一个清晰的交易或风险判断。"
 
 
 def render_chat_window(messages_df, viewer, title, cursor_id, auto_scroll, empty="暂无消息。"):
@@ -768,31 +2629,80 @@ def render_requests_window(req_df, viewer, cursor_id, auto_scroll):
         render_empty_phone(title, "当前游标下没有与该 Agent 相关的好友申请。")
         return
     cards = []
-    for _, row in req_df.sort_values("event_id").tail(160).iterrows():
-        event_type = str(row.get("event_type", ""))
-        if event_type == "friend_accept":
-            status = "accepted"
-            label = "已通过"
-        elif event_type == "friend_reject":
-            status = "rejected"
-            label = "已拒绝"
-        else:
-            status = "pending"
-            label = "等待验证"
-        sender = str(row.get("agent", ""))
-        counterparty = str(row.get("counterparty", ""))
+    for item in aggregate_friend_requests(req_df)[-160:]:
+        status = item["status"]
+        label = {"accepted": "已通过", "rejected": "已拒绝", "pending": "等待验证"}.get(status, "等待验证")
+        sender = item["sender"]
+        counterparty = item["counterparty"]
+        sent_line = f"发送时间：{item['request_time']}" if item.get("request_time") else "发送时间：未知"
+        decided_label = "通过时间" if status == "accepted" else "处理时间"
+        decided_line = f"{decided_label}：{item['decision_time']}" if item.get("decision_time") else ""
+        decision_html = f"<div class='request-detail'>{html.escape(decided_line)}</div>" if decided_line else ""
         cards.append(
             "<div class='request-card'>"
             f"<div class='avatar'>{html.escape(short_name(sender or counterparty))}</div>"
             "<div class='request-main'>"
-            f"<div class='request-title'>{html.escape(sender)} ↔ {html.escape(counterparty)}</div>"
-            f"<div class='request-detail'>{html.escape(str(row.get('detail', '')))}</div>"
-            f"<div class='request-detail'>#{int(row.get('event_id', 0))} · {html.escape(str(row.get('date', '')))}</div>"
+            f"<div class='request-title'>{html.escape(sender)} → {html.escape(counterparty)}</div>"
+            f"<div class='request-detail'>{html.escape(item.get('detail', ''))}</div>"
+            f"<div class='request-detail'>{html.escape(sent_line)}</div>"
+            f"{decision_html}"
             "</div>"
             f"<div class='status-{status}'>{label}</div>"
             "</div>"
         )
     render_phone_component(title, "".join(cards), cursor_id, auto_scroll, height=640, input_text="好友申请由仿真策略自动处理")
+
+
+def aggregate_friend_requests(req_df: pd.DataFrame) -> list[dict]:
+    items = {}
+    standalone = []
+    for _, row in req_df.sort_values("event_id").iterrows():
+        event_type = str(row.get("event_type", ""))
+        agent = str(row.get("agent", ""))
+        counterparty = str(row.get("counterparty", ""))
+        if not agent or not counterparty:
+            continue
+        if event_type == "friend_request":
+            key = (agent, counterparty)
+            items[key] = {
+                "sender": agent,
+                "counterparty": counterparty,
+                "status": "pending",
+                "request_time": str(row.get("event_time", "") or row.get("date", "")),
+                "decision_time": "",
+                "detail": str(row.get("detail", "")),
+                "event_id": int(row.get("event_id", 0)),
+            }
+        elif event_type in {"friend_accept", "friend_reject"}:
+            key = (counterparty, agent)
+            status = "accepted" if event_type == "friend_accept" else "rejected"
+            if key not in items:
+                items[key] = {
+                    "sender": counterparty,
+                    "counterparty": agent,
+                    "status": status,
+                    "request_time": "",
+                    "decision_time": str(row.get("event_time", "") or row.get("date", "")),
+                    "detail": str(row.get("detail", "")),
+                    "event_id": int(row.get("event_id", 0)),
+                }
+            else:
+                items[key]["status"] = status
+                items[key]["decision_time"] = str(row.get("event_time", "") or row.get("date", ""))
+                items[key]["event_id"] = max(items[key]["event_id"], int(row.get("event_id", 0)))
+        else:
+            standalone.append(
+                {
+                    "sender": agent,
+                    "counterparty": counterparty,
+                    "status": "pending",
+                    "request_time": str(row.get("event_time", "") or row.get("date", "")),
+                    "decision_time": "",
+                    "detail": str(row.get("detail", "")),
+                    "event_id": int(row.get("event_id", 0)),
+                }
+            )
+    return sorted([*items.values(), *standalone], key=lambda item: item.get("event_id", 0))
 
 
 def render_empty_phone(title, text):
@@ -801,16 +2711,23 @@ def render_empty_phone(title, text):
 
 def render_phone_component(title, body_html, cursor_id, auto_scroll, height=620, input_text="Message disabled in replay mode"):
     should_scroll = "true" if auto_scroll else "false"
+    body_id = dom_id("wechat_body", title, cursor_id, input_text)
     full = f"""
     {COMPONENT_CSS}
     <div class='wechat-phone'>
       <div class='wechat-header'>{html.escape(title)}</div>
-      <div id='wechatBody{cursor_id}' class='wechat-body'>{body_html}</div>
+      <div id='{body_id}' class='wechat-body'>{body_html}</div>
       <div class='wechat-input'>＋ <span>{html.escape(input_text)}</span></div>
     </div>
     <script>
-      const body = document.getElementById('wechatBody{cursor_id}');
-      if (body && {should_scroll}) {{ body.scrollTop = body.scrollHeight; }}
+      const body = document.getElementById('{body_id}');
+      function scrollChatToBottom() {{
+        if (!body || !{should_scroll}) return;
+        body.scrollTop = body.scrollHeight;
+      }}
+      requestAnimationFrame(scrollChatToBottom);
+      setTimeout(scrollChatToBottom, 80);
+      setTimeout(scrollChatToBottom, 260);
     </script>
     """
     components.html(full, height=height, scrolling=False)
@@ -819,16 +2736,37 @@ def render_phone_component(title, body_html, cursor_id, auto_scroll, height=620,
 # ----------------------------- social/network -----------------------------
 
 
-def render_social_view(edges, centrality_scores, friendships_df, groups_df, events_until, cursor_id, auto_scroll):
+def render_social_view(
+    edges,
+    centrality_scores,
+    friendships_df,
+    groups_df,
+    events_until,
+    cursor_id,
+    auto_scroll,
+    live_api_mode=False,
+):
+    edges = normalize_social_edges(edges)
+    influence_edges = edges[edges["kind"] == "influence"].copy() if not edges.empty else pd.DataFrame()
     c1, c2 = st.columns([1.3, 1])
     with c1:
         st.markdown("#### 社交图谱")
-        st.plotly_chart(network_figure(edges, centrality_scores), use_container_width=True)
+        st.plotly_chart(network_figure(edges, centrality_scores), use_container_width=True, key="social_graph_network")
+        st.caption("绿色实线是好友关系，灰色虚线是影响关系；好友关系来自 YAML 初始配置和通过的好友申请，影响关系来自消息传播。")
     with c2:
+        st.markdown("#### 关系类型")
+        unique_friendships = count_unique_friendships(friendships_df, edges)
+        influence_count = int(len(influence_edges)) if not influence_edges.empty else 0
+        m1, m2 = st.columns(2)
+        m1.metric("好友关系", unique_friendships)
+        m2.metric("影响关系", influence_count)
+        if live_api_mode and st.button("按 YAML 重新加载初始图谱", use_container_width=True):
+            reset_live_social_graph_from_yaml()
+            rerun_app()
         st.markdown("#### 好友申请实时流")
         req = events_until[events_until["event_type"].astype(str).str.startswith("friend")]
-        render_event_feed(req.tail(180), cursor_id, height=430, auto_scroll=auto_scroll)
-    f1, f2 = st.columns(2)
+        render_event_feed(req.tail(180), cursor_id, height=360, auto_scroll=auto_scroll)
+    f1, f2, f3 = st.columns(3)
     with f1:
         st.markdown("#### 好友关系")
         if friendships_df.empty:
@@ -836,6 +2774,14 @@ def render_social_view(edges, centrality_scores, friendships_df, groups_df, even
         else:
             st.dataframe(friendships_df, use_container_width=True, hide_index=True)
     with f2:
+        st.markdown("#### 影响关系")
+        if influence_edges.empty:
+            st.info("暂无影响关系。")
+        else:
+            view = influence_edges[["source", "target", "weight"]].copy()
+            view["weight"] = view["weight"].astype(float).round(2)
+            st.dataframe(view, use_container_width=True, hide_index=True)
+    with f3:
         st.markdown("#### 群 / 朋友圈可见范围")
         if groups_df.empty:
             st.info("暂无群组。")
@@ -845,6 +2791,7 @@ def render_social_view(edges, centrality_scores, friendships_df, groups_df, even
 
 def network_figure(edges: pd.DataFrame, centrality_scores: pd.DataFrame) -> go.Figure:
     fig = go.Figure()
+    edges = normalize_social_edges(edges)
     if edges.empty:
         fig.update_layout(height=520, margin=dict(l=10, r=10, t=10, b=10))
         return fig
@@ -861,16 +2808,34 @@ def network_figure(edges: pd.DataFrame, centrality_scores: pd.DataFrame) -> go.F
         )
         for index, node in enumerate(nodes)
     }
-    edge_x, edge_y = [], []
-    for _, row in edges.iterrows():
-        source, target = str(row["source"]), str(row["target"])
-        if source not in positions or target not in positions:
+    for kind in ["influence", "friendship"]:
+        subset = edges[edges["kind"] == kind]
+        edge_x, edge_y = [], []
+        for _, row in subset.iterrows():
+            source, target = str(row["source"]), str(row["target"])
+            if source not in positions or target not in positions:
+                continue
+            x0, y0 = positions[source]
+            x1, y1 = positions[target]
+            edge_x.extend([x0, x1, None])
+            edge_y.extend([y0, y1, None])
+        if not edge_x:
             continue
-        x0, y0 = positions[source]
-        x1, y1 = positions[target]
-        edge_x.extend([x0, x1, None])
-        edge_y.extend([y0, y1, None])
-    fig.add_trace(go.Scatter(x=edge_x, y=edge_y, mode="lines", line=dict(width=1), hoverinfo="none"))
+        fig.add_trace(
+            go.Scatter(
+                x=edge_x,
+                y=edge_y,
+                mode="lines",
+                line=dict(
+                    width=3 if kind == "friendship" else 1.4,
+                    color=RELATIONSHIP_COLORS.get(kind, "#64748b"),
+                    dash="solid" if kind == "friendship" else "dot",
+                ),
+                hoverinfo="none",
+                name=RELATIONSHIP_LABELS.get(kind, kind),
+            )
+        )
+    relationship_stats = node_relationship_stats(edges)
     sizes = [22 + 150 * float(center.get(node, 0.03)) for node in nodes]
     fig.add_trace(
         go.Scatter(
@@ -880,22 +2845,96 @@ def network_figure(edges: pd.DataFrame, centrality_scores: pd.DataFrame) -> go.F
             text=nodes,
             textposition="top center",
             marker=dict(size=sizes, showscale=False),
-            hovertext=[f"{node}<br>pagerank={center.get(node, 0):.4f}" for node in nodes],
+            hovertext=[
+                (
+                    f"{node}<br>"
+                    f"好友数={relationship_stats.get(node, {}).get('friends', 0)}<br>"
+                    f"影响发出={relationship_stats.get(node, {}).get('influence_out', 0)}<br>"
+                    f"影响收到={relationship_stats.get(node, {}).get('influence_in', 0)}<br>"
+                    f"pagerank={center.get(node, 0):.4f}"
+                )
+                for node in nodes
+            ],
             hoverinfo="text",
+            name="Agent",
         )
     )
     fig.update_xaxes(visible=False)
     fig.update_yaxes(visible=False)
-    fig.update_layout(height=520, showlegend=False, margin=dict(l=10, r=10, t=10, b=10))
+    fig.update_layout(
+        height=520,
+        showlegend=True,
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0),
+        margin=dict(l=10, r=10, t=36, b=10),
+    )
     return fig
+
+
+def normalize_social_edges(edges: pd.DataFrame) -> pd.DataFrame:
+    columns = ["source", "target", "weight", "kind"]
+    if edges is None or edges.empty:
+        return pd.DataFrame(columns=columns)
+    work = edges.copy()
+    for column in columns:
+        if column not in work.columns:
+            work[column] = "influence" if column == "kind" else (1.0 if column == "weight" else "")
+    work["kind"] = work["kind"].fillna("influence").astype(str).str.strip().str.lower()
+    work.loc[~work["kind"].isin(RELATIONSHIP_LABELS), "kind"] = "influence"
+    work["source"] = work["source"].fillna("").astype(str)
+    work["target"] = work["target"].fillna("").astype(str)
+    work["weight"] = pd.to_numeric(work["weight"], errors="coerce").fillna(1.0)
+    work = work[(work["source"] != "") & (work["target"] != "")]
+    return work[columns]
+
+
+def count_unique_friendships(friendships_df: pd.DataFrame, edges: pd.DataFrame) -> int:
+    pairs = set()
+    if friendships_df is not None and not friendships_df.empty and {"agent_a", "agent_b"} <= set(friendships_df.columns):
+        for _, row in friendships_df.iterrows():
+            a, b = str(row.get("agent_a", "")), str(row.get("agent_b", ""))
+            if a and b and a != b:
+                pairs.add(tuple(sorted([a, b])))
+    for _, row in normalize_social_edges(edges).iterrows():
+        if row.get("kind") != "friendship":
+            continue
+        a, b = str(row.get("source", "")), str(row.get("target", ""))
+        if a and b and a != b:
+            pairs.add(tuple(sorted([a, b])))
+    return len(pairs)
+
+
+def node_relationship_stats(edges: pd.DataFrame) -> dict[str, dict[str, int]]:
+    stats = {
+        agent: {"friends": 0, "influence_out": 0, "influence_in": 0}
+        for agent in sorted(set(edges["source"]) | set(edges["target"]))
+    }
+    friend_sets = {agent: set() for agent in stats}
+    for _, row in edges.iterrows():
+        source, target, kind = str(row["source"]), str(row["target"]), str(row["kind"])
+        if source not in stats:
+            stats[source] = {"friends": 0, "influence_out": 0, "influence_in": 0}
+            friend_sets[source] = set()
+        if target not in stats:
+            stats[target] = {"friends": 0, "influence_out": 0, "influence_in": 0}
+            friend_sets[target] = set()
+        if kind == "friendship":
+            friend_sets[source].add(target)
+            friend_sets[target].add(source)
+        else:
+            stats[source]["influence_out"] += 1
+            stats[target]["influence_in"] += 1
+    for agent, friends in friend_sets.items():
+        stats[agent]["friends"] = len(friends)
+    return stats
 
 
 # ----------------------------- generic renderers -----------------------------
 
 
 def render_event_feed(events_df, cursor_id, height=500, auto_scroll=True):
+    feed_id = dom_id("feed", cursor_id, len(events_df))
     if events_df.empty:
-        body = "<div class='feed-panel'><div class='feed-row'>当前视图没有事件。</div></div>"
+        body = f"<div id='{feed_id}' class='feed-panel'><div class='feed-row'>当前视图没有事件。</div></div>"
     else:
         rows = []
         for _, row in events_df.sort_values("event_id").iterrows():
@@ -917,14 +2956,20 @@ def render_event_feed(events_df, cursor_id, height=500, auto_scroll=True):
                 f"{money_line}"
                 "</div>"
             )
-        body = f"<div id='feedBody{cursor_id}' class='feed-panel'>{''.join(rows)}</div>"
+        body = f"<div id='{feed_id}' class='feed-panel'>{''.join(rows)}</div>"
     should_scroll = "true" if auto_scroll else "false"
     full = f"""
     {COMPONENT_CSS}
     {body}
     <script>
-      const feed = document.getElementById('feedBody{cursor_id}');
-      if (feed && {should_scroll}) {{ feed.scrollTop = feed.scrollHeight; }}
+      const feed = document.getElementById('{feed_id}');
+      function scrollFeedToBottom() {{
+        if (!feed || !{should_scroll}) return;
+        feed.scrollTop = feed.scrollHeight;
+      }}
+      requestAnimationFrame(scrollFeedToBottom);
+      setTimeout(scrollFeedToBottom, 80);
+      setTimeout(scrollFeedToBottom, 260);
     </script>
     """
     components.html(full, height=height, scrolling=False)
@@ -972,12 +3017,18 @@ def state_as_of(state_df: pd.DataFrame, date: str) -> pd.DataFrame:
     if state_df.empty:
         return pd.DataFrame()
     work = state_df.copy()
+    work["_seq"] = range(len(work))
     work["date_ts"] = pd.to_datetime(work["date"], errors="coerce")
     cutoff = pd.Timestamp(date)
     work = work[work["date_ts"] <= cutoff]
     if work.empty:
         return pd.DataFrame()
-    return work.sort_values(["date_ts", "agent"]).groupby("agent", as_index=False).tail(1).drop(columns=["date_ts"])
+    return (
+        work.sort_values(["date_ts", "agent", "_seq"])
+        .groupby("agent", as_index=False)
+        .tail(1)
+        .drop(columns=["date_ts", "_seq"])
+    )
 
 
 def message_counts_by_agent(events_df: pd.DataFrame) -> dict[str, int]:
@@ -1054,6 +3105,40 @@ def event_receivers(row) -> list[str]:
 
 
 # ----------------------------- formatting helpers -----------------------------
+
+
+def dom_id(prefix: str, *parts) -> str:
+    text = "_".join(str(part) for part in parts)
+    return f"{prefix}_{abs(hash(text))}"
+
+
+def env_float(name: str, default: float) -> float:
+    try:
+        return float(os.getenv(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
+def env_int(name: str, default: int) -> int:
+    try:
+        return int(float(os.getenv(name, default)))
+    except (TypeError, ValueError):
+        return default
+
+
+def safe_float(value, default: float = 0.0) -> float:
+    try:
+        if value is None or (isinstance(value, float) and pd.isna(value)):
+            return default
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def stable_index(text: str, modulo: int) -> int:
+    if modulo <= 0:
+        return 0
+    return sum((index + 1) * ord(char) for index, char in enumerate(str(text))) % modulo
 
 
 def parse_payload(value) -> dict:
@@ -1151,4 +3236,5 @@ def badge_for_detail(detail: str) -> tuple[str, str]:
     return "badge-pnl", "LIVE"
 
 
-main()
+if __name__ == "__main__":
+    main()

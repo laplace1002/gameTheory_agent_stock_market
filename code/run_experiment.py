@@ -93,11 +93,13 @@ def run(
     agents = build_agents(social_graph)
     social_graph.load_scenario(scenario, agents)
     board.sync_groups(social_graph)
-    _run_friend_request_round(
+    setup_date = str(prices["date"].min())[:10]
+    social_events = _run_friend_request_round(
         agents=agents,
         social_graph=social_graph,
         board=board,
         rules=scenario.get("friend_request_rules", {}),
+        date=setup_date,
     )
     channels = EXPERIMENTS[experiment]["channels"]
     _set_agent_channels(agents, channels)
@@ -130,6 +132,10 @@ def run(
     agent_registry = _agent_registry_dataframe(agents)
     friendships = social_graph.friendships_dataframe()
     group_memberships = social_graph.groups_dataframe()
+    social_events = pd.DataFrame(
+        social_events,
+        columns=["date", "event_type", "sender", "receiver", "status", "detail"],
+    )
 
     prices.to_csv(out_dir / "tables" / "market_history.csv", index=False)
     equity.to_csv(out_dir / "tables" / "equity_curve.csv", index=False)
@@ -144,6 +150,7 @@ def run(
     agent_registry.to_csv(out_dir / "tables" / "agent_registry.csv", index=False)
     friendships.to_csv(out_dir / "tables" / "friendships.csv", index=False)
     group_memberships.to_csv(out_dir / "tables" / "group_memberships.csv", index=False)
+    social_events.to_csv(out_dir / "tables" / "social_events.csv", index=False)
 
     _write_figures(prices, equity, metrics, out_dir)
 
@@ -312,9 +319,10 @@ def _communicating_agents(agents) -> list:
     return [agent for agent in agents if isinstance(agent, CommunicatingAgent)]
 
 
-def _run_friend_request_round(agents, social_graph, board, rules, n_rounds=3) -> None:
+def _run_friend_request_round(agents, social_graph, board, rules, date, n_rounds=3) -> list[dict]:
     communicating = _communicating_agents(agents)
-    for _ in range(n_rounds):
+    events = []
+    for round_index in range(n_rounds):
         for agent in communicating:
             candidates = [
                 candidate
@@ -324,8 +332,30 @@ def _run_friend_request_round(agents, social_graph, board, rules, n_rounds=3) ->
             candidates.sort(key=lambda candidate: -social_graph._strategy_similarity(agent, candidate))
             for candidate in candidates[:2]:
                 social_graph.send_friend_request(agent.name, candidate.name)
-        social_graph.process_requests(agents, rules)
+                events.append(
+                    {
+                        "date": date,
+                        "event_type": "friend_request",
+                        "sender": agent.name,
+                        "receiver": candidate.name,
+                        "status": "pending",
+                        "detail": f"round {round_index + 1}: {agent.name} requested {candidate.name}",
+                    }
+                )
+        accepted = social_graph.process_requests(agents, rules)
+        for sender, receiver in accepted:
+            events.append(
+                {
+                    "date": date,
+                    "event_type": "friend_accept",
+                    "sender": sender,
+                    "receiver": receiver,
+                    "status": "accepted",
+                    "detail": f"{receiver} accepted {sender}",
+                }
+            )
         board.sync_groups(social_graph)
+    return events
 
 
 def _choose_channel(agent, channels, step) -> str:

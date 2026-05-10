@@ -64,6 +64,15 @@ scenarios:
       - [SocialGraphAgent, DynamicTeamAgent]
       - [SocialGraphAgent, CommitteeTeamAgent]
       - [DynamicTeamAgent, CommitteeTeamAgent]
+    influence_edges:
+      - [SocialGraphAgent, DynamicTeamAgent, 1.0]
+      - [DynamicTeamAgent, CommitteeTeamAgent, 1.0]
+      - [CommitteeTeamAgent, SocialGraphAgent, 1.0]
+      - [SocialGraphAgent, MomentumAgent, 0.7]
+      - [DynamicTeamAgent, MeanReversionAgent, 0.7]
+      - [CommitteeTeamAgent, LowVolatilityAgent, 0.7]
+      - [SocialGraphAgent, DrawdownBuyerAgent, 0.7]
+      - [DynamicTeamAgent, RandomAgent, 0.7]
     groups:
       Core Desk: [SocialGraphAgent, DynamicTeamAgent, CommitteeTeamAgent]
       Outer Desk: [MomentumAgent, MeanReversionAgent, LowVolatilityAgent, DrawdownBuyerAgent, RandomAgent]

@@ -1,0 +1,30 @@
+date,event_type,sender,receiver,status,detail
+2023-01-02,friend_request,TruthfulReporterAgent,SocialGraphAgent,pending,round 1: TruthfulReporterAgent requested SocialGraphAgent
+2023-01-02,friend_request,TruthfulReporterAgent,FreeRiderAgent,pending,round 1: TruthfulReporterAgent requested FreeRiderAgent
+2023-01-02,friend_request,PersuaderAgent,ContrarianAgent,pending,round 1: PersuaderAgent requested ContrarianAgent
+2023-01-02,friend_request,PersuaderAgent,SocialGraphAgent,pending,round 1: PersuaderAgent requested SocialGraphAgent
+2023-01-02,friend_request,FreeRiderAgent,SocialGraphAgent,pending,round 1: FreeRiderAgent requested SocialGraphAgent
+2023-01-02,friend_request,FreeRiderAgent,TruthfulReporterAgent,pending,round 1: FreeRiderAgent requested TruthfulReporterAgent
+2023-01-02,friend_request,ContrarianAgent,PersuaderAgent,pending,round 1: ContrarianAgent requested PersuaderAgent
+2023-01-02,friend_request,ContrarianAgent,SocialGraphAgent,pending,round 1: ContrarianAgent requested SocialGraphAgent
+2023-01-02,friend_request,SocialGraphAgent,TruthfulReporterAgent,pending,round 1: SocialGraphAgent requested TruthfulReporterAgent
+2023-01-02,friend_request,SocialGraphAgent,PersuaderAgent,pending,round 1: SocialGraphAgent requested PersuaderAgent
+2023-01-02,friend_accept,TruthfulReporterAgent,SocialGraphAgent,accepted,SocialGraphAgent accepted TruthfulReporterAgent
+2023-01-02,friend_accept,PersuaderAgent,ContrarianAgent,accepted,ContrarianAgent accepted PersuaderAgent
+2023-01-02,friend_accept,PersuaderAgent,SocialGraphAgent,accepted,SocialGraphAgent accepted PersuaderAgent
+2023-01-02,friend_accept,FreeRiderAgent,SocialGraphAgent,accepted,SocialGraphAgent accepted FreeRiderAgent
+2023-01-02,friend_accept,ContrarianAgent,SocialGraphAgent,accepted,SocialGraphAgent accepted ContrarianAgent
+2023-01-02,friend_request,TruthfulReporterAgent,FreeRiderAgent,pending,round 2: TruthfulReporterAgent requested FreeRiderAgent
+2023-01-02,friend_request,TruthfulReporterAgent,ContrarianAgent,pending,round 2: TruthfulReporterAgent requested ContrarianAgent
+2023-01-02,friend_request,PersuaderAgent,FreeRiderAgent,pending,round 2: PersuaderAgent requested FreeRiderAgent
+2023-01-02,friend_request,FreeRiderAgent,TruthfulReporterAgent,pending,round 2: FreeRiderAgent requested TruthfulReporterAgent
+2023-01-02,friend_request,FreeRiderAgent,PersuaderAgent,pending,round 2: FreeRiderAgent requested PersuaderAgent
+2023-01-02,friend_request,ContrarianAgent,TruthfulReporterAgent,pending,round 2: ContrarianAgent requested TruthfulReporterAgent
+2023-01-02,friend_request,ContrarianAgent,FreeRiderAgent,pending,round 2: ContrarianAgent requested FreeRiderAgent
+2023-01-02,friend_request,TruthfulReporterAgent,FreeRiderAgent,pending,round 3: TruthfulReporterAgent requested FreeRiderAgent
+2023-01-02,friend_request,TruthfulReporterAgent,ContrarianAgent,pending,round 3: TruthfulReporterAgent requested ContrarianAgent
+2023-01-02,friend_request,PersuaderAgent,FreeRiderAgent,pending,round 3: PersuaderAgent requested FreeRiderAgent
+2023-01-02,friend_request,FreeRiderAgent,TruthfulReporterAgent,pending,round 3: FreeRiderAgent requested TruthfulReporterAgent
+2023-01-02,friend_request,FreeRiderAgent,PersuaderAgent,pending,round 3: FreeRiderAgent requested PersuaderAgent
+2023-01-02,friend_request,ContrarianAgent,TruthfulReporterAgent,pending,round 3: ContrarianAgent requested TruthfulReporterAgent
+2023-01-02,friend_request,ContrarianAgent,FreeRiderAgent,pending,round 3: ContrarianAgent requested FreeRiderAgent

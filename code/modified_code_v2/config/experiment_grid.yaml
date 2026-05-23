@@ -1,0 +1,22 @@
+experiments:
+  - id: B0_equal_asset
+    type: asset_baseline
+  - id: B1_single_agents
+    type: single_agent
+  - id: B2_single_generalist_llm
+    type: llm_generalist
+  - id: B3_strategy_portfolio_no_agent
+    type: strategy_portfolio
+  - id: A1_equal_agent_portfolio
+    type: agent_portfolio
+    manager: equal
+  - id: A2_hedge_agent_portfolio
+    type: agent_portfolio
+    manager: hedge
+  - id: A3_correlation_agent_portfolio
+    type: agent_portfolio
+    manager: correlation_aware
+  - id: A4_full_social_agent_portfolio
+    type: agent_portfolio
+    manager: hedge
+    communication: full_social

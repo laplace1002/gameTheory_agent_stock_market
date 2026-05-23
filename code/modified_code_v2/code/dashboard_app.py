@@ -337,6 +337,11 @@ def main():
             registry,
             strategy_history,
         ) = load_live_api_tables()
+        manager_equity = pd.DataFrame()
+        meta_weights = pd.DataFrame()
+        agent_corr = pd.DataFrame()
+        experiment_comparison = pd.DataFrame()
+        drift_log = pd.DataFrame()
     else:
         output_dirs = discover_output_dirs()
         selected_out = st.sidebar.selectbox("结果目录", [str(path) for path in output_dirs], index=0)
@@ -356,6 +361,11 @@ def main():
         market = read_table(OUT_DIR, "market_history.csv")
         registry = read_table(OUT_DIR, "agent_registry.csv")
         strategy_history = read_table(OUT_DIR, "strategy_choice_history.csv")
+        manager_equity = read_table(OUT_DIR, "manager_equity_curve.csv")
+        meta_weights = read_table(OUT_DIR, "meta_weight_history.csv")
+        agent_corr = read_table(OUT_DIR, "agent_return_correlation.csv")
+        experiment_comparison = read_table(OUT_DIR, "experiment_comparison.csv")
+        drift_log = read_table(OUT_DIR, "drift_log.csv")
 
     if event_log.empty:
         event_log = build_legacy_event_log(trades, messages, social_events, equity)
@@ -378,13 +388,26 @@ def main():
 
     render_sync_bar(cursor_id, event_log, current_event, current_date, OUT_DIR)
 
-    tab_overview, tab_hall, tab_chat, tab_social, tab_tables = st.tabs(["实时总控", "交易大厅", "ChatLab", "社交关系", "研究表格"])
+    tab_overview, tab_hall, tab_portfolio, tab_chat, tab_social, tab_tables = st.tabs(
+        ["实时总控", "交易大厅", "Portfolio Hall", "ChatLab", "社交关系", "研究表格"]
+    )
 
     with tab_overview:
         render_overview(metrics, state_now, events_until, event_log, current_date, strategy_history)
 
     with tab_hall:
         render_trading_hall(state_now, events_until, cursor_id, visible_event_types, auto_scroll)
+
+    with tab_portfolio:
+        render_portfolio_hall(
+            equity,
+            manager_equity,
+            meta_weights,
+            agent_corr,
+            experiment_comparison,
+            registry,
+            drift_log,
+        )
 
     with tab_chat:
         render_chatlab(agents, events_until, friendships, cursor_id, auto_scroll, live_api_mode=live_api_mode)
@@ -402,7 +425,20 @@ def main():
         )
 
     with tab_tables:
-        render_tables(event_log, state_history, messages, trades, social_events, metrics, strategy_history)
+        render_tables(
+            event_log,
+            state_history,
+            messages,
+            trades,
+            social_events,
+            metrics,
+            strategy_history,
+            manager_equity,
+            meta_weights,
+            agent_corr,
+            experiment_comparison,
+            drift_log,
+        )
 
     if live_api_mode:
         run_live_agent_autoplay(event_log, agents, friendships)
@@ -1286,11 +1322,20 @@ def update_live_graph_from_message(agent: str, channel: str, receivers: list[str
         if live_are_friends(agent, receiver):
             reinforce_live_influence(agent, [receiver])
             continue
-        add_live_friend_request_and_accept(agent, receiver, detail)
+        add_live_friend_request_with_decision(
+            agent,
+            receiver,
+            "私聊触达非好友，仅记录申请意向，等待对方判断。",
+            pd.DataFrame(st.session_state.get("live_events", [])),
+        )
         reinforce_live_influence(agent, [receiver])
 
 
-def add_live_friend_request_and_accept(agent: str, receiver: str, detail: str) -> None:
+def append_live_friend_request_event(agent: str, receiver: str, reason: str, trigger: str = "") -> int | None:
+    if not agent or not receiver or agent == receiver or live_are_friends(agent, receiver):
+        return None
+    if has_recent_friend_request(agent, receiver):
+        return None
     now = current_event_timestamp()
     request_id = next_live_event_id()
     append_live_event(
@@ -1312,14 +1357,49 @@ def add_live_friend_request_and_accept(agent: str, receiver: str, detail: str) -
             "equity": 0.0,
             "pnl": 0.0,
             "pnl_pct": 0.0,
-            "detail": f"{agent} 向 {receiver} 发起好友申请：{truncate(detail, 120)}",
-            "payload": json.dumps({"trigger": truncate(detail, 120)}, ensure_ascii=False),
+            "detail": f"{agent} 向 {receiver} 发起好友申请：{truncate(reason, 120)}",
+            "payload": json.dumps(
+                {
+                    "reason": truncate(reason, 160),
+                    "trigger": truncate(trigger, 160),
+                    "status": "pending",
+                },
+                ensure_ascii=False,
+            ),
             **live_event_context(),
         }
     )
+    return request_id
+
+
+def has_recent_friend_request(agent: str, receiver: str, window: int = 80) -> bool:
+    pair = {agent, receiver}
+    events = st.session_state.get("live_events", [])[-window:]
+    for event in reversed(events):
+        if not str(event.get("event_type", "")).startswith("friend"):
+            continue
+        if {str(event.get("agent", "")), str(event.get("counterparty", ""))} == pair:
+            return True
+    return False
+
+
+def add_live_friend_request_with_decision(agent: str, receiver: str, reason: str, recent_events: pd.DataFrame | None = None) -> None:
+    request_id = append_live_friend_request_event(agent, receiver, reason)
+    if request_id is None:
+        return
+    decision = decide_live_friend_request(agent, receiver, reason, recent_events)
+    if decision.get("accept"):
+        accept_live_friend_request(agent, receiver, decision.get("reason", "对方判断该连接有信息价值。"))
+    else:
+        reject_live_friend_request(agent, receiver, decision.get("reason", "对方判断当前没有建立好友关系的必要。"))
+
+
+def accept_live_friend_request(agent: str, receiver: str, reason: str) -> None:
     pair = tuple(sorted([agent, receiver]))
-    st.session_state.live_friendships.append(pair)
+    if pair not in {tuple(sorted(item)) for item in st.session_state.get("live_friendships", [])}:
+        st.session_state.live_friendships.append(pair)
     accept_id = next_live_event_id()
+    now = current_event_timestamp()
     append_live_event(
         {
             "event_id": accept_id,
@@ -1339,12 +1419,62 @@ def add_live_friend_request_and_accept(agent: str, receiver: str, detail: str) -
             "equity": 0.0,
             "pnl": 0.0,
             "pnl_pct": 0.0,
-            "detail": f"{receiver} 通过了 {agent} 的好友申请，社交图谱已更新。",
-            "payload": "{}",
+            "detail": f"{receiver} 通过了 {agent} 的好友申请：{truncate(reason, 120)}",
+            "payload": json.dumps({"reason": truncate(reason, 160), "status": "accepted"}, ensure_ascii=False),
             **live_event_context(),
         }
     )
     refresh_live_friend_counts()
+
+
+def reject_live_friend_request(agent: str, receiver: str, reason: str) -> None:
+    reject_id = next_live_event_id()
+    now = current_event_timestamp()
+    append_live_event(
+        {
+            "event_id": reject_id,
+            "date": now[:10],
+            "event_time": now,
+            "source": "llm_api",
+            "event_type": "friend_reject",
+            "agent": receiver,
+            "counterparty": agent,
+            "channel": "friend_request",
+            "ticker": "",
+            "side": "",
+            "shares": 0,
+            "price": 0.0,
+            "notional": 0.0,
+            "cash": 0.0,
+            "equity": 0.0,
+            "pnl": 0.0,
+            "pnl_pct": 0.0,
+            "detail": f"{receiver} 拒绝了 {agent} 的好友申请：{truncate(reason, 120)}",
+            "payload": json.dumps({"reason": truncate(reason, 160), "status": "rejected"}, ensure_ascii=False),
+            **live_event_context(),
+        }
+    )
+
+
+def decide_live_friend_request(agent: str, receiver: str, reason: str, recent_events: pd.DataFrame | None = None) -> dict:
+    if not truthy_env("LLM_FRIEND_DECISION", default=True) or not has_llm_api_config():
+        return heuristic_friend_decision(agent, receiver, reason)
+    try:
+        context = recent_events if recent_events is not None else pd.DataFrame()
+        return call_llm_friend_decision(agent, receiver, reason, context)
+    except RuntimeError:
+        return heuristic_friend_decision(agent, receiver, reason)
+
+
+def heuristic_friend_decision(agent: str, receiver: str, reason: str) -> dict:
+    current_friends = [pair for pair in st.session_state.get("live_friendships", []) if receiver in pair]
+    text = str(reason or "")
+    useful_terms = ["相关", "互补", "风险", "回撤", "低波", "趋势", "信息", "验证", "分歧", "对冲", "合作"]
+    noisy_terms = ["随便", "热闹", "所有人", "无理由", "诗", "火焰", "余烬", "旧帐篷"]
+    accept = len(current_friends) < 5 and any(term in text for term in useful_terms) and not any(term in text for term in noisy_terms)
+    if accept:
+        return {"accept": True, "reason": "申请理由包含可验证的信息互补价值。"}
+    return {"accept": False, "reason": "申请理由不足或当前好友数已较高，暂不建立连接。"}
 
 
 def live_are_friends(agent_a: str, agent_b: str) -> bool:
@@ -1599,7 +1729,7 @@ def call_llm_agent(agent: str, channel: str, receivers: list[str], instruction: 
 
     payload = {
         "model": model,
-        "temperature": env_float("LLM_TEMPERATURE", 0.7),
+        "temperature": env_float("LLM_TEMPERATURE", 0.35),
         "messages": [
             {
                 "role": "system",
@@ -1607,6 +1737,7 @@ def call_llm_agent(agent: str, channel: str, receivers: list[str], instruction: 
                     f"你是 {agent}。你的角色设定：{LIVE_AGENT_PROFILES.get(agent, '交易 agent')} "
                     "你正在一个多智能体股票交易社交系统中互动。"
                     "请用中文、第一人称、简洁地发言。不要输出 Markdown，不要解释自己是 AI。"
+                    "语言必须像交易员工作消息，禁止诗句、隐喻、口号、hashtag 和文艺化表达。"
                     "你的回复会直接进入交易大厅 ChatLab。"
                 ),
             },
@@ -1617,83 +1748,7 @@ def call_llm_agent(agent: str, channel: str, receivers: list[str], instruction: 
                     f"接收方：{', '.join(receivers) if receivers else '所有人'}\n"
                     f"最近对话：\n{recent_chat_context(recent_events)}\n\n"
                     f"本轮任务：{instruction}\n"
-                    "请生成这一条 agent 消息，长度控制在 1-3 句话。"
-                ),
-            },
-        ],
-    }
-    request = urllib.request.Request(
-        f"{base_url}/chat/completions",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(request, timeout=env_int("LLM_TIMEOUT", 60)) as response:
-            data = json.loads(response.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        detail = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
-    except urllib.error.URLError as exc:
-        raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
-    try:
-        return str(data["choices"][0]["message"]["content"]).strip()
-    except (KeyError, IndexError, TypeError) as exc:
-        raise RuntimeError(f"LLM API 返回格式无法解析：{data}") from exc
-
-
-def call_llm_agent_plan(
-    agent: str,
-    agents: list[str],
-    friendships_df: pd.DataFrame,
-    recent_events: pd.DataFrame,
-) -> dict:
-    load_dotenv_files()
-    api_key = get_llm_setting("OPENAI_API_KEY")
-    base_url = get_llm_setting("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
-    model = get_llm_setting("OPENAI_MODEL", "gpt-4o-mini")
-    if not api_key:
-        raise RuntimeError("缺少 API key。请在 .env、env.txt 或系统环境变量中设置 OPENAI_API_KEY。")
-    if not model:
-        raise RuntimeError("缺少模型名。请在 .env、env.txt 或系统环境变量中设置 OPENAI_MODEL。")
-
-    peers = [name for name in agents if name != agent]
-    friends = friends_for_agent(friendships_df, agent)
-    payload = {
-        "model": model,
-        "temperature": env_float("LLM_TEMPERATURE", 0.7),
-        "messages": [
-            {
-                "role": "system",
-                "content": (
-                    f"你是 {agent}。角色设定：{LIVE_AGENT_PROFILES.get(agent, '交易 agent')} "
-                    "你在一个多智能体股票交易社交系统中同时交易和社交。"
-                    "你必须只输出一个 JSON 对象，不要输出 Markdown、代码块或额外解释。"
-                ),
-            },
-            {
-                "role": "user",
-                "content": (
-                    "本轮需要一次性决定你的所有行为：交易、公聊、私聊、朋友圈、好友申请。\n"
-                    f"可交易 ticker：{', '.join(LIVE_TICKER_PRICES)}\n"
-                    f"其他 Agent：{', '.join(peers)}\n"
-                    f"当前好友：{', '.join(friends) if friends else '暂无'}\n"
-                    f"你的组合状态：{agent_portfolio_context(agent)}\n"
-                    f"最近事件：\n{recent_event_context(recent_events)}\n\n"
-                    "输出 JSON schema：\n"
-                    "{\n"
-                    '  "trade": {"side": "BUY|SELL|HOLD", "ticker": "AAPL", "shares": 1, "price": 0, "rationale": "交易理由"},\n'
-                    '  "public_message": "发到群聊的一句话",\n'
-                    '  "private_message": {"to": "某个 Agent", "content": "私聊内容"},\n'
-                    '  "moment": "朋友圈动态",\n'
-                    '  "friend_request": {"to": "某个非好友 Agent", "reason": "申请理由"}\n'
-                    "}\n"
-                    "要求：trade 必须存在，优先给出可执行的 BUY 或 SELL，只有风险理由明确时才 HOLD；"
-                    "public_message 必须存在；如果消息里说加仓、买入、减仓、卖出，trade.side 必须与消息一致；"
-                    "private_message、moment、friend_request 可为空字符串或 null。"
+                    "请生成这一条 agent 消息，长度控制在 1 句话，必须具体到 ticker、方向或风险点。"
                 ),
             },
         ],
@@ -1717,12 +1772,161 @@ def call_llm_agent_plan(
         raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
     try:
         content = str(data["choices"][0]["message"]["content"]).strip()
+        return sanitize_agent_text(content, "我本轮只更新交易判断，不发布额外观点。", limit=120)
+    except (KeyError, IndexError, TypeError) as exc:
+        raise RuntimeError(f"LLM API 返回格式无法解析：{data}") from exc
+
+
+def call_llm_agent_plan(
+    agent: str,
+    agents: list[str],
+    friendships_df: pd.DataFrame,
+    recent_events: pd.DataFrame,
+) -> dict:
+    load_dotenv_files()
+    api_key = get_llm_setting("OPENAI_API_KEY")
+    base_url = get_llm_setting("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+    model = get_llm_setting("OPENAI_MODEL", "gpt-4o-mini")
+    if not api_key:
+        raise RuntimeError("缺少 API key。请在 .env、env.txt 或系统环境变量中设置 OPENAI_API_KEY。")
+    if not model:
+        raise RuntimeError("缺少模型名。请在 .env、env.txt 或系统环境变量中设置 OPENAI_MODEL。")
+
+    peers = [name for name in agents if name != agent]
+    friends = friends_for_agent(friendships_df, agent)
+    payload = {
+        "model": model,
+        "temperature": env_float("LLM_TEMPERATURE", 0.35),
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    f"你是 {agent}。角色设定：{LIVE_AGENT_PROFILES.get(agent, '交易 agent')} "
+                    "你在一个多智能体股票交易社交系统中同时交易和社交。"
+                    "你必须只输出一个 JSON 对象，不要输出 Markdown、代码块或额外解释。"
+                    "语言必须像研究员/交易员工作记录：具体、克制、可验证。"
+                    "禁止诗句、隐喻、成语改写、口号、hashtag、玄学表达和文艺化措辞。"
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    "本轮需要一次性决定你的所有行为：交易、公聊、私聊、朋友圈、好友申请。\n"
+                    f"可交易 ticker：{', '.join(LIVE_TICKER_PRICES)}\n"
+                    f"其他 Agent：{', '.join(peers)}\n"
+                    f"当前好友：{', '.join(friends) if friends else '暂无'}\n"
+                    f"你的组合状态：{agent_portfolio_context(agent)}\n"
+                    f"最近事件：\n{recent_event_context(recent_events)}\n\n"
+                    "输出 JSON schema：\n"
+                    "{\n"
+                    '  "trade": {"side": "BUY|SELL|HOLD", "ticker": "AAPL", "shares": 1, "price": 0, "rationale": "交易理由"},\n'
+                    '  "public_message": "发到群聊的一句话",\n'
+                    '  "private_message": {"to": "某个 Agent", "content": "私聊内容"},\n'
+                    '  "moment": "朋友圈动态",\n'
+                    '  "friend_request": {"to": "某个非好友 Agent", "reason": "申请理由"}\n'
+                    "}\n"
+                    "要求：trade 必须存在，优先给出可执行的 BUY 或 SELL，只有风险理由明确时才 HOLD；"
+                    "public_message 必须存在，最多 40 个汉字，必须包含 ticker、方向和原因；"
+                    "private_message/moment 最多 50 个汉字；"
+                    "如果消息里说加仓、买入、减仓、卖出，trade.side 必须与消息一致；"
+                    "friend_request 只能在你能说清楚信息互补、风险验证或策略分歧价值时提出，理由最多 50 个汉字；"
+                    "private_message、moment、friend_request 可为空字符串或 null。"
+                ),
+            },
+        ],
+    }
+    if truthy_env("LLM_JSON_MODE", default=False):
+        payload["response_format"] = {"type": "json_object"}
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=env_int("LLM_TIMEOUT", 60)) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
+    try:
+        content = str(data["choices"][0]["message"]["content"]).strip()
     except (KeyError, IndexError, TypeError) as exc:
         raise RuntimeError(f"LLM API 返回格式无法解析：{data}") from exc
     plan = extract_json_object(content)
     if not plan:
-        plan = {"trade": {"side": "HOLD", "rationale": "LLM 输出不是 JSON，已作为群聊消息保留。"}, "public_message": content}
-    return plan
+        plan = {"trade": {"side": "HOLD", "rationale": "LLM 输出不是 JSON，已回退 HOLD。"}, "public_message": content}
+    return normalize_agent_plan(agent, plan)
+
+
+def call_llm_friend_decision(agent: str, receiver: str, reason: str, recent_events: pd.DataFrame) -> dict:
+    load_dotenv_files()
+    api_key = get_llm_setting("OPENAI_API_KEY")
+    base_url = get_llm_setting("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+    model = get_llm_setting("OPENAI_MODEL", "gpt-4o-mini")
+    if not api_key or not model:
+        raise RuntimeError("缺少 LLM API 配置。")
+
+    receiver_state = agent_portfolio_context(receiver)
+    current_friendships = pd.DataFrame(st.session_state.get("live_friendships", []), columns=["agent_a", "agent_b"])
+    receiver_friends = friends_for_agent(current_friendships, receiver)
+    payload = {
+        "model": model,
+        "temperature": env_float("LLM_TEMPERATURE", 0.35),
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    f"你是 {receiver}，需要审批 {agent} 的好友申请。"
+                    "只输出 JSON。判断标准是研究价值，不是礼貌：是否有互补信息、风险校验、策略分歧价值、可控好友数量。"
+                    "禁止诗化表达。"
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    f"申请方：{agent}\n"
+                    f"申请理由：{reason}\n"
+                    f"你的当前好友：{', '.join(receiver_friends) if receiver_friends else '暂无'}\n"
+                    f"你的组合状态：{receiver_state}\n"
+                    f"最近事件：\n{recent_event_context(recent_events, limit=16)}\n\n"
+                    '输出：{"accept": true|false, "reason": "不超过40字的具体原因"}'
+                ),
+            },
+        ],
+    }
+    if truthy_env("LLM_JSON_MODE", default=False):
+        payload["response_format"] = {"type": "json_object"}
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=env_int("LLM_TIMEOUT", 60)) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
+    try:
+        content = str(data["choices"][0]["message"]["content"]).strip()
+    except (KeyError, IndexError, TypeError) as exc:
+        raise RuntimeError(f"LLM API 返回格式无法解析：{data}") from exc
+    parsed = extract_json_object(content)
+    if not parsed:
+        raise RuntimeError("好友审批 LLM 未返回 JSON。")
+    return {
+        "accept": bool(parsed.get("accept")),
+        "reason": sanitize_agent_text(parsed.get("reason"), "理由不够具体。", limit=60),
+    }
 
 
 def extract_json_object(text: str) -> dict:
@@ -1752,9 +1956,10 @@ def recent_chat_context(events: pd.DataFrame, limit: int = 18) -> str:
     for _, row in chat.iterrows():
         receivers = event_receivers(row)
         target = f" -> {', '.join(receivers)}" if receivers else ""
+        detail = sanitize_agent_text(row.get("detail", ""), "[漂移文本已忽略]", limit=100)
         lines.append(
             f"#{int(row.get('event_id', 0))} [{row.get('channel', '')}] "
-            f"{row.get('agent', '')}{target}: {row.get('detail', '')}"
+            f"{row.get('agent', '')}{target}: {detail}"
         )
     return "\n".join(lines)
 
@@ -1771,9 +1976,10 @@ def recent_event_context(events: pd.DataFrame, limit: int = 28) -> str:
         channel = row.get("channel", "")
         ticker = row.get("ticker", "")
         side = row.get("side", "")
+        detail = sanitize_agent_text(row.get("detail", ""), "[漂移文本已忽略]", limit=120)
         lines.append(
             f"#{int(row.get('event_id', 0))} [{event_type}/{channel}] "
-            f"{row.get('agent', '')} {side} {ticker}: {truncate(str(row.get('detail', '')), 120)}"
+            f"{row.get('agent', '')} {side} {ticker}: {detail}"
         )
     return "\n".join(lines)
 
@@ -1955,6 +2161,7 @@ def render_live_sidebar_controls(events: pd.DataFrame, agents: list[str], friend
     auto_enabled = st.sidebar.toggle("持续自动运行全部行为", key="live_auto_agents_enabled")
     st.session_state.live_auto_agents = bool(auto_enabled)
     st.sidebar.caption("每轮会并发调用所有 Agent，并生成交易、公聊、私聊、朋友圈和好友申请。")
+    st.sidebar.caption("Portfolio Hall 的 manager 曲线/相关矩阵来自离线实验，请把数据源切到“本地事件回放”查看。")
 
     st.sidebar.button(
         "一键启动所有 Agent",
@@ -2214,6 +2421,163 @@ def latest_activity_by_agent(events: pd.DataFrame) -> dict[str, str]:
         row = rows.sort_values("event_id").tail(1).iloc[0]
         out[str(agent)] = str(row.get("detail", ""))
     return out
+
+
+# ----------------------------- Portfolio Hall -----------------------------
+
+
+def render_portfolio_hall(
+    agent_equity,
+    manager_equity,
+    meta_weights,
+    agent_corr,
+    experiment_comparison,
+    registry,
+    drift_log,
+):
+    st.markdown("#### Portfolio Hall：Agent 组合管理")
+    if manager_equity.empty and agent_equity.empty:
+        st.info("暂无 agent portfolio 输出。请先运行离线实验。")
+        return
+
+    cards = portfolio_hall_cards(experiment_comparison, manager_equity, meta_weights, drift_log)
+    st.markdown(render_kpi_cards(cards), unsafe_allow_html=True)
+
+    c1, c2 = st.columns([1.25, 1])
+    with c1:
+        st.markdown("#### Manager Equity")
+        if manager_equity.empty:
+            st.info("缺少 manager_equity_curve.csv。")
+        else:
+            work = manager_equity.copy()
+            work["date"] = pd.to_datetime(work["date"], errors="coerce")
+            fig = go.Figure()
+            for manager, group in work.groupby("manager"):
+                group = group.sort_values("date")
+                base = safe_float(group["equity"].iloc[0], 1.0) or 1.0
+                fig.add_scatter(
+                    x=group["date"],
+                    y=group["equity"] / base,
+                    mode="lines",
+                    name=str(manager),
+                )
+            fig.update_layout(height=360, margin=dict(l=10, r=10, t=20, b=30), yaxis_title="Normalized equity")
+            st.plotly_chart(fig, use_container_width=True)
+
+    with c2:
+        st.markdown("#### Agent Return Correlation")
+        if agent_corr.empty or "agent" not in agent_corr.columns:
+            st.info("缺少 agent_return_correlation.csv。")
+        else:
+            matrix = agent_corr.set_index("agent")
+            fig = go.Figure(
+                data=go.Heatmap(
+                    z=matrix.values,
+                    x=list(matrix.columns),
+                    y=list(matrix.index),
+                    zmin=-1,
+                    zmax=1,
+                    colorscale="RdBu",
+                    reversescale=True,
+                )
+            )
+            fig.update_layout(height=360, margin=dict(l=10, r=10, t=20, b=90))
+            st.plotly_chart(fig, use_container_width=True)
+
+    c3, c4 = st.columns([1.1, 1])
+    with c3:
+        st.markdown("#### Meta Weight History")
+        if meta_weights.empty:
+            st.info("缺少 meta_weight_history.csv。")
+        else:
+            managers = sorted(meta_weights["manager"].dropna().astype(str).unique())
+            selected_manager = st.selectbox("Manager", managers, key="portfolio_hall_manager")
+            weights = meta_weights[meta_weights["manager"].astype(str) == selected_manager].copy()
+            weights["date"] = pd.to_datetime(weights["date"], errors="coerce")
+            fig = go.Figure()
+            for agent, group in weights.groupby("agent"):
+                group = group.sort_values("date")
+                fig.add_scatter(x=group["date"], y=group["weight"], mode="lines", stackgroup="one", name=str(agent))
+            fig.update_layout(height=360, margin=dict(l=10, r=10, t=20, b=30), yaxis_title="Weight")
+            st.plotly_chart(fig, use_container_width=True)
+
+    with c4:
+        st.markdown("#### Strategy Contract")
+        if registry.empty:
+            st.info("缺少 agent_registry.csv。")
+        else:
+            cols = [
+                col
+                for col in ["agent", "strategy_family", "strategy_spec_version", "param_hash", "own_strategy"]
+                if col in registry.columns
+            ]
+            st.dataframe(registry[cols].sort_values("agent"), use_container_width=True, hide_index=True)
+
+    st.markdown("#### Experiment Comparison")
+    if experiment_comparison.empty:
+        st.info("缺少 experiment_comparison.csv。")
+    else:
+        show_cols = [
+            col
+            for col in [
+                "experiment_type",
+                "portfolio",
+                "total_return",
+                "annual_return",
+                "annual_volatility",
+                "sharpe",
+                "max_drawdown",
+                "average_agent_correlation",
+                "final_weight_hhi",
+                "regret_to_best_agent",
+            ]
+            if col in experiment_comparison.columns
+        ]
+        st.dataframe(
+            experiment_comparison[show_cols].sort_values("sharpe", ascending=False),
+            use_container_width=True,
+            hide_index=True,
+        )
+
+    if not drift_log.empty:
+        st.markdown("#### Drift Alerts")
+        st.dataframe(drift_log.sort_values(["date", "agent"]), use_container_width=True, hide_index=True)
+
+
+def portfolio_hall_cards(experiment_comparison, manager_equity, meta_weights, drift_log):
+    best_manager = "-"
+    best_sharpe = "-"
+    if not experiment_comparison.empty and {"experiment_type", "sharpe", "portfolio"}.issubset(experiment_comparison.columns):
+        managers = experiment_comparison[experiment_comparison["experiment_type"] == "agent_portfolio"].copy()
+        if not managers.empty:
+            row = managers.sort_values("sharpe", ascending=False).iloc[0]
+            best_manager = str(row["portfolio"])
+            best_sharpe = f"{safe_float(row['sharpe']):.2f}"
+
+    final_equity = "-"
+    if not manager_equity.empty:
+        latest = manager_equity.copy()
+        latest["date"] = pd.to_datetime(latest["date"], errors="coerce")
+        last_date = latest["date"].max()
+        row = latest[latest["date"] == last_date].sort_values("equity", ascending=False).iloc[0]
+        final_equity = f"{row.get('manager', '-')}: {money(row.get('equity', 0))}"
+
+    hhi_text = "-"
+    if not meta_weights.empty:
+        latest = meta_weights.copy()
+        latest["date"] = pd.to_datetime(latest["date"], errors="coerce")
+        latest = latest.sort_values("date").groupby(["manager", "agent"], as_index=False).tail(1)
+        hhi = latest.groupby("manager")["weight"].apply(lambda values: float((values**2).sum()))
+        if not hhi.empty:
+            manager = hhi.idxmin()
+            hhi_text = f"{manager}: {hhi.loc[manager]:.3f}"
+
+    return [
+        ("Best Manager", best_manager, f"Sharpe {best_sharpe}"),
+        ("Latest Manager Equity", final_equity, "manager_equity_curve"),
+        ("Lowest HHI", hhi_text, "meta weight concentration"),
+        ("Drift Alerts", f"{len(drift_log):,}", "strategy contract violations"),
+    ]
 
 
 # ----------------------------- ChatLab -----------------------------
@@ -2480,6 +2844,7 @@ def export_live_run_round(run: dict, round_id: str, start_event_id: int, end_eve
 def append_live_agent_plan_events(agent: str, plan: dict, agents: list[str], friendships_df: pd.DataFrame) -> None:
     if not isinstance(plan, dict):
         plan = {}
+    plan = normalize_agent_plan(agent, plan)
     trade = trade_plan_from_agent_plan(agent, plan)
     append_live_trade_event(agent, trade)
     ticker = normalize_trade_plan(agent, trade).get("ticker", "")
@@ -2494,7 +2859,15 @@ def append_live_agent_plan_events(agent: str, plan: dict, agents: list[str], fri
         target = normalize_agent_target(private_message.get("to"), agent, agents)
         content = coerce_plan_text(private_message.get("content"))
         if target and content:
-            append_live_message_event(agent, "private", [target], content, ticker=ticker)
+            if not live_are_friends(agent, target):
+                add_live_friend_request_with_decision(
+                    agent,
+                    target,
+                    f"希望私聊验证观点：{truncate(content, 60)}",
+                    pd.DataFrame(st.session_state.get("live_events", [])),
+                )
+            if live_are_friends(agent, target):
+                append_live_message_event(agent, "private", [target], content, ticker=ticker)
 
     moment = coerce_plan_text(plan.get("moment"))
     if moment:
@@ -2506,7 +2879,12 @@ def append_live_agent_plan_events(agent: str, plan: dict, agents: list[str], fri
         target = normalize_agent_target(friend_request.get("to"), agent, agents)
         reason = coerce_plan_text(friend_request.get("reason")) or "希望建立信息共享关系。"
         if target and not live_are_friends(agent, target):
-            add_live_friend_request_and_accept(agent, target, reason)
+            add_live_friend_request_with_decision(
+                agent,
+                target,
+                reason,
+                pd.DataFrame(st.session_state.get("live_events", [])),
+            )
             reinforce_live_influence(agent, [target])
             st.session_state.event_cursor = next_live_event_id() - 1
             persist_live_state()
@@ -2520,7 +2898,102 @@ def coerce_plan_text(value) -> str:
     text = str(value).strip()
     if text.lower() in {"", "null", "none"}:
         return ""
-    return truncate(text, 320)
+    return sanitize_agent_text(text, "", limit=320)
+
+
+def normalize_agent_plan(agent: str, plan: dict) -> dict:
+    if not isinstance(plan, dict):
+        plan = {}
+    normalized = dict(plan)
+    trade = normalized.get("trade") if isinstance(normalized.get("trade"), dict) else {}
+    normalized["trade"] = {
+        **trade,
+        "rationale": sanitize_agent_text(
+            trade.get("rationale"),
+            f"{agent} 按当前信号执行结构化交易判断。",
+            limit=120,
+        ),
+    }
+    normalized["public_message"] = sanitize_agent_text(
+        normalized.get("public_message"),
+        public_fallback_from_trade(agent, normalized["trade"]),
+        limit=80,
+    )
+    normalized["moment"] = sanitize_agent_text(normalized.get("moment"), "", limit=90)
+    private = normalized.get("private_message")
+    if isinstance(private, dict):
+        normalized["private_message"] = {
+            "to": private.get("to", ""),
+            "content": sanitize_agent_text(private.get("content"), "", limit=90),
+        }
+    else:
+        normalized["private_message"] = None
+    request = normalized.get("friend_request")
+    if isinstance(request, dict):
+        normalized["friend_request"] = {
+            "to": request.get("to", ""),
+            "reason": sanitize_agent_text(request.get("reason"), "", limit=90),
+        }
+        if not normalized["friend_request"]["reason"]:
+            normalized["friend_request"] = None
+    else:
+        normalized["friend_request"] = None
+    return normalized
+
+
+def sanitize_agent_text(value, fallback: str = "", limit: int = 120) -> str:
+    text = str(value or "").strip()
+    if not text or text.lower() in {"null", "none"}:
+        return fallback
+    text = re.sub(r"#[A-Za-z0-9_.-]+", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    text = text.replace("；；", "；").replace("。。", "。")
+    if looks_like_drifty_text(text):
+        return fallback
+    return truncate(text, limit)
+
+
+def looks_like_drifty_text(text: str) -> bool:
+    work = str(text or "")
+    banned_terms = [
+        "旧帐篷",
+        "余烬",
+        "裂变",
+        "拾薪",
+        "火焰",
+        "痕",
+        "星辰",
+        "号角",
+        "战鼓",
+        "迷雾",
+        "命运",
+        "诗",
+        "寓言",
+        "炼金",
+        "残响",
+        "烟火",
+        "众人拾薪",
+        "潮汐",
+        "旷野",
+        "灯塔",
+    ]
+    if "#" in work:
+        return True
+    if any(term in work for term in banned_terms):
+        return True
+    punctuation_count = sum(work.count(mark) for mark in ["，", "。", "；", "！"])
+    return len(work) > 90 and punctuation_count >= 4 and not any(ticker in work.upper() for ticker in LIVE_TICKER_PRICES)
+
+
+def public_fallback_from_trade(agent: str, trade: dict) -> str:
+    normalized = normalize_trade_plan(agent, trade)
+    side = normalized.get("side", "HOLD")
+    ticker = normalized.get("ticker", default_ticker_for_agent(agent))
+    if side == "BUY":
+        return f"{ticker} 趋势信号占优，我小幅买入并控制仓位。"
+    if side == "SELL":
+        return f"{ticker} 风险收益变差，我减仓降低敞口。"
+    return f"{ticker} 信号不够清晰，我本轮保持观望。"
 
 
 def normalize_agent_target(value, sender: str, agents: list[str]) -> str:
@@ -2988,11 +3461,37 @@ def render_kpi_cards(cards) -> str:
     return f"<div class='kpi-grid'>{''.join(html_cards)}</div>"
 
 
-def render_tables(event_log, state_history, messages, trades, social_events, metrics, strategy_history):
+def render_tables(
+    event_log,
+    state_history,
+    messages,
+    trades,
+    social_events,
+    metrics,
+    strategy_history,
+    manager_equity=None,
+    meta_weights=None,
+    agent_corr=None,
+    experiment_comparison=None,
+    drift_log=None,
+):
     st.markdown("#### 研究数据表")
     table_name = st.selectbox(
         "选择表",
-        ["unified_event_log", "agent_state_history", "strategy_choice_history", "message_log", "trade_log", "social_events", "performance_metrics"],
+        [
+            "unified_event_log",
+            "agent_state_history",
+            "strategy_choice_history",
+            "message_log",
+            "trade_log",
+            "social_events",
+            "performance_metrics",
+            "manager_equity_curve",
+            "meta_weight_history",
+            "agent_return_correlation",
+            "experiment_comparison",
+            "drift_log",
+        ],
     )
     table_map = {
         "unified_event_log": event_log,
@@ -3002,6 +3501,11 @@ def render_tables(event_log, state_history, messages, trades, social_events, met
         "trade_log": trades,
         "social_events": social_events,
         "performance_metrics": metrics,
+        "manager_equity_curve": manager_equity if manager_equity is not None else pd.DataFrame(),
+        "meta_weight_history": meta_weights if meta_weights is not None else pd.DataFrame(),
+        "agent_return_correlation": agent_corr if agent_corr is not None else pd.DataFrame(),
+        "experiment_comparison": experiment_comparison if experiment_comparison is not None else pd.DataFrame(),
+        "drift_log": drift_log if drift_log is not None else pd.DataFrame(),
     }
     df = table_map[table_name]
     if df.empty:
@@ -3124,6 +3628,13 @@ def env_int(name: str, default: int) -> int:
         return int(float(os.getenv(name, default)))
     except (TypeError, ValueError):
         return default
+
+
+def truthy_env(name: str, default: bool = False) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    return str(value).strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
 def safe_float(value, default: float = 0.0) -> float:

@@ -13,6 +13,7 @@ import pandas as pd
 import yaml
 
 from aggregation import hedge_weights
+from agent_portfolio import build_agent_portfolio_outputs
 from agents import (
     CommunicatingAgent,
     CommitteeTeamAgent,
@@ -33,6 +34,7 @@ from message import MessageBoard
 from portfolio import performance_metrics
 from reputation import ReputationTracker
 from social_graph import SocialGraph
+from strategy_spec import strategy_spec_for_agent
 
 
 EXPERIMENTS = {
@@ -269,7 +271,7 @@ def run(
     channels = EXPERIMENTS[experiment]["channels"]
     _set_agent_channels(agents, channels)
 
-    equity, trade_log, aggregation_history, state_history, strategy_history = _simulate_population(
+    equity, trade_log, aggregation_history, state_history, strategy_history, drift_log = _simulate_population(
         prices=prices,
         agents=agents,
         channels=channels,
@@ -282,6 +284,11 @@ def run(
         recorder=recorder,
     )
     metrics = performance_metrics(equity).sort_values("sharpe", ascending=False)
+    portfolio_outputs = build_agent_portfolio_outputs(
+        equity=equity,
+        initial_cash=initial_cash,
+        rebalance_every=rebalance_every,
+    )
 
     total_returns = metrics.set_index("agent")["total_return"].to_dict()
     social_graph.update_weights(total_returns)
@@ -306,6 +313,12 @@ def run(
 
     prices.to_csv(out_dir / "tables" / "market_history.csv", index=False)
     equity.to_csv(out_dir / "tables" / "equity_curve.csv", index=False)
+    portfolio_outputs["agent_equity_curve"].to_csv(out_dir / "tables" / "agent_equity_curve.csv", index=False)
+    portfolio_outputs["agent_return_history"].to_csv(out_dir / "tables" / "agent_return_history.csv", index=False)
+    portfolio_outputs["agent_return_correlation"].to_csv(out_dir / "tables" / "agent_return_correlation.csv", index=False)
+    portfolio_outputs["manager_equity_curve"].to_csv(out_dir / "tables" / "manager_equity_curve.csv", index=False)
+    portfolio_outputs["meta_weight_history"].to_csv(out_dir / "tables" / "meta_weight_history.csv", index=False)
+    portfolio_outputs["experiment_comparison"].to_csv(out_dir / "tables" / "experiment_comparison.csv", index=False)
     trade_log.to_csv(out_dir / "tables" / "trade_log.csv", index=False)
     metrics.to_csv(out_dir / "tables" / "performance_metrics.csv", index=False)
     board.to_dataframe().to_csv(out_dir / "tables" / "message_log.csv", index=False)
@@ -321,8 +334,9 @@ def run(
     event_log.to_csv(out_dir / "tables" / "unified_event_log.csv", index=False)
     state_history.to_csv(out_dir / "tables" / "agent_state_history.csv", index=False)
     strategy_history.to_csv(out_dir / "tables" / "strategy_choice_history.csv", index=False)
+    drift_log.to_csv(out_dir / "tables" / "drift_log.csv", index=False)
 
-    _write_figures(prices, equity, metrics, out_dir)
+    _write_figures(prices, equity, metrics, out_dir, portfolio_outputs["manager_equity_curve"])
 
     print(f"实验完成：{experiment} / {scenario_name}")
     print("核心结果已保存到：")
@@ -435,6 +449,7 @@ def _simulate_population(
     trade_rows = []
     aggregation_rows = []
     strategy_rows = []
+    drift_rows = []
     last_actions = {agent.name: "等待市场开盘" for agent in agents}
 
     for step, date in enumerate(dates):
@@ -477,6 +492,21 @@ def _simulate_population(
                 portfolio = portfolios[agent.name]
                 value_before = _portfolio_value(portfolio["cash"], portfolio["positions"], today)
                 decision = agent.target_weights(history, portfolio["cash"], portfolio["positions"])
+                spec, violations = _strategy_contract_result(agent, decision, rebalance_every)
+                decision.strategy_spec_version = spec.version
+                decision.param_hash = spec.param_hash()
+                for violation in violations:
+                    drift_rows.append(
+                        {
+                            "date": date_str,
+                            "agent": agent.name,
+                            "strategy_spec": spec.name,
+                            "strategy_spec_version": spec.version,
+                            "param_hash": decision.param_hash,
+                            "violation": violation,
+                            "target_weights_json": json.dumps(decision.target_weights, ensure_ascii=False),
+                        }
+                    )
                 recorder.add(
                     date_str,
                     event_type="decision",
@@ -487,7 +517,14 @@ def _simulate_population(
                     pnl=value_before - initial_cash,
                     pnl_pct=value_before / initial_cash - 1,
                     detail=f"目标仓位：{_target_summary(decision.target_weights)}。{decision.note}",
-                    payload={"target_weights": decision.target_weights, "note": decision.note},
+                    payload={
+                        "target_weights": decision.target_weights,
+                        "note": decision.note,
+                        "strategy_spec": spec.name,
+                        "strategy_spec_version": decision.strategy_spec_version,
+                        "param_hash": decision.param_hash,
+                        "drift_violations": violations,
+                    },
                 )
                 portfolio["cash"], new_trades = _execute_decision(
                     date_str=date_str,
@@ -629,7 +666,19 @@ def _simulate_population(
             "graph_density",
         ],
     )
-    return equity, trades, aggregation, state_history, strategy_history
+    drift_log = pd.DataFrame(
+        drift_rows,
+        columns=[
+            "date",
+            "agent",
+            "strategy_spec",
+            "strategy_spec_version",
+            "param_hash",
+            "violation",
+            "target_weights_json",
+        ],
+    )
+    return equity, trades, aggregation, state_history, strategy_history, drift_log
 
 
 
@@ -1018,6 +1067,7 @@ def _belief_history_dataframe(agents) -> pd.DataFrame:
 def _agent_registry_dataframe(agents) -> pd.DataFrame:
     rows = []
     for agent in agents:
+        spec = strategy_spec_for_agent(agent)
         rows.append(
             {
                 "agent": agent.name,
@@ -1025,9 +1075,26 @@ def _agent_registry_dataframe(agents) -> pd.DataFrame:
                 "communicating": isinstance(agent, CommunicatingAgent),
                 "own_strategy": getattr(getattr(agent, "own_strategy", None), "name", ""),
                 "enabled_channels": ", ".join(getattr(agent, "enabled_channels", [])),
+                "strategy_spec": spec.name,
+                "strategy_family": spec.family,
+                "strategy_spec_version": spec.version,
+                "param_hash": spec.param_hash(),
             }
         )
-    return pd.DataFrame(rows, columns=["agent", "class", "communicating", "own_strategy", "enabled_channels"])
+    return pd.DataFrame(
+        rows,
+        columns=[
+            "agent",
+            "class",
+            "communicating",
+            "own_strategy",
+            "enabled_channels",
+            "strategy_spec",
+            "strategy_family",
+            "strategy_spec_version",
+            "param_hash",
+        ],
+    )
 
 
 def _append_hedge_weights(aggregation_history, metrics, reputation_scores, last_date) -> pd.DataFrame:
@@ -1048,7 +1115,7 @@ def _append_hedge_weights(aggregation_history, metrics, reputation_scores, last_
     return pd.concat([aggregation_history, hedge_rows], ignore_index=True)
 
 
-def _write_figures(prices, equity, metrics, out_dir) -> None:
+def _write_figures(prices, equity, metrics, out_dir, manager_equity=None) -> None:
     plt.figure(figsize=(10, 5))
     for agent, group in equity.groupby("agent"):
         group = group.sort_values("date")
@@ -1094,6 +1161,25 @@ def _write_figures(prices, equity, metrics, out_dir) -> None:
     plt.tight_layout()
     plt.savefig(out_dir / "figures" / "market_prices.png", dpi=180)
     plt.close()
+
+    if manager_equity is not None and not manager_equity.empty:
+        plt.figure(figsize=(10, 5))
+        for manager, group in manager_equity.groupby("manager"):
+            group = group.sort_values("date")
+            plt.plot(pd.to_datetime(group["date"]), group["equity"] / group["equity"].iloc[0], label=manager)
+        plt.title("Agent Portfolio Manager Equity Curves")
+        plt.xlabel("Date")
+        plt.ylabel("Normalized Equity")
+        plt.legend(fontsize=8)
+        plt.tight_layout()
+        plt.savefig(out_dir / "figures" / "manager_equity_curves.png", dpi=180)
+        plt.close()
+
+
+def _strategy_contract_result(agent, decision, rebalance_every) -> tuple:
+    spec = strategy_spec_for_agent(agent, rebalance_every=rebalance_every)
+    violations = spec.validate_action({"target_weights": getattr(decision, "target_weights", {})})
+    return spec, violations
 
 
 def _safe_optional_float(value):

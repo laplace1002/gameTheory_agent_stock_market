@@ -1,13 +1,13 @@
-agent,class,communicating,own_strategy,enabled_channels
-MomentumAgent,CommunicatingAgent,True,MomentumAgent,"public, private, moments"
-MeanReversionAgent,CommunicatingAgent,True,MeanReversionAgent,"public, private, moments"
-LowVolatilityAgent,CommunicatingAgent,True,LowVolatilityAgent,"public, private, moments"
-DrawdownBuyerAgent,CommunicatingAgent,True,DrawdownBuyerAgent,"public, private, moments"
-RandomAgent,CommunicatingAgent,True,RandomAgent,"public, private, moments"
-CommitteeTeamAgent,CommunicatingAgent,True,CommitteeTeamAgent,"public, private, moments"
-DynamicTeamAgent,CommunicatingAgent,True,DynamicTeamAgent,"public, private, moments"
-TruthfulReporterAgent,TruthfulReporterAgent,True,MomentumAgent,"public, private, moments"
-PersuaderAgent,PersuaderAgent,True,MeanReversionAgent,"public, private, moments"
-FreeRiderAgent,FreeRiderAgent,True,LowVolatilityAgent,"public, private, moments"
-ContrarianAgent,ContrarianAgent,True,DrawdownBuyerAgent,"public, private, moments"
-SocialGraphAgent,SocialGraphAgent,True,DynamicTeamAgent,"public, private, moments"
+agent,class,communicating,own_strategy,enabled_channels,strategy_spec,strategy_family,strategy_spec_version,param_hash
+MomentumAgent,CommunicatingAgent,True,MomentumAgent,"public, private, moments",MomentumAgent,momentum,v1,2a765338750f
+MeanReversionAgent,CommunicatingAgent,True,MeanReversionAgent,"public, private, moments",MeanReversionAgent,mean_reversion,v1,56e471364af7
+LowVolatilityAgent,CommunicatingAgent,True,LowVolatilityAgent,"public, private, moments",LowVolatilityAgent,low_volatility,v1,8a351ec5fef1
+DrawdownBuyerAgent,CommunicatingAgent,True,DrawdownBuyerAgent,"public, private, moments",DrawdownBuyerAgent,drawdown_value,v1,c71a424a70d1
+RandomAgent,CommunicatingAgent,True,RandomAgent,"public, private, moments",RandomAgent,random_baseline,v1,fea4583ff7c2
+CommitteeTeamAgent,CommunicatingAgent,True,CommitteeTeamAgent,"public, private, moments",CommitteeTeamAgent,committee,v1,a4413e876dba
+DynamicTeamAgent,CommunicatingAgent,True,DynamicTeamAgent,"public, private, moments",DynamicTeamAgent,dynamic_committee,v1,5a001d34a6f5
+TruthfulReporterAgent,TruthfulReporterAgent,True,MomentumAgent,"public, private, moments",TruthfulReporterAgent,communicating_momentum,v1,270118bf6486
+PersuaderAgent,PersuaderAgent,True,MeanReversionAgent,"public, private, moments",PersuaderAgent,communicating_mean_reversion,v1,7689246feb53
+FreeRiderAgent,FreeRiderAgent,True,LowVolatilityAgent,"public, private, moments",FreeRiderAgent,communicating_low_volatility,v1,4ca4fbb44c27
+ContrarianAgent,ContrarianAgent,True,DrawdownBuyerAgent,"public, private, moments",ContrarianAgent,communicating_contrarian,v1,e88c6f72e492
+SocialGraphAgent,SocialGraphAgent,True,DynamicTeamAgent,"public, private, moments",SocialGraphAgent,social_graph,v1,87c55ed8a3ef

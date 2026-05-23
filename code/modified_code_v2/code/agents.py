@@ -13,6 +13,8 @@ class AgentDecision:
     date: str
     target_weights: dict
     note: str
+    strategy_spec_version: str = ""
+    param_hash: str = ""
 
 
 class BaseAgent:

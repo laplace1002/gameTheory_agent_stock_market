@@ -9,7 +9,15 @@
 - `outputs/tables/unified_event_log.csv`：统一事件时间轴，包含交易、PnL、群聊、私聊、朋友圈、好友申请、接受/拒绝、社交策略选择。
 - `outputs/tables/agent_state_history.csv`：每个日期每个 Agent 的 cash、equity、PnL、持仓、好友数、最新动作。
 - `outputs/tables/strategy_choice_history.csv`：每个 rebalance tick 的 cooperate / compete / observe / independent 策略效用与选择原因。
+- `code/strategy_spec.py`：固定策略契约，记录每个 agent 的 spec version、参数 hash，并校验漂移。
+- `code/agent_portfolio.py`：agent 组合管理层，包含 Equal 和 Hedge 两个 meta-manager。
+- `outputs/tables/agent_return_correlation.csv`：agent 日收益相关矩阵。
+- `outputs/tables/manager_equity_curve.csv`：agent portfolio manager 的权益曲线。
+- `outputs/tables/meta_weight_history.csv`：manager 分配到各 agent 的权重历史。
+- `outputs/tables/experiment_comparison.csv`：single agent 与 agent portfolio 的统一指标对比。
+- `outputs/tables/drift_log.csv`：违反固定策略契约的动作日志；空表表示没有漂移告警。
 - `config/social_scenarios.yaml`：不同社交图谱场景配置。
+- `config/experiment_grid.yaml`：研究实验网格，列出基准、单 agent、普通策略组合与 agent portfolio 对照组。
 - `data/sample_synthetic_prices.csv`：离线可运行的合成行情样例。
 
 ## 运行
@@ -94,3 +102,12 @@ ChatLab 中点击左侧 Agent 按钮后，可以查看：
 - independent：社交边际收益不足，减少发言并主要靠自身交易策略。
 
 这些选择会写入 `strategy_choice_history.csv`，并作为 `strategy_choice` 事件进入 dashboard 的同步事件流。
+
+## Portfolio of Agents
+
+离线实验现在会额外生成 agent 组合管理结果。每个 agent 仍独立执行自己的固定策略，组合管理器只在上层分配资本权重：
+
+- `equal_agent_portfolio`：等权分配到所有 agent。
+- `hedge_agent_portfolio`：根据 agent 累计收益和回撤惩罚做在线专家权重。
+
+Dashboard 中的 `Portfolio Hall` 可以查看 manager 权益曲线、meta weight 历史、agent 收益相关热力图、策略契约版本和漂移告警。

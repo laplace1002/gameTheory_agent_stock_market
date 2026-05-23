@@ -11,9 +11,18 @@
 - `outputs/tables/strategy_choice_history.csv`：每个 rebalance tick 的 cooperate / compete / observe / independent 策略效用与选择原因。
 - `code/strategy_spec.py`：固定策略契约，记录每个 agent 的 spec version、参数 hash，并校验漂移。
 - `code/agent_portfolio.py`：agent 组合管理层，包含 Equal 和 Hedge 两个 meta-manager。
+- `code/strategy_training.py`：walk-forward 参数训练协议，只训练允许参数，不改变 agent 固定策略身份。
+- `code/scoring.py`：用 Brier score / log score 评价 agent forecast，并回写 proper scoring reputation。
+- `code/view_extractor.py`：把 agent 消息转成 Black-Litterman views，再输出基于观点的资产权重。
+- `code/schemas.py`：LLM/结构化动作 schema 校验工具。
 - `outputs/tables/agent_return_correlation.csv`：agent 日收益相关矩阵。
 - `outputs/tables/manager_equity_curve.csv`：agent portfolio manager 的权益曲线。
 - `outputs/tables/meta_weight_history.csv`：manager 分配到各 agent 的权重历史。
+- `outputs/tables/manager_loss_history.csv`：online Hedge / risk manager 的 loss 分解，包括 log loss、drawdown penalty 和 CVaR penalty。
+- `outputs/tables/training_params.csv`：每个可训练策略的候选参数、冻结参数和训练窗口。
+- `outputs/tables/forecast_scores.csv`：每条可验证 forecast 的 Brier score、log score 和 proper score。
+- `outputs/tables/agent_views.csv`：从消息中提取出的结构化 agent views。
+- `outputs/tables/bl_agent_view_weights.csv`：Black-Litterman posterior return 与资产权重。
 - `outputs/tables/experiment_comparison.csv`：single agent 与 agent portfolio 的统一指标对比。
 - `outputs/tables/drift_log.csv`：违反固定策略契约的动作日志；空表表示没有漂移告警。
 - `config/social_scenarios.yaml`：不同社交图谱场景配置。
@@ -42,8 +51,10 @@ LLM_TIMEOUT=60
 如果要看旧的离线回放，再运行：
 
 ```bash
-python code/run_experiment.py --experiment full_social --scenario core_periphery --out outputs --prices data/sample_synthetic_prices.csv
+python code/run_experiment.py --experiment full_social --scenario core_periphery --out outputs --prices data/TRD_Dalyr.xlsx
 ```
+
+`data/TRD_Dalyr.xlsx` 是 CSMAR 风格日行情文件。`data_loader.py` 会把 `Stkcd / Trddt / Opnprc / Hiprc / Loprc / Clsprc / Dnshrtrd` 标准化为实验需要的 `ticker / date / open / high / low / close / volume`。
 
 ## Dashboard 操作
 
@@ -108,6 +119,8 @@ ChatLab 中点击左侧 Agent 按钮后，可以查看：
 离线实验现在会额外生成 agent 组合管理结果。每个 agent 仍独立执行自己的固定策略，组合管理器只在上层分配资本权重：
 
 - `equal_agent_portfolio`：等权分配到所有 agent。
-- `hedge_agent_portfolio`：根据 agent 累计收益和回撤惩罚做在线专家权重。
+- `hedge_agent_portfolio`：按 online expert aggregation 更新 agent 权重。
+- `correlation_aware_agent_portfolio`：惩罚与其他 agent 高相关的资本分配。
+- `drawdown_constrained_agent_portfolio`：加入单 agent 权重上限、回撤和 CVaR 惩罚。
 
-Dashboard 中的 `Portfolio Hall` 可以查看 manager 权益曲线、meta weight 历史、agent 收益相关热力图、策略契约版本和漂移告警。
+Dashboard 中的 `Portfolio Hall` 可以查看 manager 权益曲线、meta weight 历史、agent 收益相关热力图、策略契约版本、walk-forward 训练参数、Hedge loss 分解、proper scoring 和 Black-Litterman agent views。

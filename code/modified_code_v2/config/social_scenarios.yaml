@@ -79,3 +79,177 @@ scenarios:
     friend_request_rules:
       strategy_similarity_threshold: 0.35
       max_friends: 6
+
+  star_social_hub:
+    topology: star_hub
+    hub: SocialGraphAgent
+    friendships:
+      - [SocialGraphAgent, MomentumAgent]
+      - [SocialGraphAgent, MeanReversionAgent]
+      - [SocialGraphAgent, LowVolatilityAgent]
+      - [SocialGraphAgent, DrawdownBuyerAgent]
+      - [SocialGraphAgent, CommitteeTeamAgent]
+      - [SocialGraphAgent, DynamicTeamAgent]
+    influence_edges:
+      - [SocialGraphAgent, MomentumAgent, 1.2]
+      - [SocialGraphAgent, MeanReversionAgent, 1.2]
+      - [SocialGraphAgent, LowVolatilityAgent, 1.2]
+      - [SocialGraphAgent, DrawdownBuyerAgent, 1.2]
+      - [SocialGraphAgent, CommitteeTeamAgent, 1.2]
+      - [SocialGraphAgent, DynamicTeamAgent, 1.2]
+      - [MomentumAgent, SocialGraphAgent, 0.5]
+      - [MeanReversionAgent, SocialGraphAgent, 0.5]
+      - [LowVolatilityAgent, SocialGraphAgent, 0.5]
+    groups:
+      Hub Desk: [SocialGraphAgent, CommitteeTeamAgent, DynamicTeamAgent]
+      Satellites: [MomentumAgent, MeanReversionAgent, LowVolatilityAgent, DrawdownBuyerAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.30
+      max_friends: 7
+
+  strategy_silos:
+    topology: silos
+    friendships:
+      - [MomentumAgent, TruthfulReporterAgent]
+      - [MomentumAgent, DynamicTeamAgent]
+      - [MeanReversionAgent, PersuaderAgent]
+      - [MeanReversionAgent, ContrarianAgent]
+      - [LowVolatilityAgent, FreeRiderAgent]
+      - [LowVolatilityAgent, CommitteeTeamAgent]
+    influence_edges:
+      - [TruthfulReporterAgent, MomentumAgent, 1.0]
+      - [MomentumAgent, DynamicTeamAgent, 0.8]
+      - [PersuaderAgent, MeanReversionAgent, 1.0]
+      - [ContrarianAgent, MeanReversionAgent, 0.8]
+      - [FreeRiderAgent, LowVolatilityAgent, 0.6]
+      - [CommitteeTeamAgent, LowVolatilityAgent, 0.8]
+    groups:
+      Trend Silo: [MomentumAgent, TruthfulReporterAgent, DynamicTeamAgent]
+      Reversion Silo: [MeanReversionAgent, PersuaderAgent, ContrarianAgent]
+      Risk Silo: [LowVolatilityAgent, FreeRiderAgent, CommitteeTeamAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.65
+      max_friends: 4
+
+  bridge_broker:
+    topology: bridge_broker
+    friendships:
+      - [MomentumAgent, TruthfulReporterAgent]
+      - [TruthfulReporterAgent, DynamicTeamAgent]
+      - [DynamicTeamAgent, SocialGraphAgent]
+      - [SocialGraphAgent, CommitteeTeamAgent]
+      - [CommitteeTeamAgent, LowVolatilityAgent]
+      - [LowVolatilityAgent, FreeRiderAgent]
+      - [MeanReversionAgent, ContrarianAgent]
+      - [ContrarianAgent, SocialGraphAgent]
+    influence_edges:
+      - [TruthfulReporterAgent, DynamicTeamAgent, 0.9]
+      - [DynamicTeamAgent, SocialGraphAgent, 1.1]
+      - [SocialGraphAgent, CommitteeTeamAgent, 1.1]
+      - [CommitteeTeamAgent, LowVolatilityAgent, 0.9]
+      - [ContrarianAgent, SocialGraphAgent, 0.7]
+    groups:
+      Broker Chain: [TruthfulReporterAgent, DynamicTeamAgent, SocialGraphAgent, CommitteeTeamAgent]
+      Risk Terminal: [LowVolatilityAgent, FreeRiderAgent]
+      Reversion Terminal: [MeanReversionAgent, ContrarianAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.40
+      max_friends: 5
+
+  adversarial_persuader:
+    topology: adversarial
+    friendships:
+      - [PersuaderAgent, MomentumAgent]
+      - [PersuaderAgent, MeanReversionAgent]
+      - [PersuaderAgent, RandomAgent]
+      - [TruthfulReporterAgent, LowVolatilityAgent]
+      - [TruthfulReporterAgent, CommitteeTeamAgent]
+      - [ContrarianAgent, DrawdownBuyerAgent]
+    influence_edges:
+      - [PersuaderAgent, MomentumAgent, 1.4]
+      - [PersuaderAgent, MeanReversionAgent, 1.4]
+      - [PersuaderAgent, RandomAgent, 1.0]
+      - [TruthfulReporterAgent, LowVolatilityAgent, 0.9]
+      - [TruthfulReporterAgent, CommitteeTeamAgent, 0.9]
+      - [ContrarianAgent, DrawdownBuyerAgent, 0.8]
+    groups:
+      Persuasion Test: [PersuaderAgent, MomentumAgent, MeanReversionAgent, RandomAgent]
+      Verification Desk: [TruthfulReporterAgent, LowVolatilityAgent, CommitteeTeamAgent, ContrarianAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.25
+      max_friends: 6
+
+  truthful_anchor:
+    topology: truthful_anchor
+    friendships:
+      - [TruthfulReporterAgent, MomentumAgent]
+      - [TruthfulReporterAgent, MeanReversionAgent]
+      - [TruthfulReporterAgent, LowVolatilityAgent]
+      - [TruthfulReporterAgent, CommitteeTeamAgent]
+      - [TruthfulReporterAgent, SocialGraphAgent]
+      - [ContrarianAgent, SocialGraphAgent]
+    influence_edges:
+      - [TruthfulReporterAgent, MomentumAgent, 1.2]
+      - [TruthfulReporterAgent, MeanReversionAgent, 1.2]
+      - [TruthfulReporterAgent, LowVolatilityAgent, 1.2]
+      - [TruthfulReporterAgent, CommitteeTeamAgent, 1.2]
+      - [TruthfulReporterAgent, SocialGraphAgent, 1.2]
+      - [ContrarianAgent, SocialGraphAgent, 0.8]
+    groups:
+      Verification Hub: [TruthfulReporterAgent, CommitteeTeamAgent, SocialGraphAgent]
+      Signal Consumers: [MomentumAgent, MeanReversionAgent, LowVolatilityAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.30
+      max_friends: 7
+
+  mentor_pairs:
+    topology: mentor_pairs
+    friendships:
+      - [CommitteeTeamAgent, MomentumAgent]
+      - [CommitteeTeamAgent, MeanReversionAgent]
+      - [DynamicTeamAgent, LowVolatilityAgent]
+      - [DynamicTeamAgent, DrawdownBuyerAgent]
+      - [SocialGraphAgent, TruthfulReporterAgent]
+      - [ContrarianAgent, PersuaderAgent]
+      - [FreeRiderAgent, RandomAgent]
+    influence_edges:
+      - [CommitteeTeamAgent, MomentumAgent, 0.9]
+      - [CommitteeTeamAgent, MeanReversionAgent, 0.9]
+      - [DynamicTeamAgent, LowVolatilityAgent, 0.9]
+      - [DynamicTeamAgent, DrawdownBuyerAgent, 0.9]
+      - [SocialGraphAgent, TruthfulReporterAgent, 0.9]
+      - [ContrarianAgent, PersuaderAgent, 0.7]
+    groups:
+      Mentors: [CommitteeTeamAgent, DynamicTeamAgent, SocialGraphAgent]
+      Specialists: [MomentumAgent, MeanReversionAgent, LowVolatilityAgent, DrawdownBuyerAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.35
+      max_friends: 4
+
+  barbell_two_camps:
+    topology: barbell
+    friendships:
+      - [MomentumAgent, TruthfulReporterAgent]
+      - [TruthfulReporterAgent, DynamicTeamAgent]
+      - [DynamicTeamAgent, MomentumAgent]
+      - [MeanReversionAgent, ContrarianAgent]
+      - [ContrarianAgent, PersuaderAgent]
+      - [PersuaderAgent, MeanReversionAgent]
+      - [DynamicTeamAgent, SocialGraphAgent]
+      - [SocialGraphAgent, ContrarianAgent]
+      - [CommitteeTeamAgent, LowVolatilityAgent]
+      - [LowVolatilityAgent, FreeRiderAgent]
+    influence_edges:
+      - [MomentumAgent, TruthfulReporterAgent, 0.8]
+      - [TruthfulReporterAgent, DynamicTeamAgent, 0.8]
+      - [MeanReversionAgent, ContrarianAgent, 0.8]
+      - [ContrarianAgent, PersuaderAgent, 0.8]
+      - [SocialGraphAgent, DynamicTeamAgent, 1.0]
+      - [SocialGraphAgent, ContrarianAgent, 1.0]
+    groups:
+      Trend Camp: [MomentumAgent, TruthfulReporterAgent, DynamicTeamAgent]
+      Reversion Camp: [MeanReversionAgent, ContrarianAgent, PersuaderAgent]
+      Risk Camp: [CommitteeTeamAgent, LowVolatilityAgent, FreeRiderAgent]
+    friend_request_rules:
+      strategy_similarity_threshold: 0.50
+      max_friends: 5

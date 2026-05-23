@@ -9,6 +9,7 @@ os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/ai_agent_stock_market_matplo
 os.makedirs(os.environ["MPLCONFIGDIR"], exist_ok=True)
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import yaml
 
@@ -33,8 +34,11 @@ from data_loader import load_prices
 from message import MessageBoard
 from portfolio import performance_metrics
 from reputation import ReputationTracker
+from scoring import build_forecast_scores, scoring_summary
 from social_graph import SocialGraph
 from strategy_spec import strategy_spec_for_agent
+from strategy_training import walk_forward_train_agents
+from view_extractor import build_black_litterman_outputs
 
 
 EXPERIMENTS = {
@@ -257,6 +261,7 @@ def run(
     reputation = ReputationTracker()
     social_graph = SocialGraph()
     agents = build_agents(social_graph)
+    training_params = walk_forward_train_agents(prices, agents, train_days=80)
     social_graph.load_scenario(scenario, agents)
     board.sync_groups(social_graph)
     setup_date = str(prices["date"].min())[:10]
@@ -293,6 +298,11 @@ def run(
     total_returns = metrics.set_index("agent")["total_return"].to_dict()
     social_graph.update_weights(total_returns)
     reputation_scores = reputation.to_dataframe()
+    message_log = board.to_dataframe()
+    forecast_scores = build_forecast_scores(message_log, prices, horizon_days=20)
+    forecast_summary = scoring_summary(forecast_scores)
+    reputation_scores = _merge_proper_scoring(reputation_scores, forecast_summary)
+    bl_outputs = build_black_litterman_outputs(message_log, prices, reputation_scores, horizon_days=20)
     social_edges = social_graph.to_dataframe()
     centrality_scores = _centrality_dataframe(social_graph, experiment, scenario_name)
     belief_history = _belief_history_dataframe(agents)
@@ -318,10 +328,15 @@ def run(
     portfolio_outputs["agent_return_correlation"].to_csv(out_dir / "tables" / "agent_return_correlation.csv", index=False)
     portfolio_outputs["manager_equity_curve"].to_csv(out_dir / "tables" / "manager_equity_curve.csv", index=False)
     portfolio_outputs["meta_weight_history"].to_csv(out_dir / "tables" / "meta_weight_history.csv", index=False)
+    portfolio_outputs["manager_loss_history"].to_csv(out_dir / "tables" / "manager_loss_history.csv", index=False)
     portfolio_outputs["experiment_comparison"].to_csv(out_dir / "tables" / "experiment_comparison.csv", index=False)
+    training_params.to_csv(out_dir / "tables" / "training_params.csv", index=False)
+    forecast_scores.to_csv(out_dir / "tables" / "forecast_scores.csv", index=False)
+    bl_outputs["agent_views"].to_csv(out_dir / "tables" / "agent_views.csv", index=False)
+    bl_outputs["bl_agent_view_weights"].to_csv(out_dir / "tables" / "bl_agent_view_weights.csv", index=False)
     trade_log.to_csv(out_dir / "tables" / "trade_log.csv", index=False)
     metrics.to_csv(out_dir / "tables" / "performance_metrics.csv", index=False)
-    board.to_dataframe().to_csv(out_dir / "tables" / "message_log.csv", index=False)
+    message_log.to_csv(out_dir / "tables" / "message_log.csv", index=False)
     social_edges.to_csv(out_dir / "tables" / "social_graph_edges.csv", index=False)
     reputation_scores.to_csv(out_dir / "tables" / "reputation_scores.csv", index=False)
     belief_history.to_csv(out_dir / "tables" / "belief_history.csv", index=False)
@@ -494,7 +509,7 @@ def _simulate_population(
                 decision = agent.target_weights(history, portfolio["cash"], portfolio["positions"])
                 spec, violations = _strategy_contract_result(agent, decision, rebalance_every)
                 decision.strategy_spec_version = spec.version
-                decision.param_hash = spec.param_hash()
+                decision.param_hash = _active_param_hash(agent, spec)
                 for violation in violations:
                     drift_rows.append(
                         {
@@ -1078,7 +1093,8 @@ def _agent_registry_dataframe(agents) -> pd.DataFrame:
                 "strategy_spec": spec.name,
                 "strategy_family": spec.family,
                 "strategy_spec_version": spec.version,
-                "param_hash": spec.param_hash(),
+                "param_hash": _active_param_hash(agent, spec),
+                "active_params_json": json.dumps(_active_strategy_params(agent), ensure_ascii=False, sort_keys=True),
             }
         )
     return pd.DataFrame(
@@ -1093,8 +1109,27 @@ def _agent_registry_dataframe(agents) -> pd.DataFrame:
             "strategy_family",
             "strategy_spec_version",
             "param_hash",
+            "active_params_json",
         ],
     )
+
+
+def _active_strategy_params(agent) -> dict:
+    strategy = getattr(agent, "own_strategy", agent)
+    params = {}
+    for key in [
+        "short_lookback",
+        "long_lookback",
+        "short_weight",
+        "lookback",
+        "vol_lookback",
+        "trend_lookback",
+        "drawdown_lookback",
+        "rebound_lookback",
+    ]:
+        if hasattr(strategy, key):
+            params[key] = getattr(strategy, key)
+    return params
 
 
 def _append_hedge_weights(aggregation_history, metrics, reputation_scores, last_date) -> pd.DataFrame:
@@ -1113,6 +1148,23 @@ def _append_hedge_weights(aggregation_history, metrics, reputation_scores, last_
         columns=["date", "method", "agent", "value"],
     )
     return pd.concat([aggregation_history, hedge_rows], ignore_index=True)
+
+
+def _merge_proper_scoring(reputation_scores: pd.DataFrame, forecast_summary: pd.DataFrame) -> pd.DataFrame:
+    if reputation_scores.empty:
+        reputation_scores = pd.DataFrame(columns=["sender_id", "prediction_count", "avg_confidence", "reputation", "calibration_error", "influence_score"])
+    if forecast_summary.empty:
+        for column in ["forecast_count", "mean_brier", "mean_log_score", "proper_reputation"]:
+            reputation_scores[column] = np.nan
+        return reputation_scores
+    merged = reputation_scores.merge(forecast_summary, on="sender_id", how="left")
+    if "proper_reputation" in merged.columns:
+        merged["reputation"] = merged.apply(
+            lambda row: 0.65 * float(row.get("reputation", 0.5) if pd.notna(row.get("reputation", np.nan)) else 0.5)
+            + 0.35 * float(row.get("proper_reputation", 0.5) if pd.notna(row.get("proper_reputation", np.nan)) else 0.5),
+            axis=1,
+        )
+    return merged
 
 
 def _write_figures(prices, equity, metrics, out_dir, manager_equity=None) -> None:
@@ -1182,6 +1234,14 @@ def _strategy_contract_result(agent, decision, rebalance_every) -> tuple:
     return spec, violations
 
 
+def _active_param_hash(agent, spec) -> str:
+    import hashlib
+
+    payload = {"spec": spec.name, "version": spec.version, "params": _active_strategy_params(agent)}
+    raw = json.dumps(payload, ensure_ascii=True, sort_keys=True, default=str)
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:12]
+
+
 def _safe_optional_float(value):
     if value is None:
         return None
@@ -1216,7 +1276,7 @@ def _trade_detail(trade: dict) -> str:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prices", default="data/sample_synthetic_prices.csv")
+    parser.add_argument("--prices", default="data/TRD_Dalyr.xlsx")
     parser.add_argument("--out", default="outputs")
     parser.add_argument("--initial_cash", type=float, default=100000)
     parser.add_argument("--fee_rate", type=float, default=0.001)

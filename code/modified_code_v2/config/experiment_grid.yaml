@@ -16,7 +16,17 @@ experiments:
   - id: A3_correlation_agent_portfolio
     type: agent_portfolio
     manager: correlation_aware
+  - id: A3b_drawdown_constrained_agent_portfolio
+    type: agent_portfolio
+    manager: drawdown_constrained
   - id: A4_full_social_agent_portfolio
     type: agent_portfolio
     manager: hedge
     communication: full_social
+  - id: A5_black_litterman_agent_views
+    type: agent_views
+    allocator: black_litterman
+    communication: full_social
+  - id: A6_proper_scoring_reputation
+    type: social_mechanism
+    scoring_rule: brier

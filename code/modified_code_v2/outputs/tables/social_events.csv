@@ -1,145 +1,145 @@
 event_id,date,event_type,sender,receiver,status,similarity,detail
-1,2022-01-03,friend_request,MomentumAgent,TruthfulReporterAgent,pending,,第 1 轮：MomentumAgent 申请添加 TruthfulReporterAgent 为好友
-2,2022-01-03,friend_request,MomentumAgent,CommitteeTeamAgent,pending,,第 1 轮：MomentumAgent 申请添加 CommitteeTeamAgent 为好友
-3,2022-01-03,friend_request,MeanReversionAgent,PersuaderAgent,pending,,第 1 轮：MeanReversionAgent 申请添加 PersuaderAgent 为好友
-4,2022-01-03,friend_request,MeanReversionAgent,ContrarianAgent,pending,,第 1 轮：MeanReversionAgent 申请添加 ContrarianAgent 为好友
-5,2022-01-03,friend_request,LowVolatilityAgent,FreeRiderAgent,pending,,第 1 轮：LowVolatilityAgent 申请添加 FreeRiderAgent 为好友
-6,2022-01-03,friend_request,LowVolatilityAgent,CommitteeTeamAgent,pending,,第 1 轮：LowVolatilityAgent 申请添加 CommitteeTeamAgent 为好友
-7,2022-01-03,friend_request,DrawdownBuyerAgent,ContrarianAgent,pending,,第 1 轮：DrawdownBuyerAgent 申请添加 ContrarianAgent 为好友
-8,2022-01-03,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,pending,,第 1 轮：DrawdownBuyerAgent 申请添加 CommitteeTeamAgent 为好友
-9,2022-01-03,friend_request,RandomAgent,CommitteeTeamAgent,pending,,第 1 轮：RandomAgent 申请添加 CommitteeTeamAgent 为好友
-10,2022-01-03,friend_request,RandomAgent,DynamicTeamAgent,pending,,第 1 轮：RandomAgent 申请添加 DynamicTeamAgent 为好友
-11,2022-01-03,friend_request,CommitteeTeamAgent,MomentumAgent,pending,,第 1 轮：CommitteeTeamAgent 申请添加 MomentumAgent 为好友
-12,2022-01-03,friend_request,CommitteeTeamAgent,MeanReversionAgent,pending,,第 1 轮：CommitteeTeamAgent 申请添加 MeanReversionAgent 为好友
-13,2022-01-03,friend_request,DynamicTeamAgent,MomentumAgent,pending,,第 1 轮：DynamicTeamAgent 申请添加 MomentumAgent 为好友
-14,2022-01-03,friend_request,DynamicTeamAgent,MeanReversionAgent,pending,,第 1 轮：DynamicTeamAgent 申请添加 MeanReversionAgent 为好友
-15,2022-01-03,friend_request,TruthfulReporterAgent,MomentumAgent,pending,,第 1 轮：TruthfulReporterAgent 申请添加 MomentumAgent 为好友
-16,2022-01-03,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,pending,,第 1 轮：TruthfulReporterAgent 申请添加 CommitteeTeamAgent 为好友
-17,2022-01-03,friend_request,PersuaderAgent,MeanReversionAgent,pending,,第 1 轮：PersuaderAgent 申请添加 MeanReversionAgent 为好友
-18,2022-01-03,friend_request,PersuaderAgent,ContrarianAgent,pending,,第 1 轮：PersuaderAgent 申请添加 ContrarianAgent 为好友
-19,2022-01-03,friend_request,FreeRiderAgent,LowVolatilityAgent,pending,,第 1 轮：FreeRiderAgent 申请添加 LowVolatilityAgent 为好友
-20,2022-01-03,friend_request,FreeRiderAgent,CommitteeTeamAgent,pending,,第 1 轮：FreeRiderAgent 申请添加 CommitteeTeamAgent 为好友
-21,2022-01-03,friend_request,ContrarianAgent,MeanReversionAgent,pending,,第 1 轮：ContrarianAgent 申请添加 MeanReversionAgent 为好友
-22,2022-01-03,friend_request,ContrarianAgent,DrawdownBuyerAgent,pending,,第 1 轮：ContrarianAgent 申请添加 DrawdownBuyerAgent 为好友
-23,2022-01-03,friend_request,SocialGraphAgent,MomentumAgent,pending,,第 1 轮：SocialGraphAgent 申请添加 MomentumAgent 为好友
-24,2022-01-03,friend_request,SocialGraphAgent,MeanReversionAgent,pending,,第 1 轮：SocialGraphAgent 申请添加 MeanReversionAgent 为好友
-25,2022-01-03,friend_accept,MomentumAgent,TruthfulReporterAgent,accepted,1.0,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
-26,2022-01-03,friend_accept,MomentumAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 MomentumAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-27,2022-01-03,friend_accept,MeanReversionAgent,PersuaderAgent,accepted,1.0,PersuaderAgent 通过了 MeanReversionAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
-28,2022-01-03,friend_accept,MeanReversionAgent,ContrarianAgent,accepted,1.0,ContrarianAgent 通过了 MeanReversionAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
-29,2022-01-03,friend_accept,LowVolatilityAgent,FreeRiderAgent,accepted,1.0,FreeRiderAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
-30,2022-01-03,friend_accept,LowVolatilityAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-31,2022-01-03,friend_accept,DrawdownBuyerAgent,ContrarianAgent,accepted,1.0,ContrarianAgent 通过了 DrawdownBuyerAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
-32,2022-01-03,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-33,2022-01-03,friend_accept,RandomAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-34,2022-01-03,friend_accept,RandomAgent,DynamicTeamAgent,accepted,0.6,DynamicTeamAgent 通过了 RandomAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-35,2022-01-03,friend_reject,CommitteeTeamAgent,MomentumAgent,rejected,0.6,MomentumAgent 拒绝了 CommitteeTeamAgent 的好友申请：already friends
-36,2022-01-03,friend_reject,CommitteeTeamAgent,MeanReversionAgent,rejected,0.6,MeanReversionAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-37,2022-01-03,friend_accept,DynamicTeamAgent,MomentumAgent,accepted,0.6,MomentumAgent 通过了 DynamicTeamAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-38,2022-01-03,friend_accept,DynamicTeamAgent,MeanReversionAgent,accepted,0.6,MeanReversionAgent 通过了 DynamicTeamAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-39,2022-01-03,friend_reject,TruthfulReporterAgent,MomentumAgent,rejected,1.0,MomentumAgent 拒绝了 TruthfulReporterAgent 的好友申请：already friends
-40,2022-01-03,friend_reject,TruthfulReporterAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-41,2022-01-03,friend_reject,PersuaderAgent,MeanReversionAgent,rejected,1.0,MeanReversionAgent 拒绝了 PersuaderAgent 的好友申请：already friends
-42,2022-01-03,friend_accept,PersuaderAgent,ContrarianAgent,accepted,1.0,ContrarianAgent 通过了 PersuaderAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
-43,2022-01-03,friend_reject,FreeRiderAgent,LowVolatilityAgent,rejected,1.0,LowVolatilityAgent 拒绝了 FreeRiderAgent 的好友申请：already friends
-44,2022-01-03,friend_reject,FreeRiderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-45,2022-01-03,friend_reject,ContrarianAgent,MeanReversionAgent,rejected,1.0,MeanReversionAgent 拒绝了 ContrarianAgent 的好友申请：already friends
-46,2022-01-03,friend_reject,ContrarianAgent,DrawdownBuyerAgent,rejected,1.0,DrawdownBuyerAgent 拒绝了 ContrarianAgent 的好友申请：already friends
-47,2022-01-03,friend_accept,SocialGraphAgent,MomentumAgent,accepted,0.6,MomentumAgent 通过了 SocialGraphAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-48,2022-01-03,friend_accept,SocialGraphAgent,MeanReversionAgent,accepted,0.6,MeanReversionAgent 通过了 SocialGraphAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-49,2022-01-03,friend_request,MomentumAgent,MeanReversionAgent,pending,,第 2 轮：MomentumAgent 申请添加 MeanReversionAgent 为好友
-50,2022-01-03,friend_request,MomentumAgent,LowVolatilityAgent,pending,,第 2 轮：MomentumAgent 申请添加 LowVolatilityAgent 为好友
-51,2022-01-03,friend_request,MeanReversionAgent,CommitteeTeamAgent,pending,,第 2 轮：MeanReversionAgent 申请添加 CommitteeTeamAgent 为好友
-52,2022-01-03,friend_request,MeanReversionAgent,MomentumAgent,pending,,第 2 轮：MeanReversionAgent 申请添加 MomentumAgent 为好友
-53,2022-01-03,friend_request,LowVolatilityAgent,DynamicTeamAgent,pending,,第 2 轮：LowVolatilityAgent 申请添加 DynamicTeamAgent 为好友
-54,2022-01-03,friend_request,LowVolatilityAgent,SocialGraphAgent,pending,,第 2 轮：LowVolatilityAgent 申请添加 SocialGraphAgent 为好友
-55,2022-01-03,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,pending,,第 2 轮：DrawdownBuyerAgent 申请添加 DynamicTeamAgent 为好友
-56,2022-01-03,friend_request,DrawdownBuyerAgent,SocialGraphAgent,pending,,第 2 轮：DrawdownBuyerAgent 申请添加 SocialGraphAgent 为好友
-57,2022-01-03,friend_request,RandomAgent,SocialGraphAgent,pending,,第 2 轮：RandomAgent 申请添加 SocialGraphAgent 为好友
-58,2022-01-03,friend_request,RandomAgent,MomentumAgent,pending,,第 2 轮：RandomAgent 申请添加 MomentumAgent 为好友
-59,2022-01-03,friend_request,CommitteeTeamAgent,MeanReversionAgent,pending,,第 2 轮：CommitteeTeamAgent 申请添加 MeanReversionAgent 为好友
-60,2022-01-03,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,pending,,第 2 轮：CommitteeTeamAgent 申请添加 TruthfulReporterAgent 为好友
-61,2022-01-03,friend_request,DynamicTeamAgent,LowVolatilityAgent,pending,,第 2 轮：DynamicTeamAgent 申请添加 LowVolatilityAgent 为好友
-62,2022-01-03,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,pending,,第 2 轮：DynamicTeamAgent 申请添加 DrawdownBuyerAgent 为好友
-63,2022-01-03,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,pending,,第 2 轮：TruthfulReporterAgent 申请添加 CommitteeTeamAgent 为好友
-64,2022-01-03,friend_request,TruthfulReporterAgent,DynamicTeamAgent,pending,,第 2 轮：TruthfulReporterAgent 申请添加 DynamicTeamAgent 为好友
-65,2022-01-03,friend_request,PersuaderAgent,CommitteeTeamAgent,pending,,第 2 轮：PersuaderAgent 申请添加 CommitteeTeamAgent 为好友
-66,2022-01-03,friend_request,PersuaderAgent,DynamicTeamAgent,pending,,第 2 轮：PersuaderAgent 申请添加 DynamicTeamAgent 为好友
-67,2022-01-03,friend_request,FreeRiderAgent,CommitteeTeamAgent,pending,,第 2 轮：FreeRiderAgent 申请添加 CommitteeTeamAgent 为好友
-68,2022-01-03,friend_request,FreeRiderAgent,DynamicTeamAgent,pending,,第 2 轮：FreeRiderAgent 申请添加 DynamicTeamAgent 为好友
-69,2022-01-03,friend_request,ContrarianAgent,CommitteeTeamAgent,pending,,第 2 轮：ContrarianAgent 申请添加 CommitteeTeamAgent 为好友
-70,2022-01-03,friend_request,ContrarianAgent,DynamicTeamAgent,pending,,第 2 轮：ContrarianAgent 申请添加 DynamicTeamAgent 为好友
-71,2022-01-03,friend_request,SocialGraphAgent,LowVolatilityAgent,pending,,第 2 轮：SocialGraphAgent 申请添加 LowVolatilityAgent 为好友
-72,2022-01-03,friend_request,SocialGraphAgent,DrawdownBuyerAgent,pending,,第 2 轮：SocialGraphAgent 申请添加 DrawdownBuyerAgent 为好友
-73,2022-01-03,friend_reject,MomentumAgent,MeanReversionAgent,rejected,0.2,MeanReversionAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-74,2022-01-03,friend_reject,MomentumAgent,LowVolatilityAgent,rejected,0.2,LowVolatilityAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-75,2022-01-03,friend_reject,MeanReversionAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 MeanReversionAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-76,2022-01-03,friend_reject,MeanReversionAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 MeanReversionAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-77,2022-01-03,friend_accept,LowVolatilityAgent,DynamicTeamAgent,accepted,0.6,DynamicTeamAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-78,2022-01-03,friend_accept,LowVolatilityAgent,SocialGraphAgent,accepted,0.6,SocialGraphAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-79,2022-01-03,friend_reject,DrawdownBuyerAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-80,2022-01-03,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,accepted,0.6,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
-81,2022-01-03,friend_reject,RandomAgent,SocialGraphAgent,rejected,0.6,SocialGraphAgent 拒绝了 RandomAgent 的好友申请：SocialGraphAgent reached max_friends=6
-82,2022-01-03,friend_reject,RandomAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 RandomAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-83,2022-01-03,friend_reject,CommitteeTeamAgent,MeanReversionAgent,rejected,0.6,MeanReversionAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-84,2022-01-03,friend_reject,CommitteeTeamAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-85,2022-01-03,friend_reject,DynamicTeamAgent,LowVolatilityAgent,rejected,0.6,LowVolatilityAgent 拒绝了 DynamicTeamAgent 的好友申请：already friends
-86,2022-01-03,friend_reject,DynamicTeamAgent,DrawdownBuyerAgent,rejected,0.6,DrawdownBuyerAgent 拒绝了 DynamicTeamAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-87,2022-01-03,friend_reject,TruthfulReporterAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-88,2022-01-03,friend_reject,TruthfulReporterAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-89,2022-01-03,friend_reject,PersuaderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 PersuaderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-90,2022-01-03,friend_reject,PersuaderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 PersuaderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-91,2022-01-03,friend_reject,FreeRiderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-92,2022-01-03,friend_reject,FreeRiderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-93,2022-01-03,friend_reject,ContrarianAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 ContrarianAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-94,2022-01-03,friend_reject,ContrarianAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 ContrarianAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-95,2022-01-03,friend_reject,SocialGraphAgent,LowVolatilityAgent,rejected,0.6,LowVolatilityAgent 拒绝了 SocialGraphAgent 的好友申请：already friends
-96,2022-01-03,friend_reject,SocialGraphAgent,DrawdownBuyerAgent,rejected,0.6,DrawdownBuyerAgent 拒绝了 SocialGraphAgent 的好友申请：already friends
-97,2022-01-03,friend_request,MomentumAgent,MeanReversionAgent,pending,,第 3 轮：MomentumAgent 申请添加 MeanReversionAgent 为好友
-98,2022-01-03,friend_request,MomentumAgent,LowVolatilityAgent,pending,,第 3 轮：MomentumAgent 申请添加 LowVolatilityAgent 为好友
-99,2022-01-03,friend_request,MeanReversionAgent,CommitteeTeamAgent,pending,,第 3 轮：MeanReversionAgent 申请添加 CommitteeTeamAgent 为好友
-100,2022-01-03,friend_request,MeanReversionAgent,MomentumAgent,pending,,第 3 轮：MeanReversionAgent 申请添加 MomentumAgent 为好友
-101,2022-01-03,friend_request,LowVolatilityAgent,DrawdownBuyerAgent,pending,,第 3 轮：LowVolatilityAgent 申请添加 DrawdownBuyerAgent 为好友
-102,2022-01-03,friend_request,LowVolatilityAgent,ContrarianAgent,pending,,第 3 轮：LowVolatilityAgent 申请添加 ContrarianAgent 为好友
-103,2022-01-03,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,pending,,第 3 轮：DrawdownBuyerAgent 申请添加 DynamicTeamAgent 为好友
-104,2022-01-03,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,pending,,第 3 轮：DrawdownBuyerAgent 申请添加 LowVolatilityAgent 为好友
-105,2022-01-03,friend_request,RandomAgent,SocialGraphAgent,pending,,第 3 轮：RandomAgent 申请添加 SocialGraphAgent 为好友
-106,2022-01-03,friend_request,RandomAgent,MomentumAgent,pending,,第 3 轮：RandomAgent 申请添加 MomentumAgent 为好友
-107,2022-01-03,friend_request,CommitteeTeamAgent,MeanReversionAgent,pending,,第 3 轮：CommitteeTeamAgent 申请添加 MeanReversionAgent 为好友
-108,2022-01-03,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,pending,,第 3 轮：CommitteeTeamAgent 申请添加 TruthfulReporterAgent 为好友
-109,2022-01-03,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,pending,,第 3 轮：DynamicTeamAgent 申请添加 DrawdownBuyerAgent 为好友
-110,2022-01-03,friend_request,DynamicTeamAgent,TruthfulReporterAgent,pending,,第 3 轮：DynamicTeamAgent 申请添加 TruthfulReporterAgent 为好友
-111,2022-01-03,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,pending,,第 3 轮：TruthfulReporterAgent 申请添加 CommitteeTeamAgent 为好友
-112,2022-01-03,friend_request,TruthfulReporterAgent,DynamicTeamAgent,pending,,第 3 轮：TruthfulReporterAgent 申请添加 DynamicTeamAgent 为好友
-113,2022-01-03,friend_request,PersuaderAgent,CommitteeTeamAgent,pending,,第 3 轮：PersuaderAgent 申请添加 CommitteeTeamAgent 为好友
-114,2022-01-03,friend_request,PersuaderAgent,DynamicTeamAgent,pending,,第 3 轮：PersuaderAgent 申请添加 DynamicTeamAgent 为好友
-115,2022-01-03,friend_request,FreeRiderAgent,CommitteeTeamAgent,pending,,第 3 轮：FreeRiderAgent 申请添加 CommitteeTeamAgent 为好友
-116,2022-01-03,friend_request,FreeRiderAgent,DynamicTeamAgent,pending,,第 3 轮：FreeRiderAgent 申请添加 DynamicTeamAgent 为好友
-117,2022-01-03,friend_request,ContrarianAgent,CommitteeTeamAgent,pending,,第 3 轮：ContrarianAgent 申请添加 CommitteeTeamAgent 为好友
-118,2022-01-03,friend_request,ContrarianAgent,DynamicTeamAgent,pending,,第 3 轮：ContrarianAgent 申请添加 DynamicTeamAgent 为好友
-119,2022-01-03,friend_request,SocialGraphAgent,RandomAgent,pending,,第 3 轮：SocialGraphAgent 申请添加 RandomAgent 为好友
-120,2022-01-03,friend_request,SocialGraphAgent,TruthfulReporterAgent,pending,,第 3 轮：SocialGraphAgent 申请添加 TruthfulReporterAgent 为好友
-121,2022-01-03,friend_reject,MomentumAgent,MeanReversionAgent,rejected,0.2,MeanReversionAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-122,2022-01-03,friend_reject,MomentumAgent,LowVolatilityAgent,rejected,0.2,LowVolatilityAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-123,2022-01-03,friend_reject,MeanReversionAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 MeanReversionAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-124,2022-01-03,friend_reject,MeanReversionAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 MeanReversionAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-125,2022-01-03,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,accepted,0.45,DrawdownBuyerAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.45 >= threshold 0.35
-126,2022-01-03,friend_accept,LowVolatilityAgent,ContrarianAgent,accepted,0.45,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.45 >= threshold 0.35
-127,2022-01-03,friend_reject,DrawdownBuyerAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-128,2022-01-03,friend_reject,DrawdownBuyerAgent,LowVolatilityAgent,rejected,0.45,LowVolatilityAgent 拒绝了 DrawdownBuyerAgent 的好友申请：already friends
-129,2022-01-03,friend_reject,RandomAgent,SocialGraphAgent,rejected,0.6,SocialGraphAgent 拒绝了 RandomAgent 的好友申请：SocialGraphAgent reached max_friends=6
-130,2022-01-03,friend_reject,RandomAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 RandomAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
-131,2022-01-03,friend_reject,CommitteeTeamAgent,MeanReversionAgent,rejected,0.6,MeanReversionAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-132,2022-01-03,friend_reject,CommitteeTeamAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-133,2022-01-03,friend_reject,DynamicTeamAgent,DrawdownBuyerAgent,rejected,0.6,DrawdownBuyerAgent 拒绝了 DynamicTeamAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-134,2022-01-03,friend_reject,DynamicTeamAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 DynamicTeamAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-135,2022-01-03,friend_reject,TruthfulReporterAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-136,2022-01-03,friend_reject,TruthfulReporterAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-137,2022-01-03,friend_reject,PersuaderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 PersuaderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-138,2022-01-03,friend_reject,PersuaderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 PersuaderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-139,2022-01-03,friend_reject,FreeRiderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-140,2022-01-03,friend_reject,FreeRiderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-141,2022-01-03,friend_reject,ContrarianAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 ContrarianAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
-142,2022-01-03,friend_reject,ContrarianAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 ContrarianAgent 的好友申请：DynamicTeamAgent reached max_friends=6
-143,2022-01-03,friend_reject,SocialGraphAgent,RandomAgent,rejected,0.6,RandomAgent 拒绝了 SocialGraphAgent 的好友申请：SocialGraphAgent reached max_friends=6
-144,2022-01-03,friend_reject,SocialGraphAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 SocialGraphAgent 的好友申请：SocialGraphAgent reached max_friends=6
+1,2021-01-04,friend_request,MomentumAgent,TruthfulReporterAgent,pending,,第 1 轮：MomentumAgent 申请添加 TruthfulReporterAgent 为好友
+2,2021-01-04,friend_request,MomentumAgent,CommitteeTeamAgent,pending,,第 1 轮：MomentumAgent 申请添加 CommitteeTeamAgent 为好友
+3,2021-01-04,friend_request,MeanReversionAgent,PersuaderAgent,pending,,第 1 轮：MeanReversionAgent 申请添加 PersuaderAgent 为好友
+4,2021-01-04,friend_request,MeanReversionAgent,ContrarianAgent,pending,,第 1 轮：MeanReversionAgent 申请添加 ContrarianAgent 为好友
+5,2021-01-04,friend_request,LowVolatilityAgent,FreeRiderAgent,pending,,第 1 轮：LowVolatilityAgent 申请添加 FreeRiderAgent 为好友
+6,2021-01-04,friend_request,LowVolatilityAgent,CommitteeTeamAgent,pending,,第 1 轮：LowVolatilityAgent 申请添加 CommitteeTeamAgent 为好友
+7,2021-01-04,friend_request,DrawdownBuyerAgent,ContrarianAgent,pending,,第 1 轮：DrawdownBuyerAgent 申请添加 ContrarianAgent 为好友
+8,2021-01-04,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,pending,,第 1 轮：DrawdownBuyerAgent 申请添加 CommitteeTeamAgent 为好友
+9,2021-01-04,friend_request,RandomAgent,CommitteeTeamAgent,pending,,第 1 轮：RandomAgent 申请添加 CommitteeTeamAgent 为好友
+10,2021-01-04,friend_request,RandomAgent,DynamicTeamAgent,pending,,第 1 轮：RandomAgent 申请添加 DynamicTeamAgent 为好友
+11,2021-01-04,friend_request,CommitteeTeamAgent,MomentumAgent,pending,,第 1 轮：CommitteeTeamAgent 申请添加 MomentumAgent 为好友
+12,2021-01-04,friend_request,CommitteeTeamAgent,MeanReversionAgent,pending,,第 1 轮：CommitteeTeamAgent 申请添加 MeanReversionAgent 为好友
+13,2021-01-04,friend_request,DynamicTeamAgent,MomentumAgent,pending,,第 1 轮：DynamicTeamAgent 申请添加 MomentumAgent 为好友
+14,2021-01-04,friend_request,DynamicTeamAgent,MeanReversionAgent,pending,,第 1 轮：DynamicTeamAgent 申请添加 MeanReversionAgent 为好友
+15,2021-01-04,friend_request,TruthfulReporterAgent,MomentumAgent,pending,,第 1 轮：TruthfulReporterAgent 申请添加 MomentumAgent 为好友
+16,2021-01-04,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,pending,,第 1 轮：TruthfulReporterAgent 申请添加 CommitteeTeamAgent 为好友
+17,2021-01-04,friend_request,PersuaderAgent,MeanReversionAgent,pending,,第 1 轮：PersuaderAgent 申请添加 MeanReversionAgent 为好友
+18,2021-01-04,friend_request,PersuaderAgent,ContrarianAgent,pending,,第 1 轮：PersuaderAgent 申请添加 ContrarianAgent 为好友
+19,2021-01-04,friend_request,FreeRiderAgent,LowVolatilityAgent,pending,,第 1 轮：FreeRiderAgent 申请添加 LowVolatilityAgent 为好友
+20,2021-01-04,friend_request,FreeRiderAgent,CommitteeTeamAgent,pending,,第 1 轮：FreeRiderAgent 申请添加 CommitteeTeamAgent 为好友
+21,2021-01-04,friend_request,ContrarianAgent,MeanReversionAgent,pending,,第 1 轮：ContrarianAgent 申请添加 MeanReversionAgent 为好友
+22,2021-01-04,friend_request,ContrarianAgent,DrawdownBuyerAgent,pending,,第 1 轮：ContrarianAgent 申请添加 DrawdownBuyerAgent 为好友
+23,2021-01-04,friend_request,SocialGraphAgent,MomentumAgent,pending,,第 1 轮：SocialGraphAgent 申请添加 MomentumAgent 为好友
+24,2021-01-04,friend_request,SocialGraphAgent,MeanReversionAgent,pending,,第 1 轮：SocialGraphAgent 申请添加 MeanReversionAgent 为好友
+25,2021-01-04,friend_accept,MomentumAgent,TruthfulReporterAgent,accepted,1.0,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
+26,2021-01-04,friend_accept,MomentumAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 MomentumAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+27,2021-01-04,friend_accept,MeanReversionAgent,PersuaderAgent,accepted,1.0,PersuaderAgent 通过了 MeanReversionAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
+28,2021-01-04,friend_accept,MeanReversionAgent,ContrarianAgent,accepted,1.0,ContrarianAgent 通过了 MeanReversionAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
+29,2021-01-04,friend_accept,LowVolatilityAgent,FreeRiderAgent,accepted,1.0,FreeRiderAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
+30,2021-01-04,friend_accept,LowVolatilityAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+31,2021-01-04,friend_accept,DrawdownBuyerAgent,ContrarianAgent,accepted,1.0,ContrarianAgent 通过了 DrawdownBuyerAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
+32,2021-01-04,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+33,2021-01-04,friend_accept,RandomAgent,CommitteeTeamAgent,accepted,0.6,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+34,2021-01-04,friend_accept,RandomAgent,DynamicTeamAgent,accepted,0.6,DynamicTeamAgent 通过了 RandomAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+35,2021-01-04,friend_reject,CommitteeTeamAgent,MomentumAgent,rejected,0.6,MomentumAgent 拒绝了 CommitteeTeamAgent 的好友申请：already friends
+36,2021-01-04,friend_reject,CommitteeTeamAgent,MeanReversionAgent,rejected,0.6,MeanReversionAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+37,2021-01-04,friend_accept,DynamicTeamAgent,MomentumAgent,accepted,0.6,MomentumAgent 通过了 DynamicTeamAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+38,2021-01-04,friend_accept,DynamicTeamAgent,MeanReversionAgent,accepted,0.6,MeanReversionAgent 通过了 DynamicTeamAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+39,2021-01-04,friend_reject,TruthfulReporterAgent,MomentumAgent,rejected,1.0,MomentumAgent 拒绝了 TruthfulReporterAgent 的好友申请：already friends
+40,2021-01-04,friend_reject,TruthfulReporterAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+41,2021-01-04,friend_reject,PersuaderAgent,MeanReversionAgent,rejected,1.0,MeanReversionAgent 拒绝了 PersuaderAgent 的好友申请：already friends
+42,2021-01-04,friend_accept,PersuaderAgent,ContrarianAgent,accepted,1.0,ContrarianAgent 通过了 PersuaderAgent 的好友申请：strategy similarity 1.00 >= threshold 0.35
+43,2021-01-04,friend_reject,FreeRiderAgent,LowVolatilityAgent,rejected,1.0,LowVolatilityAgent 拒绝了 FreeRiderAgent 的好友申请：already friends
+44,2021-01-04,friend_reject,FreeRiderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+45,2021-01-04,friend_reject,ContrarianAgent,MeanReversionAgent,rejected,1.0,MeanReversionAgent 拒绝了 ContrarianAgent 的好友申请：already friends
+46,2021-01-04,friend_reject,ContrarianAgent,DrawdownBuyerAgent,rejected,1.0,DrawdownBuyerAgent 拒绝了 ContrarianAgent 的好友申请：already friends
+47,2021-01-04,friend_accept,SocialGraphAgent,MomentumAgent,accepted,0.6,MomentumAgent 通过了 SocialGraphAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+48,2021-01-04,friend_accept,SocialGraphAgent,MeanReversionAgent,accepted,0.6,MeanReversionAgent 通过了 SocialGraphAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+49,2021-01-04,friend_request,MomentumAgent,MeanReversionAgent,pending,,第 2 轮：MomentumAgent 申请添加 MeanReversionAgent 为好友
+50,2021-01-04,friend_request,MomentumAgent,LowVolatilityAgent,pending,,第 2 轮：MomentumAgent 申请添加 LowVolatilityAgent 为好友
+51,2021-01-04,friend_request,MeanReversionAgent,CommitteeTeamAgent,pending,,第 2 轮：MeanReversionAgent 申请添加 CommitteeTeamAgent 为好友
+52,2021-01-04,friend_request,MeanReversionAgent,MomentumAgent,pending,,第 2 轮：MeanReversionAgent 申请添加 MomentumAgent 为好友
+53,2021-01-04,friend_request,LowVolatilityAgent,DynamicTeamAgent,pending,,第 2 轮：LowVolatilityAgent 申请添加 DynamicTeamAgent 为好友
+54,2021-01-04,friend_request,LowVolatilityAgent,SocialGraphAgent,pending,,第 2 轮：LowVolatilityAgent 申请添加 SocialGraphAgent 为好友
+55,2021-01-04,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,pending,,第 2 轮：DrawdownBuyerAgent 申请添加 DynamicTeamAgent 为好友
+56,2021-01-04,friend_request,DrawdownBuyerAgent,SocialGraphAgent,pending,,第 2 轮：DrawdownBuyerAgent 申请添加 SocialGraphAgent 为好友
+57,2021-01-04,friend_request,RandomAgent,SocialGraphAgent,pending,,第 2 轮：RandomAgent 申请添加 SocialGraphAgent 为好友
+58,2021-01-04,friend_request,RandomAgent,MomentumAgent,pending,,第 2 轮：RandomAgent 申请添加 MomentumAgent 为好友
+59,2021-01-04,friend_request,CommitteeTeamAgent,MeanReversionAgent,pending,,第 2 轮：CommitteeTeamAgent 申请添加 MeanReversionAgent 为好友
+60,2021-01-04,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,pending,,第 2 轮：CommitteeTeamAgent 申请添加 TruthfulReporterAgent 为好友
+61,2021-01-04,friend_request,DynamicTeamAgent,LowVolatilityAgent,pending,,第 2 轮：DynamicTeamAgent 申请添加 LowVolatilityAgent 为好友
+62,2021-01-04,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,pending,,第 2 轮：DynamicTeamAgent 申请添加 DrawdownBuyerAgent 为好友
+63,2021-01-04,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,pending,,第 2 轮：TruthfulReporterAgent 申请添加 CommitteeTeamAgent 为好友
+64,2021-01-04,friend_request,TruthfulReporterAgent,DynamicTeamAgent,pending,,第 2 轮：TruthfulReporterAgent 申请添加 DynamicTeamAgent 为好友
+65,2021-01-04,friend_request,PersuaderAgent,CommitteeTeamAgent,pending,,第 2 轮：PersuaderAgent 申请添加 CommitteeTeamAgent 为好友
+66,2021-01-04,friend_request,PersuaderAgent,DynamicTeamAgent,pending,,第 2 轮：PersuaderAgent 申请添加 DynamicTeamAgent 为好友
+67,2021-01-04,friend_request,FreeRiderAgent,CommitteeTeamAgent,pending,,第 2 轮：FreeRiderAgent 申请添加 CommitteeTeamAgent 为好友
+68,2021-01-04,friend_request,FreeRiderAgent,DynamicTeamAgent,pending,,第 2 轮：FreeRiderAgent 申请添加 DynamicTeamAgent 为好友
+69,2021-01-04,friend_request,ContrarianAgent,CommitteeTeamAgent,pending,,第 2 轮：ContrarianAgent 申请添加 CommitteeTeamAgent 为好友
+70,2021-01-04,friend_request,ContrarianAgent,DynamicTeamAgent,pending,,第 2 轮：ContrarianAgent 申请添加 DynamicTeamAgent 为好友
+71,2021-01-04,friend_request,SocialGraphAgent,LowVolatilityAgent,pending,,第 2 轮：SocialGraphAgent 申请添加 LowVolatilityAgent 为好友
+72,2021-01-04,friend_request,SocialGraphAgent,DrawdownBuyerAgent,pending,,第 2 轮：SocialGraphAgent 申请添加 DrawdownBuyerAgent 为好友
+73,2021-01-04,friend_reject,MomentumAgent,MeanReversionAgent,rejected,0.2,MeanReversionAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+74,2021-01-04,friend_reject,MomentumAgent,LowVolatilityAgent,rejected,0.2,LowVolatilityAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+75,2021-01-04,friend_reject,MeanReversionAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 MeanReversionAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+76,2021-01-04,friend_reject,MeanReversionAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 MeanReversionAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+77,2021-01-04,friend_accept,LowVolatilityAgent,DynamicTeamAgent,accepted,0.6,DynamicTeamAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+78,2021-01-04,friend_accept,LowVolatilityAgent,SocialGraphAgent,accepted,0.6,SocialGraphAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+79,2021-01-04,friend_reject,DrawdownBuyerAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+80,2021-01-04,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,accepted,0.6,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：strategy similarity 0.60 >= threshold 0.35
+81,2021-01-04,friend_reject,RandomAgent,SocialGraphAgent,rejected,0.6,SocialGraphAgent 拒绝了 RandomAgent 的好友申请：SocialGraphAgent reached max_friends=6
+82,2021-01-04,friend_reject,RandomAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 RandomAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+83,2021-01-04,friend_reject,CommitteeTeamAgent,MeanReversionAgent,rejected,0.6,MeanReversionAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+84,2021-01-04,friend_reject,CommitteeTeamAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+85,2021-01-04,friend_reject,DynamicTeamAgent,LowVolatilityAgent,rejected,0.6,LowVolatilityAgent 拒绝了 DynamicTeamAgent 的好友申请：already friends
+86,2021-01-04,friend_reject,DynamicTeamAgent,DrawdownBuyerAgent,rejected,0.6,DrawdownBuyerAgent 拒绝了 DynamicTeamAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+87,2021-01-04,friend_reject,TruthfulReporterAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+88,2021-01-04,friend_reject,TruthfulReporterAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+89,2021-01-04,friend_reject,PersuaderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 PersuaderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+90,2021-01-04,friend_reject,PersuaderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 PersuaderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+91,2021-01-04,friend_reject,FreeRiderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+92,2021-01-04,friend_reject,FreeRiderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+93,2021-01-04,friend_reject,ContrarianAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 ContrarianAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+94,2021-01-04,friend_reject,ContrarianAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 ContrarianAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+95,2021-01-04,friend_reject,SocialGraphAgent,LowVolatilityAgent,rejected,0.6,LowVolatilityAgent 拒绝了 SocialGraphAgent 的好友申请：already friends
+96,2021-01-04,friend_reject,SocialGraphAgent,DrawdownBuyerAgent,rejected,0.6,DrawdownBuyerAgent 拒绝了 SocialGraphAgent 的好友申请：already friends
+97,2021-01-04,friend_request,MomentumAgent,MeanReversionAgent,pending,,第 3 轮：MomentumAgent 申请添加 MeanReversionAgent 为好友
+98,2021-01-04,friend_request,MomentumAgent,LowVolatilityAgent,pending,,第 3 轮：MomentumAgent 申请添加 LowVolatilityAgent 为好友
+99,2021-01-04,friend_request,MeanReversionAgent,CommitteeTeamAgent,pending,,第 3 轮：MeanReversionAgent 申请添加 CommitteeTeamAgent 为好友
+100,2021-01-04,friend_request,MeanReversionAgent,MomentumAgent,pending,,第 3 轮：MeanReversionAgent 申请添加 MomentumAgent 为好友
+101,2021-01-04,friend_request,LowVolatilityAgent,DrawdownBuyerAgent,pending,,第 3 轮：LowVolatilityAgent 申请添加 DrawdownBuyerAgent 为好友
+102,2021-01-04,friend_request,LowVolatilityAgent,ContrarianAgent,pending,,第 3 轮：LowVolatilityAgent 申请添加 ContrarianAgent 为好友
+103,2021-01-04,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,pending,,第 3 轮：DrawdownBuyerAgent 申请添加 DynamicTeamAgent 为好友
+104,2021-01-04,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,pending,,第 3 轮：DrawdownBuyerAgent 申请添加 LowVolatilityAgent 为好友
+105,2021-01-04,friend_request,RandomAgent,SocialGraphAgent,pending,,第 3 轮：RandomAgent 申请添加 SocialGraphAgent 为好友
+106,2021-01-04,friend_request,RandomAgent,MomentumAgent,pending,,第 3 轮：RandomAgent 申请添加 MomentumAgent 为好友
+107,2021-01-04,friend_request,CommitteeTeamAgent,MeanReversionAgent,pending,,第 3 轮：CommitteeTeamAgent 申请添加 MeanReversionAgent 为好友
+108,2021-01-04,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,pending,,第 3 轮：CommitteeTeamAgent 申请添加 TruthfulReporterAgent 为好友
+109,2021-01-04,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,pending,,第 3 轮：DynamicTeamAgent 申请添加 DrawdownBuyerAgent 为好友
+110,2021-01-04,friend_request,DynamicTeamAgent,TruthfulReporterAgent,pending,,第 3 轮：DynamicTeamAgent 申请添加 TruthfulReporterAgent 为好友
+111,2021-01-04,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,pending,,第 3 轮：TruthfulReporterAgent 申请添加 CommitteeTeamAgent 为好友
+112,2021-01-04,friend_request,TruthfulReporterAgent,DynamicTeamAgent,pending,,第 3 轮：TruthfulReporterAgent 申请添加 DynamicTeamAgent 为好友
+113,2021-01-04,friend_request,PersuaderAgent,CommitteeTeamAgent,pending,,第 3 轮：PersuaderAgent 申请添加 CommitteeTeamAgent 为好友
+114,2021-01-04,friend_request,PersuaderAgent,DynamicTeamAgent,pending,,第 3 轮：PersuaderAgent 申请添加 DynamicTeamAgent 为好友
+115,2021-01-04,friend_request,FreeRiderAgent,CommitteeTeamAgent,pending,,第 3 轮：FreeRiderAgent 申请添加 CommitteeTeamAgent 为好友
+116,2021-01-04,friend_request,FreeRiderAgent,DynamicTeamAgent,pending,,第 3 轮：FreeRiderAgent 申请添加 DynamicTeamAgent 为好友
+117,2021-01-04,friend_request,ContrarianAgent,CommitteeTeamAgent,pending,,第 3 轮：ContrarianAgent 申请添加 CommitteeTeamAgent 为好友
+118,2021-01-04,friend_request,ContrarianAgent,DynamicTeamAgent,pending,,第 3 轮：ContrarianAgent 申请添加 DynamicTeamAgent 为好友
+119,2021-01-04,friend_request,SocialGraphAgent,RandomAgent,pending,,第 3 轮：SocialGraphAgent 申请添加 RandomAgent 为好友
+120,2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,pending,,第 3 轮：SocialGraphAgent 申请添加 TruthfulReporterAgent 为好友
+121,2021-01-04,friend_reject,MomentumAgent,MeanReversionAgent,rejected,0.2,MeanReversionAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+122,2021-01-04,friend_reject,MomentumAgent,LowVolatilityAgent,rejected,0.2,LowVolatilityAgent 拒绝了 MomentumAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+123,2021-01-04,friend_reject,MeanReversionAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 MeanReversionAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+124,2021-01-04,friend_reject,MeanReversionAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 MeanReversionAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+125,2021-01-04,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,accepted,0.45,DrawdownBuyerAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.45 >= threshold 0.35
+126,2021-01-04,friend_accept,LowVolatilityAgent,ContrarianAgent,accepted,0.45,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：strategy similarity 0.45 >= threshold 0.35
+127,2021-01-04,friend_reject,DrawdownBuyerAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+128,2021-01-04,friend_reject,DrawdownBuyerAgent,LowVolatilityAgent,rejected,0.45,LowVolatilityAgent 拒绝了 DrawdownBuyerAgent 的好友申请：already friends
+129,2021-01-04,friend_reject,RandomAgent,SocialGraphAgent,rejected,0.6,SocialGraphAgent 拒绝了 RandomAgent 的好友申请：SocialGraphAgent reached max_friends=6
+130,2021-01-04,friend_reject,RandomAgent,MomentumAgent,rejected,0.2,MomentumAgent 拒绝了 RandomAgent 的好友申请：strategy similarity 0.20 < threshold 0.35
+131,2021-01-04,friend_reject,CommitteeTeamAgent,MeanReversionAgent,rejected,0.6,MeanReversionAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+132,2021-01-04,friend_reject,CommitteeTeamAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+133,2021-01-04,friend_reject,DynamicTeamAgent,DrawdownBuyerAgent,rejected,0.6,DrawdownBuyerAgent 拒绝了 DynamicTeamAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+134,2021-01-04,friend_reject,DynamicTeamAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 DynamicTeamAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+135,2021-01-04,friend_reject,TruthfulReporterAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+136,2021-01-04,friend_reject,TruthfulReporterAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 TruthfulReporterAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+137,2021-01-04,friend_reject,PersuaderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 PersuaderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+138,2021-01-04,friend_reject,PersuaderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 PersuaderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+139,2021-01-04,friend_reject,FreeRiderAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+140,2021-01-04,friend_reject,FreeRiderAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+141,2021-01-04,friend_reject,ContrarianAgent,CommitteeTeamAgent,rejected,0.6,CommitteeTeamAgent 拒绝了 ContrarianAgent 的好友申请：CommitteeTeamAgent reached max_friends=6
+142,2021-01-04,friend_reject,ContrarianAgent,DynamicTeamAgent,rejected,0.6,DynamicTeamAgent 拒绝了 ContrarianAgent 的好友申请：DynamicTeamAgent reached max_friends=6
+143,2021-01-04,friend_reject,SocialGraphAgent,RandomAgent,rejected,0.6,RandomAgent 拒绝了 SocialGraphAgent 的好友申请：SocialGraphAgent reached max_friends=6
+144,2021-01-04,friend_reject,SocialGraphAgent,TruthfulReporterAgent,rejected,0.6,TruthfulReporterAgent 拒绝了 SocialGraphAgent 的好友申请：SocialGraphAgent reached max_friends=6

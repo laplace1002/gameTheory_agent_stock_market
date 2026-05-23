@@ -44,32 +44,43 @@ class BaseAgent:
 class MomentumAgent(BaseAgent):
     name = "MomentumAgent"
 
+    def __init__(self, short_lookback=20, long_lookback=60, short_weight=0.7):
+        self.short_lookback = int(short_lookback)
+        self.long_lookback = int(long_lookback)
+        self.short_weight = float(short_weight)
+
     def target_weights(self, history, cash, positions):
         latest_date = str(history["date"].max())[:10]
         scores = {}
         for ticker, g in history.groupby("ticker"):
             g = g.sort_values("date")
-            if len(g) < 40:
+            short = max(2, int(self.short_lookback))
+            long = max(short, int(self.long_lookback))
+            if len(g) <= short + 1:
                 scores[ticker] = 0
                 continue
-            ret_20 = g["close"].iloc[-1] / g["close"].iloc[-21] - 1
-            ret_60 = g["close"].iloc[-1] / g["close"].iloc[-61] - 1 if len(g) >= 70 else ret_20
-            scores[ticker] = 0.7 * ret_20 + 0.3 * ret_60
+            short_return = g["close"].iloc[-1] / g["close"].iloc[-short - 1] - 1
+            long_return = g["close"].iloc[-1] / g["close"].iloc[-long - 1] - 1 if len(g) > long + 1 else short_return
+            scores[ticker] = self.short_weight * short_return + (1.0 - self.short_weight) * long_return
         return AgentDecision(self.name, latest_date, self._normalize(scores), "追涨型：偏好近期上涨更强的股票。")
 
 
 class MeanReversionAgent(BaseAgent):
     name = "MeanReversionAgent"
 
+    def __init__(self, lookback=20):
+        self.lookback = int(lookback)
+
     def target_weights(self, history, cash, positions):
         latest_date = str(history["date"].max())[:10]
         scores = {}
         for ticker, g in history.groupby("ticker"):
             g = g.sort_values("date")
-            if len(g) < 25:
+            lookback = max(2, int(self.lookback))
+            if len(g) <= lookback + 1:
                 scores[ticker] = 0
                 continue
-            ma20 = g["close"].rolling(20).mean().iloc[-1]
+            ma20 = g["close"].rolling(lookback).mean().iloc[-1]
             price = g["close"].iloc[-1]
             scores[ticker] = max(0, (ma20 - price) / ma20)
         return AgentDecision(self.name, latest_date, self._normalize(scores), "均值回归型：偏好短期跌到均线下方的股票。")
@@ -78,17 +89,23 @@ class MeanReversionAgent(BaseAgent):
 class LowVolatilityAgent(BaseAgent):
     name = "LowVolatilityAgent"
 
+    def __init__(self, vol_lookback=40, trend_lookback=40):
+        self.vol_lookback = int(vol_lookback)
+        self.trend_lookback = int(trend_lookback)
+
     def target_weights(self, history, cash, positions):
         latest_date = str(history["date"].max())[:10]
         scores = {}
         for ticker, g in history.groupby("ticker"):
             g = g.sort_values("date")
-            if len(g) < 45:
+            vol_lookback = max(2, int(self.vol_lookback))
+            trend_lookback = max(2, int(self.trend_lookback))
+            if len(g) <= max(vol_lookback, trend_lookback) + 1:
                 scores[ticker] = 0
                 continue
             r = g["close"].pct_change().dropna()
-            vol = r.tail(40).std()
-            trend = g["close"].iloc[-1] / g["close"].iloc[-41] - 1
+            vol = r.tail(vol_lookback).std()
+            trend = g["close"].iloc[-1] / g["close"].iloc[-trend_lookback - 1] - 1
             scores[ticker] = max(0, trend) / (vol + 1e-6)
         return AgentDecision(self.name, latest_date, self._normalize(scores), "稳健型：偏好波动较低且趋势不差的股票。")
 
@@ -96,18 +113,24 @@ class LowVolatilityAgent(BaseAgent):
 class DrawdownBuyerAgent(BaseAgent):
     name = "DrawdownBuyerAgent"
 
+    def __init__(self, drawdown_lookback=120, rebound_lookback=5):
+        self.drawdown_lookback = int(drawdown_lookback)
+        self.rebound_lookback = int(rebound_lookback)
+
     def target_weights(self, history, cash, positions):
         latest_date = str(history["date"].max())[:10]
         scores = {}
         for ticker, g in history.groupby("ticker"):
             g = g.sort_values("date")
-            if len(g) < 120:
+            drawdown_lookback = max(5, int(self.drawdown_lookback))
+            rebound_lookback = max(1, int(self.rebound_lookback))
+            if len(g) <= drawdown_lookback + 1:
                 scores[ticker] = 0
                 continue
-            high = g["close"].rolling(120).max().iloc[-1]
+            high = g["close"].rolling(drawdown_lookback).max().iloc[-1]
             price = g["close"].iloc[-1]
             drawdown = (high - price) / high
-            rebound = g["close"].iloc[-1] / g["close"].iloc[-6] - 1 if len(g) >= 10 else 0
+            rebound = g["close"].iloc[-1] / g["close"].iloc[-rebound_lookback - 1] - 1 if len(g) > rebound_lookback + 1 else 0
             scores[ticker] = max(0, drawdown) * (1 + max(0, rebound))
         return AgentDecision(self.name, latest_date, self._normalize(scores), "逢低型：偏好相对高点回撤较大的股票。")
 

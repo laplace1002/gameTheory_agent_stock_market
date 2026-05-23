@@ -11,6 +11,7 @@ class StrategySpec:
     family: str
     allowed_features: tuple[str, ...]
     trainable_params: dict = field(default_factory=dict)
+    training_grid: dict = field(default_factory=dict)
     fixed_rules: tuple[str, ...] = field(default_factory=tuple)
     max_weight: float = 0.35
     rebalance_every: int = 5
@@ -21,6 +22,7 @@ class StrategySpec:
             "name": self.name,
             "family": self.family,
             "trainable_params": self.trainable_params,
+            "training_grid": self.training_grid,
             "fixed_rules": self.fixed_rules,
             "max_weight": self.max_weight,
             "rebalance_every": self.rebalance_every,
@@ -59,7 +61,8 @@ def default_strategy_spec(agent_name: str, rebalance_every: int = 5) -> Strategy
             name="MomentumAgent",
             family="momentum",
             allowed_features=("close", "20d_return", "60d_return"),
-            trainable_params={"ret_20_weight": 0.7, "ret_60_weight": 0.3},
+            trainable_params={"short_lookback": 20, "long_lookback": 60, "short_weight": 0.7},
+            training_grid={"short_lookback": [10, 20, 30], "long_lookback": [40, 60, 90], "short_weight": [0.65, 0.7, 0.75]},
             fixed_rules=("long_only", "rank_recent_winners", "cash_buffer"),
             rebalance_every=rebalance_every,
         ),
@@ -68,6 +71,7 @@ def default_strategy_spec(agent_name: str, rebalance_every: int = 5) -> Strategy
             family="mean_reversion",
             allowed_features=("close", "20d_moving_average"),
             trainable_params={"lookback": 20},
+            training_grid={"lookback": [10, 20, 40]},
             fixed_rules=("long_only", "buy_below_moving_average", "cash_buffer"),
             rebalance_every=rebalance_every,
         ),
@@ -75,7 +79,8 @@ def default_strategy_spec(agent_name: str, rebalance_every: int = 5) -> Strategy
             name="LowVolatilityAgent",
             family="low_volatility",
             allowed_features=("close", "40d_volatility", "40d_trend"),
-            trainable_params={"vol_lookback": 40, "trend_floor": 0.0},
+            trainable_params={"vol_lookback": 40, "trend_lookback": 40},
+            training_grid={"vol_lookback": [20, 40, 60], "trend_lookback": [40, 60]},
             fixed_rules=("long_only", "prefer_low_vol_positive_trend", "cash_buffer"),
             rebalance_every=rebalance_every,
         ),
@@ -84,6 +89,7 @@ def default_strategy_spec(agent_name: str, rebalance_every: int = 5) -> Strategy
             family="drawdown_value",
             allowed_features=("close", "120d_high", "5d_rebound"),
             trainable_params={"drawdown_lookback": 120, "rebound_lookback": 5},
+            training_grid={"drawdown_lookback": [60, 120, 180], "rebound_lookback": [5, 10]},
             fixed_rules=("long_only", "buy_large_drawdowns", "cash_buffer"),
             rebalance_every=rebalance_every,
         ),

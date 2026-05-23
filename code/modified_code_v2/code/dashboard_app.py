@@ -342,6 +342,11 @@ def main():
         agent_corr = pd.DataFrame()
         experiment_comparison = pd.DataFrame()
         drift_log = pd.DataFrame()
+        manager_loss = pd.DataFrame()
+        training_params = pd.DataFrame()
+        forecast_scores = pd.DataFrame()
+        agent_views = pd.DataFrame()
+        bl_weights = pd.DataFrame()
     else:
         output_dirs = discover_output_dirs()
         selected_out = st.sidebar.selectbox("结果目录", [str(path) for path in output_dirs], index=0)
@@ -366,6 +371,11 @@ def main():
         agent_corr = read_table(OUT_DIR, "agent_return_correlation.csv")
         experiment_comparison = read_table(OUT_DIR, "experiment_comparison.csv")
         drift_log = read_table(OUT_DIR, "drift_log.csv")
+        manager_loss = read_table(OUT_DIR, "manager_loss_history.csv")
+        training_params = read_table(OUT_DIR, "training_params.csv")
+        forecast_scores = read_table(OUT_DIR, "forecast_scores.csv")
+        agent_views = read_table(OUT_DIR, "agent_views.csv")
+        bl_weights = read_table(OUT_DIR, "bl_agent_view_weights.csv")
 
     if event_log.empty:
         event_log = build_legacy_event_log(trades, messages, social_events, equity)
@@ -407,6 +417,11 @@ def main():
             experiment_comparison,
             registry,
             drift_log,
+            manager_loss,
+            training_params,
+            forecast_scores,
+            agent_views,
+            bl_weights,
         )
 
     with tab_chat:
@@ -438,6 +453,11 @@ def main():
             agent_corr,
             experiment_comparison,
             drift_log,
+            manager_loss,
+            training_params,
+            forecast_scores,
+            agent_views,
+            bl_weights,
         )
 
     if live_api_mode:
@@ -735,6 +755,27 @@ def load_live_scenario(name: str) -> dict:
     data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     scenarios = data.get("scenarios", data)
     return scenarios.get(name, {}) if isinstance(scenarios, dict) else {}
+
+
+def load_live_scenarios() -> dict:
+    path = Path(__file__).resolve().parent.parent / "config" / "social_scenarios.yaml"
+    if not path.exists():
+        return {}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    scenarios = data.get("scenarios", data)
+    return scenarios if isinstance(scenarios, dict) else {}
+
+
+def scenario_summary(name: str, scenario: dict) -> str:
+    topology = scenario.get("topology", "custom")
+    friendships = scenario.get("friendships", [])
+    if friendships == "all":
+        friend_count = "all"
+    else:
+        friend_count = str(len(friendships or []))
+    influence_count = len(scenario.get("influence_edges", []) or [])
+    group_count = len(scenario.get("groups", {}) or {})
+    return f"{name} | topology={topology}, friendships={friend_count}, influence_edges={influence_count}, groups={group_count}"
 
 
 def initial_friendships_from_scenario(scenario: dict) -> list[tuple[str, str]]:
@@ -2157,7 +2198,29 @@ def render_live_sidebar_controls(events: pd.DataFrame, agents: list[str], friend
     if "live_auto_agents_enabled" not in st.session_state:
         st.session_state.live_auto_agents_enabled = bool(st.session_state.get("live_auto_agents", False))
 
+    scenarios = load_live_scenarios()
+    if scenarios:
+        st.sidebar.markdown("### 初始社交图谱")
+        scenario_names = sorted(scenarios)
+        current = st.session_state.get("live_scenario", DEFAULT_LIVE_SCENARIO)
+        index = scenario_names.index(current) if current in scenario_names else 0
+        selected_scenario = st.sidebar.selectbox(
+            "选择网络实验场景",
+            scenario_names,
+            index=index,
+            format_func=lambda name: scenario_summary(name, scenarios.get(name, {})),
+            key="live_scenario_selector",
+        )
+        st.sidebar.caption(
+            "用于研究不同初始关系对信息传播、好友演化、交易同步和收益风险的影响。"
+        )
+        if st.sidebar.button("应用该初始图谱", use_container_width=True, key="apply_live_social_scenario"):
+            st.session_state.live_scenario = selected_scenario
+            reset_live_social_graph_from_yaml()
+            rerun_app()
+
     st.sidebar.slider("自动轮次间隔秒", 3, 120, step=1, key="live_auto_interval")
+    st.sidebar.number_input("一键启动轮数", min_value=1, max_value=50, value=1, step=1, key="live_start_rounds")
     auto_enabled = st.sidebar.toggle("持续自动运行全部行为", key="live_auto_agents_enabled")
     st.session_state.live_auto_agents = bool(auto_enabled)
     st.sidebar.caption("每轮会并发调用所有 Agent，并生成交易、公聊、私聊、朋友圈和好友申请。")
@@ -2176,9 +2239,10 @@ def render_live_sidebar_controls(events: pd.DataFrame, agents: list[str], friend
             st.session_state.live_force_auto_off = True
         else:
             run = begin_new_live_run()
-            with st.spinner("正在并发启动所有 Agent 的完整行为..."):
+            requested_rounds = int(st.session_state.get("live_start_rounds", 1))
+            with st.spinner(f"正在并发启动所有 Agent 的完整行为，共 {requested_rounds} 轮..."):
                 try:
-                    generate_live_agent_round(agents=agents, events_until=events, friendships_df=friendships_df)
+                    generate_live_agent_rounds(agents=agents, n_rounds=requested_rounds)
                     st.session_state.live_auto_last_ts = time.time()
                     persist_live_state()
                     rerun_app()
@@ -2212,9 +2276,10 @@ def render_live_sidebar_controls(events: pd.DataFrame, agents: list[str], friend
             st.sidebar.error("没有可继续的上一轮生成。请先点一次“一键启动所有 Agent”。")
             st.session_state.live_force_auto_off = True
         else:
-            with st.spinner("正在继续上一次 Agent 生成..."):
+            requested_rounds = int(st.session_state.get("live_start_rounds", 1))
+            with st.spinner(f"正在继续上一次 Agent 生成，共 {requested_rounds} 轮..."):
                 try:
-                    generate_live_agent_round(agents=agents, events_until=events, friendships_df=friendships_df)
+                    generate_live_agent_rounds(agents=agents, n_rounds=requested_rounds)
                     st.session_state.live_auto_last_ts = time.time()
                     persist_live_state()
                     rerun_app()
@@ -2434,6 +2499,11 @@ def render_portfolio_hall(
     experiment_comparison,
     registry,
     drift_log,
+    manager_loss=None,
+    training_params=None,
+    forecast_scores=None,
+    agent_views=None,
+    bl_weights=None,
 ):
     st.markdown("#### Portfolio Hall：Agent 组合管理")
     if manager_equity.empty and agent_equity.empty:
@@ -2542,6 +2612,47 @@ def render_portfolio_hall(
     if not drift_log.empty:
         st.markdown("#### Drift Alerts")
         st.dataframe(drift_log.sort_values(["date", "agent"]), use_container_width=True, hide_index=True)
+
+    c5, c6 = st.columns([1, 1])
+    with c5:
+        st.markdown("#### Walk-Forward Training")
+        if training_params is None or training_params.empty:
+            st.info("缺少 training_params.csv。")
+        else:
+            cols = [col for col in ["agent", "strategy", "fixed_identity", "selected_params_json", "validation_score", "status"] if col in training_params.columns]
+            st.dataframe(training_params[cols], use_container_width=True, hide_index=True)
+    with c6:
+        st.markdown("#### Hedge Loss Breakdown")
+        if manager_loss is None or manager_loss.empty:
+            st.info("缺少 manager_loss_history.csv。")
+        else:
+            latest = manager_loss.copy()
+            latest["date"] = pd.to_datetime(latest["date"], errors="coerce")
+            latest = latest.sort_values("date").groupby(["manager", "agent"], as_index=False).tail(1)
+            cols = [col for col in ["manager", "agent", "previous_weight", "agent_return", "total_loss"] if col in latest.columns]
+            st.dataframe(latest[cols].sort_values(["manager", "total_loss"]), use_container_width=True, hide_index=True)
+
+    c7, c8 = st.columns([1, 1])
+    with c7:
+        st.markdown("#### Proper Scoring")
+        if forecast_scores is None or forecast_scores.empty:
+            st.info("缺少 forecast_scores.csv。")
+        else:
+            summary = (
+                forecast_scores.groupby("sender_id")
+                .agg(forecasts=("message_id", "count"), mean_brier=("brier_score", "mean"), proper_score=("proper_score", "mean"))
+                .reset_index()
+                .sort_values("proper_score", ascending=False)
+            )
+            st.dataframe(summary, use_container_width=True, hide_index=True)
+    with c8:
+        st.markdown("#### Black-Litterman Agent Views")
+        if bl_weights is None or bl_weights.empty:
+            st.info("缺少 bl_agent_view_weights.csv。")
+        else:
+            st.dataframe(bl_weights.sort_values("weight", ascending=False), use_container_width=True, hide_index=True)
+            if agent_views is not None and not agent_views.empty:
+                st.caption(f"已提取 {len(agent_views):,} 条 agent views。")
 
 
 def portfolio_hall_cards(experiment_comparison, manager_equity, meta_weights, drift_log):
@@ -2782,6 +2893,30 @@ def generate_live_agent_round(
     st.session_state.live_active_run_id = ""
     st.session_state.live_active_round_id = ""
     persist_live_state()
+
+
+def generate_live_agent_rounds(agents: list[str], n_rounds: int) -> None:
+    total = max(1, int(n_rounds))
+    progress = st.progress(0, text=f"LLM round 0 / {total}")
+    try:
+        for index in range(total):
+            generate_live_agent_round(
+                agents=agents,
+                events_until=current_live_events_dataframe(),
+                friendships_df=current_live_friendships_dataframe(),
+            )
+            progress.progress((index + 1) / total, text=f"LLM round {index + 1} / {total}")
+    finally:
+        progress.empty()
+
+
+def current_live_events_dataframe() -> pd.DataFrame:
+    events = pd.DataFrame(st.session_state.get("live_events", []))
+    return normalize_events(events) if not events.empty else events
+
+
+def current_live_friendships_dataframe() -> pd.DataFrame:
+    return pd.DataFrame(st.session_state.get("live_friendships", []), columns=["agent_a", "agent_b"])
 
 
 def sync_live_auto_settings() -> None:
@@ -3474,6 +3609,11 @@ def render_tables(
     agent_corr=None,
     experiment_comparison=None,
     drift_log=None,
+    manager_loss=None,
+    training_params=None,
+    forecast_scores=None,
+    agent_views=None,
+    bl_weights=None,
 ):
     st.markdown("#### 研究数据表")
     table_name = st.selectbox(
@@ -3491,6 +3631,11 @@ def render_tables(
             "agent_return_correlation",
             "experiment_comparison",
             "drift_log",
+            "manager_loss_history",
+            "training_params",
+            "forecast_scores",
+            "agent_views",
+            "bl_agent_view_weights",
         ],
     )
     table_map = {
@@ -3506,6 +3651,11 @@ def render_tables(
         "agent_return_correlation": agent_corr if agent_corr is not None else pd.DataFrame(),
         "experiment_comparison": experiment_comparison if experiment_comparison is not None else pd.DataFrame(),
         "drift_log": drift_log if drift_log is not None else pd.DataFrame(),
+        "manager_loss_history": manager_loss if manager_loss is not None else pd.DataFrame(),
+        "training_params": training_params if training_params is not None else pd.DataFrame(),
+        "forecast_scores": forecast_scores if forecast_scores is not None else pd.DataFrame(),
+        "agent_views": agent_views if agent_views is not None else pd.DataFrame(),
+        "bl_agent_view_weights": bl_weights if bl_weights is not None else pd.DataFrame(),
     }
     df = table_map[table_name]
     if df.empty:

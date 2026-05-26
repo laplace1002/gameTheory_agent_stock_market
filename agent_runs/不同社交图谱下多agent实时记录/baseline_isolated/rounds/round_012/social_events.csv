@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：动量策略验证与趋势持续性评估，互补性分析可提升决策质量。
+2021-01-19,friend_accept,MomentumAgent,FreeRiderAgent,MomentumAgent 通过了 FreeRiderAgent 的好友申请：动量策略验证互补，且对方近期交易显示动量分析能力。

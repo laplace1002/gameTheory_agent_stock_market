@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "近5日涨幅4.70%为最强，趋势延续，"
+      },
+      "public_message": "600036 HOLD：近5日最强，趋势延续，继续持有",
+      "moment": "持仓600036 150股，5日涨幅4.70%，追涨策略维持，现金等待新强势信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036近5日+4.70%为最强，趋势跟踪策略持有中，是否共振？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 284.85,
+        "rationale": "已有超跌仓位，现金有限，等待量价企稳确认"
+      },
+      "public_message": "000858 HOLD：超跌未企稳，观望等待反弹确认",
+      "moment": "持仓000858、002594、300750，超跌反弹需量价验证，现金等待补仓信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594超跌-8.77%与你买入共振，我持有中，需验证量价"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 96.28,
+        "rationale": "000333 ret5=-6.83%，回撤加剧，低波动策略止损"
+      },
+      "public_message": "000333 SELL：近5日跌6.83%，回撤加剧，平仓避险",
+      "moment": "平仓000333，回撤超阈值，现金等待低波动机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤-6.83%，已平仓，关注后续风险验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "非共识信号：000002 ret5=2.01%逆势走强，随机视角捕捉强势股，与市场恐慌情绪背离"
+      },
+      "public_message": "000002 BUY：ret5逆势+2.01%，随机视角非共识做多",
+      "moment": "买入000002 100股，随机视角捕捉逆势强势，与市场分化博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002逆势走强，与超跌逻辑互补，非共识信号验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 222.0,
+        "rationale": "超跌信号未确认，等待量价企稳"
+      },
+      "public_message": "002594 HOLD：超跌-7.23%，量能未放大，等待企稳验证",
+      "moment": "持仓002594，超跌信号持续，观望等待量价配合",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858 ret5=-6.71%，跌幅较大但量能未显著放大，逆向逻辑需谨慎验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 30.5,
+        "rationale": "Buy on drawdown"
+      },
+      "public_message": "Buying 000002 on drawdown.",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 30,
+        "price": 284.85,
+        "rationale": "超跌-6.71%，逆向信号验证，CommitteeTeamAgent买入共振，布局反弹"
+      },
+      "public_message": "000858 BUY：超跌反弹，验证逆向信号",
+      "moment": "买入000858 30股，超跌反弹策略，验证逆向信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858买入30股，与你逆向信号共振，预期企稳"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "回撤信号与超跌反弹策略互补，共同"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 284.85,
+        "rationale": "超跌反弹信号，验证ContrarianAgent与CommitteeTeamAgent逆向逻辑"
+      },
+      "public_message": "000858 BUY：超跌反弹，验证逆向信号",
+      "moment": "买入000858 10股，超跌反弹策略，信号验证中",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858超跌幅度验证，买入10股跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 391.4,
+        "rationale": "超跌反弹已兑现，300750 ret5转正，逆向逻辑止盈"
+      },
+      "public_message": "300750 SELL：超跌反弹已兑现，止盈离场",
+      "moment": "卖出300750 50股，超跌反弹兑现，现金等待新机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750反弹至391.40，止盈。超跌逻辑兑现，关注其他标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 30,
+        "price": 284.85,
+        "rationale": "超跌反弹后锁定利润，等待新信号"
+      },
+      "public_message": "000858 SELL：超跌反弹后锁定利润，等待新信号",
+      "moment": "卖出000858 30股，锁定利润，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858反弹后平仓，你的300750需观察量价企稳"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.5,
+        "rationale": "涨幅稳健，社交图谱未现反转信号，等待超跌股量价企稳"
+      },
+      "public_message": "000002 HOLD：涨幅稳健，等待新信号验证",
+      "moment": "持仓000002，现金等待；关注000858和002594逆向信号，需验证量价企稳",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594与300750超跌幅度相近，逆向信号可互相验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 284.85,
+        "rationale": "超跌-6.71%，逆向布局，验证CommitteeTeamAgent超跌信号"
+      },
+      "public_message": "000858 BUY：超跌-6.71%，逆向买入，与CommitteeTeamAgent共振",
+      "moment": "买入000858 10股，超跌逆向策略，参考CommitteeTeamAgent信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858超跌-6.71%，与你买入共振，共享逆向验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

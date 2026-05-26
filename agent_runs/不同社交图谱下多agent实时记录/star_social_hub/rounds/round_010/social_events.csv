@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 向 DynamicTeamAgent 发起好友申请：您减仓002415，我对均值回归有不同看法，可探讨超跌票与动量反转风险协同。
+2021-01-15,friend_accept,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 通过了 MeanReversionAgent 的好友申请：不同视角可探讨均值回归与风险协同，拓展信息源。
+2021-01-15,friend_request,LowVolatilityAgent,CommitteeTeamAgent,LowVolatilityAgent 向 CommitteeTeamAgent 发起好友申请：低波动策略可验证拥挤风险，与你动量策略互补
+2021-01-15,friend_accept,CommitteeTeamAgent,LowVolatilityAgent,CommitteeTeamAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略可互补动量，验证拥挤风险，且共同持仓000002，增加信息协同。
+2021-01-15,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：低波动策略与随机试错可互补风险验证
+2021-01-15,friend_reject,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 拒绝了 RandomAgent 的好友申请：随机试错策略与低波动策略理念相悖，且当前社交网络已覆盖互补信息源。
+2021-01-15,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-15,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：对方私信提及我的持仓000858/300750超跌反弹机会，建立连接可验证信息价值。

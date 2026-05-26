@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 82.3,
+        "rationale": "000333 ret20深跌14.86%，恐慌卖压过度，均值回归机会"
+      },
+      "public_message": "000333 跌14.86%过度，买入1股博均值回归",
+      "moment": "000333深跌14%，恐慌卖压，加仓1股等待修复",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000333逆向逻辑一致，愿交换反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.25,
+        "rationale": "601899 ret5+5.44%且量能创新高，趋势强劲，追涨加仓"
+      },
+      "public_message": "601899 ret5+5.44%，量能巨大，追涨加仓1股",
+      "moment": "601899放量突破，追涨加仓，趋势延续概率高",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899强势突破，愿交换趋势数据验证延续性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 3,
+        "price": 31.44,
+        "rationale": "接近尾声，拥挤卖出信号增多，锁利降低风险"
+      },
+      "public_message": "000002 卖出3股，锁定利润降低拥挤风险",
+      "moment": "000002 减仓，锁定利润，规避高拥挤",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 5,
+        "price": 11.25,
+        "rationale": "量能异常放大，短期超买，非共识减仓锁定部分利润。"
+      },
+      "public_message": "601899 卖5股，量能异常短期超买。",
+      "moment": "601899量能放大，非共识减仓5股。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "观察到601899量能异常，愿意交换波动率数据验证超买程度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.44,
+        "rationale": "非拥挤修复逻辑未证伪，但拥挤卖出增多，暂持观望"
+      },
+      "public_message": "000002 继续持有，非拥挤修复等待验证",
+      "moment": "持有000002和600036，等待非拥挤信号确认",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "确认000002拥挤，愿交换止损数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "002594 ret20 -30%深跌，DrawdownBuyerAgent已买入修复，跟进逆向布局"
+      },
+      "public_message": "买入002594 1股，深跌修复机会",
+      "moment": "002594深跌27%修复机会，买入1股等待修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "跟进002594深跌修复，愿交换反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "深跌30%后价值修复机会，现金充足，加仓1股摊低成本。"
+      },
+      "public_message": "002594深跌30%，加仓1股等待修复。",
+      "moment": "002594深跌30%加仓1股，等待均值回归。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594深跌超过000333，愿交换反转数据验证修复空间。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.44,
+        "rationale": "跟随多位agent卖出降低拥挤风险，保留部分仓位观察"
+      },
+      "public_message": "000002 卖出10股，拥挤分歧增大，降低敞口",
+      "moment": "000002部分止盈，拥挤信号混杂，减仓观望。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你卖出000002基于拥挤度，能否分享你的拥挤评估数据？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.44,
+        "rationale": "拥挤信号增加，部分止盈降低风险"
+      },
+      "public_message": "000002 拥挤风险上升，减仓10股锁定利润",
+      "moment": "000002减仓，等待拥挤退潮后重新评估",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "确认000002拥挤，同意减仓降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.44,
+        "rationale": "短期拥挤，逆向减仓信号集中，部分止盈"
+      },
+      "public_message": "000002 卖出10股降拥挤，等待非拥挤修复确认",
+      "moment": "减仓000002 10股，拥挤度上升，暂降风险。关注000333逆向机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000333逆向买入信号集中，是否考虑加仓？愿交换恐慌数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.44,
+        "rationale": "非拥挤修复逻辑短期拥挤，逆向减仓锁定收益"
+      },
+      "public_message": "000002: 卖10股，拥挤修复逻辑短期过度追捧，锁定部分收益。",
+      "moment": "000002减仓10股，逆向利用拥挤退潮。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002卖出逻辑一致，愿交换拥挤度验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 82.3,
+        "rationale": "多个逆向信号验证，恐慌卖压过度，布局中期反弹"
+      },
+      "public_message": "000333 买入10股，逆向布局恐慌卖压",
+      "moment": "000333 逆向买入10股，恐慌卖压修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333逆向加仓逻辑一致，愿交换恐慌数据验证过度反应"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

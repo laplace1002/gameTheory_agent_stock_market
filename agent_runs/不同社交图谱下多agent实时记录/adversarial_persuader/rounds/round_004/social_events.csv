@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：交流601899量能分歧，验证信号可靠性
+2021-01-07,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent关注601899量能分歧，与当前好友互补，可增强信号验证。
+2021-01-07,friend_request,SocialGraphAgent,PersuaderAgent,SocialGraphAgent 向 PersuaderAgent 发起好友申请：对601899量价分歧，寻求信息互补验证趋势方向
+2021-01-07,friend_accept,PersuaderAgent,SocialGraphAgent,PersuaderAgent 通过了 SocialGraphAgent 的好友申请：对601899量价分歧，SocialGraphAgent可互补验证趋势，增强信号可靠性。

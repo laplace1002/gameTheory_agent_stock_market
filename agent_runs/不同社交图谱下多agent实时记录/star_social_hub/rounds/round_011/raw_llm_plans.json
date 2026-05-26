@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 284.55,
+        "rationale": "000858超跌5.53%，均值回归加仓"
+      },
+      "public_message": "000858超跌5.53%，均值回归加仓50股",
+      "moment": "000858加仓50股，等待超跌修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同持000858，超跌反弹机会，验证均值回归策略"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.92,
+        "rationale": "近5日涨幅7.23%，趋势强劲，追涨加仓"
+      },
+      "public_message": "加仓600036 50股，近5日涨幅7.23%，趋势强劲，追涨",
+      "moment": "600036强势延续，加仓50股继续追涨",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036近5日涨7.23%，趋势强劲，建议关注追涨机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.55,
+        "rationale": "持仓000858和300750回撤已深，现金不足加仓，等待超跌反弹修复。"
+      },
+      "public_message": "HOLD 000858 300750：回撤已深，等待超跌反弹。",
+      "moment": "持仓000858和300750，深度回撤等待修复。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "关注002594回调，与你均值回归策略一致，可跟踪反弹信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.26,
+        "rationale": "持仓股涨势稳健，社交无拥挤，低波动策略维持当前敞口"
+      },
+      "public_message": "000002 HOLD：涨势稳健，社交无拥挤，低波动策略继续持仓",
+      "moment": "000002持仓，低波动控制回撤，等待信号",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.55,
+        "rationale": "随机减仓，000858跌幅深，可能延续弱势，规避风险。"
+      },
+      "public_message": "卖出000858 100股，随机减仓避险。",
+      "moment": "随机卖出000858，验证弱势延续，腾出现金。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858跌幅深，我随机卖出，与你回撤策略互补验证。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "随机策略与委员会决策互补，申请验证信息价值。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.26,
+        "rationale": "涨势稳健，社交无拥挤，多位好友同向持仓，继续持有观察"
+      },
+      "public_message": "000002 HOLD：趋势稳健，社交无拥挤，继续持仓。",
+      "moment": "000002持仓，趋势稳健，社交无拥挤，等待新买点。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "关注你的000858/300750超跌反弹机会，是否有新信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 221.69,
+        "rationale": "002594继续回调至221.69，均值回归逻辑未变，加仓摊低成本等待反弹。"
+      },
+      "public_message": "002594回调至221.69，均值回归加仓50股。",
+      "moment": "002594回调加仓50股，均值回归策略等待修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594已回调至支撑，与你的回撤策略吻合，建议关注新能源汽车反弹机会。"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向买入002415与均值回归策略在回调股上可互补验证，申请建立连接。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 31.26,
+        "rationale": "社交无拥挤，趋势稳健，多个好友同向持仓，跟随加仓"
+      },
+      "public_message": "000002 社交无拥挤，趋势稳健，加仓50股。",
+      "moment": "000002加仓50股，跟随社交信号和趋势。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000002加仓，社交信号延续，继续持有。"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "回撤策略与超跌股机会可互补验证，申请建立联系。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.78,
+        "rationale": "拥挤卖出信号衰竭中，持有观察反弹确认"
+      },
+      "public_message": "002415 HOLD：拥挤卖出衰竭，等待反弹确认。",
+      "moment": "002415持仓观望，逆向信号待验证。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 31.26,
+        "rationale": "社交无拥挤，涨势稳健，多位好友同向持仓，加仓50股观察。"
+      },
+      "public_message": "000002加仓50股，社交无拥挤趋势稳健。",
+      "moment": "000002加仓，跟随好友信号，等待验证。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意，000002持仓等待新买点。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.26,
+        "rationale": "社交无拥挤信号，涨势稳健，CommitteeTeamAgent和DynamicTeamAgent同向持仓，继续持有"
+      },
+      "public_message": "000002 HOLD：社交无拥挤，涨势稳健，同向持仓跟随。",
+      "moment": "000002持仓，社交无拥挤信号，等待新买点。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000002持有中，社交无拥挤，与您同向，继续观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.26,
+        "rationale": "涨势稳健，社交无拥挤，暂无新信号"
+      },
+      "public_message": "000002 HOLD：趋势稳健，社交无拥挤",
+      "moment": "持仓000002，关注超跌反弹机会如000858、300750",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858和300750回调幅度较大，是否考虑加仓？我现金充足可配合"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

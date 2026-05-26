@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-29,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-29,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：RandomAgent清仓601899逻辑与主流分歧，可交换信息验证价值。

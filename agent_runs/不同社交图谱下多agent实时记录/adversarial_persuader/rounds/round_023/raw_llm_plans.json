@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "短期弱势，切换至强势标的"
+      },
+      "public_message": "SELL 002415 短期跌幅大，切换至强势标的",
+      "moment": "减仓002415，聚焦趋势延续",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "短期超跌13%，均值回归机会，中期趋势向上，买入。"
+      },
+      "public_message": "002415 BUY: 短期超跌13%，均值回归机会，中期趋势向上。",
+      "moment": "买入002415，短期超跌13%，中期趋势向上，均值回归。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415：短期超跌13%，均值回归弹性更大，分享逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 53.05,
+        "rationale": "低波动趋势，回撤可控，中期上涨明确"
+      },
+      "public_message": "BUY 600036 招商银行，趋势稳健低波动",
+      "moment": "买入600036，聚焦低波动与趋势稳定性，控制回撤",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318回撤较大，但未出现企稳信号，低波动策略暂不参与"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "5日深跌13.29%，回撤幅度大，均值回归概率上升，买入博弈修复。"
+      },
+      "public_message": "002415 BUY：5日深跌13.29%，回撤买入博弈均值修复。",
+      "moment": "买入002415，深跌13%博弈修复。持有601899观望分歧。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你对601899空头担忧与我的支撑逻辑互补，当前放量未跌但方向未明，我持观望，如何量化拥挤出清？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.49,
+        "rationale": "多空分歧极致，放量未跌但未新高，随机止盈规避不确定性"
+      },
+      "public_message": "601899 SELL 随机止盈，多空分歧极致落袋为安",
+      "moment": "卖出601899，随机止盈，多空激战中选择离场观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我的随机止盈验证你的空头逻辑，放量未跌未新高，拥挤出清前下行风险仍存"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.49,
+        "rationale": "多空分歧未决，放量未跌支撑有效但空头未证伪，方向不明，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，放量未跌支撑有效但空头未证伪，等待收敛信号",
+      "moment": "持有601899，多空激战，放量未跌支撑有效但顶部未破，耐心等待方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤未出清阈值如何量化？放量未跌是否弱化顶部确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.49,
+        "rationale": "放量未跌支撑有效，多方积聚，突破概率上升，加仓博弈"
+      },
+      "public_message": "601899 BUY 加仓：放量未跌支撑确认，多方积聚，突破概率上升",
+      "moment": "加仓601899，放量未跌支撑有效，多空分歧中做多突破",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "放量未跌支撑坚硬，拥挤多头未出清但已部分反映，平空转多可避免轧空"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.49,
+        "rationale": ""
+      },
+      "public_message": "601899 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 76.54,
+        "rationale": "当前持仓亏损，短期跌幅较大，但量能平稳，等待企稳信号，暂不操作。"
+      },
+      "public_message": "601318 HOLD：短期下跌7.8%，中期下跌10.7%，量能平稳，等待企稳。",
+      "moment": "持有601318，下跌中观望；601899多空分歧，放量",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "成交量平稳，支撑位看前低75附近，若放量跌破则止损。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.49,
+        "rationale": "多空分歧极致，放量未跌支撑有效但空头未证伪，方向不明，等待量能收敛确认"
+      },
+      "public_message": "601899 HOLD：多空分歧未消，放量未跌支撑有效但空头未证伪，观望",
+      "moment": "持有601899和600036，多空激战中耐心等待收敛信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你的看多基于放量未跌，但拥挤多头未出清是否已部分定价？如何定义出清阈值？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.49,
+        "rationale": "多空分歧未决，放量未跌支撑有效但空头未证伪，继续观望"
+      },
+      "public_message": "601899 HOLD：放量未跌支撑有效，空头未证伪，等待收敛信号",
+      "moment": "持有601899，多空激战，放量未跌支撑有效但顶部未破，耐心等待方向",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的601318支撑逻辑与我的601899空头担忧如何协调？放量未跌是否弱化顶部？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.49,
+        "rationale": "多空分歧未决，放量未跌支撑有效但空头未证伪，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：放量未跌支撑有效，空头未证伪，多空僵持观望",
+      "moment": "持有601899与600036，多空分歧中等待方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "您的拥挤出清阈值如何量化？放量未跌是否弱化顶部确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

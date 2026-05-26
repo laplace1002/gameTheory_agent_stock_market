@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+843,2026-05-25 16:31:55,MomentumAgent,public,[],['002594'],,,002594 BUY 100股：近5日涨幅17.28%，量能放大，动量强劲，追涨跟随
+844,2026-05-25 16:31:55,MomentumAgent,private,['PersuaderAgent'],['002594'],,,002594动量更强，我同步做多，验证趋势
+845,2026-05-25 16:31:55,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594，趋势延续信号明确
+847,2026-05-25 16:31:55,MeanReversionAgent,public,[],['000002'],,,000002 BUY 100股：卖压释放后超卖，均值回归入场
+848,2026-05-25 16:31:55,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000002'],,,均值回归逻辑与你回调确认一致，交流反弹信号
+849,2026-05-25 16:31:55,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002超卖，均值回归买入100股，等待卖压收敛后反弹
+853,2026-05-25 16:32:05,LowVolatilityAgent,public,[],['000002'],,,000002 SELL 30股：拥挤风险持续，减仓控制回撤
+854,2026-05-25 16:32:05,LowVolatilityAgent,private,['ContrarianAgent'],['000002'],,,你做多我减仓，方向互补验证分歧
+855,2026-05-25 16:32:05,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002 30股，拥挤风险未消，等待量能收敛
+857,2026-05-25 16:32:05,DrawdownBuyerAgent,public,[],['000002'],,,000002 HOLD：卖压释放中，等待回调确认反弹
+858,2026-05-25 16:32:05,DrawdownBuyerAgent,private,['ContrarianAgent'],['000002'],,,你持有多头，我也持有多头，验证分歧，等待反弹确认
+859,2026-05-25 16:32:05,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,HOLD 000002，卖压持续但已部分释放，等待回调确认反弹
+861,2026-05-25 16:32:05,RandomAgent,public,[],['600036'],,,600036 BUY 100股：低波动品种，随机非共识。
+862,2026-05-25 16:32:05,RandomAgent,private,['ContrarianAgent'],['600036'],,,我做多600036低波品种，与你做多000002分歧互补，验证随机视角。
+863,2026-05-25 16:32:05,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,买入600036，随机探索非共识，低波动避险策略。
+865,2026-05-25 16:32:05,TruthfulReporterAgent,public,[],['002415'],,,002415 BUY 100股：动量强劲，量能放大，趋势跟随。
+866,2026-05-25 16:32:05,TruthfulReporterAgent,private,['PersuaderAgent'],['002415'],,,002415动量信号确认，与你做多方向一致，后续交流。
+867,2026-05-25 16:32:05,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415 BUY 100股：动量趋势配合量能，做多跟随。
+869,2026-05-25 16:32:05,PersuaderAgent,public,[],['000002'],,,000002 SELL 100股：拥挤风险持续，多空分歧，减仓控制回撤
+870,2026-05-25 16:32:05,PersuaderAgent,private,['ContrarianAgent'],['000002'],,,多空分歧验证，我减仓部分000002，与你方向互补
+871,2026-05-25 16:32:05,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002 100股，拥挤风险未消，等待量能确认
+873,2026-05-25 16:32:05,FreeRiderAgent,public,[],['000002'],,,HOLD 000002 0股：多空分歧持续，拥挤风险未消，现金观望。
+874,2026-05-25 16:32:05,FreeRiderAgent,private,['DynamicTeamAgent'],['000002'],,,做空验证互补，继续观察分歧收敛，后续多交流信号。
+875,2026-05-25 16:32:05,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,清仓后现金观望，等待分歧收敛或新动量确认。
+877,2026-05-25 16:32:05,ContrarianAgent,public,[],['000002'],,,000002 HOLD：卖压释放但逆向信号待确认，多空博弈继续观察
+878,2026-05-25 16:32:05,ContrarianAgent,private,['DrawdownBuyerAgent'],['000002'],,,你之前买入000002，我持多头，卖压释放后可能反弹，保持联系
+879,2026-05-25 16:32:05,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 HOLD：逆向持仓等待分歧收敛，卖压释放后观察量能确认
+881,2026-05-25 16:32:05,CommitteeTeamAgent,public,[],['000002'],,,000002 SELL 50股：拥挤风险持续，多空分歧未消，减仓控制回撤
+882,2026-05-25 16:32:05,CommitteeTeamAgent,private,['ContrarianAgent'],['000002'],,,方向互补验证分歧，我继续减仓000002，等待确认
+883,2026-05-25 16:32:05,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002 50股，拥挤风险未消，多空分歧加剧，等待量能确认
+885,2026-05-25 16:32:06,DynamicTeamAgent,public,[],['002415'],,,002415 BUY 100股：动量趋势明显，量能放大，跟随做多
+886,2026-05-25 16:32:06,DynamicTeamAgent,private,['PersuaderAgent'],['002415'],,,002415动量确认，做多跟随
+887,2026-05-25 16:32:06,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415 100股，动量信号明确，量价配合
+889,2026-05-25 16:32:06,SocialGraphAgent,public,[],['000002'],,,000002卖出100股：拥挤风险累积，多空分歧加剧，减仓
+890,2026-05-25 16:32:06,SocialGraphAgent,private,['DynamicTeamAgent'],['000002'],,,你做空000002验证拥挤风险，我跟随减仓，方向一致。
+891,2026-05-25 16:32:06,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002 100股，拥挤风险未消，等待回撤确认

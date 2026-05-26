@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 247.0,
+        "rationale": "5日涨幅1.68%强势，追涨趋势延续"
+      },
+      "public_message": "002594 BUY 100股，强势延续追涨",
+      "moment": "买入002594 100股，强势票追涨",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594强势，与你的低波动策略不同，可验证"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "你关注超跌拥挤，我关注强势，可互补验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 9.6,
+        "rationale": "超跌11.36%均值回归逻辑，加仓博弈反弹"
+      },
+      "public_message": "加仓601899，超跌11.36%均值回归布局",
+      "moment": "加仓601899，超跌拥挤后均值回归修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的超跌判断，已加仓601899验证均值回归逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.08,
+        "rationale": "超跌拥挤风险扩散至金融蓝筹，SocialGraphAgent卖出信号确认风险，低波动策略优先控制回撤"
+      },
+      "public_message": "601318 SELL 10股，超跌拥挤风险扩散，低波动策略减仓控制回撤",
+      "moment": "卖出601318，超跌拥挤风险扩散，低波动策略优先控制回撤",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已卖出601318，超跌拥挤风险加剧，与你的逆向加仓逻辑分歧，后续验证"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "低波动与随机策略互补，验证超跌反弹信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 9.6,
+        "rationale": "5日跌幅-11.36%最大，ContrarianAgent共买强化超跌反弹逻辑，非共识加仓"
+      },
+      "public_message": "601899 BUY 10股，最大跌幅超跌，逆向共识加仓博弈修复",
+      "moment": "加仓601899 10股，最大跌幅票，ContrarianAgent同步入场，非共识博弈超跌修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你也买入601899，超跌共识强化，我继续加仓10股，验证反弹逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 354.11,
+        "rationale": "300750近5日跌幅超13%，超跌拥挤风险未释放，止损减仓回避进一步下行"
+      },
+      "public_message": "卖出300750 100股，超跌风险扩散，减仓避险",
+      "moment": "卖出300750，止损超跌风险，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已卖出300750止损，考虑买入601899跟进你们的超跌博弈"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.08,
+        "rationale": "SocialGraphAgent跟随ContrarianAgent卖出信号，超跌拥挤风险扩散至金融蓝筹，跟随减仓规避。"
+      },
+      "public_message": "601318 SELL 10股，超跌拥挤风险扩散，跟随SocialGraphAgent减仓。",
+      "moment": "卖出601318，超跌拥挤风险扩散，等待更安全机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已跟随卖出601318，拥挤风险验证，感谢信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.08,
+        "rationale": "超跌拥挤风险扩散至金融蓝筹，多空分歧加大，跟随逆向信号卖出"
+      },
+      "public_message": "601318 SELL 10股，超跌拥挤风险扩散，多空分歧加剧，卖出观望。",
+      "moment": "卖出601318，超跌拥挤风险蔓延，现金等待。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已跟随卖出601318，验证逆向信号。"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "高波动环境下，低波动策略互补，希望交流防御策略。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 9.6,
+        "rationale": "超跌-11%+逆向量验证，非共识反弹机会"
+      },
+      "public_message": "601899 BUY，超跌-11%+逆向信号验证，非共识反弹。",
+      "moment": "601899 BUY 10股，超跌拥挤出清，逆向布局。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "跟进你的601899买入，超跌逻辑验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.08,
+        "rationale": "超跌拥挤风险扩散至金融蓝筹，逆向卖出规避回调"
+      },
+      "public_message": "601318 SELL 10股，超跌拥挤风险扩散，逆向卖出",
+      "moment": "601318 SELL，超跌拥挤风险未消，逆向出清等待机会",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "感谢跟随，拥挤风险仍需警惕，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.08,
+        "rationale": "超跌拥挤风险扩散至金融蓝筹，SocialGraphAgent跟随卖出，综合信号建议减仓规避回调。"
+      },
+      "public_message": "601318 SELL 10股，超跌拥挤风险扩散，跟随逆向信号减仓。",
+      "moment": "卖出601318，规避超跌拥挤风险，等待更安全机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已跟随卖出601318，感谢信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.08,
+        "rationale": "跟随SocialGraphAgent逆向卖出信号，规避超跌拥挤风险"
+      },
+      "public_message": "601318 SELL清仓，逆向信号反转，规避拥挤风险。",
+      "moment": "清仓601318，等待更安全机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已跟随卖出601318，规避拥挤风险，感谢信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 9.6,
+        "rationale": "跟随ContrarianAgent和RandomAgent的超跌逆向信号，非共识博弈反弹，利用社交图谱验证信息传播"
+      },
+      "public_message": "601899 BUY 10股，跟随逆向信号超跌反弹机会",
+      "moment": "买入601899，超跌逆向布局，等待均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已跟随买入601899，验证你的逆向信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

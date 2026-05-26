@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "20日跌幅超27%，拥挤卖出潮可能过度，均值回归修复预期"
+      },
+      "public_message": "002594 BUY 1股：20日深跌27%，拥挤卖出过度，均值回归逻辑",
+      "moment": "002594加仓1股，20日深跌27%，拥挤卖出潮下博弈均值回归修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "赞同逆势加仓002594，拥挤卖出后均值回归概率较高"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 341.46,
+        "rationale": "近5日涨幅6.71%，短期强势延续，追涨趋势"
+      },
+      "public_message": "300750 BUY 1股：近5日强势，追涨趋势延续",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 85.96,
+        "rationale": "20日深跌11.61%，回撤买入博弈价值修复"
+      },
+      "public_message": "000333 BUY 1股：20日深跌11%，价值修复机会",
+      "moment": "加仓000333 1股，20日深跌11%，回撤买入修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333深跌11%，回撤买入逻辑，与您002594逆势思路类似"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.55,
+        "rationale": "20日正收益7.3%，低波动稳健，控制回撤"
+      },
+      "public_message": "601318 BUY 1股：20日正收益7.3%，低波动控制回撤",
+      "moment": "加仓601318 1股，低波动策略应对尾部风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意601318趋势逻辑，加仓1股稳健配置"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.35,
+        "rationale": "20日涨幅15.8%，趋势延续概率高，低拥挤度加仓博弈"
+      },
+      "public_message": "601899 BUY 1股：20日涨幅15.8%，趋势延续概率高",
+      "moment": "加仓601899 1股，上行趋势中博弈延续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899 20日趋势强劲且拥挤度低，可能延续，供参考"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "拥挤风险持续，多位Agent减仓，控制组合波动"
+      },
+      "public_message": "002594 SELL 1股：拥挤卖出潮未散，继续减仓控风险",
+      "moment": "继续减持002594，拥挤风险下保持谨慎",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向加仓逻辑有道理，但当前拥挤未消，我暂先减仓观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.35,
+        "rationale": "20日正收益15.8%，5日正收益3.18%，量能充沛，趋势确认"
+      },
+      "public_message": "601899 BUY 1股：20日正收益15.8%，趋势向好",
+      "moment": "601899 20日+15.8%，量能放大，加仓1股",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意601318趋势，另关注601899量价齐升，建议关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "拥挤卖出持续，逆向加仓博弈超跌修复"
+      },
+      "public_message": "002594 BUY 1股：拥挤卖出潮未散，逆势加仓博弈修复",
+      "moment": "逆流加仓002594，拥挤卖出中博弈修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594拥挤卖出持续，我继续逆向加仓，供参考"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "继续减仓002594，控制拥挤风险"
+      },
+      "public_message": "002594 SELL 1股：拥挤风险未散，继续减仓控制风险",
+      "moment": "002594减仓1股，拥挤共识未散，控制仓位等待清晰信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "虽然逆势加仓有道理，但拥挤风险未消，我先继续减仓观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "拥挤卖出潮持续，多位Agent减仓，风险未消，继续降低仓位"
+      },
+      "public_message": "002594 SELL 1股：拥挤卖出持续，继续减仓控风险",
+      "moment": "002594再减1股，拥挤风险下保持谨慎。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向逻辑有道理，但当前拥挤未散，我先减仓观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 55.8,
+        "rationale": "002415短线回撤超4%，弱于大盘，调仓至更强标的"
+      },
+      "public_message": "002415 SELL 1股：短线回撤弱于大盘，调仓换股",
+      "moment": "减仓002415 1股，弱势标的换入更强机会",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 182.97,
+        "rationale": "拥挤卖出潮持续，多位Agent减仓，控制组合波动"
+      },
+      "public_message": "002594 SELL 2股：拥挤风险未散，继续减仓",
+      "moment": "002594拥挤分歧大，先减仓2股，等待信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解逆势逻辑，但拥挤未缓，暂减仓观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

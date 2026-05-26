@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 61.25,
+        "rationale": "002415短期涨幅8.10%，动能强劲，好友分歧提供买点，追涨趋势延续"
+      },
+      "public_message": "买入002415 100股，安防龙头短期动量延续，好友分歧中博弈",
+      "moment": "加仓002415，安防龙头强势，看好动量延续。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415你刚加仓，动量空间如何？我跟踪追涨。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 305.33,
+        "rationale": "000858近5日跌7%，过度抛售，均值回归预期"
+      },
+      "public_message": "000858买入100股，近5日跌7%，均值回归博反弹",
+      "moment": "加仓000858，均值回归博弈反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858跌7%是否过度？均值回归信号？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "其止盈002415基于拥挤判断，想交流均值回归与拥挤风控互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 103.34,
+        "rationale": "现金仓位，002415拥挤风险上升，等待低波动标的回调机会"
+      },
+      "public_message": "000333 HOLD，现金等待低波机会",
+      "moment": "现金持有，等待低波动入场点",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415拥挤信号明确？后续关注低波标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 385.0,
+        "rationale": "回撤买入：300750近5日跌5.35%，20日持平，短期超跌，新能源长期逻辑未变，价值修复机会。"
+      },
+      "public_message": "300750 买入，短期超跌5.35%，价值修复机会。",
+      "moment": "买入300宁德时代，短期超跌，等待价值修复。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "300750回撤5.35%，是否你的均值回复标的？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.68,
+        "rationale": "随机切换，卖出现有601899，换仓到002415博弈分歧"
+      },
+      "public_message": "卖601899，买002415，随机博弈分歧",
+      "moment": "卖601899换002415，随机切换博弈分歧",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "换仓002415，随机博弈分歧，验证逆向信号有效性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.91,
+        "rationale": "短期涨幅8.1%，好友卖出信号增加，拥挤风险上升，锁定利润。"
+      },
+      "public_message": "002415 涨幅8.1%，好友拥挤信号增多，卖出锁定利润。",
+      "moment": "002415 卖出，拥挤风险上升，锁定利润。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤风险，已卖出002415止盈。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 103.34,
+        "rationale": "分散风险，买入涨幅温和的家电龙头，避免过度集中于新能源。"
+      },
+      "public_message": "买入000333，分散配置，家电龙头涨幅温和。",
+      "moment": "加仓000333，降低组合波动。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你卖出002415后，是否考虑配置000333？低波稳健。"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "随机策略可提供非共识信号，有助于识别多空分歧边界。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 61.25,
+        "rationale": "短期涨幅大，拥挤风险上升，跟随Committee和Social减仓锁定利润"
+      },
+      "public_message": "卖出002415，短期涨幅大，拥挤风险增加，减仓锁定利润",
+      "moment": "减仓002415，安防龙头短期涨幅大，拥挤风险上升，锁定利润等待信号",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你卖出002415基于哪些具体拥挤信号？后续是否考虑买回？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "对002415拥挤信号有分歧，希望交流验证策略"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "市场分歧大，002415短期涨幅8%成交活跃，拥挤风险未消；下跌股未确认底部，等待更明确信号。"
+      },
+      "public_message": "002415分歧止盈后观望，等待拥挤风险消化或新信号。",
+      "moment": "002415止盈后空仓，关注600036动量稳定性及拥挤度。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036近5日涨幅11.89%，动量是否延续？需注意拥挤风险吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 59.91,
+        "rationale": "好友拥挤信号，减仓锁定部分利润"
+      },
+      "public_message": "卖002415，好友拥挤风险上升，减仓锁定利润。",
+      "moment": "减仓002415，安防龙头拥挤信号，锁定部分利润。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415好友拥挤信号增多，我已减仓5股，观察后续。你觉得是否还有动量？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.91,
+        "rationale": "短期卖出过度，逆向买入博弈反弹"
+      },
+      "public_message": "002415 BUY，卖出过度，逆向博弈反弹",
+      "moment": "002415卖出拥挤，逆向加仓博反转",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415卖出的拥挤信号是什么？成交量放大但价格尚未下跌，是否过度反应？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.9,
+        "rationale": "000002近期涨幅温和，成交量正常，无拥挤信号，继续持有等待催化"
+      },
+      "public_message": "000002 持有，涨幅温和，成交正常，等待信号。",
+      "moment": "持有000002，观察002415多空博弈。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415你刚加仓是基于动量延续？我减仓是因社交拥挤，望交流分歧。"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "你随机买入601899，我关注逆向信号，可互补验证。"
+      }
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+baseline_isolated,50,2443,1694,454,146,74,66,8,600,522,572,66,132,-1913.3149999999998,PersuaderAgent,4654.94

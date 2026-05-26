@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.44,
+        "rationale": "短期跌幅超6%，均值回归信号"
+      },
+      "public_message": "000333 BUY 1股，短期超卖均值回归",
+      "moment": "买入000333，短期超卖反弹逻辑，与低波动策略互补",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333超卖，均值回归机会，建议关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 14.63,
+        "rationale": "强势动量延续，加仓601899"
+      },
+      "public_message": "601899 BUY 加仓，强势动量延续",
+      "moment": "加仓601899，追强势动量延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899强势，加仓跟随动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.44,
+        "rationale": "000333近期波动率上升，5日跌幅6.43%，偏离低波动策略，减仓控制回撤"
+      },
+      "public_message": "000333 SELL 高波动风险，减仓控制回撤",
+      "moment": "000333 SELL 高波动背离策略，现金等待风险预算机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同拥挤风险规避逻辑，我减持000333高波动仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 14.63,
+        "rationale": "随机逆向，当其他Agent聚焦002594和601318时，非共识买入近期强势的601899赌趋势延续"
+      },
+      "public_message": "601899 BUY 1股，非共识逆向买入近期强势股，赌趋势延续",
+      "moment": "买入601899，与市场热点不同，赌趋势延续，随机实验",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入601899与你的逆向逻辑类似，但标的完全不同，验证非共识策略"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.44,
+        "rationale": "000333 ret20=-8.76%，回撤深度较大，低波动品种，估值修复机会，加仓1股"
+      },
+      "public_message": "000333 BUY 回撤-8.76%修复机会",
+      "moment": "买入000333，回撤深度-8.76%，低波动修复逻辑，加仓",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤确实，但000333回撤深，我买入1股，关注修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.0,
+        "rationale": "多空信号冲突，暂持观察"
+      },
+      "public_message": "601318 HOLD 多空信号冲突，暂持观察",
+      "moment": "601318持仓，多空信号冲突，等待共识明确",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认可拥挤风险，但多空博弈中，暂持观察后续信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "多空信号冲突：Contrarian卖出vs Random买入，拥挤风险与回撤修复并存，暂持观察。"
+      },
+      "public_message": "601318 HOLD 多空信号冲突，暂持观望",
+      "moment": "持有601318，多空信号共存，观察共识演变，等待风险释放窗口。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对601318拥挤风险的判断，我暂持观察，等待分歧信号明确。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 14.63,
+        "rationale": "涨幅异常，拥挤度极高，逆向减仓"
+      },
+      "public_message": "601899 SELL 涨幅36%+，逆向减仓规避拥堵",
+      "moment": "卖出601899，涨幅38%已极端，等待回调机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601899涨幅极端，我卖出，与你的601318买入逻辑不同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 239.52,
+        "rationale": "多Agent高位风险信号持续，减仓降低集中度控制回撤"
+      },
+      "public_message": "002594 SELL 1股，多Agent高位风险验证，继续减仓控制回撤。",
+      "moment": "减仓002594，响应高位风险验证。601318多空信号冲突，观望等待共识方向。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你对002594减仓的协同，我继续减1股。601318多空冲突，建议共同观望。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 239.52,
+        "rationale": "多Agent高位风险验证，减仓控制回撤"
+      },
+      "public_message": "002594 SELL 多Agent高位风险信号减仓",
+      "moment": "卖出002594，响应高位风险，降低集中度",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意减仓002594协同，已执行卖出1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 239.52,
+        "rationale": "多Agent高位风险验证，跟随减仓控制回撤"
+      },
+      "public_message": "002594 SELL 1股，多Agent高位风险信号一致，减仓控制回撤",
+      "moment": "卖出002594，多Agent高位风险信号一致，减仓控制回撤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意高位风险判断，跟随减仓002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.0,
+        "rationale": "多空信号冲突，Contrarian卖出与Random买入对峙，暂持观察"
+      },
+      "public_message": "601318 HOLD，多空信号冲突，暂持",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

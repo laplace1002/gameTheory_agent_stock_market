@@ -1,0 +1,263 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 319.98,
+        "rationale": "首日无历史收益，无法识别过度抛售，等待信号形成。"
+      },
+      "public_message": "首日无历史收益，等待信号形成，HOLD。",
+      "moment": "记录全截面，等待均值回归信号。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意按兵不动，后续再合作验证信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交量异常放大，多agent买入，追涨趋势启动"
+      },
+      "public_message": "买入601899 100股，成交量异常叠加资金流入，追涨信号明确",
+      "moment": "601899成交量远超其他，多agent买入，追涨跟随",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "感谢提供601899成交量异常信号，我已跟随买入，后续验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 42.18,
+        "rationale": "首日无历史收益参考，全部标的ret5/ret20为0，市场无趋势信号，低波动策略应保持现有仓位，不加仓也不减仓，等待有效数据。"
+      },
+      "public_message": "HOLD 600036，首日无收益数据，低波动策略暂不操作。",
+      "moment": "首日全截面收益为零，低波动策略保持观望，持仓600036。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "首日收益数据空白，确认无信号，后续合作验证低波动标的。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日无历史回撤数据，所有ret均为0，等待后续跌深机会"
+      },
+      "public_message": "回撤策略：首日无历史回撤，持币观望，等待价值修复信号。",
+      "moment": "持币中，首日全截面无量价分化，等待回撤确认入场机会。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "首日无回撤数据，后续能否共享真实价格序列以辅助判断跌深点？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "需要真实历史数据验证回撤幅度，合作互补信号识别。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 402.0,
+        "rationale": "随机策略认为市场共识过热，获利了结，避免高估值回调风险"
+      },
+      "public_message": "卖出300750，随机策略止盈，高估值风险",
+      "moment": "随机视角：卖出300750，避开高估值拥挤，转向等待新信号。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "随机卖出300750，认为第一天情绪过度一致，后续可能回调，请验证。"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "随机策略与你的逆向逻辑可互补验证，分享分歧价值。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交量异常，当日居首，信号强"
+      },
+      "public_message": "买入601899，成交量异常信号强",
+      "moment": "首日601899成交量远超其他，记录为强信号待验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已买入601899，后续持续观察成交量变化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交继续放量，多agent买入验证，短期资金推动"
+      },
+      "public_message": "加仓601899，成交量持续异常，资金流入确认。",
+      "moment": "601899成交量继续居首，加仓100股，等待趋势加速。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "601899动量正在形成，成交量验证，是否考虑跟进？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "共同买入601899，可互补验证资金流信号，提升决策准确性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日无趋势，高估值拥挤未证明，继续等待逆向信号"
+      },
+      "public_message": "601899和300750追涨风险高，注意动量衰竭，保持观望",
+      "moment": "警惕高位抱团股，逆向策略需要耐心，等待拥挤交易反转",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002估值合理，但短期缺乏催化剂，继续观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2059.45,
+        "rationale": "首日无历史收益，观察成交量分布，等待明确信号"
+      },
+      "public_message": "观望所有标的，首日无趋势，等待成交量信号验证。601899成交量异常值得关注。",
+      "moment": "记录首日行情，关注601899成交量异常，等待趋势信号。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你基于成交量买入601899，我正观察其持续性，后续可交换看法。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "我关注成交量异常信号，你已建仓601899，合作验证可提高判断准确性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "成交量活跃且低估值，分散持仓，跟随资金关注"
+      },
+      "public_message": "买入000002，低估值叠加量能，分散配置",
+      "moment": "今日买入000002，基于成交量与估值平衡，持仓601899等待验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "请问你对601899后续量价趋势有何判断？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "成交量信号互补验证，提升决策稳健性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 402.0,
+        "rationale": "首日无趋势，浮亏极小，等待方向确认"
+      },
+      "public_message": "300750暂持，等待趋势信号，首日量价需观察",
+      "moment": "观察全市场量价，601899成交量异常，但求稳健，先持300750",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "对000002有何看法？成交量活跃但初期方向不明，你的社交信号如何？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "合作验证601899成交量异常信号，互补信息决策"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "第一天社交信号分散，等待更多信息传播路径确认"
+      },
+      "public_message": "000002 HOLD，社交图谱需要多节点交叉验证，暂不调仓。",
+      "moment": "记录：601899成交量异常引发多方买入，需跟踪后续信息扩散。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你买入300750是基于什么信息传播路径？我目前持仓000002，想交叉验证。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你关注成交量信号，我研究信息传播，互补可提升决策质量。"
+      }
+    },
+    "error": ""
+  }
+]

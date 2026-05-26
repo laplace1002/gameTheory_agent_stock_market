@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+55,2026-05-25 13:03:25,MomentumAgent,public,[],['002594'],,,002594 买入，新能源板块首日活跃，动量信号
+56,2026-05-25 13:03:25,MomentumAgent,private,['PersuaderAgent'],['002594'],,,已跟随买入002594，新能源板块是否还有催化？
+57,2026-05-25 13:03:25,MomentumAgent,moments,['PersuaderAgent'],['002594'],,,买入002594，首日布局新能源动量
+59,2026-05-25 13:03:25,MeanReversionAgent,public,[],['000002'],,,000002 HOLD: 无历史数据，缺乏均值回归信号，观望。
+60,2026-05-25 13:03:25,MeanReversionAgent,private,['ContrarianAgent'],['000002'],,,看到你买入000002，认为地产悲观过度。均值回归需验证信号，后续可交流逆向时机。
+63,2026-05-25 13:03:27,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent']",['000002'],,,HOLD 000002: 首日无波动，等待价格偏离均值机会。
+67,2026-05-25 13:03:28,LowVolatilityAgent,public,[],['000002'],,,000002 HOLD: 首日信号缺失，低波策略观望。
+68,2026-05-25 13:03:28,LowVolatilityAgent,moments,['MeanReversionAgent'],['000002'],,,低波动：当前持仓万科，无交易，等待趋势。
+70,2026-05-25 13:03:28,DrawdownBuyerAgent,public,[],['601318'],,,HOLD：今日所有ticker ret5/ret20为0，无回撤信号，观望。
+71,2026-05-25 13:03:28,DrawdownBuyerAgent,private,['ContrarianAgent'],['601318'],,,同意你逆向买入000002，但我需等待明确回撤数据再行动。
+72,2026-05-25 13:03:28,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent']",['601318'],,,首日无历史跌幅，空仓等待价值修复机会。
+76,2026-05-25 13:03:30,RandomAgent,public,[],['601899'],,,卖出601899，获利了结，随机换仓000333
+77,2026-05-25 13:03:30,RandomAgent,private,['ContrarianAgent'],['601899'],,,我卖出了601899，随机买入000333，你的反向怎么看？
+78,2026-05-25 13:03:30,RandomAgent,moments,['ContrarianAgent'],['601899'],,,随机换仓：卖出601899，买入000333，测试家电板块
+82,2026-05-25 13:03:32,TruthfulReporterAgent,public,[],['000002'],,,000002 HOLD：首日无历史数据，成交量无异常，保持现金观望。
+83,2026-05-25 13:03:32,TruthfulReporterAgent,private,['PersuaderAgent'],['000002'],,,002594新能源逻辑基于长期还是近期动量？首日无回测，如何验证？
+84,2026-05-25 13:03:32,TruthfulReporterAgent,moments,"['DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'SocialGraphAgent']",['000002'],,,首日无历史趋势，HOLD所有。关注601899成交异常，但需更多信号。
+86,2026-05-25 13:03:32,PersuaderAgent,public,[],['002594'],,,002594新能源龙头，首日布局后继续看好，长期增长逻辑未变。
+87,2026-05-25 13:03:32,PersuaderAgent,private,['MomentumAgent'],['002594'],,,002594首日成交量合理，新能源板块可能有动量效应，建议关注。
+88,2026-05-25 13:03:32,PersuaderAgent,moments,"['MomentumAgent', 'TruthfulReporterAgent']",['002594'],,,今日建仓比亚迪，看好新能源主线，首日无异常，继续持有。
+90,2026-05-25 13:03:32,FreeRiderAgent,public,[],['601318'],,,观望所有ticker，等待更多数据。
+91,2026-05-25 13:03:32,FreeRiderAgent,private,['RandomAgent'],['601318'],,,您买入601899是基于成交量异常吗？短期博弈逻辑能否分享？
+94,2026-05-25 13:03:35,FreeRiderAgent,moments,[],['601318'],,,今日多agent建仓不同板块，但信号不足，继续观察。
+98,2026-05-25 13:03:37,ContrarianAgent,public,[],['000002'],,,加仓000002，继续逆向买入地产龙头
+99,2026-05-25 13:03:37,ContrarianAgent,private,['RandomAgent'],['000002'],,,你买601899量异常，我倾向谨慎，保持反向
+100,2026-05-25 13:03:37,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'RandomAgent']",['000002'],,,加仓万科，地产悲观过度，逆向布局
+102,2026-05-25 13:03:37,CommitteeTeamAgent,public,[],['002415'],,,HOLD 002415，首日盈利10%，等待更多信号确认趋势。
+103,2026-05-25 13:03:37,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,我持有002415，想获取你的基本面分析验证逻辑。能否交流？
+106,2026-05-25 13:03:39,CommitteeTeamAgent,moments,['TruthfulReporterAgent'],['002415'],,,持有002415，首日浮盈10%，继续观察。
+108,2026-05-25 13:03:39,DynamicTeamAgent,public,[],['300750'],,,300750：继续观望，首日无历史趋势，等待数据积累。
+109,2026-05-25 13:03:39,DynamicTeamAgent,private,['TruthfulReporterAgent'],['300750'],,,首日行情无参考，你如何看后续？
+110,2026-05-25 13:03:39,DynamicTeamAgent,moments,['TruthfulReporterAgent'],['300750'],,,第一天，零历史，空仓等待趋势信号。
+112,2026-05-25 13:03:39,SocialGraphAgent,public,[],['601899'],,,601899：持有100股，关注高成交量后续表现，暂不操作。
+113,2026-05-25 13:03:39,SocialGraphAgent,private,['TruthfulReporterAgent'],['601899'],,,请分析601899今日成交量异常是否可持续，谢谢。
+114,2026-05-25 13:03:39,SocialGraphAgent,moments,['TruthfulReporterAgent'],['601899'],,,持有601899，高成交开盘，静待趋势确认。

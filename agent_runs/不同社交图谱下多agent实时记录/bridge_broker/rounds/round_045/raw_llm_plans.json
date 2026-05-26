@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.35,
+        "rationale": "20日涨幅15.82%强势，多Agent共识增强，趋势延续，小幅加仓验证"
+      },
+      "public_message": "601899 BUY 10: 趋势延续，共识增强，加仓验证",
+      "moment": "601899加仓10股：20日强势+多Agent共识，趋势延续概率大",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你的反转信号有参考价值，但我仍看趋势延续，后续验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 85.96,
+        "rationale": "20日跌幅-11.61%，近5日加速下跌-3.96%，均值回归机会"
+      },
+      "public_message": "000333 BUY 50: 20日跌幅-11.61%，均值回归机会",
+      "moment": "000333加仓50股：20日跌幅-11.61%，均值回归信号明显",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333深跌-11.61%，与002594类似，均值回归逻辑验证，我加仓50股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 55.8,
+        "rationale": "低波动策略下，当前持仓无明确风险信号，维持等待波动率收敛。"
+      },
+      "public_message": "002415 HOLD：低波动策略观望，等待波动率信号明确。",
+      "moment": "002415、601318维持低波动持仓，观察市场波动率变化。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.54,
+        "rationale": "多Agent买入拥挤，反转信号验证，减仓降低风险"
+      },
+      "public_message": "601899 SELL 10: 拥挤反转验证，减仓降低风险",
+      "moment": "601899减仓10股：多Agent买入拥挤，随机视角验证反转信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "共鸣拥挤反转逻辑，减仓10股验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.35,
+        "rationale": "多空分歧加大，FreeRider和SocialGraph买入但RandomAgent反转信号并存，暂持等待趋势明朗。"
+      },
+      "public_message": "601899 HOLD: 多空分歧显著，暂持观察趋势演变。",
+      "moment": "601899多空博弈持续，分歧加大但趋势未破，保持中性。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意300750分歧逻辑，但Dynamic卖出信号更强，暂持平衡风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.35,
+        "rationale": "多Agent买入拥挤，TruthfulReporter反转信号验证，减仓降低风险"
+      },
+      "public_message": "601899 SELL 10: 拥挤反转信号验证，减仓降低风险",
+      "moment": "601899 SELL 10: 跟随拥挤反转信号，验证多空分歧",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "认同拥挤反转逻辑，减仓10股验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.49,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.35,
+        "rationale": "多Agent分歧加大，跟随拥挤反转信号减仓验证"
+      },
+      "public_message": "601899 SELL 10: 跟随拥挤反转信号减仓，验证分歧演变",
+      "moment": "601899减仓10股：多空分歧加剧，按拥挤反转逻辑减仓观察",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的拥挤反转逻辑，我减仓10股验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.35,
+        "rationale": "多空分歧加大，减仓锁定部分利润，降低风险"
+      },
+      "public_message": "601899 SELL 100股：多空分歧加大，减仓锁定利润降低风险",
+      "moment": "601899减仓100股：多Agent深跌修复共识与反转信号并存，平衡减仓。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的卖出逻辑，减仓100股验证分歧。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 341.46,
+        "rationale": "多空分歧，减仓锁定反弹利润"
+      },
+      "public_message": "300750 SELL 20: 多空分歧中减仓锁定反弹利润",
+      "moment": "300750 SELL 20: 分歧加剧，减仓观察",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899分歧中你卖出，我持有观察，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.35,
+        "rationale": "多空分歧明显，暂持等待信号明朗"
+      },
+      "public_message": "601899 HOLD: 分歧中暂持，观察多空演变",
+      "moment": "601899 HOLD: 跟随CommitteeTeamAgent暂持，分歧验证中",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "请教601899反转逻辑细节，验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 85.55,
+        "rationale": "逆向卖出拥挤买入的601318，多Agent共识增加调整风险"
+      },
+      "public_message": "601318 SELL 10: 逆向卖出，拥挤买入信号过度，验证调整风险。",
+      "moment": "601318减仓10股：PersuaderAgent等买入拥挤，逆向验证调整。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你买入601318形成拥挤，我减仓验证逆向调整风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

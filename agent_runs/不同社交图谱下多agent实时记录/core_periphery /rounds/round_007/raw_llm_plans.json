@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "ret5 -3.12% 超卖，均值回归机会"
+      },
+      "public_message": "000858 买入100股，超跌反弹逻辑，均值回归。",
+      "moment": "买入000858 超跌-3.12%，等待均值回归。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "我买入000858，超跌幅度更大，均值回归概率更高。"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "交流板块拥挤信号与逆向配置经验。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.7,
+        "rationale": "5日涨幅17.83%领跑，成交量放大，趋势延续"
+      },
+      "public_message": "买入600036，5日涨幅17.83%领跑，趋势强势。",
+      "moment": "600036趋势强劲，追涨入场。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你清仓601899，是否观察到拥挤信号？我考虑换仓至600036。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.7,
+        "rationale": "短期涨幅17.8%，回撤风险上升，止盈锁定利润"
+      },
+      "public_message": "600036短期涨幅17.8%，回撤风险加大，卖出止盈",
+      "moment": "减仓600036，锁利降低波动，等待低波动机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036涨幅过大，考虑回撤风险，您是否也认为需要减仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "近5日回撤3.12%，价值修复机会"
+      },
+      "public_message": "000858 BUY，近5日回撤3%，价值修复买入",
+      "moment": "买入000858，回撤3%价值修复，等待反弹",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "000858近期回调，均值回归可能，你的看法？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.9,
+        "rationale": "随机视角，多空分歧明显，逆向跟随ContrarianAgent博弈"
+      },
+      "public_message": "601899买入100股，多空分歧，随机博弈",
+      "moment": "601899多空分歧，随机买入博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899多空分歧，随机进场与你同向，验证逆向信号有效性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 61.25,
+        "rationale": "002415基本面未变，成交量正常，短期涨幅较大但无拥挤信号，继续持有"
+      },
+      "public_message": "002415 HOLD，基本面稳健，成交量正常，短线涨幅大但无拥挤信号",
+      "moment": "002415安防龙头盈利10%，成交量正常，继续持有，关注后续变化",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002415短期涨幅18%但成交正常，社交共识稳健，我暂未观察到拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.82,
+        "rationale": "持仓分散，002415涨幅大但成交正常，无拥挤信号，继续持有"
+      },
+      "public_message": "HOLD 002415/601318/000002，短期波动正常，等待信号。",
+      "moment": "持有002415盈利10%，安防龙头成交活跃；601318和000002波动正常，继续观察。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向做多601899逻辑是否也适用于002415？短期涨幅大但成交正常，如何判断拥挤？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "稳健持仓与逆向策略互补，交流拥挤信号判断与均值回归机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.9,
+        "rationale": "逆向做多，卖出拥挤后等待回归"
+      },
+      "public_message": "601899 HOLD，逆向做多，卖出拥挤后等待回归",
+      "moment": "601899持有，逆向等待回归，竞价分歧后机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你卖出601899基于何种拥挤信号？放量分歧是否过度？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 61.25,
+        "rationale": "短期涨幅11.81%，成交量8424万，拥挤风险上升，好友问询拥挤，止盈锁定利润"
+      },
+      "public_message": "卖002415，短期涨幅大+放量，拥挤风险止盈",
+      "moment": "卖002415，锁定利润，拥挤风险增加",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤风险判断，已减仓002415止盈"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 236.99,
+        "rationale": "新能源长期逻辑未变，短期涨幅在合理范围，无新增风险信号"
+      },
+      "public_message": "002594 HOLD，新能源长期趋势未变，短期涨幅合理。",
+      "moment": "持有002594，新能源趋势看长期。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "新能源板块拥挤度如何？你是否有信号？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你刚卖出601899，可交流板块拥挤信号与配置方向。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 61.25,
+        "rationale": "安防龙头短期动量强劲，成交量正常，好友共识支持，少量加仓博延续。"
+      },
+      "public_message": "买入002415，动量延续，好友共识支持。",
+      "moment": "加仓002415，安防龙头强势，关注动量延续。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002415短期涨幅11.8%，是否还有动量空间？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 61.25,
+        "rationale": "短线涨幅11.81%，社交拥挤风险上升，好友卖出信号增加，锁定利润"
+      },
+      "public_message": "002415 涨幅超过11%，社交拥挤风险增加，减仓锁定利润",
+      "moment": "减仓002415，规避拥挤，000002继续持有，等待信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415涨幅大，同意拥挤风险，已减仓观察，后续如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

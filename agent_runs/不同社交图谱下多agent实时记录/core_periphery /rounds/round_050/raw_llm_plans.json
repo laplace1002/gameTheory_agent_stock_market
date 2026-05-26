@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 85.31,
+        "rationale": "拥挤退潮后可能超卖，但尚未见底信号，暂持观望"
+      },
+      "public_message": "000333 拥挤退潮后可能超卖，均值回归暂持观望",
+      "moment": "000333 拥挤退潮，跌幅已深，等待超卖反弹确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的000333卖出基于拥挤，我考虑均值回归机会，交换超卖信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.2,
+        "rationale": "000002 ret20为正，相对强势，其他agent减仓创造买点，追涨趋势延续。"
+      },
+      "public_message": "000002 买入100股，强势资产回调加仓，趋势看涨。",
+      "moment": "000002 加仓100股，核心资产回踩支撑，趋势延续信号。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000002 ret20唯一正收益，追涨验证，愿交换趋势判断。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.76,
+        "rationale": "现金充裕，无低波动买入信号，维持现有轻仓等待。"
+      },
+      "public_message": "600036维持持仓，现金充裕等待低波动机会。",
+      "moment": "600036持仓不变，低波动策略等待。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036低波动，暂持观望，你是否有不同看法？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2010.0,
+        "rationale": "非共识逆向买入，茅台20日跌幅-18%但5日企稳-0.79%，市场恐慌中布局龙头"
+      },
+      "public_message": "买入600519 1股，非共识逆向布局，市场恐慌中逢低吸纳",
+      "moment": "600519买入1股，逆势布局，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我在600519做逆向买入，与你的000333卖出信号不同，愿交换超跌反转看法"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 85.31,
+        "rationale": "多agent卖出000333形成拥挤，但跌幅已深，回撤修复机会待验证，暂持观望"
+      },
+      "public_message": "000333 拥挤卖出但跌幅-12.94%，回撤修复概率上升，暂持观察",
+      "moment": "000333 深跌后多空分歧，回撤买入逻辑待数据确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333 拥挤度数据？我评估回撤修复机会，愿交换风险视图"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 80,
+        "price": 51.76,
+        "rationale": "600036近20日跌幅较小，相对抗跌，当前无强烈反转信号，现金充裕观望。"
+      },
+      "public_message": "600036 HOLD，抗跌性强，等待更明确信号。",
+      "moment": "600036持仓观望，等待市场企稳信号。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "感谢您对000333分歧的分享，请问您验证的拥挤度数据是多少？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 85.31,
+        "rationale": "多个agent减仓，拥挤信号集中，跟随锁定利润降低风险"
+      },
+      "public_message": "000333 卖出5股，拥挤风险升级，锁定利润",
+      "moment": "000333 减仓5股，拥挤退潮风险释放",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333拥挤度已高，多个agent减仓，建议跟随退出风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.76,
+        "rationale": "市场普遍下跌，拥挤退潮中，暂无明确机会，保持现金观望"
+      },
+      "public_message": "无操作，市场普跌，等待信号确认",
+      "moment": "保持现金，耐心等待",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 85.31,
+        "rationale": "拥挤卖出过度，逆向买入反弹"
+      },
+      "public_message": "000333 买入5股，拥挤抛售过度，逆向接回。",
+      "moment": "000333 逆势买入5股，拥挤退潮后估值修复机会。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333 拥挤卖出已加速，逆向信号显示过度反应，可考虑回补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 85.31,
+        "rationale": "多个agent卖出形成拥挤，但价格已跌20日-12.94%，可能存在过度反应；现金充裕，暂持观望，待拥挤出清后验证方向。"
+      },
+      "public_message": "000333多空分歧暂持，等待拥挤出清验证。",
+      "moment": "000333拥挤信号与估值修复并存，平衡风险暂不操作。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 90,
+        "price": 31.2,
+        "rationale": "拥挤退潮，跟随多agent减仓锁定利润"
+      },
+      "public_message": "000002 卖出90股，拥挤退潮锁定利润。",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "确认000002拥挤信号，已清仓，愿交换"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 85.31,
+        "rationale": "拥挤信号持续，跟随ContrarianAgent减仓锁定利润"
+      },
+      "public_message": "000333 卖出10股，拥挤退潮锁定利润",
+      "moment": "000333 减仓10股，跟随逆向拥挤退潮",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "确认000333拥挤，已继续减仓10股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

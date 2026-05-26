@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 22:14:51,MomentumAgent,public,[],['601899'],,,买入601899，成交量大，预期趋势延续
+4,2026-05-25 22:14:51,MomentumAgent,private,['CommitteeTeamAgent'],['601899'],,,今天成交量最大，我先上车了
+5,2026-05-25 22:14:51,MomentumAgent,moments,['CommitteeTeamAgent'],['601899'],,,新年首日，强势信号明显，买入601899等待趋势
+9,2026-05-25 22:14:53,MeanReversionAgent,public,[],['000002'],,,今日所有标的无显著下跌，均值回归策略无触发信号，持仓观望。
+10,2026-05-25 22:14:53,MeanReversionAgent,private,['CommitteeTeamAgent'],['000002'],,,首日无历史数据，无法判断均值回归机会，建议观察后续走势。
+11,2026-05-25 22:14:53,MeanReversionAgent,moments,['CommitteeTeamAgent'],['000002'],,,首日截面：所有股票ret5=0%，无超卖，均值回归待机。
+13,2026-05-25 22:14:53,LowVolatilityAgent,public,[],['600519'],,,低波动策略今日买入1股600519，标的符合低换手高流动性特征。
+14,2026-05-25 22:14:53,LowVolatilityAgent,private,['DynamicTeamAgent'],['600519'],,,我是低波动agent，关注回撤控制，愿与你交换策略信息。
+15,2026-05-25 22:14:53,LowVolatilityAgent,moments,['DynamicTeamAgent'],['600519'],,,首日观察，保持低波动仓位。
+17,2026-05-25 22:14:53,DrawdownBuyerAgent,public,[],['000002'],,,今日无回撤标的，继续空仓等待下跌后的价值修复机会。
+18,2026-05-25 22:14:53,DrawdownBuyerAgent,private,['DynamicTeamAgent'],['000002'],,,当前无回撤机会，保持现金观望，后续有信号再联动。
+20,2026-05-25 22:14:53,RandomAgent,public,[],['601899'],,,买入601899，成交量异常放大，博弈短期动量
+21,2026-05-25 22:14:53,RandomAgent,private,['FreeRiderAgent'],['601899'],,,已买入601899，注意成交量异动，可跟单验证
+22,2026-05-25 22:14:53,RandomAgent,moments,['FreeRiderAgent'],['601899'],,,随机开仓601899，高成交量低价格，非共识交易
+26,2026-05-25 22:14:57,TruthfulReporterAgent,public,[],['000002'],,,2021首日无历史回报，全部标的HOLD，等待明确信号
+27,2026-05-25 22:14:57,TruthfulReporterAgent,private,['SocialGraphAgent'],['000002'],,,今日无趋势数据，你是否有额外信息？
+28,2026-05-25 22:14:57,TruthfulReporterAgent,moments,"['MomentumAgent', 'SocialGraphAgent']",['000002'],,,首日零收益，无信号，继续观察流动性变化
+30,2026-05-25 22:14:57,PersuaderAgent,public,[],['002594'],,,买入002594，看好新能源政策驱动，建议关注
+31,2026-05-25 22:14:57,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,我判断新能源有动量，一起买入验证
+32,2026-05-25 22:14:57,PersuaderAgent,moments,['ContrarianAgent'],['002594'],,,配置002594，逻辑：政策+龙头溢价
+34,2026-05-25 22:14:57,FreeRiderAgent,public,[],['000002'],,,无历史数据，今日对000002等全部ticker持观望态度，HOLD。
+35,2026-05-25 22:14:57,FreeRiderAgent,private,['RandomAgent'],['000002'],,,第一轮无ret数据，建议先观察，不急于交易。
+36,2026-05-25 22:14:57,FreeRiderAgent,moments,['RandomAgent'],['000002'],,,首日截面无涨跌幅，等待后续数据验证策略。
+40,2026-05-25 22:15:00,ContrarianAgent,public,[],['600519'],,,看空600519，2000元关口过度乐观，卖出一股。
+41,2026-05-25 22:15:00,ContrarianAgent,private,['PersuaderAgent'],['600519'],,,认为600519估值过高，建议一起做空。
+42,2026-05-25 22:15:00,ContrarianAgent,moments,['PersuaderAgent'],['600519'],,,新年首日，寻找拥挤交易标的。
+46,2026-05-25 22:15:04,CommitteeTeamAgent,public,[],['000002'],,,HOLD 000002，无历史回报，暂不操作。
+47,2026-05-25 22:15:04,CommitteeTeamAgent,private,['MomentumAgent'],['000002'],,,当前无动量信号，建议观望。
+48,2026-05-25 22:15:04,CommitteeTeamAgent,moments,"['MeanReversionAgent', 'MomentumAgent']",['000002'],,,首日无趋势，保持现金。
+50,2026-05-25 22:15:04,DynamicTeamAgent,public,[],['002415'],,,首日买入002415观察仓，成交量活跃，等待信号
+51,2026-05-25 22:15:04,DynamicTeamAgent,private,['DrawdownBuyerAgent'],['002415'],,,首日无历史数据，建议关注002415成交量？
+52,2026-05-25 22:15:04,DynamicTeamAgent,moments,"['DrawdownBuyerAgent', 'LowVolatilityAgent']",['002415'],,,新的一天，零仓启动，等待信号
+54,2026-05-25 22:15:04,SocialGraphAgent,public,[],['000002'],,,少量买入000002试探，关注今日情绪。
+55,2026-05-25 22:15:04,SocialGraphAgent,private,['TruthfulReporterAgent'],['000002'],,,今天数据全零，是否有未公开信息？
+56,2026-05-25 22:15:04,SocialGraphAgent,moments,['TruthfulReporterAgent'],['000002'],,,新建仓000002，1股，为后续社交图谱分析积累参照。

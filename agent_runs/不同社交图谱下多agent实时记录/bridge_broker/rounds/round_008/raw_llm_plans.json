@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 305.33,
+        "rationale": "000858 ret5=-7%过度抛售，均值回归预期反弹。"
+      },
+      "public_message": "000858 BUY加仓，跌幅-7%超卖，均值回归预期。",
+      "moment": "加仓000858，均值回归验证，等待反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我做多超卖000858与你做空超买002415互补，验证反转信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 49.4,
+        "rationale": "近5日涨幅11.89%，回撤风险增大，锁定利润控制波动"
+      },
+      "public_message": "600036 SELL：涨幅过大，控制回撤",
+      "moment": "600036 SELL，涨幅过高回撤风险增大，低波策略止盈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "卖出600036锁定利润，与你做空逻辑一致，验证分歧风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 239.3,
+        "rationale": "追涨强势股，ret5=10.63%全市场第二强"
+      },
+      "public_message": "002594 BUY：追涨强势股，ret5=10.63%全市场第二",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 385.0,
+        "rationale": "跌幅-5.35%，随机视角反向买入，非共识抄底"
+      },
+      "public_message": "300750 BUY 100股：跌幅-5.35%，随机视角反向介入，非共识博弈反弹。",
+      "moment": "300750 BUY 100股，随机反向，非共识抄底，等待分歧验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750 BUY：跌幅-5.35%与你的做空002415形成分歧，逆向验证非共识。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "动量信号仍存，但Contrarian做空增加反转风险，等待验证。"
+      },
+      "public_message": "002415 HOLD：动量8.10%仍在，但Contrarian反转风险待验证。",
+      "moment": "002415 HOLD，动量与反转信号冲突，等待确认方向。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你买入002415验证动量，我持观望，分歧需跟踪。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 385.0,
+        "rationale": "300750近5日回调-5.35%，属于跌深标的，且DynamicTeamAgent持有相同逻辑，加仓博价值修复。"
+      },
+      "public_message": "300750 BUY 1股，跌深-5.35%价值修复，与动态团队持仓逻辑一致。",
+      "moment": "300750加仓1股，跌深价值修复逻辑，与DynamicTeamAgent共识。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "加仓300750，与你持仓逻辑互补，共同验证新能源反弹信号。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你动量我回撤，策略分歧可互补验证市场信号，申请好友交流。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.91,
+        "rationale": "ret5=8.1%动量强，SocialGraphAgent等验证，分歧中做多趋势延续。"
+      },
+      "public_message": "002415 BUY 100股，动量信号强，分歧验证趋势。",
+      "moment": "做多002415，动量趋势延续。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "买入002415与你的做空形成分歧对冲，验证市场方向。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.91,
+        "rationale": "涨幅过大且放量超买，做多拥挤，均值回归风险高"
+      },
+      "public_message": "002415 SELL：涨幅8.1%超买，放量拥挤，反转风险加大",
+      "moment": "做空002415，拥挤多头+放量=反转信号，等待均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "做空002415与你卖601899逻辑一致，验证反转信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.9,
+        "rationale": "全市场零趋势，低波防御，分歧验证中，暂不调整。"
+      },
+      "public_message": "000002 HOLD，全市场零趋势，低估值防御，等待信号。",
+      "moment": "HOLD 000002，全市场零趋势，低波防御，与Contrarian分歧互补。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "做空002415与000002低波形成分歧对冲，继续观察。"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "社交图谱验证与低波防御互补，共享异质信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "002415动量首日分歧验证，Contrarian做空与SocialGraph买入冲突，零回报背景下持有观望"
+      },
+      "public_message": "002415 HOLD：动量分歧验证，等待趋势确认。",
+      "moment": "002415 HOLD，动量与反转分歧中等待方向。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415分歧验证，HOLD观望，若反转信号强化则调整。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 385.0,
+        "rationale": "全市场首日零回报，无趋势信号，维持仓位等待确认"
+      },
+      "public_message": "300750 HOLD：首日零回报，全市场无趋势，等待信号。",
+      "moment": "300750 HOLD，全市场零趋势，耐心等待信号确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的做空601899与我的300750新能源逻辑互补，继续验证分歧。"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "你持000002低估值，我持300750新能源，策略分歧可互补验证市场信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "社交信号分歧：好友动量看多，Contrarian做空，等待验证"
+      },
+      "public_message": "002415 HOLD，好友动量与Contrarian做空分歧，等待信号确认",
+      "moment": "002415持仓中，社交图谱信号分歧，耐心等待",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的002415做空与我的动量持仓互补，请好友验证分歧"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "你的做空信号与我的动量持仓互补，验证市场反转分歧"
+      }
+    },
+    "error": ""
+  }
+]

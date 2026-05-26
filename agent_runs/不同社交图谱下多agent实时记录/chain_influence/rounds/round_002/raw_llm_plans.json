@@ -1,0 +1,269 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日所有ticker回撤为零，均值回归暂无信号，等待价格偏离后入场。"
+      },
+      "public_message": "000002 HOLD：首日无历史偏离，均值回归信号缺失，观望等待量价背离。",
+      "moment": "关注000002等ticker首日成交量分化，但价格无偏离，耐心等待均值回归触发点。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向策略与均值回归互补，可交叉验证反转顶点，愿交换信号？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向与均值回归互补，可共享反转信号验证市场情绪。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 219.9,
+        "rationale": "跟随PersuaderAgent买入新能源龙头，预期动量延续"
+      },
+      "public_message": "买入002594 100股，跟随新能源动量",
+      "moment": "加仓新能源，持仓300750+002594，追动量",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已跟进您买入002594，期待趋势延续"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回复可验证动量反转信号，策略互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 42.18,
+        "rationale": "低波动建仓，招商银行流动性好、波动率低，符合风险预算要求。"
+      },
+      "public_message": "买入600036 4手，银行龙头低波动配置，控制仓位在20%以内。",
+      "moment": "2021-01-05首笔建仓600036，低波动策略启动。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "招商银行低波动配置，可否交流风险信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日无历史数据，所有ticker回撤率为0%，未发现跌深价值修复机会，暂持现金观望。"
+      },
+      "public_message": "HOLD：首日无回撤信号，所有标的ret5/20均为0，等待后续数据确认超跌标的。",
+      "moment": "首日零持仓，所有ticker无历史回撤，等待量价信号。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "提供真实数据，可否共享后续回撤指标以辅助价值修复判断？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "回撤策略需要真实历史数据验证超跌信号，互补性强。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 54.78,
+        "rationale": "首日无历史趋势，所有ticker ret5/ret20为零，缺乏强信号，保持现金。"
+      },
+      "public_message": "观察：002415、600036、601899成交活跃，但无历史趋势，方向不明，暂持现金。",
+      "moment": "首日无历史趋势，成交活跃个股：002415、600036、601899，等待方向确认。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "首日所有ticker ret均零，无反转信号，等待后续数据。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 54.78,
+        "rationale": "随机选择002415，安防龙头量能活跃，试仓捕捉潜在动量。"
+      },
+      "public_message": "买入002415，随机试仓，安防龙头量能活跃。",
+      "moment": "试仓002415，随机视角，等待验证。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "你对002415怎么看？我随机建仓，求反馈。"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向策略可验证我对002415的多空分歧，互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 219.9,
+        "rationale": "新能源龙头趋势确认，成交量支撑，加仓跟随动量。"
+      },
+      "public_message": "加仓002594，新能源主线确认，量价配合。",
+      "moment": "002594新高，持仓加码，新能源逻辑不变。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594动量强劲，是否考虑跟进？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "真实数据验证002594趋势，互补决策。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 402.0,
+        "rationale": "高估值，市场过度乐观，逆向做空"
+      },
+      "public_message": "300750估值过高，逆向做空",
+      "moment": "做空300750，等待均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "请提供300750基本面数据验证估值"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 219.9,
+        "rationale": "跟随PersuaderAgent动量信号，新能源汽车龙头，成交活跃"
+      },
+      "public_message": "买入002594 100股，参考PersuaderAgent动量信号，新能源龙头。",
+      "moment": "第一天跟随买入002594，观察动量持续性。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "我打算买入002594，你如何看？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "动量观察策略互补，共享趋势信息"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "000002放量且SocialGraphAgent建仓，低风险跟随，分散组合"
+      },
+      "public_message": "000002 BUY 100股，放量底部反弹，社交信号验证，分散持有",
+      "moment": "第二日，买入000002 100股，跟随量能信号，组合多元化",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "刚买入000002，是否观察到持续放量？可交流底部确认信号"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "委员会需动量信号验证趋势，互补低波动持有逻辑"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 27.91,
+        "rationale": "跟进SocialGraphAgent放量上涨信号，小仓位参与验证。"
+      },
+      "public_message": "买入000002 5股，跟进放量信号，短期观察。",
+      "moment": "新年第二天，小仓买入000002，量价配合验证。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已买入000002，同为放量看多，后续交流节奏。"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "社交与趋势信号互补，便于验证000002后续走势。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "现有仓位未触发止损或目标，等待社交信号确认方向"
+      },
+      "public_message": "000002持仓观望，成交量大但方向待确认。",
+      "moment": "持有000002，观察社交图谱共识。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000002今日量能维持，你的动量指标如何？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "新能源与地产策略互补，可交叉验证市场情绪。"
+      }
+    },
+    "error": ""
+  }
+]

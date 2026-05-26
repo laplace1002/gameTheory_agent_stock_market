@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+781,2026-05-25 23:51:20,MomentumAgent,public,[],['000002'],,,002415 BUY 趋势延续，近5日涨幅13%
+782,2026-05-25 23:51:20,MomentumAgent,private,['CommitteeTeamAgent'],['000002'],,,002415追涨信号强，验证趋势延续，是否有拥挤风险？
+783,2026-05-25 23:51:20,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出000002 50股，买入002415 50股，追涨强势
+785,2026-05-25 23:51:20,MeanReversionAgent,public,[],['000858'],,,000858 SELL 30股，超跌反弹拥挤风险增加，均值回归止盈
+786,2026-05-25 23:51:20,MeanReversionAgent,private,['CommitteeTeamAgent'],['000858'],,,000858拥挤上升，我已部分止盈，验证风险信号
+787,2026-05-25 23:51:20,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,卖出000858 30股，均值回归策略应对超跌反弹拥挤
+789,2026-05-25 23:51:20,LowVolatilityAgent,public,[],['000858'],,,000858 SELL 10股，超跌拥挤风险上升，锁利降仓
+790,2026-05-25 23:51:20,LowVolatilityAgent,private,['CommitteeTeamAgent'],['000858'],,,同意超跌拥挤判断，已减持000858
+791,2026-05-25 23:51:20,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['000858'],,,减持000858，规避超跌拥挤风险
+793,2026-05-25 23:51:20,DrawdownBuyerAgent,public,[],['000858'],,,000858 HOLD：超跌反弹拥挤但未衰竭，继续持有等待量能确认
+794,2026-05-25 23:51:20,DrawdownBuyerAgent,private,['DynamicTeamAgent'],['000858'],,,000858加仓信号已验证，我继续持仓，注意拥挤风险
+795,2026-05-25 23:51:20,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,持000858和300750，超跌反弹拥挤但未到反转点，继续观望
+797,2026-05-25 23:51:20,RandomAgent,public,[],['000858'],,,000858 SELL 10股，超跌拥挤随机止盈
+798,2026-05-25 23:51:20,RandomAgent,private,['CommitteeTeamAgent'],['000858'],,,超跌拥挤加剧，我随机减仓000858，注意风险
+799,2026-05-25 23:51:20,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858减仓10股，随机策略应对拥挤
+801,2026-05-25 23:51:20,TruthfulReporterAgent,public,[],['000002'],,,000002 HOLD：趋势待验证，超跌拥挤未缓解，等待信号
+802,2026-05-25 23:51:20,TruthfulReporterAgent,private,['ContrarianAgent'],['000002'],,,同意你的601318逆向买入，避开拥挤
+803,2026-05-25 23:51:20,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,持000002观望，超跌拥挤信号混杂，等待量能确认
+805,2026-05-25 23:51:20,PersuaderAgent,public,[],['002594'],,,002594 SELL 100股，部分止盈应对超跌拥挤风险
+806,2026-05-25 23:51:20,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594减仓100股，超跌拥挤风险上升，先锁部分利润
+808,2026-05-25 23:51:20,FreeRiderAgent,public,[],['601318'],,,601318 BUY 10股，逆向跟随，规避超跌拥挤风险。
+809,2026-05-25 23:51:20,FreeRiderAgent,private,['ContrarianAgent'],['601318'],,,同意逆向买入601318，规避超跌拥挤，已跟进。
+810,2026-05-25 23:51:20,FreeRiderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,买入601318 10股，逆向跟随ContrarianAgent，分散超跌反弹拥挤风险。
+812,2026-05-25 23:51:20,ContrarianAgent,public,[],['601318'],,,601318 BUY：逆向加仓，超跌拥挤风险释放，金融蓝筹估值安全，等待修复
+813,2026-05-25 23:51:20,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318 10股，逆向操作，避开超跌股拥挤，价值回归逻辑不变
+815,2026-05-25 23:51:20,CommitteeTeamAgent,public,[],['000858'],,,000858 SELL 减仓10股，超跌拥挤风险增强
+816,2026-05-25 23:51:20,CommitteeTeamAgent,private,['ContrarianAgent'],['000858'],,,同意逆向思路，考虑跟进601318，规避拥挤
+817,2026-05-25 23:51:20,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,减仓000858，警惕超跌拥挤，现金等待新机会
+819,2026-05-25 23:51:20,DynamicTeamAgent,public,[],['300750'],,,300750 SELL 5股，止盈规避拥挤风险
+820,2026-05-25 23:51:20,DynamicTeamAgent,private,['FreeRiderAgent'],['300750'],,,同意你的300750止盈判断，已跟随减仓
+821,2026-05-25 23:51:20,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,卖出300750 5股，超跌拥挤风险加剧，锁定部分利润
+823,2026-05-25 23:51:20,SocialGraphAgent,public,[],['000002'],,,000002 HOLD：社交超跌拥挤，量能不足，继续观望
+824,2026-05-25 23:51:20,SocialGraphAgent,private,['CommitteeTeamAgent'],['000002'],,,超跌拥挤风险上升，但反弹未衰竭，如何判断阈值？
+825,2026-05-25 23:51:20,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,持000002和000858，超跌逻辑未破但拥挤度上升，暂持谨慎

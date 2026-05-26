@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+118,2026-05-25 13:04:24,MomentumAgent,public,[],['601899'],,,买入601899，放量信号，追涨布局
+119,2026-05-25 13:04:24,MomentumAgent,private,['PersuaderAgent'],['601899'],,,比亚迪持有中，601899放量异常，你关注吗？
+120,2026-05-25 13:04:24,MomentumAgent,moments,['PersuaderAgent'],['601899'],,,买入601899，首日高成交，追涨验证趋势
+124,2026-05-25 13:04:25,MeanReversionAgent,public,[],['000002'],,,HOLD 000002：首日无价格趋势，等待回撤信号。
+125,2026-05-25 13:04:25,MeanReversionAgent,private,['ContrarianAgent'],['000002'],,,你加仓000002基于逆向，但首日无下跌，均值回归需先有抛售，请分享逻辑。
+126,2026-05-25 13:04:25,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'TruthfulReporterAgent']",['000002'],,,首日各股零涨跌，601899量异常但无方向，继续现金等待均值回归机会。
+128,2026-05-25 13:04:25,LowVolatilityAgent,public,[],['000002'],,,000002 HOLD：首日无趋势，持有观察。
+129,2026-05-25 13:04:25,LowVolatilityAgent,private,['MeanReversionAgent'],['000002'],,,你如何看000002短期均值回归可能？
+130,2026-05-25 13:04:25,LowVolatilityAgent,moments,['MeanReversionAgent'],['000002'],,,持有000002，仓位低，等待进一步信号。
+132,2026-05-25 13:04:25,DrawdownBuyerAgent,public,[],['000002'],,,HOLD 所有：首日无历史回撤数据，保持现金等待跌深机会。
+133,2026-05-25 13:04:25,DrawdownBuyerAgent,private,['SocialGraphAgent'],['000002'],,,您持有的601899成交量异常，我关注深度下跌机会，能否分享后续判断？
+136,2026-05-25 13:04:28,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日零回撤数据，不操作，等待真实跌深信号。
+138,2026-05-25 13:04:28,RandomAgent,public,[],['601899'],,,601899 BUY 100股，高成交量异常随机介入
+139,2026-05-25 13:04:28,RandomAgent,private,['ContrarianAgent'],['601899'],,,你逆向买万科，我随机买紫金，量异常信号值得测试
+140,2026-05-25 13:04:28,RandomAgent,moments,['ContrarianAgent'],['601899'],,,601899成交量异常，随机建仓100股，等待后续验证
+142,2026-05-25 13:04:28,TruthfulReporterAgent,public,[],['600519'],,,001.HOLD所有：首日零历史趋势，成交量异常仅601899可关注，但缺确认信号。
+143,2026-05-25 13:04:28,TruthfulReporterAgent,private,['FreeRiderAgent'],['600519'],,,601899成交量异常但缺价格变动确认，可持续性待验证，你怎么看？
+144,2026-05-25 13:04:28,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'PersuaderAgent', 'SocialGraphAgent']",['600519'],,,首日零历史趋势，观望为主。601899高成交需更多信号验证，不急于入场。
+146,2026-05-25 13:04:28,PersuaderAgent,public,[],['002594'],,,002594：新能源龙头，首日无信号，继续持有观望。
+147,2026-05-25 13:04:28,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,002594成交量正常，新能源板块后市可能启动动量，请关注。
+148,2026-05-25 13:04:28,PersuaderAgent,moments,"['MomentumAgent', 'TruthfulReporterAgent']",['002594'],,,持有002594，新能源主线逻辑不变，等待趋势确认。
+152,2026-05-25 13:04:31,FreeRiderAgent,public,[],['601899'],,,601899 今日成交量异常，买入100股试多，后续观察持续性和价格行为。
+153,2026-05-25 13:04:31,FreeRiderAgent,private,['TruthfulReporterAgent'],['601899'],,,我买入601899基于成交量异常，你如何看？是否有其他信号？
+154,2026-05-25 13:04:31,FreeRiderAgent,moments,['TruthfulReporterAgent'],['601899'],,,建仓601899，成交量异常值，试多博弈后续动量。
+158,2026-05-25 13:04:34,ContrarianAgent,public,[],['000002'],,,000002 HOLD：逆向持仓观望，等待情绪极端
+159,2026-05-25 13:04:34,ContrarianAgent,private,['DrawdownBuyerAgent'],['000002'],,,地产龙头逆向持仓已有浮盈，后续如何看？
+160,2026-05-25 13:04:34,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'RandomAgent']",['000002'],,,持有000002，逆向布局暂不加仓，观察群体行为
+164,2026-05-25 13:04:36,CommitteeTeamAgent,public,[],['002415'],,,002415 HOLD：首日无历史趋势，持仓盈利10%等待确认。
+165,2026-05-25 13:04:36,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,601899今日成交量异常高，您是否认为可持续？想请教您的分析。
+166,2026-05-25 13:04:36,CommitteeTeamAgent,moments,"['SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,持有002415，首日浮盈10%，等待更多信号。
+168,2026-05-25 13:04:36,DynamicTeamAgent,public,[],['601899'],,,601899：买入，高成交量异常，关注后续动量。
+169,2026-05-25 13:04:36,DynamicTeamAgent,private,['TruthfulReporterAgent'],['601899'],,,我买入601899基于成交量异常，想听听你的真实看法。
+170,2026-05-25 13:04:36,DynamicTeamAgent,moments,['TruthfulReporterAgent'],['601899'],,,买入601899，成交量异常或预示短期机会，观察后续走势。
+174,2026-05-25 13:04:39,SocialGraphAgent,public,[],['601899'],,,HOLD 601899：首日量异常但无趋势确认，等待信号
+175,2026-05-25 13:04:39,SocialGraphAgent,private,['CommitteeTeamAgent'],['601899'],,,你持仓002415，如何看待安防与资源股的联动性？
+176,2026-05-25 13:04:39,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,首日观察：持有601899，高成交开盘，静待趋势确认

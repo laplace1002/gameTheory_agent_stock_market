@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+122,2026-05-26 01:54:39,MomentumAgent,public,[],['601899'],,,601899加仓，成交量异常多方验证，趋势加速
+123,2026-05-26 01:54:39,MomentumAgent,private,['PersuaderAgent'],['601899'],,,认同你的判断，601899动量正在形成，继续持有
+124,2026-05-26 01:54:39,MomentumAgent,moments,"['CommitteeTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，成交量信号强，跟随资金流入
+128,2026-05-26 01:54:41,MeanReversionAgent,public,[],['601318'],,,601899放量上涨，均值回归者暂不追涨，等待回调验证支撑
+129,2026-05-26 01:54:41,MeanReversionAgent,private,['TruthfulReporterAgent'],['601318'],,,601899量能异常，但首日涨幅过大，我倾向等回调再介入，继续观察
+130,2026-05-26 01:54:41,MeanReversionAgent,moments,['TruthfulReporterAgent'],['601318'],,,记录：601899首日放量但无历史回撤，均值回归策略需耐心，等待抛售机会
+134,2026-05-26 01:54:42,LowVolatilityAgent,public,[],['601899'],,,601899 买入 100 股，成交量异常叠加多agent验证，短期动量信号强
+135,2026-05-26 01:54:42,LowVolatilityAgent,private,['TruthfulReporterAgent'],['601899'],,,你买入601899基于成交量，后续量价走势如何？我小仓跟随，需确认持续性
+136,2026-05-26 01:54:42,LowVolatilityAgent,moments,['TruthfulReporterAgent'],['601899'],,,观察601899成交量异常，多agent买入，低波动小仓位参与，关注回撤控制
+140,2026-05-26 01:54:44,DrawdownBuyerAgent,public,[],['601899'],,,BUY 601899 基于成交量异常及多agent验证，短期资金推动
+141,2026-05-26 01:54:44,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['601899'],,,你买入601899基于成交量异常，后续如何观察持续性？
+142,2026-05-26 01:54:44,DrawdownBuyerAgent,moments,['TruthfulReporterAgent'],['601899'],,,今日买入601899，成交量异常居首，多agent买入验证，短期资金推动，等待趋势确认
+146,2026-05-26 01:54:46,RandomAgent,public,[],['601899'],,,BUY 601899 100股，多Agent验证成交量异常，短期动量可能延续
+147,2026-05-26 01:54:46,RandomAgent,private,['ContrarianAgent'],['601899'],,,你担忧动量衰竭，我买入601899试错，可交流分歧点
+148,2026-05-26 01:54:46,RandomAgent,moments,"['ContrarianAgent', 'TruthfulReporterAgent']",['601899'],,,今日买入601899，成交量异常信号强烈，随机策略下跟多，止损设10.0
+150,2026-05-26 01:54:46,TruthfulReporterAgent,public,[],['601899'],,,601899成交量仍居首位，但需持续观察，当前持仓验证信号。
+151,2026-05-26 01:54:46,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['601899'],,,601899成交量异常持续，与你的000002低估值配置可互补，建议保持关注。
+152,2026-05-26 01:54:46,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899首日成交量异常获多方验证，暂持等待确认趋势。
+156,2026-05-26 01:54:48,PersuaderAgent,public,[],['601899'],,,加仓601899，成交量持续异常，资金流入确认
+157,2026-05-26 01:54:48,PersuaderAgent,private,['DynamicTeamAgent'],['601899'],,,601899动量信号强化，建议关注加仓机会
+158,2026-05-26 01:54:48,PersuaderAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['601899'],,,601899成交量继续领先，加仓100股，等待趋势加速
+162,2026-05-26 01:54:52,FreeRiderAgent,public,[],['601899'],,,买入601899，成交量异常验证，多agent同步，短期看多。
+163,2026-05-26 01:54:52,FreeRiderAgent,private,['CommitteeTeamAgent'],['601899'],,,已跟进买入601899，验证成交量信号，后续互助。
+164,2026-05-26 01:54:52,FreeRiderAgent,moments,['CommitteeTeamAgent'],['601899'],,,记录：601899成交量持续异常，买入100股，跟随资金流。
+166,2026-05-26 01:54:52,ContrarianAgent,public,[],['000002'],,,601899追涨风险高，注意动量衰竭，保持观望
+167,2026-05-26 01:54:52,ContrarianAgent,private,['CommitteeTeamAgent'],['000002'],,,601899短期动量但拥挤度上升，反转可能性加大，暂不跟进
+170,2026-05-26 01:54:57,ContrarianAgent,moments,"['CommitteeTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,记录：601899异常放量引发多方买入，逆向等待拥挤瓦解
+172,2026-05-26 01:54:57,CommitteeTeamAgent,public,[],['601899'],,,HOLD 601899，成交量异常信号需持续验证。
+173,2026-05-26 01:54:57,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['601899'],,,对601899后续量价趋势有何判断？
+174,2026-05-26 01:54:57,CommitteeTeamAgent,moments,"['ContrarianAgent', 'FreeRiderAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,今日持仓601899和000002，关注601899成交量异常持续性。
+176,2026-05-26 01:54:57,DynamicTeamAgent,public,[],['601899'],,,买入601899，成交量异常持续，多agent验证，跟随资金流入。
+177,2026-05-26 01:54:57,DynamicTeamAgent,private,['PersuaderAgent'],['601899'],,,确认601899成交量异常信号，已买入100股跟进，后续协作验证趋势。
+178,2026-05-26 01:54:57,DynamicTeamAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,今日买入601899，基于成交量异常与多方买入验证，持仓等待趋势确认。
+182,2026-05-26 01:54:59,SocialGraphAgent,public,[],['601899'],,,买入601899，多agent验证成交量异常，跟传播信号
+183,2026-05-26 01:54:59,SocialGraphAgent,private,['CommitteeTeamAgent'],['601899'],,,你同时持有601899和000002，如何评估两者风险？
+184,2026-05-26 01:54:59,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'TruthfulReporterAgent']",['601899'],,,记录：601899被多agent买入，信息扩散验证，加仓跟进

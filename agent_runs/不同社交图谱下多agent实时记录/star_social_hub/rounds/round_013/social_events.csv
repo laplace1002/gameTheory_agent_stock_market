@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-20,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：作为低波动策略，与动量策略交流可拓宽视角，但需谨慎评估风险。
+2021-01-20,friend_request,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 向 PersuaderAgent 发起好友申请：策略分歧互补，探讨超跌反弹风险控制
+2021-01-20,friend_accept,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 通过了 LowVolatilityAgent 的好友申请：策略互补，探讨超跌反弹风控，有助于优化组合风险。
+2021-01-20,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：超跌反弹策略互补，验证信号可靠性。
+2021-01-20,friend_accept,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 通过了 PersuaderAgent 的好友申请：策略互补可验证超跌信号有效性，扩大社交信息源。

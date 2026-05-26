@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 33.5,
+        "rationale": "短期涨幅超11%，均值回归逻辑，锁定部分利润"
+      },
+      "public_message": "000002 SELL 10股：5日涨11%，均值回归卖出锁定利润",
+      "moment": "卖出000002 10股，短期超买均值回归",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意卖出000002，短期涨幅过大，均值回归回调概率高。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 93.49,
+        "rationale": "000333短期弱势，减仓控制回撤"
+      },
+      "public_message": "000333 SELL 1股，短期趋势偏弱，控制回撤",
+      "moment": "卖出000333 1股，规避短期下行风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已卖出000333，同意你超跌逻辑，但先减仓等待更佳机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.68,
+        "rationale": "短期涨幅6.46%且多Agent共识买入，追涨延续反弹"
+      },
+      "public_message": "002415 BUY 100股，短期强势6.5%且共识修复",
+      "moment": "买入002415 100股，追涨短期强势修复。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意002415超跌修复逻辑，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 211.4,
+        "rationale": "20日跌幅18.39%深度回撤，多Agent共识验证，加仓博弈修复"
+      },
+      "public_message": "002594 BUY 1股：20日深跌18.39%，多Agent共识，继续加仓修复",
+      "moment": "加仓002594 1股，超跌修复逻辑验证中",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 12.32,
+        "rationale": "随机视角，5日跌幅5.95%超短期回调，博弈反弹"
+      },
+      "public_message": "601899 BUY 1股，随机捕捉5日回调机会",
+      "moment": "买入601899 1股，随机换仓博弈回调反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对002415拥挤的担忧，我转买601899超跌"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.68,
+        "rationale": "002415多Agent买入但Contrarian卖出，信号矛盾，暂观望"
+      },
+      "public_message": "002415 HOLD：多Agent买入但Contrarian卖出，信号矛盾，观望。",
+      "moment": "继续持有002415和601318，等待更明确信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解002415拥挤担忧，我暂观望，验证后续强度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 209.75,
+        "rationale": "多Agent超跌修复共识强化，加仓5股博弈反弹"
+      },
+      "public_message": "002594 BUY 5股，超跌共识强化，博弈修复",
+      "moment": "加仓002594 5股，跟随多Agent超跌共识",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002594超跌逻辑，加仓5股共同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 33.5,
+        "rationale": "短期涨幅超10%，锁定利润规避回调。"
+      },
+      "public_message": "000002 SELL 10股：短期涨幅超10%，锁定利润规避回调。",
+      "moment": "卖出000002 10股，锁定短期利润，等待超跌机会。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的000002减仓逻辑，我已卖出10股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.68,
+        "rationale": "多Agent超跌共识分化，Contrarian卖出信号提示拥挤，暂持观察"
+      },
+      "public_message": "002415 HOLD：超跌共识过热，Contrarian止盈提示风险，暂时持有观望。",
+      "moment": "002415 HOLD：超跌共识过热，Contrarian止盈，暂时持有等待信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险判断，我暂持002415等待分化信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 349.63,
+        "rationale": "超跌后企稳，低吸分散持仓"
+      },
+      "public_message": "300750 BUY 1股：超跌企稳，低吸分散持仓",
+      "moment": "买入300750 1股，超跌企稳，等待修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "300750超跌后企稳，低吸分散持仓，与你002415逻辑类似"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 211.4,
+        "rationale": "超跌共识强化，多Agent验证修复逻辑"
+      },
+      "public_message": "002594 加仓5股，超跌共识强化，多Agent验证修复逻辑",
+      "moment": "加仓002594 5股，跟随超跌修复共识",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌逻辑，加仓5股共同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 30,
+        "price": 33.5,
+        "rationale": "短期涨幅过大，超买回调风险，逆向止盈"
+      },
+      "public_message": "000002 SELL：短期涨幅超11%，逆向止盈30股",
+      "moment": "卖出000002 30股，短期涨幅过大，逆向减仓等待回调",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的卖出逻辑，我减仓000002 30股，锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1434,2026-05-26 01:24:15,MomentumAgent,public,[],['601899'],,,601899 BUY 100股，ret5+30.94%强趋势延续，追涨信号。
+1435,2026-05-26 01:24:15,MomentumAgent,private,['RandomAgent'],['601899'],,,你卖出601899，我买入，趋势仍强，分歧带来机会。
+1436,2026-05-26 01:24:15,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 加仓100股，强势趋势确认，短期动能充足。
+1438,2026-05-26 01:24:15,MeanReversionAgent,public,[],['601318'],,,601318 BUY 10股，均值回归逻辑，20日跌幅-3.39%，分歧买入
+1439,2026-05-26 01:24:15,MeanReversionAgent,private,['ContrarianAgent'],['601318'],,,拥挤卖盘占比边际变化数据？逆向仓位是否确认反转？
+1440,2026-05-26 01:24:15,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318 10股，均值回归策略，留意拥挤度变化
+1442,2026-05-26 01:24:15,LowVolatilityAgent,public,[],['600036'],,,600036 BUY 10股，低波动趋势确认，好友共识加仓
+1443,2026-05-26 01:24:15,LowVolatilityAgent,private,['PersuaderAgent'],['600036'],,,600036低波动趋势确认，感谢验证，加仓10股。
+1444,2026-05-26 01:24:15,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 10股，低波动稳健，好友共识强化
+1446,2026-05-26 01:24:15,DrawdownBuyerAgent,public,[],['601318'],,,601318 HOLD 分歧中等待拥挤度边际改善信号
+1447,2026-05-26 01:24:15,DrawdownBuyerAgent,private,['ContrarianAgent'],['601318'],,,拥挤卖盘占比是否边际略放缓？具体数值多少？
+1448,2026-05-26 01:24:15,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318 暂持 拥挤卖盘分歧中等待边际信号
+1450,2026-05-26 01:24:15,RandomAgent,public,[],['601899'],,,601899 SELL 20股，连续上涨后随机视角看回调风险
+1451,2026-05-26 01:24:15,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,601899连续涨30%我减仓，拥挤卖盘你关注601318边际改善？
+1452,2026-05-26 01:24:15,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899 20股，随机视角锁利，关注其他机会
+1454,2026-05-26 01:24:15,TruthfulReporterAgent,public,[],['600036'],,,600036 BUY 10股，低波动趋势确认
+1455,2026-05-26 01:24:15,TruthfulReporterAgent,private,['PersuaderAgent'],['600036'],,,600036低波动趋势信号一致，确认加仓。
+1456,2026-05-26 01:24:15,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,加仓600036，低波动趋势好友共识强化
+1458,2026-05-26 01:24:15,PersuaderAgent,public,[],['601318'],,,601318 SELL 10股，拥挤卖盘分歧未消，减仓降风险，转配600036低波动
+1459,2026-05-26 01:24:15,PersuaderAgent,private,['FreeRiderAgent'],['601318'],,,601318拥挤卖盘边际变化？我减仓10股，是否考虑同步降风险？
+1460,2026-05-26 01:24:15,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 10股，分歧未改善，转向低波动600036，好友共识强化
+1462,2026-05-26 01:24:15,FreeRiderAgent,public,[],['600036'],,,600036 BUY 10股，低波动趋势稳健，好友共识强化。
+1463,2026-05-26 01:24:15,FreeRiderAgent,private,['ContrarianAgent'],['600036'],,,601318拥挤卖盘占比边际变化数据能否分享？卖盘占比仍>60%吗？
+1464,2026-05-26 01:24:15,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 10股，低波动趋势中，好友共识验证。
+1466,2026-05-26 01:24:15,ContrarianAgent,public,[],['601318'],,,601318 HOLD 拥挤卖盘分歧持续，逆向等待边际改善确认
+1467,2026-05-26 01:24:15,ContrarianAgent,private,['DrawdownBuyerAgent'],['601318'],,,拥挤卖盘占比估计仍>60%，边际放缓但尚未突破，你的加仓是否有进一步量能确认？
+1468,2026-05-26 01:24:15,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318 多空分歧剧烈，逆向仓位耐心等待，拥挤交易反转往往在分歧极致时发生
+1470,2026-05-26 01:24:15,CommitteeTeamAgent,public,[],['600036'],,,600036 BUY 10股，低波动稳健，好友共识强化，趋势延续
+1471,2026-05-26 01:24:15,CommitteeTeamAgent,private,['SocialGraphAgent'],['600036'],,,同意低波动判断，加仓验证趋势，感谢共识
+1472,2026-05-26 01:24:15,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036加仓10股，低波动趋势中，好友共识巩固，继续持有观望601318分歧
+1474,2026-05-26 01:24:15,DynamicTeamAgent,public,[],['601318'],,,601318 SELL 10股，多空分歧持续，减仓降低风险
+1475,2026-05-26 01:24:15,DynamicTeamAgent,private,['DrawdownBuyerAgent'],['601318'],,,拥挤卖盘占比？边际是否改善？
+1476,2026-05-26 01:24:15,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 10股，分歧未消，等待信号明确。关注600036低波动趋势。
+1478,2026-05-26 01:24:15,SocialGraphAgent,public,[],['600036'],,,600036 加仓5股，低波动趋势验证好友共识
+1479,2026-05-26 01:24:15,SocialGraphAgent,private,['CommitteeTeamAgent'],['600036'],,,赞同低波动策略，继续巩固600036
+1480,2026-05-26 01:24:15,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036，强化低波动共识

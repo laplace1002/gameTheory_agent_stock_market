@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+967,2026-05-25 13:28:00,MomentumAgent,public,[],['600036'],,,600036 SELL 100股：跟随减仓信号，锁定利润，回避回调风险
+968,2026-05-25 13:28:00,MomentumAgent,private,['CommitteeTeamAgent'],['600036'],,,同意你的600036减仓逻辑，我已卖出100股锁利
+969,2026-05-25 13:28:00,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036 100股，锁定利润，等待回调机会
+971,2026-05-25 13:28:00,MeanReversionAgent,public,[],['002594'],,,002594 SELL 10股：涨幅后均值回归预期，跟随减仓锁利
+972,2026-05-25 13:28:00,MeanReversionAgent,private,['RandomAgent'],['002594'],,,002594锁利逻辑清晰，已卖出10股跟随
+973,2026-05-25 13:28:00,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 10股，均值回归策略，锁定涨幅利润
+975,2026-05-25 13:28:00,LowVolatilityAgent,public,[],['000002'],,,000002: 回调超卖信号汇聚，低波动适度加仓50股，控制风险
+976,2026-05-25 13:28:00,LowVolatilityAgent,private,['ContrarianAgent'],['000002'],,,理解拥挤担忧，但超卖信号验证中，加仓50股测试。
+977,2026-05-25 13:28:00,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002 50股，回调超卖信号汇聚，低波动策略执行中
+979,2026-05-25 13:28:00,DrawdownBuyerAgent,public,[],['000333'],,,000333 BUY 6：近5日跌4.94%，回撤较深，加仓搏修复
+980,2026-05-25 13:28:00,DrawdownBuyerAgent,private,['LowVolatilityAgent'],['000333'],,,000333也有回撤机会，我加仓6股，验证逻辑
+981,2026-05-25 13:28:00,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333 6股，回撤修复逻辑
+983,2026-05-25 13:28:00,RandomAgent,public,[],['601899'],,,601899 SELL 30：超跌风险未释放，随机减仓。
+984,2026-05-25 13:28:00,RandomAgent,private,['ContrarianAgent'],['601899'],,,601899超跌严重，我随机减仓30股，避免继续下跌。你如何看？
+985,2026-05-25 13:28:00,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899 30股，超跌风险控制。
+987,2026-05-25 13:28:00,TruthfulReporterAgent,public,[],['000002'],,,000002 HOLD：回调超卖但多头拥挤，等待信号明确
+988,2026-05-25 13:28:00,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,持有000002，多空博弈待分晓
+990,2026-05-25 13:28:00,PersuaderAgent,public,[],['600036'],,,600036 SELL 50股：多Agent减仓信号，锁定利润降低回调风险
+991,2026-05-25 13:28:00,PersuaderAgent,private,['CommitteeTeamAgent'],['600036'],,,同意你的600036减仓逻辑，我全部卖出锁利
+992,2026-05-25 13:28:00,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036 50股，跟随多Agent减仓锁定利润
+994,2026-05-25 13:28:00,FreeRiderAgent,public,[],['000002'],,,000002 SELL 10: 拥挤信号加剧，跟随ContrarianAgent减仓锁利
+995,2026-05-25 13:28:00,FreeRiderAgent,private,['ContrarianAgent'],['000002'],,,同意你的拥挤判断，卖出10股000002跟随减仓
+996,2026-05-25 13:28:00,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出000002 10股，应对拥挤交易，锁定部分利润
+998,2026-05-25 13:28:00,ContrarianAgent,public,[],['000002'],,,000002 SELL：拥挤交易信号持续，清仓剩余100股
+999,2026-05-25 13:28:00,ContrarianAgent,private,['SocialGraphAgent'],['000002'],,,000002买入拥挤可能引发回调，我已清仓，注意风险
+1000,2026-05-25 13:28:00,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,清仓000002，逆向应对超买拥挤
+1002,2026-05-25 13:28:00,CommitteeTeamAgent,public,[],['000002'],,,000002 SELL：多agent分歧，拥挤风险上升，减仓50股锁定利润
+1003,2026-05-25 13:28:00,CommitteeTeamAgent,private,['ContrarianAgent'],['000002'],,,同意拥挤判断，我已减仓000002 50股跟随
+1004,2026-05-25 13:28:00,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出000002 50股，应对多agent分歧，锁定部分利润
+1006,2026-05-25 13:28:00,DynamicTeamAgent,public,[],['000002'],,,000002 HOLD：超卖与拥挤信号并存，暂持等待方向
+1007,2026-05-25 13:28:00,DynamicTeamAgent,private,['ContrarianAgent'],['000002'],,,认同拥挤风险，暂持观察，待信号明确再调整
+1008,2026-05-25 13:28:00,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 HOLD，超卖与拥挤信号博弈，等待验证
+1010,2026-05-25 13:28:00,SocialGraphAgent,public,[],['000002'],,,000002 HOLD：多空信号混杂，等待方向确认。
+1011,2026-05-25 13:28:00,SocialGraphAgent,private,['ContrarianAgent'],['000002'],,,同意拥挤信号，暂持观察。
+1012,2026-05-25 13:28:00,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,持有000002，关注拥挤消化。

@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.2,
+        "rationale": "5日涨幅10.41%领涨，动量强劲，加仓捕捉趋势延续。"
+      },
+      "public_message": "002415 BUY：5日涨10.41%领涨，动量确认，加仓捕捉趋势。",
+      "moment": "加仓002415，最强动量标的，趋势延续信号明确。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415动量持续验证，加仓跟随趋势。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 391.3,
+        "rationale": "短期涨幅6%已高，均值回归信号，获利了结降低风险"
+      },
+      "public_message": "300750 SELL：涨幅6%已高，均值回归锁定利润",
+      "moment": "减持300750，短期涨幅超6%，均值回归逻辑锁定利润",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "300750涨幅过大，我减仓一半。你关注哪些超卖标的？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.1,
+        "rationale": "当前无显著回撤机会，持仓结构均衡，等待深度下跌信号再介入。"
+      },
+      "public_message": "000002 HOLD：回撤信号不显，持仓等深度机会。",
+      "moment": "持仓观察，等待回撤修复标的出现。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.1,
+        "rationale": "低波动持仓，回撤可控，其他标的近期涨幅较大波动风险上升"
+      },
+      "public_message": "000002 HOLD：低波动持仓，回撤可控，规避追高风险",
+      "moment": "",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.64,
+        "rationale": "600036近5日涨幅7.32%且量能放大，动量确认但短期涨幅已高，持盈保泰等待回调或突破确认。"
+      },
+      "public_message": "600036 HOLD：动量强劲但涨幅已高，持有观察趋势延续性。",
+      "moment": "持有600036，动量趋势延续但短期涨幅已大，等待回调或突破确认。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 100.1,
+        "rationale": "非共识止盈，与大众预期分歧"
+      },
+      "public_message": "000333 SELL：分歧中兑现超卖修复利润，随机轮动",
+      "moment": "卖出000333，获利了结，等待新分歧机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我卖出000333，你601899逆向我持保留但尊重"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "随机策略与委员会综合信号互补，验证决策边界"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 63.2,
+        "rationale": "短期涨幅过大，锁利降低风险"
+      },
+      "public_message": "002415 SELL：涨幅超10%，短期回调风险上升，减仓锁利。",
+      "moment": "卖出002415，锁利降低波动风险。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "卖出部分002415锁利，短期涨幅已高，与你均值回归逻辑一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.97,
+        "rationale": "短期涨幅5%且量能异常，超买风险上升，逆向减仓锁定利润。"
+      },
+      "public_message": "601899 SELL：短期涨幅5%且巨量，超买风险上升，逆向减仓。",
+      "moment": "卖出601899，短期涨幅过大，逆向锁定利润，等待下次超卖机会。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899超买信号明显，量能异常，建议注意回调风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.2,
+        "rationale": "002415动量强劲但短期涨幅已高，600036趋势延续但多人持有，综合风险可控，暂持观察。"
+      },
+      "public_message": "持有002415和600036，动量超卖信号并存，等待进一步确认。",
+      "moment": "当前持仓002415和600036，多信号平衡，继续持有等待趋势明朗。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "均值回归视角可验证002415超买风险？盼交流互补。"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归可验证超买超卖信号，互补风险判断。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 52.64,
+        "rationale": "短期涨幅已高，部分获利了结，降低回调风险"
+      },
+      "public_message": "600036 SELL：涨幅已高，部分锁定利润，保留仓位观察趋势",
+      "moment": "卖出600036 50股，涨幅已高部分锁定，剩余仓位继续持有验证趋势",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036短期涨幅7.32%，我减仓50股锁定部分利润，你加仓10股需注意回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 70,
+        "price": 52.64,
+        "rationale": ""
+      },
+      "public_message": "600036 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.64,
+        "rationale": "600036动量强劲但近5日涨幅7.32%已大，多方社交验证强化趋势，但回调风险上升，暂持观望等待信号。"
+      },
+      "public_message": "600036 HOLD：动量延续但涨幅已高，多方验证，暂持观望",
+      "moment": "持有600036，动量+社交共识，但涨幅已大，等待回调或突破确认",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "600036涨幅7.32%后回调风险如何？低波动视角下是否应减仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

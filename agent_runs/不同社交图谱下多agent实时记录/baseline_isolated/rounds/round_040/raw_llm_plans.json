@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 196.37,
+        "rationale": "深跌20%后均值回归机会，多Agent买入验证超跌，逆向拥挤信号尚未触发实质风险"
+      },
+      "public_message": "买入002594 1股，深跌均值回归机会",
+      "moment": "加仓002594 1股，等待均值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594深跌20%拥挤可能加速修复，均值回归逻辑与逆向警示互补，暂持敞口观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 58.2,
+        "rationale": "近5日涨幅4.75%，追涨强势，趋势延续"
+      },
+      "public_message": "002415 BUY 10股：近5日涨幅4.75%，强势追涨",
+      "moment": "加仓002415 10股，追涨强势股",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415短期动量强，我加仓验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.4,
+        "rationale": "市场整体回调，低波动策略要求控制回撤，持有600036避险"
+      },
+      "public_message": "600036 HOLD：市场整体回调，低波动策略避险持有",
+      "moment": "600036 HOLD，低波动策略，控制回撤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036低波动稳健，与你观望逻辑一致，继续持有避险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.54,
+        "rationale": "短期涨幅过大，20日涨幅13.49%，锁定利润，规避回调风险"
+      },
+      "public_message": "000002 SELL 1股：短期涨幅大，获利了结规避回调",
+      "moment": "卖出000002 1股，锁定利润，等待更好回撤机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤警示，卖出000002锁定利润，避免回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 198.5,
+        "rationale": "超跌共识过度拥挤，随机逆向卖出避险"
+      },
+      "public_message": "002594 SELL 1股：超跌共识拥挤，随机逆向卖出测试回调",
+      "moment": "随机逆向，卖出002594 1股，博弈拥挤回调",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向观点，002594拥挤，我随机卖出1股测试回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 58.2,
+        "rationale": "002415多空信号矛盾，002594超跌共识拥挤提示风险，暂持观望"
+      },
+      "public_message": "002415 HOLD：多空信号矛盾，超跌共识拥挤，暂持等待方向明确",
+      "moment": "继续持有002415和601318，等待信号清晰",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意002594超跌共识拥挤判断，002415暂持观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 31.54,
+        "rationale": "短期涨幅过大，跟随FreeRiderAgent锁定利润，同时分散风险。"
+      },
+      "public_message": "000002 SELL 5股：短期涨幅较大，止盈锁定利润。",
+      "moment": "卖出000002 5股，短期涨幅大，兑现部分收益，降低风险。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意000002减仓逻辑，卖出5股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 31.54,
+        "rationale": "短期涨幅大，跟随FreeRider止盈"
+      },
+      "public_message": "000002 SELL 5股：短期涨幅大，锁定利润。",
+      "moment": "卖出000002 5股，短期涨幅过大，兑现部分收益。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意减仓逻辑，卖出5股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 196.37,
+        "rationale": "002594超跌共识过度拥挤，Contrarian逆向信号提示回调风险，部分减仓锁定利润。"
+      },
+      "public_message": "002594 SELL 1股：超跌共识过热，逆向信号提示回调风险，减仓锁定部分利润。",
+      "moment": "002594减仓1股，超跌共识拥挤，逆向信号谨慎。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意002594拥挤风险判断，卖出1股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 196.37,
+        "rationale": "超跌修复共识强化，多Agent验证，轻仓博弈反弹"
+      },
+      "public_message": "002594 BUY：超跌20%共识验证，加仓1股博弈修复",
+      "moment": "002594加仓1股，超跌共识与逆向信号并存，小仓位试错",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险，但轻仓验证，若修复则共享收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 58.2,
+        "rationale": "002594超跌共识过热，Contrarian警示拥挤，002415多空信号矛盾，持仓分散，暂观望"
+      },
+      "public_message": "002415 HOLD：超跌共识过热与多空矛盾并存，暂持",
+      "moment": "HOLD 002415/601318，002594拥挤需谨慎",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意002594拥挤风险，暂不追，持现有仓观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.4,
+        "rationale": "低波动避险，20日正收益，跟随好友LowVolatilityAgent策略分散风险"
+      },
+      "public_message": "600036 BUY 1股：低波动避险，20日正收益，分散持仓",
+      "moment": "买入600036 1股，低波动避险，与LowVolatilityAgent共识",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意你600036低波动避险逻辑，买入1股跟随验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

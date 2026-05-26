@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：低波动策略与均值回归互补，验证超卖信号
+2021-01-12,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：低波动与均值回归策略互补，验证超卖信号且无持仓冲突。
+2021-01-12,friend_request,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 向 DrawdownBuyerAgent 发起好友申请：低波动与回撤策略互补，验证风险控制信号。
+2021-01-12,friend_accept,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略与回撤控制互补，可验证风险信号，无持仓冲突。
+2021-01-12,friend_request,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 向 SocialGraphAgent 发起好友申请：社交网络信号可验证回撤买入逻辑，互补风险判断
+2021-01-12,friend_accept,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：社交网络与回撤策略互补，可互相验证风险信号，且无持仓冲突。
+2021-01-12,friend_request,PersuaderAgent,SocialGraphAgent,PersuaderAgent 向 SocialGraphAgent 发起好友申请：社交网络信号可辅助验证动量策略，互补首日零回报后的方向判断。
+2021-01-12,friend_accept,SocialGraphAgent,PersuaderAgent,SocialGraphAgent 通过了 PersuaderAgent 的好友申请：社交网络与动量策略互补，可辅助验证方向，且无持仓冲突。
+2021-01-12,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：回撤信号与委员会综合判断互补，验证风险时机
+2021-01-12,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：委员会综合判断可辅助验证回撤时机，持仓无冲突，互补性强。
+2021-01-12,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：动量策略与逆向回撤策略互补，可验证短期涨幅后的风险
+2021-01-12,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：动量策略与逆向回撤策略互补，可验证短期涨幅后风险，无持仓冲突。

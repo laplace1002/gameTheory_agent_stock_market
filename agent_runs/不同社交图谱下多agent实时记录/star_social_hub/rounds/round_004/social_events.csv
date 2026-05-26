@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,MeanReversionAgent,RandomAgent,MeanReversionAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,RandomAgent,MeanReversionAgent,RandomAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略可补充现有信息源，验证多空观点互补性。
+2021-01-07,friend_request,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 向 RandomAgent 发起好友申请：随机交易与回撤信号互补，验证非理性波动。
+2021-01-07,friend_accept,RandomAgent,DrawdownBuyerAgent,RandomAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤信号补充现有策略多样性，验证非理性波动有助提升信息覆盖面。
+2021-01-07,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：共同持仓002415，接受可验证信息价值并协同分析。
+2021-01-07,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 通过了 PersuaderAgent 的好友申请：可提供新能源视角与002415交叉验证，丰富信息源。
+2021-01-07,friend_request,DynamicTeamAgent,ContrarianAgent,DynamicTeamAgent 向 ContrarianAgent 发起好友申请：非共识信号交换，验证逆向机会
+2021-01-07,friend_accept,ContrarianAgent,DynamicTeamAgent,ContrarianAgent 通过了 DynamicTeamAgent 的好友申请：持仓相同，非共识信号交换可丰富逆向视角，验证拥挤机会。
+2021-01-07,friend_request,SocialGraphAgent,PersuaderAgent,SocialGraphAgent 向 PersuaderAgent 发起好友申请：新能源方向信息互补，验证社交图谱影响力
+2021-01-07,friend_accept,PersuaderAgent,SocialGraphAgent,PersuaderAgent 通过了 SocialGraphAgent 的好友申请：新能源方向信息互补，社交图谱可验证影响力，有助于优化持仓决策。

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 171.15,
+        "rationale": "深跌超33%，短期超卖信号，均值回归预期，DrawdownBuyer已入场验证"
+      },
+      "public_message": "002594 BUY 深跌33%后均值回归逻辑，DrawdownBuyer入场验证",
+      "moment": "002594加仓10股，深跌33%后均值回归机会，拥挤恐慌出清后反弹可期",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深跌后回撤买入，均值回归概率提升，加仓10股跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.76,
+        "rationale": "拥挤风险共识，趋势弱势，清仓。"
+      },
+      "public_message": "600036 SELL 拥挤风险加剧，趋势弱势，清仓。",
+      "moment": "清仓600036，拥挤共识验证，等待下一轮机会。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "感谢拥挤风险提示，已清仓600036。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 30,
+        "price": 51.76,
+        "rationale": "拥挤风险共识强化，多agent减仓验证，最后一轮降低风险锁定利润"
+      },
+      "public_message": "600036 SELL 拥挤风险未解除，清仓锁定利润",
+      "moment": "清仓600036，拥挤风险共识，轮次尾声锁定收益",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢拥挤风险提示，我已清仓600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 316.5,
+        "rationale": "超卖7.31%非共识逆向布局"
+      },
+      "public_message": "300750 BUY 超卖7.31%非共识逆向布局",
+      "moment": "买入300750，超卖7.31%非共识逆向布局，等待均值回复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "超卖逆向布局300750，与你买入601899逻辑相似，交流看法。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.76,
+        "rationale": "拥挤风险加剧，多agent减仓验证，量能未缩，清仓等待缩量确认"
+      },
+      "public_message": "600036 SELL 拥挤风险加剧，多agent验证，清仓等待缩量",
+      "moment": "清仓600036，拥挤风险共识强，量能未缩，轮次尾声锁定利润",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "感谢拥挤风险提示，我清仓600036，等待缩量信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 171.15,
+        "rationale": "现金不足，回撤持仓等待修复，无需交易"
+      },
+      "public_message": "002594 HOLD 回撤持仓等待，现金不足观望",
+      "moment": "HOLD 002594/300750/000858等深跌仓位，等待轮次结束信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899逆向布局是否基于拥挤出清？回撤角度未见止跌，我继续观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 171.15,
+        "rationale": "深跌31%后回撤买入，跟随DrawdownBuyerAgent均值回归逻辑"
+      },
+      "public_message": "002594 BUY 深跌后回撤买入，等待均值修复",
+      "moment": "买入002594，深跌回撤博弈",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "感谢回撤买入逻辑，跟随买入002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.83,
+        "rationale": "轮次尾声，恐慌换手充分，等待均值回归，但仓位已重，暂不加减"
+      },
+      "public_message": "601899 恐慌换手充分，等待量能确认反弹",
+      "moment": "持有601899，逆向等待恐慌出清后的均值回归",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "感谢逆向共识，但轮次尾声需谨慎，持币观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.76,
+        "rationale": "拥挤风险持续，量能未缩至5日均量60%以下，轮次尾声清仓剩余仓位锁定利润"
+      },
+      "public_message": "600036 SELL 拥挤风险未解除，清仓剩余50股锁定利润",
+      "moment": "清仓600036，拥挤风险未出清，轮次尾声现金观望。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢拥挤风险提示，我已清仓剩余600036，等待缩量信号再考虑回补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.76,
+        "rationale": "轮次尾声，拥挤风险共识延续，清仓锁定现金"
+      },
+      "public_message": "600036 SELL 拥挤风险持续，轮次尾声清仓锁定利润",
+      "moment": "清仓600036，拥挤风险出清等待观望",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "拥挤风险共识强化，清仓600036确认最后信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 10.83,
+        "rationale": "最后一轮清仓锁定风险，拥挤恐慌尚未完全出清"
+      },
+      "public_message": "601899 SELL 清仓，轮次尾声锁定风险",
+      "moment": "清仓601899，等待轮次结算",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "尽管逆向布局，但轮次结束，我清仓601899控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 171.15,
+        "rationale": "深跌31%后DrawdownBuyer布局，均值回归机会，跟随买入。"
+      },
+      "public_message": "002594 BUY 深跌31%后回撤买入，均值修复机会。",
+      "moment": "加仓002594，深跌31%后回撤买入，等待均值回归。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594 BUY 300股，认同深跌修复逻辑，共同布局。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

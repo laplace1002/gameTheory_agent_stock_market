@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 344.4,
+        "rationale": "持仓均为近期强势股，趋势延续，无明确卖出信号"
+      },
+      "public_message": "持仓000858/002594/300750/600036均为强势，继续持有",
+      "moment": "持仓强势股，601899拥挤风险未消，暂不参与",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的601899拥挤信号明确，我暂时观望，等待缩量确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.84,
+        "rationale": "无明确均值回归信号，持仓"
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.2,
+        "rationale": "低波动防守，多空分歧未消，等待601899拥挤出清信号"
+      },
+      "public_message": "600036 HOLD 低波动防守，多空分歧下稳健等待",
+      "moment": "持有600036和000002，等待601899拥挤出清信号，控制回撤。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清阈值需成交萎缩+破5日线，当前放量未跌，是否等待缩量确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.84,
+        "rationale": "市场整体上涨，缺乏明显深度回调标的，现有仓位等待价值修复确认。"
+      },
+      "public_message": "000002 HOLD 等待回调买入机会，当前无深度价值修复信号。",
+      "moment": "持仓观望，市场缺乏跌深机会，耐心等待。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.64,
+        "rationale": "放量未跌，拥挤风险可能被高估，逆向博弈"
+      },
+      "public_message": "601899 BUY 放量未跌，拥挤出清未确认，逆向买入",
+      "moment": "601899放量未跌，多人卖出或为对手盘，逆向买入测试拥挤出清阈值",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899放量未跌，做空信号未到，逆向买入博弈"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.2,
+        "rationale": "低波动防守逻辑延续，多空分歧未消，涨幅较高但未见明确反转信号，持有观望。"
+      },
+      "public_message": "600036 HOLD 低波动防守，分歧未消",
+      "moment": "持有600036，601899拥挤风险未解除，等待缩量确认。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "您对600036的低波动防守逻辑中，涨幅多高会触发减仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.2,
+        "rationale": "低波动防守逻辑延续，多空分歧未消，多个agent持有验证，等待601899拥挤出清确认"
+      },
+      "public_message": "600036 HOLD 低波动防守，多空分歧未消，继续持有观望",
+      "moment": "持有600036，等待601899拥挤出清信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "拥挤出清需量能萎缩+破5日线，当前放量未跌，等待确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.2,
+        "rationale": "逆向买入近期下跌的保险龙头，市场过度乐观于成长股，价值股被低估。"
+      },
+      "public_message": "601318 BUY 逆向买入中国平安，价值低估。",
+      "moment": "买入601318，逆向布局价值回归。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601318近期回调是否可视为价值洼地？与601899拥挤对比。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.64,
+        "rationale": "拥挤风险未消，放量未跌但风险累积，继续减仓锁定利润。"
+      },
+      "public_message": "601899 SELL 拥挤风险未消，继续减仓锁定利润。",
+      "moment": "继续减仓601899，拥挤风险未解除，等待缩量确认出清。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清需量能萎缩+破5日线，当前放量未跌，做空时机未到，同意观望。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.2,
+        "rationale": "600036低波动防守逻辑一致，多空分歧下维持仓位；601899拥挤风险未消，暂不换仓。"
+      },
+      "public_message": "600036 HOLD 低波动防守，多空分歧下继续持有，等待601899出清信号。",
+      "moment": "持有600036，低波动防守；601899放量未跌，拥挤风险待验证，观望。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "请教缩量出清的具体阈值？当前成交额较高，等待确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.2,
+        "rationale": "低波动防守共识，多空分歧下稳健加仓"
+      },
+      "public_message": "600036 BUY 加仓低波动防守，多空分歧下稳健配置",
+      "moment": "加仓600036，低波动防守策略，多空分歧下持有。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清需缩量破5日线，当前放量未跌，等待确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.2,
+        "rationale": "跟随低波动防守逻辑，多agent验证，稳健加仓"
+      },
+      "public_message": "600036 BUY 低波动防守，多空分歧下稳健加仓",
+      "moment": "加仓600036，低波动防守，多agent验证拥挤出清信号等待",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "认同低波动防守逻辑，加仓600036，多空分歧下稳健配置"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

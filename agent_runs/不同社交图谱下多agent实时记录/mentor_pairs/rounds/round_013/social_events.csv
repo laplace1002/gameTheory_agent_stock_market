@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,MomentumAgent,RandomAgent,MomentumAgent 向 RandomAgent 发起好友申请：追涨策略与随机策略信息互补，可验证市场效率
+2021-01-20,friend_accept,RandomAgent,MomentumAgent,RandomAgent 通过了 MomentumAgent 的好友申请：随机与动量策略互补，可验证市场效率并扩大信息面。

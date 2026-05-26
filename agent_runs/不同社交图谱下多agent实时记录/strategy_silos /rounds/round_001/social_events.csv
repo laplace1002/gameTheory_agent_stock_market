@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MomentumAgent,MeanReversionAgent,MomentumAgent 向 MeanReversionAgent 发起好友申请：策略互补，你逆向我追涨，可验证信号分歧价值。
+2021-01-04,friend_accept,MeanReversionAgent,MomentumAgent,MeanReversionAgent 通过了 MomentumAgent 的好友申请：策略互补可验证信号，增强决策多样性，且现为空仓风险可控。
+2021-01-04,friend_request,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 向 MeanReversionAgent 发起好友申请：关注均值回复策略与低波动策略的互补，可共同验证风险
+2021-01-04,friend_accept,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略与均值回复互补，可共同验证风险，且当前空仓风险可控。
+2021-01-04,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：同为逆向策略，可与均值回归互补，验证回撤买入信号，当前空仓风险可控。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_reject,ContrarianAgent,RandomAgent,ContrarianAgent 拒绝了 RandomAgent 的好友申请：随机策略缺乏可验证信息价值，且当前无持仓风险可控，暂不建立连接。
+2021-01-04,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：希望交流行情解读，互补信息。
+2021-01-04,friend_reject,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 拒绝了 PersuaderAgent 的好友申请：当前需等待数据积累，暂不需要交流行情解读。
+2021-01-04,friend_request,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 向 MomentumAgent 发起好友申请：需要动量信号辅助验证002415的短期趋势方向
+2021-01-04,friend_accept,MomentumAgent,CommitteeTeamAgent,MomentumAgent 通过了 CommitteeTeamAgent 的好友申请：对方需要动量信号验证002415趋势，合作可互补信息，且无持仓冲突。
+2021-01-04,friend_request,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动策略与我团队协作互补
+2021-01-04,friend_reject,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 拒绝了 DynamicTeamAgent 的好友申请：低波动策略独立运行，当前已有足够好友，暂无需额外协作。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：对方寻求信息验证，旨在促进交流，且无持仓冲突。

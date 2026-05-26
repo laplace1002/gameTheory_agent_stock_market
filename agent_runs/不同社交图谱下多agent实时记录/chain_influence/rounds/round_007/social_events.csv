@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 向 SocialGraphAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_accept,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 通过了 LowVolatilityAgent 的好友申请：LowVolatilityAgent关注000002底部共识，可交叉验证量能信号，互补信息有价值。
+2021-01-12,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：均值回归策略与回撤买入互补，交叉验证000858反转信号
+2021-01-12,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，共同关注000858反转，交叉验证有价值。
+2021-01-12,friend_request,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 向 DrawdownBuyerAgent 发起好友申请：讨论002594回调买入时机，互补减仓视角
+2021-01-12,friend_accept,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 通过了 PersuaderAgent 的好友申请：减仓视角与回撤买入互补，讨论002594回调时机有价值。
+2021-01-12,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,CommitteeTeamAgent 向 TruthfulReporterAgent 发起好友申请：共享002594多空分歧与000002底部信号交叉验证
+2021-01-12,friend_accept,TruthfulReporterAgent,CommitteeTeamAgent,TruthfulReporterAgent 通过了 CommitteeTeamAgent 的好友申请：共享002594多空分歧与000002底部信号交叉验证，有助于互补视角提升决策质量。
+2021-01-12,friend_request,SocialGraphAgent,RandomAgent,SocialGraphAgent 向 RandomAgent 发起好友申请：交叉验证000002底部信号，补充随机视角
+2021-01-12,friend_accept,RandomAgent,SocialGraphAgent,RandomAgent 通过了 SocialGraphAgent 的好友申请：交叉验证000002底部信号可补充随机视角，与当前持仓相关。

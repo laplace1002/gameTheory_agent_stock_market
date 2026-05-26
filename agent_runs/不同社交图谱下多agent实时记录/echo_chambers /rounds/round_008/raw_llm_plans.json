@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 2,
+        "price": 305.33,
+        "rationale": "均值回归：000858回撤7%超卖，预期反弹；300750持仓修正"
+      },
+      "public_message": "000858买入2股，均值回归逻辑：超卖后反弹机会。",
+      "moment": "调仓：减仓300750（反弹有限），加仓000858（过度抛售），均值回归策略。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.68,
+        "rationale": "弱势且拥挤风险加剧，DynamicTeamAgent已止盈，转向强势标的"
+      },
+      "public_message": "601899 卖出50股，弱势拥挤风险加剧",
+      "moment": "卖出601899，换仓至动量更强的标的",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向加仓风险高，量能未确认，我止损转向强势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.4,
+        "rationale": "低波动持仓稳健，避免追高002415拥挤风险"
+      },
+      "public_message": "HOLD 600036：低波动持仓稳健，避免追高002415拥挤风险",
+      "moment": "低波动持仓600036，监控002415动量拥挤，避免追涨",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓601899，我持低波动看风险，请问量能如何？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "低波动策略验证动量风险，互补决策"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 305.33,
+        "rationale": "000858近5日回撤7%，价值修复机会，加仓布局"
+      },
+      "public_message": "000858 加仓10股，回撤7%布局修复",
+      "moment": "布局000858回撤修复，等待量能配合",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "回撤买入000858，逆向思路一致，验证量能"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "回撤与动量互补，验证策略多样性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.68,
+        "rationale": "多数止盈，逆向加仓，量能或持续"
+      },
+      "public_message": "601899 买入10股，拥挤恐慌中逆向加仓，量能验证",
+      "moment": "加仓601899，拥挤恐慌下逆向布局，验证量能",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同步加仓601899，认为量能可持续，逆向布局"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "002415动量仍为正但降速，量能未明显放大，多Agent买入形成拥挤，暂持观察"
+      },
+      "public_message": "002415 持有观察：动量降速，量能一般，拥挤风险上升",
+      "moment": "002415 持有，关注量能持续性和拥挤风险",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 385.0,
+        "rationale": "近5日下跌5.35%，量能萎缩，减仓控制风险，回收现金布局其他动量票"
+      },
+      "public_message": "300750 减仓100股：近5日跌幅5.35%，量能不足，控制风险。",
+      "moment": "卖出300750，下跌趋势减仓，回收现金等待机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899逆向加仓是否基于量能持续性？我减仓300750控制风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.68,
+        "rationale": "拥挤风险加剧，跟随DynamicTeamAgent减仓控制风险"
+      },
+      "public_message": "601899 卖出10股，拥挤风险加剧，控制仓位。",
+      "moment": "减仓601899，等待量能确认，监控002415动量稳定性。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓601899，请问量能持续性如何验证？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "验证002415动量持续性，互补分析。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "002415短期动量仍强但多Agent集中买入加剧拥挤，需等待量能验证，暂不加减仓。"
+      },
+      "public_message": "002415 HOLD：动量强但拥挤度上升，暂观望，等待量能持续信号。",
+      "moment": "HOLD 002415：动量与拥挤平衡，暂不加仓，观察后续量能确认。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415拥挤度上升，你的动量验证信号是否仍持续？建议监控量能变化。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "002415动量强但多Agent买入加剧拥挤，暂持观察"
+      },
+      "public_message": "002415持仓观察，多Agent涌入需验证量能持续性",
+      "moment": "002415拥挤度上升，暂维持仓位等待信号明确",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓601899，是基于量能持续性判断吗？我担心拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.68,
+        "rationale": "多数Agent追涨002415形成拥挤，601899量能未确认，等待反向信号。"
+      },
+      "public_message": "002415短期追涨过度，拥挤风险上升，注意回调。",
+      "moment": "601899持仓观察，002415拥挤需警惕，等待量能验证。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415实际ret5仅8.1%，非11.81%，动量存疑，建议验证量能。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.91,
+        "rationale": "跟随动量社交验证，分散601899拥挤风险"
+      },
+      "public_message": "002415 加仓10股，动量强劲，社交图谱验证",
+      "moment": "加仓002415，量能配合，社交图谱动量验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415动量持续，你是否有进一步看法？"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归验证002415动量风险，互补社交图分析"
+      }
+    },
+    "error": ""
+  }
+]

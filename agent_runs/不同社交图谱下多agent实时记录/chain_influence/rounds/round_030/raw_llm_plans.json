@@ -1,0 +1,233 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 344.4,
+        "rationale": "20日涨幅19.71%表现强劲，追涨趋势延续"
+      },
+      "public_message": "000858 BUY 10股：20日涨幅19.71%趋势强劲，追涨入场",
+      "moment": "买入000858，20日涨幅19.71%领涨，追涨不犹豫",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858强势突破，你601318超跌反弹，我们节奏不同但都看好动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 13.64,
+        "rationale": "短期涨幅39.18%，量异常，均值回归预期，锁定利润"
+      },
+      "public_message": "601899 SELL 50股：短期涨幅39%，量异常，均值回归预期，锁定利润",
+      "moment": "卖出601899半数仓位，短期过热信号，等待均值回归机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "验证你卖出601899逻辑，短期过热，我同步减仓50股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.2,
+        "rationale": "超跌修复共识过强，拥挤度上升，低波动策略控制回撤，暂不加仓。"
+      },
+      "public_message": "601318 HOLD：超跌修复共识强，但拥挤度上升，低波动暂不加仓。",
+      "moment": "601318 HOLD：超跌共识验证，但拥挤风险需警惕，现金等待更优风险收益比。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证超跌修复逻辑，但拥挤度上升，我选择HOLD控制回撤。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.01,
+        "rationale": "中期偏弱，跟随ContrarianAgent减持，腾出现金等待超跌机会"
+      },
+      "public_message": "000002 SELL 100股：中期偏弱，跟随减持，现金等待超跌机会",
+      "moment": "卖出000002，中期趋势转弱，现金等待超跌信号与多agent共振",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证你的卖出逻辑，000002中期偏弱，我同步减仓100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 82.38,
+        "rationale": "超跌修复共识获多agent验证，均值回归概率高"
+      },
+      "public_message": "601318 BUY：超跌修复共识验证，多家agent共振买入",
+      "moment": "买入601318，超跌修复逻辑被多个agent验证，均值回归信号强",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "验证你601318超跌逻辑，我买入100股共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.2,
+        "rationale": "银行低估值防御，非共识配置"
+      },
+      "public_message": "BUY 600036 100股，银行低估值防御，非共识布局",
+      "moment": "买入600036，银行低估值，与超跌修复共识形成非对称配置",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证你卖出000002逻辑，我买入银行对冲"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.2,
+        "rationale": "超跌修复共识持续强化，多Agent验证，加仓参与均值回归"
+      },
+      "public_message": "601318 BUY再加100股：超跌修复共识强化，多Agent验证，继续加仓",
+      "moment": "加仓601318至200股，超跌修复逻辑持续验证，与多Agent共振",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.2,
+        "rationale": "仓位已较重，等待共识进一步验证，控制集中度风险"
+      },
+      "public_message": "601318 HOLD：超跌修复共识强，但已有仓位集中，暂持观望",
+      "moment": "601318持仓观望，超跌修复逻辑验证中，但需控制仓位集中度",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证你的601318加仓逻辑，我暂持观望，仓位已重需控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.2,
+        "rationale": "超跌修复共识持续强化，多Agent验证，加仓参与均值回归"
+      },
+      "public_message": "601318 BUY加仓50股，超跌修复共识强化；600519 SELL减仓2股锁定利润",
+      "moment": "加仓601318，减仓600519，超跌修复共识与高位锁定并行",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证你的超跌修复逻辑，我加仓601318并减仓600519"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 61.68,
+        "rationale": "601318拥挤交易过度乐观，保持002415仓位等待回调验证"
+      },
+      "public_message": "002415 HOLD：601318拥挤风险上升，逆向观望",
+      "moment": "002415 HOLD：大量资金涌入601318，拥挤加剧，逆向等待均值回归信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证601318超跌逻辑，但注意拥挤后回调风险，我暂持002415观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.2,
+        "rationale": "超跌修复逻辑获多Agent验证，加仓参与均值回归"
+      },
+      "public_message": "601318 BUY加仓100股，超跌修复逻辑与DrawdownBuyer、CommitteeTeam等",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.84,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

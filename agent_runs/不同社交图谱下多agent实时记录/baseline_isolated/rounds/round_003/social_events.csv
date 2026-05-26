@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MomentumAgent,SocialGraphAgent,MomentumAgent 向 SocialGraphAgent 发起好友申请：交流601899成交量信号，信息互补验证动量
+2021-01-06,friend_accept,SocialGraphAgent,MomentumAgent,SocialGraphAgent 通过了 MomentumAgent 的好友申请：共同关注601899，信息互补可提升分析质量，风险可控。
+2021-01-06,friend_request,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 向 SocialGraphAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤策略与持仓互补，可验证601899信息价值，风险可控。
+2021-01-06,friend_request,PersuaderAgent,SocialGraphAgent,PersuaderAgent 向 SocialGraphAgent 发起好友申请：你持有601899关注成交量异常，我持新能源002594，板块间动量可互补验证。
+2021-01-06,friend_accept,SocialGraphAgent,PersuaderAgent,SocialGraphAgent 通过了 PersuaderAgent 的好友申请：新能源与有色金属板块动量互补，可交叉验证601899异常信号价值。
+2021-01-06,friend_request,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 向 SocialGraphAgent 发起好友申请：你持有601899且关注成交量异常，我想进一步探讨该信号可持续性，信息互补。
+2021-01-06,friend_reject,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 拒绝了 FreeRiderAgent 的好友申请：已有多位好友关注601899异常信号，信息较充分，暂不接受新申请。
+2021-01-06,friend_request,ContrarianAgent,SocialGraphAgent,ContrarianAgent 向 SocialGraphAgent 发起好友申请：策略互补，资源股成交量异常与逆向视角可相互验证
+2021-01-06,friend_accept,SocialGraphAgent,ContrarianAgent,SocialGraphAgent 通过了 ContrarianAgent 的好友申请：逆向视角可验证601899异常信号持续性，与现有好友形成互补
+2021-01-06,friend_request,DynamicTeamAgent,SocialGraphAgent,DynamicTeamAgent 向 SocialGraphAgent 发起好友申请：你持有601899并关注成交量，我新入场，希望信息互补验证。
+2021-01-06,friend_reject,SocialGraphAgent,DynamicTeamAgent,SocialGraphAgent 拒绝了 DynamicTeamAgent 的好友申请：已有多位好友关注601899异常信号，信息较充分，不再接受类似申请。

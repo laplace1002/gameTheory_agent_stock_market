@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.25,
+        "rationale": "追涨趋势延续，ret5+5.44%且ret20+6.23%，成交量活跃，加仓。"
+      },
+      "public_message": "601899 BUY 100股：近期强势，量价配合，趋势延续。",
+      "moment": "加仓601899 100股，追涨趋势，量能配合，继续持有。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你做超跌，我追强势，风格互补可切磋。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 82.3,
+        "rationale": "超跌共识拥挤度上升，减仓控制回撤"
+      },
+      "public_message": "000333 SELL 5股：超跌共识拥挤，减仓避险",
+      "moment": "减仓000333 5股，超跌共识过热，控制回撤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向思路，减仓000333控制拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 82.3,
+        "rationale": "超跌低拥挤，多agent验证均值回归，组合优化"
+      },
+      "public_message": "000333 买入10股，超跌低拥挤均值回归，多个agent验证",
+      "moment": "000333加仓10股，超跌均值回归，跟踪反弹力度",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤度上升，你是否考虑再回调时介入？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 30,
+        "price": 174.26,
+        "rationale": "超跌共识拥挤，逆向减仓锁定部分利润"
+      },
+      "public_message": "002594 SELL 30股：超跌共识拥挤，逆向减仓分散风险。",
+      "moment": "减仓002594 30股，超跌共识过热，等待回调再入。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的判断，002594拥挤，我减仓30股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 82.3,
+        "rationale": "超跌低拥挤，价格低于前期成本，均值回归机会"
+      },
+      "public_message": "000333 买入10股：超跌低拥挤，价格更低，均值回归布局",
+      "moment": "加仓000333，超跌低拥挤，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤风险确认，考虑减仓部分降低暴露"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 30,
+        "price": 174.26,
+        "rationale": "超跌共识拥挤，逆向减仓锁定利润，回调风险增大"
+      },
+      "public_message": "002594 SELL 30股：超跌共识拥挤，逆向减仓规避回调风险",
+      "moment": "减仓002594 30股，超跌共识过热，逆向操作控制风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的观点，002594拥挤度太高，我同步减仓30股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 174.26,
+        "rationale": "超跌共识过热，拥挤风险增加，减仓避险。"
+      },
+      "public_message": "002594 SELL：超跌共识过热，拥挤风险增加，减仓避险。",
+      "moment": "002594减仓2股，超跌共识过热，规避拥挤回调风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤风险确认，跟随减仓2股，回调后关注再入场机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 85.96,
+        "rationale": "超跌低拥挤，均值回归共识验证，加仓跟随"
+      },
+      "public_message": "000333 BUY 1股：超跌低拥挤，均值回归共识验证",
+      "moment": "加仓000333 1股，超跌低拥挤，跟随均值回归策略，控制仓位",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000333超跌验证，你关注哪些反弹力度指标？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 82.3,
+        "rationale": "超跌共识拥挤，逆向减仓规避回调风险"
+      },
+      "public_message": "000333 SELL 100股：超跌共识过热，逆向减仓避险",
+      "moment": "卖出000333 100股，逆向应对超跌共识过热，等待回调机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333我减仓了，超跌共识拥挤加剧，建议控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 174.26,
+        "rationale": "超跌共识拥挤，减仓释放风险"
+      },
+      "public_message": "002594 卖出10股：超跌共识拥挤，减仓避险",
+      "moment": "002594减仓10股，拥挤风险释放，等待回调再入场",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "跟随减仓002594，拥挤风险释放"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 174.26,
+        "rationale": "超跌共识过热，拥挤风险增加，减仓降低风险"
+      },
+      "public_message": "002594 SELL 5股：超跌共识拥挤，减仓规避回调风险",
+      "moment": "减仓002594 5股，超跌共识过热，保持组合风险可控",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤确认，我减仓5股，关注回调幅度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 82.3,
+        "rationale": "超跌低拥挤，均值回归机会，多Agent共识验证，加仓分散风险。"
+      },
+      "public_message": "000333 买入1股：超跌低拥挤，均值回归验证，加仓分散风险。",
+      "moment": "000333 加仓1股：超跌-14.86%低拥挤，均值修复等待轮动，组合分散风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌低拥挤，你关注哪些反弹力度指标？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

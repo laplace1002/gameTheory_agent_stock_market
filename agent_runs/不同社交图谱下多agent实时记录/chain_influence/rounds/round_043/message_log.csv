@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2101,2026-05-25 17:24:06,MomentumAgent,public,[],['601318'],,,601318 ret20+8.81%跌幅仅-4%，加仓100股验证趋势延续。
+2102,2026-05-25 17:24:06,MomentumAgent,private,['DynamicTeamAgent'],['601318'],,,002594超跌修复逻辑你考虑跟进？我关注601318强势延续。
+2103,2026-05-25 17:24:06,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318 100股，近期相对强势，等待轮动回升。
+2105,2026-05-25 17:24:06,MeanReversionAgent,public,[],['002415'],,,002415 卖出10股：拥挤释放，腾出资金关注超跌标的
+2106,2026-05-25 17:24:06,MeanReversionAgent,private,['ContrarianAgent'],['002415'],,,000333超跌-14%，拥挤度低，是否建议加仓？
+2107,2026-05-25 17:24:06,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,卖出002415，等待000333超跌修复时机
+2109,2026-05-25 17:24:06,LowVolatilityAgent,public,[],['000333'],,,买入000333 1股：超跌-14%布局，拥挤度低，验证均值修复
+2110,2026-05-25 17:24:06,LowVolatilityAgent,private,['ContrarianAgent'],['000333'],,,000333超跌修复逻辑可行，拥挤度低，跟进验证，请评估下行风险
+2111,2026-05-25 17:24:06,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333买入1股，超跌逆向布局，等待轮动修复
+2113,2026-05-25 17:24:06,DrawdownBuyerAgent,public,[],['002415'],,,002415减仓10股，拥挤风险释放；002594加仓3股，超跌修复逻辑强化
+2114,2026-05-25 17:24:06,DrawdownBuyerAgent,private,['PersuaderAgent'],['002415'],,,002594超跌共识验证，我同步加仓3股，感谢信号
+2115,2026-05-25 17:24:06,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,减仓002415换入002594，超跌组合优化，等待均值回归
+2117,2026-05-25 17:24:06,RandomAgent,public,[],['000333'],,,000333 买入10股：超跌+低拥挤，随机逆向配置
+2118,2026-05-25 17:24:06,RandomAgent,private,['ContrarianAgent'],['000333'],,,000333超跌测试均值回归，你验证000333时关注什么信号？
+2119,2026-05-25 17:24:06,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333超跌逆向加仓10股，随机分散超跌组合
+2121,2026-05-25 17:24:06,TruthfulReporterAgent,public,[],['002594'],,,002594 BUY 1股：超跌-36%拥挤度低，多Agent逆向布局验证均值回归
+2122,2026-05-25 17:24:06,TruthfulReporterAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594超跌信号验证，目前下行风险如何？
+2123,2026-05-25 17:24:06,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002594'],,,买入002594 1股，跟随超跌均值回归信号。
+2125,2026-05-25 17:24:06,PersuaderAgent,public,[],['002415'],,,002415 卖出10股：拥挤风险释放，转向超跌修复
+2126,2026-05-25 17:24:06,PersuaderAgent,private,['DrawdownBuyerAgent'],['002415'],,,002594超跌逻辑验证中，你加仓3股，我持仓284股，下行风险需控制仓位
+2127,2026-05-25 17:24:06,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415减仓10股，拥挤退散，继续持有002594等待均值回归
+2129,2026-05-25 17:24:06,FreeRiderAgent,public,[],['002415'],,,002415 卖出30股：拥挤信号持续，清仓避险
+2130,2026-05-25 17:24:06,FreeRiderAgent,private,['DrawdownBuyerAgent'],['002415'],,,002594超跌-36%已加仓，如何评估继续下行风险？
+2131,2026-05-25 17:24:06,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,清仓002415，观望超跌标的轮动
+2133,2026-05-25 17:24:06,ContrarianAgent,public,[],['000333'],,,000333 买入100股 超跌逆向 拥挤度低 均值修复
+2134,2026-05-25 17:24:06,ContrarianAgent,private,['DrawdownBuyerAgent'],['000333'],,,002594超跌至-36%，下行空间有限，但需关注流动性风险，建议控制仓位
+2135,2026-05-25 17:24:06,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333超跌逆向，拥挤度低，等待均值修复，控制整体仓位风险
+2137,2026-05-25 17:24:06,CommitteeTeamAgent,public,[],['002594'],,,002594 BUY 1股：超跌-36%拥挤度低，逆向布局验证均值回归
+2138,2026-05-25 17:24:06,CommitteeTeamAgent,private,['ContrarianAgent'],['002594'],,,002594超跌逻辑已验证，你加仓后表现如何？考虑同步仓位
+2139,2026-05-25 17:24:06,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594买入1股，超跌逆向布局，等待均值修复
+2141,2026-05-25 17:24:06,DynamicTeamAgent,public,[],['002415'],,,002415 卖出10股：拥挤信号持续，减仓避险
+2142,2026-05-25 17:24:06,DynamicTeamAgent,private,['DrawdownBuyerAgent'],['002415'],,,002594深跌逻辑强，但短期波动大，我持有30股，暂不加仓
+2143,2026-05-25 17:24:06,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415继续减仓，关注000333超跌修复机会
+2145,2026-05-25 17:24:06,SocialGraphAgent,public,[],['002594'],,,002594 BUY 1股：超跌-32.63%均值修复逻辑强化，加仓验证。
+2146,2026-05-25 17:24:06,SocialGraphAgent,private,['DynamicTeamAgent'],['002594'],,,002594超跌-32%已加仓验证，下行风险可控，但需控制仓位。
+2147,2026-05-25 17:24:06,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，超跌组合等待轮动修复。

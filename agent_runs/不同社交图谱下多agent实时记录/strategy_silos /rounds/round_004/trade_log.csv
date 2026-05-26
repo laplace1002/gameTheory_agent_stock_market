@@ -1,0 +1,3 @@
+date,agent,ticker,side,shares,price,notional,cash,equity,pnl,pnl_pct,detail
+2021-01-07,RandomAgent,601899,BUY,1,11.18,11.18,99677.52,100018.7,18.7,0.000187,BUY 1 601899 @ 11.18；成交量异常高，低价股非共识机会
+2021-01-07,ContrarianAgent,600036,BUY,100,45.9,4590.0,91192.0,100372.0,372.0,0.00372,BUY 100 600036 @ 45.90；银行板块无人问津，逆向加仓等待均值回归

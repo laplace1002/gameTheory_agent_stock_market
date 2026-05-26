@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 227.51,
+        "rationale": "多人买入验证趋势，新能源主线量能足，加仓追涨"
+      },
+      "public_message": "BUY 002594：新能源龙头量价配合，趋势延续，加仓1股",
+      "moment": "002594加仓，新能源主线资金共识强，等待板块共振",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你加仓002594基于量能，我同样看好趋势延续，后续如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.34,
+        "rationale": "首日无历史数据，无法判断均值回归机会，等待更明确的超卖信号"
+      },
+      "public_message": "000002 持有，首日无超卖信号，等待回调机会。",
+      "moment": "持有000002，首日零回报，等待均值回归信号。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同样持有000002等待回调，新能源拥挤可能带来均值回归机会，关注后续量能变化。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 46.6,
+        "rationale": "首日无趋势信号，低波动策略维持现有仓位"
+      },
+      "public_message": "600036 HOLD：零涨幅无趋势，低波动策略继续持有。",
+      "moment": "持有600036，等待波动率信号出现。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415加仓逻辑是看流动性？后续趋势如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.34,
+        "rationale": "所有标的ret5/ret20均为0%，无任何跌深信号，继续持有000002等待价值修复机会"
+      },
+      "public_message": "000002 HOLD：无回撤信号，耐心等待跌深价值修复",
+      "moment": "2021-01-08 无回撤标的，继续持有000002观望，等待跌深机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "新能源方向002594已有资金介入，你认为后续回撤风险多大？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.34,
+        "rationale": "所有标的ret5/ret20=0%，无趋势信号，继续持有现金等待确认"
+      },
+      "public_message": "HOLD cash：首日零涨幅无趋势信号，保持观望",
+      "moment": "首日无历史回报信号，多数Agent已建仓但无趋势证据，继续现金观望",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你买入002594基于什么因子？当前无历史数据，新能源趋势依据？"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.35,
+        "rationale": "随机建仓资源股，分散新能源拥挤风险"
+      },
+      "public_message": "随机买入601899，资源板块分散新能源拥挤风险。",
+      "moment": "随机建仓601899，小仓位试水资源。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899资源板块，拥挤度较低，是否可作为逆向配置？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 404.5,
+        "rationale": "首日零涨幅，新能源方向已有拥挤信号，继续观察量能变化"
+      },
+      "public_message": "HOLD 300750 宁德时代：首日无趋势，新能源拥挤初现，等待信号确认",
+      "moment": "持有300宁德，首日零回报，观察新能源板块拥挤度与后续量能变化",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你加仓002594，与300750联动性如何？量能是否可持续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 227.51,
+        "rationale": "新能源主线量能充足，趋势延续，ContrarianAgent提示拥挤但未极端，继续持有等待板块共振确认."
+      },
+      "public_message": "002594 HOLD：新能源量能验证，趋势未破，持仓等待共振。",
+      "moment": "002594持仓待涨，新能源龙头趋势明确，量价配合。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594量能持续，新能源主线资金未撤，拥挤度尚未极端，短期回撤风险可控。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.34,
+        "rationale": "首日零涨幅无趋势信号，新能源拥挤但未极端，持仓观察等待确认"
+      },
+      "public_message": "002415 HOLD：首日无趋势，新能源拥挤初现，等待信号明确",
+      "moment": "持有002415，市场零方向，新能源拥挤初现，等待更多数据",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "新能源拥挤后回撤风险需关注，我持仓002415等待趋势，暂不跟新能源"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2090.0,
+        "rationale": "新能源拥挤初现但未极端，继续持有现金等待逆向回调机会"
+      },
+      "public_message": "600519 HOLD：新能源拥挤初现，逆向等待回调信号",
+      "moment": "首日新能源已现拥挤但未极端，持现金等待回调抄底",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "新能源量能虽强，但拥挤度上升，回调风险增加，建议控制仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 227.51,
+        "rationale": "跟随新能源趋势信号，多Agent验证买入"
+      },
+      "public_message": "002594 BUY加仓，新能源量能积聚，跟进趋势。",
+      "moment": "买入002594，参与新能源方向，等待板块共振。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "新能源趋势持续性如何？量能是否支撑延续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.34,
+        "rationale": "持仓观察，无趋势信号"
+      },
+      "public_message": "002415 HOLD，首日零涨幅，等待信号确认",
+      "moment": "持有002415和000002，市场无方向，继续观察Agent行为",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415加仓后浮盈，后续若出信号再协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

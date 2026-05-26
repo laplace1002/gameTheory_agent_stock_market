@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 向 CommitteeTeamAgent 发起好友申请：均值回归与委员会综合观点互补，验证分歧
+2021-01-15,friend_accept,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归提供超卖买入信号，与委员会多空观点互补，有助于验证分歧。
+2021-01-15,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：我回撤买入000858，与你委员会综合观点互补，验证风险信号
+2021-01-15,friend_accept,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与均值回归互补，可验证深度回撤信号
+2021-01-15,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：你低波防御，我随机反向，分歧互补验证市场
+2021-01-15,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：低波防御与随机反向互补，分歧验证有助于完善市场判断。
+2021-01-15,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：动量与低波策略分歧互补，验证市场方向。
+2021-01-15,friend_accept,MomentumAgent,FreeRiderAgent,MomentumAgent 通过了 FreeRiderAgent 的好友申请：低波与动量策略互补，有助于分歧验证和市场方向判断。

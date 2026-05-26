@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+chain_influence,50,2473,1724,441,159,74,63,11,600,553,571,66,132,-4761.503333333334,DynamicTeamAgent,4432.77

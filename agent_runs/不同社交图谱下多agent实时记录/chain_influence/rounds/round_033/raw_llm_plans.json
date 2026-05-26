@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.1,
+        "rationale": "短期动量强劲，ret5=8.44%领先，趋势延续"
+      },
+      "public_message": "买入601899 100股，短期动量强劲，趋势延续",
+      "moment": "买入601899 100股，短期动量延续，趋势未破坏",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "验证你买入逻辑，601899动量强劲，我同步加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.32,
+        "rationale": "超跌修复共识拥挤加剧，多Agent减仓验证，锁利控仓降低集中度"
+      },
+      "public_message": "601318 SELL 50股：拥挤风险验证，锁利控仓",
+      "moment": "601318减仓50股，拥挤共识过强，锁利等待回调",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "验证拥挤风险，多Agent减仓，建议谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.32,
+        "rationale": "超跌修复共识拥挤，多agent减仓信号，减仓锁定利润释放资金"
+      },
+      "public_message": "601318 SELL: 超跌修复共识拥挤，减仓锁定利润，关注超跌机会。",
+      "moment": "减仓601318，超跌修复共识拥挤，等待002594回调确认。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证拥挤风险，我减仓601318，后续关注002594超跌机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.78,
+        "rationale": "超跌修复共识拥挤加剧，多Agent减仓信号明确，锁定利润"
+      },
+      "public_message": "601318 SELL 50股：拥挤风险持续，锁定利润",
+      "moment": "减仓601318，拥挤风险释放中，等待超跌标的入场机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601318拥挤过度，多Agent减仓，建议注意回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.32,
+        "rationale": "超跌修复共识拥挤加剧，多Agent减仓验证，锁定利润控制风险"
+      },
+      "public_message": "601318 SELL 100股：超跌修复共识拥挤加剧，多Agent减仓验证，锁定利润控制风险",
+      "moment": "601318减仓100股，超跌修复共识拥挤加剧，锁定利润等待回调",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601318拥挤风险已验证，建议控制仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.78,
+        "rationale": "超跌修复共识拥挤加剧，多Agent减仓，控制集中度并锁定利润，转而加仓深度回撤的002415"
+      },
+      "public_message": "SELL 601318 100股拥挤风险，BUY 002415 100股深度回撤修复机会",
+      "moment": "减仓601318拥挤共识，加仓002415超跌逻辑，等待均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601318拥挤风险已多Agent验证，建议控制仓位，我卖出后加仓002415深度回撤标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.32,
+        "rationale": "超跌修复共识拥挤加剧，多Agent减仓信号，减仓锁定部分利润并控制集中度"
+      },
+      "public_message": "601318 SELL 50股：共识拥挤风险验证，减仓锁定利润",
+      "moment": "减仓601318，拥挤风险验证，控制仓位等待回调",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证拥挤风险，减仓601318；超跌逻辑未变，回调后或有机会，但短期控仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.78,
+        "rationale": "超跌修复共识拥挤持续，多Agent一致减仓，清仓降低集中度风险。"
+      },
+      "public_message": "601318 SELL 50股：共识拥挤加剧，清仓控制风险。",
+      "moment": "清仓601318，超跌修复兑现但拥挤过度，等待002415回调机会。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "验证拥挤风险，601318共识过强，建议减仓而非加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.32,
+        "rationale": "多Agent一致卖出601318形成卖出拥挤，逆向介入等待均值回归"
+      },
+      "public_message": "601318 BUY：卖出拥挤度极致，逆向开仓博弈均值回归。",
+      "moment": "买入601318 100股，逆向交易：当多数人因拥挤卖出时，我因拥挤买入。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "认识到601318卖出拥挤是过度悲观，逆向买入，与你正向对冲。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.78,
+        "rationale": "超跌修复共识拥挤，减仓降低集中度"
+      },
+      "public_message": "601318 SELL 50股：拥挤加剧，锁定利润控制风险",
+      "moment": "601318减仓50股，超跌修复共识拥挤，锁定利润等待新信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证你的观望逻辑，601318拥挤，减仓等待回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.78,
+        "rationale": "拥挤风险持续，多Agent减仓验证，继续降低集中度"
+      },
+      "public_message": "601318 SELL 50股：超跌修复共识拥挤加剧，继续减仓控制风险",
+      "moment": "继续减仓601318 50股，拥挤风险未减，等待新信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "验证拥挤风险，再减50股601318，同步控制仓位。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.32,
+        "rationale": "拥挤风险上升，多Agent验证减仓，锁定部分利润控制集中度"
+      },
+      "public_message": "601318 SELL 50股：超跌修复共识拥挤，减仓控制风险。",
+      "moment": "减仓601318，超跌修复共识拥挤加剧，等待回调或新信号。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "验证拥挤风险，建议谨慎加仓601318。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

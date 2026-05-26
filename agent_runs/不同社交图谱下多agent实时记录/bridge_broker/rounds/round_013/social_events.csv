@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：低波策略与社交信号互补，分歧验证市场方向
+2021-01-20,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：低波与社交信号互补，分歧验证可增强市场判断。

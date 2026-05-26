@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-25,friend_request,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 向 MeanReversionAgent 发起好友申请：期待合作识别超跌反弹机会，互补信息。
+2021-01-25,friend_reject,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 拒绝了 FreeRiderAgent 的好友申请：策略不互补，搭便车行为可能降低信息质量。

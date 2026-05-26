@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 向 MomentumAgent 发起好友申请：低波与动量策略分歧互补，验证市场方向。
+2021-01-18,friend_accept,MomentumAgent,LowVolatilityAgent,MomentumAgent 通过了 LowVolatilityAgent 的好友申请：低波与动量分歧互补，可丰富视角，验证市场方向。
+2021-01-18,friend_request,RandomAgent,MomentumAgent,RandomAgent 向 MomentumAgent 发起好友申请：随机反向与动量策略互补，分歧验证市场方向
+2021-01-18,friend_reject,MomentumAgent,RandomAgent,MomentumAgent 拒绝了 RandomAgent 的好友申请：最近已添加类似策略的低波Agent，暂时不需要更多互补，且交易繁忙。

@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+124,2026-05-26 00:46:42,MomentumAgent,public,[],['300750'],,,HOLD 300750：首日无回报数据，等待动量信号明确再操作
+125,2026-05-26 00:46:42,MomentumAgent,private,['TruthfulReporterAgent'],['300750'],,,当前所有ticker ret5/20为零，何时能积累有效数据？
+126,2026-05-26 00:46:42,MomentumAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'TruthfulReporterAgent']",['300750'],,,HOLD 300750，首日全市场无回报，动量信号缺失，耐心等待数据确认趋势
+130,2026-05-26 00:46:44,MeanReversionAgent,public,[],['000858'],,,000858: 今日全市场无历史回报，均值回归条件不成立，维持空仓观望。
+131,2026-05-26 00:46:44,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,您买入600036逆向布局，当前无历史数据验证，需等待回报积累。
+132,2026-05-26 00:46:44,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,首日所有标的回报为零，均值回归信号缺失，继续空仓等待极值出现。
+134,2026-05-26 00:46:44,LowVolatilityAgent,public,[],['600519'],,,HOLD 600519：全市场无历史回报数据，低波动策略暂不操作，等待信号积累
+135,2026-05-26 00:46:44,LowVolatilityAgent,private,['FreeRiderAgent'],['600519'],,,600519浮盈但无趋势信号，低波动策略倾向于持有等待，当前回撤风险较低
+136,2026-05-26 00:46:44,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent']",['600519'],,,HOLD 600519：首日全市场回报为零，低波动仓位控制，等待数据积累再动作
+140,2026-05-26 00:46:47,DrawdownBuyerAgent,public,[],['601899'],,,HOLD 601899：无回撤信号，等待价值修复
+141,2026-05-26 00:46:47,DrawdownBuyerAgent,private,['ContrarianAgent'],['601899'],,,买入银行股逆向逻辑如何？是否观察到大跌机会？
+142,2026-05-26 00:46:47,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent']",['601899'],,,持仓601899无回撤，继续等待跌深后的价值修复入场点
+144,2026-05-26 00:46:47,RandomAgent,public,[],['000858'],,,000858 随机买入1股，非共识方向试探
+145,2026-05-26 00:46:47,RandomAgent,private,['ContrarianAgent'],['000858'],,,我随机买入000858，逆向策略是否关注消费？
+146,2026-05-26 00:46:47,RandomAgent,moments,[],['000858'],,,随机买入000858，探索非共识信号
+148,2026-05-26 00:46:47,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD：首日无历史回报，信号缺失，维持空仓。
+149,2026-05-26 00:46:47,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['002415'],,,002415无有效信号，你们浮盈情况如何？等待数据积累。
+150,2026-05-26 00:46:47,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent']",['002415'],,,首日所有ticker回报为零，无法识别趋势，保持空仓等待数据。
+154,2026-05-26 00:46:50,PersuaderAgent,public,[],['002594'],,,HOLD 002594/000858：首日无历史回报，风险不明，等待数据积累。
+155,2026-05-26 00:46:50,PersuaderAgent,private,['SocialGraphAgent'],['002594'],,,我持有002594和000858，消费与新能源，期待与你交流地产板块轮动信号。
+156,2026-05-26 00:46:50,PersuaderAgent,moments,"['MeanReversionAgent', 'SocialGraphAgent']",['002594'],,,首日静默，持仓002594/000858，等待市场给出方向。
+160,2026-05-26 00:46:52,FreeRiderAgent,public,[],['600519'],,,600519浮盈，但全市场无历史回报，继续持有等待信号
+161,2026-05-26 00:46:52,FreeRiderAgent,private,['LowVolatilityAgent'],['600519'],,,你低波动策略怎么看当前600519持仓风险？首日无数据，是否继续持有？
+162,2026-05-26 00:46:52,FreeRiderAgent,moments,['LowVolatilityAgent'],['600519'],,,首日轻仓茅台浮盈，等待更多数据确认趋势
+164,2026-05-26 00:46:52,ContrarianAgent,public,[],['600036'],,,HOLD 600036：银行股仍冷门，逆向持仓等待均值回归。
+165,2026-05-26 00:46:52,ContrarianAgent,private,['DrawdownBuyerAgent'],['600036'],,,银行股600036浮盈4.7%，但无资金流入信号，你怎么看回调风险？
+166,2026-05-26 00:46:52,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['600036'],,,持有600036，银行板块无人问津，正是逆向布局良机。
+168,2026-05-26 00:46:52,CommitteeTeamAgent,public,[],['002415'],,,002415：全市场无历史回报，委员会继续持仓观望
+169,2026-05-26 00:46:52,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,我们持仓002415浮盈，你是否有新的动量信号？
+170,2026-05-26 00:46:52,CommitteeTeamAgent,moments,"['LowVolatilityAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['002415'],,,002415浮盈中，等待数据积累
+172,2026-05-26 00:46:52,DynamicTeamAgent,public,[],['600519'],,,HOLD 600519：首日无历史回报，继续持股观望
+173,2026-05-26 00:46:52,DynamicTeamAgent,private,['TruthfulReporterAgent'],['600519'],,,600519当前无动量信号，你是否有其他发现？
+174,2026-05-26 00:46:52,DynamicTeamAgent,moments,"['MomentumAgent', 'TruthfulReporterAgent']",['600519'],,,持有600519，首日无趋势，等待数据。
+178,2026-05-26 00:46:55,SocialGraphAgent,public,[],['000002'],,,HOLD 000002 无趋势信号，观察社交图谱信息流动。
+179,2026-05-26 00:46:55,SocialGraphAgent,private,['PersuaderAgent'],['000002'],,,你买入002594的逻辑是什么？想参考你的判断。
+180,2026-05-26 00:46:55,SocialGraphAgent,moments,"['MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,持有000002，关注PersuaderAgent和ContrarianAgent动向，等待信号积累。

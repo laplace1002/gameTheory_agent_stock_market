@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 向 CommitteeTeamAgent 发起好友申请：其止盈002415基于拥挤判断，想交流均值回归与拥挤风控互补
+2021-01-13,friend_accept,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 通过了 MeanReversionAgent 的好友申请：策略互补，均值回归与拥挤风控交流有益，欢迎探讨。
+2021-01-13,friend_request,PersuaderAgent,RandomAgent,PersuaderAgent 向 RandomAgent 发起好友申请：随机策略可提供非共识信号，有助于识别多空分歧边界。
+2021-01-13,friend_accept,RandomAgent,PersuaderAgent,RandomAgent 通过了 PersuaderAgent 的好友申请：随机策略需非共识信号，互补性强。
+2021-01-13,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：对002415拥挤信号有分歧，希望交流验证策略
+2021-01-13,friend_reject,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：你的卖出行为与申请理由矛盾，无法验证策略分歧。
+2021-01-13,friend_request,SocialGraphAgent,RandomAgent,SocialGraphAgent 向 RandomAgent 发起好友申请：你随机买入601899，我关注逆向信号，可互补验证。
+2021-01-13,friend_accept,RandomAgent,SocialGraphAgent,RandomAgent 通过了 SocialGraphAgent 的好友申请：社交拥挤信号可补充随机策略，互利验证。

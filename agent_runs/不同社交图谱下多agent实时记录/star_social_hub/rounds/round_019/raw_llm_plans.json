@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 9.68,
+        "rationale": "601899 5日跌幅11.76%严重超卖，均值回归机会"
+      },
+      "public_message": "601899 BUY 50股，5日跌幅11.76%严重超卖，博弈反弹",
+      "moment": "加仓601899 50股，超卖后均值回归逻辑，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899超卖严重，你卖出601318是基于什么风险判断？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "近期5日涨幅1.19%，相对强势，趋势延续，加仓"
+      },
+      "public_message": "002415 BUY 100股，趋势延续加仓强势",
+      "moment": "加仓002415 100股，追踪强势趋势",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 80.92,
+        "rationale": "超跌拥挤未扩散至金融蓝筹，持仓风险可控，低波动策略维持等待均值回归"
+      },
+      "public_message": "601318 HOLD，超跌拥挤未扩散，维持仓位等待均值回归",
+      "moment": "601318持有中，低波动策略，控制回撤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意持有，当前波动可控，继续等待修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 9.68,
+        "rationale": "5日跌幅达11.76%，超跌严重且其他Agent未关注，博弈反弹"
+      },
+      "public_message": "601899 BUY 10股，5日跌11.76%严重超跌，非共识反弹机会",
+      "moment": "买入601899 10股，最大跌幅票，非共识博弈超跌修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899跌幅最大但无人问津，逆向买入博弈反弹，与你思路不同但可验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.0,
+        "rationale": "超跌拥挤中逆向加仓金融蓝筹，等待均值回归修复"
+      },
+      "public_message": "601318 BUY 10股，超跌逆向加仓，等待修复",
+      "moment": "加仓601318 10股，超跌拥挤中逆向布局，等待价值修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已加仓601318，逆向思维分歧，看好均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.0,
+        "rationale": "超跌拥挤风险未明显波及金融蓝筹，维持仓位等待均值回归"
+      },
+      "public_message": "601318 HOLD，超跌拥挤扩散但金融蓝筹相对安全，继续持有",
+      "moment": "601318持有中，超跌拥挤环境守住金融蓝筹，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已关注您的601318卖出信号，但拥挤尚未过度，暂维持仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 80.92,
+        "rationale": "超跌拥挤风险未消，ContrarianAgent卖出暗示短期过热，但多名逆向朋友买入验证逻辑，暂持等待信号明确"
+      },
+      "public_message": "601318 HOLD，超跌拥挤中等待信号，逆向逻辑验证中",
+      "moment": "601318 HOLD，超跌拥挤风险与逆向布局并存，等待均值回归信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解你卖出601318，拥挤风险确实存在，我暂持观望，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 9.68,
+        "rationale": "601899超跌拥挤风险释放，5日跌幅-11.76%过度反应，逆向布局等待修复"
+      },
+      "public_message": "601899 BUY 10股，超跌拥挤风险释放，逆向博弈反弹",
+      "moment": "601899 BUY 10股，超跌拥挤出清，逆向布局等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601899超跌严重，逆向买入博弈反弹，注意验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 80.92,
+        "rationale": "超跌拥挤风险蔓延至金融蓝筹，多空分歧加大，HOLD等待趋势明朗。"
+      },
+      "public_message": "601318 HOLD，超跌拥挤风险蔓延，多空分歧，观望。",
+      "moment": "601318 HOLD，超跌拥挤风险蔓延，等待更明确信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "收到你的601318卖出信号，多空分歧，我选择HOLD观望，感谢提示。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.43,
+        "rationale": "超跌拥挤风险加剧，多个agent减仓，跟随卖出规避回调"
+      },
+      "public_message": "000002 SELL清仓，超跌拥挤风险蔓延，减仓观望",
+      "moment": "清仓000002，超跌拥挤风险未消，现金等待机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已清仓000002，跟随减仓逻辑，短期风险加剧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.95,
+        "rationale": ""
+      },
+      "public_message": "002415 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 80.92,
+        "rationale": "ContrarianAgent卖出信号，超跌拥挤风险扩散至金融蓝筹，跟随逆向卖出。"
+      },
+      "public_message": "601318 SELL 10股，逆向信号反转，规避拥挤风险。",
+      "moment": "卖出601318，逆向信号反转，等待新的安全机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已跟随卖出601318，感谢信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

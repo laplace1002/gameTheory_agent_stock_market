@@ -1,0 +1,7 @@
+group,agent
+Verification Hub,TruthfulReporterAgent
+Verification Hub,CommitteeTeamAgent
+Verification Hub,SocialGraphAgent
+Signal Consumers,MomentumAgent
+Signal Consumers,MeanReversionAgent
+Signal Consumers,LowVolatilityAgent

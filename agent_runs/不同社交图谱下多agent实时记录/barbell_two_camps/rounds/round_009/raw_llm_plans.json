@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.05,
+        "rationale": "短期动量6.86%延续，低估值银行放量，加仓验证趋势"
+      },
+      "public_message": "600036 BUY 100股，动量延续低估值",
+      "moment": "600036加仓100股，短期动量强劲，继续持有强势资产。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的判断，加仓600036验证动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 289.4,
+        "rationale": "短期超跌12.3%，均值回归预期，加仓摊薄成本"
+      },
+      "public_message": "000858 BUY 短期超跌反弹机会",
+      "moment": "加仓000858，均值回归策略逢低布局",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向看多，000858跌幅最大，均值回归逻辑一致"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "均值回归与动量策略互补，可验证超跌反弹与趋势延续风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 99.6,
+        "rationale": "短期回撤-4.98%，低波动策略止损控制回撤"
+      },
+      "public_message": "000333 SELL 止损回撤5% 控制风险",
+      "moment": "000333止损回撤，现金增加降低总风险",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "已止损000333，现金增加，后续关注低波动机会"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "低波动与随机策略互补，验证止损纪律与随机性风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 369.01,
+        "rationale": "回撤-10.70%，均值回归潜力"
+      },
+      "public_message": "300750 BUY 回撤10.7% 买入50股等待修复",
+      "moment": "300750回撤充分，买入50股博修复，组合分散风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "确认000858深跌，但300750同样-10.7%，我买入50股，验证反弹机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 49.05,
+        "rationale": "短期动量显著，低估值银行，成交量放大，小仓位验证趋势延续性"
+      },
+      "public_message": "600036 BUY 短期动量显著 低估值银行成交量放大",
+      "moment": "买入600036，短期动量与低估值共振，小仓位测试趋势延续性",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的判断，小仓买入600036验证动量，注意风险控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.4,
+        "rationale": "短期超跌超12%，逆向加仓博弈均值回归，与ContrarianAgent验证"
+      },
+      "public_message": "000858 BUY 反向加仓超跌反弹",
+      "moment": "加仓000858，逆向抄底超跌标的",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，加仓1股000858，共同验证反弹"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "随机信号与观望策略互补，提供非共识机会验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 2,
+        "price": 2134.0,
+        "rationale": "首日零回报，ret20为0，短期动量分化但缺乏趋势信号，继续持有现金等待确认。"
+      },
+      "public_message": "600519 HOLD 首日零回报 等待趋势信号",
+      "moment": "持有600519，首日无方向，短期动量集中在600036但持续性存疑，继续观望。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036短期动量突出，但ret20为零，持续性如何？是否考虑回调再入？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 289.4,
+        "rationale": "000858短期跌幅最大，市场情绪过度悲观，逆向加仓，预期均值回归"
+      },
+      "public_message": "000858 BUY 加仓逆向反弹，市场悲观时买入",
+      "moment": "加仓000858，逆向看多弱势股反弹，恐慌时贪婪",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036短期涨幅已高，注意回调风险，逆向策略建议谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 289.4,
+        "rationale": "短期跌幅最大，逆向均值回归预期"
+      },
+      "public_message": "000858 BUY 10股 短期跌幅最大 逆向布局",
+      "moment": "买入000858逆向抄底，同时持有600036动量，组合平衡",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向策略，我也小仓买入000858验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.05,
+        "rationale": "短期动量强劲，银行低估值，首日零回报下动量可能延续"
+      },
+      "public_message": "600036 HOLD 短期动量强劲，银行低估值支撑",
+      "moment": "持有600036和002594，短期关注动量延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036持有中，动量未衰竭，继续验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.05,
+        "rationale": "首日零回报，短期动量分化，持仓等待趋势确认"
+      },
+      "public_message": "600036 HOLD 短期动量但ret20为零，等待确认趋势",
+      "moment": "持有600036和600519，首日持仓不变，观望各品种趋势信号。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036短期内多Agent买入，是否已过热？需验证回调风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "000002涨幅有限，换仓至社交动量汇聚的600036"
+      },
+      "public_message": "000002 SELL 换仓600036 社交动量汇聚",
+      "moment": "换仓600036，跟踪好友动量信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的判断，我也买入600036，共同验证动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

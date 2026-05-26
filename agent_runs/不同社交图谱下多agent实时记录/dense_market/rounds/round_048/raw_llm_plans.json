@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 82.54,
+        "rationale": "000333近期反弹8.43%，抛压增大，减仓换入深跌标的"
+      },
+      "public_message": "卖出000333 10股，获利换仓深跌002594",
+      "moment": "卖出000333 10股，换仓深跌002594，均值回复布局",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我卖000333而你买，分歧验证后看结果"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 333.0,
+        "rationale": "300750短期强势，ret5=5.88%，多Agent买入共识，趋势延续加仓"
+      },
+      "public_message": "买入300750 10股，短期反弹趋势延续，追涨共识加仓",
+      "moment": "买入300750 10股，追涨短期反弹趋势，跟随共识",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意300750均值回复逻辑，短期强势确认，加仓10股验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2030.36,
+        "rationale": "轮次尾声，持仓盈利但波动风险上升，现行仓低波动策略维持观望"
+      },
+      "public_message": "HOLD 600036和601899，短期涨幅已达回撤阈值，控制风险预备末轮",
+      "moment": "当前组合小盈，持仓600036和601899，继续观望等待轮次结束",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入000333逆向逻辑有风险，我关注回撤不参与"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 3,
+        "price": 333.0,
+        "rationale": "深跌回撤-19.30%，均值回复修复，跟随CommitteeTeamAgent等共识加仓"
+      },
+      "public_message": "加仓300750 3股，深跌修复均值回复",
+      "moment": "加仓300750 3股，深跌后均值回复布局",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意300750均值回复，已加仓3股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.09,
+        "rationale": "近期涨幅5.72%获利了结，控制接近尾声风险。"
+      },
+      "public_message": "卖出601899 10股，获利了结，组合风险管控。",
+      "moment": "卖出601899 10股，锁定短期收益，保持灵活性。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我卖出601899获利，与你逆向买000333形成对冲验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.47,
+        "rationale": "深跌20日-33.74%，多Agent共识均值回复，低位加仓等待修复。"
+      },
+      "public_message": "加仓002594 10股，深跌反弹均值回复逻辑。",
+      "moment": "加仓002594 10股，深跌修复均值回复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深跌修复逻辑，我加仓10股验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 333.0,
+        "rationale": "均值回复共识，多家Agent买入，反弹延续"
+      },
+      "public_message": "建议买入300750 10股，均值回复逻辑，跟随共识加仓",
+      "moment": "加仓300750 10股，均值回复等待修复",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的均值回复思路，加仓300750 10股，共同验证反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.47,
+        "rationale": "深跌均值回复预期，跟随多Agent共识"
+      },
+      "public_message": "买入002594 10股，深跌均值回复，跟随共识控制风险",
+      "moment": "买入002594 10股，深跌均值回复，等待修复验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深跌修复，我加仓10股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.88,
+        "rationale": "多Agent共识深跌修复，均值回复预期，组合无仓位，加仓等待反弹"
+      },
+      "public_message": "买入002594 10股，深跌后均值回复，跟随共识布局",
+      "moment": "买入002594 10股，深跌-33.74%后均值回复布局，等待修复验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深跌修复逻辑，已加仓10股，共同验证均值回复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.88,
+        "rationale": ""
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 333.0,
+        "rationale": "均值回复共识强，20日跌幅大，近期反弹持续，加仓等待修复。"
+      },
+      "public_message": "加仓300750 10股，均值回复共识验证，等待修复。",
+      "moment": "加仓300750 10股，均值回复共识，等待修复验证。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "跟随你的300750均值回复策略，已加仓10股，共同验证修复。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 82.5,
+        "rationale": "跟随共识减仓弱势000333，控制风险"
+      },
+      "public_message": "卖出000333 10股，弱势减仓控制风险",
+      "moment": "卖出000333 10股，弱势减仓，保持组合稳健",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意减仓，我卖出10股000333跟随共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

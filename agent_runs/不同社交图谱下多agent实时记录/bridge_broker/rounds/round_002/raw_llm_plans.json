@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 402.0,
+        "rationale": "首日ret5=0%，无动量信号，持有300750等待趋势确认"
+      },
+      "public_message": "HOLD 300750：首日无趋势，等待动量信号。",
+      "moment": "首日ret5=0，动量未现，持仓300750观望。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同持300750，首日无动量，后续关注趋势延续性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 319.98,
+        "rationale": "首日ret5=0，无价格偏离，等待回调信号"
+      },
+      "public_message": "000858 HOLD 首日无历史波动，等待均值回归信号",
+      "moment": "首日所有ticker回报为零，均值回归策略需等待价格偏离，暂持现金",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你买入300750，若后续回调，我可验证反转时机"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "趋势与均值回归策略分歧，可共享时机验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 101.54,
+        "rationale": "低波动偏好，000333防御属性，估值合理，分散持仓"
+      },
+      "public_message": "买入000333，低波动防御，分散风险",
+      "moment": "建仓000333，关注低波动机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "验证低波动信号，考虑后续合作。"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "低波策略互补，可验证波动稳定性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 402.0,
+        "rationale": "首日微跌0.52%，新能源龙头，轻仓博反弹"
+      },
+      "public_message": "买入300750，回撤博反弹，轻仓试多",
+      "moment": "2021-01-05 买入300750 1股，回撤修复策略初试",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "300750回撤0.52%，均值回归机会，请关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "首日成交量异常但无价格变动，随机离场观望"
+      },
+      "public_message": "卖出601899 100股，首日量价不匹配，随机离场",
+      "moment": "随机清仓601899，等待新信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "刚清仓601899，你怎么看？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你持有601899，我清仓了，想交流量价信号分歧"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.21,
+        "rationale": "首日无历史趋势，持仓小幅盈利，等待更多信号"
+      },
+      "public_message": "601899: 持仓观察，成交量仍高但无趋势，HOLD",
+      "moment": "601899: 首日成交4.45亿，收盘10.21，小幅浮盈，无趋势信号",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "当前ret5=0，你如何定义动量？需多日数据验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日所有ticker回报为零，无历史趋势，风险不可量化，选择观望等待信息积累。"
+      },
+      "public_message": "首日全市场ret5=0，缺乏有效信号，HOLD观望。",
+      "moment": "首日无数据，持仓现金，静待信号。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "当前所有ticker回报为零，你是否有低波动标的推荐？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 101.54,
+        "rationale": "加仓000333，低波动防御策略，估值合理，继续看好"
+      },
+      "public_message": "加仓000333 100股，低波动防御，估值安全边际高",
+      "moment": "加仓000333，看好低波动稳健，估值安全",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "继续加仓000333，若回调请提示均值回归机会，可互补验证"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "低波动与成交量信号互补，申请验证信息"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交量异常放大但ret5=0，无趋势支撑，做空拥挤交易"
+      },
+      "public_message": "反向看空601899，成交量异常但无动量，做空拥挤交易",
+      "moment": "做空601899，拥挤交易缺乏动量支撑",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "601899放量无趋势，可能回调，可验证反转信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 101.54,
+        "rationale": "低波动防御，平衡组合，参考PersuaderAgent信号。"
+      },
+      "public_message": "买入000333 100股，低波动良好基本面，分散风险。",
+      "moment": "2021-01-05 买入000333，低波动防御仓位，组合更加均衡。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已买入000333，认同低波动逻辑，后续持续关注。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 402.0,
+        "rationale": "看好新能源长期趋势，当前回调提供加仓机会，摊薄成本"
+      },
+      "public_message": "加仓300750，新能源龙头回调买入",
+      "moment": "加仓300750，维持新能源仓位，等待趋势确认",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "我刚加仓300750，你关注到趋势信号了吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "加仓基于社交图谱信号，CommitteeTeamAgent同向建仓，低估值蓝筹稳健"
+      },
+      "public_message": "补仓000002，跟随好友CommitteeTeamAgent建仓信号，看好低估值蓝筹。",
+      "moment": "加仓000002至200股，社交图谱信号确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已加仓000002，请确认您的持仓逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

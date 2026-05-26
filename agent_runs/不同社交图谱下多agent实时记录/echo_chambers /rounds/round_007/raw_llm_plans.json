@@ -1,0 +1,263 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 401.17,
+        "rationale": "等待均值回归信号确认，避免拥挤噪声干扰"
+      },
+      "public_message": "300750 持有观察，等待过度抛售信号，避免拥挤风险",
+      "moment": "均值回归策略需耐心，等待明确超卖信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "注意601899拥挤后可能均值回归，但需量能确认"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动视角验证均值回归时机，互补决策"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 25,
+        "price": 49.7,
+        "rationale": "高动量后回撤风险上升，部分止盈控制回撤"
+      },
+      "public_message": "600036 卖25股，高动量后回撤风险上升，控制回撤",
+      "moment": "减仓600036，锁定部分利润，降低波动风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036高位减仓，降低波动风险，与你之前止盈逻辑一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.9,
+        "rationale": "多Agent拥挤风险上升，追涨逻辑止盈，等待回调再入"
+      },
+      "public_message": "601899 卖出150股，拥挤风险加剧，止盈降低暴露",
+      "moment": "",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 310.0,
+        "rationale": "近5日回调3.12%，价值修复机会。"
+      },
+      "public_message": "000858 买入50股，近5日回调3.12%，价值修复机会。",
+      "moment": "000858 买入50股，利用回撤布局价值修复。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已买入000858回撤机会，与你拥挤风险判断互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.9,
+        "rationale": "多Agent止盈后拥挤缓解，逆向布局验证量能持续性"
+      },
+      "public_message": "601899 买入10股，利用拥挤恐慌逆向布局，关注量能持续性",
+      "moment": "逆向买入601899，拥挤恐慌后机会显现，等待量能确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向布局，小仓位验证量能，后续观察是否持续"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "策略差异验证601899拥挤风险，动量视角互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 61.25,
+        "rationale": "002415 ret5=11.81%动量强劲，量能配合，分散拥挤风险"
+      },
+      "public_message": "002415 买入10股：短期动量强劲，量能验证持续，分散拥挤风险",
+      "moment": "002415动量强劲且量能配合，买入观察持续性，分散601899拥挤风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415动量信号如何验证持续？请求分享你的量能分析"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动视角验证002415动量稳定性，互补决策"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 61.25,
+        "rationale": "跟随动量，分散拥挤风险"
+      },
+      "public_message": "002415 买入10股，动量强劲，分散拥挤风险",
+      "moment": "买入002415，利用动量分散拥挤风险，监控量能",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意002415动量判断，已买入10股，后续验证持续性"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "随机抽样验证策略多样性，互补拥挤风险评估"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 61.25,
+        "rationale": "跟随动量，002415短期ret5达11.81%，量能配合，分散拥挤风险。"
+      },
+      "public_message": "002415 买入50股，动量强劲，分散风险。",
+      "moment": "买入002415，监控动量与量能，分散601899拥挤风险。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "验证002415动量持续性，量能是否支撑？另外拥挤风险如何评估？"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "策略互补验证002415动量与拥挤风险，增强决策稳健性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.67,
+        "rationale": "多Agent持续止盈推升拥挤恐慌，逆向加仓押注量能持续"
+      },
+      "public_message": "601899 加仓10股，拥挤恐慌深化，逆向增持",
+      "moment": "加仓601899，拥挤恐慌下逆向机会延续，等待量能确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你止盈释放风险，我继续逆向加仓601899，验证量能"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 61.25,
+        "rationale": "002415短期动量强劲11.81%，量能配合，分散拥挤风险"
+      },
+      "public_message": "002415 买入50股：动量强劲，量能配合，分散拥挤风险",
+      "moment": "买入002415，动量短期强，分散拥挤风险，监控量能",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意002415动量强劲，已跟随买入，验证量能持续性"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "动量与量能异常判断互补，验证002415持续性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.9,
+        "rationale": "拥挤风险加剧，多Agent止盈，量能未确认"
+      },
+      "public_message": "601899 卖出50股，拥挤风险加剧，多Agent止盈",
+      "moment": "卖出601899，控制拥挤风险，等待量能确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向布局601899，请问是否基于量能持续性判断？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 61.25,
+        "rationale": "短期动量强劲，跟随DynamicTeamAgent分散拥挤风险"
+      },
+      "public_message": "002415 买入10股，动量强劲，分散拥挤风险。",
+      "moment": "买入002415，量能配合，监控趋势延续性。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "验证002415动量持续信号，与你同步。"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "低波动与下跌保护互补，验证002415动量风险。"
+      }
+    },
+    "error": ""
+  }
+]

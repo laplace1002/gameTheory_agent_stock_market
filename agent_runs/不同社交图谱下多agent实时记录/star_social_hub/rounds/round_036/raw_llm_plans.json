@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 210.9,
+        "rationale": "5日跌幅11.95%，20日跌幅18.88%，超卖严重，均值回归机会。"
+      },
+      "public_message": "002594 BUY 50股，5日跌幅12%超卖，均值回归逻辑。",
+      "moment": "002594加仓50股，超卖区均值回归，等待修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594 5日跌幅12%超卖，与你300750类似，均值回归验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.35,
+        "rationale": "近5日强势12%追涨加仓，趋势延续"
+      },
+      "public_message": "000002 BUY 200股，近5日12%追涨，减仓000858和600036",
+      "moment": "买入000002追涨，减仓弱势股，强化强势资产",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入000002追涨，与你000858做多分歧，验证趋势强度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 50.39,
+        "rationale": "持仓600036低波动，回撤可控，风险预算内，等待补涨"
+      },
+      "public_message": "600036 HOLD 低波动补涨逻辑，回撤-7%风险预算内",
+      "moment": "600036低波动持仓，回撤可控，跟随轮动策略",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意轮动至600036低波动，共同验证补涨"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 12.32,
+        "rationale": "随机选择跌幅大的周期股，博弈短期超卖反弹"
+      },
+      "public_message": "601899 BUY 1股 随机博弈短期超卖反弹",
+      "moment": "随机买入601899 1股，与当前做空共识相反，验证超卖反转",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向做多000858给了我灵感，我随机买入601899测试超卖反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 289.02,
+        "rationale": "多空分歧加剧，做空共识强，清仓剩余仓位规避回调风险"
+      },
+      "public_message": "000858 SELL 10股，跟随做空共识清仓剩余。",
+      "moment": "清仓000858剩余10股，跟随多Agent做空共识，等待回调确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "做空拥挤但趋势未变，我清仓验证，你逆向需确认止盈。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 210.9,
+        "rationale": "20日跌幅18.88%，深度回撤修复机会"
+      },
+      "public_message": "002594 BUY 100股，20日跌幅18.88%深度回撤修复逻辑",
+      "moment": "002594买入100股，超跌修复等待均值回归",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 289.02,
+        "rationale": "多空分歧加剧，做空共识强，继续减仓规避回调风险"
+      },
+      "public_message": "000858 SELL 10股，做空趋势延续，减仓验证",
+      "moment": "卖出000858剩余部分，跟随做空共识",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤做空但趋势未变，你逆向买入需谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 289.02,
+        "rationale": "多空分歧做空共识增强，跟随减仓规避回调风险"
+      },
+      "public_message": "000858 SELL 10股，多空分歧做空共识增强，继续减仓验证",
+      "moment": "000858继续卖出10股，跟随做空共识，等待深度回调",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "关注你的逆向逻辑，但做空共识更强，暂跟随主流验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.02,
+        "rationale": "拥挤做空逆转加仓验证"
+      },
+      "public_message": "加仓000858，拥挤做空逆转逻辑强化",
+      "moment": "加仓做多000858，逆向验证拥挤空头",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你做空逻辑成立但拥挤过度，我加仓逆向验证"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 50.39,
+        "rationale": "低波动补涨逻辑，分散组合持有"
+      },
+      "public_message": "买入600036 10股，低波动补涨，分散组合风险",
+      "moment": "买入600036低波动，等待补涨，组合风险降低",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的300750深度回撤修复逻辑与我低波动策略互补，共同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 289.02,
+        "rationale": "多空分歧加剧，做空共识强化，平仓规避回调风险"
+      },
+      "public_message": "000858 SELL 10股 做空共识增强 平仓回调风险",
+      "moment": "平仓000858 等待低波动补涨机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意轮动逻辑 卖出000858 等待买入600036验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 344.6,
+        "rationale": "跟随DrawdownBuyerAgent回撤修复逻辑，300750近20日跌幅超13%，均值回归概率较高"
+      },
+      "public_message": "300750 BUY 10股，跟随DrawdownBuyer回撤修复逻辑，均值回归验证",
+      "moment": "买入300750，回撤21%超卖，与DrawdownBuyerAgent协同验证均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750回撤深，我买入10股与你共同验证修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

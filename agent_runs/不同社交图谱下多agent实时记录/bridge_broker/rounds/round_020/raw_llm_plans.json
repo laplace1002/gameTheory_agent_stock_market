@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 354.11,
+        "rationale": "300750回撤-13.21%，超卖幅度最大，均值回归机会，低吸等待反弹"
+      },
+      "public_message": "300750 BUY：回撤-13.21%，超卖均值回归低吸",
+      "moment": "300750 BUY：回撤-13.21%，均值回归买点，验证分歧",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750回撤更深，均值回归机会，与你601899超跌修复逻辑互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 70,
+        "price": 247.0,
+        "rationale": "动量分歧验证，多Agent协同加仓，追涨强势股"
+      },
+      "public_message": "002594 BUY：动量分歧验证，协同加仓70股",
+      "moment": "002594 BUY：动量分歧验证追涨，多Agent协同加仓至271股",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意换仓逻辑，同步加仓002594，动量协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.1,
+        "rationale": "低波动补仓，维持稳定敞口，当前回撤可控"
+      },
+      "public_message": "600036 BUY：低波动补仓100股，回撤-1.05%可控，继续持有",
+      "moment": "600036 BUY：低波动补仓100股，等待均值回归，控制回撤",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 7,
+        "price": 354.11,
+        "rationale": "最大回撤-13.21%，超卖左侧逆向加仓，价值修复分歧验证"
+      },
+      "public_message": "300750 BUY：回撤超13%，逆向加仓，价值修复分歧验证",
+      "moment": "300750 BUY：回撤超13%，逆向加仓至10股，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750回撤-13.21%，我加仓逆向修复，与你000002形成非共识分歧验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.43,
+        "rationale": "随机逆向，分歧验证超卖地产修复"
+      },
+      "public_message": "000002 BUY: 随机逆向加仓超卖地产，分歧验证均值回归",
+      "moment": "000002 BUY: 随机逆向加仓，分歧验证超卖修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向买入，同步加仓000002，分歧验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 45,
+        "price": 244.36,
+        "rationale": ""
+      },
+      "public_message": "002594 BUY：多Agent动量分歧验证，协同加仓。",
+      "moment": "002594 BUY：多Agent动量分歧验证，加仓45股，持仓成本244.36，等待动量延续。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意动量协同，002594加仓45股，分歧验证后看加速。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 291.14,
+        "rationale": "换仓至动量更强的002594，分歧验证后加速"
+      },
+      "public_message": "卖出000858 100股，换仓至002594，动量分歧验证协同加速",
+      "moment": "000858 SELL：减仓白酒换仓新能源，分歧验证后动量加速",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意换仓逻辑，同步卖出000858加仓002594，动量协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 247.0,
+        "rationale": "多Agent动量分歧验证持续，跟随加仓强势股"
+      },
+      "public_message": "002594 BUY：动量分歧验证持续，加仓协同",
+      "moment": "002594 BUY：跟随即时动量分歧验证，加仓至200股",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意动量分歧验证，我继续加仓002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.79,
+        "rationale": "002594拥挤度极高，000002超卖但无反转信号，观望等待更明确的分歧点。"
+      },
+      "public_message": "HOLD 000002：002594多头拥挤，逆向等待风险暴露。",
+      "moment": "000002 HOLD：拥挤在002594，逆向等待拥挤瓦解后的价值修复机会。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594动量追涨过于拥挤，警惕回调风险，我的000002超卖但暂不加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 247.0,
+        "rationale": "已持有200股002594，仓位集中且现金有限，选择持有观察分歧演化"
+      },
+      "public_message": "002594 HOLD：动量协同已验证，持仓观察分歧演化",
+      "moment": "002594 HOLD：等待分歧验证后加速，仓位已足",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你卖出000333换仓002594，我已持有200股，继续持有观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 96.33,
+        "rationale": "低波回撤股，跟随多位Agent减仓，换仓至更强动量，分歧验证后加速"
+      },
+      "public_message": "卖出000333 100股，低波回撤换仓，分歧验证后协同",
+      "moment": "000333 SELL：低波回撤换仓，分歧验证后加仓002594动量股",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的换仓逻辑，同步卖出000333，动量协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 247.0,
+        "rationale": "动量分歧验证有效，多Agent协同加仓，等待加速信号，风险可控"
+      },
+      "public_message": "002594 HOLD：动量协同确认，等待强势加速",
+      "moment": "002594 HOLD：分歧验证后动量协同，继续持有等待加速",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入000002逆向，我持有002594动量，分歧验证各自逻辑，后验看方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 305.33,
+        "rationale": "过度抛售后均值回归机会，加仓降低成本"
+      },
+      "public_message": "000858 回撤7%超卖，加仓1股博弈均值回归",
+      "moment": "持仓000858和300750，今日加仓000858，等待均值回归反弹",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000858回撤7%超卖，均值回归信号，与你动量互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 239.3,
+        "rationale": "ret5=10.63%最强，新能源动量延续"
+      },
+      "public_message": "002594 ret5=10.63%追涨1股",
+      "moment": "买入002594，最强动量信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594动量确认，协同验证趋势延续"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "动量与随机信号互补，验证趋势"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 29.9,
+        "rationale": "低波动配置，ret5温和，分散风险"
+      },
+      "public_message": "000002 BUY 1 低波动配置，控制回撤",
+      "moment": "买入000002，低波动策略，平衡组合风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002低波动，你怎么看银行回调？"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "低波动与动量互补，共享趋势反转信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 305.33,
+        "rationale": "回撤7%后价值修复机会，加仓1股摊低成本，等待反弹"
+      },
+      "public_message": "000858 BUY 回撤7%后加仓，修复机会",
+      "moment": "",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858回撤7%后加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 305.33,
+        "rationale": "000858 ret5=-7%，弱势止损，换入002415动量股"
+      },
+      "public_message": "SELL 000858 止损，BUY 002415 捕捉动量",
+      "moment": "调仓：卖出000858亏损股，买入002415趋势股，等待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858 ret5=-7%弱势，我止损了，你如何看回调风险？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "共持002415动量仓位，共享趋势验证信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 61.25,
+        "rationale": "5日动量8.1%且多Agent验证，小额建仓验证趋势"
+      },
+      "public_message": "002415 BUY 5日动量8.1%多Agent验证，小额跟随趋势",
+      "moment": "买入002415，动量信号多Agent验证，等待数据确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415动量持续，你如何看待ret20零时的风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 239.3,
+        "rationale": "新能源动量持续强劲，ret5=10.63%，加仓验证趋势延续。"
+      },
+      "public_message": "002594新能源动量持续，加仓1股验证趋势。",
+      "moment": "加仓002594至4股，新能源动量信号明确，等待更多数据验证。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002594动量持续，已加仓，建议同步增加仓位验证趋势。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 59.91,
+        "rationale": "跟随DynamicTeamAgent和CommitteeTeamAgent买入信号，验证动量延续"
+      },
+      "public_message": "002415 BUY 1股，跟随动量趋势验证",
+      "moment": "加仓002415，跟随动量信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415动量持续？我刚加仓1股，如何看？"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "共享002415动量信号，策略互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "ret5仍正但ret20为零，多空未明，持仓观望"
+      },
+      "public_message": "002415 持有观望，等待ret20方向确认",
+      "moment": "002415持仓观察，动量仍在但需验证趋势，暂不加仓",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "共持002415，当前浮亏但动量未消，如何看后续？"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "共持002415动量仓位，共享验证信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 385.0,
+        "rationale": "新能源回调，逆向加仓搏反弹"
+      },
+      "public_message": "300750 回调加仓，逆向布局新能源。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.91,
+        "rationale": "动量持续但价格回调，等待趋势确认，暂不加仓或止损"
+      },
+      "public_message": "HOLD 002415 动量持续，等待趋势确认",
+      "moment": "持仓002415，观望动量延续性，等待数据验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415 ret5=8.1%但价格回落，您认为动量可持续吗？"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "共持002415，共享趋势验证信号互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 239.3,
+        "rationale": "跟随好友PersuaderAgent新能源动量加仓，验证趋势延续"
+      },
+      "public_message": "002594 BUY 新能源动量，加仓验证趋势",
+      "moment": "买入002594加仓至2股，新能源动量验证，分散科技持仓",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594 新能源动量，你如何看待持续性？当前ret5=10.63%"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "你买入601899非共识机会，与我的社交图谱互补，共享异动信号"
+      }
+    },
+    "error": ""
+  }
+]

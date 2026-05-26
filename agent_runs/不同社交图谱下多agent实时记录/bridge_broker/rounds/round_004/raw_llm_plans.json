@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.79,
+        "rationale": "首日无趋势，等待超卖信号"
+      },
+      "public_message": "000002: 首日无趋势，HOLD观望",
+      "moment": "HOLD现金，等待均值回归信号",
+      "private_message": {
+        "to": "",
+        "content": ""
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "均值回归与动量策略分歧可互补验证风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 413.23,
+        "rationale": "首日全市场零回报，无追涨信号，维持仓位等待趋势确认"
+      },
+      "public_message": "HOLD 300750，市无趋势，等待信号",
+      "moment": "持仓300750，零回报观望",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同持300750，确认无趋势逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 413.23,
+        "rationale": "首日无回撤信号，维持300750仓位等待趋势"
+      },
+      "public_message": "300750 HOLD：首日ret5=0，无跌深买入机会，继续持有",
+      "moment": "300750 HOLD，首日全市场零回报，等待回撤机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "持仓一致，300750首日无趋势，等待信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.79,
+        "rationale": "首日无趋势，低波动蓝筹分散持仓，跟随社交验证信号"
+      },
+      "public_message": "BUY 000002 100股，跟随低估值低波动信号，分散持仓",
+      "moment": "加仓000002，低波动防御，社交信号确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已买入000002，验证低估值低波动逻辑，请确认成交量数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "随机策略，放量无趋势博弈反转"
+      },
+      "public_message": "601899 BUY 100股，放量零回报，随机博弈反转",
+      "moment": "随机策略入场601899，放量无趋势，非共识反转逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我做多601899与你做空分歧，验证反转方向"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "随机与均值回归互补，验证反转信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "放量无趋势，做空信号验证，减仓回避风险"
+      },
+      "public_message": "601899: 卖出100股，放量无趋势，做空信号验证",
+      "moment": "601899: 首日放量零回报，做空信号增强，清仓观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已卖出601899，赞同放量无趋势的做空逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.79,
+        "rationale": "跟随好友PersuaderAgent低估值逻辑，社交信号验证"
+      },
+      "public_message": "买入000002 10股，跟随低估值逻辑，验证社交信号",
+      "moment": "买入000002，低估值蓝筹，社交信号验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已买入000002，与你方向一致，确认低估值逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.79,
+        "rationale": "拥挤交易反转，低估值逻辑未验证"
+      },
+      "public_message": "000002 做空100股，拥挤交易反转",
+      "moment": "做空000002，拥挤交易反转逻辑",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你买入000002过于拥挤，首日零回报，反转风险高"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.79,
+        "rationale": "全市场ret5为零，无趋势信号，低波动防御策略继续HOLD"
+      },
+      "public_message": "HOLD 000002和000333，低波动防御，等待趋势信号",
+      "moment": "组合000002+000333低波动HOLD，全市场零趋势，保持耐心",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "确认000002低估值逻辑，同向HOLD防御，信号互补"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "反向观点可验证低波动持仓风险，信号互补增强组合韧性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 413.23,
+        "rationale": "全市场ret5=0，无趋势信号，维持新能源仓位等待确认"
+      },
+      "public_message": "300750: 首日无趋势，继续持有，等待新能源长期逻辑验证",
+      "moment": "300750 HOLD，首日零回报，等待量价信号确认趋势",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "300750无趋势，但新能源长期逻辑不变，与你低波动组合互补验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.79,
+        "rationale": "首日全部ticker回报为零，持仓无趋势信号，HOLD观望"
+      },
+      "public_message": "000002: HOLD，首日零回报，等待信号确认",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "放量滞涨，后续动量突破概率大；与ContrarianAgent反向验证拥挤交易逻辑"
+      },
+      "public_message": "买入601899 1000股，放量滞涨，验证动量突破逻辑",
+      "moment": "买入601899，放量滞涨，等待趋势确认，与反向策略互补",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "做多601899与你反向，放量信号待确认，可互补验证拥挤交易"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "做多601899与你的放量拥挤交易做空逻辑互补，验证信号分歧"
+      }
+    },
+    "error": ""
+  }
+]

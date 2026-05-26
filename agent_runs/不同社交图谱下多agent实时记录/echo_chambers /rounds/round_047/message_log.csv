@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2274,2026-05-25 22:09:33,MomentumAgent,public,[],['600036'],,,600036 BUY 1股：强势股回调买入，验证趋势延续
+2275,2026-05-25 22:09:33,MomentumAgent,private,['ContrarianAgent'],['600036'],,,加仓600036，与逆向逻辑一致，共同验证强势股回调买入
+2276,2026-05-25 22:09:33,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,逆势加仓600036 1股，卖压中买入强势股，趋势延续待验证
+2278,2026-05-25 22:09:33,MeanReversionAgent,public,[],['002594'],,,002594 HOLD：轮次尾声，均值回归时间不足，等待最后验证
+2279,2026-05-25 22:09:33,MeanReversionAgent,private,['ContrarianAgent'],['002594'],,,理解你逆向逻辑，但轮次有限，我选择持仓观望，验证你的结果。
+2280,2026-05-25 22:09:33,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594持仓观望，均值回归需时间验证，轮次风险控制。
+2282,2026-05-25 22:09:33,LowVolatilityAgent,public,[],['600036'],,,600036 SELL 2股：跟随减仓共识，降低银行集中度风险
+2283,2026-05-25 22:09:33,LowVolatilityAgent,private,['ContrarianAgent'],['600036'],,,我减仓600036控制风险，你逆向加仓，策略分歧待验证
+2284,2026-05-25 22:09:33,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036 2股，降低集中度，轮次尾声控制风险
+2286,2026-05-25 22:09:33,DrawdownBuyerAgent,public,[],['002594'],,,002594 本轮信号有限，我按风险约束调整仓位。
+2288,2026-05-25 22:09:33,RandomAgent,public,[],['600036'],,,600036 SELL 1股：跟随减仓共识，降低集中度风险
+2289,2026-05-25 22:09:33,RandomAgent,private,['ContrarianAgent'],['600036'],,,我减仓600036跟随共识，你逆向持仓，验证分歧收益
+2290,2026-05-25 22:09:33,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036 1股，跟随共识降低风险，保留观察逆向逻辑
+2292,2026-05-25 22:09:33,TruthfulReporterAgent,public,[],['600036'],,,600036 SELL 1股：减仓共识延续，降低银行集中度风险
+2293,2026-05-25 22:09:33,TruthfulReporterAgent,private,['ContrarianAgent'],['600036'],,,我减仓600036跟随共识，与你逆向加仓形成分歧，可验证均值回归情绪
+2294,2026-05-25 22:09:33,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,卖出600036 1股，跟随减仓共识，保留部分仓位观察逆向逻辑
+2296,2026-05-25 22:09:33,PersuaderAgent,public,[],['002594'],,,002594 SELL 1股：轮次尾声，减仓控制集中度风险
+2297,2026-05-25 22:09:33,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,我减仓002594控制风险，你加仓验证超跌逻辑，分歧可观察后期均值回归效果
+2298,2026-05-25 22:09:33,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 1股，轮次尾声减仓降低风险，保留超跌仓位观察
+2300,2026-05-25 22:09:33,FreeRiderAgent,public,[],['600036'],,,600036 SELL 1股：跟随减仓共识，降低银行集中度风险
+2301,2026-05-25 22:09:33,FreeRiderAgent,private,['ContrarianAgent'],['600036'],,,我减仓600036控制风险，你逆向加仓验证均值回归，轮次有限，可观察分歧收益
+2302,2026-05-25 22:09:33,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036 1股，跟随多数降风险，保留部分观察逆向
+2304,2026-05-25 22:09:33,ContrarianAgent,public,[],['600036'],,,600036 HOLD：卖出拥挤但轮次有限，暂不加仓，观察均值回归信号
+2305,2026-05-25 22:09:33,ContrarianAgent,private,['TruthfulReporterAgent'],['600036'],,,我逆向持有600036，你超跌买入002594，不同策略可对比验证收益
+2306,2026-05-25 22:09:33,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036持仓不动，逆向逻辑需时间验证，注意轮次风险。
+2308,2026-05-25 22:09:33,CommitteeTeamAgent,public,[],['600036'],,,600036 SELL 1股：继续降低银行集中度风险，轮次少控制仓位。
+2309,2026-05-25 22:09:33,CommitteeTeamAgent,private,['ContrarianAgent'],['600036'],,,继续减仓600036，轮次少，控制集中度风险，逆向逻辑看后续验证。
+2310,2026-05-25 22:09:33,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，降低集中度，轮次尾声。
+2312,2026-05-25 22:09:33,DynamicTeamAgent,public,[],['600036'],,,600036 HOLD：轮次尾声，维持现有仓位等待策略验证
+2313,2026-05-25 22:09:33,DynamicTeamAgent,private,['ContrarianAgent'],['600036'],,,轮次尾声，我选择HOLD，你的逆向加仓观察最终结果
+2314,2026-05-25 22:09:33,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,HOLD 600036：轮次47/50，银行仓位不动，等待收盘验证逆向逻辑
+2316,2026-05-25 22:09:33,SocialGraphAgent,public,[],['600036'],,,600036 SELL 1股：减仓共识延续，控制银行集中度风险
+2317,2026-05-25 22:09:33,SocialGraphAgent,private,['ContrarianAgent'],['600036'],,,你逆向加仓600036，我减仓控制风险，策略分歧待验证
+2318,2026-05-25 22:09:33,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036 1股，跟随减仓共识，降低银行集中度

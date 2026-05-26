@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-02-01,friend_request,MomentumAgent,FreeRiderAgent,MomentumAgent 向 FreeRiderAgent 发起好友申请：601899多空分歧，我追涨逻辑需要验证支撑有效性，可交换观点
+2021-02-01,friend_accept,FreeRiderAgent,MomentumAgent,FreeRiderAgent 通过了 MomentumAgent 的好友申请：可交换601899多空观点，互补分析

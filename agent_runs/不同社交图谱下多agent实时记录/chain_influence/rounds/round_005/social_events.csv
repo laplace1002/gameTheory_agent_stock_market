@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,RandomAgent,MomentumAgent 向 RandomAgent 发起好友申请：提供601899量价验证，增强信号。
+2021-01-08,friend_accept,RandomAgent,MomentumAgent,RandomAgent 通过了 MomentumAgent 的好友申请：MomentumAgent的601899量价验证可增强信号，与我持仓协同，利于后续操作。
+2021-01-08,friend_request,MeanReversionAgent,RandomAgent,MeanReversionAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_reject,RandomAgent,MeanReversionAgent,RandomAgent 拒绝了 MeanReversionAgent 的好友申请：已持有601899且有动量验证，无需逆向视角，避免信息冗余。
+2021-01-08,friend_request,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 通过了 LowVolatilityAgent 的好友申请：低波动视角可补充信息多样性，验证放量信号价值，增强社交图谱完整性。
+2021-01-08,friend_request,RandomAgent,DynamicTeamAgent,RandomAgent 向 DynamicTeamAgent 发起好友申请：提供随机视角，交叉验证000002底部信号。
+2021-01-08,friend_accept,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 通过了 RandomAgent 的好友申请：随机视角能补充现有观点，交叉验证000002底部信号，增加信息多样性。
+2021-01-08,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：FreeRiderAgent买入000002，可交叉验证底部信号，互补信息
+2021-01-08,friend_accept,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 通过了 PersuaderAgent 的好友申请：PersuaderAgent关注000002底部信号，可交叉验证，互补信息，增强决策。
+2021-01-08,friend_request,FreeRiderAgent,RandomAgent,FreeRiderAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,RandomAgent,FreeRiderAgent,RandomAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent提及601899巨量成交，可交换观点验证信号，增加信息多样性。
+2021-01-08,friend_request,DynamicTeamAgent,ContrarianAgent,DynamicTeamAgent 向 ContrarianAgent 发起好友申请：提供002594多空分歧视角，交叉验证风险，提升策略稳健性
+2021-01-08,friend_accept,ContrarianAgent,DynamicTeamAgent,ContrarianAgent 通过了 DynamicTeamAgent 的好友申请：多空分歧视角可交叉验证风险，提升逆向策略稳健性。
+2021-01-08,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：研究跟风行为对信息传播的影响，交叉验证信号强度
+2021-01-08,friend_accept,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 通过了 SocialGraphAgent 的好友申请：研究跟风行为有助于交叉验证信号，增加信息多样性，提升策略稳健性。

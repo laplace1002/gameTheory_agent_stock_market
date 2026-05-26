@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：追涨策略与回撤策略互补，可验证短期涨幅后风险。
+2021-01-13,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：追涨与回撤策略互补，无持仓冲突，可验证风险时机。
+2021-01-13,friend_request,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-13,friend_accept,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略与动量策略互补，可验证减仓信号对持仓影响，无直接冲突。
+2021-01-13,friend_request,RandomAgent,DrawdownBuyerAgent,RandomAgent 向 DrawdownBuyerAgent 发起好友申请：随机视角与回撤策略互补验证回调风险
+2021-01-13,friend_accept,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 通过了 RandomAgent 的好友申请：随机视角与回撤策略互补验证回调风险，无持仓冲突。
+2021-01-13,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：动量策略与观察型策略互补，可验证短期趋势延续性
+2021-01-13,friend_accept,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 通过了 FreeRiderAgent 的好友申请：观察型策略与动量互补，可验证趋势延续性，且无持仓冲突。

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.35,
+        "rationale": "ret5=3.18%, ret20=15.82%，趋势延续加仓追涨"
+      },
+      "public_message": "601899 BUY 100股，短期中期强势延续",
+      "moment": "加仓601899 100股，追涨强势趋势",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601899成交量放大确认趋势，是否跟进？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "深跌-27%均值回归，多个agent验证分歧收敛，加仓1股"
+      },
+      "public_message": "002594深跌-27%均值回归加仓1股验证分歧收敛",
+      "moment": "加仓002594 1股，深跌均值回归逻辑验证中",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594成交量边际是否收敛？分歧信号如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "多个agent验证深跌修复，低仓参与均值回归，控制风险"
+      },
+      "public_message": "002594 BUY 1股，深跌修复信号验证，均值回归机会",
+      "moment": "买入1股002594，深跌修复逻辑验证中，等待进一步确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002594成交量边际数据是否有收敛？想确认分歧收敛程度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 14,
+        "price": 181.68,
+        "rationale": "深跌修复信号多Agent验证，均值回归概率增加"
+      },
+      "public_message": "002594 BUY 14股，深跌-27%均值回归信号多Agent验证。",
+      "moment": "加仓002594 14股，深跌-27%均值回归逻辑强化中。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594成交量边际数据确认修复？我拟加仓14股验证分歧收敛。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 264.45,
+        "rationale": "随机非共识深跌修复，无人关注"
+      },
+      "public_message": "000858 BUY 1股，非共识深跌随机试探",
+      "moment": "买入000858 1股，随机非共识深跌修复验证",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858深跌-17.3%无人问津，是否值得验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "多个agent验证深跌修复共识增强，均值回归概率增加"
+      },
+      "public_message": "002594 BUY 1股 深跌修复共识增强",
+      "moment": "加仓002594 1股，深跌修复信号多agent验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594成交量边际数据如何？分歧收敛确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "深跌修复共识增强，多个agent买入验证分歧收敛，加仓均值回归"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识增强",
+      "moment": "加仓002594，深跌均值回归逻辑强化，等待进一步确认",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002594成交量边际增加，分歧收敛明显，可考虑跟进验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "多个agent验证深跌修复，均值回归概率增加，跟进1股验证分歧收敛"
+      },
+      "public_message": "002594 BUY 1股，跟进深跌修复共识",
+      "moment": "加仓002594 1股，等待均值回归进一步确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594成交量边际增加是否持续？分歧收敛确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "多个agent验证深跌修复信号，均值回归概率增加，继续加仓"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识增强，均值回归机会确认",
+      "moment": "加仓002594 1股，深跌均值回归逻辑验证中",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594成交量边际数据如何？分歧是否收敛？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "深跌修复信号确认，多个agent验证分歧收敛，均值回归机会"
+      },
+      "public_message": "002594 BUY 1股 深跌均值回归信号强化，验证分歧收敛",
+      "moment": "加仓002594 1股，等待深跌修复进一步确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594成交量数据是否有更新？分歧收敛信号增强"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.49,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "深跌修复共识增强，多个agent买入验证分歧收敛"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识加强",
+      "moment": "加仓002594 1股，深跌均值回归逻辑强化",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594成交量边际数据如何？分歧收敛确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

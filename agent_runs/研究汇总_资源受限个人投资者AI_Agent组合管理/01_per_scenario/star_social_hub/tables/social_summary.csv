@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+star_social_hub,50,2477,1726,418,182,75,60,15,600,549,577,66,132,-3081.57,PersuaderAgent,6864.5

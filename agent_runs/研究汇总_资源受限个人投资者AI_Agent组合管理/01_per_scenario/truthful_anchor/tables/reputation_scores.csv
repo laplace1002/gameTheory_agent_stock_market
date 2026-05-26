@@ -1,0 +1,13 @@
+sender_id,prediction_count,avg_confidence,reputation,calibration_error,influence_score,proper_reputation
+CommitteeTeamAgent,145,0.5569655172413793,0.5,0.25,0.0,0.5
+ContrarianAgent,140,0.5590714285714286,0.5,0.25,0.0,0.5
+DrawdownBuyerAgent,138,0.5596376811594204,0.5,0.25,0.0,0.5
+DynamicTeamAgent,146,0.558013698630137,0.5,0.25,0.0,0.5
+FreeRiderAgent,145,0.554551724137931,0.5,0.25,0.0,0.5
+LowVolatilityAgent,143,0.5756643356643356,0.5,0.25,0.0,0.5
+MeanReversionAgent,145,0.5657241379310345,0.5,0.25,0.0,0.5
+MomentumAgent,137,0.677956204379562,0.5,0.25,0.0,0.5
+PersuaderAgent,144,0.5642361111111112,0.5,0.25,0.0,0.5
+RandomAgent,145,0.5833103448275861,0.5,0.25,0.0,0.5
+SocialGraphAgent,145,0.5578620689655173,0.5,0.25,0.0,0.5
+TruthfulReporterAgent,146,0.5667123287671233,0.5,0.25,0.0,0.5

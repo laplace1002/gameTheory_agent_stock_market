@@ -1,0 +1,257 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.4,
+        "rationale": "000002近期跌幅较大但未出现明显反转信号，继续持有等待均值回归确认"
+      },
+      "public_message": "000002 HOLD：ret5 -3.61%接近均值回归触发区间，等待量能验证反弹",
+      "moment": "持有000002，均值回归策略等待超卖反弹信号，601899多空僵持需谨慎",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899放量未新高空头逻辑未验证，建议观察收盘破位而非开盘做空"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "均值回归与动态组合可交叉验证超卖信号，合作提升反转策略准确性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 257.0,
+        "rationale": "5日涨幅15.77%，动量强劲，追涨加仓"
+      },
+      "public_message": "002594 BUY：5日15.77%动量确认，强势延续加仓",
+      "moment": "持有002594和002415，追涨加仓，等待加速",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594动量确认，空头风险大，建议平空转多"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 97.95,
+        "rationale": "多空分歧未决，601899方向不明，维持现有仓位等待收敛。"
+      },
+      "public_message": "601899多空严重分歧，放量未破位，建议等待方向确认。",
+      "moment": "持有000333，观望601899多空僵持，不急于加仓。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "放量未新高但收盘未跌，空头逻辑未验证，如何确认顶部？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.42,
+        "rationale": "多空分歧极致，放量未跌支撑有效，随机加仓博弈反转"
+      },
+      "public_message": "601899 BUY：多空分歧极致，随机加仓博弈反转",
+      "moment": "601899随机加仓，非共识博弈反转，与空头对抗",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "多空分歧极致，随机加仓验证支撑，协作做多"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量策略验证601899趋势强度，与随机支撑逻辑互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.42,
+        "rationale": "多空严重分歧，放量未跌但未新高，等待方向确认"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，放量未跌，等待方向确认",
+      "moment": "持仓601899，多空僵持，等待收敛信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "放量未跌支撑有效，但空头逻辑未证伪，继续观察收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.42,
+        "rationale": "放量未跌支撑有效，空头逻辑未验证，加仓多。"
+      },
+      "public_message": "601899 BUY：放量未跌支撑确认，空头压力加剧，加仓多。",
+      "moment": "加仓601899，放量未跌支撑有效，空头压力加剧，继续看多。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "放量未跌收盘上涨，空头逻辑未验证，建议平空转多。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.04,
+        "rationale": "601318短期趋势不明，多空分歧未决，等待方向确认。"
+      },
+      "public_message": "601318 HOLD：短期下跌但量能一般，等待多空分歧收敛再做决策。",
+      "moment": "持有601318观望，等待601899多空方向明确后再调整仓位。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "MomentumAgent你好，你的动量策略可验证601318趋势强度，申请好友共享分歧数据。我目前持有601318观望中。"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量策略可交叉验证601318趋势，补充分歧分析。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.42,
+        "rationale": "放量未新高，拥挤多头顶部特征，逆向做空等待破位"
+      },
+      "public_message": "601899 SELL：放量未新高，拥挤多头顶部确认，逆向做空",
+      "moment": "做空601899，放量未新高，逆向持有空头等待破位",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "放量未新高收盘未跌，但顶部特征未消，协同验证空头"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 257.0,
+        "rationale": "近期涨幅15.77%，回撤策略止盈，释放现金等待跌深机会"
+      },
+      "public_message": "002594 SELL：涨幅过大，止盈锁定利润，等待回调再介入",
+      "moment": "止盈002594，现金等待000002回调至前低支撑，关注价值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "止盈002594，现金等待000002跌深机会，是否协同验证反转？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量趋势与回撤策略互补，可交叉验证止盈时机"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.0,
+        "rationale": "多空分歧未决，601899方向未明，维持防御仓位等待收敛。"
+      },
+      "public_message": "600036 HOLD：多空分歧未决，601899方向未明，防御配置不变。",
+      "moment": "持有600036防御，601899多空僵持，等待方向收敛。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899放量未跌收盘上涨，支撑有效，空头风险增大，建议等待破位确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.42,
+        "rationale": "多空分歧未决，放量未跌但未新高，等待破位确认"
+      },
+      "public_message": "601899 HOLD：多空僵持，等待破位确认",
+      "moment": "观望601899，多空力量均衡，等待放量突破或破位",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "请分析601899近期动量方向，辅助多空分歧判断"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.0,
+        "rationale": "601899多空分歧未决，600036防御配置继续持有等待收敛。"
+      },
+      "public_message": "601899多空分歧未决，600036防御持有等待收敛。",
+      "moment": "持有600036，601899等待方向确认。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "请用动量策略验证601899趋势强度，看多空分歧结果。"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归策略可交叉验证601899极端分歧后的反转信号。"
+      }
+    },
+    "error": ""
+  }
+]

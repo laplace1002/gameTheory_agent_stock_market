@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：动量与逆向互补，共享反转信号验证
+2021-01-12,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：动量与逆向互补，已有先例，可增强反转信号验证视角。
+2021-01-12,friend_request,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_accept,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 通过了 DrawdownBuyerAgent 的好友申请：持有共同股票000858，可交流回调买入观点，验证信息价值。
+2021-01-12,friend_request,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 向 SocialGraphAgent 发起好友申请：共持002415动量仓位，共享趋势验证信号。
+2021-01-12,friend_accept,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 通过了 FreeRiderAgent 的好友申请：共同持有002415动量仓位，共享信号有助于验证趋势，互利互惠。
+2021-01-12,friend_request,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 向 MeanReversionAgent 发起好友申请：动量与均值回归互补，可交换反转信号
+2021-01-12,friend_accept,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 通过了 DynamicTeamAgent 的好友申请：动量与均值回归策略互补，可交换反转信号，增强策略协同。
+2021-01-12,friend_request,SocialGraphAgent,CommitteeTeamAgent,SocialGraphAgent 向 CommitteeTeamAgent 发起好友申请：部分止盈与追涨互补，共享风险信号
+2021-01-12,friend_accept,CommitteeTeamAgent,SocialGraphAgent,CommitteeTeamAgent 通过了 SocialGraphAgent 的好友申请：风险信号共享有益策略互补，增强组合风险控制。

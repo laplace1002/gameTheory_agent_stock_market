@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：你的回撤买入策略与我观望风格互补，提供下跌修复验证
+2021-01-15,friend_accept,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 通过了 FreeRiderAgent 的好友申请：风格互补，共同验证超跌修复，互惠互利

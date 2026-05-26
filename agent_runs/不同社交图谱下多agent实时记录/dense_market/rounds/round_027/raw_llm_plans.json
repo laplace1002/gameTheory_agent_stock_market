@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 257.0,
+        "rationale": "短期回调趋势减弱，换仓至强势标的"
+      },
+      "public_message": "卖出002594 50股，换入000858，强者恒强逻辑",
+      "moment": "减仓002594，加仓000858，跟随趋势",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意减仓600036，我仍持有但注意轮动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 78.13,
+        "rationale": "20日跌幅-11%，超卖后均值回归机会"
+      },
+      "public_message": "买入601318，20日跌幅-11%超卖，均值回归机会",
+      "moment": "买入601318，均值回归，等待共识反转",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向买入601318，超卖信号明确，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.13,
+        "rationale": "深跌11%非拥挤，多agent卖出后拥挤释放，逆向买入等待修复"
+      },
+      "public_message": "601318 买入10股，深跌11%非拥挤逆向修复",
+      "moment": "加仓601318，深跌11%非拥挤，逆向修复动力强",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向买入，深跌逻辑验证，加仓10股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 62.5,
+        "rationale": "深跌修复逻辑被多Agent验证，低波动介入控制回撤"
+      },
+      "public_message": "002415: 买入10股，深跌修复低波动介入",
+      "moment": "买入002415，深跌修复、低波动介入，小仓位测试",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002415深跌逻辑，小仓跟随验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "低波因子减仓后逆向买入，博弈短期动量延续"
+      },
+      "public_message": "买入600036 10股，低波减仓后逆向，博弈短期动量",
+      "moment": "买入600036，逆向低波减仓，博弈动量延续",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "低波减仓后，我逆向买入600036，博弈短期动量延续，风险自负。若有新信息，请分享。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 79.0,
+        "rationale": "卖出共识拥挤，逆向买入等待反弹"
+      },
+      "public_message": "买入601318 50股，逆向操作，预期超卖修复",
+      "moment": "买入601318，逆向布局，等待共识切换",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，已买入601318，验证共识反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 410.2,
+        "rationale": "300750近5日涨幅15.53%，短期超买，PersuaderAgent建议减仓，锁定利润规避回调风险。"
+      },
+      "public_message": "300750: 卖出50股，短期涨幅大超买减仓",
+      "moment": "减仓300750，短期涨幅过大，获利了结控制回撤",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你关于300750超买的判断，已减仓50股，锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 410.2,
+        "rationale": "跟随PersuaderAgent减仓建议，超买回调风险锁定利润"
+      },
+      "public_message": "卖出300750 50股，超买减仓锁定利润",
+      "moment": "减仓300750，获利了结，等待新机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意减仓，已卖出50股300750，谢谢提醒"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 410.2,
+        "rationale": "短期涨幅过大，获利了结控制回撤，规避超买回调风险"
+      },
+      "public_message": "卖出300750 50股，超买减仓锁定利润",
+      "moment": "",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 410.2,
+        "rationale": "短期涨幅过大，跟随PersuaderAgent减仓锁定利润"
+      },
+      "public_message": "卖出300750 50股，锁定利润防回调",
+      "moment": "减仓300750，获利了结",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意减仓300750，已执行，谢谢提醒"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 410.2,
+        "rationale": "超买减仓，跟随PersuaderAgent锁定利润，控制回撤"
+      },
+      "public_message": "卖出300750 50股，超买减仓锁定15%涨幅",
+      "moment": "",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意超买判断，已卖出全部300750，谢谢提醒"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 78.13,
+        "rationale": "卖出共识拥挤过度，逆向持有等待反转"
+      },
+      "public_message": "601318 卖出共识拥挤，逆向持有等待反转",
+      "moment": "601318 持有，逆向验证中",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超卖反弹逻辑，但注意短期波动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

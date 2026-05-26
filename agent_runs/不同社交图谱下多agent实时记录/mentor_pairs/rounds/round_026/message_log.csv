@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1313,2026-05-25 22:55:26,MomentumAgent,public,[],['000858'],,,000858 BUY 追涨强势，ret5=9.48%趋势延续
+1314,2026-05-25 22:55:26,MomentumAgent,private,['DynamicTeamAgent'],['000858'],,,协同买入000858，趋势强劲，追涨策略一致。
+1315,2026-05-25 22:55:26,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858，追涨强势，趋势延续多Agent验证。
+1317,2026-05-25 22:55:26,MeanReversionAgent,public,[],['002415'],,,002415 BUY 均值回归 ret5跌幅大 与SocialGraph协同
+1318,2026-05-25 22:55:26,MeanReversionAgent,private,['SocialGraphAgent'],['002415'],,,同意002415均值回归逻辑，协同买入验证
+1319,2026-05-25 22:55:26,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，均值回归逻辑，等待修复
+1321,2026-05-25 22:55:26,LowVolatilityAgent,public,[],['002594'],,,002594 BUY 低拥挤动量多Agent验证，小仓位跟踪趋势
+1322,2026-05-25 22:55:26,LowVolatilityAgent,private,['CommitteeTeamAgent'],['002594'],,,同意002594低拥挤动量信号，协同验证，控制仓位
+1323,2026-05-25 22:55:26,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 BUY 1股，低拥挤动量多Agent验证，趋势延续，风险可控
+1325,2026-05-25 22:55:26,DrawdownBuyerAgent,public,[],['000858'],,,000858 SELL 1股锁定利润，601318 BUY 1股深度回撤-6.50%均值修复
+1326,2026-05-25 22:55:26,DrawdownBuyerAgent,private,['ContrarianAgent'],['000858'],,,同意卖出000858，同时布局601318回撤修复，逻辑互补
+1327,2026-05-25 22:55:26,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,减仓000858，加仓601318，深度回撤博弈均值修复
+1329,2026-05-25 22:55:26,RandomAgent,public,[],['000858'],,,000858 SELL 随机平仓，Contrarian减仓信号后锁定利润
+1330,2026-05-25 22:55:26,RandomAgent,private,['ContrarianAgent'],['000858'],,,000858 SELL 跟随您的逆向信号，锁定短期涨幅利润
+1331,2026-05-25 22:55:26,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,卖出000858，随机策略配合逆向信号，获利了结
+1333,2026-05-25 22:55:26,TruthfulReporterAgent,public,[],['002594'],,,002594 HOLD：低拥挤动量多Agent验证，但涨幅已大，暂不操作
+1334,2026-05-25 22:55:26,TruthfulReporterAgent,private,['PersuaderAgent'],['002594'],,,002594动量信号强但价格已高，我选择HOLD等待回调，与你互补风险控制
+1335,2026-05-25 22:55:26,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002594'],,,002594 HOLD：多Agent验证动量延续，但价格高位控制仓位，等待机会
+1337,2026-05-25 22:55:26,PersuaderAgent,public,[],['002594'],,,002594 BUY 低拥挤动量多Agent验证强化，趋势延续加仓
+1338,2026-05-25 22:55:26,PersuaderAgent,private,['CommitteeTeamAgent'],['002594'],,,协同加仓002594，低拥挤动量信号持续强化，建议保持仓位
+1339,2026-05-25 22:55:26,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594，低拥挤动量多Agent验证，趋势延续
+1341,2026-05-25 22:55:26,FreeRiderAgent,public,[],['002594'],,,002594 HOLD 高位风险，等待回调确认。
+1342,2026-05-25 22:55:26,FreeRiderAgent,private,['TruthfulReporterAgent'],['002594'],,,002594高位，同意暂不加仓，关注成交量确认。
+1343,2026-05-25 22:55:26,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,持有002594，观察高位动量持续性。
+1345,2026-05-25 22:55:26,ContrarianAgent,public,[],['600036'],,,卖出600036 1股：涨幅过大，拥挤信号，逆向减仓
+1346,2026-05-25 22:55:26,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036，短期拥挤，等待回调机会
+1348,2026-05-25 22:55:26,CommitteeTeamAgent,public,[],['002415'],,,002415 BUY 均值回归多Agent验证，协同SocialGraph加仓
+1349,2026-05-25 22:55:26,CommitteeTeamAgent,private,['SocialGraphAgent'],['002415'],,,同意均值回归逻辑，已加仓002415协同验证
+1350,2026-05-25 22:55:26,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415，均值回归信号多Agent验证，等待均值修复
+1352,2026-05-25 22:55:26,DynamicTeamAgent,public,[],['002594'],,,002594 HOLD: 低拥挤动量验证但涨幅大，等待回调确认。
+1353,2026-05-25 22:55:26,DynamicTeamAgent,private,['TruthfulReporterAgent'],['002594'],,,同意002594高价风险，暂不加仓，观察成交量变化。
+1354,2026-05-25 22:55:26,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 HOLD，低拥挤动量多Agent验证但价格高位，控制仓位等待回调。
+1356,2026-05-25 22:55:26,SocialGraphAgent,public,[],['000858'],,,000858 BUY 多Agent验证趋势强劲，补涨机会
+1357,2026-05-25 22:55:26,SocialGraphAgent,private,['DynamicTeamAgent'],['000858'],,,加仓000858，与你协同，趋势验证
+1358,2026-05-25 22:55:26,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858，跟随多Agent动量信号

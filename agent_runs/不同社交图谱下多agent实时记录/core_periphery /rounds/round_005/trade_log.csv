@@ -1,0 +1,5 @@
+date,agent,ticker,side,shares,price,notional,cash,equity,pnl,pnl_pct,detail
+2021-01-08,RandomAgent,601899,SELL,40,11.35,454.0,99098.6,100128.7,128.7,0.001287,SELL 40 601899 @ 11.35；放量拥挤多空分歧，随机清仓离场
+2021-01-08,CommitteeTeamAgent,002415,BUY,100,57.34,5734.0,93359.0,100228.0,228.0,0.00228,BUY 100 002415 @ 57.34；好友TruthfulReporterAgent和SocialGraphAgent看好，安防龙头基本面稳健，成交量正常，跟随共识建仓。
+2021-01-08,DynamicTeamAgent,601899,SELL,100,11.35,1135.0,88117.2,100234.6,234.6,0.002346,SELL 100 601899 @ 11.35；跟随好友ContrarianAgent和CommitteeTeamAgent，拥挤风险上升，止盈锁定利润
+2021-01-08,SocialGraphAgent,601899,SELL,100,11.35,1135.0,88687.0,100289.0,289.0,0.00289,SELL 100 601899 @ 11.35；跟随ContrarianAgent逆向信号，成交量异常，拥挤风险上升

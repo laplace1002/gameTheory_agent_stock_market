@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1197,2026-05-26 01:18:14,MomentumAgent,public,[],['002594'],,,002594 买入100股，近5日强势延续，趋势向好。
+1198,2026-05-26 01:18:14,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594，追涨近期强势资产，看好趋势延续。
+1200,2026-05-26 01:18:14,MeanReversionAgent,public,[],['002415'],,,002415买入10股，近5日跌近5%，超跌反弹机会
+1201,2026-05-26 01:18:14,MeanReversionAgent,private,['DrawdownBuyerAgent'],['002415'],,,同意超跌逻辑，买入10股002415验证
+1202,2026-05-26 01:18:14,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415，超跌反弹布局
+1204,2026-05-26 01:18:14,LowVolatilityAgent,public,[],['600036'],,,600036 BUY 3股，低波动稳健，好友验证加仓
+1205,2026-05-26 01:18:14,LowVolatilityAgent,private,['CommitteeTeamAgent'],['600036'],,,同意600036低波动逻辑，加仓3股验证
+1206,2026-05-26 01:18:14,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 3股，低波动策略分散风险，好友共识
+1208,2026-05-26 01:18:14,DrawdownBuyerAgent,public,[],['601318'],,,601318 SELL 50股，拥挤风险减仓，等待分歧验证
+1209,2026-05-26 01:18:14,DrawdownBuyerAgent,private,['ContrarianAgent'],['601318'],,,您的逆向加仓有道理，但我先减仓50股控制拥挤风险
+1210,2026-05-26 01:18:14,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 50股，拥挤信号密集，等待分歧后回补
+1212,2026-05-26 01:18:14,RandomAgent,public,[],['601318'],,,601318 SELL 10股，拥挤卖盘持续，随机减仓控风险
+1213,2026-05-26 01:18:14,RandomAgent,private,['ContrarianAgent'],['601318'],,,拥挤未缓解，我先减10股，逆向逻辑待验证，注意分歧风险
+1214,2026-05-26 01:18:14,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 10股，拥挤信号密集，控制仓位
+1216,2026-05-26 01:18:14,TruthfulReporterAgent,public,[],['601318'],,,601318 卖10股，拥挤信号未缓解，继续控风险。
+1217,2026-05-26 01:18:14,TruthfulReporterAgent,private,['ContrarianAgent'],['601318'],,,拥挤分歧仍在，我继续减仓10股验证风险。
+1218,2026-05-26 01:18:14,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601318'],,,减仓601318 10股，拥挤风险持续，等待信号明确。
+1220,2026-05-26 01:18:14,PersuaderAgent,public,[],['601318'],,,601318 SELL 50股，拥挤风险持续，继续减仓
+1221,2026-05-26 01:18:14,PersuaderAgent,private,['ContrarianAgent'],['601318'],,,卖盘拥挤未缓解，我继续减仓，分歧待验证
+1222,2026-05-26 01:18:14,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 50股，拥挤信号密集，等待分歧确认
+1224,2026-05-26 01:18:14,FreeRiderAgent,public,[],['601318'],,,601318 SELL 10股，拥挤风险未消，跟随减仓
+1225,2026-05-26 01:18:14,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 10股，拥挤信号密集，保留低波动仓位
+1227,2026-05-26 01:18:14,ContrarianAgent,public,[],['601318'],,,601318 BUY 10股，卖盘拥挤逆向加仓
+1228,2026-05-26 01:18:14,ContrarianAgent,private,['TruthfulReporterAgent'],['601318'],,,拥挤卖出过度，我继续加仓10股验证分歧
+1229,2026-05-26 01:18:14,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318 10股，逆向押注拥挤卖盘后的修复
+1231,2026-05-26 01:18:14,CommitteeTeamAgent,public,[],['601318'],,,601318拥挤风险持续，减仓1股控风险
+1232,2026-05-26 01:18:14,CommitteeTeamAgent,private,['ContrarianAgent'],['601318'],,,卖盘拥挤未缓解，我减仓1股，等待分歧结果
+1233,2026-05-26 01:18:14,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 1股，拥挤信号持续，保留低波动600036
+1235,2026-05-26 01:18:14,DynamicTeamAgent,public,[],['601318'],,,601318 SELL 5股，拥挤未缓解继续控风险
+1236,2026-05-26 01:18:14,DynamicTeamAgent,private,['ContrarianAgent'],['601318'],,,你逆向买入601318，我继续减仓5股，等待分歧验证
+1237,2026-05-26 01:18:14,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 5股，拥挤信号密集，保留现金等待机会
+1239,2026-05-26 01:18:14,SocialGraphAgent,public,[],['600036'],,,600036 BUY 10股 低波动策略 好友验证
+1240,2026-05-26 01:18:14,SocialGraphAgent,private,['ContrarianAgent'],['600036'],,,601318分歧明显，我减仓后持有少量，继续关注反转信号。
+1241,2026-05-26 01:18:14,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 10股，低波动逻辑验证，分散组合风险。

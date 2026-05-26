@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 319.76,
+        "rationale": "持仓超跌反弹标的分散，等待000002超卖确认信号"
+      },
+      "public_message": "000002卖出拥挤但超跌深度不足，暂持现金等待更明确均值回归催化剂",
+      "moment": "观望000002与601899超跌反弹概率，避免追高002415拥挤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超卖评估？我愿交换300750反弹深度数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 249.0,
+        "rationale": "减持趋势转弱标的，释放资金"
+      },
+      "public_message": "买入000858追涨强势，减持002594。",
+      "moment": "调仓追涨000858，控制弱势暴露。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858强势延续确认？愿交换趋势强度评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.64,
+        "rationale": "当前组合风险预算适中，002415和600036配置合理，无明确加减仓信号，现金充裕等待更确定机会。"
+      },
+      "public_message": "002415回调中，维持仓位，现金等待非共识机会。",
+      "moment": "维持仓位，现金占比高，观望000002与300750博弈。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超跌共识卖出拥挤已极致，愿交换反转概率评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 9.8,
+        "rationale": "深度回撤-13.66%，博弈超跌修复"
+      },
+      "public_message": "买入601899 20股，深度回撤-13.66%博弈修复。",
+      "moment": "加仓601899博弈深跌反弹，控制组合拥挤。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899深度回撤-13.66%，逆向逻辑是否可行？愿交换评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.88,
+        "rationale": "多个Agent卖出000002形成拥挤，降低风险"
+      },
+      "public_message": "卖出000002 10股，超跌共识卖出拥挤加剧，控制风险",
+      "moment": "卖出000002 10股降低拥挤风险，持有002415和600036观望",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415反转概率如何？愿交换000002超跌深度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.88,
+        "rationale": "逆向博弈000002超跌共识拥挤，实际近5日+3.92%非超跌，市场认知偏差"
+      },
+      "public_message": "买入000002 10股，逆向博弈超跌共识拥挤",
+      "moment": "补买入000002，博弈共识错误，持有现金仍有弹药",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超跌共识可能过度，愿交换反转概率评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.0,
+        "rationale": "跟随多数Agent减仓000002，控制超跌共识拥挤风险"
+      },
+      "public_message": "卖出000002 20股，跟随减仓信号控制拥挤风险",
+      "moment": "减仓000002控制拥挤，持有002415等待强势回调验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超跌共识极致但卖出拥挤，你逆向持仓风险如何？愿交换评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.88,
+        "rationale": "降低超跌共识拥挤风险"
+      },
+      "public_message": "卖出000002 10股，降低超跌共识拥挤风险。",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002卖压仍大，我减仓控风险。你逆向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.64,
+        "rationale": "002415多人买入形成新拥挤，需观察反转强度，暂持现金等待非共识机会。"
+      },
+      "public_message": "HOLD 002415，等待确认强势回调强度，避免追高拥挤。",
+      "moment": "持有002415和000333，观察002415多空博弈，等待更确定信号。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002415反转概率中等，拥挤度上升，愿交换回撤深度评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.88,
+        "rationale": "卖出拥挤已极致，逆向持有等待均值回归"
+      },
+      "public_message": "000002 HOLD：卖出拥挤已极致，逆向等待反转，不跟风",
+      "moment": "000002持仓不动，逆向博弈：卖出拥挤已极致，等待反转催化剂",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "300750反弹共识是否过度？愿交换超跌深度评估"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.88,
+        "rationale": "降低超跌共识拥挤风险，多Agent减仓信号"
+      },
+      "public_message": "卖出000002 10股，降低超跌共识拥挤风险",
+      "moment": "卖出000002控拥挤，持有600036和300750等待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率观点？我减仓控拥挤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.88,
+        "rationale": "当前持仓分散，现金充裕，000002超跌共识拥挤已释放，等待更明确信号"
+      },
+      "public_message": "HOLD 当前仓位，000002观望，300750和600036维持，等待非共识机会。",
+      "moment": "持仓000002/300750/600036，现金为主，等待非共识信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超跌共识是否已到极致？愿交换反转概率评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

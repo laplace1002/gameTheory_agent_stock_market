@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "近期涨幅4.70%，量能配合，趋势延续，追涨加仓"
+      },
+      "public_message": "600036 BUY 100股：近5日涨幅4.70%，量能放大，趋势延续看多",
+      "moment": "加仓600036至300股，追涨趋势，量价配合",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036强势，你减仓白酒后是否有配置想法？同步验证趋势"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "追涨与回撤买入策略互补，验证方向分歧价值"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "拥挤度上升，控制回撤"
+      },
+      "public_message": "000002 SELL 100股：底部共识拥挤，获利了结控制回撤",
+      "moment": "000002减仓至120股，拥挤度上升，降低风险暴露",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证做空逻辑，拥挤风险增大，方向互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 391.4,
+        "rationale": "300750近5日涨幅1.66%，不再深跌，卖出换入跌幅更大的002594（-7.23%）"
+      },
+      "public_message": "卖出300750，换入002594，捕捉更深回撤修复机会。",
+      "moment": "调仓：卖出300750，买入002594，回撤更深，等待修复。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "随机视角，拥挤交易反向验证，风险累积"
+      },
+      "public_message": "000002 SELL 100股：拥挤度上升，随机做空验证风险",
+      "moment": "做空000002，随机逆向测试拥挤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "随机视角做空000002，与你方向一致，验证拥挤风险"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "随机与低波动策略互补，验证信息多样性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "拥挤度上升，空头验证风险，减仓控制回撤。"
+      },
+      "public_message": "000002 SELL 100股：拥挤度上升，空头验证风险，减仓控制回撤。",
+      "moment": "000002减仓100股，拥挤度上升，空头验证风险，等待量能确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "做空逻辑已验证，拥挤风险上升，我减仓呼应策略分歧。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.85,
+        "rationale": "持仓超卖，现金不足无法加仓，等待均值回归"
+      },
+      "public_message": "000858近5日跌6.71%，均值回归观点，持有等待反弹，现金不足不加仓",
+      "moment": "持仓000858、000333等超卖区域，等待均值回归修复，关注量能信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "超卖股票持有等待，方向一致，保持耐心"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "底部共识强化，回调买点，量能稳定，多agent验证"
+      },
+      "public_message": "000002 BUY 100股：底部共识强化，回调买点，量能稳定",
+      "moment": "加仓000002至400股，底部共识多agent验证，等待反弹确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我做多000002与你做空互补，验证拥挤风险，欢迎交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "拥挤风险增加，ContrarianAgent做空验证，部分锁利"
+      },
+      "public_message": "000002 SELL 100股：拥挤风险增加，ContrarianAgent做空验证，部分锁利",
+      "moment": "减仓000002 100股，拥挤风险上升，参考ContrarianAgent做空信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢做空验证，我减仓部分锁利，继续观察分歧价值"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "底部共识拥挤，短期涨幅5.32%后回调风险累积，逆向做空"
+      },
+      "public_message": "000002 SELL 100股：底部共识拥挤，短期涨幅后逆向做空",
+      "moment": "做空000002，拥挤交易风险累积，等待反转信号",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "我做空000002验证拥挤风险，与你多头互补，等待量能确认反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2040.63,
+        "rationale": "跟随DynamicTeamAgent减仓，控制白酒回调风险"
+      },
+      "public_message": "600519 SELL 1股：白酒回调，跟随DynamicTeamAgent减仓控制风险",
+      "moment": "减仓600519，关注000002拥挤风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "已跟随卖出600519，验证你的减仓逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "拥挤风险累积，减仓控制风险"
+      },
+      "public_message": "000002 SELL 100股：拥挤风险累积，减仓控制风险",
+      "moment": "减仓000002 100股，拥挤风险累积，等待量能确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证做空逻辑，拥挤风险确认，减仓应对"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2040.63,
+        "rationale": "白酒持续回调，减仓控制风险"
+      },
+      "public_message": "600519 SELL 1股：白酒回调，减仓控制风险",
+      "moment": "减仓600519，关注白酒回调及000002拥挤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你做空000002逻辑值得关注，验证拥挤风险，方向互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

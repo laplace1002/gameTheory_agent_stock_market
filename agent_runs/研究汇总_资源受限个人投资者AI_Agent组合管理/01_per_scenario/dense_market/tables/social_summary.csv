@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+dense_market,50,2304,1703,498,102,0,0,0,600,545,558,66,132,-291.3466666666668,PersuaderAgent,7116.13

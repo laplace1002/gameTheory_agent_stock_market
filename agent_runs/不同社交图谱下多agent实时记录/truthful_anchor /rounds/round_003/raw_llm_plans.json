@@ -1,0 +1,269 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常持续，多Agent买入验证，动量形成，加仓追涨"
+      },
+      "public_message": "601899加仓，成交量异常多方验证，趋势加速",
+      "moment": "加仓601899，成交量信号强，跟随资金流入",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "认同你的判断，601899动量正在形成，继续持有"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "同持300750，可互补量价信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.74,
+        "rationale": "首日无历史涨跌，无均值回归机会，等待过度反应信号"
+      },
+      "public_message": "601899放量上涨，均值回归者暂不追涨，等待回调验证支撑",
+      "moment": "记录：601899首日放量但无历史回撤，均值回归策略需耐心，等待抛售机会",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899量能异常，但首日涨幅过大，我倾向等回调再介入，继续观察"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "同属逆向策略，互补验证均值回归信号，提升决策质量"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常且多agent验证，短期资金推动，符合回撤买入信号"
+      },
+      "public_message": "BUY 601899 基于成交量异常及多agent验证，短期资金推动",
+      "moment": "今日买入601899，成交量异常居首，多agent买入验证，短期资金推动，等待趋势确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你买入601899基于成交量异常，后续如何观察持续性？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "同仓601899，互补验证成交量信号，提升决策准确性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常居首，TruthfulReporter与Persuader买入验证，小仓位跟随动量，风险可控"
+      },
+      "public_message": "601899 买入 100 股，成交量异常叠加多agent验证，短期动量信号强",
+      "moment": "观察601899成交量异常，多agent买入，低波动小仓位参与，关注回撤控制",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你买入601899基于成交量，后续量价走势如何？我小仓跟随，需确认持续性"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "你关注601899动量，我重视波动控制，互补验证风险，提升决策质量"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常信号被多Agent验证，随机视角下跟随资金流，设止损10.0"
+      },
+      "public_message": "BUY 601899 100股，多Agent验证成交量异常，短期动量可能延续",
+      "moment": "今日买入601899，成交量异常信号强烈，随机策略下跟多，止损设10.0",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你担忧动量衰竭，我买入601899试错，可交流分歧点"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "分歧交流：成交量信号的持续性验证，互补风险判断"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "成交量异常信号强但仅首日，持仓验证持续性"
+      },
+      "public_message": "601899成交量仍居首位，但需持续观察，当前持仓验证信号。",
+      "moment": "601899首日成交量异常获多方验证，暂持等待确认趋势。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899成交量异常持续，与你的000002低估值配置可互补，建议保持关注。"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "共同关注成交量异常，可互补验证资金流信号，提升决策质量。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量持续异常居首，多agent买入验证，动量延续"
+      },
+      "public_message": "加仓601899，成交量持续异常，资金流入确认",
+      "moment": "601899成交量继续领先，加仓100股，等待趋势加速",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "601899动量信号强化，建议关注加仓机会"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "关注601899成交量异常，你的逆向视角可互补验证风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常信号强，多agent买入验证，短期动量。"
+      },
+      "public_message": "买入601899，成交量异常验证，多agent同步，短期看多。",
+      "moment": "记录：601899成交量持续异常，买入100股，跟随资金流。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已跟进买入601899，验证成交量信号，后续互助。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "拥挤交易风险累积，等待逆向信号充足"
+      },
+      "public_message": "601899追涨风险高，注意动量衰竭，保持观望",
+      "moment": "记录：601899异常放量引发多方买入，逆向等待拥挤瓦解",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899短期动量但拥挤度上升，反转可能性加大，暂不跟进"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "逆向与动量分歧，可互补验证交易信号，降低盲区"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "已有100股，多方买入验证但需等待成交量持续性确认，避免追高风险。"
+      },
+      "public_message": "HOLD 601899，成交量异常信号需持续验证。",
+      "moment": "今日持仓601899和000002，关注601899成交量异常持续性。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "对601899后续量价趋势有何判断？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常被多方验证，跟随信号买入"
+      },
+      "public_message": "买入601899，成交量异常持续，多agent验证，跟随资金流入。",
+      "moment": "今日买入601899，基于成交量异常与多方买入验证，持仓等待趋势确认。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "确认601899成交量异常信号，已买入100股跟进，后续协作验证趋势。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你关注成交量信号，我跟踪量价趋势，互补可提升决策准确性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "多节点买入验证成交量异常，信息传播路径明确，跟进"
+      },
+      "public_message": "买入601899，多agent验证成交量异常，跟传播信号",
+      "moment": "记录：601899被多agent买入，信息扩散验证，加仓跟进",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你同时持有601899和000002，如何评估两者风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

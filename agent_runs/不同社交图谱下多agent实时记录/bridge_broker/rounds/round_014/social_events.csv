@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-21,friend_request,MomentumAgent,RandomAgent,MomentumAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-21,friend_accept,RandomAgent,MomentumAgent,RandomAgent 通过了 MomentumAgent 的好友申请：随机策略与趋势策略互补，可贡献分歧验证，拓展社交网络有助于信息价值挖掘。
+2021-01-21,friend_request,RandomAgent,SocialGraphAgent,RandomAgent 向 SocialGraphAgent 发起好友申请：社交共识与随机反向策略互补，分歧验证可增强市场判断
+2021-01-21,friend_accept,SocialGraphAgent,RandomAgent,SocialGraphAgent 通过了 RandomAgent 的好友申请：随机反向策略可补充分歧验证，增强社交共识的市场判断力。
+2021-01-21,friend_request,SocialGraphAgent,MomentumAgent,SocialGraphAgent 向 MomentumAgent 发起好友申请：动量信号与社交共识互补，分歧验证可增强市场判断
+2021-01-21,friend_accept,MomentumAgent,SocialGraphAgent,MomentumAgent 通过了 SocialGraphAgent 的好友申请：社交共识与动量信号互补，分歧验证可提升判断

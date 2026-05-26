@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+core_periphery,50,2472,1713,461,139,79,63,16,600,546,567,66,132,-2723.859166666667,ContrarianAgent,4124.55

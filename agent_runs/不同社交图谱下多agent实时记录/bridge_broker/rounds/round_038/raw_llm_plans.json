@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.5,
+        "rationale": "近5日涨幅11.70%，趋势强劲，追涨加仓。"
+      },
+      "public_message": "000002 BUY：近5日涨幅11.7%，趋势延续加仓。",
+      "moment": "000002加仓，趋势强劲，继续持有。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 349.63,
+        "rationale": "深跌后多Agent聚焦修复，但控制风险，仅1股验证"
+      },
+      "public_message": "300750深跌修复共识强，按风险预算少量加仓验证",
+      "moment": "300750深跌修复，低仓验证，控制回撤",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意深跌修复逻辑，但低波动需控制仓位，验证1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 209.75,
+        "rationale": "002594 ret20深跌-18.39%后ret5止跌横盘，均值回归信号，未引发共识拥挤，低位布局反弹"
+      },
+      "public_message": "002594 BUY：深跌-18.4%后止跌横盘，均值回归机会，低买等待修复。",
+      "moment": "002594深跌-18.4%后止跌，均值回归逻辑，买入50股验证反弹。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 12.32,
+        "rationale": "深跌5.95%后中期趋势仍强（ret20+18.23%），多Agent共识买入，回撤修复验证。现金充足，加仓100股。"
+      },
+      "public_message": "601899 BUY：深跌5.95%中期趋势强，回撤修复验证",
+      "moment": "601899 BUY 100：深跌后中期趋势支撑，等待修复",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意601899深跌修复逻辑，加仓100股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 12.32,
+        "rationale": "深跌后多Agent共识修复，中期趋势强，跟随回撤买入逻辑。"
+      },
+      "public_message": "601899 BUY：深跌15%后中期趋势强，多Agent修复共识，买入验证。",
+      "moment": "601899 BUY：深跌修复逻辑，等待趋势延续。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意601899深跌修复逻辑，中期趋势支撑，已买入验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 12.32,
+        "rationale": "短期回调未结束，高位锁定利润，观察分歧"
+      },
+      "public_message": "601899 SELL 100股：短期回调未结束，高位锁定利润，观察分歧",
+      "moment": "601899 SELL 100，短期回调未结束，高位锁定利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899短期回调可能持续，我卖100锁定，买入601318逆向可关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 349.63,
+        "rationale": "深跌修复逻辑，多Agent共识买入，验证跟随"
+      },
+      "public_message": "300750 BUY：深跌后多Agent分歧修复，跟进验证",
+      "moment": "300750 BUY：深跌修复共识，等待趋势确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意300750深跌修复逻辑，已买入100股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 12.32,
+        "rationale": "深跌后中期趋势强，多Agent修复共识，跟随买入"
+      },
+      "public_message": "601899 BUY：深跌后中期趋势强，多Agent修复共识，跟随买入",
+      "moment": "601899 BUY：深跌修复共识，多Agent验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意601899深跌修复逻辑，跟随买入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 285.3,
+        "rationale": "000858短期弱势且无修复信号，减仓换入601899深跌修复机会。"
+      },
+      "public_message": "000858 SELL 50股：弱势置换，601899深跌中期趋势强，多Agent共识买入。",
+      "moment": "000858 SELL -> 601899 BUY: 深跌修复逻辑，跟随共识分散。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "我卖出000858换入601899，深跌15%后中期趋势强劲，共识形成中。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 86.75,
+        "rationale": "共识卖出过度，逆向加仓博弈修复"
+      },
+      "public_message": "601318 BUY：共识卖出过度逆向加仓",
+      "moment": "601318共识卖出过度，逆向加仓100股等待修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你卖出601318是跟着共识，我逆向买入，认为卖出过度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 33.5,
+        "rationale": "ContrarianAgent卖出000002获利了结，反弹拥挤，锁定利润"
+      },
+      "public_message": "000002 SELL 50股锁定利润，300750深跌修复共识强，考虑加仓",
+      "moment": "000002 SELL锁利，300750深跌修复多Agent买入，等待共识收敛",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的000002锁利逻辑，我跟随卖出50股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 349.63,
+        "rationale": "深跌修复逻辑获多Agent验证，共识增强，加仓跟进"
+      },
+      "public_message": "300750 BUY 加仓：深跌修复共识增强，加仓100股",
+      "moment": "300750 BUY：深跌修复逻辑多Agent验证，加仓等待修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意300750深跌修复逻辑，加仓100股跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

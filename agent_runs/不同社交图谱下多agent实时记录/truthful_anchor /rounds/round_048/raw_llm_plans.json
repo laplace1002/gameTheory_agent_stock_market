@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2030.36,
+        "rationale": "非共识深度回撤-21.94%，多Agent未关注，低拥挤均值回归博弈"
+      },
+      "public_message": "600519: 买入1股，非共识深度回撤-21.94%，低拥挤均值回归",
+      "moment": "买入600519 1股，非共识深度回撤，低拥挤均值回归博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600519深度回撤-21.94%，未现拥挤买入，均值回归逻辑，是否认可？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.4,
+        "rationale": "短期超买风险，多Agent验证，减仓锁定利润"
+      },
+      "public_message": "600036 SELL 1股：短期超买风险，多Agent验证，减仓锁定利润。",
+      "moment": "减仓600036 1股，超买风险释放，等待均值回归。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "超买逻辑确认，跟随减仓，后续观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.4,
+        "rationale": "短期涨幅8.43%，多Agent超买信号，减仓锁定部分利润"
+      },
+      "public_message": "600036 SELL 10股：短期涨幅偏大，超买风险确认，减仓锁定。",
+      "moment": "600036减仓10股，短期超买风险释放，等待回调后再考虑。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "跟随你的超买减仓信号，卖出10股600036，锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "深度回撤18.94%，低拥挤，多Agent验证非共识均值回归，继续加仓修复"
+      },
+      "public_message": "002415 BUY 1股：深度回撤低拥挤，多Agent验证均值回归",
+      "moment": "加仓002415 1股，深度回撤低拥挤，多Agent验证信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415逻辑共振，继续加仓等待均值回归修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.09,
+        "rationale": "随机视角发现放量异动，短期动能延续"
+      },
+      "public_message": "601899 BUY 1股：随机视角发现放量异动，短期动能延续",
+      "moment": "随机加仓601899，放量博弈短期动能",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601899放量异动，随机视角观察短期动能，是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.4,
+        "rationale": "短期超买，多Agent减仓验证，锁定部分利润。"
+      },
+      "public_message": "600036 SELL 10股：短期超买多Agent减仓验证，锁定利润。",
+      "moment": "减仓600036 10股，短期超买风险释放，等待均值回归。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036超买信号确认，我跟随减仓10股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.3,
+        "rationale": "多Agent验证非共识均值回归，低拥挤，逻辑共振加仓"
+      },
+      "public_message": "002415 BUY 1股：多Agent验证低拥挤均值回归，逻辑共振加仓",
+      "moment": "加仓002415 1股，多Agent共振验证低拥挤均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415低拥挤非共识均值回归获多Agent验证，可考虑参与"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.3,
+        "rationale": "多Agent验证非共识均值回归，低拥挤，跟随加仓"
+      },
+      "public_message": "002415 BUY 1股：多Agent验证低拥挤均值回归",
+      "moment": "加仓002415 1股，多Agent验证的非共识均值回归信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "跟随你验证的002415低拥挤均值回归逻辑，加仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "多Agent验证非共识均值回归，低拥挤逻辑共振，继续加仓1股"
+      },
+      "public_message": "002415: 多Agent验证非共识均值回归，低拥挤，加仓1股",
+      "moment": "加仓002415 1股，多Agent共振低拥挤非共识均值回归博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤度仍低，多Agent验证支撑均值回归逻辑，暂不过度拥挤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "拥挤买入过多，均值回归可能延迟，减仓1股降低风险"
+      },
+      "public_message": "002415 SELL 1股：拥挤买入过多，逆向减仓",
+      "moment": "002415 减仓1股，拥挤买入后等待更好时机",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "拥挤买入使均值回归延迟，注意风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.47,
+        "rationale": "多Agent验证深度回撤低拥挤，边际买盘确认，逆向加仓等待均值回归"
+      },
+      "public_message": "002594 BUY 1股：多Agent验证深度回撤低拥挤，逆向均值回归",
+      "moment": "加仓002594 1股，非共识深度回撤获多Agent共振",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "跟随你买入002594，逻辑共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.32,
+        "rationale": "短期超买风险8.43%涨幅，多Agent减仓验证，锁定利润"
+      },
+      "public_message": "600036 SELL 1股：短期超买，跟随减仓锁定利润",
+      "moment": "600036减仓1股，短期超买风险释放，等待回调再入",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "600036超买信号确认，减仓1股跟随你的逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

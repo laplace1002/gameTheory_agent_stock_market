@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.97,
+        "rationale": "近期强势，ret5=5.18%且成交量巨大，追涨趋势延续"
+      },
+      "public_message": "601899 BUY 100股，追涨强势矿股，趋势延续确认",
+      "moment": "",
+      "private_message": null,
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "追涨与超跌反弹策略互补，验证趋势强度"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "均值回归未完成，但超跌反弹拥挤需警惕，继续持有观察"
+      },
+      "public_message": "000858 HOLD：均值回归未完，超跌反弹拥挤渐起，暂不加仓。",
+      "moment": "000858和601899持仓观望，超跌反弹拥挤，均值回归待确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险判断，目前持有000858和601899，等待更明确信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "现金不足且持仓深跌未修复，等待社交信号进一步确认。"
+      },
+      "public_message": "HOLD 000858和300750，超跌修复中，等待信号验证。",
+      "moment": "持000858和300750，社交信号增强但现金耗尽，观望。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意超跌反弹逻辑，我已满仓，共同等待修复。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "策略一致，超跌反弹逻辑互补，可验证信号可靠性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "控制回撤，等待超跌修复信号进一步确认"
+      },
+      "public_message": "000858 HOLD：超跌反弹信号待确认，控制回撤",
+      "moment": "000858持仓等待短期均线修复，避免拥挤追涨",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "感谢加仓信号，但低波动策略先行观望，待修复确认"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向策略可验证拥挤风险，低波动互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.1,
+        "rationale": "当前持仓000002趋势稳健，超跌股社交信号拥挤但未见明确止跌放量，继续观望。"
+      },
+      "public_message": "000002 HOLD：趋势稳健，超跌股拥挤需谨慎，等待量能确认。",
+      "moment": "000002持仓观望，超跌股社交信号混杂，避免拥挤交易。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意持有000002，超跌反弹信号分歧，暂不参与。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 391.4,
+        "rationale": "超跌反弹已部分实现，随机止盈，避免拥挤"
+      },
+      "public_message": "300750 卖出5股，随机止盈，超跌拥挤信号。",
+      "moment": "300750随机止盈5股，预防超跌拥挤。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858加仓注意拥挤，我已部分止盈300750。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 235.52,
+        "rationale": "回调未确认，超跌拥挤风险增加，等待量能验证。"
+      },
+      "public_message": "002594 HOLD：回调未确认，超跌拥挤风险增加，等待量能验证。",
+      "moment": "002594持仓等待，超跌拥挤需警惕，不追高。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你关于超跌拥挤的判断，我保持002594持仓谨慎观望。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 391.3,
+        "rationale": "跟随DynamicTeamAgent止盈信号，降低超跌拥挤风险，保护利润。"
+      },
+      "public_message": "300750 SELL 5股，跟随止盈信号，控制超跌反弹拥挤风险。",
+      "moment": "卖出300750 5股，止盈跟随，规避超跌拥挤风险。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的300750止盈判断，已跟进减仓，感谢信号。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "超跌反弹策略分歧，验证信号持续性，互补风险控制。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.44,
+        "rationale": "逆向交易，超跌反弹拥挤后，买入被冷落的金融蓝筹，等待均值回归"
+      },
+      "public_message": "601318 BUY：逆向买入，避开超跌拥挤，金融蓝筹估值安全。",
+      "moment": "买入601318，逆向操作，等待价值回归。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "超跌反弹信号仍强，但拥挤度上升，暂持观察未到止盈反转点"
+      },
+      "public_message": "000858 HOLD：超跌逻辑未破，但拥挤需警惕，继续持有。",
+      "moment": "000858/000002持仓中，超跌反弹逻辑验证，留意拥挤风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "超跌拥挤风险认可，但反弹量能未衰竭，暂持等待信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.1,
+        "rationale": "趋势稳健，社交超跌逻辑尚待确认，持仓观望"
+      },
+      "public_message": "000002 HOLD：趋势稳健，超跌股社交信号分散，等待拥挤度缓解",
+      "moment": "持000002和000858，超跌反弹逻辑验证中但拥挤度上升，保持谨慎",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 296.95,
+        "rationale": "超跌反弹社交信号强，跟进验证"
+      },
+      "public_message": "000858 BUY 10股，超跌反弹信号强",
+      "moment": "买入000858 10股，",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌反弹，已买入000858，共同等待修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

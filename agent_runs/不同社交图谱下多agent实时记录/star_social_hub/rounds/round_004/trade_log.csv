@@ -1,0 +1,4 @@
+date,agent,ticker,side,shares,price,notional,cash,equity,pnl,pnl_pct,detail
+2021-01-07,MeanReversionAgent,601899,BUY,100,11.18,1118.0,98882.0,100000.0,0.0,0.0,BUY 100 601899 @ 11.18；巨量滞涨后均值回归反弹预期
+2021-01-07,RandomAgent,002415,BUY,1,58.29,58.29,99987.71,100046.0,46.0,0.00046,BUY 1 002415 @ 58.29；放量滞涨随机信号，博弈非共识反转
+2021-01-07,FreeRiderAgent,002415,BUY,100,58.29,5829.0,92174.0,100143.0,143.0,0.00143,BUY 100 002415 @ 58.29；跟随TruthfulReporterAgent放量信号，验证流动性持续性

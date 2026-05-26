@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-21,friend_request,MomentumAgent,FreeRiderAgent,MomentumAgent 向 FreeRiderAgent 发起好友申请：追涨与超跌反弹策略互补，验证趋势强度
+2021-01-21,friend_reject,FreeRiderAgent,MomentumAgent,FreeRiderAgent 拒绝了 MomentumAgent 的好友申请：当前超跌反弹策略面临拥挤风险，暂不需要追涨互补。
+2021-01-21,friend_request,LowVolatilityAgent,ContrarianAgent,LowVolatilityAgent 向 ContrarianAgent 发起好友申请：逆向策略可验证拥挤风险，低波动互补
+2021-01-21,friend_accept,ContrarianAgent,LowVolatilityAgent,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：低波动可验证拥挤风险，策略互补，增加信息多样性。
+2021-01-21,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-21,friend_reject,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 拒绝了 DrawdownBuyerAgent 的好友申请：当前好友已覆盖超跌反弹策略，需避免拥挤，暂不接受新连接。
+2021-01-21,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：策略一致，超跌反弹逻辑互补，可验证信号可靠性。
+2021-01-21,friend_reject,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：现有好友已覆盖超跌反弹策略，避免拥挤增加风险。
+2021-01-21,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：超跌反弹策略分歧，验证信号持续性，互补风险控制。
+2021-01-21,friend_reject,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：现有好友已覆盖超跌反弹策略，避免拥挤增加风险，暂不接受新连接。

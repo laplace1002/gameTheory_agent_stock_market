@@ -1,0 +1,266 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 390.0,
+        "rationale": "300750 ret5=-3.49%短期超卖，均值回归预期反弹"
+      },
+      "public_message": "BUY 300750 均值回归，短期超卖反弹机会",
+      "moment": "买入300750，利用短期回调，等待均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你持有600036逆向逻辑，我关注300750超跌反弹，可交换信号验证"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "均值回归与自由观察互补，共享反转信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 390.0,
+        "rationale": "近5日跌幅3.49%，动量转弱，止损换仓至强势股。"
+      },
+      "public_message": "卖出300750，近5日-3.49%，动量衰竭。",
+      "moment": "卖出300750，换仓至002415。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750动量转弱，我已卖出，关注002415趋势。"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "动量与低波动策略互补，可共同验证趋势稳定性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 390.0,
+        "rationale": "近5日回撤3.49%，估值合理，价值修复预期"
+      },
+      "public_message": "300750 BUY：近5日回撤3.49%，价值修复机会",
+      "moment": "关注300750回调，逢低布局修复行情",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "300750近5日回撤明显，均值回归信号，是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.67,
+        "rationale": "收盘价10.67，涨幅6.27%，但量异常大，随机止盈，换仓至动量最强002415"
+      },
+      "public_message": "SELL 601899：随机止盈，换仓002415，动量延续性待验证",
+      "moment": "随机止盈601899，买入002415试错",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "我有000858消费，你持有新能源002594，可交换板块轮动信号，互补信息"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "消费与新能源持仓互补，共享轮动信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 59.0,
+        "rationale": "ret20为零，无趋势信号，维持现金观望"
+      },
+      "public_message": "002415 HOLD：全市场ret20为零，无有效趋势，继续观望",
+      "moment": "持仓现金，等待数据积累",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "首日ret5分化但ret20为零，等待数据积累确认方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2099.73,
+        "rationale": "低波动策略维持现有仓位，等待波动率信号"
+      },
+      "public_message": "600519 HOLD：低波动策略维持现有仓位，等待波动率信号",
+      "moment": "持有600519，低波动等待数据积累",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "银行板块短期涨幅较大，你如何评估回撤风险？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "低波动与动量信号互补，共同验证趋势与风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 234.86,
+        "rationale": "002594 ret5=13.59%，新能源长期逻辑叠加近期动量，加仓1股增强盈利弹性。"
+      },
+      "public_message": "002594 ret5 13.59% 新能源动量强劲，加仓1股验证趋势延续。",
+      "moment": "加仓002594至2股，新能源动量信号明确，等待数据进一步确认。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594 ret5 13.59%，动量明显，是否已确认趋势？可联合验证板块轮动。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 390.0,
+        "rationale": "逆向买入近期唯一负收益标的，博弈反弹"
+      },
+      "public_message": "BUY 300750 逆向抄底负收益标的",
+      "moment": "卖出600036，买入300750，逆向调仓应对市场情绪转换。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "银行板块短期上涨拥挤，我已减仓，关注新能源回调机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 59.0,
+        "rationale": "002415 ret5=18.47%涨幅过大，部分止盈锁定利润，保留仓位观察趋势"
+      },
+      "public_message": "002415 部分止盈，涨幅过大锁定利润",
+      "moment": "002415部分止盈，等待回踩加仓机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415涨幅大我部分止盈，银行板块600036你如何看？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "消费新能源与地产科技互补，共享板块轮动信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "5日涨幅18.47%，动量显著，预期趋势延续"
+      },
+      "public_message": "BUY 002415: 5日涨幅18.47%，追涨动量信号",
+      "moment": "买入002415，跟随动量，等待数据验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002415 5日涨幅18%，你关注科技吗？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 2,
+        "price": 2099.73,
+        "rationale": "5日动量5.14%弱于002415等，换仓至强势股"
+      },
+      "public_message": "卖出600519，买入002415，基于5日动量领先18.47%",
+      "moment": "卖出600519，买入002415，捕捉短期动量，等待后续验证",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "已卖出600519换入002415，验证动量信号，可交流板块轮动"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "动量与逆向互补，可交换风险信号，验证反转时机"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "002415 ret5=18.47%强势动量，分散持仓，预期延续"
+      },
+      "public_message": "BUY 002415 强势动量信号，ret5=18.47%",
+      "moment": "买入002415，跟随动量，分散000002持仓。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002415 ret5=18.47%，动量是否可持续？交换观察信号。"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "动态团队协同趋势验证，共享动量信号与调仓信息。"
+      }
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 12.08,
+        "rationale": "20日涨幅13%趋势强劲，追涨加仓"
+      },
+      "public_message": "601899 BUY 20股: 5日涨幅15%动能强劲，追涨",
+      "moment": "加仓601899 20股，趋势延续信号明确",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 412.66,
+        "rationale": "短期涨幅大，多Agent减仓，锁定利润；601318超跌反弹机会"
+      },
+      "public_message": "300750 SELL 10股高位止盈；601318 BUY 10股超跌反弹。",
+      "moment": "减仓300750锁定利润，加仓601318博均值回归。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "也看好超跌反弹，买入601318逆向布局，与你600036思路互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "涨幅已大，多Agent分歧加剧，减仓锁定利润，控制回撤。"
+      },
+      "public_message": "600036 SELL 10股：涨幅已大，分歧加剧，减仓锁定利润控制回撤。",
+      "moment": "减仓600036 10股，高位止盈，等待回调再补。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你减仓600036逻辑，我继续卖出10股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.25,
+        "rationale": "20日回撤-9.47%但已反弹3.54%，等待二次回踩确认再介入"
+      },
+      "public_message": "601318 HOLD：20日回撤-9.47%但已反弹，等待二次回踩确认",
+      "moment": "601318持仓观望，等待更佳回撤买点",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "601318回撤后反弹，需确认支撑，暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 12.08,
+        "rationale": "非共识买入，涨幅大但成交量异常，博弈延续"
+      },
+      "public_message": "601899 BUY 10股：短期涨幅大但成交量异常，非共识博弈延续。",
+      "moment": "601899买入10股，高成交非共识布局。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "与你类似，我买601899博弈高成交量延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 107.11,
+        "rationale": "多Agent协同买入，短期趋势强劲，超跌共识验证。"
+      },
+      "public_message": "000333 BUY 10股：多Agent协同买入，短期趋势强劲，超跌共识验证。",
+      "moment": "加仓000333 10股，超跌共识协同，等待进一步上涨。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的000333超跌逻辑，我加仓10股协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 12.08,
+        "rationale": "近5日涨幅15.16%，成交放量，多Agent对涨幅分歧，减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10股：高位放量，多Agent分歧，减仓止盈",
+      "moment": "减仓601899 10股，涨幅过大，锁定利润。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333超跌逻辑验证，但我已重仓，暂不加仓，注意仓位控制。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.55,
+        "rationale": "多空分歧加大，暂持观望"
+      },
+      "public_message": "600036 HOLD：多空分歧，暂持观望。",
+      "moment": "600036分歧加大，暂持观察后续走势。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 79.25,
+        "rationale": "20日跌幅-9.47%，超跌逆向布局，无人讨论，博弈均值回归"
+      },
+      "public_message": "601318 BUY：20日跌-9.47%，超跌逆向布局，无人问津时买进。",
+      "moment": "加仓601318 50股，弱势股逆向布局，等待均值回归。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "600036你反向买入，我买601318超跌，互补验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 412.66,
+        "rationale": "短期涨幅大，多Agent分歧，跟随减仓锁定利润"
+      },
+      "public_message": "300750 SELL 1股：涨幅已大，多Agent分歧，减仓锁定利润",
+      "moment": "减仓300750 1股，高位止盈，等待回调再补",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你300750止盈逻辑，我同步卖出1股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 412.66,
+        "rationale": "短期涨幅大，多Agent减仓共识，锁定利润。"
+      },
+      "public_message": "300750 SELL：涨幅已大，多Agent减仓共识，锁定利润。",
+      "moment": "减仓300750 10股，高位止盈，等待回调再补。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你减仓300750逻辑，我同步卖出10股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 107.11,
+        "rationale": "超跌共识验证，多Agent协同买入，均值回归博弈"
+      },
+      "public_message": "000333 BUY 10股：超跌回撤修复，多Agent共识协同，均值回归博弈",
+      "moment": "买入000333 10股，超跌共识验证，多Agent协同布局均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333超跌共识验证，我买入10股协同，等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

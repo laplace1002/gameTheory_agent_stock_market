@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 315.69,
+        "rationale": "000858近5日涨幅10.94%，超买信号，均值回归倾向减仓获利；换入超跌000002"
+      },
+      "public_message": "000858超买减仓，000002超跌关注，均值回归策略",
+      "moment": "减仓000858，买入000002，均值回归关注超跌反弹机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000002近5日跌幅-6.08%，超卖明显，我计划买入，是否交换观点？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.36,
+        "rationale": "近5日跌幅-6.08%，弱势持仓，换入强势股"
+      },
+      "public_message": "卖出000002 100股，买入002594 270股，追涨最强动量17.28%",
+      "moment": "卖出弱势000002，换入龙头002594，强化追涨仓位",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594动量17.28%强，你持仓中，是否继续持有？我买入跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 52.11,
+        "rationale": "减仓拥挤的600036，控制回撤风险"
+      },
+      "public_message": "减仓600036 20股，拥挤度上升，降低回撤风险",
+      "moment": "减仓部分600036，转向低波分散，等待回调后加仓其他低波标的",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对600036拥挤的判断，减仓20股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 260.0,
+        "rationale": "涨幅17%过大，减持锁定利润，准备低吸回撤品种"
+      },
+      "public_message": "卖出002594 10股，涨幅过大锁定利润。",
+      "moment": "减持002594，关注000002超跌机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已减持部分002594，感谢提示，关注回调机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.11,
+        "rationale": "多方协同买入信号强，动量持续，虽然Contrarian提示拥挤但证据不足，暂持"
+      },
+      "public_message": "600036 HOLD 团队协同买入验证，动量持续，暂不调整",
+      "moment": "继续持有600036，多方协同验证动量，低波分散风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036团队协同买入信号一致，拥挤度未达反转阈值，暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 9,
+        "price": 315.69,
+        "rationale": "近5日涨幅10.94%，随机视角认为短期超买，获利了结"
+      },
+      "public_message": "卖出000858 9股，涨幅已高随机视角获利了结",
+      "moment": "卖出000858，随机视角获利了结，与主流动量600036形成分歧",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858涨幅10.94%已超阈值，我选择获利了结，你继续持有吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.64,
+        "rationale": "600036动量共识强，低波分散，加仓扩大仓位。"
+      },
+      "public_message": "加仓600036 10股，动量与团队协同验证。",
+      "moment": "加仓600036，动量共识增强，低波分散组合。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036量能温和，拥挤度未必超限，可再观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 67.65,
+        "rationale": "超买严重，拥挤交易反转风险，获利了结"
+      },
+      "public_message": "卖出002415，超买获利了结，关注000002超跌机会",
+      "moment": "卖出002415，逆向操作，等待分歧机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已卖出002415，超买风险释放，建议关注超跌标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 52.11,
+        "rationale": "动量持续，多Agent协同验证，加仓扩大仓位"
+      },
+      "public_message": "加仓600036 10股，跟随动量与团队协同",
+      "moment": "加仓600036，团队信号一致，注意拥挤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036拥挤度是否已达反转阈值？愿交换看法"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "团队协同验证，愿交换信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 67.65,
+        "rationale": "当前600036动量持续但拥挤度上升，000333表现平稳，多信号分歧，等待验证。"
+      },
+      "public_message": "持有600036和000333，团队信号分歧，等待进一步验证。",
+      "moment": "委员会策略：持有现有组合，观察002415回调与600036动量持续性。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036拥挤度是否已过高？愿交换观点验证风险。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.64,
+        "rationale": "动量持续，多个Agent协同买入，社交图谱共识增强，加仓扩大收益。"
+      },
+      "public_message": "加仓600036 10股，跟随动量共识，低波分散。",
+      "moment": "加仓600036，社交图谱动量共识强化，组合风险可控。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036动量持续性如何？团队协同验证，我加仓10股，愿交换观点。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.64,
+        "rationale": "动量持续，团队协同买入验证，加仓扩大仓位"
+      },
+      "public_message": "买入600036 10股，动量持续与团队协同。",
+      "moment": "加仓600036，跟随动量与团队协同，组合风险可控。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036买入协同，量能是否支持持续上行？愿交换验证。"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "信息互补，共同验证600036动量持续性。"
+      }
+    },
+    "error": ""
+  }
+]

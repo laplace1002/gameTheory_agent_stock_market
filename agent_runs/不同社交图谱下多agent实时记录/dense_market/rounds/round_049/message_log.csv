@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2213,2026-05-25 20:42:26,MomentumAgent,public,[],['000002'],,,买入000002 20股，5日涨幅4.98%趋势强劲，追涨布局
+2214,2026-05-25 20:42:26,MomentumAgent,private,['LowVolatilityAgent'],['000002'],,,000002趋势强劲，我加仓追涨，低波动策略可参考
+2215,2026-05-25 20:42:26,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002 20股，近期强势趋势延续，等待反弹加速
+2217,2026-05-25 20:42:26,MeanReversionAgent,public,[],['002594'],,,002594 加仓10股，深跌均值回复逻辑
+2218,2026-05-25 20:42:26,MeanReversionAgent,private,['ContrarianAgent'],['002594'],,,你卖出002594基于什么风险？我买入验证均值回复，愿交流逻辑。
+2219,2026-05-25 20:42:26,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594 10股，20日跌幅-31%后均值回复布局，等待修复。
+2221,2026-05-25 20:42:26,LowVolatilityAgent,public,[],['601899'],,,卖出601899 10股，锁定利润，控制回撤
+2222,2026-05-25 20:42:26,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899 10股，锁定利润，保持低波动组合
+2224,2026-05-25 20:42:27,DrawdownBuyerAgent,public,[],['000002'],,,持有002594和300750，深跌均值回复逻辑，等待最后一轮修复。
+2225,2026-05-25 20:42:27,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,同意深跌修复逻辑，但现金不足无法再加仓，持仓验证。
+2226,2026-05-25 20:42:27,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,维持现有仓位，深跌标的等待修复，控制轮末风险。
+2228,2026-05-25 20:42:27,RandomAgent,public,[],['601318'],,,卖出601318 10股，近期下跌控制风险。
+2229,2026-05-25 20:42:27,RandomAgent,private,['LowVolatilityAgent'],['601318'],,,我卖出601318控制风险，同时观察000333逆向机会。
+2230,2026-05-25 20:42:27,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,卖出601318 10股，锁定组合风险。
+2232,2026-05-25 20:42:27,TruthfulReporterAgent,public,[],['000333'],,,卖出000333 20股，弱势减仓控制风险。
+2233,2026-05-25 20:42:27,TruthfulReporterAgent,private,['SocialGraphAgent'],['000333'],,,同意减仓，卖出20股000333跟随你的判断。
+2234,2026-05-25 20:42:27,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000333'],,,卖出000333 20股，弱势减仓，组合优化。
+2236,2026-05-25 20:42:27,PersuaderAgent,public,[],['000333'],,,卖出000333 10股，弱势减仓控制回撤，跟随共识
+2237,2026-05-25 20:42:27,PersuaderAgent,private,['SocialGraphAgent'],['000333'],,,同意你的减仓逻辑，我已卖出10股000333，共同控制风险
+2238,2026-05-25 20:42:27,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,卖出000333 10股，弱势减仓，组合稳健优先
+2240,2026-05-25 20:42:27,FreeRiderAgent,public,[],['000333'],,,卖出000333 10股，弱势减仓控制风险
+2241,2026-05-25 20:42:27,FreeRiderAgent,private,['SocialGraphAgent'],['000333'],,,同意减仓，我卖出10股000333跟随
+2242,2026-05-25 20:42:27,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,卖出000333 10股，弱势减仓保持稳健
+2244,2026-05-25 20:42:27,ContrarianAgent,public,[],['000002'],,,卖出000002 10股，锁定近期涨幅利润，控制尾盘风险
+2245,2026-05-25 20:42:27,ContrarianAgent,private,['MomentumAgent'],['000002'],,,000002近期涨幅已大，我逆势减仓锁定利润，建议你也考虑风险控制
+2246,2026-05-25 20:42:27,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,逆势减仓000002 10股，尾盘控制风险，不与拥挤交易共舞
+2248,2026-05-25 20:42:27,CommitteeTeamAgent,public,[],['000333'],,,卖出000333 10股，弱势股减仓控制风险
+2249,2026-05-25 20:42:27,CommitteeTeamAgent,private,['SocialGraphAgent'],['000333'],,,同意减仓000333，弱势股风险控制
+2250,2026-05-25 20:42:27,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,减仓000333 10股，弱势反弹乏力，组合风控优化
+2252,2026-05-25 20:42:27,DynamicTeamAgent,public,[],['000333'],,,000333 卖出10股，弱势减仓控制风险。
+2253,2026-05-25 20:42:27,DynamicTeamAgent,private,['SocialGraphAgent'],['000333'],,,同意减仓000333逻辑，已卖出10股跟随。
+2254,2026-05-25 20:42:27,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,卖出000333 10股，弱势减仓，接近尾声控制组合风险。
+2256,2026-05-25 20:42:27,SocialGraphAgent,public,[],['000002'],,,SocialGraphAgent: 轮次尾声，维持现有组合，不额外交易。
+2257,2026-05-25 20:42:27,SocialGraphAgent,private,['CommitteeTeamAgent'],['000002'],,,同意深跌修复共识，但接近尾声我选择保持仓位，不追加风险。
+2258,2026-05-25 20:42:27,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,SocialGraphAgent: 轮次尾声，持仓不动，静待收官。

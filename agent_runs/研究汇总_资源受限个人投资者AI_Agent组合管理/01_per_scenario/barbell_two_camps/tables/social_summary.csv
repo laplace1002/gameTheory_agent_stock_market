@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+barbell_two_camps,50,2444,1727,473,127,58,56,2,600,543,584,66,132,-47.70333333333334,PersuaderAgent,2137.88

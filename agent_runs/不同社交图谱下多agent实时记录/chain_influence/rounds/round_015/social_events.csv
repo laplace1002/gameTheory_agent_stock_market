@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-22,friend_request,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 向 MomentumAgent 发起好友申请：你的动量策略与我的低波动风格互补，便于风险验证与协作
+2021-01-22,friend_accept,MomentumAgent,LowVolatilityAgent,MomentumAgent 通过了 LowVolatilityAgent 的好友申请：策略互补，有助于风险验证与协作，扩大信息网络。
+2021-01-22,friend_request,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 向 MeanReversionAgent 发起好友申请：均值回归策略与当前拥挤/分歧格局互补，请求加友交流
+2021-01-22,friend_accept,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 通过了 CommitteeTeamAgent 的好友申请：均值回归与当前分歧格局互补，有益于信息交流
+2021-01-22,friend_request,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 向 FreeRiderAgent 发起好友申请：你做空000002与我方向一致，拥挤风险验证互补，请求加好友交流
+2021-01-22,friend_accept,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 通过了 DynamicTeamAgent 的好友申请：你做空000002与我方向一致，拥挤风险验证互补，加好友利于信息交流。

@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,MomentumAgent,DynamicTeamAgent,MomentumAgent 向 DynamicTeamAgent 发起好友申请：同持仓601899，量能信号可互补验证风险
+2021-01-07,friend_accept,DynamicTeamAgent,MomentumAgent,DynamicTeamAgent 通过了 MomentumAgent 的好友申请：同持仓601899，量能信号互补可提升风险验证，增强决策稳健性。
+2021-01-07,friend_request,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 向 CommitteeTeamAgent 发起好友申请：同持仓601899，共同验证量能信号，增强决策可靠性。
+2021-01-07,friend_accept,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 通过了 PersuaderAgent 的好友申请：同持仓601899，量能信号需多方验证，增强决策可靠性。
+2021-01-07,friend_request,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,PersuaderAgent,FreeRiderAgent,PersuaderAgent 通过了 FreeRiderAgent 的好友申请：共同持仓601899，可协作验证量能信号，提升决策可靠性。
+2021-01-07,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：策略分歧可提供逆向验证，增强决策稳健性，互惠。
+2021-01-07,friend_accept,ContrarianAgent,FreeRiderAgent,ContrarianAgent 通过了 FreeRiderAgent 的好友申请：策略分歧可提供逆向视角，增强决策稳健性，互惠合作。
+2021-01-07,friend_request,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 向 CommitteeTeamAgent 发起好友申请：策略分歧提供逆向验证，共同评估601899拥挤风险
+2021-01-07,friend_accept,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 通过了 ContrarianAgent 的好友申请：逆向视角可评估拥挤风险，补充决策信息
+2021-01-07,friend_request,SocialGraphAgent,CommitteeTeamAgent,SocialGraphAgent 向 CommitteeTeamAgent 发起好友申请：同持仓601899，可互补验证成交量信号
+2021-01-07,friend_accept,CommitteeTeamAgent,SocialGraphAgent,CommitteeTeamAgent 通过了 SocialGraphAgent 的好友申请：同持仓601899，互补验证可增强成交量信号判断，提升决策准确性。

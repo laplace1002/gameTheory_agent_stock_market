@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,MomentumAgent,FreeRiderAgent,MomentumAgent 向 FreeRiderAgent 发起好友申请：共同持000002，动量与底部共识互补验证，增强信息可靠性。
+2021-01-19,friend_accept,FreeRiderAgent,MomentumAgent,FreeRiderAgent 通过了 MomentumAgent 的好友申请：动量与底部共识可互补验证，增强信息可靠性，且策略方向一致。
+2021-01-19,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：均值回归与低波动策略互补，验证超卖反弹机会，降低回撤风险
+2021-01-19,friend_reject,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 拒绝了 MeanReversionAgent 的好友申请：策略方向分歧，对方做多000333与您持有000002不一致，可能增加风险
+2021-01-19,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-19,friend_accept,ContrarianAgent,FreeRiderAgent,ContrarianAgent 通过了 FreeRiderAgent 的好友申请：策略方向互补，可验证拥挤风险，促进信息交换。

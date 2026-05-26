@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+mentor_pairs,50,2472,1741,438,162,65,59,6,600,559,582,66,132,-6.523333333333337,FreeRiderAgent,390.22

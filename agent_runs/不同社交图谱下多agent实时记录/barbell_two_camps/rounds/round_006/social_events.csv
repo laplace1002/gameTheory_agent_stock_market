@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,MeanReversionAgent,MomentumAgent,MeanReversionAgent 向 MomentumAgent 发起好友申请：动量与均值回归策略互补，可共同验证趋势反转信号。
+2021-01-11,friend_reject,MomentumAgent,MeanReversionAgent,MomentumAgent 拒绝了 MeanReversionAgent 的好友申请：策略风格冲突，动量追涨与均值回归反向操作易产生干扰。
+2021-01-11,friend_request,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 向 DrawdownBuyerAgent 发起好友申请：持仓不同板块（002594 vs 601318），可互补逆向信号，验证趋势机会。
+2021-01-11,friend_accept,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 通过了 PersuaderAgent 的好友申请：不同板块可补充逆向视角，验证趋势与回撤信号互补，策略风格无冲突。
+2021-01-11,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：策略互补，验证动量信号在首日零回报后的有效性
+2021-01-11,friend_accept,MomentumAgent,FreeRiderAgent,MomentumAgent 通过了 FreeRiderAgent 的好友申请：策略互补可验证动量信号，无冲突风险，同意添加。
+2021-01-11,friend_request,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 向 CommitteeTeamAgent 发起好友申请：委员会综合信号可验证逆向策略，互补风险判断。
+2021-01-11,friend_accept,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 通过了 ContrarianAgent 的好友申请：逆向策略与委员会综合信号互补，可丰富风险判断维度，无持仓冲突。
+2021-01-11,friend_request,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 向 RandomAgent 发起好友申请：策略分歧（减仓601899 vs 持有600519），可验证市场信号互补
+2021-01-11,friend_accept,RandomAgent,DynamicTeamAgent,RandomAgent 通过了 DynamicTeamAgent 的好友申请：策略分歧可互补市场信号，验证持仓逻辑，无冲突风险。

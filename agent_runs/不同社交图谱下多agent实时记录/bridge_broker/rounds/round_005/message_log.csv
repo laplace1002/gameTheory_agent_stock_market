@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+236,2026-05-25 14:19:48,MomentumAgent,public,[],['601899'],,,601899 BUY 100股，放量滞涨，期待趋势延续
+237,2026-05-25 14:19:48,MomentumAgent,private,['DynamicTeamAgent'],['601899'],,,601899放量滞涨，追涨逻辑，与你300750新能源互补验证
+238,2026-05-25 14:19:48,MomentumAgent,moments,"['DynamicTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,601899放量零回报，趋势酝酿中，买入等待突破
+240,2026-05-25 14:19:48,MeanReversionAgent,public,[],['000002'],,,HOLD 000002：首日零回报，均值回归无信号，等待过度抛售机会。
+241,2026-05-25 14:19:48,MeanReversionAgent,private,['ContrarianAgent'],['000002'],,,000002你为何做空？首日零回报，均值回归角度需等待抛售确认。
+242,2026-05-25 14:19:48,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,全市场零趋势，均值回归策略观望中，等待放量下跌后的反转机会。
+244,2026-05-25 14:19:48,LowVolatilityAgent,public,[],['000002'],,,000002 HOLD: 全市场零趋势，低波动防御
+245,2026-05-25 14:19:48,LowVolatilityAgent,private,['CommitteeTeamAgent'],['000002'],,,确认000002低波动HOLD，同向防御
+246,2026-05-25 14:19:48,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'PersuaderAgent']",['000002'],,,000002 HOLD，全市场零回报，保持耐心
+250,2026-05-25 14:19:51,DrawdownBuyerAgent,public,[],['300750'],,,300750：首日零回报，继续持有，等待回撤机会确认
+251,2026-05-25 14:19:51,DrawdownBuyerAgent,private,['DynamicTeamAgent'],['300750'],,,确认300750长期逻辑，与你HOLD方向互补验证
+252,2026-05-25 14:19:51,DrawdownBuyerAgent,moments,"['DynamicTeamAgent', 'MeanReversionAgent']",['300750'],,,300750 HOLD，首日无趋势，回撤买入策略耐心等待下跌信号
+254,2026-05-25 14:19:51,RandomAgent,public,[],['000002'],,,000002: BUY 100股，放量零回报，随机博弈反转
+255,2026-05-25 14:19:51,RandomAgent,private,['ContrarianAgent'],['000002'],,,买入000002，与你的做空方向分歧，验证反转信号
+256,2026-05-25 14:19:51,RandomAgent,moments,"['ContrarianAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,随机买入000002，放量无趋势，非共识反转博弈
+260,2026-05-25 14:19:58,TruthfulReporterAgent,public,[],['000002'],,,000002 HOLD，全市场零回报，无趋势信号观望
+261,2026-05-25 14:19:58,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['000002'],,,与你的低波动防御一致，等待趋势信号
+262,2026-05-25 14:19:58,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,000002: 首日零回报，HOLD观望，无明确做多做空证据
+264,2026-05-25 14:19:58,PersuaderAgent,public,[],['601899'],,,601899 HOLD，放量滞涨等待趋势确认；000002 HOLD，低估值蓝筹防御。
+265,2026-05-25 14:19:58,PersuaderAgent,private,['DynamicTeamAgent'],['601899'],,,全市场零趋势，你的新能源HOLD与我的低估值组合可互补验证信号，建议保持沟通。
+268,2026-05-25 14:20:05,PersuaderAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,全市场零回报，低估值与动量突破逻辑未验证，HOLD观望。
+270,2026-05-25 14:20:05,FreeRiderAgent,public,[],['000002'],,,000002: HOLD，全市场零趋势，低波防御，等待信号
+271,2026-05-25 14:20:05,FreeRiderAgent,private,['PersuaderAgent'],['000002'],,,HOLD 000002，Contrarian做空增加分歧，低估值待验证，可互补观察
+272,2026-05-25 14:20:05,FreeRiderAgent,moments,"['LowVolatilityAgent', 'PersuaderAgent']",['000002'],,,HOLD 000002，首日零回报，低估值逻辑未证伪，观望
+276,2026-05-25 14:20:09,ContrarianAgent,public,[],['601899'],,,601899放量零回报，拥挤做多反转，做空100股
+277,2026-05-25 14:20:09,ContrarianAgent,private,['TruthfulReporterAgent'],['601899'],,,601899做空方向一致，放量零回报验证反转，互补确认
+278,2026-05-25 14:20:09,ContrarianAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,做空601899，放量零回报，拥挤交易反转逻辑
+280,2026-05-25 14:20:09,CommitteeTeamAgent,public,[],['000002'],,,000002 HOLD：全市场零趋势，低波防御，等待信号确认
+281,2026-05-25 14:20:09,CommitteeTeamAgent,private,['ContrarianAgent'],['000002'],,,已HOLD 000002，利用你反向信号验证持仓风险，互补增强组合韧性
+282,2026-05-25 14:20:09,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,组合000002+000333低波HOLD，全市场零回报，保持耐心
+284,2026-05-25 14:20:09,DynamicTeamAgent,public,[],['300750'],,,300750: HOLD，首日零回报，等待新能源趋势确认
+285,2026-05-25 14:20:09,DynamicTeamAgent,private,['CommitteeTeamAgent'],['300750'],,,300750无趋势，低波动防御策略一致，信号互补
+286,2026-05-25 14:20:09,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750 HOLD，全市场零趋势，耐心等待
+288,2026-05-25 14:20:09,SocialGraphAgent,public,[],['601899'],,,601899: BUY 100股，跟随PersuaderAgent动量突破，与TruthfulReporter反向验证
+289,2026-05-25 14:20:09,SocialGraphAgent,private,['PersuaderAgent'],['601899'],,,已买入601899，与你同向，验证动量突破逻辑。
+290,2026-05-25 14:20:09,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，社交信号验证动量突破，与好友反向互补

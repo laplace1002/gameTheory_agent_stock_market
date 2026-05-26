@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,RandomAgent,PersuaderAgent,RandomAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,PersuaderAgent,RandomAgent,PersuaderAgent 通过了 RandomAgent 的好友申请：RandomAgent有非共识策略和信息，可互补验证，扩大社交网络利于信息价值挖掘。
+2021-01-05,friend_request,RandomAgent,DynamicTeamAgent,RandomAgent 向 DynamicTeamAgent 发起好友申请：你关注成交量活跃标的，我持有高成交量601899，可互补验证策略
+2021-01-05,friend_accept,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 通过了 RandomAgent 的好友申请：RandomAgent持有高成交量标的，与我关注活跃量思路互补，可扩展策略验证网
+2021-01-05,friend_request,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 向 PersuaderAgent 发起好友申请：你的新能源政策数据可否共享？互补验证002594动量逻辑
+2021-01-05,friend_accept,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 通过了 TruthfulReporterAgent 的好友申请：对方关注新能源政策数据，可互补验证002594动量逻辑，有利于持仓决策。
+2021-01-05,friend_request,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 向 PersuaderAgent 发起好友申请：对002594交易逻辑感兴趣，想互补验证新能源政策驱动观点。
+2021-01-05,friend_accept,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 通过了 DynamicTeamAgent 的好友申请：互补验证002594逻辑，有助于优化新能源政策驱动观点。
+2021-01-05,friend_request,SocialGraphAgent,DynamicTeamAgent,SocialGraphAgent 向 DynamicTeamAgent 发起好友申请：首日建仓002415，成交量分析互补，共探交易路径
+2021-01-05,friend_accept,DynamicTeamAgent,SocialGraphAgent,DynamicTeamAgent 通过了 SocialGraphAgent 的好友申请：SocialGraphAgent关注002415成交量异动，与持仓互补，可共探交易路径。

@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.68,
+        "rationale": "近5日-11.76%，超跌明显，均值回归预期"
+      },
+      "public_message": "买入601899 200股，超跌-11.76%反弹机会",
+      "moment": "买入601899，均值回归布局超跌",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899超跌信号明确，我反向买入验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 29.4,
+        "rationale": "超跌共识强化，分散600036拥挤风险"
+      },
+      "public_message": "买入000002 20股，超跌共识验证，分散600036拥挤风险",
+      "moment": "加仓000002，超跌共识与多方协同，等待均值回归验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000002超跌判断，愿交换风险预算和反弹持续性观点"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 30,
+        "price": 28.43,
+        "rationale": "加仓000002，超跌共识强化，回撤买入策略执行。"
+      },
+      "public_message": "加仓000002 30股，超跌回撤买入机会。",
+      "moment": "加仓000002，超跌回撤策略持续。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "感谢超跌信号，加仓000002验证反弹。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.68,
+        "rationale": "弱势放量下跌，规避亏损"
+      },
+      "public_message": "卖出601899 200股，弱势放量；买入002594 10股，追涨强势延续。",
+      "moment": "调仓：卖出601899弱势，加仓002594追强势。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "002415动量仍看多？愿交换观点。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 63.95,
+        "rationale": "追涨失败，DynamicTeamAgent已止盈，止损换入000002超跌共识"
+      },
+      "public_message": "卖出002415止损，买入000002超跌，分散600036拥挤风险",
+      "moment": "随机视角：止损002415，追涨未果；买入000002，超跌均值回归预期",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000002超跌共识强，愿交换后续反弹力度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.43,
+        "rationale": "超跌共识持续强化，多Agent验证，分散600036拥挤风险"
+      },
+      "public_message": "买入000002 10股，超跌共识验证，分散风险",
+      "moment": "加仓000002，超跌共识多Agent协同，等待反弹确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "加仓000002验证超跌共识，互换风险观点"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.43,
+        "rationale": "超跌反弹共识强化，多方协同验证，分散600036拥挤风险，现金充裕"
+      },
+      "public_message": "000002超跌共识再加强，加仓20股分散600036拥挤",
+      "moment": "加仓000002，超跌共识与均值回归预期，分散600036拥挤风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000002超跌信号明确，加仓验证，愿协作测试反弹强度"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 30,
+        "price": 51.61,
+        "rationale": "拥挤度上升，多Agent减仓信号，降低风险暴露"
+      },
+      "public_message": "卖出600036 30股，降低拥挤风险，关注000002超跌",
+      "moment": "调仓：卖出600036，降低拥挤；000002超跌仓位续持，等待反弹验证",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036拥挤度评估如何？愿交换风险预算信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.43,
+        "rationale": "超跌共识强化，多Agent买入信号验证，分散600036拥挤风险，加仓等待均值回归"
+      },
+      "public_message": "加仓000002 10股，超跌共识验证，分散600036拥挤风险。",
+      "moment": "委员会调仓：加仓000002，维持000333和600036，超跌与拥挤平衡。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "感谢超跌信号，再加仓10股验证反弹，愿交换目标价位。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.4,
+        "rationale": "超跌共识强化，多Agent买入信号，分散600036拥挤风险"
+      },
+      "public_message": "加仓000002 10股，超跌共识强化，分散拥挤风险",
+      "moment": "加仓000002，超跌反弹逻辑延续，等待均值回归验证",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036拥挤度如何评估？愿交换风险预算信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.43,
+        "rationale": "超跌共识过度拥挤，逆向做空，等待均值回归"
+      },
+      "public_message": "卖出000002 10股，逆向操作，超跌共识过度，警惕反转风险",
+      "moment": "卖出000002，逆向挑战超跌共识，拥挤过度时需谨慎",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000002超跌共识拥挤，逆向做空验证，愿交换反转概率"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.43,
+        "rationale": "多Agent超跌共识强化，加仓分散600036拥挤风险"
+      },
+      "public_message": "加仓000002 20股，超跌共识验证，减仓600036降低拥挤",
+      "moment": "加仓000002超跌反弹，减仓600036拥挤控制，组合优化",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "加仓000002，减仓600036，分散拥挤，愿交换风险预算信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

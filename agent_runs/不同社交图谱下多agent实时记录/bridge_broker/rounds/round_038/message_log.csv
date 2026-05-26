@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1847,2026-05-25 15:22:02,MomentumAgent,public,[],['000002'],,,000002 BUY：近5日涨幅11.7%，趋势延续加仓。
+1848,2026-05-25 15:22:02,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002加仓，趋势强劲，继续持有。
+1850,2026-05-25 15:22:02,MeanReversionAgent,public,[],['002594'],,,002594 BUY：深跌-18.4%后止跌横盘，均值回归机会，低买等待修复。
+1851,2026-05-25 15:22:02,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594深跌-18.4%后止跌，均值回归逻辑，买入50股验证反弹。
+1853,2026-05-25 15:22:02,LowVolatilityAgent,public,[],['300750'],,,300750深跌修复共识强，按风险预算少量加仓验证
+1854,2026-05-25 15:22:02,LowVolatilityAgent,private,['DynamicTeamAgent'],['300750'],,,同意深跌修复逻辑，但低波动需控制仓位，验证1股
+1855,2026-05-25 15:22:02,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750深跌修复，低仓验证，控制回撤
+1857,2026-05-25 15:22:02,DrawdownBuyerAgent,public,[],['601899'],,,601899 BUY：深跌5.95%中期趋势强，回撤修复验证
+1858,2026-05-25 15:22:02,DrawdownBuyerAgent,private,['RandomAgent'],['601899'],,,同意601899深跌修复逻辑，加仓100股验证
+1859,2026-05-25 15:22:02,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 100：深跌后中期趋势支撑，等待修复
+1861,2026-05-25 15:22:02,RandomAgent,public,[],['601899'],,,601899 SELL 100股：短期回调未结束，高位锁定利润，观察分歧
+1862,2026-05-25 15:22:02,RandomAgent,private,['ContrarianAgent'],['601899'],,,601899短期回调可能持续，我卖100锁定，买入601318逆向可关注
+1863,2026-05-25 15:22:02,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 SELL 100，短期回调未结束，高位锁定利润
+1865,2026-05-25 15:22:02,TruthfulReporterAgent,public,[],['601899'],,,601899 BUY：深跌15%后中期趋势强，多Agent修复共识，买入验证。
+1866,2026-05-25 15:22:02,TruthfulReporterAgent,private,['PersuaderAgent'],['601899'],,,同意601899深跌修复逻辑，中期趋势支撑，已买入验证。
+1867,2026-05-25 15:22:02,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899 BUY：深跌修复逻辑，等待趋势延续。
+1869,2026-05-25 15:22:02,PersuaderAgent,public,[],['300750'],,,300750 BUY：深跌后多Agent分歧修复，跟进验证
+1870,2026-05-25 15:22:02,PersuaderAgent,private,['CommitteeTeamAgent'],['300750'],,,同意300750深跌修复逻辑，已买入100股验证
+1871,2026-05-25 15:22:02,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750 BUY：深跌修复共识，等待趋势确认
+1873,2026-05-25 15:22:02,FreeRiderAgent,public,[],['601899'],,,601899 BUY：深跌后中期趋势强，多Agent修复共识，跟随买入
+1874,2026-05-25 15:22:02,FreeRiderAgent,private,['PersuaderAgent'],['601899'],,,同意601899深跌修复逻辑，跟随买入
+1875,2026-05-25 15:22:02,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY：深跌修复共识，多Agent验证
+1877,2026-05-25 15:22:02,ContrarianAgent,public,[],['601318'],,,601318 BUY：共识卖出过度逆向加仓
+1878,2026-05-25 15:22:02,ContrarianAgent,private,['SocialGraphAgent'],['601318'],,,你卖出601318是跟着共识，我逆向买入，认为卖出过度
+1879,2026-05-25 15:22:02,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318共识卖出过度，逆向加仓100股等待修复
+1881,2026-05-25 15:22:02,CommitteeTeamAgent,public,[],['000858'],,,000858 SELL 50股：弱势置换，601899深跌中期趋势强，多Agent共识买入。
+1882,2026-05-25 15:22:02,CommitteeTeamAgent,private,['DynamicTeamAgent'],['000858'],,,我卖出000858换入601899，深跌15%后中期趋势强劲，共识形成中。
+1883,2026-05-25 15:22:02,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 SELL -> 601899 BUY: 深跌修复逻辑，跟随共识分散。
+1885,2026-05-25 15:22:02,DynamicTeamAgent,public,[],['300750'],,,300750 BUY 加仓：深跌修复共识增强，加仓100股
+1886,2026-05-25 15:22:02,DynamicTeamAgent,private,['DrawdownBuyerAgent'],['300750'],,,同意300750深跌修复逻辑，加仓100股跟进
+1887,2026-05-25 15:22:02,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750 BUY：深跌修复逻辑多Agent验证，加仓等待修复
+1889,2026-05-25 15:22:02,SocialGraphAgent,public,[],['000002'],,,000002 SELL 50股锁定利润，300750深跌修复共识强，考虑加仓
+1890,2026-05-25 15:22:02,SocialGraphAgent,private,['ContrarianAgent'],['000002'],,,同意你的000002锁利逻辑，我跟随卖出50股
+1891,2026-05-25 15:22:02,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,000002 SELL锁利，300750深跌修复多Agent买入，等待共识收敛

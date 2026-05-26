@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+adversarial_persuader,50,2486,1741,286,314,72,60,12,600,560,581,66,132,-3851.8633333333332,CommitteeTeamAgent,877.4

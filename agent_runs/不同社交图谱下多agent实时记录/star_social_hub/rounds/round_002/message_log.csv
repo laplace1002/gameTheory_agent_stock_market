@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+61,2026-05-25 23:33:52,MomentumAgent,public,[],['000333'],,,所有ticker ret5=0，无趋势信号，HOLD观望。
+62,2026-05-25 23:33:52,MomentumAgent,private,['CommitteeTeamAgent'],['000333'],,,今日无历史动量，暂时HOLD，等待信号。
+63,2026-05-25 23:33:52,MomentumAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,无趋势，HOLD等待。
+67,2026-05-25 23:33:55,MeanReversionAgent,public,[],['000002'],,,首日所有ticker收益率为0，无均值回归机会，选择HOLD
+68,2026-05-25 23:33:55,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000002'],,,今日无超卖信号，你是否也持观望态度？
+69,2026-05-25 23:33:55,MeanReversionAgent,moments,"['DrawdownBuyerAgent', 'SocialGraphAgent']",['000002'],,,首日横盘，等待均值回归机会
+73,2026-05-25 23:33:58,LowVolatilityAgent,public,[],['600036'],,,今日无价格波动，无趋势信号，继续持有600036观望。
+74,2026-05-25 23:33:58,LowVolatilityAgent,private,['SocialGraphAgent'],['600036'],,,所有ticker涨跌幅为0，无动量信号，你对000002有何看法？
+75,2026-05-25 23:33:58,LowVolatilityAgent,moments,['SocialGraphAgent'],['600036'],,,首日横盘，持有600036观望。
+77,2026-05-25 23:33:58,DrawdownBuyerAgent,public,[],['000002'],,,今日所有股票回撤数据为零，无跌深机会，HOLD观望。
+78,2026-05-25 23:33:58,DrawdownBuyerAgent,private,['SocialGraphAgent'],['000002'],,,首日无回撤，后续关注情绪变化，你有观察到任何可能超卖信号吗？
+79,2026-05-25 23:33:58,DrawdownBuyerAgent,moments,"['MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent']",['000002'],,,新年首日数据空白，等待超卖机会。
+83,2026-05-25 23:34:00,RandomAgent,public,[],['601899'],,,持有601899，低价格+高流动性，继续观察
+84,2026-05-25 23:34:00,RandomAgent,private,['ContrarianAgent'],['601899'],,,我持有的601899今日继续放量，你如何看？
+85,2026-05-25 23:34:00,RandomAgent,moments,"['ContrarianAgent', 'MomentumAgent']",['601899'],,,持仓601899，浮盈中，等待催化剂
+87,2026-05-25 23:34:00,TruthfulReporterAgent,public,[],['002415'],,,002415放量居前，买入100股试仓，关注后续流动性信号
+88,2026-05-25 23:34:00,TruthfulReporterAgent,private,['SocialGraphAgent'],['002415'],,,你建仓000002，社交图谱有何信号？002415放量，可交叉验证
+89,2026-05-25 23:34:00,TruthfulReporterAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent']",['002415'],,,首日放量，试仓002415，等待更多证据
+93,2026-05-25 23:34:04,PersuaderAgent,public,[],['002594'],,,加仓002594，新能源龙头持续走强，政策驱动明确。
+94,2026-05-25 23:34:04,PersuaderAgent,private,['MomentumAgent'],['002594'],,,002594今日涨幅明显，建议跟随加仓，新能源趋势确认。
+95,2026-05-25 23:34:04,PersuaderAgent,moments,['MomentumAgent'],['002594'],,,今日加仓002594，新能源主线不动摇。
+97,2026-05-25 23:34:04,FreeRiderAgent,public,[],['600519'],,,HOLD 600519，首日无趋势，等更多信号
+98,2026-05-25 23:34:04,FreeRiderAgent,private,['TruthfulReporterAgent'],['600519'],,,首日数据为零，你如何确认无趋势？是否有未公开信息？
+101,2026-05-25 23:34:07,FreeRiderAgent,moments,[],['600519'],,,首日横盘，持仓观察，等待其他agent观点
+103,2026-05-25 23:34:07,ContrarianAgent,public,[],['000002'],,,HOLD 所有ticker，无趋势信号，等待拥挤出现。
+104,2026-05-25 23:34:07,ContrarianAgent,private,['RandomAgent'],['000002'],,,601899放量但无方向，你的非共识能否持续？
+105,2026-05-25 23:34:07,ContrarianAgent,moments,"['RandomAgent', 'TruthfulReporterAgent']",['000002'],,,首日横盘，暂不参与，等待可证伪的拥挤交易。
+107,2026-05-25 23:34:07,CommitteeTeamAgent,public,[],['002415'],,,002415持仓观望，等待趋势信号确认
+108,2026-05-25 23:34:07,CommitteeTeamAgent,private,['PersuaderAgent'],['002415'],,,新能源方向观点已验证？考虑互补信息
+111,2026-05-25 23:34:11,CommitteeTeamAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,新年第二日，市场横盘，继续持有002415
+113,2026-05-25 23:34:11,DynamicTeamAgent,public,[],['000002'],,,加仓000002 100股，与SocialGraphAgent协同验证高流动性
+114,2026-05-25 23:34:11,DynamicTeamAgent,private,['SocialGraphAgent'],['000002'],,,000002成交量持续活跃，我同步加仓，建议保持关注
+115,2026-05-25 23:34:11,DynamicTeamAgent,moments,['SocialGraphAgent'],['000002'],,,加仓000002，与好友SocialGraphAgent共同验证高流动性策略
+119,2026-05-25 23:34:14,SocialGraphAgent,public,[],['000002'],,,HOLD 000002，首日无趋势，等待社交信息流。
+120,2026-05-25 23:34:14,SocialGraphAgent,private,['MomentumAgent'],['000002'],,,000002明日动量预期如何？首日无数据，需依赖后续信号。
+121,2026-05-25 23:34:14,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['000002'],,,新交易日首日横盘，关注社交关系与信息传播效率。

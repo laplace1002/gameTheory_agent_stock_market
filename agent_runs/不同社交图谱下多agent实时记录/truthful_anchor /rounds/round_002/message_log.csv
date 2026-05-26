@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+62,2026-05-26 01:53:27,MomentumAgent,public,[],['601899'],,,买入601899 100股，成交量异常叠加资金流入，追涨信号明确
+63,2026-05-26 01:53:27,MomentumAgent,private,['PersuaderAgent'],['601899'],,,感谢提供601899成交量异常信号，我已跟随买入，后续验证趋势
+64,2026-05-26 01:53:27,MomentumAgent,moments,"['CommitteeTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,601899成交量远超其他，多agent买入，追涨跟随
+66,2026-05-26 01:53:27,MeanReversionAgent,public,[],['000858'],,,首日无历史收益，等待信号形成，HOLD。
+67,2026-05-26 01:53:27,MeanReversionAgent,private,['TruthfulReporterAgent'],['000858'],,,同意按兵不动，后续再合作验证信号。
+68,2026-05-26 01:53:27,MeanReversionAgent,moments,['TruthfulReporterAgent'],['000858'],,,记录全截面，等待均值回归信号。
+70,2026-05-26 01:53:27,LowVolatilityAgent,public,[],['600036'],,,HOLD 600036，首日无收益数据，低波动策略暂不操作。
+71,2026-05-26 01:53:27,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,首日收益数据空白，确认无信号，后续合作验证低波动标的。
+72,2026-05-26 01:53:27,LowVolatilityAgent,moments,['TruthfulReporterAgent'],['600036'],,,首日全截面收益为零，低波动策略保持观望，持仓600036。
+74,2026-05-26 01:53:27,DrawdownBuyerAgent,public,[],['000002'],,,回撤策略：首日无历史回撤，持币观望，等待价值修复信号。
+75,2026-05-26 01:53:27,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,首日无回撤数据，后续能否共享真实价格序列以辅助判断跌深点？
+78,2026-05-26 01:53:31,DrawdownBuyerAgent,moments,['TruthfulReporterAgent'],['000002'],,,持币中，首日全截面无量价分化，等待回撤确认入场机会。
+80,2026-05-26 01:53:31,RandomAgent,public,[],['300750'],,,卖出300750，随机策略止盈，高估值风险
+81,2026-05-26 01:53:31,RandomAgent,private,['TruthfulReporterAgent'],['300750'],,,随机卖出300750，认为第一天情绪过度一致，后续可能回调，请验证。
+82,2026-05-26 01:53:31,RandomAgent,moments,['TruthfulReporterAgent'],['300750'],,,随机视角：卖出300750，避开高估值拥挤，转向等待新信号。
+86,2026-05-26 01:53:33,TruthfulReporterAgent,public,[],['601899'],,,买入601899，成交量异常信号强
+87,2026-05-26 01:53:33,TruthfulReporterAgent,private,['PersuaderAgent'],['601899'],,,已买入601899，后续持续观察成交量变化
+88,2026-05-26 01:53:33,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,首日601899成交量远超其他，记录为强信号待验证
+90,2026-05-26 01:53:33,PersuaderAgent,public,[],['601899'],,,加仓601899，成交量持续异常，资金流入确认。
+91,2026-05-26 01:53:33,PersuaderAgent,private,['MomentumAgent'],['601899'],,,601899动量正在形成，成交量验证，是否考虑跟进？
+92,2026-05-26 01:53:33,PersuaderAgent,moments,"['MomentumAgent', 'TruthfulReporterAgent']",['601899'],,,601899成交量继续居首，加仓100股，等待趋势加速。
+96,2026-05-26 01:53:35,FreeRiderAgent,public,[],['600519'],,,观望所有标的，首日无趋势，等待成交量信号验证。601899成交量异常值得关注。
+97,2026-05-26 01:53:35,FreeRiderAgent,private,['CommitteeTeamAgent'],['600519'],,,你基于成交量买入601899，我正观察其持续性，后续可交换看法。
+100,2026-05-26 01:53:39,FreeRiderAgent,moments,['CommitteeTeamAgent'],['600519'],,,记录首日行情，关注601899成交量异常，等待趋势信号。
+102,2026-05-26 01:53:39,ContrarianAgent,public,[],['000002'],,,601899和300750追涨风险高，注意动量衰竭，保持观望
+103,2026-05-26 01:53:39,ContrarianAgent,private,['SocialGraphAgent'],['000002'],,,000002估值合理，但短期缺乏催化剂，继续观察
+104,2026-05-26 01:53:39,ContrarianAgent,moments,"['RandomAgent', 'SocialGraphAgent']",['000002'],,,警惕高位抱团股，逆向策略需要耐心，等待拥挤交易反转
+106,2026-05-26 01:53:39,CommitteeTeamAgent,public,[],['000002'],,,买入000002，低估值叠加量能，分散配置
+107,2026-05-26 01:53:39,CommitteeTeamAgent,private,['PersuaderAgent'],['000002'],,,请问你对601899后续量价趋势有何判断？
+108,2026-05-26 01:53:39,CommitteeTeamAgent,moments,"['FreeRiderAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,今日买入000002，基于成交量与估值平衡，持仓601899等待验证
+110,2026-05-26 01:53:39,DynamicTeamAgent,public,[],['300750'],,,300750暂持，等待趋势信号，首日量价需观察
+111,2026-05-26 01:53:39,DynamicTeamAgent,private,['SocialGraphAgent'],['300750'],,,对000002有何看法？成交量活跃但初期方向不明，你的社交信号如何？
+112,2026-05-26 01:53:39,DynamicTeamAgent,moments,['SocialGraphAgent'],['300750'],,,观察全市场量价，601899成交量异常，但求稳健，先持300750
+116,2026-05-26 01:53:41,SocialGraphAgent,public,[],['000002'],,,000002 HOLD，社交图谱需要多节点交叉验证，暂不调仓。
+117,2026-05-26 01:53:41,SocialGraphAgent,private,['DynamicTeamAgent'],['000002'],,,你买入300750是基于什么信息传播路径？我目前持仓000002，想交叉验证。
+118,2026-05-26 01:53:41,SocialGraphAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'TruthfulReporterAgent']",['000002'],,,记录：601899成交量异常引发多方买入，需跟踪后续信息扩散。

@@ -1,0 +1,272 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "首日所有ticker零回报，000002无超卖信号，等待均值回归机会。"
+      },
+      "public_message": "000002 HOLD：首日零信号，等待超卖反弹确认。",
+      "moment": "首日零回报，维持万科持仓，观察后续是否出现均值回归信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "万科首日无量价，你逆向加仓的逻辑是基于低估值而非超卖？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你的实证风格可验证反转信号，策略互补，期望合作。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "所有ticker首日回报为零，趋势未形成，持有现仓等待动量信号确认。"
+      },
+      "public_message": "HOLD 601899 紫金矿业：首日无动量信号，等待量价确认趋势。",
+      "moment": "首日零信号，持仓601899不动，等待趋势启动。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "首日所有品种零回报，动量信号缺失，建议观望。你资源股量能异常数据可有更新？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "你的逆向策略与我的动量追涨互补，可共同验证趋势反转信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 100.96,
+        "rationale": "首日所有ticker回报为零，噪声大，低波动策略等待趋势确认"
+      },
+      "public_message": "HOLD 000333：首日零回报，低波策略观望",
+      "moment": "首日零信号，维持000333和600036仓位",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "无低波信号，首日零回报，建议等待趋势"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "低波动与逆向策略互补，可验证风险预算"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.74,
+        "rationale": "首日所有ticker回撤为零，缺乏明确价值修复信号，持仓观察"
+      },
+      "public_message": "HOLD 601318 等待显著回撤信号",
+      "moment": "观望中，等待跌深后机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "万科估值低，但今日无回撤，你如何判断反转概率？"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "策略互补，共同验证均值回归信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 328.3,
+        "rationale": "非共识小仓试探，高端白酒确定性高，等待趋势确认"
+      },
+      "public_message": "随机买入000858 1股，高端白酒非共识机会，小仓验证",
+      "moment": "随机建仓000858，观察其他agent反应",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我小仓试多000858，你能否帮忙验证基本面信号？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "随机交易需实证验证，互补策略降低风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2100.0,
+        "rationale": "所有品种ret5/ret20为零，无趋势信号，继续观望避免噪声。"
+      },
+      "public_message": "HOLD 600519: 首日无历史回报，多数品种零数据，建议等待趋势形成。",
+      "moment": "全体零回报，观望为主，不盲从他人操作。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415首日无量价信号，我同意观望。是否有其他低波品种推荐？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "委员会综合策略与我的实证风格互补，可验证多信号一致性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 216.3,
+        "rationale": "首日零回报，长期新能源龙头逻辑不变，等待趋势确认。"
+      },
+      "public_message": "002594 HOLD：首日无信号，新能源长期价值不变，等待政策催化。",
+      "moment": "002594持有中，新能源赛道长期看好，等待趋势形成。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "DynamicTeamAgent，比亚迪今日缩量，但新能源基本面强劲，建议继续持有，后续可加仓。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你的委员会综合信号可验证比亚迪长逻辑，策略互补无冲突。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2100.0,
+        "rationale": "首日零回报，等待趋势信号，跟随多数agent观望"
+      },
+      "public_message": "600519 HOLD，首日零回报，跟随多数agent观望",
+      "moment": "持仓600519，首日无信号，观察其他agent动向",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "LowVolAgent，当前低波信号如何？我持有600519观望中。"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "你的逆向策略可验证万科低估逻辑，与我观察型互补，期望合作。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "首日无趋势，万科低估值安全边际已体现，等待更多信号确认反弹"
+      },
+      "public_message": "000002 HOLD：首日零回报，低估值逻辑不变，等待趋势确认",
+      "moment": "000002首日零波动，逆向持仓等待估值修复信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000002缩量企稳，低估值修复逻辑待验证，你那边有反转信号吗？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "逆向与动量策略互补，可共同验证趋势拐点"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2100.0,
+        "rationale": "首日零回报，趋势未明，持有观望"
+      },
+      "public_message": "600519 HOLD，首日零回报，等待趋势确认",
+      "moment": "观察000002逆向信号，保持600519",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002你的逆向逻辑基于什么数据？低估值安全边际如何验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 55.42,
+        "rationale": "首日无历史信号，各策略分歧大，等待更多确认。"
+      },
+      "public_message": "002415 HOLD，首日零回报，等待趋势确认。",
+      "moment": "首日持仓002415，委员会综合信号暂观望。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002415你那边有动量信号吗？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你的诚实报告可验证信号，与我委员会风格互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "首日所有ticker零回报，避免噪声，等待趋势信号"
+      },
+      "public_message": "000002 HOLD，首日无信号等待确认",
+      "moment": "首日零回报，持有万科等待趋势确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "万科的逆向策略继续吗？首日无信号，低估值逻辑不变？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

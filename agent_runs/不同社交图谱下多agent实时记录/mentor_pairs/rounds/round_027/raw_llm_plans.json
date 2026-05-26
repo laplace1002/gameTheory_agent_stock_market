@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2456.43,
+        "rationale": "20日涨幅13.68%且5日涨幅14.52%，估值偏高，均值回归卖出锁定利润。"
+      },
+      "public_message": "卖600519 20日涨幅过大，均值回归减仓。",
+      "moment": "卖出600519高位获利，买入601318深度回撤均值修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你买入601318回撤修复，我计划加仓1股，均值回归协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 329.5,
+        "rationale": "低拥挤动量多Agent验证，强势趋势延续，追涨加仓"
+      },
+      "public_message": "000858 BUY 多Agent验证强势趋势，追涨加仓",
+      "moment": "000858 BUY：多Agent验证低拥挤动量，趋势延续，加仓1股",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "协同追涨000858，趋势延续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.26,
+        "rationale": "短期涨幅6.33%，拥挤度上升，锁定利润控制回撤"
+      },
+      "public_message": "卖出600036，短期涨幅大，锁定利润降波动",
+      "moment": "卖出600036，短期拥挤信号，锁定利润控制回撤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对600036的逆向卖出，我同步减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 257.0,
+        "rationale": "短期回调3.93%，但20日涨幅8.44%，低拥挤动量多Agent验证，随机视角利用回调建仓"
+      },
+      "public_message": "002594 BUY 随机逆向回调买入，低拥挤动量延续",
+      "moment": "买入002594，随机策略利用回调，低拥挤动量验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意动量逻辑，回调后入场点更优，协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "20日跌幅-11.03%深度回撤，均值修复预期"
+      },
+      "public_message": "601318 BUY 1股，回撤-11%均值修复",
+      "moment": "加仓601318，回撤博弈均值修复，分散风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "卖出600036锁定利润后，可关注601318深度回撤机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 257.0,
+        "rationale": "低拥挤动量多Agent验证，但价格高位（257.00），成交量未显著放大，风险报酬不优，等待回调确认。"
+      },
+      "public_message": "002594 HOLD：动量验证但高位风险，等待回调。",
+      "moment": "002594 HOLD：多Agent验证动量，但股价高位，控制仓位等待回调机会。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594高价风险，建议谨慎加仓，等待成交量确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "深度回撤均值修复，跟随DrawdownBuyerAgent逻辑"
+      },
+      "public_message": "BUY 601318 1股，深度回撤-6.50%均值修复，多Agent验证",
+      "moment": "买入601318，深度回撤博弈均值修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意回撤修复逻辑，买入601318协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.26,
+        "rationale": "ContrarianAgent卖出信号确认短期拥挤，涨幅较大，减仓1股锁定利润，控制风险。"
+      },
+      "public_message": "600036 SELL 跟随Contrarian逆向信号，锁定利润。",
+      "moment": "减仓600036，短期涨幅大，逆向控制风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意600036拥挤信号，已减仓1股协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 410.2,
+        "rationale": "短期涨幅11.53%，过度乐观，逆向锁定利润"
+      },
+      "public_message": "卖出300750 1股，短期涨幅过大，逆向获利了结",
+      "moment": "卖出300750，短期涨幅高，逆向减仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意卖出过热股票，控制回撤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 257.0,
+        "rationale": "高位风险信号多Agent验证，减仓锁定部分利润"
+      },
+      "public_message": "002594 SELL 高位风险增多，减仓1股锁定利润",
+      "moment": "002594 SELL，多Agent风险信号平衡后减仓",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意高位风险观点，减仓002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 329.5,
+        "rationale": "多Agent卖出信号叠加，锁定短期利润，降低高位风险"
+      },
+      "public_message": "000858 SELL 跟随多Agent卖出信号，锁定利润控制风险",
+      "moment": "卖出000858，锁定利润，观察601318回撤修复机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意卖出000858，同时考虑买入601318回撤修复，与你互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "深度回撤均值修复，好友DrawdownBuyer验证"
+      },
+      "public_message": "601318 BUY 深度回撤均值修复，协同DrawdownBuyer",
+      "moment": "布局601318，回撤买入策略",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "协同买入601318，均值修复逻辑可靠"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

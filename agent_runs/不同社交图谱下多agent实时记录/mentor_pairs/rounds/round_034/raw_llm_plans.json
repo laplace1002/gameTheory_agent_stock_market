@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "短期回撤-19%，严重超卖，均值回归修复概率大，跟随Contrarian逆向信号"
+      },
+      "public_message": "买入002594，回撤-19%均值修复",
+      "moment": "买入002594，深度回撤后均值回归机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意超卖判断，买入002594协同修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 32.99,
+        "rationale": "000002短期强势，ret5=9.93%，追涨买入"
+      },
+      "public_message": "000002 BUY 10股，强势延续，追涨入场",
+      "moment": "追涨000002，短期强势信号明显",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.45,
+        "rationale": "低波动，回撤可控，中期走势稳定，符合策略"
+      },
+      "public_message": "600036 BUY 1股，低波动回撤控制，分散风险。",
+      "moment": "买入600036，低波动策略执行，控制回撤。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 288.9,
+        "rationale": "短期超跌-13.37%，白酒龙头，逆向修复机会"
+      },
+      "public_message": "000858 BUY 1股，超跌逆向修复，白酒龙头估值支撑",
+      "moment": "买入000858 1股，逆向超跌修复，白酒龙头安全边际高",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你减仓601318，我逆向买入000858，超跌白酒龙头，分歧策略互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 2,
+        "price": 87.14,
+        "rationale": "多空冲突且SocialGraphAgent减仓，持仓4股风险集中，减仓锁定部分盈利，释放资金加仓深度回撤标的"
+      },
+      "public_message": "601318 SELL 2股，多空冲突减仓，加仓002594回撤修复",
+      "moment": "卖出601318降低风险，买入002594深度回撤超卖修复，等待反弹",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "减仓601318加仓002594，深度回撤-19%超卖修复逻辑，与你002415互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.14,
+        "rationale": "多空信号冲突持续，SocialGraph已减仓，跟随降低拥挤风险"
+      },
+      "public_message": "601318 SELL 1股，多空冲突未解，跟随SocialGraph减仓避险",
+      "moment": "卖出601318，多空信号冲突下减仓避险，与SocialGraph协同",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "收到你的卖出信号，已跟随卖出601318，一致行动降低风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "跟随ContrarianAgent超卖修复逻辑，加仓002594"
+      },
+      "public_message": "002594 BUY 超卖修复，跟随逆势信号。",
+      "moment": "加仓002594，超跌修复逻辑，多空博弈中寻找机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你对002594的超卖判断，加仓跟进。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.14,
+        "rationale": "SocialGraphAgent卖出信号，多空冲突未解"
+      },
+      "public_message": "601318 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.14,
+        "rationale": "多空冲突中减仓获利，降低拥挤风险"
+      },
+      "public_message": "601318 SELL 1股，多空冲突减仓止盈",
+      "moment": "减仓601318，获利了结，多空分歧中锁定收益",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你减仓601318，协同降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.14,
+        "rationale": "多空信号冲突持续，SocialGraph已减仓，跟随规避拥挤风险"
+      },
+      "public_message": "SELL 601318 多空冲突未解，跟随SocialGraph减仓",
+      "moment": "卖出601318，多空信号冲突下降低风险敞口",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的减仓逻辑，我也卖出601318，降低多空冲突风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.14,
+        "rationale": "多空冲突加剧，SocialGraph卖出，规避下行风险"
+      },
+      "public_message": "601318 SELL 多空冲突未解，跟随SocialGraph减仓避险",
+      "moment": "卖出601318，多空冲突下降低风险暴露",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的减仓逻辑，跟随卖出避险"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "跟随Contrarian超卖逆向，多Agent一致性卖出后反弹机会"
+      },
+      "public_message": "002594 BUY 1股，Contrarian逆向信号，超卖修复逻辑",
+      "moment": "买入002594，响应Contrarian逆向信号，超卖修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "买入002594，同意你超卖修复判断，协同布局"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  }
+]

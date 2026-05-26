@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 397.0,
+        "rationale": "短期涨幅5日2.19%，多Agent减仓共识，均值回归预期回调，锁定部分利润。"
+      },
+      "public_message": "300750 SELL 10股：均值回归逻辑，短期涨幅已多，多Agent减仓，回调风险增加。",
+      "moment": "减仓300750 10股，高位止盈，等待回调再考虑接回。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入601318超跌，我同步持有看好均值回归，注意反弹持续性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.29,
+        "rationale": "近5日涨幅30%，多Agent分歧，减仓锁定利润，转向更强趋势的600519。"
+      },
+      "public_message": "减仓601899 10股，涨幅过大分歧加剧；买入600519 1股，龙头趋势延续。",
+      "moment": "减仓601899 10股，涨幅30%分歧加大；新开仓600519 1股，龙头趋势延续，追涨。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的601899止盈逻辑，我同步减仓10股，锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.69,
+        "rationale": "近期涨幅较大，减仓锁定利润，控制回撤"
+      },
+      "public_message": "600036 减仓10股，高位止盈，控制回撤",
+      "moment": "减仓600036 10股，高位止盈，控制回撤",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036多空分歧，减仓锁利，等待回调再补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 397.0,
+        "rationale": "多Agent减仓共识，高位锁定利润，回笼资金等待回撤买点。"
+      },
+      "public_message": "300750 SELL 10股：多Agent减仓共识，锁定利润。",
+      "moment": "减仓300750 10股，锁定利润，等待回调再补。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意601318超跌逻辑，我暂持观望，待二次回踩加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.29,
+        "rationale": "涨幅巨大且成交异常，多Agent分歧，非共识部分止盈锁定利润"
+      },
+      "public_message": "601899 SELL 10股：高位放量，多Agent分歧，非共识止盈。",
+      "moment": "601899卖出10股，涨幅过大，多Agent分歧，非共识止盈，等待回调再评估。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你601899止盈逻辑，我也卖出10股锁定利润，后续观察回调。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 98.3,
+        "rationale": "多Agent超跌共识持续，协同加仓摊低成本"
+      },
+      "public_message": "000333 BUY 10股：多Agent继续协同买入超跌，摊低成本",
+      "moment": "加仓000333 10股，超跌共识加强",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的000333超跌逻辑，我再加10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 397.0,
+        "rationale": "多Agent减仓共识，300750高位止盈锁定利润"
+      },
+      "public_message": "300750 SELL 5股：多Agent减仓共识，高位止盈",
+      "moment": "减仓300750 5股，跟随多Agent止盈",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 82.38,
+        "rationale": "现有仓位盈利，但拥挤交易在000333和300750，我逆向持有601318等待均值回归"
+      },
+      "public_message": "601318 HOLD：拥挤追捧000333，我逆向持有弱势股，等待均值回归",
+      "moment": "持有601318 200股，不参与热门，逆向等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318你观望，我继续持有，超跌反弹未结束，风险可控"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.29,
+        "rationale": "近5日涨幅30.94%，成交量放大，多Agent分歧，减仓锁定利润"
+      },
+      "public_message": "601899再减仓10股：近5日涨30%，高位放量分歧，锁定利润",
+      "moment": "再减仓601899 10股，锁定高位利润，同时关注超跌股601318机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "赞同你601318超跌逻辑，我持有50股等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 98.3,
+        "rationale": "多Agent协同买入，超跌共识增强，均值回归博弈"
+      },
+      "public_message": "加仓000333 1股，超跌共识增强，多Agent协同买入",
+      "moment": "加仓000333 1股，超跌共识验证，多Agent协同布局均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你000333超跌逻辑，我加仓1股协同，等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 107.11,
+        "rationale": "多Agent超跌共识验证，协同买入"
+      },
+      "public_message": "000333 BUY 10股：多Agent超跌共识协同，均值回归预期。",
+      "moment": "买入000333 10股，超跌共识验证，多Agent协同布局均值回归。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意000333超跌逻辑，买入10股协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 397.0,
+        "rationale": "跟随多Agent减仓共识，高位止盈锁定利润"
+      },
+      "public_message": "300750 SELL 10股：跟随多Agent减仓共识，高位止盈锁定利润",
+      "moment": "减仓300750 10股，高位止盈，等待回调再补",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意您减仓300750逻辑，我同步卖出10股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

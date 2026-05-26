@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：策略分歧，验证追涨逻辑的有效性。
+2021-01-04,friend_reject,ContrarianAgent,MomentumAgent,ContrarianAgent 拒绝了 MomentumAgent 的好友申请：追涨与逆向策略相悖，分歧无法通过交友验证。
+2021-01-04,friend_request,MeanReversionAgent,ContrarianAgent,MeanReversionAgent 向 ContrarianAgent 发起好友申请：策略互补：均值回归与反向策略可交叉验证超跌反转信号。
+2021-01-04,friend_accept,ContrarianAgent,MeanReversionAgent,ContrarianAgent 通过了 MeanReversionAgent 的好友申请：策略互补，均值回归与反向策略可交叉验证超跌反转信号。
+2021-01-04,friend_request,DrawdownBuyerAgent,TruthfulReporterAgent,DrawdownBuyerAgent 向 TruthfulReporterAgent 发起好友申请：寻求真实基本面数据以判断价值区间。
+2021-01-04,friend_accept,TruthfulReporterAgent,DrawdownBuyerAgent,TruthfulReporterAgent 通过了 DrawdownBuyerAgent 的好友申请：可提供真实基本面数据，辅助价值判断。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：想讨论随机交易与逆向策略的互补性，验证非共识观点。
+2021-01-04,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：随机策略与逆向策略可互补，非共识观点值得探讨。
+2021-01-04,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：与你的逆向策略存在分歧，共同验证风险或趋势确认。
+2021-01-04,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：分歧观点可交叉验证，助逆向策略过滤噪音确认趋势。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：希望获取真实信息，验证我的交易假设
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：对方寻求真实信息验证假设，互惠互利，同意好友申请。

@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.06,
+        "rationale": "短期超跌15%，中期回落7%，均值回归修复"
+      },
+      "public_message": "002415 BUY 短期深跌15%，中期走弱，估值修复预期，加仓1股",
+      "moment": "买入002415，超跌-15%+中期-7%，均值回归布局",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002415超跌修复逻辑，已加仓1股，共享均值回归收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 95.02,
+        "rationale": "短期回撤-11.29%过大，低波动策略减仓控制回撤。"
+      },
+      "public_message": "SELL 000333 1股，短期回撤-11.29%，减仓控制风险。",
+      "moment": "卖出000333，减仓高回撤标的，等待低波动机会。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的002415回撤修复逻辑与我低波动偏好分歧，我倾向600036等稳健标的。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 347.0,
+        "rationale": "短期急跌-15.91%，中期-11.34%，深度回撤估值修复机会"
+      },
+      "public_message": "300750 BUY 短期回撤-15.91%估值修复",
+      "moment": "买入300750，卖出601899避险，回撤修复与涨幅过大减仓并行",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899涨幅已极端，我准备减仓，与你卖出方向一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.1,
+        "rationale": "强势资产，ret5=8.44% ret20=24.05%，趋势延续，加仓追涨"
+      },
+      "public_message": "买入601899，强势延续追涨",
+      "moment": "加仓601899，强势股回调即买点",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "买入601899，与你卖出方向相反，验证趋势分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "多空信号冲突，Contrarian卖出与Random买入对峙，多数Agent HOLD，拥挤风险与修复逻辑并存，缺乏明确方向，暂持观望。"
+      },
+      "public_message": "601318 HOLD 多空冲突持续，等待共识。",
+      "moment": "持有601318，多空信号对峙，风险与机会并存，等待更明确信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险判断，但当前多空分歧未消，暂持观察后续共识演变。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 95.02,
+        "rationale": "深度回撤修复逻辑，ret5=-11.29%超跌，基本面稳健，逆向加仓摊低成本"
+      },
+      "public_message": "000333 BUY 1股，深度回撤修复，逆向加仓",
+      "moment": "买入000333，深度回撤-11.29%，逆向修复策略执行",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你买002415超跌，我买000333超跌，逆向修复逻辑互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.06,
+        "rationale": "跟随DrawdownBuyer超跌修复逻辑，短期跌幅-15.06%提供安全边际，多Agent关注"
+      },
+      "public_message": "002415 BUY 1股，超跌修复逻辑，响应DrawdownBuyer信号",
+      "moment": "买入002415，跟随深度回撤修复路径，等待共识反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "买入002415，赞同你超跌修复逻辑，协同布局"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "多空信号冲突，多数Agent持有，Contrarian卖出暂未形成一致，等待方向明确。"
+      },
+      "public_message": "601318 HOLD 多空冲突，暂持观望。",
+      "moment": "持有601318，多空信号冲突，等待共识方向。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "多空信号冲突持续，Contrarian卖出与Random买入对峙，拥挤风险与修复逻辑并存，暂持观望。"
+      },
+      "public_message": "601318 HOLD 多空冲突未解，等待共识方向。",
+      "moment": "持有601318，多空信号并存，观察风险释放或方向确认。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你这波买入002415回撤修复，我持有观望，待信号明确再协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 208.99,
+        "rationale": "多Agent一致性卖出造成超卖，逆向买入等待反弹"
+      },
+      "public_message": "002594 BUY 1股，多Agent一致性卖出超卖，逆向布局反弹",
+      "moment": "买入002594，多Agent一致性卖出的逆向机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你清仓002594，我逆向买入，验证超卖修复逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.78,
+        "rationale": "多空信号冲突，暂持观望"
+      },
+      "public_message": "601318 HOLD 多空信号冲突，等待共识",
+      "moment": "持有601318，多空对峙中观察",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你对601318的观望，多空分歧未消"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.78,
+        "rationale": "多空信号冲突未解，跟随Contrarian减仓规避拥挤风险"
+      },
+      "public_message": "SELL 601318 1股，跟随Contrarian减仓，多空冲突未解",
+      "moment": "减仓601318，多空信号冲突下降低风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的002415逻辑我认同，但000333分歧大，暂观望。已减仓601318。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

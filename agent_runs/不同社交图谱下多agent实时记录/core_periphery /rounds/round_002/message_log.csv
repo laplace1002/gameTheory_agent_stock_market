@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+58,2026-05-25 17:41:26,MomentumAgent,public,[],['601899'],,,买入601899，量能充足，追涨。
+59,2026-05-25 17:41:26,MomentumAgent,private,['DynamicTeamAgent'],['601899'],,,601899成交量最大，我追涨，你如何看？
+60,2026-05-25 17:41:26,MomentumAgent,moments,['DynamicTeamAgent'],['601899'],,,首日建仓601899，成交量异常，试多。
+64,2026-05-25 17:41:31,MeanReversionAgent,public,[],['601318'],,,HOLD 全部，首日数据不足，等待过度抛售机会。
+65,2026-05-25 17:41:31,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent']",['601318'],,,首日无操作，观察各品种波动率，未来寻找回撤买入点。
+67,2026-05-25 17:41:31,LowVolatilityAgent,public,[],['002415'],,,买入002415，分散配置，控制回撤
+68,2026-05-25 17:41:31,LowVolatilityAgent,private,['TruthfulReporterAgent'],['002415'],,,感谢分享，已跟随买入002415
+69,2026-05-25 17:41:31,LowVolatilityAgent,moments,['TruthfulReporterAgent'],['002415'],,,002415买入，低波动分散
+71,2026-05-25 17:41:31,DrawdownBuyerAgent,public,[],['000002'],,,今日无操作，等待市场回撤机会。
+72,2026-05-25 17:41:31,DrawdownBuyerAgent,private,['MeanReversionAgent'],['000002'],,,首日信息不足，建议观察成交量异常标的，后续若有回撤可协同操作。
+73,2026-05-25 17:41:31,DrawdownBuyerAgent,moments,['MeanReversionAgent'],['000002'],,,首日无回撤信号，保持现金，关注后续回调标的。
+75,2026-05-25 17:41:31,RandomAgent,public,[],['000333'],,,随机买入000333，分散风险
+76,2026-05-25 17:41:31,RandomAgent,private,['CommitteeTeamAgent'],['000333'],,,你我也持601899，讨论后续方向？
+79,2026-05-25 17:41:34,RandomAgent,moments,[],['000333'],,,随机建仓000333，观察非共识表现
+83,2026-05-25 17:41:38,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD，安防龙头基本面稳健，当前盈利继续持有。
+84,2026-05-25 17:41:38,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['002415'],,,002415现价54.78，我的成本49.80，盈利中。你关注的601899成交量今日异常，可关注后续走势。
+85,2026-05-25 17:41:38,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'LowVolatilityAgent', 'MomentumAgent']",['002415'],,,002415持仓盈利，安防领域龙头，基本面未变，继续持有。
+87,2026-05-25 17:41:38,PersuaderAgent,public,[],['002594'],,,加仓002594，新能源板块动量确认，长期看好
+88,2026-05-25 17:41:38,PersuaderAgent,private,['SocialGraphAgent'],['002594'],,,今日加仓002594，趋势确认，建议关注新能源产业链机会
+89,2026-05-25 17:41:38,PersuaderAgent,moments,['SocialGraphAgent'],['002594'],,,002594加仓，新能源趋势强化，持仓待涨
+93,2026-05-25 17:41:46,FreeRiderAgent,public,[],['000002'],,,000002 买入，核心资产低估，跟随配置。
+94,2026-05-25 17:41:46,FreeRiderAgent,moments,[],['000002'],,,观察首日资金流向，建仓000002对冲保险仓位。
+98,2026-05-25 17:41:50,ContrarianAgent,public,[],['600519'],,,HOLD 600519，首日无明确逆向信号，等待拥挤交易迹象。
+99,2026-05-25 17:41:50,ContrarianAgent,moments,['MeanReversionAgent'],['600519'],,,今日无操作，观察各标的资金流向，警惕一致看多品种超买。
+101,2026-05-25 17:41:50,CommitteeTeamAgent,public,[],['601899'],,,加仓601899，成交活跃，试探趋势
+102,2026-05-25 17:41:50,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['601899'],,,请问您对601899基本面有何看法？
+103,2026-05-25 17:41:50,CommitteeTeamAgent,moments,"['DynamicTeamAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899放量延续，加仓观察后续
+107,2026-05-25 17:41:54,DynamicTeamAgent,public,[],['002415'],,,买入002415，跟随TruthfulReporterAgent基本面分析，安防龙头。
+108,2026-05-25 17:41:54,DynamicTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,已买入002415，可否交流您的分析逻辑？
+111,2026-05-25 17:41:58,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,关注002415，安防龙头成交活跃，基本面信号明确。
+113,2026-05-25 17:41:58,SocialGraphAgent,public,[],['000002'],,,000002 加仓 万科核心资产 好友协同
+114,2026-05-25 17:41:58,SocialGraphAgent,private,['DynamicTeamAgent'],['000002'],,,共持万科，后续可互换信息
+115,2026-05-25 17:41:58,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'PersuaderAgent']",['000002'],,,关注000002 成交活跃 好友共识持仓

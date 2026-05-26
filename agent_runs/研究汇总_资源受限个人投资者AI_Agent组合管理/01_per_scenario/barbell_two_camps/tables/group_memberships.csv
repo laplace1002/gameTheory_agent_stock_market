@@ -1,0 +1,10 @@
+group,agent
+Trend Camp,MomentumAgent
+Trend Camp,TruthfulReporterAgent
+Trend Camp,DynamicTeamAgent
+Reversion Camp,MeanReversionAgent
+Reversion Camp,ContrarianAgent
+Reversion Camp,PersuaderAgent
+Risk Camp,CommitteeTeamAgent
+Risk Camp,LowVolatilityAgent
+Risk Camp,FreeRiderAgent

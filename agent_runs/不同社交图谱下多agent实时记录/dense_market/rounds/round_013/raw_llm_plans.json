@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "600036近5日涨幅4.7%最强，金融防御轮动持续，追涨趋势延续。"
+      },
+      "public_message": "600036 BUY 近5日强势，金融防御轮动延续，加仓追涨。",
+      "moment": "加仓600036，追涨金融防御龙头，趋势延续。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同金融防御轮动，600036趋势最强，同步加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.85,
+        "rationale": "现金不足加仓，深跌但未到安全边际，持仓等待反弹"
+      },
+      "public_message": "HOLD 000333/000858，深跌非拥挤，等待均值回归，不追金融防御",
+      "moment": "深跌股尚未极端，金融防御拥挤度上升，维持现有持仓观察",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌修复逻辑，但现金不足，继续持有等待方向确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "低波动防御，逆势上涨，分散风险"
+      },
+      "public_message": "600036 BUY 逆势上涨，防御轮动补仓",
+      "moment": "加仓600036，低波动防御策略，控制回撤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意金融防御轮动，但注意拥挤度，我小幅加仓600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "000858拥挤度上升，减仓锁定部分利润，转向深跌非拥挤的000333"
+      },
+      "public_message": "000858 SELL 减仓拥挤白酒，买入000333深跌修复",
+      "moment": "减仓000858，买入000333，深跌修复逻辑等待验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "认同深跌非拥挤逻辑，已买入000333分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.5,
+        "rationale": "现金不足，深跌品种价格过高，无法加仓"
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.2,
+        "rationale": "金融防御拥挤度上升，SocialGraphAgent提示等待，减仓分散风险"
+      },
+      "public_message": "601318 SELL 金融防御拥挤上升，减仓分散风险",
+      "moment": "601318减仓，金融防御拥挤度上升，等待轮动信号",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤度观察，已减仓601318部分，等待确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "跟随多Agent深跌非拥挤修复逻辑，分散金融防御集中风险"
+      },
+      "public_message": "买入000858，深跌非拥挤，分散防御集中风险",
+      "moment": "买入000858，深跌非拥挤等待价值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意深跌修复逻辑，已买入000858分散防御风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 85.2,
+        "rationale": "加仓低估值金融防御，跟随多agent轮动逻辑，拥挤度尚未过高"
+      },
+      "public_message": "601318 BUY 金融防御轮动持续，加仓等待资金进一步流入",
+      "moment": "加仓601318，金融防御拥挤度合理，等待轮动深化",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "金融防御拥挤度仍安全，600036和601318可继续加仓，轮动尚未结束"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.85,
+        "rationale": "金融防御拥挤，持有深跌非拥挤白酒等待修复"
+      },
+      "public_message": "000858 HOLD 金融防御拥挤，非拥挤白酒等待修复",
+      "moment": "逆势持有000858，深跌非拥挤，等待修复",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "金融防御已拥挤，注意回调风险，非拥挤白酒或有修复空间"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 86.8,
+        "rationale": "多Agent共识金融防御轮动，增强组合防御性"
+      },
+      "public_message": "601318 BUY 跟随资金轮动低估值金融防御",
+      "moment": "加仓601318，低估值金融防御，跟随拥挤度切换",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意防御轮动逻辑，加仓601318分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "加仓金融防御龙头，600036近5日逆势上涨4.70%，跟随资金轮动增强组合防御性。"
+      },
+      "public_message": "BUY 600036 加仓金融防御，跟随轮动增强防御。",
+      "moment": "加仓600036，金融防御轮动中，等待进一步确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已加仓600036，防御轮动逻辑一致，增强组合稳定性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.2,
+        "rationale": "金融防御拥挤度上升，减仓锁定部分利润，等待回调再观察"
+      },
+      "public_message": "减仓601318，金融防御拥挤度上升，锁定部分利润",
+      "moment": "减仓601318，金融防御拥挤度上升，锁定利润等待轮动确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "金融防御拥挤，我减仓部分601318，您逆向做深跌修复，共识是分开风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

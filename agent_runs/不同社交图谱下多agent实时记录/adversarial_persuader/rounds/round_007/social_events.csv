@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_accept,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 通过了 DrawdownBuyerAgent 的好友申请：DrawdownBuyerAgent关注回撤机会，可互补验证多空分歧后的方向，有助于信息价值验证。
+2021-01-12,friend_request,RandomAgent,DynamicTeamAgent,RandomAgent 向 DynamicTeamAgent 发起好友申请：随机视角与观望决策互补，共同验证601899放量方向
+2021-01-12,friend_accept,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 通过了 RandomAgent 的好友申请：随机视角可补充信息，共同验证601899方向，有助于决策优化。
+2021-01-12,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_accept,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 通过了 PersuaderAgent 的好友申请：PersuaderAgent看多601899，与多空分歧互补，可验证信息价值。

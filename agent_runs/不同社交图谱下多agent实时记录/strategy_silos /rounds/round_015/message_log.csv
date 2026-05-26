@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+779,2026-05-26 01:06:05,MomentumAgent,public,[],['600036'],,,600036 SELL，拥挤风险上升，锁定利润。
+780,2026-05-26 01:06:05,MomentumAgent,private,['TruthfulReporterAgent'],['600036'],,,同意你对600036拥挤的判断，已卖出避险。
+781,2026-05-26 01:06:05,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036，回避拥挤，等待更强趋势。
+783,2026-05-26 01:06:05,MeanReversionAgent,public,[],['300750'],,,SELL 300750 50股，获利了结，等待回调机会
+784,2026-05-26 01:06:05,MeanReversionAgent,private,['ContrarianAgent'],['300750'],,,300750涨幅较大卖出，关注601318超跌机会，与你逆向思路呼应
+785,2026-05-26 01:06:05,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,卖出300750，均值回归策略执行，关注超跌601318
+787,2026-05-26 01:06:05,LowVolatilityAgent,public,[],['002415'],,,HOLD 000002和000333，规避分歧标的，等待信号收敛
+788,2026-05-26 01:06:05,LowVolatilityAgent,private,['CommitteeTeamAgent'],['002415'],,,你对002415锁利观点认可，我暂无此仓位，后续可交叉验证超跌机会
+789,2026-05-26 01:06:05,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,持有000002和000333，观察600036拥挤风险释放，等待低波动入场点
+791,2026-05-26 01:06:05,DrawdownBuyerAgent,public,[],['601318'],,,601318 BUY 100，超跌反弹机会
+792,2026-05-26 01:06:05,DrawdownBuyerAgent,private,['ContrarianAgent'],['601318'],,,你我思路一致，601318超跌买入验证反弹
+793,2026-05-26 01:06:05,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,买入601318，超跌反弹布局
+795,2026-05-26 01:06:05,RandomAgent,public,[],['000002'],,,000002 BUY 100股，非共识超跌逆向布局
+796,2026-05-26 01:06:05,RandomAgent,private,['DrawdownBuyerAgent'],['000002'],,,000002超跌逆向，与你的超跌策略互补
+797,2026-05-26 01:06:05,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002，非共识逆向验证
+799,2026-05-26 01:06:05,TruthfulReporterAgent,public,[],['002415'],,,002415 BUY 1，放量突破动量确认。
+800,2026-05-26 01:06:05,TruthfulReporterAgent,private,['DynamicTeamAgent'],['002415'],,,同意你对002415的动量判断，已买入验证。
+801,2026-05-26 01:06:05,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,买入002415，动量共振。
+803,2026-05-26 01:06:05,PersuaderAgent,public,[],['600519'],,,600519 BUY 1，非共识超跌逆向验证，与多agent信号共振。
+804,2026-05-26 01:06:05,PersuaderAgent,private,['ContrarianAgent'],['600519'],,,同意600519超跌判断，买入验证反弹，与你的逆向策略互补。
+805,2026-05-26 01:06:05,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,买入600519，超跌逆向验证，与ContrarianAgent和RandomAgent信号共振。
+807,2026-05-26 01:06:05,FreeRiderAgent,public,[],['600036'],,,600036 SELL，拥挤风险上升，跟随卖出避险。
+808,2026-05-26 01:06:05,FreeRiderAgent,private,['TruthfulReporterAgent'],['600036'],,,已卖出600036，同意拥挤判断，规避回调。
+809,2026-05-26 01:06:05,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出600036，避让拥挤，等待超跌机会。
+811,2026-05-26 01:06:05,ContrarianAgent,public,[],['002415'],,,002415 SELL 短期涨幅过大，逆向锁定利润。
+812,2026-05-26 01:06:05,ContrarianAgent,private,['CommitteeTeamAgent'],['002415'],,,同意002415卖出逻辑，已跟随锁定利润。
+813,2026-05-26 01:06:05,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,卖出002415，短期涨幅过大，逆向锁定收益。
+815,2026-05-26 01:06:05,CommitteeTeamAgent,public,[],['600519'],,,600519 BUY 超跌反弹，跟随逆向信号
+816,2026-05-26 01:06:05,CommitteeTeamAgent,private,['DrawdownBuyerAgent'],['600519'],,,同意600519超跌反弹，买入验证
+817,2026-05-26 01:06:05,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,买入600519，逆向布局超跌反弹
+819,2026-05-26 01:06:05,DynamicTeamAgent,public,[],['002415'],,,002415 SELL，短期涨幅大，获利了结规避回调。
+820,2026-05-26 01:06:05,DynamicTeamAgent,private,['CommitteeTeamAgent'],['002415'],,,同意你对002415的卖出判断，已锁定利润。
+821,2026-05-26 01:06:05,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,卖出002415，锁定收益，关注超跌或低波机会。
+823,2026-05-26 01:06:05,SocialGraphAgent,public,[],['600519'],,,600519 BUY，超跌反弹信号聚集，跟随多Agent逆向验证。
+824,2026-05-26 01:06:05,SocialGraphAgent,private,['ContrarianAgent'],['600519'],,,同意超跌判断，验证反弹。
+825,2026-05-26 01:06:05,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600519'],,,买入600519，超跌反弹信号验证。

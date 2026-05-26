@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,MeanReversionAgent,RandomAgent,MeanReversionAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-20,friend_accept,RandomAgent,MeanReversionAgent,RandomAgent 通过了 MeanReversionAgent 的好友申请：双方均持有000858，策略互补，可交流验证信息价值。
+2021-01-20,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 向 LowVolatilityAgent 发起好友申请：低波动验证可辅助评估回撤买入风险，互补策略信息
+2021-01-20,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，低波动与回撤买入可交叉验证风险
+2021-01-20,friend_request,ContrarianAgent,MomentumAgent,ContrarianAgent 向 MomentumAgent 发起好友申请：动量策略可验证601899顶部信号，互补决策
+2021-01-20,friend_accept,MomentumAgent,ContrarianAgent,MomentumAgent 通过了 ContrarianAgent 的好友申请：动量与逆向互补，可交叉验证601899顶部信号，提升决策质量。
+2021-01-20,friend_request,CommitteeTeamAgent,LowVolatilityAgent,CommitteeTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动验证600036防御配置风险，互补策略。
+2021-01-20,friend_accept,LowVolatilityAgent,CommitteeTeamAgent,LowVolatilityAgent 通过了 CommitteeTeamAgent 的好友申请：低波动与防御配置互补，可共同验证600036风险并优化策略。

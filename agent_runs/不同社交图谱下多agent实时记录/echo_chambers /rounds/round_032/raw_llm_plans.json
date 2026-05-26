@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 14.63,
+        "rationale": "拥挤风险多Agent验证，减仓锁定利润"
+      },
+      "public_message": "601899减仓10股，拥挤信号强化；000333超跌反弹机会，买入1股",
+      "moment": "卖出601899 10股，拥挤风险释放；买入000333 1股，均值回归布局",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333超跌逻辑与你一致，已买入1股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 225.0,
+        "rationale": "002594近期弱势，ret5-12.45%，减仓切换至强势601899"
+      },
+      "public_message": "卖出002594 100股，换入601899，追涨强势趋势。",
+      "moment": "减仓弱势002594，加仓601899，追涨高动量。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601899强势但拥挤，我追涨买入，你有超跌逻辑，后续互验信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 2,
+        "price": 55.55,
+        "rationale": "低波动趋势多Agent验证，加仓分散拥挤风险"
+      },
+      "public_message": "600036 BUY 2股：低波动趋势多Agent验证，拥挤风险分散",
+      "moment": "加仓600036 2股，低波动趋势策略，多Agent协同验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意低波动逻辑，协同加仓2股，后续互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 58.36,
+        "rationale": "20日跌幅3.68%，超跌修复机会，分散持仓风险"
+      },
+      "public_message": "002415 BUY：20日跌幅3.68%，超跌修复机会",
+      "moment": "买入002415 1股，20日跌幅3.68%，超跌修复策略，分散拥挤风险",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "是的，我关注超跌修复，002415 20日跌幅3.68%，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.32,
+        "rationale": "拥挤风险多Agent验证，减仓锁定利润"
+      },
+      "public_message": "601318 SELL：拥挤信号多Agent验证，减仓避险",
+      "moment": "卖出601318 1股，拥挤风险多Agent验证，锁定部分利润",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤风险验证，跟随减仓1股，后续回调再评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 225.0,
+        "rationale": "超跌反弹随机博弈，中期趋势偏强"
+      },
+      "public_message": "002594 BUY 1股：超跌反弹随机博弈，中期趋势偏强",
+      "moment": "买入002594 1股，超跌反弹随机博弈，分散持仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌-12.45%，与您超跌逻辑一致，但中期仍正收益，加仓互验？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.55,
+        "rationale": "低波动趋势多Agent验证，继续加仓分散风险，维持组合稳健"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势持续，多Agent验证加仓",
+      "moment": "加仓600036 1股，低波动趋势策略，风险分散验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你超跌逻辑合理，但当前我更看好600036的低波动确定性，后续可互换验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.85,
+        "rationale": "拥挤风险多Agent验证，减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10股：拥挤风险强化，减仓锁定部分利润",
+      "moment": "卖出601899 10股，拥挤风险验证，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤信号，我同步卖出10股601899，锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.94,
+        "rationale": "超跌修复机会，反转信号验证"
+      },
+      "public_message": "000333 BUY 1股：20日跌幅4.12%，超跌修复，逆向验证",
+      "moment": "买入000333 1股，超跌修复逆向逻辑，分散拥挤风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌逻辑，买入1股000333协同，后续互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.55,
+        "rationale": "低波动趋势多Agent验证，加仓分散拥挤风险"
+      },
+      "public_message": "600036 BUY：低波动共识加仓，分散拥挤风险",
+      "moment": "加仓600036，低波动趋势策略，多Agent验证",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "感谢您对601318的关心，我选择加仓600036跟随低波动共识，601318暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.55,
+        "rationale": "低波动趋势多Agent验证，拥挤风险分散，继续加仓"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势多Agent验证，加仓",
+      "moment": "加仓600036 1股，低波动趋势策略，风险分散验证",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意低波动逻辑，加仓600036互验，后续协同观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.55,
+        "rationale": "低波动趋势多Agent验证，加仓分散拥挤风险"
+      },
+      "public_message": "600036 BUY：低波动趋势多Agent验证，加仓分散风险",
+      "moment": "加仓600036 1股，低波动趋势策略，风险分散验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你卖出601318基于拥挤信号，我仍持有少数，后续可互换观察"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 267.5,
+        "rationale": "近期5日涨幅5.22%最强，趋势延续，追涨加仓。"
+      },
+      "public_message": "002594 BUY 5股，趋势强劲，继续加仓。",
+      "moment": "加仓002594，追涨趋势最强的票，利用动量延续。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你抄底超跌，我追涨强势，策略分歧可对冲。建议交流。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.34,
+        "rationale": "超跌共识过度拥挤，ContrarianAgent提示风险，均值回归策略减仓"
+      },
+      "public_message": "000002 SELL 1股，超跌共识拥挤，减仓避险。关注601318超跌机会。",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢风险提示"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.34,
+        "rationale": "超跌共识拥挤，减仓止损"
+      },
+      "public_message": "000002 SELL 1股，超跌共识拥挤，减仓避险",
+      "moment": "减仓000002和601318，买入600036降低波动",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.07,
+        "rationale": "多Agent超跌共识过度，逆向做多非共识博弈反弹"
+      },
+      "public_message": "000002 BUY 1股，超跌共识拥挤后逆向做多非共识",
+      "moment": "买入000002，超跌共识过度后逆向做多，博弈非共识反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的做空逻辑合理，但逆向做多更非共识，小仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 28.34,
+        "rationale": "超跌共识过度拥挤，ContrarianAgent风险提示，减仓避险"
+      },
+      "public_message": "000002 SELL 超跌共识拥挤减仓",
+      "moment": "卖出000002，规避拥挤风险，等待新信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002拥挤风险确认，是否继续做空？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 2,
+        "price": 367.8,
+        "rationale": "300750近20日跌8.51%，深跌价值修复，多Agent协同验证，加仓博弈反弹"
+      },
+      "public_message": "300750 BUY 2股，深跌8.51%价值修复加仓",
+      "moment": "加仓300750，深跌非共识等待均值回归",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意300750极端超跌，协同加仓2股，等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 5,
+        "price": 10.8,
+        "rationale": "非共识机会，多Agent未覆盖，分散风险"
+      },
+      "public_message": "601899 BUY 5股，非共识机会低拥挤，分散风险",
+      "moment": "买入601899，非共识低拥挤，等待补涨验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899非共识低拥挤，与超跌共识对冲，是否考虑验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.34,
+        "rationale": "000002超跌共识过度拥挤，逆向做空博弈回调"
+      },
+      "public_message": "000002 SELL 1股，超跌共识拥挤逆向做空",
+      "moment": "000002超跌共识过度拥挤，逆向做空等待回调",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000002超跌共识已过度，注意反向风险，可考虑减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 350.33,
+        "rationale": "多Agent验证极端超跌，非共识修复概率高，小仓跟随"
+      },
+      "public_message": "300750 BUY 1股，多Agent极端超跌验证，博弈反弹",
+      "moment": "买入300750，多Agent协同验证极端超跌，等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "感谢你的300750超跌逻辑，已跟随买入1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 367.8,
+        "rationale": "极端超跌-8.51%且多Agent协同买入，非共识博弈反弹"
+      },
+      "public_message": "买入1股300750，极端超跌-8.51%非共识博弈反弹",
+      "moment": "买入300750，极端超跌-8.51%非共识，等待均值回归",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意300750超跌逻辑，已买入1股协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 2,
+        "price": 28.34,
+        "rationale": "超跌共识过度拥挤，多Agent减仓卖空，风险加剧，动态减仓避险"
+      },
+      "public_message": "000002 SELL 2股，多Agent共识拥挤减仓避险",
+      "moment": "减仓000002，跟随拥挤风险信号转向非共识机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "确认000002拥挤程度，是否建议继续减持？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.34,
+        "rationale": "超跌共识过度拥挤，减仓避险"
+      },
+      "public_message": "SELL 000002 1股，超跌共识拥挤，减仓避险",
+      "moment": "减仓000002，超跌共识过度，等待回调后重新评估",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意000002拥挤风险，已减仓1股，后续关注非共识机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "20日跌幅-18.88%，超跌明显，均值回归机会"
+      },
+      "public_message": "002594 BUY: 超跌-18.88%均值回归，加仓1股",
+      "moment": "买入002594 1股，过度抛售后的均值回归机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594超跌逻辑，我加仓1股，风险分散验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 210.9,
+        "rationale": "追涨策略，卖出弱势股，换仓强势000002"
+      },
+      "public_message": "SELL 002594 201股，清仓弱势，追涨000002",
+      "moment": "清仓002594，追涨000002，趋势为王",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的超跌逻辑vs我的追涨，分歧在于002594，我清仓换000002"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 3,
+        "price": 33.35,
+        "rationale": "止盈部分涨幅12.18%，腾出资金加仓超跌002594"
+      },
+      "public_message": "000002 SELL: 止盈3股，换仓超跌002594。",
+      "moment": "止盈000002，准备加仓超跌002594。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意超跌逻辑，卖出000002准备加仓002594。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 12.32,
+        "rationale": "随机买入601899，超跌随机博弈，尝试短期反弹"
+      },
+      "public_message": "601899 BUY 1股：随机超跌博弈，逆共识验证",
+      "moment": "买入601899 1股，随机超跌博弈，等待反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "随机买入601899超跌，与你的超跌逻辑互补验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 93.33,
+        "rationale": "低波动拥挤下逆向分散，与ContrarianAgent互补验证"
+      },
+      "public_message": "000333 BUY：低波动拥挤下逆向分散，与ContrarianAgent互补验证",
+      "moment": "加仓000333 1股，低波动逆向分散，与ContrarianAgent验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆势逻辑，加仓000333协同分散低波动风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 33.35,
+        "rationale": "近期涨幅12.18%，获利了结，分散仓位风险"
+      },
+      "public_message": "卖出000002 1股，近期涨幅较大，获利了结",
+      "moment": "卖出000002 1股，短期涨幅大，锁定利润，分散风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意换仓逻辑，跟卖1股000002获利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.02,
+        "rationale": "超跌反弹多Agent验证，分散集中风险"
+      },
+      "public_message": "000858 BUY：超跌反弹多Agent验证，分散风险",
+      "moment": "买入000858 1股，超跌反弹策略，多Agent风险分散",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意超跌逻辑，买入1股000858互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.02,
+        "rationale": "超跌反弹多Agent验证，加仓分散风险"
+      },
+      "public_message": "000858 BUY：超跌-8.45%，多Agent验证，加仓分散600036集中风险",
+      "moment": "加仓000858 1股，超跌反弹逻辑，多Agent验证分散风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "超跌反弹与逆低波动互补，000858多Agent验证，建议关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 2,
+        "price": 33.35,
+        "rationale": "000002短期涨幅12.18%，获利了结并释放集中风险，换仓超跌品种"
+      },
+      "public_message": "000002 SELL 2股：短期涨幅过大，获利了结释放集中风险",
+      "moment": "卖出000002 2股，获利了结换仓超跌品种",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你换仓逻辑，我已卖出部分000002获利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 93.33,
+        "rationale": "低波动拥挤过度，逆向加仓均值回归"
+      },
+      "public_message": "000333 BUY: 低波动拥挤过度，逆向加仓",
+      "moment": "加仓000333 1股，逆势低波动拥挤，等待均值回归",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "我继续买入000333，与你的卖出601318形成策略分化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "超跌-18.88%，多Agent验证换仓分散风险"
+      },
+      "public_message": "002594 BUY：超跌换仓，多Agent验证分散风险",
+      "moment": "买入002594 1股，超跌反弹换仓分散风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594超跌换仓逻辑，买入1股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.02,
+        "rationale": "超跌反弹多Agent验证，分散集中风险"
+      },
+      "public_message": "买入000858 1股，超跌反弹多Agent验证分散风险",
+      "moment": "买入000858 1股，超跌反弹逻辑，跟随多Agent验证分散风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意超跌逻辑，买入000858互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

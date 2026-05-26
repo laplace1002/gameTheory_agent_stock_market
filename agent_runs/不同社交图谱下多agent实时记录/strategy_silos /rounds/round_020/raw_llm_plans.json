@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.0,
+        "rationale": "002415弱势无趋势，止损换入强势"
+      },
+      "public_message": "002415 SELL，弱势无延续，止损换入强势",
+      "moment": "卖出弱势002415，准备换入趋势股",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已卖弱势002415，拟转追强势，与你逆向持仓分化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 354.11,
+        "rationale": "300750 ret5=-13.21%，过度抛售，均值回归预期。"
+      },
+      "public_message": "买入300750，超跌-13.21%均值回归。",
+      "moment": "买入300750，超跌-13.21%，均值回归布局。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌13%，我买入均值回归，与你超跌策略一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 80.92,
+        "rationale": ""
+      },
+      "public_message": "601318 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 354.11,
+        "rationale": "非共识超跌，-13.21%跌幅大，其他agent未关注，逆向买入1股"
+      },
+      "public_message": "300750 BUY 1股，非共识超跌逆向入场",
+      "moment": "买入300750 1股，非共识逆向，关注超跌修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750超跌-13.21%，无人关注，逆向机会，已买入1股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 354.11,
+        "rationale": "跌深-13.21%，价值修复机会，加仓摊平"
+      },
+      "public_message": "300750 BUY 加仓，超跌-13.21%价值修复",
+      "moment": "加仓300750，深度回撤价值修复，等待反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "加仓300750，深度回撤-13.21%，与你的逆向策略不同，分散风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.08,
+        "rationale": "超跌共振持续但拥挤度上升，ContrarianAgent看空，暂时持有等待修复，不追加也不减仓"
+      },
+      "public_message": "601318 HOLD 超跌共振等待修复，拥挤风险需观察",
+      "moment": "持仓601318，超跌共振未修复，等待市场选择",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318超跌共振拥挤，逆向信号有价值，我暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 79.08,
+        "rationale": "超跌共振拥挤度上升，RandomAgent止盈，ContrarianAgent看空，减仓50股控制风险。"
+      },
+      "public_message": "601318 SELL 50股，超跌共振拥挤度上升，减仓。",
+      "moment": "减仓601318 50股，拥挤信号释放，等待回调后再评估。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "拥挤风险上升，我减仓50股，注意情绪过度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.08,
+        "rationale": "超跌共振拥挤度上升，已有仓位，等待分歧信号"
+      },
+      "public_message": "601318超跌共振拥挤，持有观察，等待分歧机会",
+      "moment": "601318超跌共振多Agent验证，但拥挤度上升，已有仓位，暂不加仓，等待逆向信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "您看空601318超跌共振，能否分享拥挤度判断依据？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.79,
+        "rationale": "HOLD: 601318拥挤买入信号明显，其他品种未发现过度乐观，不参与拥挤。"
+      },
+      "public_message": "HOLD 601318 拥挤买入过度，看空修复。",
+      "moment": "601318多Agent买入拥挤，等待情绪逆转，持逆向头寸。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你卖出601318，我继续看空拥挤，共识验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 80.92,
+        "rationale": "多Agent超跌共振信号持续，自身已有持仓，小幅加仓验证"
+      },
+      "public_message": "601318超跌共振多agent验证，小幅加仓等待修复",
+      "moment": "加仓601318，超跌共振信号多agent持续验证，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你持有600519逆向，我加仓601318共振，分歧验证策略"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.08,
+        "rationale": "超跌共振持续，但价格已跌，等待修复"
+      },
+      "public_message": "601318 HOLD 等待超跌修复",
+      "moment": "持有601318，超跌共振中，等待信号",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "理解你的止盈逻辑，我暂时持有等修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.08,
+        "rationale": "超跌共振拥挤加剧，等待分歧信号"
+      },
+      "public_message": "601318 HOLD：超跌共振多Agent加仓但拥挤，观望",
+      "moment": "601318持仓观察，超跌共振信号密集但拥挤度上升",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你持有逆向看空601318，我持仓验证共振，分歧可对冲风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

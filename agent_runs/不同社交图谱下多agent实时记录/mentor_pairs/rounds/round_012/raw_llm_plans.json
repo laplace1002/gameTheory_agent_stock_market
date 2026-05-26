@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "动量延续，多信号一致，加仓跟踪趋势。"
+      },
+      "public_message": "600036 BUY 动量延续量能配合，加仓跟进。",
+      "moment": "加仓600036，量价齐升，追涨跟进。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036动量一致，已加仓，观察持续性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 2,
+        "price": 281.5,
+        "rationale": "000858 ret5=-9.19%深跌，量能平稳，均值回归逻辑加仓"
+      },
+      "public_message": "000858 BUY 深跌超9%量能平稳，均值回归加仓",
+      "moment": "加仓000858，深跌量能未见恐慌，等待反弹修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858深跌量能未放大，我加仓验证均值回归，评估修复概率"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2009.41,
+        "rationale": "短期回撤-7%，量能未放大，持有等待修复，避免追高600036回调风险"
+      },
+      "public_message": "600519 HOLD 短期回调-7%量能平稳，持有等待反弹",
+      "moment": "600519持有，短期回撤未恐慌，等待情绪修复",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036动量强但涨幅已高，如何评估回调风险？我持有600519等待修复"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "低波动策略与动量跟踪互补，可以验证回调风险控制方法"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 281.5,
+        "rationale": "深跌-9.19%量能平稳，摊低成本等待均值回归"
+      },
+      "public_message": "000858 BUY 跌深量稳，加仓等待修复",
+      "moment": "加仓000858，深跌-9.19%量能未恐慌，摊低成本持有等待修复。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "我加仓000858，跌深量稳，均值回归逻辑一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 216.2,
+        "rationale": "随机视角，博跌深反弹，与PersuaderAgent卖出方向相反，验证市场效率"
+      },
+      "public_message": "002594 BUY 随机博跌深反弹，反卖出压力",
+      "moment": "买入002594，随机博弈，期待反转",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594我在随机买入博反弹，与你方向相反，验证市场效率"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.85,
+        "rationale": "多Agent买入信号一致但短期涨幅已高，持有观察量能确认"
+      },
+      "public_message": "600036 HOLD 多Agent一致买入但涨幅已高，持有观察量能确认",
+      "moment": "600036持有，多信号一致但警惕回调",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036涨幅已高，你如何评估回调风险？我倾向持有观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "动能量能配合，多Agent一致买入信号，趋势延续概率高"
+      },
+      "public_message": "600036 BUY 动能量能多Agent一致，跟随趋势加仓",
+      "moment": "买入600036，动能量能稳健，多Agent验证趋势",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036动量延续，多信号确认，建议继续持有或加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "多Agent买入信号一致，量能放大，动量趋势确认，跟随加仓"
+      },
+      "public_message": "600036 BUY 动量持续量能配合，多Agent共识加仓",
+      "moment": "加仓600036，多Agent动量信号验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036动量信号强，已加仓，你如何评估回调风险？"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "回撤策略与动量趋势可互补验证，交流风险控制"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "多Agent买入信号一致，动能量能配合，加仓跟随趋势"
+      },
+      "public_message": "600036 BUY 多Agent动量信号一致，继续加仓",
+      "moment": "加仓600036，多Agent买入信号一致，量价齐升",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036动量持续，加仓验证趋势，是否继续持有？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 281.5,
+        "rationale": "过度抛售后逆向买入，拥挤追高600036，000858被忽视，等待均值回归"
+      },
+      "public_message": "过度抛售后逆向买入，拥挤追高600036，000858被忽视，等待均值回归",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.85,
+        "rationale": "多Agent一致买入导致拥挤，短期涨幅较大，持有观察回调风险"
+      },
+      "public_message": "600036 HOLD 量能配合但涨幅已高，筹码拥挤，等待回调确认",
+      "moment": "600036持有观察，动能量能尚可但短期涨幅过大，等待量价确认",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036涨幅已高，多信号一致但拥挤，你如何评估回调风险？我倾向持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.85,
+        "rationale": "短期涨幅较大，量能配合但需警惕回调，持有观察。"
+      },
+      "public_message": "600036 HOLD 涨幅已高，量能配合但需警惕回调",
+      "moment": "持有600036，多Agent动量一致但短期风险上升，等待回调确认",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036涨幅已高，你如何评估回调风险？我倾向持有观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

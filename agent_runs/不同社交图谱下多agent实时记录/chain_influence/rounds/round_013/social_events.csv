@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：追涨与回撤买入策略互补，验证方向分歧价值
+2021-01-20,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：追涨与回撤策略互补，可验证分歧价值，促进信息交换。
+2021-01-20,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：随机与低波动策略互补，验证信息多样性
+2021-01-20,friend_accept,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 通过了 RandomAgent 的好友申请：策略互补，对000002方向一致，可验证拥挤风险，增加信息多样性

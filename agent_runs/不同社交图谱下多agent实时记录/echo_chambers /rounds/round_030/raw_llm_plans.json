@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 2,
+        "price": 344.4,
+        "rationale": "追涨强势趋势，000858近期持续跑赢，加仓延续 momentum"
+      },
+      "public_message": "000858 BUY 2股：趋势强劲ret20近20%，追涨加仓验证",
+      "moment": "加仓000858 2股，趋势延续，ret20+19.7%",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "多Agent卖出拥挤，但ContrarianAgent逆向买入，均值回归逻辑认为超卖反弹，小仓位验证。"
+      },
+      "public_message": "601318 BUY 1股：拥挤卖出过度，均值回归反弹验证",
+      "moment": "买入601318 1股，拥挤卖出中均值回归，预期超卖反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，加仓1股互验拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.2,
+        "rationale": "趋势低波动，多Agent验证，分散风险，小幅加仓"
+      },
+      "public_message": "600036 BUY 1股：趋势低波动，多Agent验证，分散风险",
+      "moment": "加仓600036 1股，趋势低波动，风险分散验证",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意600036低波动逻辑，我加仓1股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.64,
+        "rationale": "超跌修复拥挤风险持续，多Agent卖出，减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10股：拥挤风险多Agent验证，减仓锁定利润",
+      "moment": "减仓601899 10股，拥挤信号强化，锁定部分利润等待回调再入",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓601318，但拥挤风险明显，我暂持观察，后续可互换信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "拥挤卖出过度，逆向加仓验证"
+      },
+      "public_message": "601318 BUY 1股：拥挤卖出过度，逆向加仓验证",
+      "moment": "买入601318 1股，拥挤卖出中逆向操作，超跌修复预期不变",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意601318逆向逻辑，加仓1股互验拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "拥挤风险强化，多Agent卖出互验，减仓降低风险"
+      },
+      "public_message": "601318 SELL 1股：拥挤风险多Agent验证，减仓避险",
+      "moment": "601318拥挤信号增强，多Agent卖出，我减仓1股，剩余持仓等待",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓但拥挤风险明显，我减仓互验，注意回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.2,
+        "rationale": "低波动趋势持续，多Agent验证，分散拥挤风险"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势持续，分散拥挤风险",
+      "moment": "加仓600036，低波动趋势策略，拥挤风险分散验证",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你考虑加仓600036，低波动已验证，可协同互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.64,
+        "rationale": "拥挤风险多Agent验证，减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10股：超跌修复拥挤风险持续，跟随减仓",
+      "moment": "减仓601899 10股，拥挤风险信号强化，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "您逆向加仓601318的逻辑是否基于基本面？我减仓601899后考虑是否跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.2,
+        "rationale": "低波动趋势，多Agent验证，分散拥挤风险"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势，多Agent验证，分散拥挤风险",
+      "moment": "加仓600036 1股，低波动趋势策略，风险分散验证。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意600036低波动逻辑，加仓互验，后续协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "超跌修复拥挤卖出过度，逆向加仓验证"
+      },
+      "public_message": "601318 BUY：拥挤卖出过度，逆向加仓验证修复逻辑",
+      "moment": "买入601318 1股，利用拥挤卖出逆向加仓，超跌修复预期不变",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "超跌修复逻辑未变，拥挤卖出正提供逆向机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.2,
+        "rationale": "趋势低波动，多Agent验证，协同加仓"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势多Agent验证，加仓协同",
+      "moment": "买入600036 1股，低波动趋势策略，风险分散验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意600036低波动逻辑，加仓1股互验，后续可协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "拥挤风险多Agent验证，减仓降低风险"
+      },
+      "public_message": "601318 SELL 1股：拥挤信号强化，多Agent卖出互验，减仓避险",
+      "moment": "减仓601318 1股，拥挤风险验证，跟随多数卖出信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解逆向逻辑，但我基于多数卖出信号先减仓，后续再观察回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

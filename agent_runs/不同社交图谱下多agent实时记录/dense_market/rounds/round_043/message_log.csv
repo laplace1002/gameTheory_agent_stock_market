@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1936,2026-05-25 20:31:49,MomentumAgent,public,[],['601318'],,,601318 买入70股，ret20正且跌幅最小，追涨强势
+1937,2026-05-25 20:31:49,MomentumAgent,private,['ContrarianAgent'],['601318'],,,同意601318相对强势，已加仓70股追涨，愿交流
+1938,2026-05-25 20:31:49,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318 70股，追涨趋势延续，ret20正值
+1940,2026-05-25 20:31:49,MeanReversionAgent,public,[],['000333'],,,000333深跌10%，非共识，买入10股博均值回复
+1941,2026-05-25 20:31:49,MeanReversionAgent,private,['ContrarianAgent'],['000333'],,,000333深跌非拥挤，均值回复概率高，是否关注？
+1942,2026-05-25 20:31:49,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,买入000333 10股，深跌非共识，等待均值回复
+1944,2026-05-25 20:31:49,LowVolatilityAgent,public,[],['000858'],,,000858 卖出10股，拥挤风险，控制回撤
+1945,2026-05-25 20:31:49,LowVolatilityAgent,private,['ContrarianAgent'],['000858'],,,同意000858拥挤判断，已卖出10股同步
+1946,2026-05-25 20:31:49,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,卖出000858 10股，拥挤共识下减仓观望
+1948,2026-05-25 20:31:49,DrawdownBuyerAgent,public,[],['002594'],,,002594 跌幅最深，恐慌后加仓10股待修复
+1949,2026-05-25 20:31:49,DrawdownBuyerAgent,private,['ContrarianAgent'],['002594'],,,同意002594恐慌机会，已买入10股，共同等待修复
+1950,2026-05-25 20:31:49,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 10股，深跌恐慌后价值修复，与ContrarianAgent共识
+1952,2026-05-25 20:31:49,RandomAgent,public,[],['601899'],,,601899 深跌15%但20日持平，随机视角买入10股试错。
+1953,2026-05-25 20:31:49,RandomAgent,private,['ContrarianAgent'],['601899'],,,你卖出000858转向002594，我关注601899非共识，愿交流逻辑。
+1954,2026-05-25 20:31:49,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 深跌待修复，非共识加仓10股。
+1956,2026-05-25 20:31:49,TruthfulReporterAgent,public,[],['000858'],,,000858 深跌均值回复，买入10股跟随共识
+1957,2026-05-25 20:31:49,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000858'],,,买入000858 10股，深跌均值回复，与多Agent共识一致
+1959,2026-05-25 20:31:49,PersuaderAgent,public,[],['002594'],,,002594 拥挤风险，减仓10股控制回撤
+1960,2026-05-25 20:31:49,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,601318相对强势，逆向可能持有，愿交流？
+1961,2026-05-25 20:31:49,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减仓002594 10股，拥挤交易过多，等待深跌机会
+1963,2026-05-25 20:31:49,FreeRiderAgent,public,[],['601318'],,,601318 相对强势，加仓10股验证逆向逻辑
+1964,2026-05-25 20:31:49,FreeRiderAgent,private,['ContrarianAgent'],['601318'],,,同意601318相对强势，已加仓10股验证逆向逻辑，愿交流后续看法
+1965,2026-05-25 20:31:49,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318 加仓10股，相对强势，与ContrarianAgent观点一致
+1967,2026-05-25 20:31:49,ContrarianAgent,public,[],['002594'],,,002594恐慌抛售过度，逆向买入10股试错
+1968,2026-05-25 20:31:49,ContrarianAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594恐慌过度，逆向买入10股，拥挤减持后或许见底
+1969,2026-05-25 20:31:49,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594 10股，恐慌过度逆向机会
+1971,2026-05-25 20:31:49,CommitteeTeamAgent,public,[],['000858'],,,000858 卖出10股，共识过强控制拥挤回撤
+1972,2026-05-25 20:31:49,CommitteeTeamAgent,private,['ContrarianAgent'],['000858'],,,同意逆向逻辑，已卖出10股跟进
+1973,2026-05-25 20:31:49,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,卖出000858 10股，共识拥挤减仓
+1975,2026-05-25 20:31:49,DynamicTeamAgent,public,[],['002594'],,,002594 减仓10股，拥挤风险，控制回撤。
+1976,2026-05-25 20:31:49,DynamicTeamAgent,private,['ContrarianAgent'],['002594'],,,002594拥挤共识过强，但深跌后您计划买入？愿交流观点。
+1977,2026-05-25 20:31:49,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减仓002594 10股，拥挤风险，等待深跌机会再议。
+1979,2026-05-25 20:31:49,SocialGraphAgent,public,[],['000858'],,,000858 深跌共识强，加仓10股跟随，但警惕拥挤反噬
+1980,2026-05-25 20:31:49,SocialGraphAgent,private,['ContrarianAgent'],['000858'],,,000858共识强但您减仓，请问是否看到更深风险？愿交流
+1981,2026-05-25 20:31:49,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858 10股，跟随共识但注意拥挤管理

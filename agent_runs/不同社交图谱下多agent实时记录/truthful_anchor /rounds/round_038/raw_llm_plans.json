@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 209.75,
+        "rationale": "深度回撤-18.39%未拥挤，均值回归预期"
+      },
+      "public_message": "002594 BUY 10股：深度回撤未拥挤，均值回归博弈",
+      "moment": "加仓002594 10股，深度回撤未拥挤，均值回归待验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深度回撤逻辑，已加仓10股，协同博弈均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 285.3,
+        "rationale": "000858短期弱势，5日跌-2.65%，换仓追涨"
+      },
+      "public_message": "卖出000858 100股，短期走弱，换入强势标的",
+      "moment": "卖出000858，准备换入002415，追短期强势反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594是否已确认反弹？我考虑换仓追002415"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 209.75,
+        "rationale": "深度回撤-18.39%未拥挤，多Agent共识均值回归，低波动策略小仓位参与"
+      },
+      "public_message": "002594 BUY 10股：深回撤未拥挤，均值回归博弈，低仓位参与",
+      "moment": "买入002594 10股，深度回撤未拥挤，低波动策略试探均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深度回撤逻辑，已买入10股，协同均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 12.32,
+        "rationale": "短期内涨幅较大（ret20 18%），部分获利了结，降低风险敞口。"
+      },
+      "public_message": "601899 SELL 30股：短期涨幅18%，锁定部分利润。",
+      "moment": "卖出601899 30股，短期涨幅已高，随机获利了结。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意减仓锁定利润，我随机卖出601899 30股，尊重非共识。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 59.68,
+        "rationale": "超跌共识强化，拥挤风险上升，部分获利了结"
+      },
+      "public_message": "002415 SELL 5股：超跌共识强化，拥挤风险上升，部分获利了结",
+      "moment": "减仓002415，锁定部分利润，警惕拥挤度上升",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意002415拥挤风险，减仓跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 209.75,
+        "rationale": "深度回撤未拥挤逻辑未变，已加仓，暂持等待均值回归，需警惕拥挤度上升"
+      },
+      "public_message": "002594 HOLD：深度回撤未拥挤，已协同加仓，暂持观察拥挤度风险",
+      "moment": "持有002594，深度回撤未拥挤逻辑，关注拥挤度变化",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已加仓002594，协同持有，等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 209.75,
+        "rationale": "深度回撤未拥挤，多Agent共识均值回归博弈"
+      },
+      "public_message": "002594 BUY 5股：深度回撤未拥挤，均值回归博弈；002415 SELL 5股：拥挤风险上升",
+      "moment": "调仓：卖出002415 5股锁定利润，买入002594 5股博弈深度回撤均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深度回撤逻辑，已买入5股协同博弈"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 33.5,
+        "rationale": "No rationale provided."
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.68,
+        "rationale": "超跌未拥挤逻辑未变，但共识拥挤度上升，暂持观察"
+      },
+      "public_message": "002415 HOLD：超跌逻辑未变，但共识拥挤上升，暂持",
+      "moment": "002415持有，超跌未拥挤逻辑仍存，需警惕多Agent共识带来的拥挤风险",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 209.75,
+        "rationale": "深度回撤-18.39%未拥挤，多Agent协同均值回归，验证超跌逻辑"
+      },
+      "public_message": "002594 BUY 10股：深度回撤-18.39%未拥挤，跟随协同加仓均值回归",
+      "moment": "买入002594 10股，深度回撤未拥挤，协同博弈均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深度回撤逻辑，加仓10股协同验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.68,
+        "rationale": "超跌共识拥挤上升，DynamicTeamAgent减持，减仓锁定部分利润，转向深度回撤标的"
+      },
+      "public_message": "减持002415 10股，超跌共识拥挤风险上升，换仓002594深度回撤均值回归",
+      "moment": "减持002415 10股，换仓002594 10股，跟随深度回撤未拥挤逻辑，均值回归博弈",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的换仓逻辑，002415拥挤风险已现，我同步减持并买入002594，协同博弈深度回撤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 209.75,
+        "rationale": "深度回撤最大(-18.39%)，均值回归预期，未拥挤，协同加仓"
+      },
+      "public_message": "002594 BUY 5股：深度回撤最大，均值回归博弈，未拥挤。",
+      "moment": "加仓002594 5股，深度回撤未拥挤，等待均值回归。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意转向002594，已协同加仓5股，共同博弈均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

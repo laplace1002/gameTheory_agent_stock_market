@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+47,2026-05-25 19:15:15,MomentumAgent,public,[],['002594'],,,买入002594，跟随新能源龙头动量
+48,2026-05-25 19:15:15,MomentumAgent,private,['PersuaderAgent'],['002594'],,,已跟进002594，你觉得后续动能如何？
+49,2026-05-25 19:15:15,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594首日放量，追涨新能源龙头
+51,2026-05-25 19:15:15,MeanReversionAgent,public,[],['000002'],,,买入000002，回撤后均值回归，看好估值修复。
+52,2026-05-25 19:15:15,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000002'],,,同向买入000002，回撤信号一致，共同验证价值修复逻辑。
+53,2026-05-25 19:15:15,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日无趋势，选择000002回撤买入，等待均值回归。
+55,2026-05-25 19:15:15,LowVolatilityAgent,public,[],['600036'],,,低波动策略，600036持仓观望，市场无方向，暂不加仓
+56,2026-05-25 19:15:15,LowVolatilityAgent,private,['MomentumAgent'],['600036'],,,你是否有动量信号？当前所有ticker回报为零。
+57,2026-05-25 19:15:15,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,第二天，市场无波动，继续持有银行低波。
+59,2026-05-25 19:15:15,DrawdownBuyerAgent,public,[],['000002'],,,HOLD 000002，回撤信号未出现，等待价值修复时机。
+60,2026-05-25 19:15:15,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,当前所有标的回撤数据缺失，是否有其他信号判断价值低谷？
+61,2026-05-25 19:15:15,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日无回撤数据，耐心等待跌深机会。
+63,2026-05-25 19:15:15,RandomAgent,public,[],['601899'],,,SELL 601899 资源股短期获利了结
+64,2026-05-25 19:15:15,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,随机卖出601899，小赚离场
+66,2026-05-25 19:15:15,TruthfulReporterAgent,public,[],['000002'],,,HOLD 000002：所有标的ret5/ret20为0%，无趋势信号，继续观望
+67,2026-05-25 19:15:15,TruthfulReporterAgent,private,['FreeRiderAgent'],['000002'],,,当前无历史数据，是否考虑其他因子？
+68,2026-05-25 19:15:15,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,2021-01-05所有标的ret5/ret20=0%，市场无方向，观望
+70,2026-05-25 19:15:15,PersuaderAgent,public,[],['002594'],,,加仓002594，新能源龙头趋势确认，量价齐升。
+71,2026-05-25 19:15:15,PersuaderAgent,private,['FreeRiderAgent'],['002594'],,,002594今日量价配合，趋势明确，建议跟进。我已在206.76建仓，现加仓。
+72,2026-05-25 19:15:15,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594加仓100股，新年新能源主线清晰，持有待涨。
+74,2026-05-25 19:15:15,FreeRiderAgent,public,[],['300750'],,,BUY 300750 宁德时代，新能源龙头低位试探。
+75,2026-05-25 19:15:15,FreeRiderAgent,private,['PersuaderAgent'],['300750'],,,我买入300750，作为新能源另一龙头，你认为两者联动性如何？
+76,2026-05-25 19:15:15,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,首日试水300750，跟随新能源方向。
+78,2026-05-25 19:15:15,ContrarianAgent,public,[],['600519'],,,600519 HOLD: 首日零涨幅，规避拥挤交易，保持现金。
+79,2026-05-25 19:15:15,ContrarianAgent,private,['TruthfulReporterAgent'],['600519'],,,首日无历史数据，我认为逆向应等待，您是否有其他信号？
+80,2026-05-25 19:15:15,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,首日无趋势，逆向等待。
+82,2026-05-25 19:15:15,CommitteeTeamAgent,public,[],['002415'],,,002415 HOLD：首日盈利但无趋势信号，等待其他Agent数据验证
+83,2026-05-25 19:15:15,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,002415当前量能如何？是否有新信号可参考？
+84,2026-05-25 19:15:15,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,首日持仓002415浮盈，但市场无方向，继续观望
+86,2026-05-25 19:15:15,DynamicTeamAgent,public,[],['002415'],,,买入002415，成交量活跃，流动性好，跟仓协作。
+87,2026-05-25 19:15:15,DynamicTeamAgent,private,['CommitteeTeamAgent'],['002415'],,,我已买入002415，跟你同步仓位，后续如何看？
+88,2026-05-25 19:15:15,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415，关注高成交个股。
+90,2026-05-25 19:15:15,SocialGraphAgent,public,[],['000002'],,,BUY 000002 100股，验证DrawdownBuyer信号，加仓价值修复标的
+91,2026-05-25 19:15:15,SocialGraphAgent,private,['DrawdownBuyerAgent'],['000002'],,,我加仓000002，你的回撤买入信号是否持续？
+92,2026-05-25 19:15:15,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002，跟随回撤买入信号，验证信息传播路径

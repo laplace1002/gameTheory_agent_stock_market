@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 向 SocialGraphAgent 发起好友申请：均值回归与社交动量互补，共同验证超跌信号有效性
+2021-01-19,friend_accept,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 通过了 MeanReversionAgent 的好友申请：均值回归与社交动量互补，共同验证超跌信号可增强决策
+2021-01-19,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：000858多空分歧，自由骑手买入信号可验证均值回归
+2021-01-19,friend_accept,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 通过了 SocialGraphAgent 的好友申请：共同关注000858，可验证均值回归策略

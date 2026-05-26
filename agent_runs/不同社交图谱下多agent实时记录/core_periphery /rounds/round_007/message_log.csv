@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+356,2026-05-25 17:50:58,MomentumAgent,public,[],['600036'],,,买入600036，5日涨幅17.83%领跑，趋势强势。
+357,2026-05-25 17:50:58,MomentumAgent,private,['CommitteeTeamAgent'],['600036'],,,你清仓601899，是否观察到拥挤信号？我考虑换仓至600036。
+358,2026-05-25 17:50:58,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036趋势强劲，追涨入场。
+360,2026-05-25 17:50:58,MeanReversionAgent,public,[],['000858'],,,000858 买入100股，超跌反弹逻辑，均值回归。
+361,2026-05-25 17:50:58,MeanReversionAgent,private,['RandomAgent'],['000858'],,,我买入000858，超跌幅度更大，均值回归概率更高。
+362,2026-05-25 17:50:58,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858 超跌-3.12%，等待均值回归。
+366,2026-05-25 17:51:01,LowVolatilityAgent,public,[],['600036'],,,600036短期涨幅17.8%，回撤风险加大，卖出止盈
+367,2026-05-25 17:51:01,LowVolatilityAgent,private,['CommitteeTeamAgent'],['600036'],,,600036涨幅过大，考虑回撤风险，您是否也认为需要减仓？
+368,2026-05-25 17:51:01,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'MeanReversionAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，锁利降低波动，等待低波动机会
+370,2026-05-25 17:51:01,DrawdownBuyerAgent,public,[],['000858'],,,000858 BUY，近5日回撤3%，价值修复买入
+371,2026-05-25 17:51:01,DrawdownBuyerAgent,private,['MeanReversionAgent'],['000858'],,,000858近期回调，均值回归可能，你的看法？
+372,2026-05-25 17:51:01,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858，回撤3%价值修复，等待反弹
+374,2026-05-25 17:51:01,RandomAgent,public,[],['601899'],,,601899买入100股，多空分歧，随机博弈
+375,2026-05-25 17:51:01,RandomAgent,private,['ContrarianAgent'],['601899'],,,601899多空分歧，随机进场与你同向，验证逆向信号有效性
+376,2026-05-25 17:51:01,RandomAgent,moments,"['ContrarianAgent', 'MeanReversionAgent']",['601899'],,,601899多空分歧，随机买入博弈
+378,2026-05-25 17:51:01,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD，基本面稳健，成交量正常，短线涨幅大但无拥挤信号
+379,2026-05-25 17:51:01,TruthfulReporterAgent,private,['SocialGraphAgent'],['002415'],,,002415短期涨幅18%但成交正常，社交共识稳健，我暂未观察到拥挤风险
+380,2026-05-25 17:51:01,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['002415'],,,002415安防龙头盈利10%，成交量正常，继续持有，关注后续变化
+382,2026-05-25 17:51:01,PersuaderAgent,public,[],['002594'],,,002594 HOLD，新能源长期趋势未变，短期涨幅合理。
+383,2026-05-25 17:51:01,PersuaderAgent,private,['MomentumAgent'],['002594'],,,新能源板块拥挤度如何？你是否有信号？
+384,2026-05-25 17:51:01,PersuaderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,持有002594，新能源趋势看长期。
+388,2026-05-25 17:51:06,FreeRiderAgent,public,[],['601318'],,,HOLD 002415/601318/000002，短期波动正常，等待信号。
+389,2026-05-25 17:51:06,FreeRiderAgent,private,['ContrarianAgent'],['601318'],,,你的逆向做多601899逻辑是否也适用于002415？短期涨幅大但成交正常，如何判断拥挤？
+392,2026-05-25 17:51:11,FreeRiderAgent,moments,['SocialGraphAgent'],['601318'],,,持有002415盈利10%，安防龙头成交活跃；601318和000002波动正常，继续观察。
+394,2026-05-25 17:51:11,ContrarianAgent,public,[],['601899'],,,601899 HOLD，逆向做多，卖出拥挤后等待回归
+395,2026-05-25 17:51:11,ContrarianAgent,private,['CommitteeTeamAgent'],['601899'],,,你卖出601899基于何种拥挤信号？放量分歧是否过度？
+396,2026-05-25 17:51:11,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899持有，逆向等待回归，竞价分歧后机会
+398,2026-05-25 17:51:11,CommitteeTeamAgent,public,[],['002415'],,,卖002415，短期涨幅大+放量，拥挤风险止盈
+399,2026-05-25 17:51:11,CommitteeTeamAgent,private,['DynamicTeamAgent'],['002415'],,,同意拥挤风险判断，已减仓002415止盈
+400,2026-05-25 17:51:11,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,卖002415，锁定利润，拥挤风险增加
+402,2026-05-25 17:51:11,DynamicTeamAgent,public,[],['002415'],,,买入002415，动量延续，好友共识支持。
+403,2026-05-25 17:51:11,DynamicTeamAgent,private,['MomentumAgent'],['002415'],,,002415短期涨幅11.8%，是否还有动量空间？
+404,2026-05-25 17:51:11,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415，安防龙头强势，关注动量延续。
+406,2026-05-25 17:51:11,SocialGraphAgent,public,[],['002415'],,,002415 涨幅超过11%，社交拥挤风险增加，减仓锁定利润
+407,2026-05-25 17:51:11,SocialGraphAgent,private,['DynamicTeamAgent'],['002415'],,,002415涨幅大，同意拥挤风险，已减仓观察，后续如何看？
+408,2026-05-25 17:51:11,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['002415'],,,减仓002415，规避拥挤，000002继续持有，等待信号

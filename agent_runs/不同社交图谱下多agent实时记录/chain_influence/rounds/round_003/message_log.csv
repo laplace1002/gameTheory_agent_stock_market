@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+130,2026-05-25 16:07:55,MomentumAgent,public,[],['002594'],,,加仓002594 100股，跟随动量主线
+131,2026-05-25 16:07:55,MomentumAgent,private,['PersuaderAgent'],['002594'],,,确认002594动量趋势，继续加仓
+132,2026-05-25 16:07:55,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594，新能源动量持续
+134,2026-05-25 16:07:55,MeanReversionAgent,public,[],['000858'],,,HOLD 000858：无超卖信号，等待均值回归机会。
+135,2026-05-25 16:07:55,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,300750做空逻辑？若过度乐观，反弹可能。
+136,2026-05-25 16:07:55,MeanReversionAgent,moments,"['ContrarianAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,当前无超卖标的，耐心等待回调。
+138,2026-05-25 16:07:55,LowVolatilityAgent,public,[],['000002'],,,买入000002 100股，放量底部反弹，低波动跟随，控制回
+140,2026-05-25 16:07:55,DrawdownBuyerAgent,public,[],['601318'],,,观望，无合适跌深标的，等待回调信号
+141,2026-05-25 16:07:55,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['601318'],,,能否提供002594近20日回撤数据？验证是否已跌深
+142,2026-05-25 16:07:55,DrawdownBuyerAgent,moments,['TruthfulReporterAgent'],['601318'],,,继续空仓，回撤买入需等待15%以上跌幅
+144,2026-05-25 16:07:55,RandomAgent,public,[],['601899'],,,卖出601899 100股，矿业波动大，转向银行低波策略
+145,2026-05-25 16:07:55,RandomAgent,private,['ContrarianAgent'],['601899'],,,同意逆向逻辑，但我选银行而非新能源，分歧验证
+148,2026-05-25 16:08:00,RandomAgent,moments,['ContrarianAgent'],['601899'],,,卖紫金买招行，银行股低估值安全，非共识分散
+150,2026-05-25 16:08:00,TruthfulReporterAgent,public,[],['002594'],,,BUY 002594 100股，跟随动量信号，新能源主线量价配合。
+151,2026-05-25 16:08:00,TruthfulReporterAgent,private,['PersuaderAgent'],['002594'],,,已买入002594，验证你的趋势信号，后续交流节奏。
+152,2026-05-25 16:08:00,TruthfulReporterAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent']",['002594'],,,建仓002594，新能源赛道动量确认，量价验证。
+154,2026-05-25 16:08:00,PersuaderAgent,public,[],['002594'],,,加仓002594 100股，新能源龙头回调买点确认。
+155,2026-05-25 16:08:00,PersuaderAgent,private,['SocialGraphAgent'],['002594'],,,002594回调买入，与000002地产放量形成风格互补，可交叉验证市场情绪。
+156,2026-05-25 16:08:00,PersuaderAgent,moments,"['MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594加仓100股，新能源逻辑不变，回调即机会。
+160,2026-05-25 16:08:03,FreeRiderAgent,public,[],['002594'],,,卖出002594 100股，浮亏止损，等待更明确信号。
+161,2026-05-25 16:08:03,FreeRiderAgent,private,['SocialGraphAgent'],['002594'],,,000002放量信号如何？我正考虑是否参与。
+164,2026-05-25 16:08:07,FreeRiderAgent,moments,['LowVolatilityAgent'],['002594'],,,清仓002594，观察000002放量信号，准备调仓。
+166,2026-05-25 16:08:07,ContrarianAgent,public,[],['002594'],,,002594卖出开空，拥挤交易过度乐观，逆向押注均值回归
+167,2026-05-25 16:08:07,ContrarianAgent,private,['PersuaderAgent'],['002594'],,,你的动量信号已过度拥挤，建议验证估值风险
+168,2026-05-25 16:08:07,ContrarianAgent,moments,"['MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,做空002594，逆向博弈拥挤多头回归
+170,2026-05-25 16:08:07,CommitteeTeamAgent,public,[],['002594'],,,买入002594 100股，新能源龙头动量确认，跟随PersuaderAgent信号
+171,2026-05-25 16:08:07,CommitteeTeamAgent,private,['MomentumAgent'],['002594'],,,我刚买入002594，你的动量指标如何？验证趋势持续性。
+172,2026-05-25 16:08:07,CommitteeTeamAgent,moments,"['LowVolatilityAgent', 'MomentumAgent', 'SocialGraphAgent']",['002594'],,,买入002594，跟随动量，新能源主线确认
+176,2026-05-25 16:08:11,DynamicTeamAgent,public,[],['000002'],,,加仓000002 5股，量能维持，跟进社交放量信号。
+177,2026-05-25 16:08:11,DynamicTeamAgent,private,['CommitteeTeamAgent'],['000002'],,,同样持有000002，是否观察到持续放量？可交流底部确认信号。
+180,2026-05-25 16:08:18,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,第三天，加仓000002，量价配合，社交验证。
+182,2026-05-25 16:08:18,SocialGraphAgent,public,[],['000002'],,,000002持仓观望，量能维持但方向待社交验证
+183,2026-05-25 16:08:18,SocialGraphAgent,private,['CommitteeTeamAgent'],['000002'],,,000002今日量能维持，你是否观察到持续买盘？验证底部信号
+184,2026-05-25 16:08:18,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'MomentumAgent', 'PersuaderAgent']",['000002'],,,持有000002，观察社交图谱共识形成

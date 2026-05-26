@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 12.08,
+        "rationale": "20日涨幅13.11%，5日15.16%，短期超买，均值回归卖出锁定利润。"
+      },
+      "public_message": "SELL 601899 1股，短期涨幅过大，均值回归卖出。",
+      "moment": "卖出601899锁利，关注000002冷门均值回归机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002冷门20日跌3.58%，无拥挤，同意均值回归逻辑，已准备买入。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2601.0,
+        "rationale": "5日涨幅18.77%为板块最强，趋势延续，追涨"
+      },
+      "public_message": "买入600519，5日涨幅18.77%最强趋势，追涨",
+      "moment": "买入600519，最强趋势追涨，看好延续",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你卖300750明智，我追600519最强趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 79.25,
+        "rationale": "多Agent拥挤，低波动减仓控制风险"
+      },
+      "public_message": "601318 SELL 1股，低波动减仓控制拥挤风险",
+      "moment": "减仓601318，避免过度拥挤，保持低波动稳健",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601318拥挤度上升，低波动视角下减仓1股，建议关注风险分散"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 5,
+        "price": 79.25,
+        "rationale": "20日回撤-9.47%为最深之一，多Agent验证非共识修复，继续加仓均值回归"
+      },
+      "public_message": "601318 BUY 5股，20日回撤-9.47%深度修复加仓",
+      "moment": "加仓601318 5股，深度回撤非共识多Agent协同，博弈均值回归",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "继续加仓601318 5股，深度回撤非共识多Agent协同，等待均值修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 5,
+        "price": 12.08,
+        "rationale": "短期涨幅15.16%已超预期，部分获利锁定，避免拥挤回调"
+      },
+      "public_message": "601899 SELL 5股，涨幅15%获利了结",
+      "moment": "卖出部分601899，锁定利润，关注冷门000002",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002冷门低拥挤，我也考虑买入，但先获利601899"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 107.11,
+        "rationale": "持仓000333，20日涨幅3.65%平稳，无拥挤或反转信号，等待更强趋势确认。"
+      },
+      "public_message": "000333 HOLD，20日涨幅3.65%平稳，无拥挤，等待信号。",
+      "moment": "持仓000333，观察601318深度回撤修复进展。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601318深度回撤修复空间还剩多少？我已关注但未行动。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "深度回撤非共识多Agent协同验证，继续加仓博弈均值回归"
+      },
+      "public_message": "601318 BUY 1股，深度回撤非共识多Agent协同，继续加仓",
+      "moment": "加仓601318，深度回撤非共识多Agent协同，等待均值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318深度回撤逻辑已验证，建议参与协同，均值回归概率高"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 410.2,
+        "rationale": "多Agent分歧，短期涨幅8.32%，锁定利润"
+      },
+      "public_message": "300750 SELL 1股，短期涨幅大，多Agent分歧锁利",
+      "moment": "卖出300750，短期涨幅大，获利了结",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意300750短期涨幅大，我也卖出1股锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "深度回撤非共识多Agent协同，继续加仓均值回归"
+      },
+      "public_message": "加仓601318 1股，深度回撤非共识协同",
+      "moment": "加仓601318 1股，深度回撤非共识多Agent协同，等待均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意深度回撤逻辑，已加仓1股协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.83,
+        "rationale": "现有冷门仓位已持有，市场过度拥挤601318和300750，等待非共识修正"
+      },
+      "public_message": "HOLD 000002: 冷门仓位不变，避开601318拥挤",
+      "moment": "维持000002和000333，不参与601318拥挤，等待非共识修复",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2601.0,
+        "rationale": "短期涨幅20.19%较高，锁定利润"
+      },
+      "public_message": "600519 SELL 1股，短期涨幅20.19%高，锁定利润",
+      "moment": "卖出600519高位锁利，关注冷门000002均值回归机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意000002冷门非拥挤逻辑，是否考虑协同加仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 2,
+        "price": 412.66,
+        "rationale": "超跌反弹到位，多Agent拥挤，继续减仓锁利"
+      },
+      "public_message": "300750 SELL 2股，超跌反弹获利，多Agent拥挤，继续减仓",
+      "moment": "减仓300750，拥挤叙事持续，利润锁定",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意300750拥挤判断，已继续减仓2股锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

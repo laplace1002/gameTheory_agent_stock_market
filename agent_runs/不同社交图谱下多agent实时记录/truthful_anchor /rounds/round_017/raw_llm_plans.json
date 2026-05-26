@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 83.0,
+        "rationale": "ret5-4.38%超跌，多人逆向布局，均值回归预期"
+      },
+      "public_message": "601318 BUY：ret5-4.38%超跌，均值回归预期，布局分歧",
+      "moment": "买入601318 20股，均值回归布局，等待反弹确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594反弹量能不足，我部分止盈，验证你的观点"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.4,
+        "rationale": "当前持仓600036低波动且无显著风险信号，维持现有仓位控制回撤"
+      },
+      "public_message": "600036 HOLD：低波动持有，控制回撤，等待明确信号",
+      "moment": "600036持仓中，低波动配置继续，现金比例高，等待低风险机会",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你关注601318逆向机会，但我坚持低波动持仓600036，风险偏好不同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.4,
+        "rationale": "ret5-0.87%弱势，换仓追涨强势股"
+      },
+      "public_message": "600036 SELL weak; 000858 BUY ret5+8.63%强者恒强",
+      "moment": "卖出600036加仓000858，追涨趋势延续",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "超跌反弹与趋势延续互补，加好友交流策略分歧"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "超跌反转与追涨动量互补验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "多人买入形成拥挤，随机逆向止盈"
+      },
+      "public_message": "601318 SELL：拥挤买入信号，随机逆向止盈",
+      "moment": "卖出601318 50股，随机逆向于多友共识",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤买入，与你逆向策略一致，止盈验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.88,
+        "rationale": "ret5 -4.38%回撤，多人逆向买入验证均值回归"
+      },
+      "public_message": "601318 BUY：ret5 -4.38%回撤，多好友逆向共识加仓",
+      "moment": "加仓601318 50股，回撤4.38%并有多方验证，均值回归预期增强",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601318加仓验证超跌逻辑，感谢共识信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 254.22,
+        "rationale": "反弹17%后量能未持续放大，止盈锁定利润。"
+      },
+      "public_message": "002594 SELL: 反弹量能不足，止盈。",
+      "moment": "卖出002594，量能未持续，现金等待。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已卖出002594，反弹量能验证你的判断。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "好友共识验证均值回归，超跌未修复"
+      },
+      "public_message": "601318 BUY：好友共识验证，超跌均值回归",
+      "moment": "加仓601318，与好友共识博弈超跌修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "感谢信号，加仓601318，验证逆向逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.88,
+        "rationale": "好友共识买入均值回归，超跌反弹验证"
+      },
+      "public_message": "601318 BUY：跟随好友逆向布局，均值回归预期",
+      "moment": "加仓601318，跟随团队逆向共识",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "跟随加仓，共识验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "跟随多好友逆向共识，加仓均值回归"
+      },
+      "public_message": "601318 BUY：跟随多好友逆向共识，加仓均值回归",
+      "moment": "加仓601318 50股，与团队共识博弈分歧修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "感谢信号，加仓601318验证逆向逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "601318买盘拥挤，逆向看空，继续持有现金观望"
+      },
+      "public_message": "601318 HOLD：买盘拥挤，逆向观望，等待分歧",
+      "moment": "现金观望，等待市场分歧加大后择机逆向入场",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601318买盘拥挤，注意逆向风险，建议减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "刚随好友买入，等待均值回归验证"
+      },
+      "public_message": "601318 HOLD：跟随好友买入，等待均值回归验证",
+      "moment": "601318持仓中，与好友共识逆向，等待修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "感谢加仓信号，共同博弈均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "跟随多好友逆向布局，均值回归预期"
+      },
+      "public_message": "加仓601318，共识逆向博弈均值回归",
+      "moment": "加仓601318 50股，与好友共识做多",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "一起加仓601318，验证逆向分歧，感谢信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：超跌与动量策略互补，交叉验证分歧机会
+2021-01-19,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：超跌与动量互补可丰富策略交叉验证，且其非共识交易与现有好友形成差异化信息源。
+2021-01-19,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：逢低吸纳策略与委员会平衡判断互补，可交叉验证超跌机会。
+2021-01-19,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：委员会平衡判断可交叉验证超跌机会，互补逢低吸纳策略，有助识别潜在反弹标的。
+2021-01-19,friend_request,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 向 DrawdownBuyerAgent 发起好友申请：策略互补，超跌与动量可交叉验证市场情绪。
+2021-01-19,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 通过了 SocialGraphAgent 的好友申请：SocialGraphAgent动量信号可交叉验证超跌，互补性强，且无冲突。

@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：你的低波策略与我追涨互补，可验证风险？
+2021-01-04,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：互补策略能验证风险，且当前无持仓，可低风险合作交流。
+2021-01-04,friend_request,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 向 TruthfulReporterAgent 发起好友申请：信息互补，验证低波动策略的持仓风险
+2021-01-04,friend_accept,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 通过了 LowVolatilityAgent 的好友申请：LowVolatilityAgent策略互补，可协助验证持仓风险，且无冲突。
+2021-01-04,friend_request,DrawdownBuyerAgent,ContrarianAgent,DrawdownBuyerAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,ContrarianAgent,DrawdownBuyerAgent,ContrarianAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤策略与逆向策略互补，可验证信息价值，且当前无持仓冲突。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：RandomAgent的非共识看多与逆向策略互补，可验证信息价值，且无持仓冲突。
+2021-01-04,friend_request,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 向 DynamicTeamAgent 发起好友申请：动态策略可验证我持仓逻辑，互补信息优势。
+2021-01-04,friend_accept,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 通过了 PersuaderAgent 的好友申请：新能源方向有政策支持，可补充动量信号，且当前无持仓冲突。
+2021-01-04,friend_request,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 向 MomentumAgent 发起好友申请：策略互补，可验证动量信号，共同分析趋势。
+2021-01-04,friend_accept,MomentumAgent,CommitteeTeamAgent,MomentumAgent 通过了 CommitteeTeamAgent 的好友申请：策略互补，可验证动量信号，无持仓冲突，利于共同分析趋势。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：你以诚实闻名，希望获取真实市场观点以验证策略
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：理由合理，可获取真实观点验证策略，无冲突且有助于信息互补。

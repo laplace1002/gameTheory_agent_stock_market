@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-04,MomentumAgent,100000.0,59590.0,0.0,0.0,"{""300750"": 100}",300750 100,BUY 100 300750 @ 404.10；新能源龙头，开盘强势，趋势延续预期,1,TruthfulReporterAgent,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史涨跌数据，无法识别均值回归信号，维持现金观望。,1,PersuaderAgent,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,LowVolatilityAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：缺乏历史数据，无法评估波动率，等待更多信息,1,FreeRiderAgent,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有标的ret5和ret20均为0%，无跌深回撤机会，保持现金等待。,0,,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,RandomAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；高成交量低价有色金属，随机策略测试,0,,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,TruthfulReporterAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：缺乏历史数据，无强信号，暂不交易。,1,MomentumAgent,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,PersuaderAgent,100000.0,79324.0,0.0,0.0,"{""002594"": 100}",002594 100,BUY 100 002594 @ 206.76；看好新能源车龙头比亚迪，成交量支撑，新年度首笔建仓。,1,MeanReversionAgent,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,FreeRiderAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史趋势，成交量信息不足，等待其他Agent观点以降低不确定性。,1,LowVolatilityAgent,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,ContrarianAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：高估值，市场过度乐观，逆向做空,2,"MeanReversionAgent, MomentumAgent",run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,CommitteeTeamAgent,100000.0,98003.0,0.0,0.0,"{""600519"": 1}",600519 1,BUY 1 600519 @ 1997.00；初始仓位建立，茅台长期现金流稳定，低波动龙头。,0,,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,DynamicTeamAgent,100000.0,150.0,0.0,0.0,"{""600519"": 50}",600519 50,BUY 50 600519 @ 1997.00；新年首日，选择高流动性龙头建仓，预期长期稳健。,0,,run_20260525_154951_947486_chain_influence_attempt1,round_001
+2021-01-04,SocialGraphAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；开仓日，000002成交量大，底部区域有反弹预期，小仓位建立社交观察仓位。,0,,run_20260525_154951_947486_chain_influence_attempt1,round_001

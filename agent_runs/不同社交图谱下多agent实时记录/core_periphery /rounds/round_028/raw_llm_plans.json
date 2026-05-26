@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 266.95,
+        "rationale": "002594 ret5仅1.5%，动量弱于其他强势标的，止盈换入更强资产"
+      },
+      "public_message": "卖出002594，换入000858追强动量",
+      "moment": "换仓002594至000858，聚焦本轮最强动量",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858 ret5=10.98%且volume放大，动量延续性强，愿交换银行vs白酒动量持续性评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.25,
+        "rationale": "ret20=-9.47%深度回撤，均值回归反弹机会"
+      },
+      "public_message": "买入601318 10股，博弈深跌反转",
+      "moment": "加仓601318，深跌均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318回撤深度足够，加仓博弈反弹，愿交换拥挤度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 66.0,
+        "rationale": "持仓002415和600036均短期强势，但中期动量可持续性不明，现金充足，等待更确定的低波动机会。"
+      },
+      "public_message": "HOLD 002415和600036，控制回撤，等待非共识信号。",
+      "moment": "持仓002415和600036，现金充裕，等待低波动配置催化剂。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我持有002415和600036，000002回撤有限，暂不参与，愿交换相反头寸风险评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.25,
+        "rationale": "601318回撤深（ret20=-9.47%），非共识博弈反转，其他Agent聚焦000002和动量股，低估修复机会。"
+      },
+      "public_message": "买入601318 10股，博弈深跌反弹，非共识机会。",
+      "moment": "买入601318，深跌非共识，现金充足等待催化。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318回撤至-9.47%，你持有该股，是否评估深度反弹概率？愿交换回撤幅度与资金面分析。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 412.66,
+        "rationale": "卖出部分300750获利，为回撤股增加现金"
+      },
+      "public_message": "卖出300750 10股，获利换现金加仓601318回撤",
+      "moment": "减仓300750，等待601318深跌修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318深跌-9.47%，是否可加仓博弈反转？愿交换回撤深度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.83,
+        "rationale": "多个逆向agent加仓，卖出拥挤信号强，继续博弈反转。"
+      },
+      "public_message": "BUY 000002 10股，逆向加仓博弈卖出拥挤反转。",
+      "moment": "加仓000002，逆向博弈卖出拥挤反转，现金充足。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率如何？愿交换卖出拥挤度评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.83,
+        "rationale": "卖出拥挤极致，多方逆向加仓，博弈反转概率上升。"
+      },
+      "public_message": "加仓000002 10股，卖出拥挤极致，逆向博弈反转。",
+      "moment": "加仓000002，拥挤反转逻辑强化。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转信号加强，愿交换评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 66.0,
+        "rationale": "短期涨幅已高，等待回调后加仓，观察000002反转信号"
+      },
+      "public_message": "002415 HOLD：短期涨幅已高，等待回调后加仓，观察000002反转信号",
+      "moment": "持有002415和000002，现金充足，等待非共识信号。关注000002反转进展",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000002卖出拥挤极致，你已逆向加仓，反转概率如何？愿交换超跌深度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.83,
+        "rationale": "卖出拥挤极致，继续逆向加仓博弈反转"
+      },
+      "public_message": "000002 BUY 10股，卖出拥挤极致，逆向加仓",
+      "moment": "持有000002四十股，逆向博弈卖出拥挤反转，现金充足等待非共识",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000002卖出拥挤极致，愿交换601318回撤深度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 66.0,
+        "rationale": "现有持仓表现稳健，000333和002415动量续强，现金等待更确定信号"
+      },
+      "public_message": "002415 HOLD：持仓表现良好，现金等待000002反转信号确认",
+      "moment": "维持000333和002415，观察000002拥挤反转，现金充足",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率如何？愿交换超跌深度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.83,
+        "rationale": "卖出拥挤极致，多个逆向买盘，博弈反转"
+      },
+      "public_message": "买入000002 10股，博弈卖出拥挤极致反转",
+      "moment": "加仓000002，跟踪逆向买盘，现金充裕",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢你的买入信号，愿交换000002反转概率评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 3,
+        "price": 412.66,
+        "rationale": "300750短期涨幅较大，部分获利了结，转向其他强势股。"
+      },
+      "public_message": "卖出300750 3股，涨幅过快部分锁定利润。",
+      "moment": "减仓300750，现金等待非共识机会，关注000858动量。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你对300750回调风险判断，我同步减仓3股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

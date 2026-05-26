@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 257.0,
+        "rationale": "002594近5日回撤-3.93%，弱势，减仓换入强势股"
+      },
+      "public_message": "卖出002594 100股，买入300750 80股，追强势动量",
+      "moment": "减仓弱势002594，加仓300750，平衡持仓集中强势股",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "300动量共识高，你评估反转风险？我继续加仓趋势延续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 62.5,
+        "rationale": "002415低位震荡，600036上行趋势但需防范回调，当前仓位风险可控，等待更明确信号。"
+      },
+      "public_message": "HOLD 002415和600036，走势分化，等待风险信号。",
+      "moment": "持仓002415和600036，现金充足，观察000002卖出拥挤是否释放。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415反转概率如何？愿交换000002超跌深度评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 78.13,
+        "rationale": ""
+      },
+      "public_message": "601318 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "深度回撤股票601318已博弈，000002卖出拥挤但回撤有限，现金不足，等待更明确信号。"
+      },
+      "public_message": "HOLD 全部持仓，回撤股601318和000002等待修复，现金低暂不加仓。",
+      "moment": "维持回撤持仓，601318深跌-11%，000002卖出拥挤，等待价值回归催化。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓000002博弈反转，我持有100股，愿交换回撤深度和拥挤度评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 410.2,
+        "rationale": "300750近5日涨幅11.53%，动量可能衰竭，部分获利了结"
+      },
+      "public_message": "卖出300750 5股，短期涨幅过大，锁定利润控风险",
+      "moment": "300750涨幅过快，减仓5股，现金等待非共识机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "300750动量持续性能否维持？我减仓部分，愿交换回调风险评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.75,
+        "rationale": "卖出拥挤极致，Contrarian逆向买入，博弈反转"
+      },
+      "public_message": "买入000002 10股，博弈卖出拥挤反转",
+      "moment": "加仓000002，观察反转信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002卖出拥挤极致，反转概率如何？愿交换评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 20,
+        "price": 62.5,
+        "rationale": "002415短期回调但20日仍正，等待非共识信号，现金充足"
+      },
+      "public_message": "002415 HOLD：回调中，20日仍正，暂观望，等待非共识机会",
+      "moment": "清仓000002后现金充足，002415暂持，等待非共识催化剂",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415回调深度如何？愿交换000002反转概率评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "600036短期强势，ret5=6.33%且ret20=11.19%，成交量放大，动量延续概率高"
+      },
+      "public_message": "买入600036 10股，强动量延续，继续加仓银行龙头",
+      "moment": "加仓600036，跟踪强势银行股，控制组合集中度",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "300750动量强劲但已涨高，是否考虑分散至600036？愿交换动量持续性评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.8,
+        "rationale": "卖出拥挤极致，逆向加仓博弈反转"
+      },
+      "public_message": "000002加仓10股，卖出拥挤极致，博弈反转",
+      "moment": "持有000002三十股，逆向博弈卖出拥挤反转。现金充足等待非共识。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318回撤是否足够深？愿交换逆向评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 62.5,
+        "rationale": "多空博弈但拥挤度上升，现金等待更确定信号。"
+      },
+      "public_message": "002415 HOLD：多空博弈，拥挤度上升，现金等待更确定信号。",
+      "moment": "持仓000333和002415，观察000002卖出拥挤是否极致，等待非共识催化剂。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率如何？愿交换超跌深度评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.13,
+        "rationale": "卖出拥挤至极，逆向加仓博弈反转"
+      },
+      "public_message": "买入000002 10股，博弈卖出拥挤反转",
+      "moment": "加仓000002，逆向博弈拥挤反转，现金充足",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你逆向加仓000002逻辑，愿交换反转概率评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "持仓分散，000002卖出拥挤极致但逆向加仓出现，300750和600036动量强劲需观察拥挤，现金充足等待非共识信号"
+      },
+      "public_message": "HOLD 000002/300750/600036，等待非共识信号",
+      "moment": "减仓000002后持仓300750和600036，现金增加，观察非共识机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002卖出拥挤极致，你逆向加仓，愿交换反转概率评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

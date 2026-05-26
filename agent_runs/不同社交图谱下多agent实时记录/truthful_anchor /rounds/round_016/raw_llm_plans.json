@@ -1,0 +1,233 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 260.0,
+        "rationale": "002594 ret5+17.28%强势，追涨趋势延续，卖出弱势600036换仓"
+      },
+      "public_message": "002594 BUY: ret5+17.28%强势，追涨趋势延续，换仓加码",
+      "moment": "卖出600036调仓至002594，追涨最强反弹，预期趋势延续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594追涨买入，与你逆向逻辑互补，验证趋势强度分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 30,
+        "price": 260.0,
+        "rationale": "ret5+17.28%超涨，均值回归减仓"
+      },
+      "public_message": "002594 SELL 30股，ret5+17%超涨，均值回归减仓",
+      "moment": "减持002594，锁定部分利润，等待更佳超跌机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超涨减仓，与你买入逻辑分歧，待验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.11,
+        "rationale": "低波动，ret5仅0.37%，风险预算充足"
+      },
+      "public_message": "600036 BUY：低波动，ret5仅0.37%，低风险偏好",
+      "moment": "买入600036 100股，低波动配置，控制回撤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036波动极小，与你的低风险策略互补，验证低贝塔优势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.36,
+        "rationale": "ret5 -6.08%最大回撤，价值修复预期"
+      },
+      "public_message": "000002 BUY：ret5-6.08%超跌，加仓博弈反弹",
+      "moment": "买入000002 100股，回撤6%博价值修复",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 11.05,
+        "rationale": "ret5+3.37%量能异常，非共识做多"
+      },
+      "public_message": "601899 BUY：ret5+3.37%量能异常，随机非共识做多",
+      "moment": "买入601899 50股，随机视角捕捉量能异常，与市场分化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899量能异常但未见超跌，与你逆向策略互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.88,
+        "rationale": "超跌尚未完全修复，多方验证分歧，预期均值回归继续加仓"
+      },
+      "public_message": "601318加仓：超跌逻辑验证，继续买入",
+      "moment": "加仓601318，超跌分歧持续",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 260.0,
+        "rationale": "002594反弹量能未持续放大，超跌逻辑尚未完全验证，持仓等待信号。"
+      },
+      "public_message": "002594 HOLD：反弹量能不足，等待确认",
+      "moment": "002594持仓中，量价配合待验证，现金观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594持仓中，与你逆势加仓一致，等待量价配合验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.88,
+        "rationale": "当前持仓601318浮盈1.29%，多空分歧中等待超跌反弹确认，现金观望。"
+      },
+      "public_message": "601318 HOLD：浮盈中，等待超跌反弹确认，持仓观望。",
+      "moment": "601318持仓浮盈，多空博弈中保持观望，现金储备等待信号。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601318浮盈，验证你的逆向逻辑，继续持有等待均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 260.0,
+        "rationale": "002594反弹17%后量能未持续放大，拥挤买盘减弱，逆向止盈"
+      },
+      "public_message": "002594 SELL：反弹17%后量能不足，逆向止盈",
+      "moment": "卖出002594 100股，反弹获利了结，逆向于追涨拥挤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594反弹量能未放大，与你观察一致，止盈验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.36,
+        "rationale": "000002 ret5下跌6.08%，跟随SocialGraphAgent减仓控制回撤，现金等待更好机会。"
+      },
+      "public_message": "000002 SELL：ret5下跌，跟随减仓控制回撤。",
+      "moment": "卖出000002 50股，现金等待超跌机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "感谢信号，已卖出000002，降低风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.88,
+        "rationale": "多位好友逆向买入验证均值回归，加仓强化仓位"
+      },
+      "public_message": "加仓601318，跟随好友逆向逻辑，均值回归预期",
+      "moment": "加仓601318，与团队逆向共识，博弈分歧修复",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.88,
+        "rationale": "跟随多个好友逆向买入均值回归，验证策略分歧"
+      },
+      "public_message": "601318 BUY: ret5下跌，跟随多好友逆向布局",
+      "moment": "买入601318 100股，与好友共识做多",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601318买入，验证逆向分歧，感谢信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-02-01,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：学习委员会团队的综合信号与策略分歧价值，希望交流。
+2021-02-01,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent关注信号交流，可丰富策略多样性，同意加友。

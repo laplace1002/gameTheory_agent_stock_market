@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-02-18,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-02-18,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略可互补拥挤出清阈值，验证信息价值有益当前无仓位决策。

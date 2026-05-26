@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "追涨短线强势，ret5=6.37%趋势延续"
+      },
+      "public_message": "600036 BUY 1股，短期强势延续追涨验证。",
+      "moment": "加仓600036，追涨趋势延续逻辑。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "600036成交量边际是否放大？想确认趋势强度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.11,
+        "rationale": "低波动策略，600036短期动能强但002594深跌风险未消，保持现有仓位控制回撤"
+      },
+      "public_message": "HOLD 600036 002594：低波动策略，回撤控制优先，深跌修复未确认，继续观察",
+      "moment": "低波动策略：002594深跌均值回归信号虽多，但成交量未验证，回撤风险仍存，暂不加仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594成交量边际数据未见持续放大，分歧收敛尚未确认，建议控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 251.01,
+        "rationale": "非共识深跌修复机会，均值回归逻辑，分歧尚未充分验证"
+      },
+      "public_message": "000858 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "反向验证深跌共识分歧"
+      },
+      "public_message": "002594 SELL 1股，非共识反向测试分歧",
+      "moment": "卖出002594 1股，随机反向验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594反向卖出1股测试分歧收敛是否充分"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 5,
+        "price": 85.11,
+        "rationale": "卖出部分盈利仓位，筹集现金准备买入深跌标的"
+      },
+      "public_message": "601318 SELL 5股，盈利仓位换仓至深跌修复机会",
+      "moment": "",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "300750深跌-22.7%波动率如何"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "深跌修复共识持续增强，多agent验证分歧收敛，均值回归概率上升，加仓1股验证"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识强化，均值回归逻辑验证中",
+      "moment": "加仓002594 1股，深跌均值回归逻辑多agent验证，等待进一步确认",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594成交量边际数据是否持续收敛？分歧收敛确认可加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "多个agent验证深跌修复共识，均值回归概率增加"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识增强，均值回归概率增加",
+      "moment": "加仓002594 1股，深跌均值回归逻辑强化，等待进一步确认",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594成交量边际数据未显著增加，但多个agent买入验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.44,
+        "rationale": "002594拥挤交易风险加大，当前持仓无调整必要，观望为主。"
+      },
+      "public_message": "002594 过热，注意拥挤交易回调风险。",
+      "moment": "002594 集体买入信号过度拥挤，逆向风险上升，保持现金。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594 买入量异常集中，建议警惕反转。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.11,
+        "rationale": "轮次接近尾声，多agent共识集中在002594但不确定性增加，维持现有仓位观察"
+      },
+      "public_message": "002594 HOLD：多agent共识增强，但轮次尾声信号钝化，暂不操作评估风险。",
+      "moment": "002594深跌修复共识强化，但轮次46/50，保持仓位等待最终验证。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594成交量边际数据是否有最新更新？分歧收敛是否持续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "深跌修复共识增强，多个agent验证均值回归，继续加仓。"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识持续强化，均值回归逻辑验证中。",
+      "moment": "加仓002594 1股，深跌均值回归逻辑多agent验证。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594成交量边际增加确认，分歧收敛，可跟进。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "多个Agent验证深跌修复，共识增强，继续加仓均值回归"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识强化，均值回归机会确认",
+      "moment": "加仓002594 1股，深跌均值回归逻辑多Agent验证强化",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594成交量边际数据是否持续收敛？确认分歧收敛程度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "深跌修复共识增强，多个agent验证分歧收敛，均值回归概率增加"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识强化",
+      "moment": "加仓002594 1股，深跌均值回归逻辑强化",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000858深跌-17.3%是否有验证价值？请教分歧收敛情况。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  }
+]

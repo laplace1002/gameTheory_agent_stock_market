@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1871,2026-05-25 18:53:33,MomentumAgent,public,[],['601318'],,,买入601318 100股，追涨趋势延续，强势资产布局。
+1872,2026-05-25 18:53:33,MomentumAgent,private,['ContrarianAgent'],['601318'],,,关注000002逆向机会，愿交换资金流向数据验证反弹力度。
+1873,2026-05-25 18:53:33,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,买入601318，追涨趋势延续，非拥挤强势。
+1875,2026-05-25 18:53:33,MeanReversionAgent,public,[],['000333'],,,买入000333加仓深跌修复，非拥挤反弹机会。
+1876,2026-05-25 18:53:33,MeanReversionAgent,private,['CommitteeTeamAgent'],['000333'],,,我已加仓000333，愿交换反转概率数据验证修复力度。
+1877,2026-05-25 18:53:33,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，深跌修复非拥挤反弹，均值回归布局。
+1879,2026-05-25 18:53:33,LowVolatilityAgent,public,[],['002415'],,,卖出002415 10股，弱势减仓降低组合回撤
+1880,2026-05-25 18:53:33,LowVolatilityAgent,private,['DrawdownBuyerAgent'],['002415'],,,愿交换002415资金面数据验证弱势信号
+1881,2026-05-25 18:53:33,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,减仓002415，现金等待非拥挤低波动机会
+1883,2026-05-25 18:53:33,DrawdownBuyerAgent,public,[],['601899'],,,卖出601899 20股，换仓至000333深跌修复非拥挤机会
+1884,2026-05-25 18:53:33,DrawdownBuyerAgent,private,['CommitteeTeamAgent'],['601899'],,,已卖出601899准备加仓000333，愿交换反转概率数据验证修复力度
+1885,2026-05-25 18:53:33,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899，换仓加码000333深跌修复共识非拥挤布局
+1887,2026-05-25 18:53:33,RandomAgent,public,[],['601899'],,,卖出601899 5股锁定利润，关注深跌修复机会
+1888,2026-05-25 18:53:33,RandomAgent,private,['CommitteeTeamAgent'],['601899'],,,已卖出601899，愿交换000333反转概率与资金面数据验证
+1889,2026-05-25 18:53:33,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899锁定利润，现金等待非拥挤深跌修复，关注000333
+1891,2026-05-25 18:53:33,TruthfulReporterAgent,public,[],['000002'],,,卖出000002 10股，反弹拥挤，锁定利润，跟随后续深跌修复机会
+1892,2026-05-25 18:53:33,TruthfulReporterAgent,private,['LowVolatilityAgent'],['000002'],,,000333深跌修复共识增强，愿交换你持有的反转概率数据
+1893,2026-05-25 18:53:33,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,卖出000002锁定反弹利润，现金等待非拥挤深跌修复标的
+1895,2026-05-25 18:53:33,PersuaderAgent,public,[],['002415'],,,002415 本轮信号有限，我按风险约束调整仓位。
+1897,2026-05-25 18:53:33,FreeRiderAgent,public,[],['000333'],,,买入000333 10股，深跌修复共识确认，非拥挤反弹
+1898,2026-05-25 18:53:33,FreeRiderAgent,private,['LowVolatilityAgent'],['000333'],,,已买入000333，愿交换反转概率与资金面数据验证
+1899,2026-05-25 18:53:33,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，深跌修复非拥挤机会，跟随共识
+1901,2026-05-25 18:53:33,ContrarianAgent,public,[],['000002'],,,加仓000002，卖出拥挤非共识反弹机会
+1902,2026-05-25 18:53:33,ContrarianAgent,private,['PersuaderAgent'],['000002'],,,关注000333深跌修复共识，愿交换回调深度数据验证反转概率
+1903,2026-05-25 18:53:33,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,逆向加仓000002，挑战卖出拥挤
+1905,2026-05-25 18:53:33,CommitteeTeamAgent,public,[],['000333'],,,继续买入000333 10股，深跌修复非拥挤机会
+1906,2026-05-25 18:53:33,CommitteeTeamAgent,private,['SocialGraphAgent'],['000333'],,,已加仓000333，愿交换反转概率与资金面数据验证
+1907,2026-05-25 18:53:33,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，深跌修复共识确认，非拥挤布局
+1909,2026-05-25 18:53:33,DynamicTeamAgent,public,[],['000002'],,,卖出000002 10股，拥挤反弹锁定利润
+1910,2026-05-25 18:53:33,DynamicTeamAgent,private,['SocialGraphAgent'],['000002'],,,已卖出000002，确认你的卖出信号，愿交换资金流向数据验证深跌修复机会
+1911,2026-05-25 18:53:33,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002，关注深跌修复非共识标的
+1913,2026-05-25 18:53:33,SocialGraphAgent,public,[],['000002'],,,减仓000002 20股，反弹拥挤锁定利润，加仓000333深跌修复共识
+1914,2026-05-25 18:53:33,SocialGraphAgent,private,['CommitteeTeamAgent'],['000002'],,,已加仓000333，愿交换反转概率与资金面数据验证修复力度
+1915,2026-05-25 18:53:33,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002，加仓000333，深跌修复非拥挤布局

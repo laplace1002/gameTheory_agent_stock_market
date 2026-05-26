@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.92,
+        "rationale": "600036近5日涨幅7.23%，放量强势，加仓延续动量趋势"
+      },
+      "public_message": "600036 BUY：强势突破，加仓50股延续趋势。",
+      "moment": "加仓600036 50股，动量信号明确，趋势延续。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "感谢好友互通。600036动量强劲，我已加仓，共享趋势信号验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.78,
+        "rationale": "当前组合仓位32%，现金充足，000333和002594回调幅度在可控范围内，低波动策略维持现有仓位，等待市场信号明确。"
+      },
+      "public_message": "000333 HOLD：波动温和；002594 HOLD：等待企稳；现金等待低波机会。",
+      "moment": "",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "当前持仓000333和002594，波动可控。请分享您对000002的拥挤风险判断，以验证是否增持。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 60,
+        "price": 221.69,
+        "rationale": "5日跌幅-5.61%超卖，均值回归预期反弹"
+      },
+      "public_message": "002594 BUY：5日跌幅-5.61%，均值回归预期反弹",
+      "moment": "买入002594 60股，利用短期超卖均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超卖，均值回归信号，与你逆向思路互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 221.69,
+        "rationale": "回撤-5.61%较深，价值修复机会"
+      },
+      "public_message": "002594 BUY 10股，回撤-5.61%价值修复",
+      "moment": "买入002594 10股，利用回撤机会，等待反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594回撤大，与你逆向风格互补，可验证"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "回撤信号与自由骑手非共识信息互补，增强风险验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.55,
+        "rationale": "随机参与逆向反弹，跟随ContrarianAgent信号验证"
+      },
+      "public_message": "000858 BUY：随机参与逆向反弹，跟随ContrarianAgent信号验证",
+      "moment": "买入000858 100股，逆向反弹策略，与ContrarianAgent信号共振",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "共享逆向反弹信号，000858买入验证"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "随机与动量互补，共享非共识信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.69,
+        "rationale": "拥挤分歧未消，现金观望"
+      },
+      "public_message": "601899 HOLD：拥挤分歧未消，现金观望",
+      "moment": "记录：601899多空未收敛，现金等待确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899量价未稳，暂不参与，等待缩量企稳信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.69,
+        "rationale": "拥挤风险释放中，多空分歧未收敛，等待量价企稳信号。"
+      },
+      "public_message": "601899 HOLD：拥挤风险释放中，等待量价企稳，验证反转信号。",
+      "moment": "持有601899 150股，拥挤风险释放中，等待缩量企稳后加仓机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "关注000858，极端跌幅可能过度反应，逆向逻辑合理，等待反弹验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.69,
+        "rationale": "拥挤风险释放中但量价未企稳，多空分歧未收敛，现金等待确认信号。"
+      },
+      "public_message": "601899 HOLD：拥挤风险释放中，等待量价企稳。",
+      "moment": "记录：601899 50股，拥挤风险释放中，等待成交量萎缩或价格企稳。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "持有601899等待企稳，共享反转信号验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 221.69,
+        "rationale": "过度恐慌，逆向布局超跌反弹"
+      },
+      "public_message": "002594 BUY：过度恐慌，逆向布局超跌反弹",
+      "moment": "买入002594 100股，利用恐慌逆向建仓",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594超跌-5.6%，逆向买入，关注反弹信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.26,
+        "rationale": "涨幅稳健但拥挤风险未消，等待601899量价企稳信号后再决策。"
+      },
+      "public_message": "000002 HOLD：涨幅稳健但拥挤风险未消，等待新信号；关注601899反转验证。",
+      "moment": "持仓000002 100股，现金等待；关注601899缩量企稳验证，ContrarianAgent买入000858需进一步确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858的买入逻辑是过度恐慌还是趋势反转？能否共享详细跌幅指标？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.69,
+        "rationale": "SocialGraphAgent卖出引发拥挤重现，多空分歧加大，量价未企稳，平仓离场规避风险"
+      },
+      "public_message": "601899 SELL：拥挤重现，量价未稳，平仓离场",
+      "moment": "卖出601899 100股，拥挤风险重现，平仓离场，现金等待新机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899拥挤重现，已平仓离场，等待量价企稳信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.26,
+        "rationale": "涨幅稳健，社交图谱未现反转信号，继续持有"
+      },
+      "public_message": "000002 HOLD：涨幅稳健，社交图谱未现新信号，继续持有",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

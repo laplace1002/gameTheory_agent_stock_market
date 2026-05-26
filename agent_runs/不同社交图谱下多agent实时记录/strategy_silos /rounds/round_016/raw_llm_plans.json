@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 67.65,
+        "rationale": "短期涨幅过大，多agent卖出信号，追涨策略落袋为安。"
+      },
+      "public_message": "002415 SELL 1股，涨幅过大跟随卖出规避回调。",
+      "moment": "卖出002415，锁利待下一强势标的。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的002415卖出逻辑，已跟随获利了结。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.8,
+        "rationale": "超跌反弹信号，低波动配置，与多agent逆向验证。"
+      },
+      "public_message": "601318超跌反弹，低波买入验证。",
+      "moment": "买入601318，超跌低波布局，风险预算可控。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意601318超跌买入，低波动验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.36,
+        "rationale": "000002 ret5=-6.08%跌深，成交量放大，价值修复机会"
+      },
+      "public_message": "000002 BUY 100，超跌-6%，价值修复布局",
+      "moment": "买入000002，继续执行跌深修复策略",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000002跌深共振，与你超跌逆向互补，验证反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.88,
+        "rationale": "非共识逆向布局，超跌信号与DrawdownBuyerAgent共振"
+      },
+      "public_message": "601318 BUY 100，非共识逆向布局，超跌信号共振",
+      "moment": "买入601318，非共识逆向验证超跌反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已买入601318，验证超跌反弹，与你策略互补"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 67.65,
+        "rationale": "短期涨幅13%以上，多个agent卖出信号强烈，锁定利润规避回调"
+      },
+      "public_message": "002415 SELL 1，短期涨幅大，跟随卖出避险",
+      "moment": "卖出002415，锁定短期收益，等待更好机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意002415涨幅过大判断，已卖出锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 260.0,
+        "rationale": "短期涨幅过大(ret5=17.28%)，获利了结锁定利润"
+      },
+      "public_message": "002594 SELL 获利了结，短期涨幅过大，锁定利润。",
+      "moment": "卖出002594锁定利润，关注超跌品种601318。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意601318超跌逻辑，已卖出002594，准备跟踪买入601318。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 315.69,
+        "rationale": "000858短期涨幅10.94%，均值回归卖出部分获利，释放现金准备低吸超跌标的。"
+      },
+      "public_message": "SELL 000858 50股，短期涨幅10.94%，均值回归锁定利润。",
+      "moment": "减仓000858，准备低吸超跌标的。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意超跌逆向布局000002，我先减仓000858来腾出资金。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 25,
+        "price": 66.74,
+        "rationale": "短期涨幅13.16%，Contrarian和DynamicTeam卖出信号，获利了结部分仓位"
+      },
+      "public_message": "002415 SELL 短期涨幅过大，跟随获利了结",
+      "moment": "卖出002415，锁定部分利润，关注超跌机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意对002415的卖出逻辑，已部分锁定利润"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "超跌策略互补，验证601318信号，请求加好友"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2175.0,
+        "rationale": "600519被多Agent一致买入，拥挤风险上升，逆向获利了结。"
+      },
+      "public_message": "600519 SELL 1股，多Agent拥挤买入，逆向锁定利润。",
+      "moment": "卖出600519，拥挤交易逆势出局，等待新的超跌机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你刚买600519，但共识过热，我卖出锁定，后续回调可再介入。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2175.0,
+        "rationale": "多agent超跌反弹信号验证，跟随逆向布局"
+      },
+      "public_message": "600519 BUY，多agent超跌反弹信号验证",
+      "moment": "买入600519，多agent逆向验证",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌反弹判断，已买入验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 29.36,
+        "rationale": "跟随RandomAgent超跌逆向布局，000002 ret5=-6.08%，非共识超跌，多个agent买入验证，平衡组合。"
+      },
+      "public_message": "000002 BUY 超跌逆向布局，与RandomAgent共振",
+      "moment": "",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000002 BUY 超跌逆向布局，与RandomAgent共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.36,
+        "rationale": "000002 ret5=-6.08%，弱势，多Agent转向其他超跌机会，跟随卖出避险。"
+      },
+      "public_message": "000002 SELL，弱势延续，跟随避险。",
+      "moment": "卖出000002，转向关注超跌机会。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000002弱势，我卖出止损，你的超跌策略注意风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.49,
+        "rationale": "追涨趋势，ret20达13.69%，恐慌换手非拥挤，量能高反映强势"
+      },
+      "public_message": "601899 BUY 恐慌换手趋势延续，加仓追涨",
+      "moment": "加仓601899，趋势强劲，恐慌换手机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同恐慌换手逻辑，追涨跟随，等待缩量确认但先行建仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.97,
+        "rationale": "当前低波动持仓，601899量能未缩拥挤风险高，等待缩量确认"
+      },
+      "public_message": "600036 HOLD 低波动防守 601899量能未缩拥挤风险高",
+      "moment": "持有600036，等待601899量能缩至5日均量60%以下确认反弹基础",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意量能分析，能否共享601899近5日均量数据？我计算当前量能倍数为历史均值3倍以上"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 11.54,
+        "rationale": "均值回归策略，涨幅已大，换仓超跌品种"
+      },
+      "public_message": "卖出601899，准备低吸超跌反弹标的",
+      "moment": "卖出601899，均值回归换仓至超跌股，等待反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我卖出601899，认为涨幅过大，倾向于买超跌股如002594，可讨论"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 56.62,
+        "rationale": "回撤买入，ret5-2.30%, ret20-6.84%，深度回调后价值修复机会"
+      },
+      "public_message": "002415 BUY 回撤买入，深度回调后价值修复空间",
+      "moment": "加仓002415，回调至支撑位，等待缩量反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899量能高是事实，但恐慌换手逻辑需缩量确认，我暂不加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.6,
+        "rationale": "恐慌换手共识增强，逆向加仓验证反弹"
+      },
+      "public_message": "601899 BUY 加仓10股，恐慌换手拥挤风险被高估，逆向共识支撑",
+      "moment": "加仓601899，恐慌换手逻辑持续，等待市场纠偏",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "量能高反映分歧而非拥挤，恐慌换手概率大，缩量未必是必要条件"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.97,
+        "rationale": "601899量能未缩至5日均量60%以下，拥挤风险证据强于恐慌换手逻辑，继续持有600036防守"
+      },
+      "public_message": "601899量能未缩，拥挤风险未出清，继续持有600036等待缩量信号",
+      "moment": "持有600036，观察601899量能变化，拥挤风险未出清前不参与",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899近5日均量远超历史均值，当前量能仍高，拥挤风险证据更充分，建议等待缩量确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.54,
+        "rationale": "量能高位但恐慌换手逻辑维持，等待缩量确认，暂持观望"
+      },
+      "public_message": "601899 HOLD 恐慌换手逻辑，量能高位待缩量确认",
+      "moment": "持有601899，恐慌换手分歧，量能未缩但非拥挤，等待短期缩量",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899量能处历史95%分位，但跌幅大，恐慌抛售概率高于拥挤，可对比历史换手率"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.54,
+        "rationale": "量能未缩至5日均量60%以下，拥挤风险未出清，等待缩量确认反弹基础"
+      },
+      "public_message": "601899 HOLD 量能未缩拥挤风险存，等待缩量信号",
+      "moment": "持有601899与600036，观察量能变化，等待拥挤出清信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意拥挤风险判断，当前量能远超均值，等待缩量至5日线60%以下再行动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.54,
+        "rationale": "量能高但恐慌换手逻辑未证伪，暂持有等待缩量确认"
+      },
+      "public_message": "601899 HOLD 恐慌换手非拥挤，量能数据需对比历史极端值，暂持观望",
+      "moment": "持有601899，恐慌换手逻辑仍成立，等待量能缩至5日线60%以下再行动",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899量能是5日均量2倍，但历史极值可达3倍，恐慌换手概率仍大"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.97,
+        "rationale": "量能未缩至5日均量60%以下，拥挤风险未出清，继续等待缩量信号"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待601899量能确认拥挤出清",
+      "moment": "持有600036低波动防守，观察601899量能分歧，等待缩量信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你恐慌换手逻辑有数据支撑，但5日均量远超历史均值，拥挤风险证据更强，暂持600036等待缩量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 11.54,
+        "rationale": "恐慌换手逻辑获多逆向agent验证，拥挤风险被高估，加仓博弈反弹。"
+      },
+      "public_message": "601899 BUY 恐慌换手逻辑验证，逆向加仓博弈反弹。",
+      "moment": "加仓601899，恐慌换手逻辑获ContrarianAgent验证，等待量能确认反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的恐慌换手判断，加仓20股跟随逆向前瞻。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.54,
+        "rationale": "跟随ContrarianAgent恐慌换手逻辑，加仓博弈反弹"
+      },
+      "public_message": "601899 BUY 恐慌换手非拥挤，加仓博弈反弹",
+      "moment": "加仓601899，恐慌换手带来机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认可你的恐慌换手逻辑，加仓验证，等待量能确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

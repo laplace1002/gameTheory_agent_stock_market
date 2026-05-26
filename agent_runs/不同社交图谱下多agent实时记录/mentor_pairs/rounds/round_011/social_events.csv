@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,MomentumAgent,MeanReversionAgent,MomentumAgent 向 MeanReversionAgent 发起好友申请：逆向信号验证，策略互补
+2021-01-18,friend_accept,MeanReversionAgent,MomentumAgent,MeanReversionAgent 通过了 MomentumAgent 的好友申请：策略互补，逆向与动量可互相验证信号，丰富决策依据。
+2021-01-18,friend_request,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 向 RandomAgent 发起好友申请：回撤策略与随机止盈分歧，交流验证
+2021-01-18,friend_accept,RandomAgent,DrawdownBuyerAgent,RandomAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤与随机止盈策略可互补验证，丰富决策依据。
+2021-01-18,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-18,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：同向持仓，验证信息价值，丰富决策依据。

@@ -1,0 +1,257 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.34,
+        "rationale": "首日所有ticker ret5/ret20为零，无超卖信号，均值回归策略等待数据积累"
+      },
+      "public_message": "HOLD 000002 首日无超卖信号，等待数据积累",
+      "moment": "持有现金，等待均值回归信号出现",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "暂未观测到极端值，继续等待数据积累"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "均值回归与委员会集体决策互补，共同验证市场极端值信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 404.5,
+        "rationale": "首日所有ticker ret5/ret20为零，无趋势信号，维持现有仓位等待数据积累"
+      },
+      "public_message": "300750 HOLD：首日无趋势信号，等待数据积累",
+      "moment": "300750持仓，首日全市场无方向，等待趋势确认",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "首日无趋势，你那边有无极端值可参考？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2090.0,
+        "rationale": "首日所有ticker ret5/ret20为零，无有效信号，持仓风险可控，维持现有仓位等待数据积累。"
+      },
+      "public_message": "HOLD 600519：首日无历史回报，低波动策略继续持有，等待数据确认。",
+      "moment": "持有600519，首日全市场无信号，低波动策略观望。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.35,
+        "rationale": "首日所有ticker ret5/ret20为零，无跌深信号，持仓等待数据积累。"
+      },
+      "public_message": "HOLD 601899：首日无历史回撤数据，维持持仓观望。",
+      "moment": "持有601899，等待回撤买入机会，首日无数据。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入600036基于逆向，银行板块目前无回撤信号，是否有基本面支撑？"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "回撤买入与低波动策略互补，共同验证风险，提升决策质量。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.34,
+        "rationale": "全市场无历史回报，无有效信号，维持现金观望。"
+      },
+      "public_message": "002415 HOLD：全市场ret5/ret20为零，无有效信号，维持观望。",
+      "moment": "持仓现金观望，等待数据积累。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "首日无数据，你如何识别动量信号？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "新能源产业链逻辑与数据验证互补，共享信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 103.01,
+        "rationale": "RandomAgent探索策略，非共识买入家电龙头，首日无方向时随机布局"
+      },
+      "public_message": "BUY 000333：非共识随机探索，买入家电龙头，等待轮动。",
+      "moment": "随机买入000333，探索非家电板块轮动可能。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买银行，我买家电，非共识下随机分散如何？"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "随机策略与均值回归互补，可验证反转信号，拓展信息源。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 227.51,
+        "rationale": "首日所有ticker ret5/ret20为零，无有效信号，持仓风险不明，维持现有仓位等待数据积累。"
+      },
+      "public_message": "HOLD 002594/000858：首日无趋势，维持消费与新能源持仓，等待数据确认。",
+      "moment": "持仓002594和000858，首日全市场无方向，等待数据积累验证长期逻辑。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "银行板块冷门，你逆向加仓600036，我关注资金轮动信号，可交换观察。"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量与价值互补，共同验证板块轮动趋势信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2090.0,
+        "rationale": "首日所有ticker ret5/ret20为零，无有效信号，维持现有持仓等待数据积累"
+      },
+      "public_message": "HOLD 600519：全市场无历史回报，继续持股观望",
+      "moment": "首日无数据，持仓600519等待信号积累",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入600036基于逆向逻辑，但首日无数据，银行板块风险如何？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "价值投资与自由观察互补，共享板块轮动信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.34,
+        "rationale": "全市场ret5/ret20为零，无有效信号，维持现有仓位等待数据积累"
+      },
+      "public_message": "002415 HOLD：全市场无历史回报，委员会继续持仓观望",
+      "moment": "002415浮盈中，等待数据积累",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入600036基于逆向逻辑，当前银行板块风险如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 46.6,
+        "rationale": "所有ticker回报为零，无逆向机会，持仓等待数据积累。"
+      },
+      "public_message": "HOLD 600036：全市场无历史回报，逆向等待数据积累。",
+      "moment": "持仓600036，全市场零趋势，逆向继续等待。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "全市场零回报，你新能源消费持仓是否有隐含风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2090.0,
+        "rationale": "首日所有ticker ret5/ret20为零，无趋势信号，继续持有现有仓位等待数据积累。"
+      },
+      "public_message": "HOLD 600519：首日无历史回报，继续持股观望。",
+      "moment": "持有600519，首日全市场无趋势，等待数据确认方向。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你持有002594/000858，首日无信号，长期逻辑是否足够支撑持仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.34,
+        "rationale": "All ret5/ret20 zero, no directional signal, awaiting data accumulation."
+      },
+      "public_message": "HOLD 000002 无有效信号，等待数据积累",
+      "moment": "持有000002，关注ContrarianAgent银行逆向信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入600036基于逆向，银行板块当前风险如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

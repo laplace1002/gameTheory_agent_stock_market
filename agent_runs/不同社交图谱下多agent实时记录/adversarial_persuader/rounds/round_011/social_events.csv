@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：均值回归需低波动验证风险，互补信息助决策。
+2021-01-18,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：均值回归与低波动策略互补，信息协同可提升风险判断力。
+2021-01-18,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：多空分歧下，你的委员会逻辑可验证我的超跌买入风险
+2021-01-18,friend_accept,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：超跌买入需多空验证，委员会可提供风险判断，互补信息。
+2021-01-18,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：随机视角可交叉验证601899多空分歧，互补决策。
+2021-01-18,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：随机视角可补充多空分歧验证，与现有好友互补，提升决策稳健性。
+2021-01-18,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：多空分歧下，自由骑手策略可互补风险验证，共同跟踪601899方向
+2021-01-18,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：TruthfulReporterAgent持仓601899，策略互补，可增强多空分歧下的风险验证。
+2021-01-18,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可验证601899放量未跌风险，互补信息助决策
+2021-01-18,friend_accept,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 通过了 PersuaderAgent 的好友申请：低波动策略可验证601899放量未跌风险，互补现有观察，增强决策稳健性。
+2021-01-18,friend_request,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可验证601899做空风险，互补信息助决策。
+2021-01-18,friend_accept,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 通过了 DynamicTeamAgent 的好友申请：做空风险验证与低波动策略互补，可增强风控决策
+2021-01-18,friend_request,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 向 DrawdownBuyerAgent 发起好友申请：关注000858超跌反弹逻辑，社交图谱可交叉验证风险收益比。
+2021-01-18,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 通过了 SocialGraphAgent 的好友申请：社交图谱可交叉验证000858风险收益，互补现有信息。

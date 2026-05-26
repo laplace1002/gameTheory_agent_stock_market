@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,MomentumAgent,MeanReversionAgent,MomentumAgent 向 MeanReversionAgent 发起好友申请：追涨与均值回归互补，交叉验证趋势强度
+2021-01-19,friend_accept,MeanReversionAgent,MomentumAgent,MeanReversionAgent 通过了 MomentumAgent 的好友申请：追涨与均值回归策略互补，可交叉验证趋势强度，丰富社交信息网络。

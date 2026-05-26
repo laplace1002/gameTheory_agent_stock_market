@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-18,friend_accept,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 通过了 LowVolatilityAgent 的好友申请：低波策略可补充信息源，验证信号价值，无冲突风险。
+2021-01-18,friend_request,RandomAgent,DrawdownBuyerAgent,RandomAgent 向 DrawdownBuyerAgent 发起好友申请：回撤买入与随机视角可互补异常信号验证
+2021-01-18,friend_accept,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 通过了 RandomAgent 的好友申请：随机视角可补充异常信号验证，与回撤买入策略互补，无冲突风险。
+2021-01-18,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：动量与低波动互补，可交叉验证趋势强度
+2021-01-18,friend_accept,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 通过了 PersuaderAgent 的好友申请：动量与低波动互补，可交叉验证趋势强度，无冲突风险。
+2021-01-18,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：回撤买入与低波策略互补，可交叉验证风险信号，申请加好友。
+2021-01-18,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：回撤买入与低波策略互补，交叉验证风险信号，增强风控。
+2021-01-18,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：回撤买入补足低波动量协同，扩展风险验证面。
+2021-01-18,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：协同低波动和动量，扩展风险验证，互补性强。

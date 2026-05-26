@@ -1,0 +1,8 @@
+group,agent
+Hub Desk,SocialGraphAgent
+Hub Desk,CommitteeTeamAgent
+Hub Desk,DynamicTeamAgent
+Satellites,MomentumAgent
+Satellites,MeanReversionAgent
+Satellites,LowVolatilityAgent
+Satellites,DrawdownBuyerAgent

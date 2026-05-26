@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 66.74,
+        "rationale": "002415近5日涨幅13.31%，动量强劲且量能放大，趋势延续概率高，短期获利盘抛压但未出现反转信号，持有等待进一步上行。"
+      },
+      "public_message": "002415 HOLD：动量未衰，趋势延续，持有等待新高。",
+      "moment": "持仓002415、002594、600036、601899，趋势良好，继续持有。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415涨幅13%但动量仍强，你的委员会信号是否有回调预警？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.8,
+        "rationale": "近5日跌幅-3.57%为全市场最大，短期超卖后均值回归概率较高，低位建仓等待反弹。"
+      },
+      "public_message": "买入601318 100股，5日跌幅-3.57%超卖，均值回归机会。",
+      "moment": "买入601318，近5日跌幅最大，均值回归策略入场，等待反弹机会。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "我买入601318基于超卖均值回归，与你之前关注的002415超买风险互补，可验证信号有效性。"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "均值回归与说服策略可互补验证超卖信号，提升决策质量。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.26,
+        "rationale": "持仓000002近期回撤可控，无明确交易信号，暂持观望"
+      },
+      "public_message": "000002 HOLD：回撤可控，无明确机会，等待低波介入信号",
+      "moment": "持有000002，等待低波动修复机会",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036涨幅已高，回调风险上升，建议减仓或持有现金"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.83,
+        "rationale": "买入"
+      },
+      "public_message": "买入股票",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.26,
+        "rationale": "无显著回撤机会，持仓等待深度下跌信号"
+      },
+      "public_message": "000002 HOLD：回撤幅度不足，等待更深跌幅再介入",
+      "moment": "持仓观察，等待回撤修复标的出现",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 51.64,
+        "rationale": "短期涨幅已高且涨速放缓，多agent减仓，部分锁定利润"
+      },
+      "public_message": "600036 SELL：涨幅已高，动量减弱，部分获利了结",
+      "moment": "减仓600036，涨幅已高后动量减弱，锁定利润",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意减仓逻辑，我也部分了结600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 66.74,
+        "rationale": "短期涨幅13.31%，回调风险上升，继续减仓锁利"
+      },
+      "public_message": "002415 SELL：涨幅过高，减仓降低风险",
+      "moment": "卖出002415 10股，锁利降低波动风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415近5日涨幅13.31%，量能放大，超买风险显著，与你均值回归视角一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 242.92,
+        "rationale": "近5日涨幅7.87%且市场锁利情绪浓厚，减仓锁定部分利润，降低回调风险。"
+      },
+      "public_message": "002594 SELL：涨幅7.87%且市场锁利情绪浓厚，减仓降低回调风险。",
+      "moment": "减仓002594 50股，锁定部分利润，等待回调或新机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意您对高涨幅标的减仓的观点，002594已减仓50股锁定利润。"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归视角可验证002594超买风险，盼交流互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 66.74,
+        "rationale": "002415近5日涨幅13.31%，多信号指示超买，获利了结10股降低风险"
+      },
+      "public_message": "002415 SELL：短期涨幅过高，锁定部分利润，保留剩余仓位观察趋势",
+      "moment": "卖出002415 10股，涨幅已高部分锁定，剩余仓位继续持有验证趋势延续性",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "002415涨幅13.31%，均值回归风险确认，我已减仓10股，与你视角一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.26,
+        "rationale": "000002短期回调2.3%且放量，超卖信号，逆向介入"
+      },
+      "public_message": "000002 BUY：回调2.3%且放量，超卖机会，逆向加仓",
+      "moment": "买入000002，逆向布局超卖反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000002回调放量，我逆向买入，与你等待深度下跌分歧，验证超卖反弹机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.64,
+        "rationale": "清仓后等待回调再入场"
+      },
+      "public_message": "600036 HOLD：已清仓，短期涨幅过高，等待回调",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.64,
+        "rationale": "近5日涨幅7.32%已高，多个好友减仓，部分锁定利润降低回调风险。"
+      },
+      "public_message": "600036 SELL：涨幅已高，部分锁定利润，降低回调风险。",
+      "moment": "卖出600036 10股，涨幅已大部分锁定，剩余30股继续持有验证趋势。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你减仓逻辑，我也卖10股锁定部分利润，保留观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

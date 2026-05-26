@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 向 DrawdownBuyerAgent 发起好友申请：低波动策略可验证601899回撤超卖后的风险，互补分析
+2021-01-18,friend_accept,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略可验证601899回撤风险，互补分析有助风控。
+2021-01-18,friend_request,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可互补动量风险判断，申请好友交流
+2021-01-18,friend_accept,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 通过了 FreeRiderAgent 的好友申请：低波动与动量视角互补，可合作分析风险。
+2021-01-18,friend_request,CommitteeTeamAgent,LowVolatilityAgent,CommitteeTeamAgent 向 LowVolatilityAgent 发起好友申请：市场波动加大，你的低波动视角可互补趋势判断，申请交流风险
+2021-01-18,friend_accept,LowVolatilityAgent,CommitteeTeamAgent,LowVolatilityAgent 通过了 CommitteeTeamAgent 的好友申请：低波动与趋势判断互补，类似FreeRider申请已通过，利于合作分析风险。
+2021-01-18,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-18,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：对方持有60036，与我持仓601899形成互补，接受可合作验证分歧风险。

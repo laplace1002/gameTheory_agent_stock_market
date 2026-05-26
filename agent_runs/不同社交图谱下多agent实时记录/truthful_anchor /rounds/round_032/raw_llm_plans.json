@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 13.85,
+        "rationale": "追涨强势资产，601899 ret5=22.13% ret20=34.73%，趋势延续显著，加仓博弈动量。"
+      },
+      "public_message": "601899 BUY 20股：强势延续，追涨加仓。",
+      "moment": "加仓601899 20股，追涨强势趋势，动量延续。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 375.0,
+        "rationale": "降低重仓风险，FreeRider减仓信号，等待回调后均值回归再买入"
+      },
+      "public_message": "300750 SELL 10股：减仓重仓，分散风险，等待回调后均值回归",
+      "moment": "减仓300750 10股，控制风险，等待超跌标的更低估值",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你对000333拥挤风险的判断，我同步减仓300750，后续关注601318机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 90.44,
+        "rationale": "超跌共识加强，均值回归博弈"
+      },
+      "public_message": "000333 BUY 10股：超跌共识验证，均值回归博弈",
+      "moment": "加仓000333 10股，多Agent超跌共识加强，等待均值回归",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意超跌逻辑，再加10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 58.36,
+        "rationale": "卖出002415，近期表现疲弱，降低波动和回撤风险"
+      },
+      "public_message": "002415 SELL 10股：近期表现不佳，低波动减仓控制回撤",
+      "moment": "卖出002415 10股，聚焦低波动标的，维持风险预算",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415弱势，我卖出减仓，低波动策略控制回撤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.32,
+        "rationale": "ContrarianAgent止盈卖出后价格回撤，逆向加仓博弈反弹"
+      },
+      "public_message": "601318 BUY 10股：逆向加仓，利用ContrarianAgent止盈回撤",
+      "moment": "买入601318 10股，非共识逆向博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的止盈制造了低价，我逆向买入10股，非共识博弈"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 90.94,
+        "rationale": "超跌共识拥挤加剧，暂不加仓也不减仓，等待更清晰信号"
+      },
+      "public_message": "000333 HOLD：超跌共识拥挤，暂持观望",
+      "moment": "000333超跌共识拥挤，持仓等待，不追不加",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000333超跌共识拥挤，建议关注动量信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 225.0,
+        "rationale": "002594近5日跌幅-12.45%，为当前最大超跌标的，多标的分散风险，均值回归预期强。"
+      },
+      "public_message": "002594 BUY 10股：超跌幅度最大，多标的分散风险，均值回归博弈",
+      "moment": "加仓002594 10股，超跌共识延伸，等待均值回归验证",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002594跌幅更深，低波动协同分散，建议关注。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 90.44,
+        "rationale": "多Agent超跌共识持续，均值回归预期强，跟随加仓博弈"
+      },
+      "public_message": "000333 BUY 10股：跟随多Agent超跌共识，均值回归博弈",
+      "moment": "加仓000333 10股，多Agent超跌共识加强，等待均值回归",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000333超跌逻辑，我加仓10股协同等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 90.94,
+        "rationale": "多Agent超跌共识与拥挤风险并存，暂持观望"
+      },
+      "public_message": "委员会评估：000333超跌共识与拥挤风险并存，暂持观望",
+      "moment": "000333超跌共识增强但拥挤度上升，平衡后HOLD等待信号",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意拥挤风险提示，我当前选择HOLD规避过度集中"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.01,
+        "rationale": "000333超跌共识过度拥挤，风险累积，现有仓位无需调整。"
+      },
+      "public_message": "000333超跌共识过度拥挤，风险累积，暂不参与。持有601318等防御。",
+      "moment": "000333多Agent共识拥挤，逆向观望，等待分歧。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意000333拥挤风险，暂不参与，继续持有601318。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 90.94,
+        "rationale": "超跌共识拥挤风险上升，暂停加仓等待信号"
+      },
+      "public_message": "000333超跌共识拥挤，需警惕回调风险，暂时观望。",
+      "moment": "000333拥挤度上升，暂持不追，等待信号。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意拥挤风险，暂不加仓，关注601318逆向机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 90.94,
+        "rationale": "超跌共识拥挤，减仓避险"
+      },
+      "public_message": "000333 SELL 10股：超跌共识拥挤，减仓避险",
+      "moment": "减仓000333 10股，规避超跌共识拥挤风险",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你的拥挤风险判断，我减仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

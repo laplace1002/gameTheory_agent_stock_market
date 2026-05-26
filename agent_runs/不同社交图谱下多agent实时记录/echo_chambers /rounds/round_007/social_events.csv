@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：低波动视角验证均值回归时机，互补决策
+2021-01-12,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：低波动与均值回归策略互补，可验证信号时机，与之前接受逻辑一致。
+2021-01-12,friend_request,RandomAgent,MomentumAgent,RandomAgent 向 MomentumAgent 发起好友申请：策略差异验证601899拥挤风险，动量视角互补
+2021-01-12,friend_accept,MomentumAgent,RandomAgent,MomentumAgent 通过了 RandomAgent 的好友申请：接受以获取逆向视角，互补验证601899拥挤风险。
+2021-01-12,friend_request,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 向 LowVolatilityAgent 发起好友申请：低波动视角验证002415动量稳定性，互补决策
+2021-01-12,friend_accept,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 通过了 TruthfulReporterAgent 的好友申请：低波动验证动量稳定性，互补决策，与前接受逻辑一致。
+2021-01-12,friend_request,PersuaderAgent,RandomAgent,PersuaderAgent 向 RandomAgent 发起好友申请：随机抽样验证策略多样性，互补拥挤风险评估
+2021-01-12,friend_accept,RandomAgent,PersuaderAgent,RandomAgent 通过了 PersuaderAgent 的好友申请：接受以增加策略多样性，互补拥挤风险评估，与当前逆向布局逻辑一致。
+2021-01-12,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_accept,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 通过了 FreeRiderAgent 的好友申请：接受以获取动量验证互补，评估002415持续性，分散拥挤风险。
+2021-01-12,friend_request,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 向 DrawdownBuyerAgent 发起好友申请：低波动与下跌保护互补，验证002415动量风险。
+2021-01-12,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 通过了 SocialGraphAgent 的好友申请：互补低波动与下跌保护策略，验证002415动量风险，丰富社交图信息。

@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：逆向策略与追涨互补，可验证板块轮动信号
+2021-01-06,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：逆向与追涨互补，可验证板块轮动信号，有助于提升决策质量。
+2021-01-06,friend_request,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 向 TruthfulReporterAgent 发起好友申请：同为数据驱动策略，共享信号验证可提升风险预算决策质量
+2021-01-06,friend_accept,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 通过了 LowVolatilityAgent 的好友申请：同为数据驱动策略，共享信号验证可提升风险预算决策质量。
+2021-01-06,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：逆向策略与数据验证互补，可共同验证信号。
+2021-01-06,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：数据验证可补逆向策略信号，已有互补好友先例，提升决策质量。
+2021-01-06,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：逆向策略与趋势策略互补，期待验证板块轮动信号。
+2021-01-06,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：逆向与趋势互补，已有互补先例，可提升信号验证
+2021-01-06,friend_request,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 向 CommitteeTeamAgent 发起好友申请：价值投资与委员会集体判断互补，共享信息验证信号。
+2021-01-06,friend_accept,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 通过了 DynamicTeamAgent 的好友申请：价值投资与集体判断互补，可丰富信号来源，已有互补好友先例。
+2021-01-06,friend_request,SocialGraphAgent,ContrarianAgent,SocialGraphAgent 向 ContrarianAgent 发起好友申请：逆向策略与社交图谱互补，探讨银行板块信息验证。
+2021-01-06,friend_accept,ContrarianAgent,SocialGraphAgent,ContrarianAgent 通过了 SocialGraphAgent 的好友申请：社交图谱可验证银行板块信息，互补增强信号

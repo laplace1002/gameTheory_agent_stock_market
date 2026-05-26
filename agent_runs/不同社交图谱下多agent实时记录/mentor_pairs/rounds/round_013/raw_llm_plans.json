@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 284.85,
+        "rationale": "深跌-6.71%后均值回归，与DrawdownBuyer和Contrarian逆向信号一致，低拥挤等待反弹"
+      },
+      "public_message": "000858 BUY 深跌后均值回归，逆向信号加仓",
+      "moment": "加仓000858，深跌后均值回归，多Agent逆向信号验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858深跌量未恐慌，均值回归逻辑一致，已加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "600036动量延续，多Agent一致买入，趋势强劲，加仓跟进"
+      },
+      "public_message": "600036 BUY 动能量能配合，多Agent一致，加仓跟随趋势",
+      "moment": "加仓600036，动量信号明确，多Agent验证趋势",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036动量强劲，趋势延续概率高，短期回调风险可控，继续持有为宜"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "追涨策略与随机策略信息互补，可验证市场效率"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 30.5,
+        "rationale": "低波动正收益，分散茅台持仓，控制回撤"
+      },
+      "public_message": "000002 BUY 低波动正收益，分散茅台风险",
+      "moment": "买入000002，低波动稳健配置，平衡组合回撤",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000002低波动配置，与你深跌策略互补风险控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 222.0,
+        "rationale": "深跌-7.23%量能平稳，买入等待均值修复"
+      },
+      "public_message": "002594 BUY 深跌-7.23%量能稳定，回撤买入等待修复",
+      "moment": "买入002594，深跌-7.23%量能未恐慌，等待修复",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "002594深跌一致，随机与回撤逻辑验证，期待反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 222.0,
+        "rationale": "随机博反弹已盈利2.7%，市场拥挤600036，获利了结"
+      },
+      "public_message": "002594 SELL 随机博反弹已盈利，市场拥挤600036，获利了结",
+      "moment": "卖出002594，随机反弹兑现，关注其他机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594我已卖出盈利，与你之前卖出方向相反，验证市场效率"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "多Agent买入信号一致但短期涨幅4.70%已高，筹码拥挤，等待量能确认回调风险"
+      },
+      "public_message": "600036 HOLD 多Agent买入但涨幅已高，量能待确认",
+      "moment": "600036持有观察，动能量能尚可但短期涨幅过大，等待量价确认",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036涨幅已高，多信号一致但拥挤，你如何评估回调风险？我倾向持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "短期涨幅已高，多Agent开始警惕回调，获利了结规避拥挤风险"
+      },
+      "public_message": "600036 SELL 短期涨幅高，拥挤风险，获利了结",
+      "moment": "卖出600036，规避拥挤回调风险",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036短期涨幅高，多Agent拥挤，建议谨慎，我已卖出"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "短期涨幅较大（ret5=4.70%），多Agent买入导致拥挤，量能配合但需警惕回调，持有观察。"
+      },
+      "public_message": "600036 HOLD 涨幅已高量能配合但拥挤，等待回调确认",
+      "moment": "600036持有，多Agent一致但短期涨幅较大，等待量价确认。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036回调风险如何评估？我倾向持有观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "短期涨幅已高(+4.70%)，多Agent提示拥挤风险，减仓锁定利润，等待回调后更佳买点"
+      },
+      "public_message": "600036 SELL 涨幅已高拥挤，减仓锁定部分利润，关注回调机会",
+      "moment": "600036减仓100股，拥挤风险上升，先锁定利润，等待回调再介入",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036涨幅已高，我减仓100股锁定利润，拥挤回调风险如何评估？"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "同样关注600036回调风险，可交流仓位管理与风险控制"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 284.85,
+        "rationale": "过度抛售后逆向加仓，拥挤交易在600036，000858被忽视，等待均值回归"
+      },
+      "public_message": "000858 加仓，拥挤在600036，逆向买入被忽视的000858",
+      "moment": "加仓000858，逆向交易被抛售的蓝筹，回避拥挤600036",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036涨幅已高且拥挤，逆向风险较大，建议减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "短期涨幅大，多信号拥挤，锁定部分利润，降低回调风险"
+      },
+      "public_message": "600036 SELL 涨幅已高拥挤，锁定部分利润，警惕回调",
+      "moment": "减仓600036，多Agent一致但涨幅过高，锁定部分利润等待回调确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036已涨幅较高且拥挤，你评估回调风险如何？我减仓部分锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "多Agent动量一致但短期涨幅已高，持有观察回调风险"
+      },
+      "public_message": "600036 HOLD 多Agent动量一致但涨幅已高，持有观察回调风险",
+      "moment": "持有600036，多Agent动量信号一致，短期风险上升，等待确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036涨幅已高，多Agent一致买入但拥挤，你如何评估回调风险？我倾向持有观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

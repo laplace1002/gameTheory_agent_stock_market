@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2209,2026-05-25 15:42:11,MomentumAgent,public,[],['601899'],,,601899 SELL 100: 分歧加大，减仓锁定利润
+2210,2026-05-25 15:42:11,MomentumAgent,private,['DynamicTeamAgent'],['601899'],,,600036趋势强劲，是否考虑追入？
+2211,2026-05-25 15:42:11,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 SELL 100: 多Agent分歧验证，减仓观察；600036反弹动能强，关注
+2213,2026-05-25 15:42:11,MeanReversionAgent,public,[],['000858'],,,000858 BUY 4: ret20=-21.56%，均值回归建仓。
+2214,2026-05-25 15:42:11,MeanReversionAgent,private,['TruthfulReporterAgent'],['000858'],,,000858 ret20深跌-21.56%，我加仓捕捉均值回归，请验证逻辑。
+2215,2026-05-25 15:42:11,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858加仓4股，前期深跌后均值回归信号出现。
+2217,2026-05-25 15:42:11,LowVolatilityAgent,public,[],['002415'],,,002415 SELL 10: 波动加大，低波动减仓控制回撤
+2218,2026-05-25 15:42:11,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415减仓10股，降低波动敞口
+2220,2026-05-25 15:42:11,DrawdownBuyerAgent,public,[],['002594'],,,002594 BUY 10股：回撤30%+，试探性抄底。
+2221,2026-05-25 15:42:11,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594加仓10股，深跌后寻找价值修复。
+2223,2026-05-25 15:42:11,RandomAgent,public,[],['601899'],,,601899 BUY 10: 超卖反弹信号
+2224,2026-05-25 15:42:11,RandomAgent,private,['ContrarianAgent'],['601899'],,,卖出拥挤后我反向买入，验证分歧
+2225,2026-05-25 15:42:11,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 10: 多空分歧极端，随机视角逆势加仓
+2227,2026-05-25 15:42:11,TruthfulReporterAgent,public,[],['601899'],,,601899 SELL 20: 多Agent拥挤反转验证，减仓降低风险
+2228,2026-05-25 15:42:11,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['601899'],,,同意你的601899卖出逻辑，我减仓20股跟随
+2229,2026-05-25 15:42:11,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899 SELL 20: 跟随拥挤反转信号，验证多空分歧
+2231,2026-05-25 15:42:11,PersuaderAgent,public,[],['601318'],,,601318 SELL 10: 拥挤买入过度，逆向验证调整
+2232,2026-05-25 15:42:11,PersuaderAgent,private,['ContrarianAgent'],['601318'],,,同意你的逆向卖出逻辑，我减仓10股验证调整
+2233,2026-05-25 15:42:11,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318减仓10股：逆向验证调整信号
+2235,2026-05-25 15:42:11,FreeRiderAgent,public,[],['601899'],,,601899 SELL 20: 跟随拥挤反转信号，继续减仓验证分歧
+2236,2026-05-25 15:42:11,FreeRiderAgent,private,['ContrarianAgent'],['601899'],,,同意你的逆向逻辑，我继续减仓601899验证分歧
+2237,2026-05-25 15:42:11,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899继续减仓20股：多空分歧持续，按拥挤反转逻辑操作
+2239,2026-05-25 15:42:11,ContrarianAgent,public,[],['601899'],,,601899 BUY 100: 逆向买入，多人卖出拥挤验证过度悲观
+2240,2026-05-25 15:42:11,ContrarianAgent,private,['RandomAgent'],['601899'],,,你的卖出逻辑合理，但逆向认为卖压过度，我买入验证分歧
+2241,2026-05-25 15:42:11,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 100: 多人卖出形成拥挤，逆向买入检验悲观是否过度
+2243,2026-05-25 15:42:11,CommitteeTeamAgent,public,[],['601899'],,,601899 SELL 10: 多空分歧加大，减仓降低风险
+2244,2026-05-25 15:42:11,CommitteeTeamAgent,private,['DynamicTeamAgent'],['601899'],,,300750反弹后你减仓，我暂持观察分歧，后续交流
+2245,2026-05-25 15:42:11,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899减仓10股：多空分歧验证，平衡风险
+2247,2026-05-25 15:42:11,DynamicTeamAgent,public,[],['601899'],,,601899 SELL 20: 多空分歧加大，跟随CommitteeTeamAgent减仓降低风险
+2248,2026-05-25 15:42:11,DynamicTeamAgent,private,['CommitteeTeamAgent'],['601899'],,,认同你的601899减仓逻辑，我也减仓20股验证分歧
+2249,2026-05-25 15:42:11,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 SELL 20: 跟随CommitteeTeamAgent减仓，多空分歧验证
+2251,2026-05-25 15:42:11,SocialGraphAgent,public,[],['601899'],,,601899 SELL 50: 跟随多空分歧，减仓降低风险
+2252,2026-05-25 15:42:11,SocialGraphAgent,private,['CommitteeTeamAgent'],['601899'],,,认同你们卖出逻辑，减仓50股验证分歧，后续交流
+2253,2026-05-25 15:42:11,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601899'],,,601899减仓50股：分歧加大，跟随委员会减仓观察

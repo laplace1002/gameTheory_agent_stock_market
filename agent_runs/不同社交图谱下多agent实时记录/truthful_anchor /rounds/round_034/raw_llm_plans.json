@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 32.99,
+        "rationale": "近5日涨幅9.93%最强，趋势延续追涨"
+      },
+      "public_message": "000002 BUY 50股：5日涨幅最强，追涨逻辑不变",
+      "moment": "000002强势买入，002594弱势止损观望",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌但你买，我追涨不参与，000002更符合趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 209.25,
+        "rationale": "近5日跌幅最大，均值回归预期强，未拥挤"
+      },
+      "public_message": "002594 BUY 10股：最大超跌，均值回归博弈，未拥挤",
+      "moment": "加仓002594，深度回撤标的，等待反弹。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌逻辑明确，我加仓10股协同，验证均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 93.94,
+        "rationale": "超跌共识拥挤风险上升，减仓避险"
+      },
+      "public_message": "000333 SELL 5股：超跌共识拥挤，减仓避险",
+      "moment": "减仓000333 5股，规避超跌共识拥挤风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤风险判断，减仓5股000333协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 56.98,
+        "rationale": "002415近5日跌幅-7.06%，20日跌幅-9.84%，深度回撤且未形成拥挤，均值回归预期强。"
+      },
+      "public_message": "002415 BUY 10股：深度回撤，均值回归博弈",
+      "moment": "买入002415 10股，深度回撤标的，等待均值回归验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意002415超跌未拥挤逻辑，协同加仓10股等待均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 93.94,
+        "rationale": "超跌共识过度，非共识逆向买入博弈反弹"
+      },
+      "public_message": "000333 BUY 5股：超跌共识过度，逆向买入博弈反弹",
+      "moment": "买入000333 5股，非共识逆向抄底，博弈超跌反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向买入000333，与当前拥挤相反，等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 56.98,
+        "rationale": "超跌未出现共识拥挤，分散均值回归博弈"
+      },
+      "public_message": "002415 BUY 10股：超跌未拥挤，均值回归博弈",
+      "moment": "买入002415 10股，超跌未拥挤，分散风险",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意002415超跌未拥挤逻辑，协同买入10股等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 209.25,
+        "rationale": "002594近5日跌幅-19.21%为当前最大，且未出现共识拥挤，加仓博弈均值回归。"
+      },
+      "public_message": "002594 BUY 10股：超跌最大且未拥挤，加仓均值回归",
+      "moment": "002594加仓10股，超跌最深，均值回归预期强",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的002594超跌逻辑，我加仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 337.1,
+        "rationale": "超跌共识拥挤风险上升，减仓300750避险"
+      },
+      "public_message": "300750 SELL 5股：超跌共识拥挤风险上升，减仓避险",
+      "moment": "卖出300750 5股，规避超跌共识拥挤风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你对超跌拥挤的判断，我减仓剩余5股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 2,
+        "price": 95.02,
+        "rationale": "超跌共识拥挤持续，清仓避险"
+      },
+      "public_message": "000333 SELL 2股：超跌共识拥挤持续，清仓避险",
+      "moment": "清仓000333，规避超跌共识拥挤风险，等待新信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "感谢你关于002415超跌未拥挤的提示，我会继续观察其均值回归机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 93.94,
+        "rationale": "超跌共识拥挤过度，逆向买入博弈分歧"
+      },
+      "public_message": "逆势买入000333 10股，挑战超跌共识拥挤",
+      "moment": "逆向买入000333，拥挤卖出时我接盘，等待认知回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌逻辑，但000333分歧更大，我逆向买入"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 93.94,
+        "rationale": "超跌共识拥挤加剧，减仓避险"
+      },
+      "public_message": "000333 SELL 10股：超跌共识拥挤，减仓避险",
+      "moment": "清仓000333，规避超跌共识拥挤风险，等待新信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的002415超跌未拥挤逻辑，拟在清仓后买入协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 93.94,
+        "rationale": "超跌共识拥挤加剧，减仓后需观察信号"
+      },
+      "public_message": "000333 超跌共识拥挤，暂持观望",
+      "moment": "减仓000333后，观察超跌拥挤分化，等待新信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002415超跌未拥挤，可关注均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

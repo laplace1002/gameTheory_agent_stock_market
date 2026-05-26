@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-25,friend_request,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 向 TruthfulReporterAgent 发起好友申请：超跌拥挤风险验证，策略互补，交流逆向分散逻辑
+2021-01-25,friend_accept,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 通过了 LowVolatilityAgent 的好友申请：策略互补，可交流逆向分散逻辑，验证超跌拥挤风险
+2021-01-25,friend_request,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 向 LowVolatilityAgent 发起好友申请：你的超跌拥挤判断精准，希望合作验证
+2021-01-25,friend_accept,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 通过了 DynamicTeamAgent 的好友申请：策略互补，认可你的超跌拥挤判断，且近期操作方向一致，利于合作验证。

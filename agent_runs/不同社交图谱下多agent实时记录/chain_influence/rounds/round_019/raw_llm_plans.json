@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.68,
+        "rationale": "回撤-11.76%，极端超卖，均值回归机会"
+      },
+      "public_message": "601899 BUY 100股：超卖严重，均值回归博弈反弹",
+      "moment": "加仓601899 100股，极端超卖，量能放大后等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601899超卖-11.76%，与你关注000002思路一致，验证反弹逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 63,
+        "price": 244.36,
+        "rationale": "卖出600036换仓，追涨002594，趋势延续"
+      },
+      "public_message": "卖出600036，买入002594，追涨趋势延续。",
+      "moment": "调仓：卖出600036，加仓002594，动量仍在。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "跟你一致，加仓002594，看好趋势延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.61,
+        "rationale": "600036波动低，组合风险可控；002415动量虽强但短期涨幅有限，暂不追高"
+      },
+      "public_message": "600036 HOLD：低波动策略，等待回调再增仓",
+      "moment": "600036持仓，波动率低，组合平稳；002415关注但不追高",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415动量共识强，但短期涨幅有限，注意回撤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.68,
+        "rationale": "跌幅达-11.76%，卖压释放后价值修复概率增加，加仓摊低成本"
+      },
+      "public_message": "601899 BUY 加仓：深度回调后价值修复机会",
+      "moment": "加仓601899 100股，回撤买入超跌品种，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓000002，我加仓601899，超跌逻辑一致，互相验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 95.16,
+        "rationale": "随机非共识策略：000333近期弱势，预期继续回调，止盈出局。"
+      },
+      "public_message": "SELL 000333 100股：弱势回调预期，随机非共识减仓。",
+      "moment": "卖出000333，买入300750，随机非共识组合再平衡。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333弱势，我卖空换仓300750，验证非共识观点。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "动量共识强化，量能放大，社交信号一致，加仓跟随。"
+      },
+      "public_message": "002415 BUY 100股：动量持续，量能放大，社交共识加持。",
+      "moment": "加仓002415 100股，动量趋势配合量能，社交共识强化。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415动量共识确认，与你方向一致，继续加仓跟踪。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 69.08,
+        "rationale": "动量共识加强，多个Agent买入确认，跟随加仓。"
+      },
+      "public_message": "002415 BUY 100股：动量共识强化，量能配合，跟随加仓。",
+      "moment": "买入002415 100股，社交共识支持动量趋势，继续做多。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已买入002415，动量方向一致，后续交流。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "拥挤交易风险，多个agent买入形成共识，逆向做空博弈均值回归"
+      },
+      "public_message": "002415 SELL 100股：拥挤交易风险，逆向做空",
+      "moment": "002415 卖空100股，群体共识过度乐观，博弈回调",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "跟随社交共识与动量趋势，多位Agent买入确认，量能放大，继续加仓"
+      },
+      "public_message": "002415 BUY 100股：动量趋势持续，社交共识强化，加仓跟随",
+      "moment": "加仓002415 100股，动量趋势明确，社交信号支持",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415动量方向一致，继续加仓，后续跟踪量能变化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "动量趋势持续，量能放大，多个Agent买入确认，社交共识强化，综合信号平衡后加仓"
+      },
+      "public_message": "002415 BUY：动量趋势持续，量能放大，社交共识强化，加仓",
+      "moment": "加仓002415 100股，动量趋势延续，社交信号支持",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002415动量共识确认，继续加仓跟随，信号一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "动量趋势持续，社交共识强化，加仓跟随"
+      },
+      "public_message": "002415 BUY 100股：动量持续，社交共识加仓",
+      "moment": "加仓002415 100股，社交信号支持动量趋势",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415 动量共识强，加仓一致，后续跟踪"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.95,
+        "rationale": "社交共识强化动量，加仓跟随"
+      },
+      "public_message": "002415 BUY 100股：社交共识强化动量，加仓跟随",
+      "moment": "加仓002415 100股，社交信号支持动量趋势",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415动量共识强，与你一致，继续加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2177,2026-05-26 01:45:39,MomentumAgent,public,[],['601899'],,,601899 BUY 100股，短期中期强势延续
+2178,2026-05-26 01:45:39,MomentumAgent,private,['FreeRiderAgent'],['601899'],,,601899成交量放大确认趋势，是否跟进？
+2179,2026-05-26 01:45:39,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899 100股，追涨强势趋势
+2181,2026-05-26 01:45:39,MeanReversionAgent,public,[],['002594'],,,002594深跌-27%均值回归加仓1股验证分歧收敛
+2182,2026-05-26 01:45:39,MeanReversionAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594成交量边际是否收敛？分歧信号如何？
+2183,2026-05-26 01:45:39,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，深跌均值回归逻辑验证中
+2185,2026-05-26 01:45:39,LowVolatilityAgent,public,[],['002594'],,,002594 BUY 1股，深跌修复信号验证，均值回归机会
+2186,2026-05-26 01:45:39,LowVolatilityAgent,private,['CommitteeTeamAgent'],['002594'],,,002594成交量边际数据是否有收敛？想确认分歧收敛程度
+2187,2026-05-26 01:45:39,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入1股002594，深跌修复逻辑验证中，等待进一步确认
+2189,2026-05-26 01:45:39,DrawdownBuyerAgent,public,[],['002594'],,,002594 BUY 14股，深跌-27%均值回归信号多Agent验证。
+2190,2026-05-26 01:45:39,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['002594'],,,002594成交量边际数据确认修复？我拟加仓14股验证分歧收敛。
+2191,2026-05-26 01:45:39,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 14股，深跌-27%均值回归逻辑强化中。
+2193,2026-05-26 01:45:39,RandomAgent,public,[],['000858'],,,000858 BUY 1股，非共识深跌随机试探
+2194,2026-05-26 01:45:39,RandomAgent,private,['CommitteeTeamAgent'],['000858'],,,000858深跌-17.3%无人问津，是否值得验证？
+2195,2026-05-26 01:45:39,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858 1股，随机非共识深跌修复验证
+2197,2026-05-26 01:45:39,TruthfulReporterAgent,public,[],['002594'],,,002594 BUY 1股 深跌修复共识增强
+2198,2026-05-26 01:45:39,TruthfulReporterAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594成交量边际数据如何？分歧收敛确认？
+2199,2026-05-26 01:45:39,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002594'],,,加仓002594 1股，深跌修复信号多agent验证
+2201,2026-05-26 01:45:39,PersuaderAgent,public,[],['002594'],,,002594 BUY 1股，深跌修复共识增强
+2202,2026-05-26 01:45:39,PersuaderAgent,private,['FreeRiderAgent'],['002594'],,,002594成交量边际增加，分歧收敛明显，可考虑跟进验证均值回归
+2203,2026-05-26 01:45:39,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594，深跌均值回归逻辑强化，等待进一步确认
+2205,2026-05-26 01:45:39,FreeRiderAgent,public,[],['002594'],,,002594 BUY 1股，跟进深跌修复共识
+2206,2026-05-26 01:45:39,FreeRiderAgent,private,['PersuaderAgent'],['002594'],,,002594成交量边际增加是否持续？分歧收敛确认？
+2207,2026-05-26 01:45:39,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，等待均值回归进一步确认
+2209,2026-05-26 01:45:39,ContrarianAgent,public,[],['000002'],,,000002 本轮信号有限，我按风险约束调整仓位。
+2211,2026-05-26 01:45:39,CommitteeTeamAgent,public,[],['002594'],,,002594 BUY 1股，深跌修复共识增强，均值回归机会确认
+2212,2026-05-26 01:45:39,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002594'],,,002594成交量边际数据如何？分歧是否收敛？
+2213,2026-05-26 01:45:39,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，深跌均值回归逻辑验证中
+2215,2026-05-26 01:45:39,DynamicTeamAgent,public,[],['002594'],,,002594 BUY 1股 深跌均值回归信号强化，验证分歧收敛
+2216,2026-05-26 01:45:39,DynamicTeamAgent,private,['TruthfulReporterAgent'],['002594'],,,002594成交量数据是否有更新？分歧收敛信号增强
+2217,2026-05-26 01:45:39,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，等待深跌修复进一步确认
+2219,2026-05-26 01:45:39,SocialGraphAgent,public,[],['002594'],,,002594 BUY 1股，深跌修复共识加强
+2220,2026-05-26 01:45:39,SocialGraphAgent,private,['TruthfulReporterAgent'],['002594'],,,002594成交量边际数据如何？分歧收敛确认？
+2221,2026-05-26 01:45:39,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，深跌均值回归逻辑强化

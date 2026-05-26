@@ -1,0 +1,260 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "成交量异常高，多个agent关注，追涨信号明确"
+      },
+      "public_message": "601899 追涨买入，成交量异常，期待动量延续",
+      "moment": "加仓601899，追涨成交量异常信号",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "我加仓601899，成交量异常信号强，你怎么看？"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "同为动量策略，可交叉验证601899异常信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 330.0,
+        "rationale": "首日所有股票ret5/ret20为0，缺乏趋势信号；601899高成交量但无价格确认，均值回归策略不追多，等待超卖机会。"
+      },
+      "public_message": "HOLD 所有：601899 高量无价确认，均值回归视角风险大，观望。",
+      "moment": "首日无趋势，601899 量异动但未确认方向，持币观望。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "地产逆向已有浮盈，我倾向等待更极端信号再动，如何？"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "均值回归视角可验证601899高成交量持续性及风险，与你现持有互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.79,
+        "rationale": "当前无趋势信号，持仓000002浮盈，低波动策略维持观望，避免介入高成交异常股"
+      },
+      "public_message": "HOLD 000002：首日无趋势，持仓观望，回避601899高波动风险",
+      "moment": "持有000002，首日无趋势，低波动策略保持耐心，关注后续信号",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "你如何看待601899成交量异常？是否可视为均值回归信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.79,
+        "rationale": "首日所有股票回撤为零，无跌深信号，等待后续机会。"
+      },
+      "public_message": "HOLD 000002：首日无回撤数据，继续观望。",
+      "moment": "首日观察：全部股票回撤为零，无入场信号，暂时不动。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601899成交量异常但无回撤确认，持有观望是否合理？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "想获取诚实信息验证后续回撤信号，互补策略。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "成交量异常后首日价格未确认方向，浮盈6.8%获利了结，规避噪音风险。"
+      },
+      "public_message": "601899 SELL：量异常后价格未确认方向，获利了结",
+      "moment": "清仓601899，量异常信号未确认，获利离场等待新机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已清仓601899，成交量异常未引发价格持续上涨，可能为噪音，后续再观察。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你关注601899成交量，我选择获利了结，后续可交叉验证信号有效性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "成交量异常且价格微涨，轻仓验证量价信号"
+      },
+      "public_message": "601899 成交异常价升，轻仓试多验证信号",
+      "moment": "601899量价配合，试多关注后续持续性",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你持有601899，成交量异常是否已确认方向？我轻仓试多，想交叉验证"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "同基于量异常入场，信息互补验证持续性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "持仓浮盈但首日成交量异常未确认趋势，等待更多信号"
+      },
+      "public_message": "601899 HOLD：成交量异常但价格未确认方向，继续观望",
+      "moment": "持有601899，量异常但无趋势确认，观望后续",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你如何评估601899成交量异常的持续性？我目前浮盈但谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.79,
+        "rationale": "逆向持仓已有浮盈，但群体对601899的乐观尚未极端，继续观察"
+      },
+      "public_message": "HOLD 000002：量异常共识未到极端，逆向等待情绪峰值",
+      "moment": "持仓000002不变，群体共识601899量异常但无价格确认，逆向等待",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你持有601899，我持000002逆向。群体买入量异常，需警惕过度拥挤，可交叉验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.18,
+        "rationale": "成交量异常，首日无趋势，轻仓试多博弈早期动量"
+      },
+      "public_message": "601899：买入100股，成交量异常驱动，关注后续动量确认",
+      "moment": "买入601899，量异常试多，配合新能源持仓板块互补",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "我亦买入601899基于量异常，能否交流持续性验证？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "新能源动量与逆向视角互补，可交叉验证601899异常信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.18,
+        "rationale": "成交量异常但无价格确认，首日继续持有观察"
+      },
+      "public_message": "601899 HOLD：成交量异常持仓观察，等待价格确认信号",
+      "moment": "持有601899，首日量异常，静待趋势确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899成交量异常但未确认方向，你如何评估后续动量？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 58.29,
+        "rationale": "首日无趋势，持仓盈利10%但无反转信号，继续观望。"
+      },
+      "public_message": "002415 HOLD：首日无趋势，持仓观察。",
+      "moment": "持有002415，等待更多信号。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899成交量异常，你如何评估可持续性？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.18,
+        "rationale": "首日量异常未确认方向，浮盈但无趋势，继续观望"
+      },
+      "public_message": "HOLD 601899：高成交未确认方向，浮盈持仓等待信号",
+      "moment": "首日持有601899浮盈6.5%，量异常但无确认，继续观察趋势信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向视角如何看601899量异？是否视为短期过热信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

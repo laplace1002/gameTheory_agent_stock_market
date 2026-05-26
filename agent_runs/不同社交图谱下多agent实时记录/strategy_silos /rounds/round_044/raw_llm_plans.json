@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 182.97,
+        "rationale": "深跌-29.60%且多agent买入验证分歧收敛，均值回归逻辑"
+      },
+      "public_message": "002594 BUY 2股 深跌-29.60%均值回归信号确认",
+      "moment": "加仓002594 2股，深跌均值回归逻辑验证中",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594成交量边际数据如何？我加仓2股验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.54,
+        "rationale": "ret5=0.79% ret20=13.69% 趋势最强，成交量放大，追涨信号延续"
+      },
+      "public_message": "601899 BUY 500股，趋势延续强势，放量上攻",
+      "moment": "加仓601899 500股，强势趋势延续，预期继续突破",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601899趋势强，你002594深跌修复逻辑是否考虑切换？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 5,
+        "price": 51.97,
+        "rationale": "低波动持稳，加仓验证回撤可控"
+      },
+      "public_message": "600036 BUY 5股，低波动持稳加仓验证",
+      "moment": "加仓600036，低波动策略验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "市场拥挤风险如何？我加仓600036验证稳定性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 86.36,
+        "rationale": "拥挤卖盘持续，减仓释放风险，为深跌修复标的腾出资金"
+      },
+      "public_message": "601318 SELL 20股拥挤风险再平衡，002594 BUY 14股深跌-29.6%均值回归",
+      "moment": "减仓601318 20股，加仓002594 14股，深跌均值回归逻辑验证中",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594成交量边际数据确认修复？我拟加仓14股验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 177.19,
+        "rationale": "多个agent验证深跌修复信号，均值回归概率增加"
+      },
+      "public_message": "002594 BUY 2股，深跌修复信号多个agent验证",
+      "moment": "加仓002594 2股，多个agent验证深跌修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌修复逻辑中，成交量边际数据是否有收敛？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 331.28,
+        "rationale": "随机非共识验证深跌反弹"
+      },
+      "public_message": "300750 BUY 1股 随机押注新能源深跌修复",
+      "moment": "买入300750 1股，随机非共识深跌反弹验证中",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750深跌-14.73%后随机买入验证修复，是否观察到卖盘衰减？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 182.97,
+        "rationale": "缺乏进一步确认信号，等待分歧收敛数据"
+      },
+      "public_message": "002594深跌修复逻辑需验证，暂持现仓观望。",
+      "moment": "002594持有观望，等待均值回归信号强化。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594成交量边际变化如何？分歧是否收敛？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.28,
+        "rationale": "拥挤卖盘持续，逆向加仓等待分歧收敛。"
+      },
+      "public_message": "601318 BUY 10股，逆向加仓拥挤卖盘。",
+      "moment": "继续加仓601318，逆向验证拥挤卖盘衰减。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我买入后，你那边卖盘边际有变化吗？想确认分歧收敛信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 182.97,
+        "rationale": "深跌修复信号明确，多个agent验证分歧收敛，均值回归机会"
+      },
+      "public_message": "002594加仓2股，深跌均值回归机会确认",
+      "moment": "加仓002594，等待深跌修复进一步确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594成交量边际增加，修复信号增强，验证分歧收敛。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "深跌修复信号确认，多个agent买入验证分歧收敛，买入1股"
+      },
+      "public_message": "002594 BUY 1股，深跌修复信号确认，均值回归机会",
+      "moment": "买入002594 1股，深跌均值回归逻辑验证中",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594深跌企稳成交量数据能否分享？我买入1股验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "深跌修复信号确认，多个agent买入验证分歧收敛，均值回归机会"
+      },
+      "public_message": "002594 BUY 1股 深跌均值回归信号验证中",
+      "moment": "买入002594 1股，等待深跌修复确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌企稳数据能否分享？我买入1股验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "深跌均值回归信号强化，多个agent买入验证分歧收敛"
+      },
+      "public_message": "002594 BUY 1股，深跌修复共识增强",
+      "moment": "加仓002594 1股，等待深跌修复进一步验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594成交量数据有更新吗？分歧收敛如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

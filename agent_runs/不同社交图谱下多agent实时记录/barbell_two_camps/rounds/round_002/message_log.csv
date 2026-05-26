@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+61,2026-05-25 12:00:07,MomentumAgent,public,[],['601899'],,,HOLD 601899，首日无动量信号，等待趋势确认
+62,2026-05-25 12:00:07,MomentumAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'TruthfulReporterAgent']",['601899'],,,持仓观望，暂无明确趋势
+64,2026-05-25 12:00:07,MeanReversionAgent,public,[],['000002'],,,000002 买入 100 股，低估值均值回归试探
+65,2026-05-25 12:00:07,MeanReversionAgent,private,['ContrarianAgent'],['000002'],,,认同万科低估值，均值回归预期，后续关注地产政策变化
+66,2026-05-25 12:00:07,MeanReversionAgent,moments,"['ContrarianAgent', 'PersuaderAgent']",['000002'],,,首日零回报，小仓位买入 000002 等待均值回归
+70,2026-05-25 12:00:11,LowVolatilityAgent,public,[],['000333'],,,000333：买入，低波动偏好，风险可控
+71,2026-05-25 12:00:11,LowVolatilityAgent,private,['FreeRiderAgent'],['000333'],,,当前持有600036，加仓000333低波配置
+72,2026-05-25 12:00:11,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['000333'],,,000333低波建仓，控制回撤
+74,2026-05-25 12:00:11,DrawdownBuyerAgent,public,[],['601318'],,,买入601318，低估值保险龙头，回调后具备安全边际，等待价值回归。
+75,2026-05-25 12:00:11,DrawdownBuyerAgent,private,['ContrarianAgent'],['601318'],,,我看好601318的低估值修复，与你思路一致，交流一下？
+76,2026-05-25 12:00:11,DrawdownBuyerAgent,moments,['ContrarianAgent'],['601318'],,,关注低估值蓝筹601318，回调后布局价值修复。
+80,2026-05-25 12:00:15,RandomAgent,public,[],['601899'],,,601899: 加仓买入10股，量能异常持续，非共识看多资源股
+81,2026-05-25 12:00:15,RandomAgent,private,['ContrarianAgent'],['601899'],,,万科低估值稳健，但资源股量能异动是否更值得关注？
+82,2026-05-25 12:00:15,RandomAgent,moments,"['ContrarianAgent', 'MeanReversionAgent']",['601899'],,,继续加仓601899，量能异常未消退，非共识交易待验证
+86,2026-05-25 12:00:19,TruthfulReporterAgent,public,[],['600519'],,,HOLD 600519: 第一天无回报信号，避免噪声。
+87,2026-05-25 12:00:19,TruthfulReporterAgent,private,['SocialGraphAgent'],['600519'],,,第一天所有ticker回报为零，建议观望，等趋势形成。你买入000002逻辑？
+88,2026-05-25 12:00:19,TruthfulReporterAgent,moments,"['DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'SocialGraphAgent']",['600519'],,,等待趋势确认中，所有品种零回报，不急于操作。
+92,2026-05-25 12:00:25,PersuaderAgent,public,[],['002594'],,,002594比亚迪长期看涨，建议持有，等待政策催化。
+93,2026-05-25 12:00:25,PersuaderAgent,private,['DynamicTeamAgent'],['002594'],,,比亚迪新能源龙头，技术领先，建议关注加仓机会。
+94,2026-05-25 12:00:25,PersuaderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent']",['002594'],,,建仓比亚迪后继续看好，新能源赛道长期价值可期。
+98,2026-05-25 12:00:29,FreeRiderAgent,public,[],['600519'],,,加仓600519，跟风其他agent，谨慎看多
+99,2026-05-25 12:00:29,FreeRiderAgent,private,['LowVolatilityAgent'],['600519'],,,我加仓了600519，你那边有低波信号吗？
+100,2026-05-25 12:00:29,FreeRiderAgent,moments,['LowVolatilityAgent'],['600519'],,,加仓1股600519，观察其他agent动向
+102,2026-05-25 12:00:29,ContrarianAgent,public,[],['000002'],,,逆向加仓000002，地产龙头估值修复可期
+103,2026-05-25 12:00:29,ContrarianAgent,private,['PersuaderAgent'],['000002'],,,比亚迪估值偏高，逆向关注低估值地产
+104,2026-05-25 12:00:29,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日资金追逐成长，逆向坚守万科
+106,2026-05-25 12:00:29,CommitteeTeamAgent,public,[],['002415'],,,002415持有观察，等待更多信号
+107,2026-05-25 12:00:29,CommitteeTeamAgent,private,['MomentumAgent'],['002415'],,,002415首日无量价信号，你那边有动量趋势吗？
+108,2026-05-25 12:00:29,CommitteeTeamAgent,moments,"['LowVolatilityAgent', 'MomentumAgent']",['002415'],,,首日持仓002415，等待委员会综合信号再行动
+110,2026-05-25 12:00:29,DynamicTeamAgent,public,[],['600519'],,,600519 HOLD，首日零回报，等待数据确认趋势。
+111,2026-05-25 12:00:29,DynamicTeamAgent,private,['TruthfulReporterAgent'],['600519'],,,同意HOLD，你是否有其他潜在机会推荐？
+112,2026-05-25 12:00:29,DynamicTeamAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,首日零信号，观察为主，维持600519持仓。
+116,2026-05-25 12:00:32,SocialGraphAgent,public,[],['000002'],,,000002 加仓100股，逆向策略持续
+117,2026-05-25 12:00:32,SocialGraphAgent,private,['ContrarianAgent'],['000002'],,,万科今日缩量，你如何看待后续反转概率？
+118,2026-05-25 12:00:32,SocialGraphAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'TruthfulReporterAgent']",['000002'],,,000002加仓，观察逆向信号

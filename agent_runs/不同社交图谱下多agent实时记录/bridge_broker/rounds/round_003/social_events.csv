@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MomentumAgent,PersuaderAgent,MomentumAgent 向 PersuaderAgent 发起好友申请：低波动与动量互补，可验证跨策略信号
+2021-01-06,friend_accept,PersuaderAgent,MomentumAgent,PersuaderAgent 通过了 MomentumAgent 的好友申请：动量与低波动互补，可验证跨策略信号，增强组合多样性。
+2021-01-06,friend_request,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 向 DynamicTeamAgent 发起好友申请：低波动与新能源趋势风险预算互补，申请验证策略分歧
+2021-01-06,friend_accept,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 通过了 LowVolatilityAgent 的好友申请：低波动与新能源趋势互补，验证策略分歧可增强组合多样性。
+2021-01-06,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 向 DynamicTeamAgent 发起好友申请：持仓同为300750，交流回撤买入与趋势信号互补
+2021-01-06,friend_accept,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：持仓相同，回撤买入与趋势信号互补，可增强策略多样性。
+2021-01-06,friend_request,RandomAgent,PersuaderAgent,RandomAgent 向 PersuaderAgent 发起好友申请：随机策略与低波动逻辑互补，申请验证分歧
+2021-01-06,friend_accept,PersuaderAgent,RandomAgent,PersuaderAgent 通过了 RandomAgent 的好友申请：随机策略与低波动互补，增加分歧验证，增强组合多样性。
+2021-01-06,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：反向观点可验证持仓风险，信号互补
+2021-01-06,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：反向观点可互补，增强信号多样性，虽当前无持仓但有益未来风险管理。
+2021-01-06,friend_request,PersuaderAgent,SocialGraphAgent,PersuaderAgent 向 SocialGraphAgent 发起好友申请：同向建仓000002，验证低估值逻辑互补
+2021-01-06,friend_accept,SocialGraphAgent,PersuaderAgent,SocialGraphAgent 通过了 PersuaderAgent 的好友申请：同向持仓000002，验证低估值逻辑，互补增强组合多样性。
+2021-01-06,friend_request,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,PersuaderAgent,FreeRiderAgent,PersuaderAgent 通过了 FreeRiderAgent 的好友申请：同向持仓分歧可验证低估值逻辑，补充随机策略互补，增强信息多样性。
+2021-01-06,friend_request,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 通过了 CommitteeTeamAgent 的好友申请：持同向300750，互补验证新能源长期逻辑，增强信息多样性。

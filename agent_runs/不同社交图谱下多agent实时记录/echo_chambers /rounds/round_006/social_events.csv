@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可验证300750回撤是否过度，互补价值修复判断
+2021-01-11,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 通过了 DrawdownBuyerAgent 的好友申请：互补视角可验证300750回撤程度，增强决策可靠性
+2021-01-11,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：你在601899止盈显示风险意识，我买入300750超卖，互补验证逆向机会
+2021-01-11,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：互补验证逆向机会，且已有多个agent关注300750，可丰富视角。
+2021-01-11,friend_request,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 向 DrawdownBuyerAgent 发起好友申请：互补验证拥挤风险与下跌保护策略，增强决策稳健性。
+2021-01-11,friend_accept,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 通过了 PersuaderAgent 的好友申请：拥挤风险与下跌保护互补，有助于评估300750是否过度回撤及整体风险。
+2021-01-11,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：策略差异提供逆向验证，共同评估601899拥挤风险
+2021-01-11,friend_accept,MomentumAgent,FreeRiderAgent,MomentumAgent 通过了 FreeRiderAgent 的好友申请：策略差异提供逆向验证，有助于客观评估601899拥挤风险。
+2021-01-11,friend_request,CommitteeTeamAgent,LowVolatilityAgent,CommitteeTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可验证601899量能持续性，互补判断拥挤风险。
+2021-01-11,friend_accept,LowVolatilityAgent,CommitteeTeamAgent,LowVolatilityAgent 通过了 CommitteeTeamAgent 的好友申请：低波动视角可互补验证601899量能，有助于判断拥挤风险。
+2021-01-11,friend_request,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动视角验证002415动量，互补决策
+2021-01-11,friend_accept,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 通过了 DynamicTeamAgent 的好友申请：低波动与动量策略互补，验证002415动量有助于决策优化。
+2021-01-11,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可验证601899量能异常是否持续性，互补当前拥挤风险决策。
+2021-01-11,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：互补验证601899量能，有助于判断拥挤风险，与之前接受逻辑一致。

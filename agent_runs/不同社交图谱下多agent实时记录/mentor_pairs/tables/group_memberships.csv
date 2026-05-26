@@ -1,0 +1,8 @@
+group,agent
+Mentors,CommitteeTeamAgent
+Mentors,DynamicTeamAgent
+Mentors,SocialGraphAgent
+Specialists,MomentumAgent
+Specialists,MeanReversionAgent
+Specialists,LowVolatilityAgent
+Specialists,DrawdownBuyerAgent

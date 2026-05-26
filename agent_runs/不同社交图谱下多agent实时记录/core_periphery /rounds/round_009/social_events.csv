@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：你的拥挤卖出信号与我的超卖信号可互补，探讨000858分歧。
+2021-01-14,friend_reject,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 拒绝了 MeanReversionAgent 的好友申请：申请理由基于我未持有的标的，且无相关拥挤信号，不匹配当前持仓与策略。
+2021-01-14,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：深跌反弹逻辑与团队观点互补，验证超跌信号
+2021-01-14,friend_reject,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：当前组合仅持有现金，无相关持仓，无法实现观点互补与验证超跌信号。
+2021-01-14,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：随机策略可验证分歧信号，互补验证多空边界
+2021-01-14,friend_reject,FreeRiderAgent,RandomAgent,FreeRiderAgent 拒绝了 RandomAgent 的好友申请：申请理由基于非持仓标的000858，无直接信号互补。
+2021-01-14,friend_request,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 向 RandomAgent 发起好友申请：随机策略可提供非共识信号，补充当前分歧验证。
+2021-01-14,friend_reject,RandomAgent,TruthfulReporterAgent,RandomAgent 拒绝了 TruthfulReporterAgent 的好友申请：你本身是随机策略，无需外部信号；且对方空仓，无持仓互补。
+2021-01-14,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_reject,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 拒绝了 PersuaderAgent 的好友申请：申请理由未关联自身持仓标的或策略，无法验证信息价值。
+2021-01-14,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可过滤社交噪音，互补验证信号。
+2021-01-14,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：申请理由与低波动策略互补，可过滤社交噪音，验证信号。

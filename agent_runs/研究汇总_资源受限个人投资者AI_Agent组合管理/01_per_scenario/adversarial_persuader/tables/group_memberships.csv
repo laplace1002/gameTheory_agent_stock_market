@@ -1,0 +1,9 @@
+group,agent
+Persuasion Test,PersuaderAgent
+Persuasion Test,MomentumAgent
+Persuasion Test,MeanReversionAgent
+Persuasion Test,RandomAgent
+Verification Desk,TruthfulReporterAgent
+Verification Desk,LowVolatilityAgent
+Verification Desk,CommitteeTeamAgent
+Verification Desk,ContrarianAgent

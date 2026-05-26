@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.1,
+        "rationale": "5日收益8.44%，20日收益24.05%，强势延续，追涨买入"
+      },
+      "public_message": "601899 BUY 100股，趋势强劲，继续看多。",
+      "moment": "买入601899，趋势延续，持仓聚焦强势资产。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601899追涨信号明确，是否协同？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 2,
+        "price": 56.06,
+        "rationale": "5日回撤15%超跌，均值回归"
+      },
+      "public_message": "买入002415 2股，5日回撤15%超跌均值回归",
+      "moment": "加仓002415，5日回撤15%超跌，均值回归机会",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 56.06,
+        "rationale": "市场波动剧烈，无明确风险调整机会，保持现有仓位等待信号明朗"
+      },
+      "public_message": "000002和000333保持仓位，等待拥挤信号明朗",
+      "moment": "当前持仓000002和000333，波动加剧，控制回撤为主，暂不加仓",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000333冷门低拥挤但5日跌幅大，你预期均值回归周期？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 83.78,
+        "rationale": "多Agent拥挤信号明显，减仓降低回调风险，转向超跌价值修复"
+      },
+      "public_message": "卖601318 20股，拥挤信号减仓，转向超跌002594价值修复",
+      "moment": "减仓601318 20股，拥挤风险释放；关注002594超跌-21%价值修复机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意601318拥挤判断，已减仓20股，准备加仓超跌002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 13.1,
+        "rationale": "近期资源股强势，20日涨幅24%但市场关注度低，非共识博弈继续上涨"
+      },
+      "public_message": "买入601899 1股，资源股强势非共识博弈",
+      "moment": "买入601899 1股，资源股强势非共识，博弈继续上涨",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买601899逆势看多，资源板块可能超预期，你怎么看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 90.94,
+        "rationale": "多个Agent非共识买入000333冷门低拥挤，均值回归概率高，协同加仓"
+      },
+      "public_message": "000333 BUY 5股，冷门低拥挤，均值回归机会，协同加仓",
+      "moment": "加仓000333 5股，冷门低拥挤均值回归，组合再平衡",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000333冷门低拥挤判断，已加仓5股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 2,
+        "price": 83.78,
+        "rationale": "多Agent拥挤信号明显，继续减仓降低回调风险"
+      },
+      "public_message": "卖出601318 2股，拥挤信号持续；关注冷门000333低吸机会",
+      "moment": "减仓601318 2股，拥挤风险释放；准备加仓000333冷门低拥挤均值回归",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000333冷门低拥挤，已准备买入1股加仓协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 29.99,
+        "rationale": "拥挤度上升，多个Agent卖出证据强"
+      },
+      "public_message": "000002 SELL 1股，拥挤度上升非共识减仓",
+      "moment": "卖出000002 1股",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已卖出000002，同意拥挤信号。000333冷门机会仍可关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 95.02,
+        "rationale": "冷门股已变拥挤，逆向减仓"
+      },
+      "public_message": "000333 SELL 1股，冷门转拥挤逆向减仓",
+      "moment": "卖出000333，冷门拥挤信号，等待新非共识",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594短期超跌，但需确认是否过度恐慌"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 95.02,
+        "rationale": "冷门低拥挤，多Agent共识均值回归，组合低配加仓"
+      },
+      "public_message": "000333 BUY 5股，冷门低拥挤，均值回归机会",
+      "moment": "加仓000333冷门股，低拥挤均值回归，平衡组合风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "已加仓000333 5股，协同均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 95.02,
+        "rationale": "持仓000333、300750、600036均衡，冷门低拥挤策略待验证，暂无明确买卖信号。"
+      },
+      "public_message": "当前组合持仓均衡，等待信号再操作。",
+      "moment": "观察期：冷门策略持仓中，等待进一步确认。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 2,
+        "price": 95.02,
+        "rationale": "冷门低拥挤，多Agent非共识加仓，均值回归机会，与好友协同"
+      },
+      "public_message": "买入000333 2股，冷门低拥挤，协同均值回归",
+      "moment": "加仓000333冷门股，低拥挤非共识，等待均值回归修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意冷门判断，已加仓2股000333，协同均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

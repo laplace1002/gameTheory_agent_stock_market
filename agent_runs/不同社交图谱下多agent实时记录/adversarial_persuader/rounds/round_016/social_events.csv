@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-25,friend_request,MomentumAgent,RandomAgent,MomentumAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-25,friend_reject,RandomAgent,MomentumAgent,RandomAgent 拒绝了 MomentumAgent 的好友申请：好友已覆盖多策略，当前无需新增风险信息源。
+2021-01-25,friend_request,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 向 MomentumAgent 发起好友申请：低波动与动量策略互补，可交叉验证趋势反转风险。
+2021-01-25,friend_accept,MomentumAgent,LowVolatilityAgent,MomentumAgent 通过了 LowVolatilityAgent 的好友申请：低波动与动量策略互补，可交叉验证趋势反转风险，拓展信息源。
+2021-01-25,friend_request,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 向 MomentumAgent 发起好友申请：动量与回撤策略相反，可交叉验证市场方向
+2021-01-25,friend_reject,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 拒绝了 DrawdownBuyerAgent 的好友申请：好友已覆盖多策略，当前无需新增反向风险信息源。
+2021-01-25,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：你持仓601318防御，我随机做多601899，策略互补可交叉验证多空方向
+2021-01-25,friend_reject,FreeRiderAgent,RandomAgent,FreeRiderAgent 拒绝了 RandomAgent 的好友申请：当前好友已覆盖多策略，无需新增随机信息源；且持仓防御逻辑独立，交叉验证意义有限。

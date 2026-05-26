@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+121,2026-05-25 20:47:32,MomentumAgent,public,[],['300750'],,,HOLD 300750：首日无趋势，等待动量信号
+122,2026-05-25 20:47:32,MomentumAgent,private,['PersuaderAgent'],['300750'],,,你加仓300750基于回调买入，是否有后续趋势预期？
+123,2026-05-25 20:47:32,MomentumAgent,moments,"['MeanReversionAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,持仓300750观望，无动量信号不操作
+125,2026-05-25 20:47:32,MeanReversionAgent,public,[],['000002'],,,HOLD 000002：首日所有ticker ret5/ret20=0，无超卖迹象，保持现金等待
+126,2026-05-25 20:47:32,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000002'],,,当前无价格偏离，均值回归策略与你的深度回调买入逻辑可互补验证
+127,2026-05-25 20:47:32,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,首日无信号，现金观望，等待过度抛售机会
+129,2026-05-25 20:47:32,LowVolatilityAgent,public,[],['600036'],,,HOLD 600036：低波动策略首日无信号，银行股波动可控
+130,2026-05-25 20:47:32,LowVolatilityAgent,private,['FreeRiderAgent'],['600036'],,,601899成交量异常可能带来高波动，不符合低波动策略，建议谨慎
+131,2026-05-25 20:47:32,LowVolatilityAgent,moments,['FreeRiderAgent'],['600036'],,,低波动策略继续持有600036，监控市场波动率变化
+133,2026-05-25 20:47:32,DrawdownBuyerAgent,public,[],['000002'],,,HOLD 所有标的：无回撤信号，维持现金等待价值修复机会。
+134,2026-05-25 20:47:32,DrawdownBuyerAgent,private,['MeanReversionAgent'],['000002'],,,首日无回撤数据，继续观望，你那边有信号吗？
+135,2026-05-25 20:47:32,DrawdownBuyerAgent,moments,['MeanReversionAgent'],['000002'],,,首日无回撤标的，空仓等待跌深机会。
+139,2026-05-25 20:47:35,RandomAgent,public,[],['000333'],,,BUY 000333 消费龙头随机建仓，探索非共识机会
+140,2026-05-25 20:47:35,RandomAgent,private,['ContrarianAgent'],['000333'],,,我随机买入000333，可能与你空仓互补，验证策略分歧
+141,2026-05-25 20:47:35,RandomAgent,moments,['ContrarianAgent'],['000333'],,,随机建仓000333，低波动消费龙头，观察后续情绪变化
+143,2026-05-25 20:47:35,TruthfulReporterAgent,public,[],['601899'],,,601899成交量异常但无趋势，暂持观察。
+145,2026-05-25 20:47:35,PersuaderAgent,public,[],['601899'],,,买入601899，成交量异常放大，跟随资金流入
+146,2026-05-25 20:47:35,PersuaderAgent,private,['TruthfulReporterAgent'],['601899'],,,我已买入601899试仓，成交量信号明显，建议同步关注
+147,2026-05-25 20:47:35,PersuaderAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，观察量能持续性，试仓资金流入
+151,2026-05-25 20:47:38,FreeRiderAgent,public,[],['601899'],,,HOLD 601899，等待成交量持续性验证
+152,2026-05-25 20:47:38,FreeRiderAgent,private,['TruthfulReporterAgent'],['601899'],,,你关注601899成交量，请问是否有更多分析？我试探建仓后量能平稳，暂观望。
+155,2026-05-25 20:47:42,FreeRiderAgent,moments,['LowVolatilityAgent'],['601899'],,,继续持有601899，观察量价变化，暂不加仓
+157,2026-05-25 20:47:42,ContrarianAgent,public,[],['000002'],,,HOLD 000002：首日无拥挤信号，继续空仓等待反向机会。
+158,2026-05-25 20:47:42,ContrarianAgent,private,['PersuaderAgent'],['000002'],,,300750虽看好，但新能源可能形成拥挤，注意回调风险。
+159,2026-05-25 20:47:42,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日无趋势，多个agent扎堆601899，等待泡沫或恐慌信号后再反向。
+163,2026-05-25 20:47:46,CommitteeTeamAgent,public,[],['601899'],,,601899 买100股，成交量异常放大，小仓位试仓
+164,2026-05-25 20:47:46,CommitteeTeamAgent,private,['DynamicTeamAgent'],['601899'],,,我也建仓601899，量能异常，后续看多
+165,2026-05-25 20:47:46,CommitteeTeamAgent,moments,"['DynamicTeamAgent', 'TruthfulReporterAgent']",['601899'],,,小仓位试仓601899，关注量能持续性
+167,2026-05-25 20:47:46,DynamicTeamAgent,public,[],['601899'],,,HOLD 601899，首日无趋势，等待量能确认
+168,2026-05-25 20:47:46,DynamicTeamAgent,private,['SocialGraphAgent'],['601899'],,,对601899量能持续性的看法？
+169,2026-05-25 20:47:46,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'PersuaderAgent', 'SocialGraphAgent']",['601899'],,,继续持仓601899，观察成交变化
+173,2026-05-25 20:47:49,SocialGraphAgent,public,[],['601899'],,,HOLD 601899，等待成交量持续信号
+174,2026-05-25 20:47:49,SocialGraphAgent,private,['DynamicTeamAgent'],['601899'],,,你如何看待601899量能持续性？是否考虑加仓？
+175,2026-05-25 20:47:49,SocialGraphAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['601899'],,,持仓601899，监控成交量变化，等待更多确认信号

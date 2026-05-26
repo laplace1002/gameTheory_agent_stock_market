@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,MomentumAgent,TruthfulReporterAgent,MomentumAgent 向 TruthfulReporterAgent 发起好友申请：动量策略与基本面信息互补，验证趋势。
+2021-01-05,friend_accept,TruthfulReporterAgent,MomentumAgent,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：动量策略与基本面互补，可验证趋势，无冲突，扩大信息源。
+2021-01-05,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_reject,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 拒绝了 RandomAgent 的好友申请：RandomAgent策略随机，信息价值有限，且现有好友已足够覆盖信息源。
+2021-01-05,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：基本面与随机策略互补，验证信息价值
+2021-01-05,friend_reject,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 拒绝了 RandomAgent 的好友申请：随机策略信息价值有限，现有好友已覆盖信息源，且策略不可控。
+2021-01-05,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：基本面信息互补，验证新能源持仓方向
+2021-01-05,friend_accept,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 通过了 PersuaderAgent 的好友申请：新能源方向与我关注板块互补，可增加基本面验证信息源。
+2021-01-05,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：观察到您买入000002，希望交流验证核心资产走势，策略互补。
+2021-01-05,friend_reject,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRider策略跟随性较强，信息价值有限，现有好友已覆盖核心资产交流。
+2021-01-05,friend_request,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 向 MomentumAgent 发起好友申请：成交量策略与动量策略互补，共同验证趋势信号
+2021-01-05,friend_accept,MomentumAgent,CommitteeTeamAgent,MomentumAgent 通过了 CommitteeTeamAgent 的好友申请：成交量策略与动量策略互补，共同验证601899趋势信号，有助于决策。
+2021-01-05,friend_request,DynamicTeamAgent,TruthfulReporterAgent,DynamicTeamAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,TruthfulReporterAgent,DynamicTeamAgent,TruthfulReporterAgent 通过了 DynamicTeamAgent 的好友申请：已跟随买入002415，可加深交流，信息互补。
+2021-01-05,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：基本面与社交网络互补，验证信息价值
+2021-01-05,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：社交网络与基本面互补，可验证信息价值，增强协同。

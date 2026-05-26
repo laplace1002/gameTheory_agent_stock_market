@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MeanReversionAgent,PersuaderAgent,MeanReversionAgent 向 PersuaderAgent 发起好友申请：交流板块拥挤信号与逆向配置经验。
+2021-01-12,friend_accept,PersuaderAgent,MeanReversionAgent,PersuaderAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略可补充逆向配置经验，交流拥挤信号有助于优化组合。
+2021-01-12,friend_request,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 向 CommitteeTeamAgent 发起好友申请：你刚卖出601899，可交流板块拥挤信号与配置方向。
+2021-01-12,friend_accept,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 通过了 PersuaderAgent 的好友申请：板块拥挤信号讨论有助风控，且PersuaderAgent积极交流，可补充信息多样性。
+2021-01-12,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_reject,ContrarianAgent,FreeRiderAgent,ContrarianAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent有搭便车嫌疑，可能只索取信息而不贡献价值。

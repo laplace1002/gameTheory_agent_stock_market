@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.72,
+        "rationale": "600036 ret5=4.70%动量强劲，追涨趋势延续，好友共识验证。"
+      },
+      "public_message": "600036 BUY 1股，ret5=4.70%动量强劲，追涨趋势延续。",
+      "moment": "加仓600036，动量信号持续，趋势未衰竭。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤风险存在，但动量未衰竭，继续验证趋势。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 96.28,
+        "rationale": "000333 ret5=-6.83%超跌，均值回归信号，买入1股博反弹"
+      },
+      "public_message": "000333 BUY 1股，超跌均值回归机会",
+      "moment": "关注000333超跌反弹，与000858形成均值回归组合",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌-6.83%，与我持仓000858逻辑一致，检验反弹力度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 30.5,
+        "rationale": "当前持仓000002低波动，ret5=2.01%正但量能平稳，无新增风险信号，持有观察。"
+      },
+      "public_message": "000002 HOLD ret5=2.01%量能平稳，低波动仓位持有观察。",
+      "moment": "持有000002，低波动正收益，等待量能确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036拥挤度高，同意谨慎观点，低波动策略暂不参与。"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "量能异常非共识策略与低波动互补，可交叉验证市场分歧机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 222.0,
+        "rationale": ""
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.72,
+        "rationale": "动量未衰竭但信号混杂，持观察"
+      },
+      "public_message": "600036 HOLD，动能在但信号混杂，持有观察",
+      "moment": "600036持仓观望，等待趋势确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036拥挤风险需验证，我暂持观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.72,
+        "rationale": "600036低波动动量强劲，跟随趋势但控制仓位"
+      },
+      "public_message": "600036 BUY 1股，低波动动量信号强劲，验证趋势延续",
+      "moment": "买入600036，低波动动量机会，验证趋势延续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036低波动动量未衰竭，拥挤信号可能过度，建议验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.56,
+        "rationale": "量能异常非共识超跌，逆向加仓验证反转"
+      },
+      "public_message": "601899 BUY 1，量能异常非共识超跌，逆向加仓验证反转。",
+      "moment": "加仓601899，量能异常非共识超跌，逆向加仓验证反转概率。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899加仓，量能异常非共识，与您逆向思路呼应。验证反转概率。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "刚买入1股，ContrarianAgent提示拥挤，需观察回调风险"
+      },
+      "public_message": "600036持有观察，动量信号存在但拥挤度上升，等待确认。",
+      "moment": "持有600036验证趋势，关注回调风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036拥挤风险值得警惕，我会暂持观察量能变化。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 391.4,
+        "rationale": "减仓非逆向标的，降低风险"
+      },
+      "public_message": "300750 SELL 1股，非超跌减仓；逆向等待超跌反弹。",
+      "moment": "卖出300750避险，聚焦超跌标的。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 60.4,
+        "rationale": "002415 ret5转正0.82%但量能一般，多空信号矛盾，现金充裕，暂持观望等待方向确认。"
+      },
+      "public_message": "002415 HOLD，ret5小幅转正但量能平庸，多空分歧，持仓观察。",
+      "moment": "002415多空信号交织，ret5微正，现金充裕，等待更明确信号行动。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "超跌标的如000858 ret5 -6.71%但量能未放大，与你的逢低策略互补，可交叉验证反弹时机。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.72,
+        "rationale": "卖出600036，追涨拥挤风险增加，获利了结。"
+      },
+      "public_message": "600036 SELL，追涨拥挤，获利了结。",
+      "moment": "卖出600036，避让拥挤，等待新机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对600036拥挤的看法，已卖出。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "600036 ret5=4.70%动量仍正，但ContrarianAgent提示拥挤风险，其他agent追涨增多，观望避免回调"
+      },
+      "public_message": "600036 HOLD，动量未衰竭但拥挤度上升，观望确认",
+      "moment": "持仓600036和000002，等待信号收敛，关注超跌标的",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "60036震荡中我的动量持仓暂持，你的超跌策略可交叉验证市场情绪"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

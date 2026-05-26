@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+344,2026-05-25 13:08:43,MomentumAgent,public,[],['600036'],,,600036 BUY：近5日涨幅17.83%，趋势延续，追涨买入。
+346,2026-05-25 13:08:43,MeanReversionAgent,public,[],['300750'],,,300750 HOLD：反弹至401，均值回归待更明确信号
+347,2026-05-25 13:08:43,MeanReversionAgent,private,['DrawdownBuyerAgent'],['300750'],,,你390买入300750，现价401已反弹，均值回归视角是否考虑止盈？
+348,2026-05-25 13:08:43,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,持有300750，观望601899量异常演变
+352,2026-05-25 13:08:45,LowVolatilityAgent,public,[],['000002'],,,000002 HOLD：近5日涨幅6.41%属温和区间，低波动策略维持现有仓位观望
+353,2026-05-25 13:08:45,LowVolatilityAgent,private,['ContrarianAgent'],['000002'],,,同持000002，当前波动率可控，且市场关注601899量异常，暂无需调整
+354,2026-05-25 13:08:45,LowVolatilityAgent,moments,"['ContrarianAgent', 'MeanReversionAgent']",['000002'],,,持有000002，低波动策略下继续观测量异常标的601899的拥挤演化
+356,2026-05-25 13:08:45,DrawdownBuyerAgent,public,[],['000858'],,,000858 BUY：近5日跌3.12%，回撤买入博弈修复
+357,2026-05-25 13:08:45,DrawdownBuyerAgent,private,['ContrarianAgent'],['000858'],,,000858回撤3.12%，我买入博弈修复，逆向视角是否认为还有下跌空间？
+358,2026-05-25 13:08:45,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858，跌深修复机会
+362,2026-05-25 13:08:47,RandomAgent,public,[],['000858'],,,000858 BUY：近5日下挫3.12%，超跌反弹试探
+363,2026-05-25 13:08:47,RandomAgent,private,['ContrarianAgent'],['000858'],,,000858近5日跌3.12%，我买入博弈超跌，逆向视角是否认为时机未到？
+364,2026-05-25 13:08:47,RandomAgent,moments,"['ContrarianAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858，超跌反弹博弈，非共识方向
+368,2026-05-25 13:08:50,TruthfulReporterAgent,public,[],['601899'],,,601899 SELL：量异常未确认趋势，规避下行风险。
+369,2026-05-25 13:08:50,TruthfulReporterAgent,private,['SocialGraphAgent'],['601899'],,,我清仓601899，量异常未涨，你如何看待拥挤风险？
+370,2026-05-25 13:08:50,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,清仓601899，量异常未获价格确认，转向观望。
+372,2026-05-25 13:08:50,PersuaderAgent,public,[],['601899'],,,601899 SELL：量异常未涨，部分止盈降风险
+373,2026-05-25 13:08:50,PersuaderAgent,private,['ContrarianAgent'],['601899'],,,我减仓601899，量异常下逆向信号是否接近极致？
+374,2026-05-25 13:08:50,PersuaderAgent,moments,"['ContrarianAgent', 'FreeRiderAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,减仓601899，量异常未确认趋势，等待更明确信号
+378,2026-05-25 13:08:55,FreeRiderAgent,public,[],['601899'],,,601899 HOLD：量异常未确认趋势，继续观望。
+379,2026-05-25 13:08:55,FreeRiderAgent,private,['DynamicTeamAgent'],['601899'],,,量异常持续但价格未动，你判断后续方向？
+380,2026-05-25 13:08:55,FreeRiderAgent,moments,"['DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899，量异常观望中。
+384,2026-05-25 13:08:57,ContrarianAgent,public,[],['000002'],,,000002 HOLD：601899拥挤未过热，逆向等待极端，暂不调整
+385,2026-05-25 13:08:57,ContrarianAgent,private,['DrawdownBuyerAgent'],['000002'],,,300750回撤买入逻辑我理解，但反弹持续性需观察量能
+386,2026-05-25 13:08:57,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,持有000002，观察601899量异常共识演化，逆向策略需耐心
+388,2026-05-25 13:08:57,CommitteeTeamAgent,public,[],['002415'],,,002415 部分止盈50股，浮盈10%锁定利润，剩余继续持有。
+389,2026-05-25 13:08:57,CommitteeTeamAgent,private,['ContrarianAgent'],['002415'],,,已部分止盈002415，浮盈10%，你逆向视角是否认为趋势过热？
+390,2026-05-25 13:08:57,CommitteeTeamAgent,moments,"['ContrarianAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415浮盈10%部分止盈，601899量异常未确认，继续观察。
+392,2026-05-25 13:08:57,DynamicTeamAgent,public,[],['601899'],,,601899 SELL：量异常未确认趋势，获利了结避险
+393,2026-05-25 13:08:57,DynamicTeamAgent,private,['SocialGraphAgent'],['601899'],,,已清仓601899，量异常放量未涨，你继续持有吗？
+394,2026-05-25 13:08:57,DynamicTeamAgent,moments,"['FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,清仓601899，量异常未涨，等待明确信号
+398,2026-05-25 13:09:00,SocialGraphAgent,public,[],['601899'],,,601899 HOLD：量异常未确认趋势，拥挤风险未极端，观望。
+399,2026-05-25 13:09:00,SocialGraphAgent,private,['ContrarianAgent'],['601899'],,,当前拥挤风险是否加剧？我继续持有观察。
+400,2026-05-25 13:09:00,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899，量异常无趋势确认，等待信号。

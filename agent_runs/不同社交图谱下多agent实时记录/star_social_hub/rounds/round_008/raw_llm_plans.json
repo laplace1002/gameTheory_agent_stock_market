@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.91,
+        "rationale": "放量横盘拥挤风险上升，减仓半仓"
+      },
+      "public_message": "002415减仓50%避免拥挤风险，转向更强标的",
+      "moment": "002415拥挤风险确认，减仓半仓，换仓强趋势标的",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢拥挤信号提示，已减仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 305.33,
+        "rationale": "5日回撤-7%接近超卖，低波动策略左侧小仓位布局均值修复"
+      },
+      "public_message": "000858 BUY 10股，5日回撤-7%低波动左侧入场，控制仓位",
+      "moment": "低波动策略左侧买入000858 10股，5日回撤-7%超卖，等待均值修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858超卖-7%，验证修复信号，我低波动小仓位跟进"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "低波动与回撤策略互补，协同验证超卖修复信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 305.33,
+        "rationale": "5日回撤-7%，继续加仓摊博修复收益。"
+      },
+      "public_message": "000858 5日回撤-7%，加仓100股博修复。",
+      "moment": "000858 5日回撤-7%，加仓摊博成本，等待价值修复。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "000858 回撤加深至-7%，均值回归修复概率增加，是否同步入场？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 305.33,
+        "rationale": "000858近5日回撤-7%，均值回归信号，加仓博反弹。"
+      },
+      "public_message": "000858回撤-7%，均值回归加仓买入100股。",
+      "moment": "000858回撤-7%买入，均值回归策略执行，等待修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858回撤-7%，均值回归信号验证，我已加仓，关注修复进度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.91,
+        "rationale": "放量横盘，拥挤风险增强，减仓半仓锁定利润"
+      },
+      "public_message": "002415 减仓半仓，放量横盘拥挤信号强化",
+      "moment": "002415减仓50股，拥挤风险确认",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 305.33,
+        "rationale": "5日回撤-7%，随机均值回归策略试错"
+      },
+      "public_message": "000858 买入100股，随机均值回归试错",
+      "moment": "随机买入000858，观察修复进度",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已买入000858，与你观点共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 239.3,
+        "rationale": "近期涨幅10.63%，锁定部分利润，降低风险暴露"
+      },
+      "public_message": "002594 SELL 50股，涨幅达标止盈部分仓位",
+      "moment": "002594止盈50股，锁定利润，等待调整后加仓",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "新能源动量持续性如何？002594涨幅较高，需确认趋势"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "探讨新能源回调后均值回归机会，互补策略"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 25,
+        "price": 59.91,
+        "rationale": "拥挤风险持续释放，跟随减仓锁定部分利润"
+      },
+      "public_message": "002415拥挤风险未消，再减仓25股观望",
+      "moment": "002415再减仓25股，拥挤风险下保持谨慎",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤信号确认，继续减仓验证"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "探讨002415均值回归可能，验证拥挤消退时机"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.9,
+        "rationale": "市场拥挤于002415，但无明确顶部，现金等待逆向机会"
+      },
+      "public_message": "关注002415拥挤，等待逆向买点，现金为王",
+      "moment": "002415拥挤风险未消，继续等待逆向买点，现金为王",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415拥挤信号强度如何？是否考虑进一步减仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.9,
+        "rationale": "000002涨势延续，社交图谱无拥挤信号，继续持有。"
+      },
+      "public_message": "000002 HOLD：涨势稳健，社交无拥挤信号。",
+      "moment": "000002涨势延续，社交无拥挤，持仓观望。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002持仓一致，社交图谱显示板块动量尚可，协同观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.9,
+        "rationale": "涨势稳健，社交无拥挤信号，SocialGraphAgent持有确认，现金充足分批建仓。"
+      },
+      "public_message": "000002涨势稳健，社交无拥挤信号，买入100股验证。",
+      "moment": "000002涨势稳健，社交无拥挤信号，买入100股持仓观察。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已买入000002，你仍持有吗？观察拥挤情况如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 59.91,
+        "rationale": "社交拥挤信号强化，跟随多个agent减仓"
+      },
+      "public_message": "002415 SELL 50股：拥挤信号确认，减仓规避风险",
+      "moment": "002415拥挤风险确认，清仓全部50股，现金等待新机会。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "拥挤信号加强，我跟随减仓002415全部50股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

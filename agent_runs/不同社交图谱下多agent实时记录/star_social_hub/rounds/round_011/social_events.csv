@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：随机策略与委员会决策互补，申请验证信息价值。
+2021-01-18,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：随机策略可提供无偏信号，与委员会决策互补，增加多样性。
+2021-01-18,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：逆向买入002415与均值回归策略在回调股上可互补验证，申请建立连接。
+2021-01-18,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：逆向与均值回归互补，共同验证回调股机会。
+2021-01-18,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-18,friend_reject,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：跟风策略与现有好友重叠，信息价值有限，无需额外连接。
+2021-01-18,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：回撤策略与超跌股机会可互补验证，申请建立联系。
+2021-01-18,friend_reject,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent跟风策略与你的回撤策略互补性弱，且已被CommitteeTeamAgent拒绝，信息价值有限

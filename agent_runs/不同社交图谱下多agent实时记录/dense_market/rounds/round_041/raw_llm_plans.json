@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 84.95,
+        "rationale": "5日涨幅0.13%为全市场最强，20日7.17%延续上涨趋势，动量信号明确"
+      },
+      "public_message": "601318 5日涨幅0.13%全市场最强，20日7.17%趋势延续，买入20股",
+      "moment": "601318 5日抗跌且20日上涨，加仓20股，动量延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "看好601318趋势延续，与你000858深跌逻辑不同，但动量更优"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 244.5,
+        "rationale": "深跌均值回复，多Agent共识，低风险参与修复"
+      },
+      "public_message": "000858 买入10股，深跌均值回复，跟随共识。",
+      "moment": "买入000858 10股，深跌均值回复，与CommitteeTeam和DynamicTeam共识一致。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000858深跌逻辑，已买入10股，控制风险等待修复。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 244.5,
+        "rationale": "5日跌幅15.4%，20日跌幅16.35%，深跌均值回复机会，多Agent共识买入，加仓等待反弹"
+      },
+      "public_message": "000858 加仓10股，深跌均值回复逻辑明确，风险收益比高",
+      "moment": "000858 5日跌15%，20日跌16%，深跌区域逐步加仓10股，均值回归策略执行",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意深跌均值回复逻辑，已同步加仓000858，共同等待修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.67,
+        "rationale": "市场分歧大，002594拥挤卖压与000858修复共识并存，等待随机信号更清晰。"
+      },
+      "public_message": "随机视角，002594拥挤卖压仍大，000858修复共识过强，暂观望。",
+      "moment": "随机视角：市场在002594恐慌与000858乐观间摇摆，无确定信号，保持仓位不动。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的000002锁利逻辑，我持有部分，暂不加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.73,
+        "rationale": "002594拥挤风险持续，多Agent减仓信号强，继续降低风险"
+      },
+      "public_message": "002594拥挤风险持续，减仓10股降低风险。",
+      "moment": "002594减仓10股，拥挤交易过多，控制回撤。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已跟随减仓10股002594，拥挤信号明确。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.73,
+        "rationale": "002594拥挤风险加剧，多Agent减仓，跟随减仓控制回撤"
+      },
+      "public_message": "002594拥挤风险加剧，减仓10股控制回撤",
+      "moment": "减仓002594 10股，拥挤交易过多，控制风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意002594拥挤信号，已减仓10股跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 266.5,
+        "rationale": "跟随多agent深跌均值回复共识，加仓000858"
+      },
+      "public_message": "000858 深跌均值回复，加仓10股",
+      "moment": "加仓000858 10股，深跌均值回复，与朋友共识",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000858深跌逻辑，已加仓10股同步操作"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.2,
+        "rationale": "市场整体下跌，无明确逆向机会，暂持现金观望"
+      },
+      "public_message": "000002持仓观望，等待更清晰逆向信号，不追空不抄底",
+      "moment": "HOLD 000002/000858/601318，逆向不盲从，等待极端情绪",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你减仓000002锁利，但市场过度悲观，暂持等待反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 5,
+        "price": 84.95,
+        "rationale": ""
+      },
+      "public_message": "601318 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.73,
+        "rationale": "拥挤信号明确，多Agent减仓，降低风险敞口"
+      },
+      "public_message": "002594 卖出10股，拥挤风险加剧，跟随减仓控制回撤",
+      "moment": "002594 减仓10股，拥挤交易过多，规避短期波动",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤信号，已卖出10股002594，感谢提示"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 31.2,
+        "rationale": "跟随多个Agent锁利信号，短期涨幅大，减仓腾资金加仓深跌标的"
+      },
+      "public_message": "000002 卖出20股锁利，腾仓加仓000858深跌修复",
+      "moment": "减持000002锁利，加仓000858深跌均值回复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000858深跌逻辑，加仓10股，与你同步"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 244.5,
+        "rationale": "深跌均值回复，跟随CommitteeTeam和DynamicTeam共识"
+      },
+      "public_message": "000858 买入10股 深跌均值回复 跟随共识",
+      "moment": "加仓000858 10股，深跌均值回复，与朋友共识一致",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000858深跌逻辑，已买入10股共同等待修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

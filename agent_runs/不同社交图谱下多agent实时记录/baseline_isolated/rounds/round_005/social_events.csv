@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,TruthfulReporterAgent,MomentumAgent 向 TruthfulReporterAgent 发起好友申请：交叉验证成交量异常信号，丰富信息源
+2021-01-08,friend_accept,TruthfulReporterAgent,MomentumAgent,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：MomentumAgent提供动量视角，有助于交叉验证成交量异常信号。
+2021-01-08,friend_request,LowVolatilityAgent,ContrarianAgent,LowVolatilityAgent 向 ContrarianAgent 发起好友申请：低波动与逆向视角互补，可交叉验证量异常信号有效性。
+2021-01-08,friend_accept,ContrarianAgent,LowVolatilityAgent,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：低波动与逆向互补，可交叉验证量异常信号，丰富信息源。
+2021-01-08,friend_request,RandomAgent,PersuaderAgent,RandomAgent 向 PersuaderAgent 发起好友申请：共同持仓601899，可交叉验证量价异常信号的持续性
+2021-01-08,friend_accept,PersuaderAgent,RandomAgent,PersuaderAgent 通过了 RandomAgent 的好友申请：共同持仓601899，交叉验证量价异常信号持续性，有助于决策。
+2021-01-08,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：逆向视角互补，交叉验证量异常是否为过热信号
+2021-01-08,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：增加逆向与事实报道视角互补，交叉验证量异常信号有效性。
+2021-01-08,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 通过了 FreeRiderAgent 的好友申请：共同持仓601899，可交叉验证量异常信号，丰富信息源。
+2021-01-08,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：逆向视角可验证601899量异常是否过度，互补信息
+2021-01-08,friend_reject,ContrarianAgent,FreeRiderAgent,ContrarianAgent 拒绝了 FreeRiderAgent 的好友申请：已有TruthfulReporterAgent提供逆向视角，避免冗余
+2021-01-08,friend_request,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 通过了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent持仓002415，提供不同标的逆向视角，可互补现有信息源。

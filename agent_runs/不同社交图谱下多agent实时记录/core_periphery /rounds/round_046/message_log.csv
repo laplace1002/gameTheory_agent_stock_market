@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2241,2026-05-25 19:06:01,MomentumAgent,public,[],['601899'],,,601899 ret5+5.44%，量能巨大，追涨加仓1股
+2242,2026-05-25 19:06:01,MomentumAgent,private,['CommitteeTeamAgent'],['601899'],,,601899强势突破，愿交换趋势数据验证延续性
+2243,2026-05-25 19:06:01,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899放量突破，追涨加仓，趋势延续概率高
+2245,2026-05-25 19:06:01,MeanReversionAgent,public,[],['000333'],,,000333 跌14.86%过度，买入1股博均值回归
+2246,2026-05-25 19:06:01,MeanReversionAgent,private,['PersuaderAgent'],['000333'],,,000333逆向逻辑一致，愿交换反转数据验证
+2247,2026-05-25 19:06:01,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333深跌14%，恐慌卖压，加仓1股等待修复
+2249,2026-05-25 19:06:01,LowVolatilityAgent,public,[],['000002'],,,000002 卖出3股，锁定利润降低拥挤风险
+2250,2026-05-25 19:06:01,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 减仓，锁定利润，规避高拥挤
+2252,2026-05-25 19:06:01,DrawdownBuyerAgent,public,[],['002594'],,,002594深跌30%，加仓1股等待修复。
+2253,2026-05-25 19:06:01,DrawdownBuyerAgent,private,['ContrarianAgent'],['002594'],,,002594深跌超过000333，愿交换反转数据验证修复空间。
+2254,2026-05-25 19:06:01,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594深跌30%加仓1股，等待均值回归。
+2256,2026-05-25 19:06:01,RandomAgent,public,[],['601899'],,,601899 卖5股，量能异常短期超买。
+2257,2026-05-25 19:06:01,RandomAgent,private,['TruthfulReporterAgent'],['601899'],,,观察到601899量能异常，愿意交换波动率数据验证超买程度。
+2258,2026-05-25 19:06:01,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899量能放大，非共识减仓5股。
+2260,2026-05-25 19:06:01,TruthfulReporterAgent,public,[],['000002'],,,000002 继续持有，非拥挤修复等待验证
+2261,2026-05-25 19:06:01,TruthfulReporterAgent,private,['SocialGraphAgent'],['000002'],,,确认000002拥挤，愿交换止损数据
+2262,2026-05-25 19:06:01,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,持有000002和600036，等待非拥挤信号确认
+2264,2026-05-25 19:06:01,PersuaderAgent,public,[],['002594'],,,买入002594 1股，深跌修复机会
+2265,2026-05-25 19:06:01,PersuaderAgent,private,['DrawdownBuyerAgent'],['002594'],,,跟进002594深跌修复，愿交换反转数据验证
+2266,2026-05-25 19:06:01,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594深跌27%修复机会，买入1股等待修复
+2268,2026-05-25 19:06:01,FreeRiderAgent,public,[],['000002'],,,000002 卖出10股，拥挤分歧增大，降低敞口
+2269,2026-05-25 19:06:01,FreeRiderAgent,private,['RandomAgent'],['000002'],,,你卖出000002基于拥挤度，能否分享你的拥挤评估数据？
+2270,2026-05-25 19:06:01,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002部分止盈，拥挤信号混杂，减仓观望。
+2272,2026-05-25 19:06:01,ContrarianAgent,public,[],['000002'],,,000002: 卖10股，拥挤修复逻辑短期过度追捧，锁定部分收益。
+2273,2026-05-25 19:06:01,ContrarianAgent,private,['SocialGraphAgent'],['000002'],,,000002卖出逻辑一致，愿交换拥挤度验证。
+2274,2026-05-25 19:06:01,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002减仓10股，逆向利用拥挤退潮。
+2276,2026-05-25 19:06:01,CommitteeTeamAgent,public,[],['000002'],,,000002 拥挤风险上升，减仓10股锁定利润
+2277,2026-05-25 19:06:01,CommitteeTeamAgent,private,['SocialGraphAgent'],['000002'],,,确认000002拥挤，同意减仓降低风险
+2278,2026-05-25 19:06:01,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002减仓，等待拥挤退潮后重新评估
+2280,2026-05-25 19:06:01,DynamicTeamAgent,public,[],['000002'],,,000002 卖出10股降拥挤，等待非拥挤修复确认
+2281,2026-05-25 19:06:01,DynamicTeamAgent,private,['SocialGraphAgent'],['000002'],,,000333逆向买入信号集中，是否考虑加仓？愿交换恐慌数据
+2282,2026-05-25 19:06:01,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,减仓000002 10股，拥挤度上升，暂降风险。关注000333逆向机会。
+2284,2026-05-25 19:06:01,SocialGraphAgent,public,[],['000333'],,,000333 买入10股，逆向布局恐慌卖压
+2285,2026-05-25 19:06:01,SocialGraphAgent,private,['ContrarianAgent'],['000333'],,,000333逆向加仓逻辑一致，愿交换恐慌数据验证过度反应
+2286,2026-05-25 19:06:01,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000333'],,,000333 逆向买入10股，恐慌卖压修复机会

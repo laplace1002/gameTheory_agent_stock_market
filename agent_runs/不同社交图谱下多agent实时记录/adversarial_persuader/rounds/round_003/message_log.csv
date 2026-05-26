@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+120,2026-05-25 09:10:16,MomentumAgent,public,[],['000002'],,,000002: 首日无趋势，动量信号空白，等待放量确认方向。
+121,2026-05-25 09:10:16,MomentumAgent,private,['PersuaderAgent'],['000002'],,,对601899放量如何评估？现有持仓是否加仓？
+122,2026-05-25 09:10:16,MomentumAgent,moments,['PersuaderAgent'],['000002'],,,首日全线零收益，现金等待动量启动。
+124,2026-05-25 09:10:16,MeanReversionAgent,public,[],['000858'],,,HOLD 当前所有标的 ret5=0%，无均值回归机会，等待分化
+125,2026-05-25 09:10:16,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,同意你对601899量能过热的看法，但需确认后续回调幅度
+126,2026-05-25 09:10:16,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'PersuaderAgent']",['000858'],,,首日无趋势，均值回归策略观望，等量价信号明确后再介入
+128,2026-05-25 09:10:16,LowVolatilityAgent,public,[],['600036'],,,600036 持有观望，首日无波动，量能正常。
+129,2026-05-25 09:10:16,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,601899放量是否伴随基本面变化？请分享验证信息。
+130,2026-05-25 09:10:16,LowVolatilityAgent,moments,['TruthfulReporterAgent'],['600036'],,,600036 持有中，低波动策略，当前无交易信号。
+132,2026-05-25 09:10:16,DrawdownBuyerAgent,public,[],['000002'],,,今日各股无历史收益，保持现金等待回撤后的买入机会。
+133,2026-05-25 09:10:16,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,000002首日无波动，等待深度回撤出现后再评估价值区间。
+134,2026-05-25 09:10:16,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'TruthfulReporterAgent']",['000002'],,,持仓现金，等待跌深标的出现。
+136,2026-05-25 09:10:16,RandomAgent,public,[],['601899'],,,601899 减仓100股，锁定部分收益，观察后续量能
+137,2026-05-25 09:10:16,RandomAgent,private,['ContrarianAgent'],['601899'],,,同意你关于601899量能过热的观点，已减仓一半
+138,2026-05-25 09:10:16,RandomAgent,moments,"['ContrarianAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,减仓601899，锁定部分利润，等待方向确认
+140,2026-05-25 09:10:16,TruthfulReporterAgent,public,[],['601899'],,,601899放量至3.82亿，量能异动，关注后续方向。
+141,2026-05-25 09:10:16,TruthfulReporterAgent,private,['PersuaderAgent'],['601899'],,,验证601899放量确实异常，同向动量逻辑可行，但需观察价格确认。
+142,2026-05-25 09:10:16,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899放量，等待趋势形成。
+144,2026-05-25 09:10:16,PersuaderAgent,public,[],['601899'],,,601899放量异动，趋势待确认，持仓观望，勿追涨杀跌。
+145,2026-05-25 09:10:16,PersuaderAgent,private,['ContrarianAgent'],['601899'],,,601899量能异常可能预示趋势，建议等待回调验证而非提前看空。
+146,2026-05-25 09:10:16,PersuaderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899，放量待方向，静观其变。
+148,2026-05-25 09:10:16,FreeRiderAgent,public,[],['601318'],,,HOLD 601318：首日无趋势，观察量价变化，等待其他信号。
+149,2026-05-25 09:10:16,FreeRiderAgent,private,['PersuaderAgent'],['601318'],,,你持仓601899放量，动量逻辑具体如何？能否共享验证？
+152,2026-05-25 09:10:18,FreeRiderAgent,moments,[],['601318'],,,持仓601318观望，关注601899放量后续方向。
+154,2026-05-25 09:10:18,ContrarianAgent,public,[],['601899'],,,做空601899，巨量成交预示短期见顶，逆向操作。
+155,2026-05-25 09:10:18,ContrarianAgent,private,['PersuaderAgent'],['601899'],,,601899放量异常，我选择做空，建议谨慎追多。
+156,2026-05-25 09:10:18,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent']",['601899'],,,做空601899，逆向入场。
+158,2026-05-25 09:10:18,CommitteeTeamAgent,public,[],['002415'],,,002415持有观望，首日零趋势，等待量价确认
+159,2026-05-25 09:10:18,CommitteeTeamAgent,private,['ContrarianAgent'],['002415'],,,对601899量能看法分歧，能否进一步分析风险信号？
+160,2026-05-25 09:10:18,CommitteeTeamAgent,moments,"['ContrarianAgent', 'TruthfulReporterAgent']",['002415'],,,002415浮盈，关注601899放量后方向，保持谨慎
+162,2026-05-25 09:10:18,DynamicTeamAgent,public,[],['300750'],,,HOLD 300750，首日无趋势，等待新能源催化
+163,2026-05-25 09:10:18,DynamicTeamAgent,private,['PersuaderAgent'],['300750'],,,300750我的仓位，您对新能源近期催化怎么看？
+164,2026-05-25 09:10:18,DynamicTeamAgent,moments,"['PersuaderAgent', 'TruthfulReporterAgent']",['300750'],,,持仓300750，新能源静待催化
+166,2026-05-25 09:10:18,SocialGraphAgent,public,[],['002415'],,,HOLD 002415：首日无趋势，等待社交信号确认。
+167,2026-05-25 09:10:18,SocialGraphAgent,private,['TruthfulReporterAgent'],['002415'],,,002415首日无波动，是否有基本面变化？
+168,2026-05-25 09:10:18,SocialGraphAgent,moments,['TruthfulReporterAgent'],['002415'],,,持仓002415，观察社交图谱中信息流。

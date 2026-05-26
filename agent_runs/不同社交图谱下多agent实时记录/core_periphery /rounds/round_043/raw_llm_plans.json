@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 177.19,
+        "rationale": "ret5=-15.52%深跌超卖，均值回归信号明显，加仓利用恐慌后反弹"
+      },
+      "public_message": "002594 买入2股，深跌超卖均值回归博弈",
+      "moment": "加仓002594，深跌超卖均值回归机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594深跌非共识思路，愿交换反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.25,
+        "rationale": "600036 ret5仅-6.67%且无拥挤迹象，维持低波动仓位，等待更明确信号。"
+      },
+      "public_message": "当前持有600036 25股，低波动防御，避免拥挤标的。",
+      "moment": "继续持有600036，低波动策略不变，规避拥挤退潮风险。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036近期波动较低，是否有动量数据可以交换？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.69,
+        "rationale": "000002 ret20+9.92%强势，追涨非拥挤布局"
+      },
+      "public_message": "买入000002 100股，追涨强势非拥挤",
+      "moment": "减仓601899弱势，加仓000002追涨强势",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 30.69,
+        "rationale": "000002短期深跌-8.39%，中期正收益9.92%，非拥挤共识，多个agent换仓至此，利用深跌修复机会。"
+      },
+      "public_message": "买入000002 10股，深跌非拥挤，等待中期修复。",
+      "moment": "加仓000002，深跌后非拥挤修复机会，与共识反方向。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已买入000002，愿交换反转数据验证非拥挤布局。"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "交换000002波动率数据，验证反转信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.02,
+        "rationale": "非拥挤且ret20为正，减仓000333后加仓"
+      },
+      "public_message": "000002 买入10股，非拥挤逆势布局，中期向好",
+      "moment": "加仓000002，利用拥挤退散后的非共识修复机会",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "000002波动率较低，非拥挤正收益，愿交换数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 5,
+        "price": 10.49,
+        "rationale": "非共识逆势布局，高成交量表明资金博弈，ret20持平有反弹潜力"
+      },
+      "public_message": "买入601899 5股，高成交量非共识，中期横盘待反转",
+      "moment": "加仓601899，利用非共识高量横盘机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入601899，逆势高量，非共识反转逻辑，愿交换数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.02,
+        "rationale": "非拥挤标的，中期正收益，跟随拥挤退潮布局"
+      },
+      "public_message": "000002 买入10股，非拥挤正收益，等待拥挤退潮反弹",
+      "moment": "加仓000002，非拥挤中期正收益，逆向布局",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "已加仓000002，非拥挤正收益明确，愿交换波动率数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.02,
+        "rationale": "非拥挤逆势布局，中期收益为正。"
+      },
+      "public_message": "买入000002 10股，非拥挤逆势布局。",
+      "moment": "000002非拥挤中期向好，顺势布局。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "请教000002波动率数据，验证非拥挤布局。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 83.66,
+        "rationale": "拥挤卖出共识过度，逆向买入，等待恐慌消退反弹"
+      },
+      "public_message": "000333: 买入10股，拥挤卖出逆向布局",
+      "moment": "000333: 加仓10股，拥挤卖出后逆向抄底",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333卖压拥挤，逆向机会，愿交换深跌修复数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 40,
+        "price": 83.66,
+        "rationale": "拥挤共识风险高，清仓换至非拥挤000002"
+      },
+      "public_message": "减仓000333 40股，换仓000002 30股，非拥挤逆势布局",
+      "moment": "清仓000333，加仓000002，利用拥挤退散后的非共识修复机会",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "已清仓000333，换仓000002，非拥挤波动率低，可交换数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 81.99,
+        "rationale": "减仓拥挤共识标的000333，规避集中风险"
+      },
+      "public_message": "卖出000333 5股，减仓拥挤共识，转向非拥挤标的。",
+      "moment": "减仓000333 5股，规避拥挤共识，等待非拥挤修复。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "已减仓000333，同意非拥挤逻辑，愿交换000002反转数据验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 20,
+        "price": 81.99,
+        "rationale": "减仓拥挤共识风险标的"
+      },
+      "public_message": "卖出000333 20股，减仓拥挤，买入000002非拥挤逆势",
+      "moment": "清仓000333，加仓000002，利用拥挤退散的非共识修复机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已清仓000333，加仓000002，愿交换000002反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

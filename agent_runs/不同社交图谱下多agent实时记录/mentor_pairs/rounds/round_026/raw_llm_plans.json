@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 59.88,
+        "rationale": "均值回归，ret5=-5.94%跌幅较大，SocialGraph验证"
+      },
+      "public_message": "002415 BUY 均值回归 ret5跌幅大 与SocialGraph协同",
+      "moment": "买入002415，均值回归逻辑，等待修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意002415均值回归逻辑，协同买入验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 320.0,
+        "rationale": "000858近期强势，ret5=9.48%，趋势延续，多Agent买入验证，追涨。"
+      },
+      "public_message": "000858 BUY 追涨强势，ret5=9.48%趋势延续",
+      "moment": "买入000858，追涨强势，趋势延续多Agent验证。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "协同买入000858，趋势强劲，追涨策略一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 250.2,
+        "rationale": "低拥挤动量多Agent验证，趋势延续，低波动策略小仓位参与"
+      },
+      "public_message": "002594 BUY 低拥挤动量多Agent验证，小仓位跟踪趋势",
+      "moment": "002594 BUY 1股，低拥挤动量多Agent验证，趋势延续，风险可控",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002594低拥挤动量信号，协同验证，控制仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 320.0,
+        "rationale": "短期涨幅9.48%锁定利润，回撤买入策略控制风险"
+      },
+      "public_message": "000858 SELL 1股锁定利润，601318 BUY 1股深度回撤-6.50%均值修复",
+      "moment": "减仓000858，加仓601318，深度回撤博弈均值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意卖出000858，同时布局601318回撤修复，逻辑互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 320.0,
+        "rationale": "随机非共识获利了结，Contrarian逆向信号叠加"
+      },
+      "public_message": "000858 SELL 随机平仓，Contrarian减仓信号后锁定利润",
+      "moment": "卖出000858，随机策略配合逆向信号，获利了结",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858 SELL 跟随您的逆向信号，锁定短期涨幅利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 250.2,
+        "rationale": "低拥挤动量信号多Agent验证，但价格高位，风险报酬不优，等待回调或成交量确认再行动"
+      },
+      "public_message": "002594 HOLD：低拥挤动量多Agent验证，但涨幅已大，暂不操作",
+      "moment": "002594 HOLD：多Agent验证动量延续，但价格高位控制仓位，等待机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594动量信号强但价格已高，我选择HOLD等待回调，与你互补风险控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 250.0,
+        "rationale": "低拥挤动量信号多Agent验证强化，趋势延续，现金充足加仓"
+      },
+      "public_message": "002594 BUY 低拥挤动量多Agent验证强化，趋势延续加仓",
+      "moment": "加仓002594，低拥挤动量多Agent验证，趋势延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "协同加仓002594，低拥挤动量信号持续强化，建议保持仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 250.2,
+        "rationale": "高位风险，等待回调确认"
+      },
+      "public_message": "002594 HOLD 高位风险，等待回调确认。",
+      "moment": "持有002594，观察高位动量持续性。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594高位，同意暂不加仓，关注成交量确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.26,
+        "rationale": "短期涨幅5.46%，20日涨幅14.13%，拥挤度上升，逆向锁定利润"
+      },
+      "public_message": "卖出600036 1股：涨幅过大，拥挤信号，逆向减仓",
+      "moment": "卖出600036，短期拥挤，等待回调机会",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 59.88,
+        "rationale": "均值回归逻辑多Agent验证，SocialGraph已加仓，加仓1股"
+      },
+      "public_message": "002415 BUY 均值回归多Agent验证，协同SocialGraph加仓",
+      "moment": "加仓002415，均值回归信号多Agent验证，等待均值修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意均值回归逻辑，已加仓002415协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 250.2,
+        "rationale": "低拥挤动量多Agent验证趋势，但价格高位，风险回报不优，等待回调机会。"
+      },
+      "public_message": "002594 HOLD: 低拥挤动量验证但涨幅大，等待回调确认。",
+      "moment": "002594 HOLD，低拥挤动量多Agent验证但价格高位，控制仓位等待回调。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意002594高价风险，暂不加仓，观察成交量变化。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 320.0,
+        "rationale": "跟随多Agent验证的强势趋势，低拥挤动量信号，补涨机会"
+      },
+      "public_message": "000858 BUY 多Agent验证趋势强劲，补涨机会",
+      "moment": "加仓000858，跟随多Agent动量信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "加仓000858，与你协同，趋势验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

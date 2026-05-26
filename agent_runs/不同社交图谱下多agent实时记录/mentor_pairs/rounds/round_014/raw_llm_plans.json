@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.64,
+        "rationale": "减仓锁定部分利润，多Agent卖出信号拥挤，降低短期回调风险"
+      },
+      "public_message": "600036 SELL 多Agent卖出信号拥挤，减仓锁定部分利润",
+      "moment": "减仓600036，多Agent卖出信号一致，短期波动风险加大，保留核心仓位002415",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你对600036拥挤风险的判断，我减仓100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2070.0,
+        "rationale": "短期下跌3%，被过度卖出"
+      },
+      "public_message": "600519 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2070.0,
+        "rationale": "600519 ret5=-3%，短期下跌，控制回撤锁定亏损，规避拥挤风险。"
+      },
+      "public_message": "600519 SELL 跌幅-3%，控制回撤，规避拥挤风险。",
+      "moment": "卖出600519，短期下跌且拥挤，控制回撤。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600519下跌3%，我卖出控制回撤，你怎么看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.97,
+        "rationale": "随机选中601899，5日涨幅5.18%且成交量异常大，可能动量延续，非拥挤标的"
+      },
+      "public_message": "601899 BUY 随机选中涨幅5.18%量能异常，非拥挤标的",
+      "moment": "买入601899，随机动量策略，成交量放大，期待延续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向买入000858，我随机买入601899，是否愿意交换观点验证效率？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.64,
+        "rationale": "多Agent减仓，筹码拥挤，短期涨幅大，降低风险"
+      },
+      "public_message": "600036 SELL 涨幅已高多Agent减仓，降低拥挤风险",
+      "moment": "卖出100股600036，多Agent一致减仓，回调风险上升，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858逆向买入逻辑如何？量能是否支持均值回归？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 296.95,
+        "rationale": "ContrarianAgent逆向加仓，000858相对低拥挤，ret5温和，有望均值修复"
+      },
+      "public_message": "000858 BUY 跟随ContrarianAgent逆向布局，低拥挤温和涨幅，等待修复",
+      "moment": "买入000858，ContrarianAgent逆向信号+低拥挤，等待均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向观点，000858低拥挤，我已买入1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 11,
+        "price": 30.1,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.64,
+        "rationale": "短期涨幅7.32%已高，多Agent卖出信号拥挤，锁定利润规避回调风险"
+      },
+      "public_message": "600036 SELL 涨幅已高拥挤，锁定利润",
+      "moment": "卖出600036，涨幅已高多Agent卖出，先锁定利润观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858逆向买入理由？拥挤规避是否持续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 30.1,
+        "rationale": "低涨幅被忽视，逆向布局，回避拥挤600036"
+      },
+      "public_message": "000002 BUY 低涨幅被忽视，逆向布局，回避拥挤600036",
+      "moment": "买入000002，逆向布局低涨幅，市场拥挤在600036但风险释放中",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036拥挤风险仍在，但过度抛售可能提供机会，注意分化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.64,
+        "rationale": "已减仓100股，剩余100股涨幅已高但持有观察拥挤缓解情况"
+      },
+      "public_message": "600036 HOLD 已减仓，剩余持有观察回调风险",
+      "moment": "600036减仓后剩余持有，等待回调确认",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036已减仓，剩余持有观察，你如何评估回调风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.64,
+        "rationale": "多Agent一致卖出信号，短期涨幅已高且拥挤，锁定利润回避回调"
+      },
+      "public_message": "600036 SELL 涨幅已高拥挤，锁定利润回避回调",
+      "moment": "卖出600036，多Agent一致卖出信号，规避拥挤回调",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036拥挤风险加剧，我选择卖出锁定利润，回调后再考虑介入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.64,
+        "rationale": "短期涨幅高(7.32%)，多Agent拥挤，锁定利润"
+      },
+      "public_message": "600036 SELL 涨幅过高拥挤，清仓锁定利润",
+      "moment": "清仓600036，短期涨幅大，规避拥挤回调风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036我已清仓，拥挤风险高，你之前也减仓，同意吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

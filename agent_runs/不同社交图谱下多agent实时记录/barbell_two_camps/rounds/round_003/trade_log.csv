@@ -1,0 +1,2 @@
+date,agent,ticker,side,shares,price,notional,cash,equity,pnl,pnl_pct,detail
+2021-01-06,RandomAgent,000858,BUY,1,328.3,328.3,98565.6,100048.9,48.9,0.000489,BUY 1 000858 @ 328.30；非共识小仓试探，高端白酒确定性高，等待趋势确认

@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 222.0,
+        "rationale": "002594 ret5=-7.23%超卖，多Agent验证均值回归，小仓参与反弹"
+      },
+      "public_message": "002594 BUY: 跌幅超7%超卖，均值回归，小仓参与",
+      "moment": "买入002594，超卖后均值回归布局，等待修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594超卖判断，我也加仓验证修复逻辑"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "均值回归与动量策略互补，可提供风险验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.5,
+        "rationale": "当前仓位风险低，现金充裕，等待市场波动降低后再操作"
+      },
+      "public_message": "000002 HOLD：持有观望，等待低波动机会",
+      "moment": "持有现金与低仓位，等待风险收益比更优的时机",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036短期涨幅偏大，回调风险中等，建议控制仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 51.72,
+        "rationale": "600036近5日涨4.70%且量能放大，多方验证动量延续，加仓捕捉趋势。"
+      },
+      "public_message": "600036 BUY：动量强劲且多方验证，加仓20股延续趋势。",
+      "moment": "加仓600036，趋势+社交共识，动量策略执行。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036动量延续，加仓验证趋势，与你方向一致。"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "逆向交易与动量策略分歧，可交流风险平衡。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 6,
+        "price": 96.28,
+        "rationale": "000333近5日跌6.83%，超卖明显，机械修复逻辑，小额建仓"
+      },
+      "public_message": "000333 BUY：近5日跌6.83%，超卖修复，小额建仓",
+      "moment": "加仓000333，跌深蓄力，等待价值修复",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000333近5日跌6.83%，与002594类似超卖，我加仓验证修复逻辑"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "回撤买入与动量策略互补，可交换背离信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 30,
+        "price": 51.72,
+        "rationale": "600036近5日涨4.7%且量能放大，动量确认但短期涨幅已大，持盈保泰，等待更明确趋势信号。"
+      },
+      "public_message": "600036 HOLD：动量强劲但短期涨幅已大，持有观察趋势延续性。",
+      "moment": "持有600036，动量趋势延续但短期涨幅已大，等待回调或突破确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036回调风险：当前量能未缩小，但涨幅已高，低波动视角下建议暂持观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 96.28,
+        "rationale": "非共识超卖修复，分歧中逆向布局"
+      },
+      "public_message": "000333 BUY：非共识超卖修复，分歧中逆向布局",
+      "moment": "买入000333，超卖逆向，与601899分歧互补",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000333超卖6.83%，与大众分歧，逆向测试修复弹性"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动视角验证我逆向超卖修复的风险敞口"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 51.72,
+        "rationale": "多方动量强劲且社交验证，小仓位加仓捕捉趋势延续，同时控制风险"
+      },
+      "public_message": "600036 BUY：动量强劲加社交共识，趋势延续性确认，小仓位参与",
+      "moment": "加仓600036，动量+多方验证，等待趋势进一步确认",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601899分歧风险确实存在，但超卖深度大，我更倾向等待修复，你的风控逻辑值得参考"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "002594超卖修复逻辑与你的加仓策略互补，共同验证提升决策质量"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.56,
+        "rationale": "分歧加大，SocialGraphAgent卖出，逆向加仓，超卖修复预期"
+      },
+      "public_message": "加仓601899，分歧逆向，超卖修复逻辑",
+      "moment": "加仓601899，分歧中逆向，等待价值修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "分歧风险我认，但超卖+逆向更优，继续加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 60.4,
+        "rationale": "综合动量与超卖信号，现有持仓风险可控，等待更明确趋势"
+      },
+      "public_message": "持有002415和600036，等待信号验证",
+      "moment": "继续持有，观察超卖修复与动量延续",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "600036量价配合，趋势延续，但短期涨幅已大且多人买入，暂持观望"
+      },
+      "public_message": "600036 HOLD：量价配合动量延续，但短期涨幅已高，等待更明确信号",
+      "moment": "持有600036，动量仍在但需警惕回调，暂不加减仓",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "多方社交验证动量延续，加仓捕捉趋势，但控制仓位以对冲回调风险"
+      },
+      "public_message": "600036 BUY：多方社交验证动量延续，加仓捕捉趋势",
+      "moment": "加仓600036，动量+社交共识，控制仓位等待趋势延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036动量确认，你低波动视角下回调风险如何？我加仓10股验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "量能未缩但短期涨幅已大，等待回调或进一步突破确认"
+      },
+      "public_message": "600036 HOLD：动量延续但涨幅已高，谨慎持有观察趋势",
+      "moment": "持有600036，动量+社交验证，等待趋势确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036量能未缩小，短期回调风险可控，但需关注突破后量价配合"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归策略可验证超卖修复逻辑，互补分析"
+      }
+    },
+    "error": ""
+  }
+]

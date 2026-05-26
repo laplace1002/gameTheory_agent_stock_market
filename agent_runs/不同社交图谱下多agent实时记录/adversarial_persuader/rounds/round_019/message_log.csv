@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+982,2026-05-25 10:40:29,MomentumAgent,public,[],['000002'],,,买入002594，5日+3.75%趋势延续，卖出000002止损
+983,2026-05-25 10:40:29,MomentumAgent,private,['DynamicTeamAgent'],['000002'],,,002594动量强势，建议关注趋势延续机会
+984,2026-05-25 10:40:29,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓002594，趋势明确；清理弱势000002
+988,2026-05-25 10:40:31,MeanReversionAgent,public,[],['601899'],,,BUY 601899: 过度抛售，均值回归机会
+989,2026-05-25 10:40:31,MeanReversionAgent,private,['SocialGraphAgent'],['601899'],,,感谢好友，601899极端跌幅后均值回归概率高，可交叉验证。
+990,2026-05-25 10:40:31,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，均值回归逻辑，等待反弹。
+992,2026-05-25 10:40:31,LowVolatilityAgent,public,[],['000333'],,,601899：多空分歧未决，放量未跌但波动剧烈，建议观望等待方向
+993,2026-05-25 10:40:31,LowVolatilityAgent,private,['PersuaderAgent'],['000333'],,,601899波动大，低波动策略建议谨慎，不宜追多
+994,2026-05-25 10:40:31,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,持有000333观望，市场整体回撤，低波动策略控仓
+996,2026-05-25 10:40:31,DrawdownBuyerAgent,public,[],['601899'],,,601899 BUY：回撤-11.76%后放量企稳，多空分歧极限，逆向买入修复。
+997,2026-05-25 10:40:31,DrawdownBuyerAgent,private,['PersuaderAgent'],['601899'],,,同意加仓601899，回撤深度提供安全边际。
+998,2026-05-25 10:40:31,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，利用跌深修复逻辑，等待价值回归。
+1000,2026-05-25 10:40:31,RandomAgent,public,[],['601899'],,,601899 SELL：随机支撑面临空头反扑，减仓避险
+1001,2026-05-25 10:40:31,RandomAgent,private,['ContrarianAgent'],['601899'],,,放量未新高，顶部特征确认，协同空头验证
+1002,2026-05-25 10:40:31,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,减仓601899，随机逻辑与空头分歧加剧，锁定部分利润
+1004,2026-05-25 10:40:31,TruthfulReporterAgent,public,[],['601899'],,,601899 HOLD：多空僵持，放量未跌，等待收敛信号
+1005,2026-05-25 10:40:31,TruthfulReporterAgent,private,['PersuaderAgent'],['601899'],,,你加仓依据是放量未跌，但ContrarianAgent逆向做空，未新高风险仍在，如何排除？
+1006,2026-05-25 10:40:31,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,持仓601899，多空分歧未决，放量未跌支撑有效但顶部特征未消，继续观望。
+1008,2026-05-25 10:40:31,PersuaderAgent,public,[],['601899'],,,601899 BUY：放量未跌支撑确认，空头逻辑未验证，建议协同做多。
+1009,2026-05-25 10:40:31,PersuaderAgent,private,['ContrarianAgent'],['601899'],,,601899放量未跌收盘上涨，空头逻辑未验证，建议平空转多协同验证支撑。
+1010,2026-05-25 10:40:31,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，放量未跌支撑有效，多空分歧中继续看多。
+1012,2026-05-25 10:40:31,FreeRiderAgent,public,[],['601318'],,,601318 HOLD：短期下跌量能一般，等待601899多空分歧收敛。
+1013,2026-05-25 10:40:31,FreeRiderAgent,private,['PersuaderAgent'],['601318'],,,601899放量未跌支撑确认，但空头逻辑未证伪，你如何评估继续加多的风险？
+1014,2026-05-25 10:40:31,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,持有601318观望，601899多空僵持，等待收敛信号。
+1016,2026-05-25 10:40:31,ContrarianAgent,public,[],['601899'],,,601899 SELL：拥挤多头未出清，加仓空头
+1017,2026-05-25 10:40:31,ContrarianAgent,private,['PersuaderAgent'],['601899'],,,建议平多，放量未新高顶部确认
+1018,2026-05-25 10:40:31,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加空601899，逆向持有空头
+1020,2026-05-25 10:40:31,CommitteeTeamAgent,public,[],['600036'],,,600036 HOLD：多空分歧未决，防御配置等待收敛。
+1021,2026-05-25 10:40:31,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['600036'],,,601899放量未跌但空头未证伪，建议继续观察。
+1022,2026-05-25 10:40:31,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,持有600036防御，601899多空僵持，等待方向确认。
+1024,2026-05-25 10:40:31,DynamicTeamAgent,public,[],['601899'],,,601899 BUY：放量未跌支撑有效，多空分歧中尝试做多
+1025,2026-05-25 10:40:31,DynamicTeamAgent,private,['PersuaderAgent'],['601899'],,,你的支撑逻辑已验证，后续关注量能是否持续萎缩
+1026,2026-05-25 10:40:31,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，放量未跌支撑有效，多空分歧中博弈反转
+1028,2026-05-25 10:40:31,SocialGraphAgent,public,[],['601899'],,,601899 BUY：放量未跌支撑确认，均值回归博弈反弹
+1029,2026-05-25 10:40:31,SocialGraphAgent,private,['MeanReversionAgent'],['601899'],,,已买入601899，请用均值回归分析反转概率，验证支撑有效性
+1030,2026-05-25 10:40:31,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，放量未跌支撑有效，均值回归逻辑加仓

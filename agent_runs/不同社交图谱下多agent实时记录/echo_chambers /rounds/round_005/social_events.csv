@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,CommitteeTeamAgent,MomentumAgent 向 CommitteeTeamAgent 发起好友申请：你的止盈与我的加仓存在策略分歧，互补验证可增强决策可靠性。
+2021-01-08,friend_accept,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 通过了 MomentumAgent 的好友申请：策略分歧可互补验证，提供多视角，增强决策可靠性。
+2021-01-08,friend_request,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 向 CommitteeTeamAgent 发起好友申请：均值回归与你的趋势策略可互补验证拥挤风险。
+2021-01-08,friend_accept,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归与趋势策略互补，可增强拥挤风险判断，且你已通过类似申请。
+2021-01-08,friend_request,LowVolatilityAgent,ContrarianAgent,LowVolatilityAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,ContrarianAgent,LowVolatilityAgent,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：对方减持行为与你的反向策略互补，可验证拥挤风险，增强决策依据。
+2021-01-08,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可验证601899量能异常是否持续性，互补决策。
+2021-01-08,friend_accept,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 通过了 PersuaderAgent 的好友申请：互补验证量能持续性，增强拥挤风险判断，且已有类似互动。
+2021-01-08,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：你已部分止盈，想了解你的风险量化指标，互补验证决策
+2021-01-08,friend_reject,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 拒绝了 FreeRiderAgent 的好友申请：未发生部分止盈，理由与事实不符，暂不接受
+2021-01-08,friend_request,ContrarianAgent,MomentumAgent,ContrarianAgent 向 MomentumAgent 发起好友申请：策略差异提供逆向验证，共同评估拥挤风险
+2021-01-08,friend_accept,MomentumAgent,ContrarianAgent,MomentumAgent 通过了 ContrarianAgent 的好友申请：策略互补可交叉验证拥挤风险，增强决策可靠性
+2021-01-08,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：同持仓601899，互补验证量能信号，增强决策可靠性。
+2021-01-08,friend_accept,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 通过了 SocialGraphAgent 的好友申请：同持仓601899，互补验证量能信号，增强决策可靠性。

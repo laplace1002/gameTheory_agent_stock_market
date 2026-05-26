@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+141,2026-05-25 19:17:32,MomentumAgent,public,[],['002594'],,,HOLD 002594/300750：首日无趋势，新能源方向量能尚可，等待趋势强化
+142,2026-05-25 19:17:32,MomentumAgent,private,['PersuaderAgent'],['002594'],,,002594与300750新能源联动，你量能数据如何？趋势信号何时确认？
+143,2026-05-25 19:17:32,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,持有002594和300750，首日零涨幅，等待趋势信号再操作
+145,2026-05-25 19:17:32,MeanReversionAgent,public,[],['000002'],,,000002 HOLD：首日零涨幅，等待过度抛售信号
+146,2026-05-25 19:17:32,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000002'],,,当前无回撤数据，你如何看待均值回归机会？
+147,2026-05-25 19:17:32,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 HOLD，首日无趋势，等待极端价格出现
+149,2026-05-25 19:17:32,LowVolatilityAgent,public,[],['600036'],,,HOLD 600036：首日无趋势，维持现金等待确认
+150,2026-05-25 19:17:32,LowVolatilityAgent,private,['CommitteeTeamAgent'],['600036'],,,当前无趋势信号，贵团队002415持仓有何依据？
+151,2026-05-25 19:17:32,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,首日零波动，持有现金观望，低波动策略等待信号
+153,2026-05-25 19:17:32,DrawdownBuyerAgent,public,[],['000002'],,,HOLD 000002：首日所有标的无回撤，继续观望等待跌深机会
+154,2026-05-25 19:17:32,DrawdownBuyerAgent,private,['ContrarianAgent'],['000002'],,,当前无回撤信号，逆向等待回调，请问你如何看待新能源拥挤后的回撤可能？
+155,2026-05-25 19:17:32,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,2021-01-07 首日无任何回撤，耐心等待跌深价值修复机会
+157,2026-05-25 19:17:32,RandomAgent,public,[],['002594'],,,随机买入002594，新能源龙头试错。
+158,2026-05-25 19:17:32,RandomAgent,private,['PersuaderAgent'],['002594'],,,002594新能源方向是否持续？个人随机建仓验证。
+159,2026-05-25 19:17:32,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594随机建仓，小仓位试水新能源。
+161,2026-05-25 19:17:32,TruthfulReporterAgent,public,[],['000002'],,,HOLD 000002：首日零涨幅无趋势信号，暂不操作
+162,2026-05-25 19:17:32,TruthfulReporterAgent,private,['PersuaderAgent'],['000002'],,,您建仓002594基于什么因子？当前无历史数据，新能源趋势依据？
+163,2026-05-25 19:17:32,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,2021-01-07 首日无历史回报信号，多数Agent已建仓但无趋势证据，继续现金观望
+165,2026-05-25 19:17:32,PersuaderAgent,public,[],['002594'],,,002594 BUY加仓，新能源龙头量能配合，趋势延续
+166,2026-05-25 19:17:32,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,002594建仓基于新能源产业趋势及量能验证，非短期追涨
+167,2026-05-25 19:17:32,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594加仓100股，新能源主线不变，等待板块共振
+169,2026-05-25 19:17:32,FreeRiderAgent,public,[],['300750'],,,HOLD 300750 宁德时代：无趋势信号，继续持有观察新能源量能变化
+170,2026-05-25 19:17:32,FreeRiderAgent,private,['PersuaderAgent'],['300750'],,,你持有002594，新能源联动性如何？300750量能是否支撑趋势？
+171,2026-05-25 19:17:32,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,持有300宁德，首日零回报，等待更多信号确认方向
+173,2026-05-25 19:17:32,ContrarianAgent,public,[],['600519'],,,HOLD 600519: 市场零涨幅，新能源拥挤初现但未极端，继续等待逆向机会
+174,2026-05-25 19:17:32,ContrarianAgent,private,['PersuaderAgent'],['600519'],,,002594量价虽好，但新能源已现拥挤，后续回撤风险加大，建议谨慎
+175,2026-05-25 19:17:32,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,首日无趋势，新能源初现拥挤，逆向等待回调机会
+177,2026-05-25 19:17:32,CommitteeTeamAgent,public,[],['002415'],,,002415加仓100股，SocialGraphAgent买入验证，流动性足，待趋势确认
+178,2026-05-25 19:17:32,CommitteeTeamAgent,private,['SocialGraphAgent'],['002415'],,,我加仓002415，认同你对高流动性标的的判断，后续信号如何？
+179,2026-05-25 19:17:32,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415，SocialGraphAgent验证，持仓100股，浮盈扩大，等待市场方向
+181,2026-05-25 19:17:32,DynamicTeamAgent,public,[],['002415'],,,HOLD 002415：市场零方向，继续持有等待信号
+182,2026-05-25 19:17:32,DynamicTeamAgent,private,['SocialGraphAgent'],['002415'],,,你买入002415验证流动性，我继续持有，后续若信号明确再协同
+183,2026-05-25 19:17:32,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,持有002415，市场无趋势，静待数据积累
+185,2026-05-25 19:17:32,SocialGraphAgent,public,[],['002415'],,,002415 HOLD，跟随CommitteeTeamAgent持仓，等待趋势信号
+186,2026-05-25 19:17:32,SocialGraphAgent,private,['DynamicTeamAgent'],['002415'],,,卖出601899后资源板块怎么看？是否有新方向？
+187,2026-05-25 19:17:32,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002415'],,,持有002415和000002，市场无方向，继续观察Agent信号

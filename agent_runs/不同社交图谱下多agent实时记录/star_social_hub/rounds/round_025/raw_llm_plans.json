@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 319.76,
+        "rationale": "000858 ret5=9.83%最强，追涨趋势延续"
+      },
+      "public_message": "买入000858 100股，短期涨幅9.83%强势延续",
+      "moment": "",
+      "private_message": {
+        "to": "Draw",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.74,
+        "rationale": "持仓上涨趋势良好，002415拥挤风险上升，暂不交易"
+      },
+      "public_message": "HOLD 600036，上涨趋势稳健；002415拥挤风险，暂不参与",
+      "moment": "HOLD 600036，维持低波动仓位；002415多Agent拥挤，等待冷却",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意您对002415拥挤风险的判断，短期跌幅有限，逆向止盈合理"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 30,
+        "price": 319.76,
+        "rationale": "短期涨幅9.83%，锁定部分利润，为加仓超跌标的腾挪资金"
+      },
+      "public_message": "000858 SELL 30股锁利，601899 20日跌幅-13.66%，加仓均值回归",
+      "moment": "调仓：000858部分止盈，加仓601899博弈中期超跌修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我卖出000858部分，加仓601899。你买入601318，两者中期跌幅类似可对比"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 20,
+        "price": 59.64,
+        "rationale": "超跌拥挤上升，逆向减仓"
+      },
+      "public_message": "002415 SELL 20股，超跌共识拥挤，逆向减仓",
+      "moment": "卖出002415 20股，拥挤度上升，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我认同逆向卖出，拥挤风险大，后续看空"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.64,
+        "rationale": "多Agent集中买入002415形成拥挤，ContrarianAgent卖出验证，暂持观望"
+      },
+      "public_message": "002415 HOLD，多Agent拥挤上升，等待冷却",
+      "moment": "002415持仓观望，多Agent买入拥挤，等待低拥挤逆向机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤风险确认，同意你的卖出逻辑，是否认为均值回归空间有限？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.64,
+        "rationale": "多Agent买入导致拥挤风险上升，短期超跌力度有限（ret5 -5.33%），暂持观望。"
+      },
+      "public_message": "002415 HOLD，拥挤上升短期超跌有限，观望等待冷却。",
+      "moment": "002415持仓观望，多Agent拥挤风险上升，等待冷却后决策。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对002415拥挤的判断，我暂持观望，等待低拥挤逆向机会。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "中期回撤-13.66%深跌后短期反弹2.08%，回撤买入价值修复"
+      },
+      "public_message": "买入601899 100股，中期-13.66%深跌，博弈反弹修复",
+      "moment": "买入601899，深跌反弹博弈，回撤价值修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601899深跌-13.66%，你如何评估拥挤风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.64,
+        "rationale": "多Agent买入形成拥挤，ContrarianAgent逆向止盈，短期超跌力度有限，锁定微利。"
+      },
+      "public_message": "002415 SELL 10股，多Agent拥挤止盈。",
+      "moment": "卖出002415，多Agent拥挤止盈，等待低拥挤机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤上升，你逆向止盈逻辑验证，我跟卖10股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.88,
+        "rationale": "当前无合适逆向机会，002415拥挤风险上升，等待超跌幅度更大的标的出现。"
+      },
+      "public_message": "HOLD现金，002415超跌共识拥挤，等待更极端逆向机会。",
+      "moment": "HOLD现金，002415多Agent买入拥挤，逆向等待冷却。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意002415拥挤，关注其他ticker如601318是否悲观过度，但需等待信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.64,
+        "rationale": "多Agent买入形成拥挤，短期跌幅有限(4.96%)，均值回归空间不确定，暂持观望。"
+      },
+      "public_message": "002415 HOLD，多Agent买入拥挤，短期超跌有限，暂持观望。",
+      "moment": "002415持仓观望，多Agent共识拥挤，等待冷却后决策。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤风险上升，你已卖出，短期是否仍有下行压力？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.88,
+        "rationale": "002415多Agent拥挤上升，ContrarianAgent逆向止盈确认风险，等待冷却。"
+      },
+      "public_message": "HOLD 000002现金，002415多Agent拥挤，逆向止盈信号出现，暂不参与。",
+      "moment": "HOLD现金，002415超跌共识拥挤，ContrarianAgent止盈示警，等待冷却。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤风险确认，你的逆向止盈逻辑基于跌幅不足5%吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.64,
+        "rationale": "多Agent买入拥挤，短期超跌力度有限，止盈观望。"
+      },
+      "public_message": "002415 SELL 100股，多Agent买入拥挤，短期超跌空间有限，止盈。",
+      "moment": "002415清仓，拥挤风险上升，等待低拥挤逆向机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的观点，002415拥挤上升，已清仓止盈。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

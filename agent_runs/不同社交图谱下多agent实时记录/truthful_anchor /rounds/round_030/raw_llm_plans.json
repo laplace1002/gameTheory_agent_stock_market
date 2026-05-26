@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 98.3,
+        "rationale": "多Agent超跌共识，均值回归博弈，协同买入"
+      },
+      "public_message": "000333 BUY 10股：超跌共识增强，均值回归博弈",
+      "moment": "买入000333 10股，超跌共识验证，多Agent协同布局均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你000333超跌逻辑，我买入10股协同等待回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.64,
+        "rationale": "近5日涨幅39%，量价齐升，趋势强劲，加仓继续追多"
+      },
+      "public_message": "601899 BUY 10股：近5日涨39%，趋势延续，追涨加仓",
+      "moment": "加仓601899 10股，强势股继续持有",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 61.68,
+        "rationale": "低波动稳健补仓，控制回撤"
+      },
+      "public_message": "买入002415 10股，低波动稳健补仓，控制组合回撤。",
+      "moment": "买入002415 10股，低波动稳健配置，控制回撤。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 97.99,
+        "rationale": "多Agent超跌共识增强，均值回归预期，协同加仓摊低成本。"
+      },
+      "public_message": "000333 BUY 10股：超跌共识验证，多Agent协同加仓摊低成本。",
+      "moment": "加仓000333 10股，回撤买入逻辑，跟随超跌共识等待均值回归。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你对000333超跌逻辑，我也加仓10股协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.2,
+        "rationale": "多Agent聚焦000333超跌，我逆向买入601318，非共识博弈均值回归，当前ret20=-3.11%有超跌空间。"
+      },
+      "public_message": "601318 BUY 50股：逆向布局超跌，多Agent共识在000333，我非共识买入等待均值回归",
+      "moment": "买入601318 50股，逆向超跌博弈，非共识等待均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你601318持有逻辑，我买入50股协同，逆向等待均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 98.3,
+        "rationale": "多Agent超跌共识持续，协同加仓，均值回归预期增强"
+      },
+      "public_message": "000333 BUY 10股：多Agent超跌共识持续，协同加仓",
+      "moment": "加仓000333 10股，多Agent共识验证，等待均值回归",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000333超跌逻辑，再加10股协同，均值回归概率大"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.64,
+        "rationale": "近5日涨幅39%，多Agent分歧，继续减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10股：高位放量分歧，继续止盈",
+      "moment": "减仓601899 10股锁定利润，加仓000333 10股超跌共识",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000333超跌逻辑，我同步加仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.2,
+        "rationale": "多Agent追捧000333形成拥挤，逆向加仓超跌601318，等待均值回归"
+      },
+      "public_message": "601318 BUY 10股：拥挤追捧000333，逆向买入超跌601318",
+      "moment": "加仓601318 10股，逆向买入超跌，不参与热门000333拥挤交易",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "继续加仓601318 10股，逆向布局超跌，风险可控"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 97.99,
+        "rationale": "跟随多Agent超跌共识，买入10股000333，均值回归预期"
+      },
+      "public_message": "000333 BUY 10股：多Agent超跌共识，均值回归预期",
+      "moment": "买入000333 10股，跟随超跌共识",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意000333超跌逻辑，我加仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 97.99,
+        "rationale": "多Agent超跌共识加强，继续加仓000333博弈均值回归"
+      },
+      "public_message": "加仓000333 1股，超跌共识验证，多Agent协同买入",
+      "moment": "加仓000333 1股，超跌共识加强，等待均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "赞同000333超跌逻辑，继续加仓1股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 387.5,
+        "rationale": "多Agent减仓共识，高位止盈锁定利润"
+      },
+      "public_message": "300750 SELL 5股：跟随多Agent减仓共识，高位止盈",
+      "moment": "减仓300750 5股，多Agent共识止盈，等待回调",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意300750减仓逻辑，卖出5股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 98.0,
+        "rationale": "多Agent超跌共识增强，协同加仓均值回归"
+      },
+      "public_message": "000333 BUY 10股：多Agent超跌共识增强，协同加仓均值回归",
+      "moment": "加仓000333 10股，跟随多Agent超跌共识布局均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你000333超跌逻辑，我加仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

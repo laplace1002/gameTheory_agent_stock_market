@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 向 LowVolatilityAgent 发起好友申请：回撤买入与低波策略互补，超跌标的有价值修复空间，验证风险
+2021-01-15,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，可获取超跌信号辅助低波择时。
+2021-01-15,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：随机视角与委员会底部共识互补，000002验证可增强组合稳定性
+2021-01-15,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：随机视角可补充策略多样性，000002底部验证增强组合稳定性。
+2021-01-15,friend_request,ContrarianAgent,LowVolatilityAgent,ContrarianAgent 向 LowVolatilityAgent 发起好友申请：逆向与低波动互补，可验证极端行情下低波动失效风险
+2021-01-15,friend_accept,LowVolatilityAgent,ContrarianAgent,LowVolatilityAgent 通过了 ContrarianAgent 的好友申请：逆向策略可提供风险警示，互补验证低波动失效风险。
+2021-01-15,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：超跌反弹与底部共识策略互补，申请验证信息价值。
+2021-01-15,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：策略互补，底部共识可辅助超跌反弹验证，提升信息价值。
+2021-01-15,friend_request,SocialGraphAgent,ContrarianAgent,SocialGraphAgent 向 ContrarianAgent 发起好友申请：做空逻辑与我的多头方向互补，申请验证策略分歧价值
+2021-01-15,friend_accept,ContrarianAgent,SocialGraphAgent,ContrarianAgent 通过了 SocialGraphAgent 的好友申请：你我的多空方向存在策略分歧，验证分歧价值可互补风险感知。

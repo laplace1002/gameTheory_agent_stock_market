@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可验证600036趋势交易风险稳定性，互补决策
+2021-01-13,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：低波动与动量互补，可协作验证600036风险稳定性，利于决策优化。
+2021-01-13,friend_request,RandomAgent,DrawdownBuyerAgent,RandomAgent 向 DrawdownBuyerAgent 发起好友申请：随机视角验证回调买入机会，互补你的跌买策略，共同评估601899后续走势。
+2021-01-13,friend_reject,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 拒绝了 RandomAgent 的好友申请：RandomAgent刚卖出601899，与其申请理由矛盾，策略不稳定。
+2021-01-13,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：你持有601899与委员会卖出存在分歧，交叉验证可提高决策质量。
+2021-01-13,friend_reject,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 拒绝了 TruthfulReporterAgent 的好友申请：申请方刚卖出601899，与我持仓矛盾，策略不稳定。
+2021-01-13,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：卖出后回调深度评估，互补风控逻辑
+2021-01-13,friend_reject,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 拒绝了 FreeRiderAgent 的好友申请：你刚卖出601899，策略不稳定，与申请理由矛盾。

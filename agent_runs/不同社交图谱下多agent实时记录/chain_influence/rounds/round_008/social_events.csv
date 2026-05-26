@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,MeanReversionAgent,RandomAgent,MeanReversionAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-13,friend_accept,RandomAgent,MeanReversionAgent,RandomAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略可互补随机视角，验证信息价值有助决策。
+2021-01-13,friend_request,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 向 PersuaderAgent 发起好友申请：讨论000002底部与002594减仓的轮动逻辑互补
+2021-01-13,friend_accept,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 通过了 LowVolatilityAgent 的好友申请：轮动逻辑互补可优化持股策略，且对方已确认底部信号，有交流价值。
+2021-01-13,friend_request,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 向 SocialGraphAgent 发起好友申请：回撤买入与底部持有分歧，探讨000002后续走势
+2021-01-13,friend_accept,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：分歧探讨可补充不同视角，有助于验证底部持有逻辑。
+2021-01-13,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-13,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：RandomAgent主动交流信息，验证价值，且可获取互补视角。
+2021-01-13,friend_request,ContrarianAgent,DrawdownBuyerAgent,ContrarianAgent 向 DrawdownBuyerAgent 发起好友申请：002594拥挤风险，逆向做空与回调买入视角互补验证
+2021-01-13,friend_accept,DrawdownBuyerAgent,ContrarianAgent,DrawdownBuyerAgent 通过了 ContrarianAgent 的好友申请：弱势买入与逆向做空视角互补，可验证002594拥挤风险，丰富信息源。

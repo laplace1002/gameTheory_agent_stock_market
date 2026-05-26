@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 54.32,
+        "rationale": "短期涨幅12%，动能强劲，追涨加仓"
+      },
+      "public_message": "BUY 600036 短期涨幅12%，动能延续，加仓",
+      "moment": "加仓600036，短期强势延续，追涨博弈",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "看好600036短线动量，加仓跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 32.9,
+        "rationale": "ret20深跌18.96%后ret5企稳，均值回归信号，现金充裕可加仓"
+      },
+      "public_message": "000333 BUY ret20超卖18.96%，ret5企稳，均值回归博反弹。",
+      "moment": "加仓000333，美元兑人民币汇率？均值回归逻辑验证。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333 ret20深跌后企稳，可关注均值回归机会，我准备加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 25,
+        "price": 54.32,
+        "rationale": "短期涨幅过大，锁定利润，控制回撤"
+      },
+      "public_message": "600036 SELL 短期涨幅12%，锁定利润，降低波动风险",
+      "moment": "减仓600036，短期涨幅过高，落袋为安，保留现金等待确定性机会。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036短期涨幅大，我选择减仓锁定利润，你继续持有等待缩量？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 11.11,
+        "rationale": "拥挤共识强化，多agent涌入形成过度定价，减仓避险"
+      },
+      "public_message": "601899 SELL 拥挤共识过强，多agent涌入形成过度定价，减仓避险",
+      "moment": "清仓601899，拥挤共识过强，等待量能确认再定方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的拥挤风险判断，我已清仓601899"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 11,
+        "price": 32.9,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.32,
+        "rationale": "量能未缩至5日均量60%以下，拥挤风险未出清，继续持有等待缩量确认"
+      },
+      "public_message": "HOLD 600036：量能未缩，拥挤风险仍在，等待缩量确认。",
+      "moment": "HOLD 600036，量能未缩，等待拥挤出清信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对601899拥挤风险的判断，我继续持有600036等待缩量。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.25,
+        "rationale": "恐慌换手逻辑获多agent验证，量能仍安全，继续加仓博弈反弹"
+      },
+      "public_message": "601899 BUY 恐慌换手逻辑获多方验证，量能未至极值，加仓博弈反弹。",
+      "moment": "加仓601899，恐慌换手逻辑获多个逆向agent认可，等待量能缩至5日均量60%以下确认反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899量能仍低于历史峰值，恐慌换手逻辑未破，拥挤风险可控，建议补充观察再决策。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 11.25,
+        "rationale": "拥挤风险加剧，ContrarianAgent卖出验证，减仓锁定利润"
+      },
+      "public_message": "减仓601899，拥挤风险加剧，待量能确认",
+      "moment": "减仓601899，多agent涌入形成拥挤，参照ContrarianAgent观点降低仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢拥挤风险提醒，减仓跟随"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.11,
+        "rationale": "恐慌换手逻辑持续但拥挤风险增强，锁定部分利润控制仓位。"
+      },
+      "public_message": "601899 SELL 拥挤风险增加，锁定部分利润",
+      "moment": "减仓601899，拥挤信号增强，等待缩量确认反弹机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢拥挤风险提醒，减仓10股等待缩量确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.25,
+        "rationale": "多Agent涌入形成拥挤共识，恐慌换手逻辑可能过度定价，减仓避险"
+      },
+      "public_message": "601899 SELL 拥挤风险加剧，多agent共识形成反指，减仓避险",
+      "moment": "减仓601899，逆向思考：当所有人都在买入时，往往是卖出信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "多agent共识往往预示回调，建议重新评估601899拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.11,
+        "rationale": "量能未缩，恐慌换手与拥挤风险并存，等待缩量确认"
+      },
+      "public_message": "601899 HOLD：量能未缩，恐慌换手与拥挤风险并存，等待缩量确认",
+      "moment": "持有601899和600036，观察量能分歧，等待缩量确认信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢拥挤风险提醒，我继续持有等待缩量确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 54.32,
+        "rationale": "600036短期涨幅大，量能未缩，拥挤风险增加，锁定部分利润"
+      },
+      "public_message": "600036 SELL 缩量未确认，锁定部分利润",
+      "moment": "600036 SELL 100股，量能未缩拥挤风险，锁定利润等待确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036量能风险仍在，我先锁定部分利润，等待缩量再考虑回补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

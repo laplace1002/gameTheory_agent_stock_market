@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 53.5,
+        "rationale": "短期弱势，换入强势股"
+      },
+      "public_message": "002415 SELL 300: 弱势换入强势600036",
+      "moment": "600036 BUY 300: 短期强势，加仓追涨",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意600036动量，加仓验证趋势延续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.4,
+        "rationale": "低波动标的，回撤小，风险预算允许，控制回撤优先"
+      },
+      "public_message": "600036 BUY：低波动策略，控制回撤，风险预算充足",
+      "moment": "600036 BUY 10：低波动策略建仓，关注回撤，风险预算充足",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意600036动量逻辑，我低波动验证，控制回撤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 30,
+        "price": 82.54,
+        "rationale": "601318近期相对强势，其他Agent减仓验证调整，均值回归逻辑下换仓至更深跌标的"
+      },
+      "public_message": "601318 SELL 30: 减仓换仓至002594等深跌反弹机会",
+      "moment": "601318减仓30股，换仓至002594，深跌33%后均值回归概率高",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意601318减仓逻辑，换仓至002594超跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.88,
+        "rationale": "回撤超30%，深跌修复机会，加仓1股验证反弹"
+      },
+      "public_message": "002594 BUY 1: 回撤超30%，深跌修复机会",
+      "moment": "002594加仓1股：深跌超30%，回撤修复逻辑验证",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.09,
+        "rationale": "随机视角加仓验证多空分歧后向上突破"
+      },
+      "public_message": "601899 BUY 10: 随机视角加仓验证分歧突破",
+      "moment": "601899 BUY 10: 随机加仓，多空极端机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向逻辑，我继续加仓验证卖压过度，随机视角押注分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.09,
+        "rationale": "多空分歧持续，价格窄幅震荡，等待明确突破信号"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，成交量放大但价格未突破，维持仓位观察",
+      "moment": "601899多空博弈激烈，逆向买入与卖出拥挤并存，暂不调整仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向逻辑，但分歧未消散，我暂持等待方向确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 11.25,
+        "rationale": "多人逆向加仓验证卖压过度，跟随买入捕捉反弹"
+      },
+      "public_message": "601899 BUY 20: 多人逆向加仓验证超卖，继续买入捕捉反弹",
+      "moment": "601899加仓20股：多空分歧极端，逆向加仓检验过度悲观",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向逻辑，我加仓20股验证卖压过度，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 82.54,
+        "rationale": "高位止盈，验证拥挤调整风险"
+      },
+      "public_message": "601318 SELL 10股：高位止盈，验证拥挤调整风险",
+      "moment": "601318减仓10股：跟随逆向验证拥挤调整",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的卖出逻辑，我减仓10股验证调整"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 176.88,
+        "rationale": "跟随DrawdownBuyerAgent深跌修复逻辑，回撤超30%买入验证"
+      },
+      "public_message": "002594 BUY 10: 跟随DrawdownBuyerAgent深跌修复逻辑，回撤超30%买入验证",
+      "moment": "002594加仓10股：深跌30%+修复机会，跟随逆向验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的抄底逻辑，买入10股002594验证深跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 11.09,
+        "rationale": "多人卖出拥挤，逆向加仓验证超卖反弹"
+      },
+      "public_message": "601899 BUY 50: 多人卖出拥挤，逆向加仓验证超卖反弹",
+      "moment": "601899加仓50股：跟随ContrarianAgent逆向信号，验证卖出拥挤后反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向买入逻辑，我加仓50股验证卖压过度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.09,
+        "rationale": "多空分歧未决，逆向买入提供支撑，暂持观察"
+      },
+      "public_message": "601899 HOLD：多空分歧验证中，暂持等待方向",
+      "moment": "601899多空分歧持续，逆向买入支撑，暂持观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向买入逻辑，我持有现仓验证分歧走向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 11.09,
+        "rationale": "跟随ContrarianAgent逆向加仓，验证卖出拥挤后的反弹"
+      },
+      "public_message": "601899 BUY 20: 跟随ContrarianAgent逆向验证超卖",
+      "moment": "601899加仓20股：多人逆向买入验证卖压过度",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594回撤超30%修复逻辑认同，我考虑后期买入，先加仓601899验证超卖"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

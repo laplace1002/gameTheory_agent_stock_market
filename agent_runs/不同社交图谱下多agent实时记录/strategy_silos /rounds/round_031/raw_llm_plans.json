@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 14.63,
+        "rationale": "追涨强势趋势，5日涨幅38%，量能充足，加仓巩固收益"
+      },
+      "public_message": "加仓601899 100股，强势趋势延续，追涨加码",
+      "moment": "加仓601899 100股，近期最强标的，趋势延续中",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 80,
+        "price": 14.63,
+        "rationale": "涨幅过大，均值回归预期回调"
+      },
+      "public_message": "601899 SELL超买获利，000333 BUY超卖反弹",
+      "moment": "卖出601899锁定利润，买入000333博弈均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333 ret5=-6.43%超卖，是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.2,
+        "rationale": "低波动趋势回调，好友共识强化，价格低于多数买入价，加仓控风险"
+      },
+      "public_message": "600036 BUY 10股，低波动回调提供机会，好友共识验证",
+      "moment": "低波动回调买入600036 10股，好友共识加仓，控制回撤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036回调至54.20，是否继续看好？我加仓10股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 14.63,
+        "rationale": "随机视角：近期涨幅过大，随机游走可能回调，非共识减仓"
+      },
+      "public_message": "601899 SELL 20股，随机视角超买回调风险，非共识减仓",
+      "moment": "随机卖出601899 20股，超买回调风险，关注非共识机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899近期涨幅38%，随机视角看回调，是否考虑逆向操作？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.2,
+        "rationale": "低波动稳健趋势，多个好友共识加仓，回调提供买入机会"
+      },
+      "public_message": "600036 BUY 10股，低波动趋势共识强化，回调加仓",
+      "moment": "加仓600036，低波动趋势中好友共识验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318拥挤卖盘占比边际变化的具体数据有吗？卖盘占比仍>60%？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.2,
+        "rationale": "低波动趋势稳健，好友共识强化，加仓巩固收益"
+      },
+      "public_message": "600036 BUY 10股，低波动趋势确认，好友共识加仓",
+      "moment": "加仓600036，低波动趋势中好友共识验证，观望601318分歧",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318拥挤卖盘占比边际改善数据？我准备继续减仓，同步节奏？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.44,
+        "rationale": "深度回撤-8.76%，价值修复机会启动"
+      },
+      "public_message": "BUY 000333 1股，回撤深度价值修复",
+      "moment": "买入000333 1股，深度回撤修复逻辑，等待均值回复",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "卖出601318后是否关注到000333回撤机会？跌幅-8.76%有修复潜力"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.2,
+        "rationale": "低波动趋势共识强化，多位好友加仓，验证信号"
+      },
+      "public_message": "600036 BUY 10股，低波动趋势好友共识验证",
+      "moment": "加仓600036 10股，低波动趋势中好友共识巩固",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318拥挤卖盘占比边际变化具体数值？卖盘占比是否仍>60%？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "拥挤卖盘边际改善预期，暂持等待反转确认"
+      },
+      "public_message": "601318 HOLD 等待拥挤卖盘边际信号",
+      "moment": "逆向关注601318拥挤卖盘边际改善，暂持等待分歧收敛",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318拥挤卖盘占比边际变化数据有更新吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.2,
+        "rationale": "低波动趋势延续，多位好友共识加仓强化信号，价格回调提供买入机会"
+      },
+      "public_message": "600036 BUY 10股，低波动稳健趋势，好友共识加固",
+      "moment": "加仓600036 10股，低波动趋势中好友共识验证，继续巩固收益",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "加仓600036共识强化，我继续跟随低波动策略，你的601318观察如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.2,
+        "rationale": "低波动稳健趋势，价格回调，好友共识加仓强化收益"
+      },
+      "public_message": "600036 BUY 10股，低波动回调中好友共识加仓",
+      "moment": "加仓600036 10股，低波动趋势中好友共识验证，继续观察601318分歧",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "请教601318拥挤卖盘占比边际变化数据？是否已改善？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.2,
+        "rationale": "低波动趋势回调，好友共识强化，加仓巩固收益"
+      },
+      "public_message": "600036 BUY 10股，回调加仓，低波动趋势延续",
+      "moment": "加仓600036，回调提供更好买点，低波动趋势共识",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

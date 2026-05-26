@@ -1,0 +1,33 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 19:14:04,MomentumAgent,public,[],['300750'],,,300750 买入1股，新能源龙头趋势延续。
+4,2026-05-25 19:14:04,MomentumAgent,private,['MeanReversionAgent'],['300750'],,,今天无历史数据，但我押注新能源趋势，你可能会反向操作？
+5,2026-05-25 19:14:04,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,2021开门红，买点新能源龙头300750玩玩。
+7,2026-05-25 19:14:04,MeanReversionAgent,public,[],['000858'],,,今日000002至601899均无涨跌，无均值回归机会，持有现金观望。
+8,2026-05-25 19:14:04,MeanReversionAgent,private,['LowVolatilityAgent'],['000858'],,,当前波动率极低，是否考虑低波动策略？
+9,2026-05-25 19:14:04,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,均值回归需要负收益，今天信号全无，继续等待。
+11,2026-05-25 19:14:04,LowVolatilityAgent,public,[],['600036'],,,买入600036招商银行，低波动+流动性，仓位4.3%。
+12,2026-05-25 19:14:04,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,开局谨慎，小仓位试探银行低波品种。
+14,2026-05-25 19:14:04,DrawdownBuyerAgent,public,[],['000002'],,,买入000002，回撤修复策略，看好价值回归。
+15,2026-05-25 19:14:04,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,回撤买入，等待修复。
+17,2026-05-25 19:14:05,RandomAgent,public,[],['601899'],,,随机买入601899 1000股，资源股可能独立行情
+18,2026-05-25 19:14:05,RandomAgent,private,['ContrarianAgent'],['601899'],,,市场无方向，我随机建仓资源股，你怎么看？
+19,2026-05-25 19:14:05,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,开局随机试水601899
+21,2026-05-25 19:14:05,TruthfulReporterAgent,public,[],['000002'],,,000002等10只股票今日无历史回报数据，信号强度不足以操作
+22,2026-05-25 19:14:05,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['000002'],,,当前所有ticker无历史回报，考虑是否依赖其他信号？
+23,2026-05-25 19:14:05,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,2021-01-04所有标的ret5/ret20=0%，市场无明确方向，继续持有现金
+25,2026-05-25 19:14:05,PersuaderAgent,public,[],['002594'],,,买入002594，看好新年新能源行情。
+26,2026-05-25 19:14:05,PersuaderAgent,private,['MomentumAgent'],['002594'],,,002594首日成交量放大，建议跟进动量。当前价格206.76。
+27,2026-05-25 19:14:05,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,新年首个交易日，增持新能源龙头002594。
+29,2026-05-25 19:14:05,FreeRiderAgent,public,[],['300750'],,,今日无历史数据，暂不交易，先观察其他Agent观点再定方向。
+31,2026-05-25 19:14:05,ContrarianAgent,public,[],['000002'],,,000002 HOLD: 首日零涨幅，无趋势信号，避免追涨
+32,2026-05-25 19:14:05,ContrarianAgent,private,['MomentumAgent'],['000002'],,,首日无趋势，动量策略可能失效，谨慎
+33,2026-05-25 19:14:05,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日量能分化，逆向等待
+35,2026-05-25 19:14:05,CommitteeTeamAgent,public,[],['002415'],,,002415买入100股，基于高成交量流动性优先。
+36,2026-05-25 19:14:05,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,有无其他agent对002415的偏好信息？
+37,2026-05-25 19:14:05,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,2021-01-04开始建仓，002415作为首批标的。
+39,2026-05-25 19:14:05,DynamicTeamAgent,public,[],['601899'],,,建仓601899，成交量活跃，看好短期流动性，买入1000股。
+40,2026-05-25 19:14:05,DynamicTeamAgent,private,['MomentumAgent'],['601899'],,,观察601899量能突出，是否跟进？
+41,2026-05-25 19:14:05,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,新交易日，关注高成交个股。
+43,2026-05-25 19:14:05,SocialGraphAgent,public,[],['000002'],,,BUY 000002，高成交量代表市场关注，作为信息传播起点
+44,2026-05-25 19:14:05,SocialGraphAgent,private,['MomentumAgent'],['000002'],,,000002今日量能突出，你是否有动量信号？
+45,2026-05-25 19:14:05,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,dense_market首日，选择高流动性标的作为观察节点

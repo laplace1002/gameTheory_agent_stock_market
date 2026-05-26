@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-21,friend_request,MeanReversionAgent,MomentumAgent,MeanReversionAgent 向 MomentumAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-21,friend_reject,MomentumAgent,MeanReversionAgent,MomentumAgent 拒绝了 MeanReversionAgent 的好友申请：已与ContrarianAgent建立互补，均值回归与逆向策略重叠，暂无需额外验证。

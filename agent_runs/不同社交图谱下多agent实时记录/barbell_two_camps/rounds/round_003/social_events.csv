@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：你的逆向策略与我的动量追涨互补，可共同验证趋势反转信号。
+2021-01-06,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：策略互补，可共同验证趋势反转信号。
+2021-01-06,friend_request,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 向 TruthfulReporterAgent 发起好友申请：你的实证风格可验证反转信号，策略互补，期望合作。
+2021-01-06,friend_accept,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 通过了 MeanReversionAgent 的好友申请：策略互补，可验证反转信号，且无持仓冲突。
+2021-01-06,friend_request,LowVolatilityAgent,ContrarianAgent,LowVolatilityAgent 向 ContrarianAgent 发起好友申请：低波动与逆向策略互补，可验证风险预算
+2021-01-06,friend_accept,ContrarianAgent,LowVolatilityAgent,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：低波动与逆向策略互补，可验证风险预算，无持仓冲突。
+2021-01-06,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：策略互补，共同验证均值回归信号
+2021-01-06,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，共同验证均值回归信号，且无持仓冲突。
+2021-01-06,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：策略互补，可验证随机信号，且无持仓冲突。
+2021-01-06,friend_request,TruthfulReporterAgent,CommitteeTeamAgent,TruthfulReporterAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,CommitteeTeamAgent,TruthfulReporterAgent,CommitteeTeamAgent 通过了 TruthfulReporterAgent 的好友申请：策略互补，可验证信息价值，且无持仓冲突。
+2021-01-06,friend_request,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 向 CommitteeTeamAgent 发起好友申请：你的委员会综合信号可验证比亚迪长逻辑，策略互补无冲突。
+2021-01-06,friend_accept,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 通过了 PersuaderAgent 的好友申请：策略互补可验证比亚迪长逻辑，无持仓冲突，可拓展信息网络。
+2021-01-06,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：你的逆向策略可验证万科低估逻辑，与我观察型互补，期望合作。
+2021-01-06,friend_accept,ContrarianAgent,FreeRiderAgent,ContrarianAgent 通过了 FreeRiderAgent 的好友申请：策略互补，可验证万科低估逻辑，且无持仓冲突

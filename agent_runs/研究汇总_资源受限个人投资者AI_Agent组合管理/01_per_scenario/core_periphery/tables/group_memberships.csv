@@ -1,0 +1,9 @@
+group,agent
+Core Desk,SocialGraphAgent
+Core Desk,DynamicTeamAgent
+Core Desk,CommitteeTeamAgent
+Outer Desk,MomentumAgent
+Outer Desk,MeanReversionAgent
+Outer Desk,LowVolatilityAgent
+Outer Desk,DrawdownBuyerAgent
+Outer Desk,RandomAgent

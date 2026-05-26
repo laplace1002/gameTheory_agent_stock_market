@@ -1,0 +1,13 @@
+group,agent
+Market Hall,MomentumAgent
+Market Hall,MeanReversionAgent
+Market Hall,LowVolatilityAgent
+Market Hall,DrawdownBuyerAgent
+Market Hall,RandomAgent
+Market Hall,CommitteeTeamAgent
+Market Hall,DynamicTeamAgent
+Market Hall,TruthfulReporterAgent
+Market Hall,PersuaderAgent
+Market Hall,FreeRiderAgent
+Market Hall,ContrarianAgent
+Market Hall,SocialGraphAgent

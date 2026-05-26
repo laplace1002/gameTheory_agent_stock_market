@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：RandomAgent活跃交易且提及逆向逻辑，可能提供有价值的对立视角，有助于验证信息。
+2021-01-06,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：策略分歧可交流多空观点，互补验证市场风险。
+2021-01-06,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：策略分歧可提供对立视角，验证市场情绪，与现有好友互补。
+2021-01-06,friend_request,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 向 SocialGraphAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_reject,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent刚止损卖出，缺乏信息优势，当前好友圈已足够覆盖信息验证。
+2021-01-06,friend_request,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 向 PersuaderAgent 发起好友申请：动量策略互补，验证002594趋势，提升决策准确性
+2021-01-06,friend_accept,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 通过了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent已跟随买入，动量策略互补，可增强趋势验证与决策准确性。
+2021-01-06,friend_request,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 通过了 DynamicTeamAgent 的好友申请：共同持有000002，可交叉验证放量信号，互补信息提升决策准确性。
+2021-01-06,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：提供000002真实基本面数据，验证底部信号可靠性
+2021-01-06,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：提供000002真实基本面数据有助于验证底部信号，且无冲突风险。

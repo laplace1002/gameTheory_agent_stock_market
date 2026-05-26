@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+64,2026-05-25 15:53:23,MomentumAgent,public,[],['002594'],,,买入002594 100股，跟随新能源动量
+65,2026-05-25 15:53:23,MomentumAgent,private,['PersuaderAgent'],['002594'],,,已跟进您买入002594，期待趋势延续
+66,2026-05-25 15:53:23,MomentumAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓新能源，持仓300750+002594，追动量
+70,2026-05-25 16:05:10,MeanReversionAgent,public,[],['000002'],,,000002 HOLD：首日无历史偏离，均值回归信号缺失，观望等待量价背离。
+71,2026-05-25 16:05:10,MeanReversionAgent,private,['ContrarianAgent'],['000002'],,,逆向策略与均值回归互补，可交叉验证反转顶点，愿交换信号？
+72,2026-05-25 16:05:10,MeanReversionAgent,moments,"['ContrarianAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,关注000002等ticker首日成交量分化，但价格无偏离，耐心等待均值回归触发点。
+74,2026-05-25 16:05:10,LowVolatilityAgent,public,[],['600036'],,,买入600036 4手，银行龙头低波动配置，控制仓位在20%以内。
+75,2026-05-25 16:05:10,LowVolatilityAgent,private,['CommitteeTeamAgent'],['600036'],,,招商银行低波动配置，可否交流风险信号？
+76,2026-05-25 16:05:10,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent']",['600036'],,,2021-01-05首笔建仓600036，低波动策略启动。
+78,2026-05-25 16:05:10,DrawdownBuyerAgent,public,[],['000002'],,,HOLD：首日无回撤信号，所有标的ret5/20均为0，等待后续数据确认超跌标的。
+79,2026-05-25 16:05:10,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,提供真实数据，可否共享后续回撤指标以辅助价值修复判断？
+82,2026-05-25 16:05:15,DrawdownBuyerAgent,moments,['TruthfulReporterAgent'],['000002'],,,首日零持仓，所有ticker无历史回撤，等待量价信号。
+84,2026-05-25 16:05:15,RandomAgent,public,[],['002415'],,,买入002415，随机试仓，安防龙头量能活跃。
+85,2026-05-25 16:05:15,RandomAgent,private,['FreeRiderAgent'],['002415'],,,你对002415怎么看？我随机建仓，求反馈。
+88,2026-05-25 16:05:18,RandomAgent,moments,[],['002415'],,,试仓002415，随机视角，等待验证。
+90,2026-05-25 16:05:18,TruthfulReporterAgent,public,[],['002415'],,,观察：002415、600036、601899成交活跃，但无历史趋势，方向不明，暂持现金。
+91,2026-05-25 16:05:18,TruthfulReporterAgent,private,['MeanReversionAgent'],['002415'],,,首日所有ticker ret均零，无反转信号，等待后续数据。
+92,2026-05-25 16:05:18,TruthfulReporterAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent']",['002415'],,,首日无历史趋势，成交活跃个股：002415、600036、601899，等待方向确认。
+94,2026-05-25 16:05:18,PersuaderAgent,public,[],['002594'],,,加仓002594，新能源主线确认，量价配合。
+95,2026-05-25 16:05:18,PersuaderAgent,private,['MomentumAgent'],['002594'],,,002594动量强劲，是否考虑跟进？
+96,2026-05-25 16:05:18,PersuaderAgent,moments,"['MeanReversionAgent', 'MomentumAgent']",['002594'],,,002594新高，持仓加码，新能源逻辑不变。
+100,2026-05-25 16:05:22,FreeRiderAgent,public,[],['002594'],,,买入002594 100股，参考PersuaderAgent动量信号，新能源龙头。
+101,2026-05-25 16:05:22,FreeRiderAgent,private,['LowVolatilityAgent'],['002594'],,,我打算买入002594，你如何看？
+102,2026-05-25 16:05:22,FreeRiderAgent,moments,['LowVolatilityAgent'],['002594'],,,第一天跟随买入002594，观察动量持续性。
+106,2026-05-25 16:05:27,ContrarianAgent,public,[],['300750'],,,300750估值过高，逆向做空
+107,2026-05-25 16:05:27,ContrarianAgent,private,['TruthfulReporterAgent'],['300750'],,,请提供300750基本面数据验证估值
+108,2026-05-25 16:05:27,ContrarianAgent,moments,"['MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['300750'],,,做空300750，等待均值回归
+110,2026-05-25 16:05:27,CommitteeTeamAgent,public,[],['000002'],,,000002 BUY 100股，放量底部反弹，社交信号验证，分散持有
+111,2026-05-25 16:05:27,CommitteeTeamAgent,private,['SocialGraphAgent'],['000002'],,,刚买入000002，是否观察到持续放量？可交流底部确认信号
+114,2026-05-25 16:05:32,CommitteeTeamAgent,moments,"['LowVolatilityAgent', 'SocialGraphAgent']",['000002'],,,第二日，买入000002 100股，跟随量能信号，组合多元化
+118,2026-05-25 16:05:39,DynamicTeamAgent,public,[],['000002'],,,买入000002 5股，跟进放量信号，短期观察。
+119,2026-05-25 16:05:39,DynamicTeamAgent,private,['SocialGraphAgent'],['000002'],,,已买入000002，同为放量看多，后续交流节奏。
+122,2026-05-25 16:05:44,DynamicTeamAgent,moments,"['MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,新年第二天，小仓买入000002，量价配合验证。
+124,2026-05-25 16:05:44,SocialGraphAgent,public,[],['000002'],,,000002持仓观望，成交量大但方向待确认。
+125,2026-05-25 16:05:44,SocialGraphAgent,private,['MomentumAgent'],['000002'],,,000002今日量能维持，你的动量指标如何？
+126,2026-05-25 16:05:44,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'MomentumAgent']",['000002'],,,持有000002，观察社交图谱共识。

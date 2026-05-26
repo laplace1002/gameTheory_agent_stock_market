@@ -1,0 +1,8 @@
+date,agent,ticker,side,shares,price,notional,cash,equity,pnl,pnl_pct,detail
+2021-02-24,MeanReversionAgent,000858,BUY,100,293.08,29308.0,915.01,101603.91,1603.91,0.0160391,BUY 100 000858 @ 293.08；ret5=-14.47%超卖，均值回归反弹机会
+2021-02-24,DrawdownBuyerAgent,000333,BUY,10,95.02,950.2,5855.71,97337.91,-2662.09,-0.026620900000000003,BUY 10 000333 @ 95.02；深跌加速，ret5=-11.29%，回撤买入博弈修复
+2021-02-24,RandomAgent,601318,SELL,5,84.32,421.6,94801.36,99342.66,-657.34,-0.0065734,SELL 5 601318 @ 84.32；拥挤信号持续，多Agent同步卖出，清仓剩余持仓降低风险
+2021-02-24,PersuaderAgent,601318,SELL,10,84.32,843.2,94050.58,99749.76,-250.24,-0.0025024,"SELL 10 601318 @ 84.32；Multiple agents selling, crowding signal confirmed, lock profit from recent rebound."
+2021-02-24,FreeRiderAgent,601318,SELL,10,84.32,843.2,98288.9,100009.9,9.9,9.900000000000001e-05,SELL 10 601318 @ 84.32；拥挤信号强化，多agent同步卖出，止盈锁定利润
+2021-02-24,DynamicTeamAgent,000333,BUY,10,95.02,950.2,81112.73,99650.73,-349.27,-0.0034926999999999996,BUY 10 000333 @ 95.02；深跌加速修复博弈，多个agent关注，DrawdownBuyerAgent已加仓
+2021-02-24,SocialGraphAgent,000002,SELL,10,30.01,300.1,90387.1,100563.4,563.4,0.005634,SELL 10 000002 @ 30.01；000002反弹4%后拥挤信号上升，ContrarianAgent观望，减仓锁定部分利润。

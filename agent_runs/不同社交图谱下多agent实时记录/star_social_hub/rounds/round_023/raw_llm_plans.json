@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "002415 5日跌幅-13.29%，弱势明显，止损卖出，换入强势股"
+      },
+      "public_message": "002415 SELL 200股止损失血，000858强势追涨买入10股",
+      "moment": "卖出002415止损，买入000858追涨，趋势交易坚持强者恒强",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "600519近期强势，是否有追涨机会？想听听你的均值回归观点"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.49,
+        "rationale": "超跌反弹共识过度拥挤，多个Agent卖出，锁定利润规避回调风险。"
+      },
+      "public_message": "601899超跌共识过度，减仓锁定利润；002415短期超跌13%，均值回归机会买入。",
+      "moment": "减仓601899拥挤风险，买入002415超跌修复机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险，已减仓601899并换入002415，超跌-13%后中期正收益。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.05,
+        "rationale": "600036持有中，近期涨幅稳健，符合低波动策略，等待进一步信号。"
+      },
+      "public_message": "600036 HOLD：近期涨幅稳健，低波动策略不变，继续持有。",
+      "moment": "600036持仓观望，现金等待低波动机会，不急入场。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000002超跌入场，低波动策略暂不参与，关注后续回撤是否可控。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "5日回撤-13.29%且20日仍正收益8.08%，超跌均值回归机会"
+      },
+      "public_message": "002415 5日跌13%超20日仍正收益，超跌买入博弈修复",
+      "moment": "买入002415，超跌均值回归逻辑，等待修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415 5日跌13%但中期仍正，你如何看拥挤风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.49,
+        "rationale": "超跌共识拥挤卖出后价格回落至10.49，逆向买入博弈二次反弹"
+      },
+      "public_message": "601899 BUY 10股，拥挤释放后价格回落，逆向布局",
+      "moment": "601899拥挤卖盘后价格回落，买入10股等待反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899超跌共识拥挤卖出后回落，我逆向买入10股，验证你的反转逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.8,
+        "rationale": "多Agent集中卖出，拥挤风险显著上升，锁定3.4%浮盈。"
+      },
+      "public_message": "601899 SELL 10股，超跌共识过度拥挤，跟随止损锁定利润。",
+      "moment": "601899清仓：超跌反弹后多Agent卖出信号强化，拥挤风险兑现，落袋为安。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你逆向止盈判断，拥挤风险加剧，已卖出601899。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "002415 5日跌13.29%但20日仍涨8.08%，超跌均值回归潜力，卖出601899后现金布局新机会"
+      },
+      "public_message": "002415 BUY 100股，5日跌幅13%但20日正收益，超跌均值回归机会，拥挤低",
+      "moment": "买入002415，超跌均值回归逻辑，低拥挤布局",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415超跌13%但20日正收益，均值回归机会，你是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2189.91,
+        "rationale": "持仓600519短期趋势稳健，无明确反转信号，保持现有仓位；市场焦点在601899拥挤卖出，不影响组合"
+      },
+      "public_message": "600519 HOLD，短期趋势稳健，无反转信号，维持现状。",
+      "moment": "当前持有600519/300750/000858，等待更明确的信号再调整。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "你对低波动标的筛选有何更新？我的持仓600519波动可控，能否交换观点？"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动策略与我的观察型风格互补，可交换低波动标的观点。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 59.9,
+        "rationale": "短期超跌13.29%，20日仍正收益8.08%，市场过度悲观，逆向买入均值回归"
+      },
+      "public_message": "002415 BUY 50股，短期超跌-13.29%逆向机会",
+      "moment": "买入002415，逆向超跌，等待均值回归",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415短期超跌-13.29%，20日仍涨8.08%，是否逆向机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.49,
+        "rationale": "超跌反弹共识过度拥挤风险上升，锁定利润"
+      },
+      "public_message": "601899 SELL 10股，拥挤风险上升，锁定利润。",
+      "moment": "卖出601899，超跌逻辑兑现，规避拥挤风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的判断，已卖出601899锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "002415短期超跌-13.29%，20日仍正收益8.08%，超跌均值回归机会，低拥挤"
+      },
+      "public_message": "002415 BUY 100股，超跌-13.29%后20日仍正收益，均值回归。",
+      "moment": "买入002415，短期超跌但中期趋势尚可，博弈均值回归。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415超跌-13.29%且20日正收益，类似你的000002逻辑，验证超跌信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 76.54,
+        "rationale": "当前无明确买入信号，超跌反弹拥挤风险尚未释放，现金等待低拥挤机会"
+      },
+      "public_message": "HOLD：无合适标的，现金等待低拥挤机会",
+      "moment": "HOLD现金，等待超跌共识冷却后的逆向机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你买入000002的逻辑是基于超跌均值回归，但社交拥挤风险如何评估？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

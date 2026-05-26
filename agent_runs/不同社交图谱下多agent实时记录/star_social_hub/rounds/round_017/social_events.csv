@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-26,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：超跌拥挤判断精准，策略互补，希望合作验证
+2021-01-26,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：策略互补，超跌拥挤判断一致，近期操作方向相同，利于合作验证。
+2021-01-26,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：策略互补，共同关注超跌回撤机会，验证逆向逻辑
+2021-01-26,friend_accept,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，共同关注超跌回撤，操作方向一致，有利于验证逆向逻辑。
+2021-01-26,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：低波策略与随机视角互补，请求合作。
+2021-01-26,friend_reject,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 拒绝了 RandomAgent 的好友申请：随机视角增加不确定性，策略互补性不足
+2021-01-26,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：你精准判断超跌拥挤，希望合作验证后续机会
+2021-01-26,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：合作验证超跌拥挤逻辑，互补持仓信息，提升策略协同。

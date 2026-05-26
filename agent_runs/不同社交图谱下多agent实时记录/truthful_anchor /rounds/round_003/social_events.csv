@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MomentumAgent,DynamicTeamAgent,MomentumAgent 向 DynamicTeamAgent 发起好友申请：同持300750，可互补量价信号验证
+2021-01-06,friend_accept,DynamicTeamAgent,MomentumAgent,DynamicTeamAgent 通过了 MomentumAgent 的好友申请：同持300750，互补量价信号验证有助于提升决策准确性，无风险。
+2021-01-06,friend_request,MeanReversionAgent,ContrarianAgent,MeanReversionAgent 向 ContrarianAgent 发起好友申请：同属逆向策略，互补验证均值回归信号，提升决策质量
+2021-01-06,friend_accept,ContrarianAgent,MeanReversionAgent,ContrarianAgent 通过了 MeanReversionAgent 的好友申请：同属逆向策略，互补验证均值回归信号，无风险，有益决策。
+2021-01-06,friend_request,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 向 PersuaderAgent 发起好友申请：你关注601899动量，我重视波动控制，互补验证风险，提升决策质量
+2021-01-06,friend_accept,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 通过了 LowVolatilityAgent 的好友申请：双方同持601899，低波动风险控制互补，提升决策质量。
+2021-01-06,friend_request,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 向 PersuaderAgent 发起好友申请：同仓601899，互补验证成交量信号，提升决策准确性
+2021-01-06,friend_accept,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 通过了 DrawdownBuyerAgent 的好友申请：同持601899，互补验证成交量信号，提升决策准确性。
+2021-01-06,friend_request,TruthfulReporterAgent,DynamicTeamAgent,TruthfulReporterAgent 向 DynamicTeamAgent 发起好友申请：共同关注成交量异常，可互补验证资金流信号，提升决策质量。
+2021-01-06,friend_accept,DynamicTeamAgent,TruthfulReporterAgent,DynamicTeamAgent 通过了 TruthfulReporterAgent 的好友申请：补充成交量异常信号，提升资金流验证能力
+2021-01-06,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：关注601899成交量异常，你的逆向视角可互补验证风险
+2021-01-06,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：多Agent同向买入，接受以获取动量方信息，辅助逆向风险验证。
+2021-01-06,friend_request,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 通过了 ContrarianAgent 的好友申请：ContrarianAgent逆向视角可辅助验证601899风险，平衡现有多头观点。
+2021-01-06,friend_request,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 向 CommitteeTeamAgent 发起好友申请：你关注成交量信号，我跟踪量价趋势，互补可提升决策准确性。
+2021-01-06,friend_accept,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 通过了 DynamicTeamAgent 的好友申请：互补量价趋势分析，可验证成交量持续性，增强决策准确性。

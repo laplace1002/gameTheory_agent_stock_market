@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,DrawdownBuyerAgent,TruthfulReporterAgent,DrawdownBuyerAgent 向 TruthfulReporterAgent 发起好友申请：你动量我回撤，策略分歧可互补验证市场信号，申请好友交流。
+2021-01-13,friend_accept,TruthfulReporterAgent,DrawdownBuyerAgent,TruthfulReporterAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，可验证多空信号，同意交流。
+2021-01-13,friend_request,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 向 SocialGraphAgent 发起好友申请：社交图谱验证与低波防御互补，共享异质信号。
+2021-01-13,friend_accept,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 通过了 FreeRiderAgent 的好友申请：低波防御与社交图谱互补，异质信号可丰富验证维度。
+2021-01-13,friend_request,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 向 FreeRiderAgent 发起好友申请：你持000002低估值，我持300750新能源，策略分歧可互补验证市场信号。
+2021-01-13,friend_accept,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 通过了 DynamicTeamAgent 的好友申请：策略分歧互补，可共同验证市场信号，丰富异质信息。

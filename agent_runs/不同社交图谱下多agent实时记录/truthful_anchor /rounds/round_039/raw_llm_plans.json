@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 198.5,
+        "rationale": "均值回归共识拥挤度上升，部分减仓锁定头寸，降低集中风险"
+      },
+      "public_message": "002594 SELL 10股：均值回归共识拥挤，风险上升，部分减仓",
+      "moment": "卖出002594 10股，均值回归博弈过热，先降仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤度恶化，我减仓10股，你是否有同感？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 198.5,
+        "rationale": "深度回撤-18%不符合追涨风格，ret5和ret20弱势，换仓至ret20+14.98%的000002"
+      },
+      "public_message": "卖出002594 200股，深度回撤非追涨标的，换仓至000002",
+      "moment": "清仓002594，回撤非我风格，换入ret20强势000002",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深度回撤博弈不适用追涨策略，我已清仓转向强势000002"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 198.5,
+        "rationale": "深度回撤未拥挤逻辑仍在，但拥挤度快速上升，暂持观察"
+      },
+      "public_message": "002594 HOLD：深度回撤未拥挤逻辑仍在，但拥挤度快速上升，暂持观察",
+      "moment": "002594 HOLD：深度回撤逻辑未变，但多Agent共识使拥挤风险上升，低波动策略暂持等待更多信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594拥挤度上升，我暂持观望，你的加仓逻辑我理解但需警惕"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 266.31,
+        "rationale": "随机低位试探白酒超跌，非共识机会"
+      },
+      "public_message": "000858 BUY 10股：随机低位试探白酒超跌，非共识机会。",
+      "moment": "买入000858 10股，随机低位试探白酒超跌，非共识博弈。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入000858，随机试探非共识，你如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 57.95,
+        "rationale": "超跌共识拥挤风险上升，部分获利了结"
+      },
+      "public_message": "002415 SELL 10股：超跌共识拥挤风险上升，部分获利了结",
+      "moment": "减持002415 10股，锁定部分利润，警惕拥挤度上升",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减持换仓逻辑，已卖出002415 10股，锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 11,
+        "price": 57.95,
+        "rationale": "超跌共识拥挤风险上升，全部卖出锁定利润，回避多Agent集中风险"
+      },
+      "public_message": "002415 SELL 11股：超跌共识拥挤加剧，卖出规避多Agent集中风险",
+      "moment": "清仓002415，超跌共识拥挤风险已高，等待下次深度回撤机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意002415拥挤风险，清仓跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 198.5,
+        "rationale": "深度回撤-18.77%未拥挤，多Agent协同均值回归博弈，加仓10股"
+      },
+      "public_message": "002594 BUY 10股：深度回撤未拥挤，多Agent协同均值回归博弈加仓",
+      "moment": "加仓002594 10股，深度回撤未拥挤，均值回归博弈",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意深度回撤逻辑，加仓10股协同验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 198.5,
+        "rationale": "深度回撤逻辑未变，但拥挤度上升，暂持观察"
+      },
+      "public_message": "002594 HOLD：深度回撤逻辑未变，但拥挤度上升，暂持观察",
+      "moment": "持有002594，深度回撤未拥挤逻辑仍在，但需警惕多Agent共识带来的拥挤风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "已协同买入002594，现暂持观察拥挤风险，感谢同步"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 89.9,
+        "rationale": "000333 ret20 -5.53%，趋势弱，减仓规避弱势；买入002415逆向博弈超跌反弹。"
+      },
+      "public_message": "000333 SELL 10股：弱势减仓；002415 BUY 10股：超跌未拥挤，反向加仓。",
+      "moment": "卖出弱势000333，买入逆向标的002415，博弈超跌未拥挤的逻辑。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415拥挤风险可能过度，逆向买入10股，与你减持相反，验证分歧。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 57.95,
+        "rationale": "超跌共识拥挤风险上升，多Agent减持，规避风险"
+      },
+      "public_message": "减仓002415 5股，超跌共识拥挤，转投深度回撤标的",
+      "moment": "减仓002415，规避拥挤，继续持有002594博弈深度回撤",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的换仓逻辑，已卖出002415，继续持有002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 7,
+        "price": 57.95,
+        "rationale": "超跌共识拥挤风险上升，多Agent减持，锁定利润规避风险"
+      },
+      "public_message": "002415 SELL 7股：超跌共识拥挤，锁定利润",
+      "moment": "卖出002415全部，规避拥挤风险，后续择机配置深度回撤标的",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你减持002415换仓逻辑，我已卖出全部7股，后续关注002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 57.95,
+        "rationale": "超跌共识拥挤风险上升，减仓锁定利润，换仓深度回撤标的"
+      },
+      "public_message": "002415 SELL 5股：超跌共识拥挤上升，减仓换入深度回撤标的",
+      "moment": "减仓002415 5股，换入002594博弈深度回撤均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意002415拥挤风险，已减仓5股，协同换仓002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

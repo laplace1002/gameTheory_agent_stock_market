@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 225.0,
+        "rationale": "短期大跌-12.45%，趋势逆转，追涨策略止损"
+      },
+      "public_message": "002594 卖出101股，短期大跌趋势转弱，止损锁定现金",
+      "moment": "清仓002594，短期大跌趋势破坏，观望等待趋势明确",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你锁利601899，我清仓002594等待新方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 90.94,
+        "rationale": "均值回归策略触发买入信号"
+      },
+      "public_message": "基于均值回归策略，买入000333 50股。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 58.36,
+        "rationale": "5日回撤-6.62%，20日-3.68%，弱势延续，减仓控制回撤"
+      },
+      "public_message": "002415 卖出10股，5日回撤较大，降低仓位风险",
+      "moment": "卖出002415 10股，控制回撤，等待更明确信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "尊重你加仓000333的回撤修复策略，我选择减仓002415控制整体波动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 90.94,
+        "rationale": "000333回撤-10.76%，20日跌幅-4.12%，处于深度超卖区间，买入博均值回复"
+      },
+      "public_message": "买入000333 100股，深跌-10.76%布局回撤修复",
+      "moment": "买入000333 100股，深跌-10.76%后等待价值回归",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333深跌超10%，回撤买入逻辑清晰，建议关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 13.85,
+        "rationale": "短期涨幅过大，随机锁利提供流动性，与其他Agent减仓共振"
+      },
+      "public_message": "601899 卖出10股，涨幅过大随机锁利",
+      "moment": "随机卖出601899 10股，锁定暴涨利润，等待回调机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已再卖出10股601899锁利，同意你买入000333回撤修复的逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 376.0,
+        "rationale": "超买风险确认，跟随ContrarianAgent减仓，锁定利润或止损"
+      },
+      "public_message": "300750 SELL 50股，超买风险减仓",
+      "moment": "减仓300750 50股，超买回撤风险控制",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的300750超买减仓逻辑，我已卖出50股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 84.32,
+        "rationale": "拥挤反转信号增强，部分减仓锁定利润，降低暴露"
+      },
+      "public_message": "601318 卖出20股，拥挤反转风险验证，锁定部分利润",
+      "moment": "减仓601318 20股，拥挤反转与修复博弈，留部分仓位等待方向",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤反转判断，已卖出20股锁利，保留部分修复仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 376.54,
+        "rationale": "跟随ContrarianAgent减仓信号，超买风险确认，锁定利润"
+      },
+      "public_message": "300750 SELL 50股，跟随逆向减仓锁定利润",
+      "moment": "卖出300750全部，规避超买风险，锁定收益",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的300750减仓逻辑，已清仓锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 84.32,
+        "rationale": "拥挤反转被夸大，逆向加仓看多深跌修复延续"
+      },
+      "public_message": "601318 加仓20股，逆向看多深跌修复延续，拥挤反转被夸大",
+      "moment": "加仓601318，逆向操作，深跌修复共识有望持续，拥挤反转风险可控",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "拥挤反转信号过度，我逆向加仓，深跌修复逻辑未变"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 90.94,
+        "rationale": "深跌均值回复，跟随DrawdownBuyer加仓信号"
+      },
+      "public_message": "000333 买入100股，深跌均值回复机会",
+      "moment": "买入000333，深跌均值回复，等待价值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000333深跌修复逻辑，已买入100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 376.54,
+        "rationale": "跟随ContrarianAgent看空信号，锁定利润降低超买风险"
+      },
+      "public_message": "300750 卖出20股，超买风险锁定利润",
+      "moment": "减仓300750 20股，锁定利润，控制回撤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的减仓逻辑，已卖出部分300750"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 30.01,
+        "rationale": "跟随TruthfulReporterAgent和FreeRiderAgent减仓信号，锁定短期利润，降低仓位风险"
+      },
+      "public_message": "000002 卖出50股，跟随减仓信号锁利，控制回撤",
+      "moment": "减仓000002 50股，跟随低波动减仓信号，保持组合灵活性",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的000002减仓逻辑，已卖出50股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

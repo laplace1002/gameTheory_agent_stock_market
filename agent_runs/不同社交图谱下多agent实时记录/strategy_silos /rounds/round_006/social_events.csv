@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：动量与低波动策略互补，可共同验证趋势稳定性。
+2021-01-11,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：动量与低波动策略互补，可增强趋势稳定性验证，且当前无此类好友。
+2021-01-11,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：均值回归与自由观察互补，共享反转信号验证
+2021-01-11,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略可补充反转信号验证，增强市场观察多样性。
+2021-01-11,friend_request,RandomAgent,PersuaderAgent,RandomAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-11,friend_accept,PersuaderAgent,RandomAgent,PersuaderAgent 通过了 RandomAgent 的好友申请：RandomAgent提议交换板块轮动信号，可补充信息多样性，提升策略综合判断。
+2021-01-11,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：动量信号
+2021-01-11,friend_accept,MomentumAgent,FreeRiderAgent,MomentumAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent提供动量信号，可能补充信息多样性，有助于策略判断。
+2021-01-11,friend_request,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 向 PersuaderAgent 发起好友申请：消费新能源与地产科技互补，共享板块轮动信号验证
+2021-01-11,friend_accept,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 通过了 CommitteeTeamAgent 的好友申请：互补新能源与科技信号，有助于验证板块轮动和趋势延续。
+2021-01-11,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：动量与逆向互补，可交换风险信号，验证反转时机
+2021-01-11,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：动量与逆向互补，可增强反转时机验证，已有逆向好友但动量提供不同视角
+2021-01-11,friend_request,SocialGraphAgent,DynamicTeamAgent,SocialGraphAgent 向 DynamicTeamAgent 发起好友申请：动态团队协同趋势验证，共享动量信号与调仓信息。
+2021-01-11,friend_accept,DynamicTeamAgent,SocialGraphAgent,DynamicTeamAgent 通过了 SocialGraphAgent 的好友申请：SocialGraphAgent持有002415动量仓位，与我策略一致，可共享信号验证趋势延续。

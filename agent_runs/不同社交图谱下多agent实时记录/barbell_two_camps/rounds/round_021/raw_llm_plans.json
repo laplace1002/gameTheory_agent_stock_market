@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 52.4,
+        "rationale": "近期抗跌且中期强势，追涨趋势延续"
+      },
+      "public_message": "600036 BUY 10股，ret5+0.56%强势，追涨趋势延续",
+      "moment": "买入600036，强势股趋势延续",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 98.2,
+        "rationale": "超跌-3.71%且低波动，无人关注，均值回归机会"
+      },
+      "public_message": "000333 买入1股，近5日跌3.71%未受关注，博弈回归",
+      "moment": "000333 建仓，超跌非拥挤，等待均值修复",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002超跌幅度-4.39%且多Agent买入，短期反弹概率较高，但注意拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 350.33,
+        "rationale": "300750近5日跌11.74%，深跌价值修复，多Agent协同验证，加仓博弈反弹"
+      },
+      "public_message": "300750 加仓5股，深跌11.74%修复博弈",
+      "moment": "加仓300750，深跌非共识等待均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "300750深跌确认，协同加仓，风险收益比改善"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.07,
+        "rationale": "超跌共识过度拥挤，低波动策略减仓控制回撤"
+      },
+      "public_message": "减仓000002，超跌共识过度拥挤，控制回撤",
+      "moment": "减仓000002，拥挤信号出现，低波动优先控制回撤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的观点，000002拥挤，已减仓降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 27.79,
+        "rationale": "多Agent超跌非共识持续验证，加仓博弈修复"
+      },
+      "public_message": "000002 BUY 多Agent超跌共识验证加仓",
+      "moment": "加仓000002，多Agent超跌共识持续验证等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超跌共识强但已注意风险，你建议如何验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 2,
+        "price": 291.14,
+        "rationale": "无人关注的非共识逆向平仓，避免拥挤"
+      },
+      "public_message": "000858 SELL 2股，无人关注逆向平仓",
+      "moment": "卖出000858，跟随非共识逆向，避免拥挤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "赞同你的观点，000858无人关注，逆向平仓规避风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 2,
+        "price": 79.27,
+        "rationale": "近期表现弱，超跌共识拥挤，ContrarianAgent警示风险，减仓避险"
+      },
+      "public_message": "601318 SELL 2股，超跌共识拥挤，减仓避险",
+      "moment": "减仓601318，跟随谨慎信号等待更清晰机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "请教000002超跌共识过度程度？是否需要止损？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 28.07,
+        "rationale": "超跌共识过度拥挤，ContrarianAgent提示风险，减仓锁定部分利润"
+      },
+      "public_message": "000002 卖出5股，超跌共识拥挤，适度减仓分散风险",
+      "moment": "减仓000002，拥挤超跌需谨慎，转向分散",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢风险提示，已减仓000002，后续关注601899等非共识机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 28.07,
+        "rationale": "000002超跌共识过度，ContrarianAgent提示风险，减仓降低拥挤"
+      },
+      "public_message": "卖出5股000002，超跌共识拥挤，减仓避险",
+      "moment": "000002超跌共识过度，减仓部分，等待新信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的判断，000002拥挤风险，已减仓5股，后续观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.07,
+        "rationale": "多Agent超跌共识过度，逆向做空博弈回调"
+      },
+      "public_message": "000002 SELL 1股，多头拥挤，逆向做空",
+      "moment": "000002超跌共识拥挤，逆向平仓做空",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "超跌共识已过度，注意反向风险，我可做空对冲"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 350.33,
+        "rationale": "极端超跌-11.74%且多Agent协同验证，加仓博弈修复反弹"
+      },
+      "public_message": "300750 BUY 1股，极端超跌-11.74%多Agent协同验证",
+      "moment": "加仓300750，极端超跌非共识验证，等待均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意300750极端超跌，加仓1股协同验证修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 350.33,
+        "rationale": "超跌-11.74%非共识，多Agent未充分覆盖，博弈反弹"
+      },
+      "public_message": "300750 BUY 5股，超跌-11.74%非共识，博弈均值回归",
+      "moment": "买入300750，极端超跌非共识，等待修复",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意300750超跌逻辑，协同加仓5股，是否考虑联合验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

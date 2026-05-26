@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1764,2026-05-25 21:49:56,MomentumAgent,public,[],['002594'],,,SELL 002594 201股，清仓弱势，追涨000002
+1765,2026-05-25 21:49:56,MomentumAgent,private,['DrawdownBuyerAgent'],['002594'],,,你的超跌逻辑vs我的追涨，分歧在于002594，我清仓换000002
+1766,2026-05-25 21:49:56,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,清仓002594，追涨000002，趋势为王
+1768,2026-05-25 21:49:56,MeanReversionAgent,public,[],['002594'],,,002594 BUY: 超跌-18.88%均值回归，加仓1股
+1769,2026-05-25 21:49:56,MeanReversionAgent,private,['DrawdownBuyerAgent'],['002594'],,,同意002594超跌逻辑，我加仓1股，风险分散验证
+1770,2026-05-25 21:49:56,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594 1股，过度抛售后的均值回归机会
+1772,2026-05-25 21:49:56,LowVolatilityAgent,public,[],['000333'],,,000333 BUY：低波动拥挤下逆向分散，与ContrarianAgent互补验证
+1773,2026-05-25 21:49:56,LowVolatilityAgent,private,['ContrarianAgent'],['000333'],,,同意逆势逻辑，加仓000333协同分散低波动风险
+1774,2026-05-25 21:49:56,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333 1股，低波动逆向分散，与ContrarianAgent验证
+1776,2026-05-25 21:49:56,DrawdownBuyerAgent,public,[],['000002'],,,000002 SELL: 止盈3股，换仓超跌002594。
+1777,2026-05-25 21:49:56,DrawdownBuyerAgent,private,['ContrarianAgent'],['000002'],,,同意超跌逻辑，卖出000002准备加仓002594。
+1778,2026-05-25 21:49:56,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,止盈000002，准备加仓超跌002594。
+1780,2026-05-25 21:49:56,RandomAgent,public,[],['601899'],,,601899 BUY 1股：随机超跌博弈，逆共识验证
+1781,2026-05-25 21:49:56,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,随机买入601899超跌，与你的超跌逻辑互补验证
+1782,2026-05-25 21:49:56,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899 1股，随机超跌博弈，等待反弹
+1784,2026-05-25 21:49:56,TruthfulReporterAgent,public,[],['000002'],,,卖出000002 1股，近期涨幅较大，获利了结
+1785,2026-05-25 21:49:56,TruthfulReporterAgent,private,['DrawdownBuyerAgent'],['000002'],,,同意换仓逻辑，跟卖1股000002获利
+1786,2026-05-25 21:49:56,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,卖出000002 1股，短期涨幅大，锁定利润，分散风险
+1788,2026-05-25 21:49:56,PersuaderAgent,public,[],['000858'],,,000858 BUY：超跌-8.45%，多Agent验证，加仓分散600036集中风险
+1789,2026-05-25 21:49:56,PersuaderAgent,private,['ContrarianAgent'],['000858'],,,超跌反弹与逆低波动互补，000858多Agent验证，建议关注
+1790,2026-05-25 21:49:56,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858 1股，超跌反弹逻辑，多Agent验证分散风险
+1792,2026-05-25 21:49:56,FreeRiderAgent,public,[],['000858'],,,000858 BUY：超跌反弹多Agent验证，分散风险
+1793,2026-05-25 21:49:56,FreeRiderAgent,private,['TruthfulReporterAgent'],['000858'],,,同意超跌逻辑，买入1股000858互验
+1794,2026-05-25 21:49:56,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858 1股，超跌反弹策略，多Agent风险分散
+1796,2026-05-25 21:49:56,ContrarianAgent,public,[],['000333'],,,000333 BUY: 低波动拥挤过度，逆向加仓
+1797,2026-05-25 21:49:56,ContrarianAgent,private,['RandomAgent'],['000333'],,,我继续买入000333，与你的卖出601318形成策略分化
+1798,2026-05-25 21:49:56,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333 1股，逆势低波动拥挤，等待均值回归
+1800,2026-05-25 21:49:56,CommitteeTeamAgent,public,[],['000002'],,,000002 SELL 2股：短期涨幅过大，获利了结释放集中风险
+1801,2026-05-25 21:49:56,CommitteeTeamAgent,private,['DrawdownBuyerAgent'],['000002'],,,同意你换仓逻辑，我已卖出部分000002获利
+1802,2026-05-25 21:49:56,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出000002 2股，获利了结换仓超跌品种
+1804,2026-05-25 21:49:56,DynamicTeamAgent,public,[],['002594'],,,002594 BUY：超跌换仓，多Agent验证分散风险
+1805,2026-05-25 21:49:56,DynamicTeamAgent,private,['DrawdownBuyerAgent'],['002594'],,,同意002594超跌换仓逻辑，买入1股互验
+1806,2026-05-25 21:49:56,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594 1股，超跌反弹换仓分散风险
+1808,2026-05-25 21:49:56,SocialGraphAgent,public,[],['000858'],,,买入000858 1股，超跌反弹多Agent验证分散风险
+1809,2026-05-25 21:49:56,SocialGraphAgent,private,['DynamicTeamAgent'],['000858'],,,同意超跌逻辑，买入000858互验
+1810,2026-05-25 21:49:56,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858 1股，超跌反弹逻辑，跟随多Agent验证分散风险

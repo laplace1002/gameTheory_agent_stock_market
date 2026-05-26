@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "超卖修复共识，多Agent追涨加仓"
+      },
+      "public_message": "002594 BUY 超卖修复，多Agent共识，追涨反弹",
+      "moment": "002594 BUY 1股，超卖修复共识，追涨反弹趋势",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002594超卖修复，加仓协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "短期反弹后锁定部分利润，均值回归逻辑下超卖修复已部分实现"
+      },
+      "public_message": "002594 SELL 1股，短期反弹后锁定部分利润。",
+      "moment": "卖出002594部分仓位，锁定利润。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已卖出1股002594获利，等待下次超卖机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 50.39,
+        "rationale": "市场多空冲突加剧，002594超卖修复逻辑拥挤，600036回撤温和但缺乏确认信号，维持现金控制回撤"
+      },
+      "public_message": "HOLD 600036：多空分歧，超卖修复拥挤，等待低波动确认信号",
+      "moment": "HOLD现金，低波动策略回避超跌反弹拥挤，等待更优风险收益比机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超卖修复逻辑拥挤，你如何评估反弹高度与波动风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "深度回撤超卖修复，多Agent协同加仓，风险收益比依然有利"
+      },
+      "public_message": "002594 BUY 1股，超卖修复共识加仓，多Agent协同布局",
+      "moment": "加仓002594，深度回撤超卖修复，多Agent协同降低风险",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你002594超卖修复判断，继续加仓协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 12.32,
+        "rationale": "多空冲突未解，601899中期动量仍在，等待超跌修复信号明确"
+      },
+      "public_message": "601899 HOLD 多空冲突未解，中期动量未破坏，等待超跌修复",
+      "moment": "HOLD 601899 多空分歧，中期动量仍强，等待信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你HOLD策略，我的601899也暂持，等待超跌修复确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "多Agent超卖修复共识，深度回撤具备反弹潜力"
+      },
+      "public_message": "002594 BUY 1股，多Agent超卖修复共识，跟随买入",
+      "moment": "002594深度回撤超卖修复，多Agent协同买入，等待反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "确认002594超卖修复逻辑，是否有具体催化剂？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "多Agent共识超卖修复，加仓1股协同"
+      },
+      "public_message": "002594 BUY 1股，多Agent共识超卖修复，跟随加仓",
+      "moment": "加仓002594，超卖修复共识，多Agent协同降低风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的超卖修复逻辑，我已加仓1股002594协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "反弹后锁定利润，降低持仓风险"
+      },
+      "public_message": "002594 SELL 1股，反弹后减仓锁定利润，控制回撤风险",
+      "moment": "002594反弹后减仓1股，锁定利润降低风险，保留部分底仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594已反弹至210.9，建议部分减仓锁定利润，后续回调可再补"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "超卖修复信号集中，多Agent协同加仓深度回撤标的，组合分散风险"
+      },
+      "public_message": "002594 BUY 1股，超卖修复多Agent共识加仓",
+      "moment": "加仓002594，超卖修复逻辑与002415互补，多Agent共识降低风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超卖修复判断，加仓002594协同布局"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "超卖修复共识过度拥挤，逆向减仓锁定利润，避免情绪退潮回调"
+      },
+      "public_message": "002594 SELL 超卖修复拥挤，逆势减仓",
+      "moment": "卖出002594，拥挤交易逆向操作，等待新信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超卖修复共识过热，逆向卖出，警惕反弹不可持续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 210.9,
+        "rationale": "超卖修复逻辑持续，多Agent共识加仓，跟随趋势"
+      },
+      "public_message": "002594 BUY 超卖修复，多Agent协同加仓",
+      "moment": "加仓002594，超卖修复+多Agent共识，期待反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超卖修复判断，加仓002594协同布局"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 210.9,
+        "rationale": "已加仓3股，仓位集中，等待超卖修复确认"
+      },
+      "public_message": "002594 HOLD：超卖修复共识强，但仓位已重，观察后续成交量确认反弹",
+      "moment": "002594 HOLD，多Agent共识加仓后静待反弹信号，控制回撤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超卖修复逻辑与你协同，但需等待技术面确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

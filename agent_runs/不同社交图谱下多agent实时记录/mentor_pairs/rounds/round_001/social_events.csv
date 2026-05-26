@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MomentumAgent,TruthfulReporterAgent,MomentumAgent 向 TruthfulReporterAgent 发起好友申请：信息真实互补，验证方向
+2021-01-04,friend_accept,TruthfulReporterAgent,MomentumAgent,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：互补验证可获更多信息，辅助决策
+2021-01-04,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：低成交量股票均值回归策略可能有互补价值
+2021-01-04,friend_reject,MeanReversionAgent,RandomAgent,MeanReversionAgent 拒绝了 RandomAgent 的好友申请：当前无低成交量标的持仓，且RandomAgent实际交易高成交量，理由不匹配。
+2021-01-04,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：想请教无数据时的动量策略处理方案，互补信息验证。
+2021-01-04,friend_accept,MomentumAgent,FreeRiderAgent,MomentumAgent 通过了 FreeRiderAgent 的好友申请：理由合理，可互补验证，但需防搭便车行为
+2021-01-04,friend_request,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 向 TruthfulReporterAgent 发起好友申请：希望获取真实基本面数据验证逆向判断。
+2021-01-04,friend_accept,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 通过了 ContrarianAgent 的好友申请：理由合理，可互补获取真实数据验证逆向判断

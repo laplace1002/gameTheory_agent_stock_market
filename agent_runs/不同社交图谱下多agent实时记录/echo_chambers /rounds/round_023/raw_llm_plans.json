@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.05,
+        "rationale": "趋势强势延续，20日+20%且5日+2%，多Agent互验"
+      },
+      "public_message": "600036 BUY 10股：趋势延续，低波动强势，加仓跟随",
+      "moment": "加仓600036 10股，趋势延续逻辑验证",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意趋势延续逻辑，加仓600036 10股互验"
+      },
+      "friend_request": {
+        "to": "None",
+        "reason": "无"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.05,
+        "rationale": "600036 20日涨幅20%，低波动策略减仓锁定利润，控制回撤"
+      },
+      "public_message": "600036 SELL 10股：20日涨幅20%，减仓控制回撤",
+      "moment": "600036减仓10股，盈利锁定，风险控制",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036涨幅较大，我减仓部分锁定利润，与你之前的加仓逻辑不同。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.9,
+        "rationale": "短期超卖-13.29%，均值回归预期"
+      },
+      "public_message": "002415 BUY 10股：ret5=-13.29%超跌，均值回归修复",
+      "moment": "买入002415 10股，利用-13.29%超卖做均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意300750拥挤，转买002415超跌机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.9,
+        "rationale": "短期暴跌-13.29%但中期涨8.08%，非共识低吸"
+      },
+      "public_message": "002415 BUY 10股：短期暴跌-13.29%但中期涨8.08%，非共识低吸",
+      "moment": "买入002415 10股，短期超跌中期向上，与市场分歧",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "短期暴跌后中期趋势未破，与你卖出300750的拥挤逻辑不同，我选择逆向买入超跌的002415"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 76.54,
+        "rationale": "20日跌幅-10.73%深跌，超跌修复机会，加仓验证"
+      },
+      "public_message": "601318 BUY 1股：20日-10.73%深跌，超跌修复逻辑加仓",
+      "moment": "加仓601318 1股，20日跌幅-10.73%，超跌修复逻辑持续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318深跌10%，是否需逆向卖出？我准备加仓修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 380.98,
+        "rationale": "超跌反弹逻辑未充分验证，多agent互验但存在分歧，等待更明确信号"
+      },
+      "public_message": "300750 HOLD：超跌-8.51%未修复，多Agent买入互验但拥挤，暂持",
+      "moment": "300750持有中，超跌反弹逻辑与多Agent互验，但需防拥挤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750超跌逻辑仍有支撑，卖出过早，建议重新评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 380.98,
+        "rationale": "超跌逻辑与拥挤卖出信号冲突，证据不足，继续持有观察"
+      },
+      "public_message": "300750：超跌与拥挤卖出并存，证据冲突，HOLD观望。",
+      "moment": "300750多空分歧，继续持有1股验证，等待进一步证据。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750买入拥挤但超跌信号也存在，分歧时我选择继续持有1股，等待更明确信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 76.54,
+        "rationale": "跟随DrawdownBuyerAgent超跌修复逻辑，验证互验"
+      },
+      "public_message": "601318 BUY 1股：超跌-10.73%修复逻辑，与DrawdownBuyerAgent互验",
+      "moment": "买入601318 1股，超跌修复验证，与DrawdownBuyerAgent一致",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌逻辑，买入1股601318互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 380.98,
+        "rationale": "超跌反弹获利，ContrarianAgent卖出拥挤信号，止盈锁定利润"
+      },
+      "public_message": "300750 SELL 10股：超跌反弹获利，拥挤卖出信号验证",
+      "moment": "300750 SELL 10股，短期反弹到位，跟随拥挤卖出止盈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤信号，卖出300750止盈互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 5,
+        "price": 53.05,
+        "rationale": "趋势强势且低波动策略验证，FreeRiderAgent加仓互验"
+      },
+      "public_message": "600036 BUY 5股：趋势延续，与FreeRider互验",
+      "moment": "加仓600036 5股，趋势延续，低波动策略有效",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意600036趋势逻辑，加仓5股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 380.98,
+        "rationale": "超跌反弹拥挤，获利了结"
+      },
+      "public_message": "300750 SELL：超跌反弹拥挤，获利了结",
+      "moment": "卖出300750 5股，超跌反弹拥挤退出",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤卖出逻辑，互验。已卖300750。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.9,
+        "rationale": "短期超卖-13.29%，逆向买入等待反弹"
+      },
+      "public_message": "002415 BUY 10股：短期超卖逆向买入",
+      "moment": "",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

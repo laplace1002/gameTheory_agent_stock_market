@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 54.46,
+        "rationale": "拥挤抛售过度，均值回归机会"
+      },
+      "public_message": "002415 BUY 10股，拥挤抛售近尾声，均值回归预期",
+      "moment": "加仓002415，拥挤释放后均值回归逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "共识卖出过度，逆向加仓验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 86.71,
+        "rationale": "低波动防御，分散持仓，000333近5日稳定且回撤可控"
+      },
+      "public_message": "000333 BUY 10股，低波动防御，分散风险，回撤可控",
+      "moment": "BUY 000333 10股，低波动防御组合，控制回撤",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "感谢协同600036，我加仓000333低波动分散"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.24,
+        "rationale": "近5日涨幅4.37%，趋势强劲，追加仓位。"
+      },
+      "public_message": "600036 BUY 10股，近5日强势延续，追涨加仓。",
+      "moment": "",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "认同低波动防御，但更看好短期趋势，已加仓600036，协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 54.46,
+        "rationale": "部分止盈逆向仓位，拥挤风险未消"
+      },
+      "public_message": "002415 SELL 5股，逆向仓位止盈，拥挤风险未消",
+      "moment": "002415部分止盈，逆向仓位收紧，等待拥挤消化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤抛压未消，我部分止盈，你继续加仓的逻辑是什么？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.24,
+        "rationale": "低波动防御，回撤可控，等待信号确认"
+      },
+      "public_message": "600036 HOLD 低波动防御，短期涨幅可控，等待信号",
+      "moment": "持仓观望，002415拥挤释放中，等待趋势确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036低波动策略协同，短期涨幅4.37%是否需减仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 178.55,
+        "rationale": "协同深跌买入，均值回归逻辑，DrawdownBuyerAgent已换仓，增加仓位。"
+      },
+      "public_message": "002594 BUY 5股，深跌修复协同，均值回归等待。",
+      "moment": "买入002594 5股，深跌修复逻辑，与DrawdownBuyerAgent协同。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已买入002594 5股，协同深跌均值回归，等待修复。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 53.5,
+        "rationale": "拥挤风险释放不均，多Agent卖出共识，减仓避险。"
+      },
+      "public_message": "002415 SELL 5股，拥挤风险释放不均，减仓避险。",
+      "moment": "002415减仓，拥挤释放过程复杂，等待更明确信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415逆向加仓依据是什么？拥挤抛压是否接近尾声？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 5,
+        "price": 53.5,
+        "rationale": "拥挤抛售过度，逆向加仓等待均值回归"
+      },
+      "public_message": "002415 BUY 继续逆共识加仓，拥挤抛售过度，等待均值回归",
+      "moment": "002415 BUY 拥挤抛售过度，逆向加仓验证均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415拥挤抛售过度，继续逆向加仓，验证均值回归逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 54.46,
+        "rationale": "拥挤风险持续，多Agent共识卖出，减仓控制风险"
+      },
+      "public_message": "002415 SELL 10股，拥挤抛压未消，继续减仓避险",
+      "moment": "002415继续卖出10股，拥挤风险未解除，等待信号确认再决策",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415逆向逻辑的具体指标是什么？拥挤释放是否确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.24,
+        "rationale": "协同低波动防御策略，跟随PersuaderAgent买入"
+      },
+      "public_message": "600036 BUY 10股，低波动防御协同",
+      "moment": "买入600036 10股，低波动防御，跟随低波动Agent节奏",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已买入600036协同，等待低波动信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.4,
+        "rationale": "低波动防御，协同PersuaderAgent和FreeRiderAgent策略，现金充裕增持稳健标的"
+      },
+      "public_message": "600036 BUY 10股，低波动防御，协同多Agent低波策略。",
+      "moment": "600036加仓10股，低波动防御，等待信号确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415逆向买入的具体指标？拥挤释放后是否确认反转？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 178.55,
+        "rationale": "深度回撤-31%，均值回归逻辑，小仓位加仓等待修复"
+      },
+      "public_message": "002594 BUY 2股，深度回撤-31%，均值回归加仓",
+      "moment": "加仓002594，深度回撤后的价值修复机会",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "002594深度回撤信号明确，是否协同加仓均值回归？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-28,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可验证趋势强度，互补追涨逻辑。
+2021-01-28,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：低波动与趋势策略互补，可增强风险收益权衡。

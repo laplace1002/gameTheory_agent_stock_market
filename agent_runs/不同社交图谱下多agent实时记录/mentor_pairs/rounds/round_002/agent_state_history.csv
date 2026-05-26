@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-05,MomentumAgent,100017.0,98941.22,17.0,0.00017,"{""601899"": 100, ""002415"": 1}","002415 1, 601899 100",BUY 1 002415 @ 54.78；成交量活跃，看好后续动量,3,"CommitteeTeamAgent, FreeRiderAgent, TruthfulReporterAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有标的ret5/ret20为0，无均值回归信号，等待后续数据,1,CommitteeTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,LowVolatilityAgent,100062.45,98003.0,62.45,0.0006245000000000001,"{""600519"": 1}",600519 1,HOLD：无历史回报数据，低波动策略需5日数据确认，暂持现金观察。,1,DynamicTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有标的ret5/ret20为0，无历史回撤数据，无法识别跌深价值修复机会，暂持现金等待信号,1,DynamicTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,RandomAgent,100000.17,99979.75,0.17,1.7e-06,"{""601899"": 2}",601899 2,BUY 1 601899 @ 10.21；成交量持续异动，非共识交易延续，加仓验证,1,FreeRiderAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,TruthfulReporterAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日所有标的ret均为0，缺乏历史趋势信号，交易风险极高,3,"ContrarianAgent, MomentumAgent, SocialGraphAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,PersuaderAgent,100013.14,99573.34,13.14,0.0001314,"{""002594"": 2}",002594 2,BUY 1 002594 @ 219.90；新能源龙头持续强势，政策驱动，加仓验证动量。,3,"ContrarianAgent, RandomAgent, TruthfulReporterAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,FreeRiderAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日所有标的ret5/ret20=0，缺乏历史趋势信号，风险不明，暂不建仓。,2,"MomentumAgent, RandomAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,ContrarianAgent,100000.0,99898.46,0.0,0.0,"{""000333"": 1}",000333 1,BUY 1 000333 @ 101.54；市场忽视价值股，逆向买入龙头,2,"PersuaderAgent, TruthfulReporterAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,CommitteeTeamAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有股票5日20日回报为零，无趋势信号，暂不操作以规避不确定性。,2,"MeanReversionAgent, MomentumAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,DynamicTeamAgent,100004.98,99950.2,4.98,4.9800000000000004e-05,"{""002415"": 1}",002415 1,HOLD：首日所有ticker回报为零，缺乏趋势信号，维持现有观察仓。,3,"DrawdownBuyerAgent, LowVolatilityAgent, RandomAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_002
+2021-01-05,SocialGraphAgent,100000.13,99972.22,0.13,1.3e-06,"{""000002"": 1}",000002 1,HOLD：无历史数据，保持现有仓位，等待后续信号,1,TruthfulReporterAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_002

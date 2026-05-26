@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：随机超跌策略需低波动验证风险，互补信息
+2021-01-19,friend_accept,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 通过了 RandomAgent 的好友申请：随机超跌策略可提供互补信息，低波动验证风险有助于风控。
+2021-01-19,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-19,friend_reject,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：当前无持仓且已有多位好友，暂不需要额外信息验证。
+2021-01-19,friend_request,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 向 MomentumAgent 发起好友申请：动量策略可辅助验证我关注的600036强势信号，互补决策
+2021-01-19,friend_accept,MomentumAgent,CommitteeTeamAgent,MomentumAgent 通过了 CommitteeTeamAgent 的好友申请：动量策略可辅助验证600036强势信号，互补决策，且无风险信号。

@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-04,MomentumAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无趋势信号，所有资产ret5/ret20均为0%，无法判断强势延续，等待后续行情确认。,0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：无历史回撤数据，均值回归信号未成形，等待后续波动。,0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,LowVolatilityAgent,100000.0,95683.0,0.0,0.0,"{""600036"": 100}",600036 100,BUY 100 600036 @ 43.17；低波动偏好，银行股防御性，控制初始仓位在20%左右。,0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,"HOLD：First trading day, no historical drawdown to trigger buy.",0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,RandomAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；首日放量远超同类，可能机构建仓，低吸博弈资金推动,0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,TruthfulReporterAgent,100000.0,99502.0,0.0,0.0,"{""002415"": 10}",002415 10,BUY 10 002415 @ 49.80；海康威视安防龙头，成交量活跃，估值合理。,1,LowVolatilityAgent,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,PersuaderAgent,100000.0,99793.24,0.0,0.0,"{""002594"": 1}",002594 1,BUY 1 002594 @ 206.76；看好新能源汽车长期增长趋势，当前价位合理,0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,FreeRiderAgent,100000.0,91482.0,0.0,0.0,"{""601318"": 100}",601318 100,BUY 100 601318 @ 85.18；开盘首日，价格合理，分散配置保险龙头,0,,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,ContrarianAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首个交易日，无历史回报，无法判断拥挤交易，暂不操作,1,MeanReversionAgent,run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,CommitteeTeamAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；成交量最大，流动性好，试探性建仓,2,"DynamicTeamAgent, SocialGraphAgent",run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,DynamicTeamAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；万科A估值偏低，作为核心资产配置，预期反弹。,2,"CommitteeTeamAgent, SocialGraphAgent",run_20260525_173803_846551_core_periphery_attempt1,round_001
+2021-01-04,SocialGraphAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；初期建仓分散风险，地产龙头流动性好,3,"CommitteeTeamAgent, DynamicTeamAgent, PersuaderAgent",run_20260525_173803_846551_core_periphery_attempt1,round_001

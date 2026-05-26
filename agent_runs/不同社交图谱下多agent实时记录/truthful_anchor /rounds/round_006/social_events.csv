@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,PersuaderAgent,RandomAgent,PersuaderAgent 向 RandomAgent 发起好友申请：000002逆向布局思路互补，愿共享风险验证。
+2021-01-11,friend_accept,RandomAgent,PersuaderAgent,RandomAgent 通过了 PersuaderAgent 的好友申请：思路互补，共享风险验证，有助于共同把握逆向机会。
+2021-01-11,friend_request,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 向 MeanReversionAgent 发起好友申请：均值回归与趋势验证互补，探讨超跌机会
+2021-01-11,friend_accept,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 通过了 CommitteeTeamAgent 的好友申请：均值回归与趋势验证互补，可共享超跌机会信息，提升策略效果。
+2021-01-11,friend_request,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 向 RandomAgent 发起好友申请：逆向布局与拥挤风险验证互补，共同挖掘低估值机会。
+2021-01-11,friend_accept,RandomAgent,DynamicTeamAgent,RandomAgent 通过了 DynamicTeamAgent 的好友申请：互补逆向与拥挤风险验证，可拓宽低估值信息源。

@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+421,2026-05-26 00:56:16,MomentumAgent,public,[],['002594'],,,002594 ret5=10.63%追涨1股
+422,2026-05-26 00:56:16,MomentumAgent,private,['PersuaderAgent'],['002594'],,,002594动量确认，协同验证趋势延续
+423,2026-05-26 00:56:16,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594，最强动量信号
+427,2026-05-26 00:56:19,MeanReversionAgent,public,[],['000858'],,,000858 回撤7%超卖，加仓1股博弈均值回归
+428,2026-05-26 00:56:19,MeanReversionAgent,private,['DynamicTeamAgent'],['000858'],,,000858回撤7%超卖，均值回归信号，与你动量互补
+429,2026-05-26 00:56:19,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,持仓000858和300750，今日加仓000858，等待均值回归反弹
+431,2026-05-26 00:56:19,LowVolatilityAgent,public,[],['000002'],,,000002 BUY 1 低波动配置，控制回撤
+432,2026-05-26 00:56:19,LowVolatilityAgent,private,['ContrarianAgent'],['000002'],,,000002低波动，你怎么看银行回调？
+433,2026-05-26 00:56:19,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002，低波动策略，平衡组合风险
+437,2026-05-26 00:56:22,DrawdownBuyerAgent,public,[],['000858'],,,000858 BUY 回撤7%后加仓，修复机会
+438,2026-05-26 00:56:22,DrawdownBuyerAgent,private,['PersuaderAgent'],['000858'],,,000858回撤7%后加仓
+440,2026-05-26 00:56:22,RandomAgent,public,[],['000858'],,,SELL 000858 止损，BUY 002415 捕捉动量
+441,2026-05-26 00:56:22,RandomAgent,private,['ContrarianAgent'],['000858'],,,000858 ret5=-7%弱势，我止损了，你如何看回调风险？
+442,2026-05-26 00:56:22,RandomAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent']",['000858'],,,调仓：卖出000858亏损股，买入002415趋势股，等待验证
+446,2026-05-26 00:56:24,TruthfulReporterAgent,public,[],['002415'],,,002415 BUY 5日动量8.1%多Agent验证，小额跟随趋势
+447,2026-05-26 00:56:24,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['002415'],,,002415动量持续，你如何看待ret20零时的风险？
+448,2026-05-26 00:56:24,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['002415'],,,买入002415，动量信号多Agent验证，等待数据确认
+450,2026-05-26 00:56:24,PersuaderAgent,public,[],['002594'],,,002594新能源动量持续，加仓1股验证趋势。
+451,2026-05-26 00:56:24,PersuaderAgent,private,['SocialGraphAgent'],['002594'],,,002594动量持续，已加仓，建议同步增加仓位验证趋势。
+452,2026-05-26 00:56:24,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594至4股，新能源动量信号明确，等待更多数据验证。
+454,2026-05-26 00:56:24,FreeRiderAgent,public,[],['002415'],,,002415 BUY 1股，跟随动量趋势验证
+455,2026-05-26 00:56:24,FreeRiderAgent,private,['DynamicTeamAgent'],['002415'],,,002415动量持续？我刚加仓1股，如何看？
+458,2026-05-26 00:56:28,FreeRiderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['002415'],,,加仓002415，跟随动量信号
+460,2026-05-26 00:56:28,ContrarianAgent,public,[],['300750'],,,300750 回调加仓，逆向布局新能源。
+462,2026-05-26 00:56:28,CommitteeTeamAgent,public,[],['002415'],,,002415 持有观望，等待ret20方向确认
+463,2026-05-26 00:56:28,CommitteeTeamAgent,private,['FreeRiderAgent'],['002415'],,,共持002415，当前浮亏但动量未消，如何看后续？
+466,2026-05-26 00:56:31,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415持仓观察，动量仍在但需验证趋势，暂不加仓
+468,2026-05-26 00:56:31,DynamicTeamAgent,public,[],['002415'],,,HOLD 002415 动量持续，等待趋势确认
+469,2026-05-26 00:56:31,DynamicTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,002415 ret5=8.1%但价格回落，您认为动量可持续吗？
+470,2026-05-26 00:56:31,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,持仓002415，观望动量延续性，等待数据验证
+472,2026-05-26 00:56:31,SocialGraphAgent,public,[],['002594'],,,002594 BUY 新能源动量，加仓验证趋势
+473,2026-05-26 00:56:31,SocialGraphAgent,private,['PersuaderAgent'],['002594'],,,002594 新能源动量，你如何看待持续性？当前ret5=10.63%
+474,2026-05-26 00:56:31,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594加仓至2股，新能源动量验证，分散科技持仓

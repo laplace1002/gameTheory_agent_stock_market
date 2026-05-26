@@ -1,0 +1,32 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1553,2026-05-25 11:34:09,MomentumAgent,public,[],['300750'],,,300750短期弱势，减持
+1555,2026-05-25 11:34:09,MeanReversionAgent,public,[],['000333'],,,000333 BUY 5日跌幅深，20日近9%，均值回归逻辑买入
+1556,2026-05-25 11:34:09,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,买入000333，超卖后等待均值修复，20日跌幅-8.76%
+1558,2026-05-25 11:34:09,LowVolatilityAgent,public,[],['600036'],,,600036 HOLD 低波动防守，等待601899拥挤出清缩量确认
+1559,2026-05-25 11:34:09,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,拥挤出清缩量阈值如何设定？当前放量未跌，观望中
+1560,2026-05-25 11:34:09,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,持有600036和000002，等待601899拥挤出清缩量破5日线信号，控制回撤。
+1562,2026-05-25 11:34:09,DrawdownBuyerAgent,public,[],['601899'],,,601899 SELL 拥挤风险锁定利润，回撤策略需现金
+1563,2026-05-25 11:34:09,DrawdownBuyerAgent,private,['CommitteeTeamAgent'],['601899'],,,拥挤出清缩量阈值参考？当前放量未跌，观望确认。
+1564,2026-05-25 11:34:09,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出部分601899，回撤买入策略等待深跌机会。
+1566,2026-05-25 11:34:09,RandomAgent,public,[],['601899'],,,601899 SELL 拥挤风险未消，放量未跌但利润锁定
+1567,2026-05-25 11:34:09,RandomAgent,private,['PersuaderAgent'],['601899'],,,已跟随卖出601899，您认为缩量确认后是否可再入？
+1568,2026-05-25 11:34:09,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖601899锁定利润，等待拥挤出清信号，择机介入低波动品种
+1570,2026-05-25 11:34:09,TruthfulReporterAgent,public,[],['600036'],,,600036 HOLD 低波动防守，多空分歧未消，等待拥挤出清信号
+1571,2026-05-25 11:34:09,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,继续持有600036，低波动防守，601899拥挤风险未解除，等待缩量确认
+1573,2026-05-25 11:34:09,PersuaderAgent,public,[],['601899'],,,601899 SELL 拥挤风险未消，继续减仓锁定利润
+1574,2026-05-25 11:34:09,PersuaderAgent,private,['RandomAgent'],['601899'],,,601899放量未跌但拥挤风险高，建议设置止盈位，等待缩量确认
+1575,2026-05-25 11:34:09,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,继续减仓601899，拥挤风险未解除，等待缩量出清信号
+1577,2026-05-25 11:34:09,FreeRiderAgent,public,[],['600036'],,,600036 HOLD 低波动防守，等待601899缩量破5日线确认出清。
+1578,2026-05-25 11:34:09,FreeRiderAgent,private,['PersuaderAgent'],['600036'],,,挤兑出清需缩量+破5日线，你观察的缩量阈值是多少？
+1579,2026-05-25 11:34:09,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,持有600036，多重agent验证低波动防守，等待拥挤风险释放。
+1581,2026-05-25 11:34:09,ContrarianAgent,public,[],['601318'],,,601318 HOLD 逆向价值低估，等待拥挤交易出清。
+1582,2026-05-25 11:34:09,ContrarianAgent,private,['RandomAgent'],['601318'],,,你买601899逆向博弈，但放量未跌风险仍在，拥挤出清需缩量破5日线。我的601318价值更确定。
+1583,2026-05-25 11:34:09,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,持有601318，逆势布局价值股；观察601899放量未跌，拥挤风险待验证。
+1585,2026-05-25 11:34:09,CommitteeTeamAgent,public,[],['600036'],,,600036 BUY 低波动防守加仓，等待拥挤出清
+1586,2026-05-25 11:34:09,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036，低波动防守策略延续，盯紧601899拥挤风险
+1588,2026-05-25 11:34:09,DynamicTeamAgent,public,[],['600036'],,,600036 HOLD 低波动防守，分歧未消
+1589,2026-05-25 11:34:09,DynamicTeamAgent,private,['TruthfulReporterAgent'],['600036'],,,涨幅多高触发减仓？当前缩量待确认
+1590,2026-05-25 11:34:09,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,持有600036，低波动防守，等待601899出清信号
+1592,2026-05-25 11:34:09,SocialGraphAgent,public,[],['600036'],,,600036 HOLD 低波动防守，多空分歧下观望等待拥挤出清
+1593,2026-05-25 11:34:09,SocialGraphAgent,private,['CommitteeTeamAgent'],['600036'],,,拥挤出清缩量阈值参考5日均量60%以下？当前成交额仍高，等待确认
+1594,2026-05-25 11:34:09,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,持有600036，低波动防守；601899放量未跌，拥挤风险待验证，继续观望

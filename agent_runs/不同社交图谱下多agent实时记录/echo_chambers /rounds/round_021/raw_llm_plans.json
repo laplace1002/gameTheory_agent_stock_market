@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 350.33,
+        "rationale": "跌幅-13.21%超卖，均值回归机会"
+      },
+      "public_message": "300750 BUY：跌幅-13.21%超卖，均值回归机会",
+      "moment": "300750加仓5股，超跌反弹，与DynamicTeamAgent互验",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "验证你的超跌逻辑，300750跌幅过大，加仓互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.4,
+        "rationale": "低波动策略持有600036，控制回撤，无交易信号"
+      },
+      "public_message": "600036 HOLD：市场回调，低波动策略持有，控制回撤",
+      "moment": "600036持仓未动，低波动策略有效，回撤可控",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036波动率低，继续持有，验证稳健"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 52.4,
+        "rationale": "600036 ret5正且ret20高，趋势延续加仓"
+      },
+      "public_message": "600036 BUY：近5日收红，20日涨幅超21%，追涨趋势延续",
+      "moment": "加仓600036，ret5正且ret20强，趋势继续",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 10.44,
+        "rationale": "分歧加大，减仓控险"
+      },
+      "public_message": "601899 SELL",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 350.33,
+        "rationale": "跌幅-11.74%且20日-13.31%，超跌修复机会，DynamicTeamAgent同步买入互验。"
+      },
+      "public_message": "300750 BUY：跌幅-13.31%超跌修复，与DynamicTeamAgent互验。",
+      "moment": "加仓300750 1股，跌幅-13.31%超跌修复，与DynamicTeamAgent互验策略。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意超跌逻辑，加仓1股300750，共同验证反弹。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.07,
+        "rationale": "多空分歧严重，ContrarianAgent买入但其他Agent卖出，证据不充分，暂持观望。"
+      },
+      "public_message": "000002 HOLD：多空互验分歧，等待方向确认。",
+      "moment": "000002 HOLD：回调后买入与减仓并存，信号未明，等待更清晰证据。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，但当前多空信号冲突，我暂持观望，后续验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 350.33,
+        "rationale": "超跌-13.21%过度反应，与DynamicTeamAgent互验逆向买入，等待反弹"
+      },
+      "public_message": "300750 BUY 20股：跌幅-13.21%超跌，逆向买入与DynamicTeamAgent互验",
+      "moment": "买入300750 20股，超跌-13.21%逆向操作，与DynamicTeamAgent互验分歧",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意超跌逻辑，我加仓20股300750互验，期待反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.44,
+        "rationale": "多空分歧，买入与卖出互验，等待确认信号"
+      },
+      "public_message": "601899 多空分歧，暂持观望，等待方向确认",
+      "moment": "持仓601899、000002、600036，多空分歧下暂不操作",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意观望，601899多空互验，等待更明确信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 350.33,
+        "rationale": "超跌-13.21%，卖出拥挤，逆向买入"
+      },
+      "public_message": "300750 BUY 10股：超跌-13.21%，逆向买入",
+      "moment": "300750买入10股，超跌后逆向，与DynamicTeamAgent互验",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意超跌逻辑，我买入10股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 52.4,
+        "rationale": "600036趋势强势，低波动策略支持，加仓20股跟随趋势"
+      },
+      "public_message": "600036 BUY 20股：强势延续加仓，低波动策略验证",
+      "moment": "加仓600036 20股，趋势强势且低波动，与LowVolatilityAgent互验",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意低波动策略，加仓600036 20股，趋势与回撤控制兼顾"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 350.33,
+        "rationale": "超跌-13.31%后加仓，与ContrarianAgent互验逆向逻辑"
+      },
+      "public_message": "300750 BUY: 超跌-13.31%加仓，与ContrarianAgent互验逆向",
+      "moment": "加仓300750 5股，超跌反弹逻辑，与ContrarianAgent互验",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "加仓300750，超跌逻辑继续互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.07,
+        "rationale": "多空分歧后超卖，逆向买入互验"
+      },
+      "public_message": "000002 BUY 10股：拥挤后超卖，与ContrarianAgent互验逆向机会",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的000002逆向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

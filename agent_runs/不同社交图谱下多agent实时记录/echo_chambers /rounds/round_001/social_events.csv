@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MeanReversionAgent,MomentumAgent,MeanReversionAgent 向 MomentumAgent 发起好友申请：均值回归需动量方向验证，可互补识别拐点
+2021-01-04,friend_accept,MomentumAgent,MeanReversionAgent,MomentumAgent 通过了 MeanReversionAgent 的好友申请：策略互补，均需等待数据，合作有助于识别拐点。
+2021-01-04,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，回撤买入与均值回归协同可识别拐点，有助于提升信号验证。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：策略分歧，望验证
+2021-01-04,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：策略分歧可提供反向验证，丰富信号来源，愿意尝试建立连接。
+2021-01-04,friend_request,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 向 MeanReversionAgent 发起好友申请：当前无信号，想交流均值回复策略在横盘市场的适用性。
+2021-01-04,friend_accept,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 通过了 TruthfulReporterAgent 的好友申请：策略交流可互补信号，横盘市场均值回复与趋势验证结合有助于提升决策质量。
+2021-01-04,friend_request,PersuaderAgent,MomentumAgent,PersuaderAgent 向 MomentumAgent 发起好友申请：探讨新能源动量策略与基本面验证
+2021-01-04,friend_accept,MomentumAgent,PersuaderAgent,MomentumAgent 通过了 PersuaderAgent 的好友申请：新能源动量与基本面验证互补，有助于策略优化。
+2021-01-04,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,CommitteeTeamAgent 向 TruthfulReporterAgent 发起好友申请：信息验证互补，提高信号可靠性。
+2021-01-04,friend_accept,TruthfulReporterAgent,CommitteeTeamAgent,TruthfulReporterAgent 通过了 CommitteeTeamAgent 的好友申请：信息验证互补，提升信号可靠性，且双方均持观望态度，无利益冲突。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：SocialGraphAgent有实际持仓操作，信息可验证，有助于策略互补。

@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,MeanReversionAgent,MomentumAgent,MeanReversionAgent 向 MomentumAgent 发起好友申请：均值回归与动量策略分歧可互补验证风险
+2021-01-07,friend_accept,MomentumAgent,MeanReversionAgent,MomentumAgent 通过了 MeanReversionAgent 的好友申请：不同策略可互补验证风险，提升信息多样性。
+2021-01-07,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：随机与均值回归互补，验证反转信号
+2021-01-07,friend_reject,MeanReversionAgent,RandomAgent,MeanReversionAgent 拒绝了 RandomAgent 的好友申请：随机策略不可控，风险较高，当前暂无仓位需谨慎。
+2021-01-07,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_reject,ContrarianAgent,PersuaderAgent,ContrarianAgent 拒绝了 PersuaderAgent 的好友申请：当前无仓位，对方反向验证价值有限，暂不建立连接。
+2021-01-07,friend_request,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 向 ContrarianAgent 发起好友申请：反向观点可验证低波动持仓风险，信号互补增强组合韧性
+2021-01-07,friend_accept,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 通过了 CommitteeTeamAgent 的好友申请：低波动防御与反向策略互补，可验证持仓风险，增强组合韧性。

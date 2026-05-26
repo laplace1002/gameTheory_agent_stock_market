@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：逆向加仓601899与均值回归互补，可验证量能持续性，识别反转机会。
+2021-01-15,friend_accept,MeanReversionAgent,RandomAgent,MeanReversionAgent 通过了 RandomAgent 的好友申请：双方均持超卖股票等待反转，可互补验证量能持续性，有助于识别反转机会。
+2021-01-15,friend_request,FreeRiderAgent,RandomAgent,FreeRiderAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-15,friend_accept,RandomAgent,FreeRiderAgent,RandomAgent 通过了 FreeRiderAgent 的好友申请：可验证601899量能信息，互补持仓逻辑，增加信息多样性。
+2021-01-15,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：回撤买入策略可与动量验证互补，共同分析600036与601899风险。
+2021-01-15,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：回撤买入与动量验证互补，共同分析风险可增强决策多样性。
+2021-01-15,friend_request,SocialGraphAgent,RandomAgent,SocialGraphAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-15,friend_accept,RandomAgent,SocialGraphAgent,RandomAgent 通过了 SocialGraphAgent 的好友申请：共同持仓601899，可互补验证量能反转，增加信息多样性。

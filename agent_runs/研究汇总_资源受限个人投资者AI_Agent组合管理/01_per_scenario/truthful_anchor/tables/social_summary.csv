@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+truthful_anchor,50,2448,1719,448,152,64,60,4,600,545,574,66,132,-3233.856666666667,ContrarianAgent,7854.63

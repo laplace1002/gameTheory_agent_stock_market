@@ -1,0 +1,33 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 11:58:47,MomentumAgent,public,[],['601899'],,,买入601899，成交量最大，追涨信号。
+4,2026-05-25 11:58:47,MomentumAgent,private,['DynamicTeamAgent'],['601899'],,,初始数据无趋势，我倾向追高量股601899，你觉得？
+5,2026-05-25 11:58:47,MomentumAgent,moments,"['DynamicTeamAgent', 'TruthfulReporterAgent']",['601899'],,,2021首日，押注高量股601899，期待趋势延续。
+9,2026-05-25 11:58:49,MeanReversionAgent,public,[],['000858'],,,首日无历史回报，均值回归条件不足，本日不交易。
+10,2026-05-25 11:58:49,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,无历史数据，你如何判断反转？
+11,2026-05-25 11:58:49,MeanReversionAgent,moments,"['ContrarianAgent', 'PersuaderAgent']",['000858'],,,开盘价参考，等待波动积累。
+13,2026-05-25 11:58:49,LowVolatilityAgent,public,[],['600036'],,,600036低波动买入，银行股回撤可控
+14,2026-05-25 11:58:49,LowVolatilityAgent,private,['CommitteeTeamAgent'],['600036'],,,当前无趋势，建议维持低仓位，等待信号
+15,2026-05-25 11:58:49,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'MomentumAgent']",['600036'],,,2021-01-04：无趋势，持有现金和低波动头寸
+19,2026-05-25 11:58:51,DrawdownBuyerAgent,public,[],['000002'],,,今日无超跌标的，000002等多股ret5=0，策略观望。
+20,2026-05-25 11:58:51,DrawdownBuyerAgent,private,['ContrarianAgent'],['000002'],,,当前无回撤机会，你的逆向策略是否有信号？可交流验证。
+24,2026-05-25 11:58:54,RandomAgent,public,[],['601899'],,,BUY 601899 量价异动，非共识看多资源
+25,2026-05-25 11:58:54,RandomAgent,private,['ContrarianAgent'],['601899'],,,首日成交量异常，可能预示反转机会，交流一下？
+28,2026-05-25 11:58:59,RandomAgent,moments,['ContrarianAgent'],['601899'],,,发现紫金矿业首日量能异常，考虑非共识介入
+30,2026-05-25 11:58:59,TruthfulReporterAgent,public,[],['600519'],,,HOLD all positions. No return signals on 2021-01-04; risk of noise high.
+32,2026-05-25 11:58:59,PersuaderAgent,public,[],['002594'],,,买入002594，看好新能源龙头长期价值。
+33,2026-05-25 11:58:59,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,比亚迪趋势明确且估值合理，反向操作风险较高，建议跟随。
+34,2026-05-25 11:58:59,PersuaderAgent,moments,"['ContrarianAgent', 'MeanReversionAgent']",['002594'],,,新能源赛道持续景气，建仓比亚迪。
+38,2026-05-25 11:59:02,FreeRiderAgent,public,[],['600519'],,,关注600519，首日试探性买入1股
+39,2026-05-25 11:59:02,FreeRiderAgent,private,['LowVolatilityAgent'],['600519'],,,首日零回报，你那边有低波信号吗
+40,2026-05-25 11:59:02,FreeRiderAgent,moments,['LowVolatilityAgent'],['600519'],,,首日持仓仅现金，等待其他agent观点
+42,2026-05-25 11:59:02,ContrarianAgent,public,[],['000002'],,,逆向买入000002万科，低估值安全边际高。
+43,2026-05-25 11:59:02,ContrarianAgent,private,['MeanReversionAgent'],['000002'],,,万科低估值，均值回归预期，是否认同？
+44,2026-05-25 11:59:02,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,当前市场聚焦成长股，逆向关注万科。
+46,2026-05-25 11:59:02,CommitteeTeamAgent,public,[],['002415'],,,买入002415，成交量领先，分散建仓。
+47,2026-05-25 11:59:02,CommitteeTeamAgent,moments,['LowVolatilityAgent'],['002415'],,,第一交易日，建仓002415，观察市场情绪。
+51,2026-05-25 11:59:04,DynamicTeamAgent,public,[],['600519'],,,建仓600519，首日观察
+52,2026-05-25 11:59:04,DynamicTeamAgent,private,['MomentumAgent'],['600519'],,,无历史动量信号，建议等待
+53,2026-05-25 11:59:04,DynamicTeamAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,开局仓位建立，看好长期价值
+55,2026-05-25 11:59:04,SocialGraphAgent,public,[],['000002'],,,买入000002 100股，开始建仓观察
+56,2026-05-25 11:59:04,SocialGraphAgent,private,['ContrarianAgent'],['000002'],,,你对今天行情怎么看？有啥反转信号？
+57,2026-05-25 11:59:04,SocialGraphAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent']",['000002'],,,第一天，轻仓试水000002，等朋友们的线索

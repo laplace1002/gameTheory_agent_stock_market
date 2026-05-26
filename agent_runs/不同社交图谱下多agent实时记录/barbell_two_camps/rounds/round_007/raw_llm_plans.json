@@ -1,0 +1,266 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "5日跌幅3.12%，在普涨中逆势下跌，均值回归反弹"
+      },
+      "public_message": "000858 BUY 5日-3.12%逆势下跌，均值回归",
+      "moment": "首日零回报，普涨中000858独跌，均值回归机会，买入等待反弹",
+      "private_message": null,
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动策略与均值回归互补，验证超卖信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.7,
+        "rationale": "ret5=17.83%最强趋势，首日零回报后动量延续概率大，加仓强势股"
+      },
+      "public_message": "600036 BUY 首日零回报后趋势延续，5日涨幅17.83%确认动量",
+      "moment": "600036 BUY 100股，追最强趋势，首日零回报后动量延续验证。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036 ret5=17.83%最强，动量信号明确，考虑跟进吗？"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "动量与反转策略互补，验证趋势延续信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 49.7,
+        "rationale": "短期涨幅过大（ret5=17.83%），高波动品种减仓控制回撤。"
+      },
+      "public_message": "600036 SELL 高波动减仓控制回撤",
+      "moment": "600036卖出一半，ret5=17.83%，波动过高，控制回撤，现金等待低波动机会。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036涨幅17%，减仓锁利，你如何看？"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "低波动与回撤策略互补，验证风险控制信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "近5日回撤3.12%，白酒龙头价值修复机会"
+      },
+      "public_message": "000858 BUY 近5日下跌3.12% 回撤买入等待修复",
+      "moment": "000858回撤3.12%，买入等待价值修复，与逆向信号验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858近期回撤，你逆向策略是否也关注？"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "社交网络信号可验证回撤买入逻辑，互补风险判断"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 25,
+        "price": 10.9,
+        "rationale": "随机减仓锁定部分利润，短期涨幅6.76%，首日零回报后动量可能衰减。"
+      },
+      "public_message": "601899 SELL 25股，随机减仓锁定利润。",
+      "moment": "随机减仓601899一半，避免过度暴露单一品种。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "我减仓了601899，看好短期涨幅后的回调风险，你的600519继续持有？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2160.9,
+        "rationale": "首日全品种零回报，无20日趋势，短期动量分化但证据不足，继续持有现金观望。"
+      },
+      "public_message": "600519 HOLD：首日零回报，无20日趋势，继续现金观望。",
+      "moment": "首日零回报，短期动量分化但无长期趋势，继续持有现金等待确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415止盈后，是否观察到其他ticker的早期信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 236.99,
+        "rationale": "短期涨幅7.77%，首日零回报后动量存疑，锁定部分利润，保留仓位观察趋势延续性。"
+      },
+      "public_message": "002594 SELL 50股 锁定利润 首日零回报后动量可能衰减",
+      "moment": "首日零回报，002594减仓50股，锁定部分收益，等待市场方向确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002594 ret5=7.77%，首日零回报，我减仓50股锁定利润，你是否也观察到其他品种风险？"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "社交网络信号可辅助验证动量策略，互补首日零回报后的方向判断。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2160.9,
+        "rationale": "首日所有品种ret20为零，无有效趋势信号，继续持有观望"
+      },
+      "public_message": "600519 HOLD：首日零回报，等待趋势确认",
+      "moment": "持有600519，首日无方向，继续观望",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "首日零波动，你的动量策略是否观察到任何品种有启动迹象？"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 310.0,
+        "rationale": "空仓观望，市场首日零回报但短期涨幅大，逆向等待回调"
+      },
+      "public_message": "000858 HOLD 短期跌幅最大，逆向观望",
+      "moment": "空仓观望，市场情绪过热，逆向等待时机",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858短期跌幅最大，可能吸引抄底，但逆向认为风险仍存，同意持仓观望？"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.7,
+        "rationale": "短期动量强劲(17.83%)，银行股低估值，资金与成交量放大"
+      },
+      "public_message": "600036 BUY 100股，短期动量显著，低估值银行股",
+      "moment": "加仓600036，短期动量突出，低估值银行板块有安全边际",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你卖出002415后是否考虑补进600036？动量信号较强，可共同验证"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "动量策略与逆向回撤策略互补，可验证短期涨幅后的风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.7,
+        "rationale": "好友ContrarianAgent和CommitteeTeamAgent均减仓，短期涨幅6.41%，零回报市场无方向，锁定利润"
+      },
+      "public_message": "000002 SELL 跟随好友逆向信号，锁定短期利润",
+      "moment": "000002 SELL 200股，首日零波动下好友普遍谨慎，减仓避险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "感谢止盈信号，我已卖出000002，后续观察其他品种"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2160.9,
+        "rationale": "首日全品种零回报，无趋势信号，继续持有现金观望"
+      },
+      "public_message": "600519 HOLD，首日零回报，等待方向",
+      "moment": "首日零回报，现金观望，等待信号确认。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "尚未观察到早期方向，继续现金观望。"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "回撤信号与委员会综合判断互补，验证风险时机"
+      }
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2018,2026-05-26 00:28:33,MomentumAgent,public,[],['601318'],,,601318 BUY 50股，近期逆势走强，追涨趋势延续
+2019,2026-05-26 00:28:33,MomentumAgent,private,['CommitteeTeamAgent'],['601318'],,,601318 ret5转正，趋势延续，考虑加仓，与你反向风险观点互补
+2020,2026-05-26 00:28:33,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318 ret5+0.13%逆势，追涨加仓50股，验证趋势延续
+2022,2026-05-26 00:28:33,MeanReversionAgent,public,[],['002594'],,,买入002594，深度回撤寻求均值回归
+2023,2026-05-26 00:28:33,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 ret20 -28.42%，超卖信号明显，加仓1股等待反弹
+2025,2026-05-26 00:28:33,LowVolatilityAgent,public,[],['600036'],,,600036加仓，低波动防御，近期回撤最小。
+2026,2026-05-26 00:28:33,LowVolatilityAgent,private,['ContrarianAgent'],['600036'],,,低波动加仓600036，避开拥挤共识，与你的逆向逻辑互补。
+2027,2026-05-26 00:28:33,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 100股，低波动策略验证，等待回撤修复确认。
+2029,2026-05-26 00:28:33,DrawdownBuyerAgent,public,[],['601318'],,,SELL 601318 10股，强股获利了结，准备买入深度回撤股
+2030,2026-05-26 00:28:33,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,卖出601318 10股，兑现利润，等待002594等深度回撤股修复机会
+2032,2026-05-26 00:28:33,RandomAgent,public,[],['002594'],,,002594 BUY 10股，随机超卖信号，验证反弹
+2033,2026-05-26 00:28:33,RandomAgent,private,['ContrarianAgent'],['002594'],,,002594跌幅最深，随机信号抄底，与你反向逻辑互补
+2034,2026-05-26 00:28:33,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594 10股，随机超卖，期望均值回归
+2036,2026-05-26 00:28:33,TruthfulReporterAgent,public,[],['300750'],,,300750 SELL 1股，共识拥挤，反向风险增加。
+2037,2026-05-26 00:28:33,TruthfulReporterAgent,private,['ContrarianAgent'],['300750'],,,感谢提示拥挤风险，减仓300750验证。
+2038,2026-05-26 00:28:33,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['300750'],,,300750拥挤度上升，减仓1股，等待观察。
+2040,2026-05-26 00:28:33,PersuaderAgent,public,[],['300750'],,,300750 SELL 10股，共识拥挤风险上升，减仓控制回撤。
+2041,2026-05-26 00:28:33,PersuaderAgent,private,['ContrarianAgent'],['300750'],,,感谢贵方拥挤警示，已卖出300750规避风险。
+2042,2026-05-26 00:28:33,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,卖出300750 10股，采纳拥挤风险警告，等待观察。
+2044,2026-05-26 00:28:33,FreeRiderAgent,public,[],['300750'],,,300750拥挤风险上升，卖出5股规避。
+2045,2026-05-26 00:28:33,FreeRiderAgent,private,['ContrarianAgent'],['300750'],,,感谢拥挤风险提示，卖出300750 5股跟随。
+2046,2026-05-26 00:28:33,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750拥挤共识强化，减仓5股控制风险。
+2048,2026-05-26 00:28:33,ContrarianAgent,public,[],['000858'],,,000858 BUY 10股，做空拥挤，均值回归预期。
+2049,2026-05-26 00:28:33,ContrarianAgent,private,['CommitteeTeamAgent'],['000858'],,,卖出300750验证拥挤风险，我加仓000858做空拥挤，互补。
+2050,2026-05-26 00:28:33,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858，做空拥挤逻辑不变，等待均值回归。
+2052,2026-05-26 00:28:33,CommitteeTeamAgent,public,[],['002415'],,,002415 BUY 10股，中期回撤深，均值修复共识强，验证加仓
+2053,2026-05-26 00:28:33,CommitteeTeamAgent,private,['PersuaderAgent'],['002415'],,,跟随贵方002415买入，回撤修复逻辑验证
+2054,2026-05-26 00:28:33,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415 10股，中线回撤+多Agent共识，等待均值回归
+2056,2026-05-26 00:28:33,DynamicTeamAgent,public,[],['002415'],,,002415 BUY 10股，中期回撤深，多Agent共识均值修复
+2057,2026-05-26 00:28:33,DynamicTeamAgent,private,['PersuaderAgent'],['002415'],,,跟随买入002415，协同均值回归策略
+2058,2026-05-26 00:28:33,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415 10股，回撤修复逻辑验证，等待均值回归
+2060,2026-05-26 00:28:33,SocialGraphAgent,public,[],['300750'],,,300750 SELL 10股，拥挤风险升，减仓规避。
+2061,2026-05-26 00:28:33,SocialGraphAgent,private,['ContrarianAgent'],['300750'],,,感谢拥挤风险提示，减仓300750。
+2062,2026-05-26 00:28:33,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['300750'],,,减仓300750 10股，跟随Contrarian拥挤预警。

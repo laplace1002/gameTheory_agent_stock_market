@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 54.32,
+        "rationale": "600036近期强势，ret5=12%，追涨加仓"
+      },
+      "public_message": "600036 BUY 100: 近期强势，追涨加仓",
+      "moment": "追涨600036，强势信号明显，加仓100股",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 85.11,
+        "rationale": "均值回归卖出强势，回笼资金准备买入超卖标的"
+      },
+      "public_message": "601318 SELL 10: 均值回归卖出强势，回笼资金准备买入超卖",
+      "moment": "601318减仓10股：均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的601318卖出逻辑，我减仓10股验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 85.4,
+        "rationale": "跟随PersuaderAgent逆向信号，降低单一持仓风险，控制回撤"
+      },
+      "public_message": "601318 SELL 10: 逆向信号验证，减仓控制回撤",
+      "moment": "601318减仓10股：拥挤调整验证，低波动降低敞口",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "认同你的601318逆向逻辑，我减仓10股降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.11,
+        "rationale": "多空分歧极端，随机视角逆势加仓验证卖压过度"
+      },
+      "public_message": "601899 BUY 10: 多空分歧极端，随机视角逆势加仓",
+      "moment": "601899 BUY 10: 卖压拥挤，随机视角看反弹机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向买入逻辑我认同，继续加仓验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.11,
+        "rationale": "多空分歧加大，成交量放大但价格窄幅震荡，缺乏明确方向，维持现有仓位观察"
+      },
+      "public_message": "601899多空分歧加大，价格窄幅震荡，暂无明确信号，保持仓位观察",
+      "moment": "601899多空分歧验证中，成交量放大但价格未突破，继续观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入601899基于过度悲观，但多空力量均衡，我暂持观望，后续验证分歧方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 30,
+        "price": 85.4,
+        "rationale": "获利了结部分仓位，腾出资金抄底深跌股"
+      },
+      "public_message": "601318 SELL 30股：获利了结，腾仓抄底深跌股",
+      "moment": "002594回撤超30%，深跌修复机会，卖601318腾仓准备抄底",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的601318卖出逻辑，我减仓30股验证调整"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.11,
+        "rationale": "多人卖出拥挤，ContrarianAgent逆向买入验证过度悲观，跟随买入验证反弹机会"
+      },
+      "public_message": "601899 BUY 10: 跟随ContrarianAgent逆向信号，验证卖出拥挤后反弹",
+      "moment": "601899加仓10股：多空分歧极端，逆向买入验证过度悲观反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向买入逻辑，我加仓10股验证超卖反弹，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 11.25,
+        "rationale": "逆向加仓拥挤卖出，验证过度悲观"
+      },
+      "public_message": "601899 BUY 50: 持续卖压拥挤，逆向加仓验证悲观过度",
+      "moment": "601899 BUY 50: 多人卖出形成持续拥挤，逆向加仓检验悲观是否过度",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "卖出逻辑合理但卖压过度，我继续买入验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 85.4,
+        "rationale": "跟随PersuaderAgent逆向卖出信号，验证拥挤调整风险"
+      },
+      "public_message": "601318 SELL 10: 跟随逆向调整信号，验证拥挤风险",
+      "moment": "601318减仓10股：跟随逆向验证调整信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的601318卖出逻辑，我减仓10股验证调整"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.11,
+        "rationale": "多空分歧未决，ContrarianAgent逆向买入提供支撑，暂持观察"
+      },
+      "public_message": "601899 HOLD：多空分歧加剧但逆向买入验证，等待明确方向",
+      "moment": "601899多空分歧验证，逆向买入与卖出拥挤并存，暂持观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向买入逻辑，我暂持601899观察分歧走向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 11.25,
+        "rationale": "ContrarianAgent大额买入验证卖出拥挤过度，逆向补仓"
+      },
+      "public_message": "601899 BUY 20: 跟随ContrarianAgent逆向验证超卖",
+      "moment": "601899 BUY 20: 多人卖出形成拥挤，逆向买入检验悲观是否过度",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，买入20股验证卖压过度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 54.32,
+        "rationale": "短期强势，跟随动量，多个Agent未关注"
+      },
+      "public_message": "600036 BUY 10: 短期强势，跟随动量",
+      "moment": "600036增仓10股：动量验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594回撤30%+，同意修复逻辑，但波动较大，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

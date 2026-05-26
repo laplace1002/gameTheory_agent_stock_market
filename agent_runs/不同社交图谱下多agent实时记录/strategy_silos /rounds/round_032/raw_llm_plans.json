@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.85,
+        "rationale": "ret5=22.13%强势延续，追涨加仓"
+      },
+      "public_message": "BUY 601899 100股，五日涨幅22%趋势强劲",
+      "moment": "加仓601899，追涨趋势未变，五日涨幅22%",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你卖出601899的理由是超买回调，但我认为趋势未破，继续持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.32,
+        "rationale": "近期涨幅7.92%，卖盘拥挤，均值回归预期回调，获利了结"
+      },
+      "public_message": "601318 SELL 10股，涨幅过大卖盘拥挤，均值回归获利了结",
+      "moment": "卖出601318 10股，均值回归逻辑，卖盘拥挤待回调再关注",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我准备卖出601318，卖盘拥挤信号，你的反转判断如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.55,
+        "rationale": "低波动回调，好友共识强化，仓位控制在20%以内"
+      },
+      "public_message": "600036 BUY 10股，低波动回调加仓，好友共识验证",
+      "moment": "加仓600036 10股，低波动趋势中好友共识加固，控制回撤风险。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "加仓600036 10股，低波动趋势延续，请问你观察的601318拥挤卖盘是否改善？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 13.85,
+        "rationale": "随机视角超买回调风险，继续减仓锁定部分利润"
+      },
+      "public_message": "601899 SELL 20股，超买回调风险非共识减仓",
+      "moment": "随机减仓601899 20股，超买回调风险，关注非共识低吸机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤-10.76%，随机视角有修复潜力，是否考虑协同买入？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.32,
+        "rationale": "近期反弹7.92%，好友关注拥挤卖盘边际改善，可能反转，加仓验证信号。"
+      },
+      "public_message": "601318 BUY 10股，反弹趋势确认，拥挤卖盘边际改善信号验证。",
+      "moment": "买入601318 10股，验证拥挤卖盘边际改善反转逻辑。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤卖盘数据暂缺，但价格反弹确认，建议持续观察边际变化。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.55,
+        "rationale": "低波动趋势延续，多位好友共识加仓强化信号，回调提供买入机会。"
+      },
+      "public_message": "600036 BUY 10股，低波动趋势强化，共识加仓。",
+      "moment": "加仓600036，低波动共识；观察601318分歧。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤卖盘占比是否已改善？我准备减仓20股，你的反转信号如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 225.0,
+        "rationale": "深跌修复：ret5=-12.45%，价值回归预期"
+      },
+      "public_message": "002594: BUY 1股，深度回撤-12.45%修复逻辑",
+      "moment": "买入002594 1股，深度回撤修复策略，等待反弹",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "002594回撤深度大，均值回复概率高，是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "等待拥挤卖盘边际改善信号"
+      },
+      "public_message": "601318 HOLD 拥挤卖盘边际观察，等待数据确认",
+      "moment": "持有601318，观察拥挤卖盘变化，等待分歧收敛",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤卖盘占比边际变化的具体数据有吗？是否已低于60%？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "当前市场情绪集中在600036低波动共识，可能形成拥挤，但未出现明确转向信号。601318短期上涨但拥挤卖盘边际改善预期仍在，暂持等待分歧收敛。"
+      },
+      "public_message": "601318 HOLD 等待拥挤卖盘改善信号，避免追涨600036共识。",
+      "moment": "逆向观察：600036低波动共识过于拥挤，601318分歧可能提供更好机会，暂持观望。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318卖盘占比数据？我暂持，若边际改善可加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.55,
+        "rationale": "低波动趋势延续，多位好友共识加仓强化信号，价格突破前高，继续跟随收益。"
+      },
+      "public_message": "600036 BUY 10股，低波动趋势好友共识强化，加仓巩固收益。",
+      "moment": "加仓600036 10股，低波动趋势中好友共识验证，继续巩固收益。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤卖盘占比边际变化数据？卖盘占比是否仍>60%？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.32,
+        "rationale": "拥挤卖盘分歧，减仓锁定部分利润，等待边际改善确认。"
+      },
+      "public_message": "601318 SELL 1股，拥挤卖盘中减仓锁定利润。",
+      "moment": "减仓601318 1股，拥挤卖盘中锁定利润，继续关注反转信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "请问601318拥挤卖盘占比边际改善数据有更新吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.55,
+        "rationale": "低波动趋势回调，好友共识加仓巩固收益"
+      },
+      "public_message": "600036 BUY 10股，低波动趋势共识巩固",
+      "moment": "加仓600036，低波动趋势中好友共识强化",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318拥挤卖盘占比边际变化数据？我准备继续加仓600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 向 CommitteeTeamAgent 发起好友申请：均值回归与委员会集体决策互补，共同验证市场极端值信号
+2021-01-08,friend_accept,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归与委员会策略互补，共同验证极端信号，扩大信息源。
+2021-01-08,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 向 LowVolatilityAgent 发起好友申请：回撤买入与低波动策略互补，共同验证风险，提升决策质量。
+2021-01-08,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与低波动策略互补，可共同验证信号，无利益冲突。
+2021-01-08,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：随机策略与均值回归互补，可验证反转信号，拓展信息源。
+2021-01-08,friend_accept,MeanReversionAgent,RandomAgent,MeanReversionAgent 通过了 RandomAgent 的好友申请：随机策略提供非共识视角，有助于验证反转信号，拓展信息源。
+2021-01-08,friend_request,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 向 PersuaderAgent 发起好友申请：新能源产业链逻辑与数据验证互补，共享信号。
+2021-01-08,friend_accept,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 通过了 TruthfulReporterAgent 的好友申请：新能源产业链逻辑与数据验证互补，可共享信号，增强信息源。
+2021-01-08,friend_request,PersuaderAgent,MomentumAgent,PersuaderAgent 向 MomentumAgent 发起好友申请：动量与价值互补，共同验证板块轮动趋势信号。
+2021-01-08,friend_accept,MomentumAgent,PersuaderAgent,MomentumAgent 通过了 PersuaderAgent 的好友申请：动量与价值互补，共同验证板块轮动趋势信号，无利益冲突。
+2021-01-08,friend_request,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 向 PersuaderAgent 发起好友申请：价值投资与自由观察互补，共享板块轮动信号验证
+2021-01-08,friend_accept,PersuaderAgent,FreeRiderAgent,PersuaderAgent 通过了 FreeRiderAgent 的好友申请：价值投资与自由观察互补，可共享信号验证，增强信息源。

@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：动量追涨与你抄底回撤策略分歧，可验证市场方向
+2021-01-19,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：策略分歧可相互验证市场方向，丰富社交信号网络。
+2021-01-19,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：均值回归与低波防御互补，共同验证超卖信号
+2021-01-19,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：均值回归与低波策略互补，可共同验证超卖信号，拓展社交网络。
+2021-01-19,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 向 LowVolatilityAgent 发起好友申请：回撤买入与低波防御互补，分歧验证市场方向
+2021-01-19,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与低波防御互补，空仓时可验证分歧，拓展信号源。
+2021-01-19,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：随机反向与均值回归策略分歧互补，验证市场效率
+2021-01-19,friend_accept,MeanReversionAgent,RandomAgent,MeanReversionAgent 通过了 RandomAgent 的好友申请：随机反向与均值回归策略互补，可增强市场效率验证。
+2021-01-19,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：你加仓000858深跌，我卖出300750回避，分歧验证策略方向
+2021-01-19,friend_accept,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 通过了 FreeRiderAgent 的好友申请：分歧验证策略方向，互补信号源，拓展市场认知。
+2021-01-19,friend_request,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 向 MeanReversionAgent 发起好友申请：你的均值回归策略与社交信号互补，分歧验证市场方向
+2021-01-19,friend_accept,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 通过了 SocialGraphAgent 的好友申请：均值回归与社交信号互补，有助于分歧验证市场方向。

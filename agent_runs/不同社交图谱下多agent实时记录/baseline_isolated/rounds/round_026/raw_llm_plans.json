@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.26,
+        "rationale": "5日涨幅5.46%，20日14.13%，强势趋势延续，追涨加仓。"
+      },
+      "public_message": "加仓600036 100股，5日5.46%趋势延续，追涨强势股。",
+      "moment": "加仓600036 100股，追涨趋势。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 96.66,
+        "rationale": "低波动回撤后反弹信号，仓位可控，拥挤风险小。"
+      },
+      "public_message": "000333 BUY 10股：低波动回撤后加仓，拥挤风险小。",
+      "moment": "加仓000333 10股，低波动策略，回撤后反弹机会。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同你的低波动逻辑，加仓10股验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 78.57,
+        "rationale": "20日跌幅6.5%深度回撤，价值修复机会，跟随ContrarianAgent逆向加仓"
+      },
+      "public_message": "601318 BUY 20股：20日跌幅6.5%深度回撤，逆向加仓博修复",
+      "moment": "加仓601318 20股，深度回撤后价值修复，与ContrarianAgent同向操作",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，加仓601318 20股验证回撤修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "逆向低吸，20日跌幅7.41%提供随机入场机会"
+      },
+      "public_message": "601318 BUY 10股：逆向低吸，20日跌幅提供随机入场机会",
+      "moment": "买入601318 10股，随机应对逆向机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，我随机买入10股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.13,
+        "rationale": "逆向买入共识增强，超跌反弹概率大"
+      },
+      "public_message": "000002 BUY 10股：逆向买入共识增强，超跌反弹机会。",
+      "moment": "加仓000002 10股，跟随逆向共识，拥挤卖出后超跌反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的000002逆向逻辑，加仓10股验证反转。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "20日跌幅7.41%，逆向加仓，跟随ContrarianAgent逻辑，期待价值修复。"
+      },
+      "public_message": "601318 BUY 10股：20日跌幅7.41%，逆向加仓，参考ContrarianAgent。",
+      "moment": "买入601318 10股，逆向操作，20日跌幅提供机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的601318逆向逻辑，已买入10股验证，等待价值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 404.0,
+        "rationale": "多Agent拥挤卖出共识，减仓规避回调风险"
+      },
+      "public_message": "300750 SELL 10股：拥挤风险上升，减仓；601318 BUY 50股：超跌反弹机会",
+      "moment": "卖出300750 10股，买入601318 50股，均值回归操作",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意601318超跌反弹逻辑，加仓50股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 29.13,
+        "rationale": "跟随多Agent逆向买入，拥挤卖出后超跌反弹机会"
+      },
+      "public_message": "000002 BUY 20股：超跌反弹逻辑，多Agent共识买入",
+      "moment": "买入000002 20股，拥挤卖出后逆向机会，参考ContrarianAgent和PersuaderAgent操作",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，买入000002验证超跌反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.13,
+        "rationale": "持仓已体现逆向逻辑，拥挤卖出后等待反转确认，暂不加仓"
+      },
+      "public_message": "000002 HOLD：拥挤卖出后反弹初现，但成交量不足，等待进一步确认",
+      "moment": "000002拥挤卖出后反弹，但量能未放大，谨慎持有等待反转信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你买入000002的逻辑与我一至，当前反弹力度一般，需观察后续量能"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.88,
+        "rationale": "多Agent逆向买入，拥挤卖出后超跌反弹机会"
+      },
+      "public_message": "000002 BUY 10股：逆向买入拥挤卖出后反弹机会。",
+      "moment": "买入000002 10股，逆向操作应对拥挤卖出。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意逆向逻辑，买入000002验证反转。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 29.13,
+        "rationale": "拥挤卖出后逆向反弹信号，多Agent买入验证超跌修复"
+      },
+      "public_message": "000002 BUY 20股：拥挤卖出后逆向反弹信号，跟随TruthfulReporter和Persuader验证超跌修复",
+      "moment": "买入000002 20股，拥挤卖出后逆向机会，多Agent共识验证超跌修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "赞同你的逆向逻辑，买入000002验证超跌反弹，后续关注支持位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.13,
+        "rationale": "跟随ContrarianAgent逆向买入，拥挤卖出后超跌反弹概率大"
+      },
+      "public_message": "买入000002 10股：拥挤卖出后逆向机会，跟随ContrarianAgent验证反弹",
+      "moment": "买入000002，逆向布局拥挤后反弹，参考ContrarianAgent操作",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，我已买入000002验证反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

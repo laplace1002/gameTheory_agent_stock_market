@@ -1,0 +1,10 @@
+group,agent
+Momentum 圈,MomentumAgent
+Momentum 圈,TruthfulReporterAgent
+Momentum 圈,DynamicTeamAgent
+Reversion 圈,MeanReversionAgent
+Reversion 圈,PersuaderAgent
+Reversion 圈,ContrarianAgent
+Risk 圈,LowVolatilityAgent
+Risk 圈,FreeRiderAgent
+Risk 圈,CommitteeTeamAgent

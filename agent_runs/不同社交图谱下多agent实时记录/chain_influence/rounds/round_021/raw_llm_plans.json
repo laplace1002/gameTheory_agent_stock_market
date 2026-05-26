@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.66,
+        "rationale": "拥挤交易风险上升，ContrarianAgent做空，短期回调概率大，暂避锋芒"
+      },
+      "public_message": "002415 SELL 100股：拥挤共识过强，逆向信号出现，获利了结",
+      "moment": "002415卖空100股，群体乐观过头，等回调再接",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你002415做空逻辑，拥挤风险已现，我跟随卖出"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.44,
+        "rationale": "回笼现金，为买入超跌300750做准备，601899近期弱势，5日回撤-5.52%"
+      },
+      "public_message": "SELL 601899 100股，回笼现金，准备买入超跌300750反弹机会。",
+      "moment": "卖出601899 100股，现金回笼。300750 20日跌幅-13.31%，超卖严重，关注均值回归机会。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你买入300750超跌-13.21%，我拟跟进，先卖出601899腾现金，验证均值回归逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.4,
+        "rationale": "市场整体回调，600036近期波动低、防御性好，继续持有等待风险释放。"
+      },
+      "public_message": "600036 HOLD：市场回调，低波动防御，继续持有。",
+      "moment": "600036 HOLD，低波动防御，等待市场明朗。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036持仓不动，低波动策略应对回调。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 52.4,
+        "rationale": "非共识获利了结，锁利部分"
+      },
+      "public_message": "600036 SELL 50股：非共识获利了结",
+      "moment": "卖出600036 50股，随机锁利",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的002415做空与我的随机卖出600036都属逆向，策略互补验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.66,
+        "rationale": "拥挤交易风险上升，逆向信号出现，暂持观望量能持续性"
+      },
+      "public_message": "002415 HOLD：多空分歧加剧，拥挤风险上升，暂观望",
+      "moment": "002415持仓等待方向，拥挤与逆向并存",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415逆向逻辑与我持仓风险互补，交流风控"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 79.27,
+        "rationale": ""
+      },
+      "public_message": "601318 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.4,
+        "rationale": "低波动防御，银行龙头抗跌"
+      },
+      "public_message": "600036 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.66,
+        "rationale": "拥挤交易风险上升，ContrarianAgent做空信号，减仓锁定部分利润"
+      },
+      "public_message": "002415 SELL 100股：拥挤度上升，逆向做空信号，减仓锁定利润",
+      "moment": "减仓002415 100股，控制拥挤风险，等待量能明确方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向做空逻辑已验证，我减仓100股002415，后续观察回调确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.66,
+        "rationale": "002415多空分歧，拥挤风险上升，ContrarianAgent逆向做空，但趋势未破，暂持观望"
+      },
+      "public_message": "002415 持仓观望：多空分歧，拥挤风险，等待量价确认",
+      "moment": "002415 多空博弈加剧，持仓观望，控制风险，等待信号明朗",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解做空逻辑，但趋势尚未破坏，继续持有多头，后续关注回调深度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.0,
+        "rationale": "拥挤度加剧，逆向加仓做空，预期均值回归。"
+      },
+      "public_message": "002415 SELL 100股：拥挤度加剧，逆向加仓做空。",
+      "moment": "002415加空100股，群体共识已达极致，等待均值回归。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002415回调目标看量能，若缩量则看60附近，风控设止损在65上方。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.66,
+        "rationale": "社交共识分歧，ContrarianAgent做空，拥挤风险上升，暂持观望"
+      },
+      "public_message": "002415 HOLD：多空分歧加剧，社交拥挤度上升，等待量能确认",
+      "moment": "002415持仓观望，社交图谱显示影响力集中但反向信号出现，控制风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤风险确认，你的逆向逻辑有参考价值，后续关注回调幅度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.66,
+        "rationale": "多空分歧加大，拥挤风险上升，逆向做空信号出现，减仓锁定部分利润"
+      },
+      "public_message": "002415 SELL 100股：拥挤风险上升，逆向信号确认，减仓观望",
+      "moment": "002415减仓100股，拥挤交易风险释放前先离场观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，减仓002415避风险，后续验证回调幅度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

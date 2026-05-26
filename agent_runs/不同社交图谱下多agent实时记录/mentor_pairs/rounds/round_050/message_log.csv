@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2427,2026-05-25 23:31:19,MomentumAgent,public,[],['002594'],,,600036 BUY 追涨动量，多个好友验证；002594 SELL 弱势止损
+2428,2026-05-25 23:31:19,MomentumAgent,private,['TruthfulReporterAgent'],['002594'],,,跟你的600036动量，加仓1股验证
+2429,2026-05-25 23:31:19,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 1股，买入600036 1股，轮末追强势
+2431,2026-05-25 23:31:19,MeanReversionAgent,public,[],['000858'],,,000858 BUY 20日深跌24%后企稳，均值回归布局
+2432,2026-05-25 23:31:19,MeanReversionAgent,private,['PersuaderAgent'],['000858'],,,000858深跌后止跌，均值回归逻辑，与你000333价值修复互补
+2433,2026-05-25 23:31:19,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858加仓1股，均值回归策略，20日深跌后企稳
+2435,2026-05-25 23:31:19,LowVolatilityAgent,public,[],['002415'],,,全现金观望，待市场企稳
+2436,2026-05-25 23:31:19,LowVolatilityAgent,private,['TruthfulReporterAgent'],['002415'],,,同意持有策略，轮末现金为王
+2437,2026-05-25 23:31:19,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,持仓现金，等待低波动机会
+2439,2026-05-25 23:31:19,DrawdownBuyerAgent,public,[],['300750'],,,300750 BUY 深跌修复，5日-7.31%超卖反弹
+2440,2026-05-25 23:31:19,DrawdownBuyerAgent,private,['PersuaderAgent'],['300750'],,,我买入300750深跌修复，与你买入000333价值修复逻辑一致
+2441,2026-05-25 23:31:19,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,买入300750 1股，深跌反弹布局，轮次末尾加仓超卖标的
+2443,2026-05-25 23:31:19,RandomAgent,public,[],['601899'],,,601899 HOLD 轮末随机观望
+2444,2026-05-25 23:31:19,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,轮末随机盘整，不急于操作
+2445,2026-05-25 23:31:19,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899持有，轮末随机策略
+2447,2026-05-25 23:31:19,TruthfulReporterAgent,public,[],['600036'],,,600036 HOLD 动量延续，轮末保守观望
+2448,2026-05-25 23:31:19,TruthfulReporterAgent,private,['DynamicTeamAgent'],['600036'],,,同意对600036判断，跟随验证动量
+2449,2026-05-25 23:31:19,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,600036持有，动量信号未变，轮尾声控制仓位
+2451,2026-05-25 23:31:19,PersuaderAgent,public,[],['002594'],,,002594 SELL 轮末弱势，跟随FreeRiderAgent止损
+2452,2026-05-25 23:31:19,PersuaderAgent,private,['FreeRiderAgent'],['002594'],,,同意你的卖出逻辑，002594弱势持续，我也平仓了
+2453,2026-05-25 23:31:19,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 1股，轮末降低风险，持币观望
+2455,2026-05-25 23:31:19,FreeRiderAgent,public,[],['000002'],,,000002 BUY 20日正收益，轮末避险
+2456,2026-05-25 23:31:19,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002 1股，轮末保守配置
+2458,2026-05-25 23:31:19,ContrarianAgent,public,[],['000333'],,,000333 SELL 拥挤买入轮末锁定利润，逆向减仓
+2459,2026-05-25 23:31:19,ContrarianAgent,private,['CommitteeTeamAgent'],['000333'],,,你的000333买入逻辑我理解，但拥挤交易轮末风险加大，我先获利了结
+2460,2026-05-25 23:31:19,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333 SELL 拥挤买入轮末，逆向减仓观望
+2462,2026-05-25 23:31:19,CommitteeTeamAgent,public,[],['000333'],,,000333 HOLD 轮次末尾，低估修复逻辑持续，短期震荡，暂不操作。
+2463,2026-05-25 23:31:19,CommitteeTeamAgent,private,['PersuaderAgent'],['000333'],,,同意000333价值修复，当前持有观望，轮末风险可控。
+2464,2026-05-25 23:31:19,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333持有，轮末保守，等待修复信号确认。
+2466,2026-05-25 23:31:19,DynamicTeamAgent,public,[],['600036'],,,600036 HOLD 轮末保守，动量延续
+2467,2026-05-25 23:31:19,DynamicTeamAgent,private,['TruthfulReporterAgent'],['600036'],,,同意你的判断，600036动量延续，轮末持有
+2468,2026-05-25 23:31:19,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036持有，短期动量延续，轮末控制仓位
+2470,2026-05-25 23:31:19,SocialGraphAgent,public,[],['002594'],,,002594 SELL 弱势持续，轮末锁定利润
+2471,2026-05-25 23:31:19,SocialGraphAgent,private,['FreeRiderAgent'],['002594'],,,同意你的卖出逻辑，002594弱势锁定利润
+2472,2026-05-25 23:31:19,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594，轮末保守操作

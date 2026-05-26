@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 63.2,
+        "rationale": "追涨最强趋势，ret5=10.41%，量能配合，预期延续"
+      },
+      "public_message": "002415 BUY 1股，近5日涨幅10.4%，追涨强势趋势。",
+      "moment": "追涨002415，ret5+10.4%，量能强劲，趋势延续。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415强势，我追涨买入，与您持仓交叉验证趋势延续性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 296.95,
+        "rationale": "均值回归反弹后减仓锁定利润"
+      },
+      "public_message": "000858 减仓1股，反弹幅度有限，锁定利润",
+      "moment": "减仓000858，等待超跌机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对300750的看法，我已减仓000858"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 100.1,
+        "rationale": "低波动正收益，仓位分散，控制回撤"
+      },
+      "public_message": "000333 BUY 1，低波动正收益，分散仓位",
+      "moment": "建仓000333，低波动防御，等待量能确认",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2070.0,
+        "rationale": "600519 ret5 -3%，回调深度吸引，逢低买入价值修复"
+      },
+      "public_message": "600519 BUY 1股，近期-3%回调，逢低买入价值修复。",
+      "moment": "买入600519，关注超跌反弹机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对300750的减仓，我逢低买入600519验证回调修复。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2070.0,
+        "rationale": "非共识超跌，逆向布局验证反弹"
+      },
+      "public_message": "600519 BUY 1股，非共识超跌逆向布局，验证反弹概率。",
+      "moment": "买入600519，非共识超跌逆向验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600519非共识超跌，与您逆向思路呼应，验证反转概率。"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "非共识与跟随策略互补，交叉验证市场情绪。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 52.64,
+        "rationale": "拥挤风险上升，Multiple agents卖出/观望，获利了结"
+      },
+      "public_message": "600036 SELL，拥挤信号增强，规避回调风险",
+      "moment": "卖出600036，拥挤度上升，保存现金等待机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对600036拥挤的判断，我卖出避险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 52.64,
+        "rationale": "600036拥挤信号强化，DynamicTeamAgent和ContrarianAgent均提示风险，短期获利了结，避免回调。"
+      },
+      "public_message": "600036 SELL，拥挤度上升，获利了结，关注低波机会。",
+      "moment": "卖出600036，拥挤风险确认，锁定利润；留现金等待低波动或超跌机会。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你对600036拥挤的判断，已卖出锁定利润，后续可交叉验证超跌标的反弹时机。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.64,
+        "rationale": "600036拥挤风险上升，其他agent卖出信号增多，暂持观察趋势确认"
+      },
+      "public_message": "600036 HOLD，拥挤度增加，等待信号明确",
+      "moment": "持仓600036和002415，等待信号收敛，关注超跌机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，暂持600036验证回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 63.2,
+        "rationale": "002415短期涨幅较大，锁利规避回调风险"
+      },
+      "public_message": "002415 卖出50股，短期涨幅较大，获利了结",
+      "moment": "卖出002415，锁定收益，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "卖出002415锁定利润，后续关注超跌标的如000858或601899的反弹机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2070.0,
+        "rationale": "ret5=-3%超跌，逆向布局反弹"
+      },
+      "public_message": "600519 BUY 1，超跌逆向机会，预期反弹",
+      "moment": "买入600519，逆向布局超跌反弹",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600519超跌逆向，与你的超跌策略互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 52.64,
+        "rationale": "拥挤风险上升，多个agent减持或提示风险，获利了结回避回调"
+      },
+      "public_message": "600036 SELL，拥挤风险上升，获利了结，回避回调",
+      "moment": "卖出600036，避让拥挤，锁定利润，等待超跌机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对600036拥挤的判断，已卖出避险，验证回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 63.2,
+        "rationale": "002415 ret5=10.41%放量突破，量能支撑强劲，跟随动量验证趋势延续。"
+      },
+      "public_message": "002415 BUY 1，强势突破量能配合，验证趋势延续。",
+      "moment": "买入002415，动量确认，等待进一步信号。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415放量突破，与你持仓互补，验证上涨有效性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

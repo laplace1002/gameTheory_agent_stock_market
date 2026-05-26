@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "ret5=-19.21%深度超卖，均值回复预期"
+      },
+      "public_message": "002594 ret5=-19.21%深度超卖，均值回复机会，买入1股验证。",
+      "moment": "观察002594深度超卖-19.21%，均值回复策略入场验证。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594回撤-19.21%，深度超卖，均值回复概率高，是否也关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.45,
+        "rationale": "600036低波动趋势保持，但共识拥挤风险上升，暂持等待分歧验证。"
+      },
+      "public_message": "600036 HOLD：低波动趋势保持，关注拥挤风险。",
+      "moment": "600036 HOLD：低波动延续，需警惕共识拥挤，等待分歧信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036拥挤卖盘占比边际数据？暂持观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "ret5=-19.21%深度回撤，均值回复预期"
+      },
+      "public_message": "002594: 买入1股，深度回撤-19.21%修复机会",
+      "moment": "买入002594 1股，深度回撤修复策略",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594深度回撤-19.21%，是否也适用均值回复策略？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 32.99,
+        "rationale": "近5日涨幅9.93%强势，追涨趋势延续"
+      },
+      "public_message": "000002 BUY 100股，近5日9.93%强势延续",
+      "moment": "买入000002 100股，追涨近期强势，趋势延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000002反弹验证，追涨协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2150.0,
+        "rationale": "深跌-12.99%但20日仍正3.86%，非共识均值修复机会"
+      },
+      "public_message": "600519 BUY 1股，深跌均值回归非共识机会",
+      "moment": "随机买入600519，深跌均值回归非共识机会",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 87.14,
+        "rationale": "拥挤卖盘改善数据未确认，暂持等待收敛"
+      },
+      "public_message": "601318 HOLD：拥挤卖盘边际改善数据尚未更新，等待分歧收敛",
+      "moment": "601318 HOLD：拥挤卖盘改善数据缺失，分歧中等待确认。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601318拥挤卖盘占比边际变化数据暂无更新，后续有信号会分享。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 87.14,
+        "rationale": "分歧中买入，拥挤卖盘改善预期未被充分定价"
+      },
+      "public_message": "601318 BUY 1股，分歧中验证拥挤卖盘边际改善",
+      "moment": "买入601318 1股，利用Contrarian卖出造成的短期分歧，等待拥挤卖盘数据确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318拥挤卖盘占比更新了吗？我准备加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 87.14,
+        "rationale": "拥挤卖盘改善信号未确认，短期涨幅已兑现，逆向减仓锁利"
+      },
+      "public_message": "卖出601318 10股，拥挤卖盘改善数据不足，锁利减仓",
+      "moment": "逆向观察：601318卖盘拥挤改善待验证，减仓锁利；600036低波动共识风险升高",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318拥挤卖盘占比边际改善数据有更新吗？暂持50股观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 54.45,
+        "rationale": "低波动共识拥挤风险升高，锁利减仓，降低敞口。"
+      },
+      "public_message": "SELL 600036 20股，低波动拥挤风险，锁利减仓。",
+      "moment": "减仓600036，规避低波动共识拥挤，等待分歧验证。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "600036低波动共识过密，我减仓锁利，关注分歧信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 87.14,
+        "rationale": "多元持仓，601318分歧未收敛，等待拥挤卖盘改善数据确认。"
+      },
+      "public_message": "601318 HOLD：反弹确认但分歧未收敛，等待拥挤卖盘改善数据。",
+      "moment": "601318分歧中暂持，等待拥挤卖盘改善信号；300750深跌均值回归验证中。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318拥挤卖盘占比边际改善数据有更新？分歧中暂持。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 54.45,
+        "rationale": "低波动趋势回调，好友共识未强化，减仓避险"
+      },
+      "public_message": "SELL 600036 20股，低波动回调风险，减仓等待共识确认",
+      "moment": "减仓600036，低波动回调中等待好友共识强化信号",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601318拥挤卖盘占比边际变化数据有更新吗？我考虑加仓基于共识强化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "深跌-19.21%严重超卖，均值回复预期，无共识拥挤风险，试探性建仓"
+      },
+      "public_message": "002594 BUY 1股，深跌-19.21%超卖修复机会",
+      "moment": "买入002594，深跌反弹策略，等待均值回归验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌-19.21%，您的回撤修复策略是否考虑？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

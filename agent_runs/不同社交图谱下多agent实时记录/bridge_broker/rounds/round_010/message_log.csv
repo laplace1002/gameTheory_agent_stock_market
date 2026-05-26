@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+518,2026-05-25 14:30:44,MomentumAgent,public,[],['600036'],,,600036 BUY 100股，银行动量9.74%强势延续，分歧验证趋势
+519,2026-05-25 14:30:44,MomentumAgent,private,['PersuaderAgent'],['600036'],,,加仓600036强化动量，与你做多共振
+520,2026-05-25 14:30:44,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['600036'],,,600036加仓，银行动量领先，分歧中做多趋势
+522,2026-05-25 14:30:44,MeanReversionAgent,public,[],['000858'],,,000858 BUY 100股，ret5跌9.24%超卖，均值回归机会
+523,2026-05-25 14:30:44,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000858'],,,000858超卖反弹，与回撤策略互补
+524,2026-05-25 14:30:44,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,000858 BUY：超卖9.24%反弹
+528,2026-05-25 14:30:50,LowVolatilityAgent,public,[],['000002'],,,000002 HOLD：低波防御有效，分歧中继续持有
+529,2026-05-25 14:30:50,LowVolatilityAgent,private,['FreeRiderAgent'],['000002'],,,000002低波防御，与你观点一致，分歧验证中
+530,2026-05-25 14:30:50,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,000002 HOLD：低波防御，分歧待确认
+532,2026-05-25 14:30:50,DrawdownBuyerAgent,public,[],['000858'],,,000858 BUY 1股，深跌9.24%回撤买入，价值修复
+533,2026-05-25 14:30:50,DrawdownBuyerAgent,private,['PersuaderAgent'],['000858'],,,我加仓000858回撤，与你动量策略互补验证市场分歧
+534,2026-05-25 14:30:50,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 BUY，深跌9.24%，等待价值修复
+538,2026-05-25 14:30:55,RandomAgent,public,[],['000858'],,,000858 BUY 100股，跌幅放量随机反向，分歧验证超卖
+539,2026-05-25 14:30:55,RandomAgent,private,['ContrarianAgent'],['000858'],,,你空600036超买，我多000858超卖，分歧互补验证反转
+540,2026-05-25 14:30:55,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,000858 BUY：随机反向超卖，等待分歧验证
+544,2026-05-25 14:30:59,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD：动量与反转信号冲突，等待确认
+545,2026-05-25 14:30:59,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['002415'],,,你卖出002415基于反转，但我看到ret5仍为正，能否分享具体反转证据？
+546,2026-05-25 14:30:59,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415持仓，分歧中动量尚在，但反转信号增多，保持警惕
+548,2026-05-25 14:30:59,PersuaderAgent,public,[],['002415'],,,002415 SELL：反转信号强化，委员会已离场，分歧验证后减仓
+549,2026-05-25 14:30:59,PersuaderAgent,private,['TruthfulReporterAgent'],['002415'],,,002415反转信号确认，我跟随卖出，验证分歧
+551,2026-05-25 14:30:59,FreeRiderAgent,public,[],['000002'],,,000002 HOLD：低波防御，分歧待确认。
+552,2026-05-25 14:30:59,FreeRiderAgent,private,['PersuaderAgent'],['000002'],,,你的600036动量与Contrarian反转分歧，我持低波观望，验证方向。
+553,2026-05-25 14:30:59,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 HOLD，低波防御，等待分歧验证。
+557,2026-05-25 14:31:02,ContrarianAgent,public,[],['000002'],,,000002 HOLD：现金观望，超买600036反转风险高，等待均值回归
+558,2026-05-25 14:31:02,ContrarianAgent,private,['CommitteeTeamAgent'],['000002'],,,你的002415卖出验证了我的反转信号，继续关注600036超买机会
+559,2026-05-25 14:31:02,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,600036超买9.74%，拥挤多头，等待均值回归验证
+561,2026-05-25 14:31:02,CommitteeTeamAgent,public,[],['000333'],,,SELL 000333：短期动量转弱，分歧验证后离场
+562,2026-05-25 14:31:02,CommitteeTeamAgent,private,['ContrarianAgent'],['000333'],,,卖出000333匹配反转逻辑，与你空600036互补
+563,2026-05-25 14:31:02,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,SELL 000333，反转信号占优，等待新机会
+565,2026-05-25 14:31:02,DynamicTeamAgent,public,[],['300750'],,,300750 SELL 2股：跌幅5.92%无反弹确认，分歧验证风险加大，止损
+566,2026-05-25 14:31:02,DynamicTeamAgent,private,['RandomAgent'],['300750'],,,我平300750空仓，与你做空002415分歧互补，验证市场方向
+567,2026-05-25 14:31:02,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750 SELL 2股：跌幅大无趋势，分歧验证中止损离场，等待新信号
+569,2026-05-25 14:31:02,SocialGraphAgent,public,[],['002415'],,,002415 SELL：委员会减仓确认反转，跟随社交媒体信号
+570,2026-05-25 14:31:02,SocialGraphAgent,private,['CommitteeTeamAgent'],['002415'],,,跟随你卖出002415，确认反转
+571,2026-05-25 14:31:02,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['002415'],,,002415 SELL：社交分歧解决，反转信号占优

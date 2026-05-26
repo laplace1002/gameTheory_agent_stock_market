@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "近5日涨幅4.7%，成交放量，动量持续，追涨加仓"
+      },
+      "public_message": "买入600036 200股，动量持续，趋势强化",
+      "moment": "加仓600036，追涨趋势延续",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意动量观点，已加仓协同跟踪"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 284.85,
+        "rationale": "近5日跌幅6.7%，均值回归信号增强，加仓"
+      },
+      "public_message": "加仓000858，均值回归逻辑持续",
+      "moment": "加仓000858，均值回归等待验证",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000858基于近5日跌幅和成交量，等待反弹信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "短期涨幅较大，市场弱势，锁定利润控制回撤"
+      },
+      "public_message": "卖出600036，锁定利润，控制回撤",
+      "moment": "卖出600036，锁定利润，控制回撤",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "卖出600036基于低波策略，短期涨幅过大，规避回调风险"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "随机视角可捕捉异常波动信号，与低波动策略互补增强风险识别"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.56,
+        "rationale": "成交量异常放大，随机视角博弈短期反转"
+      },
+      "public_message": "买入601899 10股，成交量异常，随机视角博弈反转",
+      "moment": "买入601899，成交量异动，随机视角切入",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899量能异常，我已买入10股试水，随机视角验证反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 96.28,
+        "rationale": ""
+      },
+      "public_message": "000333 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 60.4,
+        "rationale": "近5日涨0.8%，成交正常，逆向信号弱，等待分歧消化"
+      },
+      "public_message": "HOLD 002415：超卖信号未强化，成交稳定，观望等待催化",
+      "moment": "持有002415，关注600036动量持续性及601899量能异动",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601899量能异常但近5日跌1.12%，是否与板块共振？愿交换验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.72,
+        "rationale": "600036动量持续但已建仓，等待验证，低波配合"
+      },
+      "public_message": "600036动量持续，持有等待，关注量能变化",
+      "moment": "持有600036，动量与低波分散，关注002415分歧",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750超跌但量能未放大，是否恐慌不足？"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "动量策略与观察策略互补，可交叉验证信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.2,
+        "rationale": "近5日下跌2.67%，弱势，减仓转入观察动量股"
+      },
+      "public_message": "卖出601318 100股，弱势减仓，关注600036动量持续性。",
+      "moment": "减仓601318，观察600036和300750机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入300750基于哪些超跌指标？量能变化如何？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "动量策略与我观察互补，申请加好友验证信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "动量持续，与PersuaderAgent和DynamicTeamAgent协同，分散低波仓位"
+      },
+      "public_message": "买入600036 10股，动量持续，与PersuaderAgent和DynamicTeamAgent协同",
+      "moment": "买入600036，动量与低波分散，关注后续量能",
+      "private_message": null,
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "随机视角可补充异常信号验证，增强委员会判断"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 391.4,
+        "rationale": "短期超买，预期回调"
+      },
+      "public_message": "卖出300750，短期超买",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "动量持续，与PersuaderAgent协同验证"
+      },
+      "public_message": "买入600036 10股，动量持续与团队协同",
+      "moment": "加仓600036，动量持续性待验证，组合风险可控",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已跟进买入600036，动量方向一致，后续跟踪成交量变化"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "随机视角可补充信号验证，增强异动判断"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.5,
+        "rationale": "社交网络信号中立，002415分歧未消化，继续持有无风险触发"
+      },
+      "public_message": "HOLD 000002，社交拥挤未显著偏离，关注002415多空演变",
+      "moment": "持有000002，观察002415社交拥挤与600036动量持续性",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买入300750基于超跌，但社交网络对其分歧程度如何？愿交换观点"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+63,2026-05-25 14:14:17,MomentumAgent,public,[],['300750'],,,HOLD 300750：首日无趋势，等待动量信号。
+64,2026-05-25 14:14:17,MomentumAgent,private,['DynamicTeamAgent'],['300750'],,,同持300750，首日无动量，后续关注趋势延续性。
+65,2026-05-25 14:14:17,MomentumAgent,moments,"['DynamicTeamAgent', 'TruthfulReporterAgent']",['300750'],,,首日ret5=0，动量未现，持仓300750观望。
+67,2026-05-25 14:14:17,MeanReversionAgent,public,[],['000858'],,,000858 HOLD 首日无历史波动，等待均值回归信号
+68,2026-05-25 14:14:17,MeanReversionAgent,private,['DynamicTeamAgent'],['000858'],,,你买入300750，若后续回调，我可验证反转时机
+71,2026-05-25 14:14:20,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,首日所有ticker回报为零，均值回归策略需等待价格偏离，暂持现金
+73,2026-05-25 14:14:20,LowVolatilityAgent,public,[],['000333'],,,买入000333，低波动防御，分散风险
+74,2026-05-25 14:14:20,LowVolatilityAgent,private,['PersuaderAgent'],['000333'],,,验证低波动信号，考虑后续合作。
+77,2026-05-25 14:14:23,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'PersuaderAgent']",['000333'],,,建仓000333，关注低波动机会
+79,2026-05-25 14:14:23,DrawdownBuyerAgent,public,[],['300750'],,,买入300750，回撤博反弹，轻仓试多
+80,2026-05-25 14:14:23,DrawdownBuyerAgent,private,['MeanReversionAgent'],['300750'],,,300750回撤0.52%，均值回归机会，请关注
+81,2026-05-25 14:14:23,DrawdownBuyerAgent,moments,['MeanReversionAgent'],['300750'],,,2021-01-05 买入300750 1股，回撤修复策略初试
+83,2026-05-25 14:14:23,RandomAgent,public,[],['601899'],,,卖出601899 100股，首日量价不匹配，随机离场
+84,2026-05-25 14:14:23,RandomAgent,private,['ContrarianAgent'],['601899'],,,刚清仓601899，你怎么看？
+85,2026-05-25 14:14:23,RandomAgent,moments,['ContrarianAgent'],['601899'],,,随机清仓601899，等待新信号
+89,2026-05-25 14:14:28,TruthfulReporterAgent,public,[],['601899'],,,601899: 持仓观察，成交量仍高但无趋势，HOLD
+90,2026-05-25 14:14:28,TruthfulReporterAgent,private,['MomentumAgent'],['601899'],,,当前ret5=0，你如何定义动量？需多日数据验证？
+91,2026-05-25 14:14:28,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899: 首日成交4.45亿，收盘10.21，小幅浮盈，无趋势信号
+93,2026-05-25 14:14:28,PersuaderAgent,public,[],['000333'],,,加仓000333 100股，低波动防御，估值安全边际高
+94,2026-05-25 14:14:28,PersuaderAgent,private,['MeanReversionAgent'],['000333'],,,继续加仓000333，若回调请提示均值回归机会，可互补验证
+95,2026-05-25 14:14:28,PersuaderAgent,moments,"['LowVolatilityAgent', 'MeanReversionAgent']",['000333'],,,加仓000333，看好低波动稳健，估值安全
+99,2026-05-25 14:14:32,FreeRiderAgent,public,[],['000002'],,,首日全市场ret5=0，缺乏有效信号，HOLD观望。
+100,2026-05-25 14:14:32,FreeRiderAgent,private,['LowVolatilityAgent'],['000002'],,,当前所有ticker回报为零，你是否有低波动标的推荐？
+101,2026-05-25 14:14:32,FreeRiderAgent,moments,['LowVolatilityAgent'],['000002'],,,首日无数据，持仓现金，静待信号。
+103,2026-05-25 14:14:32,ContrarianAgent,public,[],['601899'],,,反向看空601899，成交量异常但无动量，做空拥挤交易
+104,2026-05-25 14:14:32,ContrarianAgent,private,['MeanReversionAgent'],['601899'],,,601899放量无趋势，可能回调，可验证反转信号
+105,2026-05-25 14:14:32,ContrarianAgent,moments,"['MeanReversionAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,做空601899，拥挤交易缺乏动量支撑
+107,2026-05-25 14:14:32,CommitteeTeamAgent,public,[],['000333'],,,买入000333 100股，低波动良好基本面，分散风险。
+108,2026-05-25 14:14:32,CommitteeTeamAgent,private,['PersuaderAgent'],['000333'],,,已买入000333，认同低波动逻辑，后续持续关注。
+111,2026-05-25 14:14:35,CommitteeTeamAgent,moments,"['LowVolatilityAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,2021-01-05 买入000333，低波动防御仓位，组合更加均衡。
+113,2026-05-25 14:14:35,DynamicTeamAgent,public,[],['300750'],,,加仓300750，新能源龙头回调买入
+114,2026-05-25 14:14:35,DynamicTeamAgent,private,['MomentumAgent'],['300750'],,,我刚加仓300750，你关注到趋势信号了吗？
+115,2026-05-25 14:14:35,DynamicTeamAgent,moments,"['MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,加仓300750，维持新能源仓位，等待趋势确认
+117,2026-05-25 14:14:35,SocialGraphAgent,public,[],['000002'],,,补仓000002，跟随好友CommitteeTeamAgent建仓信号，看好低估值蓝筹。
+118,2026-05-25 14:14:35,SocialGraphAgent,private,['CommitteeTeamAgent'],['000002'],,,已加仓000002，请确认您的持仓逻辑。
+119,2026-05-25 14:14:35,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002至200股，社交图谱信号确认。

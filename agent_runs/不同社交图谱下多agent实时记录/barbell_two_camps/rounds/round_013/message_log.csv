@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+675,2026-05-25 12:15:08,MomentumAgent,public,[],['600036'],,,600036 SELL 短期涨幅过大，部分止盈锁定利润
+676,2026-05-25 12:15:08,MomentumAgent,private,['CommitteeTeamAgent'],['600036'],,,同意你止盈判断，我卖出100股锁定利润
+677,2026-05-25 12:15:08,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036减仓，保留部分仓位观察趋势延续性
+679,2026-05-25 12:15:08,MeanReversionAgent,public,[],['000333'],,,000333 BUY 短期超跌，均值回归试探
+680,2026-05-25 12:15:08,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000333'],,,同意000333超跌判断，小仓跟进验证均值回归
+681,2026-05-25 12:15:08,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,买入000333，利用短期超跌反弹，分散组合风险
+683,2026-05-25 12:15:08,LowVolatilityAgent,public,[],['600036'],,,600036 SELL 1股止盈，短期涨幅过大，控制回撤
+684,2026-05-25 12:15:08,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,600036短期涨幅大，多空分歧，我减1股控制回撤，保留部分观察
+685,2026-05-25 12:15:08,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,卖出1股600036，保留部分仓位，关注回撤风险
+687,2026-05-25 12:15:08,DrawdownBuyerAgent,public,[],['000333'],,,000333 加仓，短期跌幅扩大，价值修复空间增大。
+688,2026-05-25 12:15:08,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，利用更深回撤摊低成本。
+690,2026-05-25 12:15:08,RandomAgent,public,[],['002594'],,,002594 BUY 非共识超跌反弹，最大跌幅无人关注
+691,2026-05-25 12:15:08,RandomAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594跌幅最大但无人提及，是否非共识超跌机会？
+692,2026-05-25 12:15:08,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594，非共识超跌反弹，赌无人关注的超卖。
+694,2026-05-25 12:15:08,TruthfulReporterAgent,public,[],['600036'],,,600036 SELL 短期涨幅大且卖出信号密集，止盈观望
+695,2026-05-25 12:15:08,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['600036'],,,同意600036减仓判断，我卖出现有持仓锁定利润
+696,2026-05-25 12:15:08,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,600036止盈，留意000858超跌反弹共识拥挤风险
+698,2026-05-25 12:15:08,PersuaderAgent,public,[],['600036'],,,600036 SELL 部分止盈，短期涨幅过大，多空分歧加剧。
+699,2026-05-25 12:15:08,PersuaderAgent,private,['CommitteeTeamAgent'],['600036'],,,同意600036减仓判断，短期过热，卖出10股锁定利润。
+700,2026-05-25 12:15:08,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，锁定部分利润，关注000858均值回归。
+702,2026-05-25 12:15:08,FreeRiderAgent,public,[],['000858'],,,000858 HOLD 等待均值回归验证，控制拥挤风险
+703,2026-05-25 12:15:08,FreeRiderAgent,private,['SocialGraphAgent'],['000858'],,,感谢你的加仓信号，我暂持验证，后续可协同
+704,2026-05-25 12:15:08,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,持有000858和600519，等待超跌反弹确认，不追高600036
+706,2026-05-25 12:15:08,ContrarianAgent,public,[],['000858'],,,000858 SELL 反弹共识过度拥挤，逆向止盈
+707,2026-05-25 12:15:08,ContrarianAgent,private,['FreeRiderAgent'],['000858'],,,000858加仓后共识过强，我选择卖出，建议验证均值回归失败风险
+708,2026-05-25 12:15:08,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,卖出000858，共识拥挤信号，持有现金等待逆向机会
+710,2026-05-25 12:15:08,CommitteeTeamAgent,public,[],['000333'],,,000333买入10股，超跌后价值修复，分散组合风险
+711,2026-05-25 12:15:08,CommitteeTeamAgent,private,['DrawdownBuyerAgent'],['000333'],,,认同你000333逆向买入逻辑，小仓跟随验证
+712,2026-05-25 12:15:08,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,买入000333，超跌反弹测试，平衡组合
+714,2026-05-25 12:15:08,DynamicTeamAgent,public,[],['600036'],,,600036 SELL 部分止盈，短期涨幅过大
+715,2026-05-25 12:15:08,DynamicTeamAgent,private,['CommitteeTeamAgent'],['600036'],,,同意600036减仓判断，我已卖出10股锁定利润
+716,2026-05-25 12:15:08,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，保留超跌反弹仓位
+718,2026-05-25 12:15:08,SocialGraphAgent,public,[],['000858'],,,000858 HOLD 多空分歧中均值回归逻辑仍在，暂不加减
+719,2026-05-25 12:15:08,SocialGraphAgent,private,['PersuaderAgent'],['000858'],,,000858多空分歧，我暂持观察，若回调再考虑加仓
+720,2026-05-25 12:15:08,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,持有000858，等待均值回归确认，不追高600036

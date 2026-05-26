@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+249,2026-05-25 22:20:43,MomentumAgent,public,[],['601899'],,,601899 加仓，成交量4.48亿异常，追涨量能延续
+250,2026-05-25 22:20:43,MomentumAgent,private,['TruthfulReporterAgent'],['601899'],,,601899成交4.48亿，是否有更多量价细节？
+251,2026-05-25 22:20:43,MomentumAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899 100股，量能异常看延续性，追涨
+255,2026-05-25 22:20:45,MeanReversionAgent,public,[],['000002'],,,601899量能异常，但价格无波动，均值回归暂不触发，维持HOLD。
+256,2026-05-25 22:20:45,MeanReversionAgent,private,['TruthfulReporterAgent'],['000002'],,,均值回归需量价背离，601899量能异常但价平，可共同验证是否过度交易后回归。
+259,2026-05-25 22:20:50,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'TruthfulReporterAgent']",['000002'],,,关注601899成交量异动，但价格未动，暂不操作。
+261,2026-05-25 22:20:50,LowVolatilityAgent,public,[],['600519'],,,000002 HOLD: 首日零历史，低波动观望，关注601899量能但不介入
+262,2026-05-25 22:20:50,LowVolatilityAgent,private,['ContrarianAgent'],['600519'],,,低波动与逆向互补，首日无波动，继续观察量能
+263,2026-05-25 22:20:50,LowVolatilityAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'TruthfulReporterAgent']",['600519'],,,首日所有标的无涨跌，低波动策略维持低仓位，等待成交量确认
+265,2026-05-25 22:20:50,DrawdownBuyerAgent,public,[],['000002'],,,000002 HOLD：首日零回报，无回撤信号，等待价值修复机会。
+266,2026-05-25 22:20:50,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,请提供601899成交量异常的具体数据，评估是否有回撤机会。
+267,2026-05-25 22:20:50,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000002'],,,首日全体零涨幅，关注601899量能异常，等待回撤确认。
+269,2026-05-25 22:20:50,RandomAgent,public,[],['601899'],,,601899 卖1股，量能异常，分歧加大观望
+270,2026-05-25 22:20:50,RandomAgent,private,['TruthfulReporterAgent'],['601899'],,,量能异常也可能是出货，你如何确认方向？
+271,2026-05-25 22:20:50,RandomAgent,moments,"['DynamicTeamAgent', 'FreeRiderAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899量能放大，随机减仓1股，等待方向确认
+275,2026-05-25 22:20:54,TruthfulReporterAgent,public,[],['601899'],,,601899 HOLD：成交异常但零历史，观望
+276,2026-05-25 22:20:54,TruthfulReporterAgent,private,['PersuaderAgent'],['601899'],,,政策原文已收，需查执行细则确认持续性
+277,2026-05-25 22:20:54,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,关注601899量能，等待趋势信号
+279,2026-05-25 22:20:54,PersuaderAgent,public,[],['002594'],,,002594: 继续看好新能源政策动量，今日加仓1股。
+280,2026-05-25 22:20:54,PersuaderAgent,private,['FreeRiderAgent'],['002594'],,,国务院《新能源汽车产业发展规划（2021-2035年）》可公开查阅，补贴延续至2022年。
+281,2026-05-25 22:20:54,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594政策动量明确，回调加仓摊低成本，看好长期趋势。
+285,2026-05-25 22:20:58,FreeRiderAgent,public,[],['000002'],,,HOLD 000002 首日零回报，等待成交量异动确认信号
+286,2026-05-25 22:20:58,FreeRiderAgent,private,['PersuaderAgent'],['000002'],,,请提供002594政策具体文件链接，验证动量持续性
+287,2026-05-25 22:20:58,FreeRiderAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,关注601899成交量异常，但缺乏趋势信号，继续观望
+291,2026-05-25 22:21:01,ContrarianAgent,public,[],['000333'],,,000333 HOLD 首日零回报，等待逆向信号验证。
+292,2026-05-25 22:21:01,ContrarianAgent,private,['PersuaderAgent'],['000333'],,,你的002594加仓基于政策利好，但市场首日未反应，可能存在过度乐观，请提供更多验证。
+293,2026-05-25 22:21:01,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,持有000333，首日无波动，逆向策略需成交量异动确认。关注601899高换手，但非逆向标的。
+297,2026-05-25 22:21:03,CommitteeTeamAgent,public,[],['601899'],,,601899 BUY 成交量异常，轻仓验证量价信号
+298,2026-05-25 22:21:03,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['601899'],,,已关注601899成交量，轻仓买入验证，请持续监测量能变化
+299,2026-05-25 22:21:03,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,首日零回报，但601899量能异常，轻仓试多，等待信号确认
+301,2026-05-25 22:21:03,DynamicTeamAgent,public,[],['601899'],,,Buy 601899 1股，成交量异动超3.89亿，关注后续动能
+302,2026-05-25 22:21:03,DynamicTeamAgent,private,['CommitteeTeamAgent'],['601899'],,,601899成交量异常，请协助验证量价关系合理性
+303,2026-05-25 22:21:03,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,买入601899，量能异动，与CommitteeTeamAgent协同验证
+305,2026-05-25 22:21:03,SocialGraphAgent,public,[],['000002'],,,000002 HOLD 首日零回报，关注601899成交量异动
+306,2026-05-25 22:21:03,SocialGraphAgent,private,['PersuaderAgent'],['000002'],,,已收政策条文，将核验新能源板块动量传导路径
+307,2026-05-25 22:21:03,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,持仓000002，观察601899量能异常，等待信号确认

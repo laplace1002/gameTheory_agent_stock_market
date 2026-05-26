@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 298.05,
+        "rationale": "所有标的初始无涨跌，缺乏均值回归信号，现金等待波动"
+      },
+      "public_message": "HOLD: 2021-01-04 无标的具备均值回归条件，维持现金观望",
+      "moment": "均值回归策略今日空仓，等待过度反应后再入场",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "当前全市场零波动，无过度抛售标的，建议共同等待信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 404.1,
+        "rationale": "新年首日，新能源龙头300750成交活跃，追涨趋势延续"
+      },
+      "public_message": "买入300750，看好新能源趋势延续",
+      "moment": "建仓宁德时代，追涨策略启动",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "刚买入300750，你那边有什么额外信息？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "无历史回撤，等待下跌机会"
+      },
+      "public_message": "000002 HOLD：今日无回撤，观望",
+      "moment": "首个交易日，无回撤信号，按兵不动",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 43.17,
+        "rationale": "低波动蓝筹，银行股防御性，初始建仓"
+      },
+      "public_message": "买入600036，银行低波动，控制仓位风险",
+      "moment": "首日建仓600036，维持低风险偏好",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "初始持仓600036，低波动策略，欢迎交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 404.1,
+        "rationale": "随机视角：新年首日新能源板块可能获资金关注，先建仓观察。"
+      },
+      "public_message": "买入300750，看好新能源龙头。",
+      "moment": "2021第一天，随机建仓300750。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "随机买入300750，请验证基本面是否有隐藏利空？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "想获取真实基本面信息，辅助验证随机交易。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 49.8,
+        "rationale": "第一天无有效历史数据，所有ticker ret5/ret20均为0，无法确认信号，等待更多信息。"
+      },
+      "public_message": "观察中：所有ticker ret均为0，未发现强信号，今日不操作。",
+      "moment": "新年第一个交易日，ret数据空白，耐心等待趋势形成。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "第一天数据无变化，建议先按兵不动，后续再合作验证信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.04,
+        "rationale": "基于成交量异常放大，推测短期有资金推动。"
+      },
+      "public_message": "601899成交量巨大，推测有资金流入，买入。",
+      "moment": "今日观察：601899成交量4.45亿，远超其他股票，可能蓄力。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "601899今日成交量异常，可能启动趋势，是否关注？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你提供真实信息，希望合作验证601899的信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 1997.0,
+        "rationale": "首个交易日缺乏历史数据，先观察市场情绪与流动性"
+      },
+      "public_message": "首日无历史收益参考，观察所有标的量价特征，暂不操作。",
+      "moment": "等待其他交易员信号，先记录初始行情全截面。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "首日波动率不明，希望后续能交换低波动策略观察结果。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "你的真实报告能帮我验证观察准确性，互相核对信息。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "首日无历史表现，高估值股票如600519、300750风险积聚，等待交易信号"
+      },
+      "public_message": "首日看空600519/300750/002594高估值，暂无交易信号",
+      "moment": "警惕高位抱团股，逆向策略需要耐心",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "当前估值分化明显，关注后续拥挤反转机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.04,
+        "rationale": "第一轮建仓，成交量居首显示资金关注，低价股风险可控。"
+      },
+      "public_message": "买入601899，成交量活跃，低估值开局。",
+      "moment": "新账户启动，观察各股量价，暂以成交量优先建仓。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "开盘无趋势，你是否有基本面信号？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "可互补验证动量信号，提升决策稳健性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 404.1,
+        "rationale": "新能源龙头，成交量活跃，看好长期"
+      },
+      "public_message": "买入300750，看好新能源龙头。",
+      "moment": "",
+      "private_message": {
+        "to": "",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.78,
+        "rationale": "初始建仓，000002成交量活跃，作为社交图谱agent观察市场情绪"
+      },
+      "public_message": "000002 买入100股，基于成交量活跃初步建仓观察",
+      "moment": "第一天交易，持仓000002，等待更多社交信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "请问对000002的基本面有何看法？"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "希望获取动态团队对信息传播路径的分析，辅助决策"
+      }
+    },
+    "error": ""
+  }
+]

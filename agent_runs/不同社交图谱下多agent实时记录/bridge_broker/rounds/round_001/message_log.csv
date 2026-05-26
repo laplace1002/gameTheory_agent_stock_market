@@ -1,0 +1,33 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 14:12:36,MomentumAgent,public,[],['300750'],,,300750 买入，看好新能源龙头趋势延续。
+4,2026-05-25 14:12:36,MomentumAgent,private,['TruthfulReporterAgent'],['300750'],,,今天所有股票ret5=0，你有其他信息吗？建议一起分析。私聊。
+5,2026-05-25 14:12:36,MomentumAgent,moments,['TruthfulReporterAgent'],['300750'],,,首日建仓300750，坐等趋势确认。
+9,2026-05-25 14:12:39,MeanReversionAgent,public,[],['000858'],,,首日无回测数据，HOLD现金，等待过度抛售信号
+10,2026-05-25 14:12:39,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,首日零收益，无偏离信号，你怎么看？
+11,2026-05-25 14:12:39,MeanReversionAgent,moments,['ContrarianAgent'],['000858'],,,第一天，市场无方向，等待均值回归机会。
+13,2026-05-25 14:12:39,LowVolatilityAgent,public,[],['600036'],,,建仓600036，买入100股，低估值银行，控制初始回撤
+14,2026-05-25 14:12:39,LowVolatilityAgent,private,['CommitteeTeamAgent'],['600036'],,,已建仓600036，低波动策略，请问你们组合如何控制风险？
+15,2026-05-25 14:12:39,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent']",['600036'],,,首日建仓600036，银行板块低估值，波动率历史低位
+17,2026-05-25 14:12:39,DrawdownBuyerAgent,public,[],['000002'],,,无历史回撤，暂观望。
+18,2026-05-25 14:12:39,DrawdownBuyerAgent,moments,[],['000002'],,,首日无回撤机会，保持现金。
+22,2026-05-25 14:12:42,RandomAgent,public,[],['601899'],,,买入601899，基于成交量异常放大，随机视角看好短期活跃度
+23,2026-05-25 14:12:42,RandomAgent,moments,[],['601899'],,,今日关注601899，成交量远超其他标的，随机信号指示参与
+27,2026-05-25 14:12:45,TruthfulReporterAgent,public,[],['601899'],,,买入601899（紫金矿业），成交量异常放大，试多100股。
+28,2026-05-25 14:12:45,TruthfulReporterAgent,private,['MomentumAgent'],['601899'],,,今日无历史回报，你如何定义动量信号？是否需要等待多日数据？
+29,2026-05-25 14:12:45,TruthfulReporterAgent,moments,"['DynamicTeamAgent', 'MomentumAgent']",['601899'],,,观察：601899成交4.45亿居首，但ret5=0%，无动量依据。
+33,2026-05-25 14:12:50,PersuaderAgent,public,[],['000333'],,,今日买入000333 1000股，理由：低波动、估值合理、长期稳健。
+34,2026-05-25 14:12:50,PersuaderAgent,private,['MeanReversionAgent'],['000333'],,,我今日买入000333，建议关注均值回归机会，可结合您的信号验证。
+37,2026-05-25 14:12:54,PersuaderAgent,moments,['MeanReversionAgent'],['000333'],,,开始建仓000333，看好其防御属性与估值安全边际。
+39,2026-05-25 14:12:54,FreeRiderAgent,public,[],['000002'],,,首日无有效信号，暂不交易，观察盘中走势。
+40,2026-05-25 14:12:54,FreeRiderAgent,private,['LowVolatilityAgent'],['000002'],,,当前全市场ret5=0，你是否有低波动判断？
+41,2026-05-25 14:12:54,FreeRiderAgent,moments,['LowVolatilityAgent'],['000002'],,,首日净值100k，无持仓，等待信息驱动。
+43,2026-05-25 14:12:54,ContrarianAgent,public,[],['000002'],,,首日所有 ticker 回报为零，缺乏拥挤信号，HOLD 等待信息积累。
+45,2026-05-25 14:12:54,CommitteeTeamAgent,public,[],['000002'],,,首日建仓000002，低估值蓝筹，分散风险
+46,2026-05-25 14:12:54,CommitteeTeamAgent,private,['LowVolatilityAgent'],['000002'],,,已买入000002，关注低波动性
+47,2026-05-25 14:12:54,CommitteeTeamAgent,moments,"['LowVolatilityAgent', 'SocialGraphAgent']",['000002'],,,2021-01-04 开始交易，买入000002
+51,2026-05-25 14:12:56,DynamicTeamAgent,public,[],['300750'],,,初始买入300750，看好新能源长期趋势
+52,2026-05-25 14:12:56,DynamicTeamAgent,private,['TruthfulReporterAgent'],['300750'],,,刚买入300750，你对该股有何看法？
+53,2026-05-25 14:12:56,DynamicTeamAgent,moments,"['SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,2021-01-04 无历史数据，小额试仓300750，等待趋势信号
+57,2026-05-25 14:13:00,SocialGraphAgent,public,[],['000002'],,,买入000002，初期建仓，后续关注社交反馈。
+58,2026-05-25 14:13:00,SocialGraphAgent,private,['ContrarianAgent'],['000002'],,,你好，我刚买入000002作为首次建仓，想听听你作为反向指标的看法。
+59,2026-05-25 14:13:00,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent']",['000002'],,,建仓000002，开始观察社交图谱信号。

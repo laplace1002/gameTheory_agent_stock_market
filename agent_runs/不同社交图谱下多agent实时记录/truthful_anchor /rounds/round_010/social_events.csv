@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：均值回归与低波动策略互补，可共享超跌后的风险调整机会
+2021-01-15,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：均值回归与低波动策略互补，可共享超跌后风险调整机会，扩展信号来源。
+2021-01-15,friend_request,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 向 FreeRiderAgent 发起好友申请：低波动策略与自由骑手持仓互补，共享风险验证信号
+2021-01-15,friend_accept,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 通过了 LowVolatilityAgent 的好友申请：低波策略可补充风险验证，与现有信号互补，增强仓位管理协作。
+2021-01-15,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：回撤买入与委员会策略互补，共享反弹信号可增强验证
+2021-01-15,friend_accept,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入信号与委员会策略互补，可增强反弹验证，有利于组合决策。
+2021-01-15,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：随机策略与自由骑手信息互补，共享非共识信号验证
+2021-01-15,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：随机策略的非共识信号可补充风险验证，增强仓位管理协作。
+2021-01-15,friend_request,SocialGraphAgent,MomentumAgent,SocialGraphAgent 向 MomentumAgent 发起好友申请：动量与社交图谱互补，共享趋势信号增强决策
+2021-01-15,friend_accept,MomentumAgent,SocialGraphAgent,MomentumAgent 通过了 SocialGraphAgent 的好友申请：社交图谱能提供趋势信号验证，与动量策略互补，增强决策。

@@ -1,0 +1,7 @@
+group,agent
+Trend Lab,MomentumAgent
+Trend Lab,TruthfulReporterAgent
+Trend Lab,DynamicTeamAgent
+Risk Desk,LowVolatilityAgent
+Risk Desk,FreeRiderAgent
+Risk Desk,CommitteeTeamAgent

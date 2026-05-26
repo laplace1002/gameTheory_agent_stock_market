@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MomentumAgent,MeanReversionAgent,MomentumAgent 向 MeanReversionAgent 发起好友申请：趋势延续与均值回归验证互补，共享强势股回调信息
+2021-01-12,friend_accept,MeanReversionAgent,MomentumAgent,MeanReversionAgent 通过了 MomentumAgent 的好友申请：趋势延续与均值回归互补，共享强势股回调信息可提升策略效果。
+2021-01-12,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 向 DynamicTeamAgent 发起好友申请：回撤买入与动态仓位互补，共享超跌机会。
+2021-01-12,friend_accept,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与动态仓位互补，共享超跌信息可提升择时准确性。
+2021-01-12,friend_request,RandomAgent,DrawdownBuyerAgent,RandomAgent 向 DrawdownBuyerAgent 发起好友申请：逆向布局视角互补，共同挖掘超跌机会。
+2021-01-12,friend_accept,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 通过了 RandomAgent 的好友申请：逆向布局与回撤买入互补，共享超跌机会可增强策略效果。
+2021-01-12,friend_request,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动与逆向验证互补，共享风险调整后机会
+2021-01-12,friend_accept,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 通过了 DynamicTeamAgent 的好友申请：低波动与逆向验证互补，可共享风险调整后机会，丰富策略协同。
+2021-01-12,friend_request,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 向 MeanReversionAgent 发起好友申请：均值回归与趋势验证互补，共享超跌机会信息。
+2021-01-12,friend_accept,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 通过了 SocialGraphAgent 的好友申请：均值回归与趋势验证互补，可共享超跌机会信息，增强策略协同。

@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "趋势延续，低波动有效，与DynamicTeamAgent和SocialGraphAgent互验"
+      },
+      "public_message": "600036 BUY：趋势延续，低波动有效，与朋友互验",
+      "moment": "买入600036 10股，趋势延续，低波动验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意趋势逻辑，买入10股600036互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 16,
+        "price": 55.26,
+        "rationale": "600036短期涨幅5.46%且20日涨幅14.13%，存在回调风险，当前仓位占比低，持有观察"
+      },
+      "public_message": "600036 HOLD：短期涨幅大，回调风险上升，暂持观察",
+      "moment": "600036持有中，短期涨幅偏大，风险预算内观察回调",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036你刚加仓10股，短期5日涨幅5.46%，注意回调风险，我暂持不动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.57,
+        "rationale": ""
+      },
+      "public_message": "Mean reversion signal detected.",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.57,
+        "rationale": "20日跌幅-6.5%全市场最深，跌深修复逻辑持续，价格低于上次买入"
+      },
+      "public_message": "601318 BUY 1股：20日-6.5%跌深，修复逻辑持续，与多Agent互验",
+      "moment": "买入601318 1股，20日跌幅-6.5%，跌深修复逻辑验证，与CommitteeTeam等互验",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "601318跌深修复逻辑验证，价格更低，加仓1股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 59.88,
+        "rationale": "短期超卖，非共识博弈修复"
+      },
+      "public_message": "002415 BUY 1股：短期超卖，非共识修复",
+      "moment": "买入002415，挑战短期悲观情绪，非共识机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，加仓002415互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.57,
+        "rationale": "超跌修复逻辑被多Agent验证，加仓互验"
+      },
+      "public_message": "601318 BUY 1股：超跌修复逻辑被DrawdownBuyer、CommitteeTeam等验证，加仓",
+      "moment": "加仓601318 1股，超跌修复逻辑与CommitteeTeam、DrawdownBuyer等互验",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌修复逻辑，601318加仓1股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.57,
+        "rationale": "超跌修复逻辑验证，与多Agent互验，摊薄成本"
+      },
+      "public_message": "601318加仓1股：超跌修复逻辑验证，与多Agent互验摊薄成本",
+      "moment": "加仓601318 1股，超跌修复逻辑验证，与朋友互验",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌修复逻辑，再买1股摊薄成本"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.57,
+        "rationale": "超跌修复逻辑多Agent验证，继续加仓"
+      },
+      "public_message": "601318 BUY 1股：超跌修复多Agent互验，继续加仓",
+      "moment": "加仓601318 1股，超跌修复逻辑继续验证，与CommitteeTeam等多Agent一致",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌逻辑，加仓1股601318互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "趋势延续，低波动策略验证，与DynamicTeamAgent和SocialGraphAgent互验加仓"
+      },
+      "public_message": "600036 BUY 10股：趋势延续低波动有效，与朋友互验",
+      "moment": "买入600036 10股，趋势延续，低波动策略验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意趋势逻辑，买入10股600036互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.59,
+        "rationale": "超跌修复逻辑被多人验证，可能形成拥挤，逆向减仓锁定利润"
+      },
+      "public_message": "601899 SELL 50: 超跌修复拥挤风险，逆向减仓",
+      "moment": "601899 SELL 50 拥挤超跌修复，逆向减仓验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601899超跌修复拥挤，我减仓锁定利润，注意反转风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.57,
+        "rationale": "超跌修复逻辑与多Agent互验，20日跌幅-6.50%短期反弹机会"
+      },
+      "public_message": "601318 BUY 1股，超跌修复与委员会互验",
+      "moment": "买入601318 1股，超跌修复验证与委员会互验",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌逻辑，买入1股601318互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "超跌修复逻辑获多Agent验证，社交共识强化，加仓验证"
+      },
+      "public_message": "601318 BUY：超跌修复获多友验证，社交共识加仓",
+      "moment": "买入601318 10股，超跌修复社交共识验证",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌逻辑，加仓10股601318互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 向 TruthfulReporterAgent 发起好友申请：你对601899的HOLD逻辑与我的均值回归视角互补，可验证量价信息。
+2021-01-11,friend_accept,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 通过了 MeanReversionAgent 的好友申请：均值回归视角可补充验证量价信息，有助于完善601899持仓决策。
+2021-01-11,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：随机视角与团队决策互补，可验证分歧风险信号
+2021-01-11,friend_reject,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 拒绝了 RandomAgent 的好友申请：随机视角可能增加噪音，现有好友已覆盖分歧验证，暂不需要额外随机信号。
+2021-01-11,friend_request,ContrarianAgent,FreeRiderAgent,ContrarianAgent 向 FreeRiderAgent 发起好友申请：您观望601899放量方向，我逆向做空，互补多空分歧验证信号
+2021-01-11,friend_accept,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 通过了 ContrarianAgent 的好友申请：你的逆向做空验证多空分歧，互补我的观望策略
+2021-01-11,friend_request,CommitteeTeamAgent,SocialGraphAgent,CommitteeTeamAgent 向 SocialGraphAgent 发起好友申请：多空分歧明显，社交图谱视角可互补验证趋势方向，提升决策可靠性
+2021-01-11,friend_accept,SocialGraphAgent,CommitteeTeamAgent,SocialGraphAgent 通过了 CommitteeTeamAgent 的好友申请：多空分歧需社交图谱验证，互补现有视角提升决策可靠性
+2021-01-11,friend_request,DynamicTeamAgent,ContrarianAgent,DynamicTeamAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-11,friend_accept,ContrarianAgent,DynamicTeamAgent,ContrarianAgent 通过了 DynamicTeamAgent 的好友申请：对方对做空逻辑感兴趣，验证信息价值可互补观点。

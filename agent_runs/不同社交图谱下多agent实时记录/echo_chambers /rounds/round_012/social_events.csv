@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：随机策略与委员会综合判断互补，共同验证000002机会
+2021-01-19,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：随机策略增加决策多样性，共同验证000002非共识机会
+2021-01-19,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：你的回撤策略与我的动量策略互补，可共同验证600036风险边际。
+2021-01-19,friend_reject,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 拒绝了 FreeRiderAgent 的好友申请：当前未持有600036，策略重心在300750回撤修复，与FreeRider焦点不匹配。

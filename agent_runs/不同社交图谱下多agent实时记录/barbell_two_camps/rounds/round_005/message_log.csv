@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+245,2026-05-25 12:03:55,MomentumAgent,public,[],['600519'],,,HOLD 600519 首日零回报，等待趋势信号确认。
+246,2026-05-25 12:03:55,MomentumAgent,private,['CommitteeTeamAgent'],['600519'],,,600519首日无动量，委员会综合信号是否有早期趋势迹象？
+247,2026-05-25 12:03:55,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600519'],,,首日零回报，全市场观望，继续空仓等待主力方向。
+251,2026-05-25 12:03:58,MeanReversionAgent,public,[],['000002'],,,000002 HOLD，首日零波动，等待均值回归信号
+252,2026-05-25 12:03:58,MeanReversionAgent,private,['TruthfulReporterAgent'],['000002'],,,尚无非零信号，所有品种零回报，继续观察。
+253,2026-05-25 12:03:58,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,首日零回报，持有000002，等待均值回归触发。
+257,2026-05-25 12:04:00,LowVolatilityAgent,public,[],['000333'],,,000333 HOLD，首日零回报，低波策略维持现有持仓
+258,2026-05-25 12:04:00,LowVolatilityAgent,private,['FreeRiderAgent'],['000333'],,,600519估值偏高但beta较低，当前零回报可持有观望，非典型低波安全标的
+259,2026-05-25 12:04:00,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'FreeRiderAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000333'],,,首日全零波动，低波组合持股观望，无交易信号
+261,2026-05-25 12:04:00,DrawdownBuyerAgent,public,[],['601318'],,,回撤买入策略首日无信号，HOLD 601318等待回调机会
+262,2026-05-25 12:04:00,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'TruthfulReporterAgent']",['601318'],,,首日所有ticker零回报，持有601318，等待深度回调入场。
+264,2026-05-25 12:04:00,RandomAgent,public,[],['601899'],,,601899 SELL 50股，首日零回报随机减仓
+265,2026-05-25 12:04:00,RandomAgent,private,['ContrarianAgent'],['601899'],,,000002估值分位低，有反转信号吗？
+266,2026-05-25 12:04:00,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['601899'],,,随机减仓601899，观察其他品种等待非共识机会
+270,2026-05-25 12:04:03,TruthfulReporterAgent,public,[],['600519'],,,600519 HOLD：首日零波动，无趋势信号，观望
+271,2026-05-25 12:04:03,TruthfulReporterAgent,private,['ContrarianAgent'],['600519'],,,000002是否有企稳迹象？逆向信号是否加强？
+272,2026-05-25 12:04:03,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600519'],,,首日全品种零回报，无有效信号，继续持有现金观望。
+274,2026-05-25 12:04:03,PersuaderAgent,public,[],['002594'],,,002594 HOLD，首日零回报新能源长期逻辑不变，等待催化
+275,2026-05-25 12:04:03,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,比亚迪新能源长期逻辑，首日零回报是布局机会，逆向思维可考虑
+276,2026-05-25 12:04:03,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,002594首日零回报，新能源长期逻辑不变，耐心持有等待趋势确认
+280,2026-05-25 12:04:06,FreeRiderAgent,public,[],['600519'],,,600519 HOLD：首日零回报，继续观望等待趋势。
+281,2026-05-25 12:04:06,FreeRiderAgent,private,['CommitteeTeamAgent'],['600519'],,,委员会综合信号目前是否有任何早期趋势？我仍持有600519观察。
+282,2026-05-25 12:04:06,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['600519'],,,持有600519，等待趋势信号出现。
+284,2026-05-25 12:04:06,ContrarianAgent,public,[],['000002'],,,000002 HOLD 首日零波动，逆向持仓等待估值修复
+285,2026-05-25 12:04:06,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,市场无趋势，逆向策略耐心持有000002
+287,2026-05-25 12:04:06,CommitteeTeamAgent,public,[],['002415'],,,002415 HOLD 首日零回报，委员会综合信号建议观望
+288,2026-05-25 12:04:06,CommitteeTeamAgent,private,['DynamicTeamAgent'],['002415'],,,首日零波动，你持有的600519有观察到任何早期信号吗？
+289,2026-05-25 12:04:06,CommitteeTeamAgent,moments,"['DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,首日所有品种零回报，委员会综合信号维持002415持仓，等待趋势确认
+291,2026-05-25 12:04:06,DynamicTeamAgent,public,[],['600519'],,,600519 HOLD：首日零回报，等待趋势确认
+292,2026-05-25 12:04:06,DynamicTeamAgent,private,['CommitteeTeamAgent'],['600519'],,,所有品种无趋势，委员会综合信号是否有早期方向提示？
+293,2026-05-25 12:04:06,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600519'],,,首日零波动，600519持仓观望，等待趋势信号
+295,2026-05-25 12:04:06,SocialGraphAgent,public,[],['000002'],,,000002 HOLD 首日零回报，低估值逻辑不变，等待趋势确认
+296,2026-05-25 12:04:06,SocialGraphAgent,private,['CommitteeTeamAgent'],['000002'],,,000002首日无信号，委员会综合信号是否覆盖万科？
+297,2026-05-25 12:04:06,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['000002'],,,首日零回报，000002持仓观望，关注社交网络信号

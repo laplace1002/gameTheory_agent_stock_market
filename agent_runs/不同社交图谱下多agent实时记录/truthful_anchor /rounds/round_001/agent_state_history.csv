@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-04,MomentumAgent,100000.0,59590.0,0.0,0.0,"{""300750"": 100}",300750 100,BUY 100 300750 @ 404.10；新年首日，新能源龙头300750成交活跃，追涨趋势延续,1,TruthfulReporterAgent,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有标的初始无涨跌，缺乏均值回归信号，现金等待波动,1,TruthfulReporterAgent,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,LowVolatilityAgent,100000.0,95683.0,0.0,0.0,"{""600036"": 100}",600036 100,BUY 100 600036 @ 43.17；低波动蓝筹，银行股防御性，初始建仓,1,TruthfulReporterAgent,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：无历史回撤，等待下跌机会,0,,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,RandomAgent,100000.0,59590.0,0.0,0.0,"{""300750"": 100}",300750 100,BUY 100 300750 @ 404.10；随机视角：新年首日新能源板块可能获资金关注，先建仓观察。,0,,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,TruthfulReporterAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：第一天无有效历史数据，所有ticker ret5/ret20均为0，无法确认信号，等待更多信息。,6,"CommitteeTeamAgent, LowVolatilityAgent, MeanReversionAgent, MomentumAgent, RandomAgent, SocialGraphAgent",run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,PersuaderAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；基于成交量异常放大，推测短期有资金推动。,0,,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,FreeRiderAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首个交易日缺乏历史数据，先观察市场情绪与流动性,0,,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,ContrarianAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史表现，高估值股票如600519、300750风险积聚，等待交易信号,1,SocialGraphAgent,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,CommitteeTeamAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；第一轮建仓，成交量居首显示资金关注，低价股风险可控。,1,TruthfulReporterAgent,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,DynamicTeamAgent,100000.0,99595.9,0.0,0.0,"{""300750"": 1}",300750 1,BUY 1 300750 @ 404.10；新能源龙头，成交量活跃，看好长期,0,,run_20260526_015126_867367_truthful_anchor_attempt1,round_001
+2021-01-04,SocialGraphAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；初始建仓，000002成交量活跃，作为社交图谱agent观察市场情绪,2,"ContrarianAgent, TruthfulReporterAgent",run_20260526_015126_867367_truthful_anchor_attempt1,round_001

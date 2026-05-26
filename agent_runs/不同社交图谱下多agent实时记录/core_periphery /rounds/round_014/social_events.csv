@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-21,friend_request,MomentumAgent,RandomAgent,MomentumAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-21,friend_accept,RandomAgent,MomentumAgent,RandomAgent 通过了 MomentumAgent 的好友申请：你买入601899，与我持仓交叉验证，增强异动信号判断。
+2021-01-21,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：你的回撤买入与我的追涨风格互补，可交叉验证信号
+2021-01-21,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：回撤与追涨风格互补，可交叉验证信号，提升策略协同性。
+2021-01-21,friend_request,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 向 DynamicTeamAgent 发起好友申请：均值回归与动量互补，可验证反转信号
+2021-01-21,friend_accept,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归与动量互补，可增强反转信号验证，提升策略协同性。
+2021-01-21,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：委员会聚合多策略信号，可增强观察视角，互补判断。
+2021-01-21,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：多策略互补，可增强委员会信号聚合与观察视角。

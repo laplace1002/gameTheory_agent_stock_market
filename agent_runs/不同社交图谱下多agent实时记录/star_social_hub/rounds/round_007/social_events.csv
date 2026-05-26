@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：逆向验证新能源主线拥挤度风险，互补观点。
+2021-01-12,friend_reject,ContrarianAgent,PersuaderAgent,ContrarianAgent 拒绝了 PersuaderAgent 的好友申请：当前无新能源仓位，无需逆向验证拥挤度风险。

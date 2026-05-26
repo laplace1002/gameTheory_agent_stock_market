@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "持仓无明显超卖信号，等待均值回归机会"
+      },
+      "public_message": "HOLD 000858: 当前无超卖，观察回调后再决策",
+      "moment": "000002拥挤风险需警惕，但均值回归需独立信号，暂观望",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 60,
+        "price": 30.1,
+        "rationale": "拥挤风险上升，多空分歧验证，减仓控制回撤"
+      },
+      "public_message": "000002 SELL 60股：拥挤风险累积，多空分歧加大，减仓控制回撤",
+      "moment": "减仓000002 60股，拥挤风险上升，等待成交确认",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "感谢拥挤风险验证，与你方向互补，已减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.1,
+        "rationale": "拥挤风险上升，追涨策略撤离弱势"
+      },
+      "public_message": "000002 SELL 100股：拥挤风险验证，追涨撤离，转向强势标的",
+      "moment": "卖出000002，拥挤风险累积，等待强势标的回调介入",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证拥挤风险，我卖出000002，方向一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "当前无明显深跌标的，等待回调机会"
+      },
+      "public_message": "HOLD 000858：当前无明显深跌标的，等待回调机会",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.97,
+        "rationale": "随机非共识，矿业股成交放量，逆向尝试"
+      },
+      "public_message": "601899 BUY 100股：随机非共识，矿业股成交放量，逆向尝试",
+      "moment": "买入601899，随机非共识验证，关注矿业独立行情",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我做多601899，非共识机会，与你逆向思路互补，验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.1,
+        "rationale": "拥挤风险验证，减仓控制回撤"
+      },
+      "public_message": "000002 SELL 100股：拥挤风险验证，等待分歧收敛。",
+      "moment": "减仓000002 100股，拥挤风险上升，等待量能确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "验证做空逻辑，减仓000002 100股，方向互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.1,
+        "rationale": "空仓观望，拥挤风险扩散，等待量能确认"
+      },
+      "public_message": "000002 HOLD：拥挤风险累积，多头分歧，空仓等待信号",
+      "moment": "空仓观望，拥挤风险扩散，000002多空分歧加剧，等待量能确认方向",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你的随机做空验证了拥挤风险，我空仓等待更明确信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "拥挤风险持续，多位Agent验证做空，部分减仓控制回撤"
+      },
+      "public_message": "000002 SELL 100股：拥挤风险累积，跟随多数做空信号减仓",
+      "moment": "减仓000002 100股，拥挤风险上升，参考ContrarianAgent做空信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的做空逻辑得到验证，我继续减仓，拥挤风险确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.1,
+        "rationale": "卖压释放，逆向做多"
+      },
+      "public_message": "000002 BUY 100股：卖压释放，逆向做多",
+      "moment": "做多000002，卖压释放后逆向布局。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我做多000002与你空头互补，验证分歧价值。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "拥挤风险累积，多空分歧加剧，减仓控制回撤"
+      },
+      "public_message": "000002 SELL 100股：拥挤风险上升，多Agent看空验证，减仓控制回撤",
+      "moment": "减仓000002 100股，拥挤风险累积，多空分歧验证，等待量能确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你做多我做空互补验证分歧，减仓控制回撤，继续观察量能"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 30.5,
+        "rationale": "拥挤风险上升，多 agent 做空验证，减仓控制回撤"
+      },
+      "public_message": "000002 SELL 50股：拥挤风险累积，多空分歧验证，减仓控制回撤",
+      "moment": "减仓000002 50股，拥挤风险上升，参考做空信号，等待量能确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的做空逻辑验证了拥挤风险，我减仓000002半仓，方向互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.5,
+        "rationale": "拥挤风险累积，已减仓100股，等待量能确认方向"
+      },
+      "public_message": "000002 HOLD：拥挤风险仍在，等待量能确认，暂不加仓或减仓",
+      "moment": "HOLD 000002 300股，拥挤风险未消，观察回调深度，等待分歧收敛后信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的做空逻辑已验证拥挤风险，我减仓后观望，后续方向请多交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

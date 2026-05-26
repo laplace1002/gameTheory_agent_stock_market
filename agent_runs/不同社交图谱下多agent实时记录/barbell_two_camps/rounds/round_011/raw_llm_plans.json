@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.26,
+        "rationale": "近期涨幅5%，动量强劲，追涨趋势延续。"
+      },
+      "public_message": "000002 BUY 近期涨幅5%，动量强劲，加仓追涨",
+      "moment": "买入000002，看好短期趋势延续",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意减仓600036，但000002动量更强，我追入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 287.7,
+        "rationale": "短期跌幅-5.53%符合均值回归信号，多agent共识验证，超跌反弹概率提升"
+      },
+      "public_message": "000858 BUY 超跌均值回归 加仓验证反弹",
+      "moment": "加仓000858 超跌均值回归 紧跟多agent共识",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌逻辑，加仓10股000858共同验证反弹。"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "你止盈减仓与均值回归策略互补，共同验证市场反转信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.92,
+        "rationale": "短期涨幅过大，多agent减持信号，降低仓位控制回撤"
+      },
+      "public_message": "600036 SELL 短期涨幅7%+且多agent止盈，锁利降波",
+      "moment": "卖出600036 10股，短期涨幅过大且多agent减持，锁利控制回撤",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意减仓判断，600036短期过热，我也跟随卖出10股"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "低波动控制回撤可与社交动量互补，共同验证风险收益平衡"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.26,
+        "rationale": "短期涨幅温和，补涨潜力，非主流关注分散组合"
+      },
+      "public_message": "000002 BUY 补涨潜力，分散组合",
+      "moment": "买入000002，关注补涨轮动机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002补涨逻辑，与逆向思路互补"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "社交动量与补涨策略互补，信息交换"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.92,
+        "rationale": "短期动量仍强但过热风险上升，小仓持有观察"
+      },
+      "public_message": "600036 HOLD 短期动量延续，但多空分歧加大，继续持有观察",
+      "moment": "持有600036，短期涨幅大但趋势未破，注意回调风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "理解你止盈逻辑，但趋势未破，我暂持有验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.55,
+        "rationale": "持有不动"
+      },
+      "public_message": "000858 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.92,
+        "rationale": "短期涨幅过大，多agent买入过热，部分止盈锁定利润"
+      },
+      "public_message": "600036 SELL 短期涨幅过大，部分止盈锁定利润，注意回调风险",
+      "moment": "减仓600036，锁定利润，等待超跌品种反弹",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意减仓判断，我也卖出10股600036锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.55,
+        "rationale": "超跌反弹共识过强，逆向获利了结"
+      },
+      "public_message": "000858 SELL 逆向拥挤超跌反弹共识过强",
+      "moment": "600036多空分歧加剧，逆向观望；000858拥挤卖出，等待新信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858买入共识过强，警惕均值回归陷阱"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 284.55,
+        "rationale": "多agent逆向买入共识，加仓验证均值回归"
+      },
+      "public_message": "000858 BUY 加仓逆向超跌，多agent共识验证均值回归",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.92,
+        "rationale": "短期涨幅过大但动量未确认反转，多个信号分歧，暂持观察"
+      },
+      "public_message": "000858与600036持仓不动，等待趋势延续或情绪反转确认。",
+      "moment": "持有000858超跌反弹与600036动量，组合平衡待验证。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意600036短期涨幅大，但止损未触及，继续持有观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 20,
+        "price": 51.92,
+        "rationale": "短期涨幅大，多agent买入过热，继续止盈降低风险"
+      },
+      "public_message": "600036 SELL 短期涨幅大，过热信号，继续减仓",
+      "moment": "减仓600036，短期涨幅过大，多agent追高，落袋为安",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036短期涨幅大，我已继续减仓，注意回调风险"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归策略与我交易互补，可协同验证超跌修复"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.92,
+        "rationale": "DynamicTeamAgent减仓暗示过热，ContrarianAgent认为拥挤，止盈兑现部分利润"
+      },
+      "public_message": "600036 SELL 跟随好友减仓信号，短期涨幅过大回调风险",
+      "moment": "卖出600036止盈，观察超跌品种000858的反弹机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你关于600036过热的判断，已止盈10股，等待回调再观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

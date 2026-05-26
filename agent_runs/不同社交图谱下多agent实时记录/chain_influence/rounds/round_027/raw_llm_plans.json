@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.26,
+        "rationale": "600036短期涨幅6.33%且20日强势11.19%，趋势延续但现金不足，继续持有"
+      },
+      "public_message": "600036 HOLD：短期涨6.33%趋势强，现金不足不加仓，继续持仓",
+      "moment": "600036 HOLD：趋势延续，现金等待更强信号再加",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "你卖出600036锁定利润，我继续持有，趋势未破分歧验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 257.0,
+        "rationale": "当前市场多空分歧，低波动标的缺乏明确信号，维持现金等待风险释放后的机会"
+      },
+      "public_message": "HOLD现金，等待低波动机会",
+      "moment": "HOLD现金，002415逆向做多与拥挤清仓分歧，等待确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415回撤逻辑验证，但拥挤风险未消，我暂观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 62.5,
+        "rationale": "短期超卖3.07%，均值回归加仓"
+      },
+      "public_message": "002415 BUY 100股，短期超卖均值回归",
+      "moment": "002415加仓100股，短期超卖等待回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "加仓002415，验证超卖均值回归逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 78.13,
+        "rationale": "20日跌幅11%超卖，5日止跌，回撤买入修复机会"
+      },
+      "public_message": "601318 BUY 100股：20日跌11%超卖，回撤买入博修复",
+      "moment": "加仓601318，深跌修复逻辑，等待均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318回撤11%后企稳，逆向做多验证拥挤释放"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 78.13,
+        "rationale": "ret20=-11%超跌严重，均值回归机会，非共识买入"
+      },
+      "public_message": "601318 BUY 100股，超跌反弹非共识，验证均值回归",
+      "moment": "买入601318，超跌严重，博弈均值回归，与DrawdownBuyerAgent策略共振",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318超跌买入，与你的002415逆向逻辑互补，验证分歧价值"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 62.5,
+        "rationale": "拥挤风险未释，逆向力量增加，等待确认"
+      },
+      "public_message": "002415 HOLD：拥挤风险未释，逆向做多，等待量能",
+      "moment": "002415 HOLD，多空分歧加大，逆向与清仓并存，观望",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "清仓逻辑验证分歧，拥挤风险仍需观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 62.5,
+        "rationale": "002415短期超卖，逆向做多力量增加，均值回归可期。"
+      },
+      "public_message": "002415 BUY 100股：短期超卖+逆向资金入场，均值回归概率提升。",
+      "moment": "买入002415，与逆向资金共舞，等待均值回归。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证你002415逆向做多逻辑，我加仓参与均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 410.2,
+        "rationale": "短期涨幅较大，跟随获利了结，控制回撤"
+      },
+      "public_message": "300750 SELL 50股：短期涨幅过大，锁定利润",
+      "moment": "卖出300750半仓，获利了结，现金等待新机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "验证你的获利了结逻辑，我跟随卖出半仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "当前000002中期趋势偏弱但短期反弹，已有仓位，等待逆向反转信号确认，不增不减。"
+      },
+      "public_message": "002415 HOLD：拥挤释放未稳，逆向持仓等待确认。",
+      "moment": "002415逆向持仓，拥挤卖压尾声但未确认反转；000002观望，中期偏弱暂持。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你买入002415逆向做多，我持有观望，验证分歧需等待企稳信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 5,
+        "price": 2456.43,
+        "rationale": "高位减仓锁定利润，控制集中度风险"
+      },
+      "public_message": "600519 SELL 5股，趋势强劲但减仓控制风险",
+      "moment": "减仓600519，锁定部分利润，保留趋势仓位",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600519高位减仓5股，你的HOLD与我的减仓验证趋势分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.75,
+        "rationale": "中期趋势弱，其他agent减仓，规避风险"
+      },
+      "public_message": "000002 SELL：中期趋势弱，跟随减仓控制风险",
+      "moment": "清仓000002，现金等待更佳机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "验证000002中期弱逻辑，减仓离场。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.75,
+        "rationale": "中期趋势偏弱，跟随减持"
+      },
+      "public_message": "000002 SELL 100股：中期趋势弱，减仓降风险",
+      "moment": "000002中期未稳，减持部分仓位，现金等待更好机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "验证减持逻辑，中期偏弱，我同步减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

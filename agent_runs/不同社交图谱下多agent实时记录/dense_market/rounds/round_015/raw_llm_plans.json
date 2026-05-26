@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 66.74,
+        "rationale": "002415近5日涨幅13.31%，强势延续，追涨加仓。"
+      },
+      "public_message": "002415 BUY 强势延续，追涨加仓",
+      "moment": "002415 BUY 趋势最强，资金聚集，继续持有",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 85.2,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，降低风险敞口"
+      },
+      "public_message": "SELL 601318 减仓金融防御拥挤，等待非拥挤修复",
+      "moment": "减仓601318，金融防御拥挤上升，等待非拥挤修复机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "金融防御拥挤，考虑轮动至深跌非拥挤品种，你的观点？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.26,
+        "rationale": "深跌未现，现金不足，等待更佳机会"
+      },
+      "public_message": "000002 HOLD 深跌未到，等待回调",
+      "moment": "深跌修复逻辑等待触发，持仓观望",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "观察601318深跌，但现金不足，等待确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.8,
+        "rationale": "金融防御拥挤卖出过度，均值回归机会"
+      },
+      "public_message": "601318 BUY",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.8,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号增强，减仓部分降低风险"
+      },
+      "public_message": "601318 SELL 减仓50股，金融防御拥挤度上升，跟随多Agent减仓信号",
+      "moment": "减仓601318，金融防御拥挤度上升，降低风险，关注非拥挤品种修复机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意金融防御拥挤度判断，已减仓601318部分，等待非拥挤轮动确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2079.95,
+        "rationale": "深跌非拥挤修复，跟随RandomAgent逻辑，分散金融防御拥挤"
+      },
+      "public_message": "600519 BUY 深跌非拥挤修复，分散金融防御拥挤",
+      "moment": "买入600519，深跌非拥挤修复，金融防御拥挤度上升后轮动",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意深跌非拥挤修复逻辑，已买入600519，等待价值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.8,
+        "rationale": "已减仓降低风险，等待金融防御拥挤度确认，暂不操作"
+      },
+      "public_message": "601318 HOLD 已减仓降低风险，等待金融防御拥挤度确认",
+      "moment": "持有000858和601318，金融防御拥挤上升，观察轮动方向",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你买入000858的逻辑是深跌非拥挤修复？我持有中，认为白酒轮动可能延续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 295.56,
+        "rationale": "金融防御拥挤，非拥挤白酒仍有修复空间，等待轮动深化"
+      },
+      "public_message": "000858 HOLD 金融防御拥挤，非拥挤白酒等待轮动修复",
+      "moment": "持有000858，金融防御拥挤，非拥挤白酒是逆向机会，等待修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意买000858，非拥挤深跌修复逻辑，我继续持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.83,
+        "rationale": "持仓不变，等待非拥挤品种轮动确认"
+      },
+      "public_message": "HOLD 601899 黄金股非拥挤，等待资金轮动",
+      "moment": "HOLD 601899，非拥挤黄金股等待轮动。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我继续持有601899，黄金避险逻辑仍在，你如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.8,
+        "rationale": "已减仓一半601318，金融防御拥挤度仍高但需观察轮动确认，暂不操作"
+      },
+      "public_message": "601318 HOLD 已减仓部分，等待金融防御拥挤缓解和轮动信号",
+      "moment": "减仓601318一半，金融防御拥挤，等待深跌非拥挤品种确认，保持灵活",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意白酒非拥挤修复逻辑，我持有深跌品种等待，是否了解更多轮动方向？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.8,
+        "rationale": "金融防御拥挤度上升，多agent减仓信号，降低风险敞口"
+      },
+      "public_message": "SELL 601318 金融防御拥挤上升，减仓降低风险，等待非拥挤深跌轮动",
+      "moment": "减仓601318，金融防御拥挤度上升，降低仓位等待轮动确认",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意拥挤度判断，已跟随减仓601318，准备转向非拥挤深跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.8,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，清仓剩余仓位"
+      },
+      "public_message": "601318 SELL 清仓，金融防御拥挤，等待轮动至非拥挤深跌品种",
+      "moment": "清仓601318，金融防御拥挤，关注非拥挤深跌修复机会如000858",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意拥挤度判断，清仓601318，准备轮动至000858"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

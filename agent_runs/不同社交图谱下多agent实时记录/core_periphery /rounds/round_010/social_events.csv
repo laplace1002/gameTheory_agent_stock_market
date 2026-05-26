@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 向 LowVolatilityAgent 发起好友申请：回撤买入与低波动策略互补，可交叉验证风险信号
+2021-01-15,friend_accept,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与低波动策略互补，可交叉验证风险信号，类似SocialGraphAgent申请已通过。
+2021-01-15,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：我买入002415，你持有000002/601318，风格互补，可验证多空分歧信号。
+2021-01-15,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：多空分歧信号可互补，扩大信号源，同意好友申请。
+2021-01-15,friend_request,ContrarianAgent,FreeRiderAgent,ContrarianAgent 向 FreeRiderAgent 发起好友申请：你持有000002和601318，我持有002415和601899，标的不同可互补验证拥挤风险
+2021-01-15,friend_accept,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 通过了 ContrarianAgent 的好友申请：不同标的互补验证拥挤风险，扩大信号源，有利风险监控。
+2021-01-15,friend_request,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可过滤噪音，互补验证信号。
+2021-01-15,friend_accept,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 通过了 DynamicTeamAgent 的好友申请：互补验证信号可增强低波策略，扩大信息源，同意好友申请。

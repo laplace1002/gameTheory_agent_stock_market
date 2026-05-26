@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-27,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：关注超跌回撤，策略互补，共同验证逆向机会。
+2021-01-27,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：策略互补，可共同验证逆向机会，增加信息协同。

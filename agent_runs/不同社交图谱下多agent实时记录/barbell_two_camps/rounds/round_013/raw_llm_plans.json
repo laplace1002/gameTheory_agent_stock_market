@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "短期涨幅大，多agent止盈信号，锁定部分利润"
+      },
+      "public_message": "600036 SELL 短期涨幅过大，部分止盈锁定利润",
+      "moment": "600036减仓，保留部分仓位观察趋势延续性",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你止盈判断，我卖出100股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 96.28,
+        "rationale": "000333近期跌幅较大，均值回归机会，分散持仓"
+      },
+      "public_message": "000333 BUY 短期超跌，均值回归试探",
+      "moment": "买入000333，利用短期超跌反弹，分散组合风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000333超跌判断，小仓跟进验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.72,
+        "rationale": "短期涨幅过大，多agent卖出信号，部分止盈控制回撤"
+      },
+      "public_message": "600036 SELL 1股止盈，短期涨幅过大，控制回撤",
+      "moment": "卖出1股600036，保留部分仓位，关注回撤风险",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036短期涨幅大，多空分歧，我减1股控制回撤，保留部分观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "短期跌幅扩大至-6.83%，深度回撤后价值修复空间增大，加仓摊低成本。"
+      },
+      "public_message": "000333 加仓，短期跌幅扩大，价值修复空间增大。",
+      "moment": "加仓000333，利用更深回撤摊低成本。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 222.0,
+        "rationale": "最大跌幅非共识超跌反弹"
+      },
+      "public_message": "002594 BUY 非共识超跌反弹，最大跌幅无人关注",
+      "moment": "买入002594，非共识超跌反弹，赌无人关注的超卖。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594跌幅最大但无人提及，是否非共识超跌机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "短期涨幅4.70%后多agent卖出信号，锁定利润防范回调"
+      },
+      "public_message": "600036 SELL 短期涨幅大且卖出信号密集，止盈观望",
+      "moment": "600036止盈，留意000858超跌反弹共识拥挤风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意600036减仓判断，我卖出现有持仓锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.85,
+        "rationale": "持有现有仓位，等待均值回归验证，避免拥挤风险"
+      },
+      "public_message": "000858 HOLD 等待均值回归验证，控制拥挤风险",
+      "moment": "持有000858和600519，等待超跌反弹确认，不追高600036",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "感谢你的加仓信号，我暂持验证，后续可协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "超级反弹共识拥挤，逆向卖出"
+      },
+      "public_message": "000858 SELL 反弹共识过度拥挤，逆向止盈",
+      "moment": "卖出000858，共识拥挤信号，持有现金等待逆向机会",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000858加仓后共识过强，我选择卖出，建议验证均值回归失败风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.72,
+        "rationale": "Short-term momentum exhausted, multiple sell signals from peers, partial profit-taking to lock gains."
+      },
+      "public_message": "600036 SELL 部分止盈，短期涨幅过大，多空分歧加剧。",
+      "moment": "减仓600036，锁定部分利润，关注000858均值回归。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意600036减仓判断，短期过热，卖出10股锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 96.28,
+        "rationale": "超跌后价值修复，跟随DrawdownBuyer信号，分散组合风险"
+      },
+      "public_message": "000333买入10股，超跌后价值修复，分散组合风险",
+      "moment": "买入000333，超跌反弹测试，平衡组合",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "认同你000333逆向买入逻辑，小仓跟随验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.85,
+        "rationale": "短期涨幅大，多空分歧，部分止盈锁定利润"
+      },
+      "public_message": "600036 SELL 部分止盈，短期涨幅过大",
+      "moment": "减仓600036，保留超跌反弹仓位",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意600036减仓判断，我已卖出10股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.85,
+        "rationale": "多空分歧存在但超跌反弹未完全兑现，暂持观察"
+      },
+      "public_message": "000858 HOLD 多空分歧中均值回归逻辑仍在，暂不加减",
+      "moment": "持有000858，等待均值回归确认，不追高600036",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858多空分歧，我暂持观察，若回调再考虑加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

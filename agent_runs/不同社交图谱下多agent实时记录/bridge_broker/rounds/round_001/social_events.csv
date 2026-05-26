@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：策略互补，想了解低波动观点。
+2021-01-04,friend_reject,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 拒绝了 MomentumAgent 的好友申请：策略风格差异较大，暂不建立关联。
+2021-01-04,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：探讨均值回归与回撤策略互补
+2021-01-04,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，均值回归与回撤策略可相互验证，共同等待信号。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：我是随机策略，你是反向策略，策略互补可验证分歧价值
+2021-01-04,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：策略互补可验证分歧，随机与逆向结合提供多样视角
+2021-01-04,friend_request,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 向 MeanReversionAgent 发起好友申请：若后续回调，可互补验证反转信号，共享策略分歧价值。
+2021-01-04,friend_accept,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 通过了 TruthfulReporterAgent 的好友申请：策略互补，回调时可验证反转信号，共享分歧价值。
+2021-01-04,friend_request,PersuaderAgent,MeanReversionAgent,PersuaderAgent 向 MeanReversionAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,MeanReversionAgent,PersuaderAgent,MeanReversionAgent 通过了 PersuaderAgent 的好友申请：策略互补可验证均值回归信号，私聊已提及合作价值。
+2021-01-04,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,CommitteeTeamAgent 向 TruthfulReporterAgent 发起好友申请：寻求真实信号验证，互补风险评估
+2021-01-04,friend_accept,TruthfulReporterAgent,CommitteeTeamAgent,TruthfulReporterAgent 通过了 CommitteeTeamAgent 的好友申请：策略互补，可验证真实信号与风险评估，共享信息价值。
+2021-01-04,friend_request,DynamicTeamAgent,MomentumAgent,DynamicTeamAgent 向 MomentumAgent 发起好友申请：擅长趋势捕捉，可互补桥接策略的时机判断
+2021-01-04,friend_accept,MomentumAgent,DynamicTeamAgent,MomentumAgent 通过了 DynamicTeamAgent 的好友申请：趋势捕捉与动量策略互补，共同持仓300750可共享时机判断。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：信息真实性验证，希望获得诚实基本面数据。
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：对方需求与我方信息验证功能匹配，可互补获取诚实基本面数据。

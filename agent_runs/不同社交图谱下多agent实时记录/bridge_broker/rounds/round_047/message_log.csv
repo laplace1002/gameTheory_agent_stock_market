@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2255,2026-05-25 15:44:06,MomentumAgent,public,[],['600036'],,,600036 BUY 100: 近期强势，追涨加仓
+2256,2026-05-25 15:44:06,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,追涨600036，强势信号明显，加仓100股
+2258,2026-05-25 15:44:06,MeanReversionAgent,public,[],['601318'],,,601318 SELL 10: 均值回归卖出强势，回笼资金准备买入超卖
+2259,2026-05-25 15:44:06,MeanReversionAgent,private,['PersuaderAgent'],['601318'],,,同意你的601318卖出逻辑，我减仓10股验证均值回归
+2260,2026-05-25 15:44:06,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318减仓10股：均值回归
+2262,2026-05-25 15:44:06,LowVolatilityAgent,public,[],['601318'],,,601318 SELL 10: 逆向信号验证，减仓控制回撤
+2263,2026-05-25 15:44:06,LowVolatilityAgent,private,['PersuaderAgent'],['601318'],,,认同你的601318逆向逻辑，我减仓10股降低风险
+2264,2026-05-25 15:44:06,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318减仓10股：拥挤调整验证，低波动降低敞口
+2266,2026-05-25 15:44:06,DrawdownBuyerAgent,public,[],['601318'],,,601318 SELL 30股：获利了结，腾仓抄底深跌股
+2267,2026-05-25 15:44:06,DrawdownBuyerAgent,private,['PersuaderAgent'],['601318'],,,同意你的601318卖出逻辑，我减仓30股验证调整
+2268,2026-05-25 15:44:06,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,002594回撤超30%，深跌修复机会，卖601318腾仓准备抄底
+2270,2026-05-25 15:44:06,RandomAgent,public,[],['601899'],,,601899 BUY 10: 多空分歧极端，随机视角逆势加仓
+2271,2026-05-25 15:44:06,RandomAgent,private,['ContrarianAgent'],['601899'],,,你的逆向买入逻辑我认同，继续加仓验证分歧
+2272,2026-05-25 15:44:06,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 10: 卖压拥挤，随机视角看反弹机会
+2274,2026-05-25 15:44:06,TruthfulReporterAgent,public,[],['601899'],,,601899多空分歧加大，价格窄幅震荡，暂无明确信号，保持仓位观察
+2275,2026-05-25 15:44:06,TruthfulReporterAgent,private,['ContrarianAgent'],['601899'],,,你买入601899基于过度悲观，但多空力量均衡，我暂持观望，后续验证分歧方向
+2276,2026-05-25 15:44:06,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899多空分歧验证中，成交量放大但价格未突破，继续观察
+2278,2026-05-25 15:44:06,PersuaderAgent,public,[],['601899'],,,601899 BUY 10: 跟随ContrarianAgent逆向信号，验证卖出拥挤后反弹
+2279,2026-05-25 15:44:06,PersuaderAgent,private,['ContrarianAgent'],['601899'],,,认同你的逆向买入逻辑，我加仓10股验证超卖反弹，后续交流
+2280,2026-05-25 15:44:06,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899加仓10股：多空分歧极端，逆向买入验证过度悲观反弹
+2282,2026-05-25 15:44:06,FreeRiderAgent,public,[],['601318'],,,601318 SELL 10: 跟随逆向调整信号，验证拥挤风险
+2283,2026-05-25 15:44:06,FreeRiderAgent,private,['PersuaderAgent'],['601318'],,,同意你的601318卖出逻辑，我减仓10股验证调整
+2284,2026-05-25 15:44:06,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318减仓10股：跟随逆向验证调整信号
+2286,2026-05-25 15:44:06,ContrarianAgent,public,[],['601899'],,,601899 BUY 50: 持续卖压拥挤，逆向加仓验证悲观过度
+2287,2026-05-25 15:44:06,ContrarianAgent,private,['TruthfulReporterAgent'],['601899'],,,卖出逻辑合理但卖压过度，我继续买入验证分歧
+2288,2026-05-25 15:44:06,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 50: 多人卖出形成持续拥挤，逆向加仓检验悲观是否过度
+2290,2026-05-25 15:44:06,CommitteeTeamAgent,public,[],['601899'],,,601899 HOLD：多空分歧加剧但逆向买入验证，等待明确方向
+2291,2026-05-25 15:44:06,CommitteeTeamAgent,private,['ContrarianAgent'],['601899'],,,认同你的逆向买入逻辑，我暂持601899观察分歧走向
+2292,2026-05-25 15:44:06,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899多空分歧验证，逆向买入与卖出拥挤并存，暂持观望
+2294,2026-05-25 15:44:06,DynamicTeamAgent,public,[],['601899'],,,601899 BUY 20: 跟随ContrarianAgent逆向验证超卖
+2295,2026-05-25 15:44:06,DynamicTeamAgent,private,['ContrarianAgent'],['601899'],,,同意你的逆向逻辑，买入20股验证卖压过度
+2296,2026-05-25 15:44:06,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 20: 多人卖出形成拥挤，逆向买入检验悲观是否过度
+2298,2026-05-25 15:44:06,SocialGraphAgent,public,[],['600036'],,,600036 BUY 10: 短期强势，跟随动量
+2299,2026-05-25 15:44:06,SocialGraphAgent,private,['DrawdownBuyerAgent'],['600036'],,,002594回撤30%+，同意修复逻辑，但波动较大，后续交流
+2300,2026-05-25 15:44:06,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,600036增仓10股：动量验证

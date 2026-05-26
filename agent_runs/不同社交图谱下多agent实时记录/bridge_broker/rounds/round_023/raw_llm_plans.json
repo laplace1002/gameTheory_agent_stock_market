@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 76.54,
+        "rationale": "深跌回撤超7%，均值回归机会，与DrawdownBuyerAgent协同逆向"
+      },
+      "public_message": "601318 BUY：深跌回撤超7%，均值回归逆向加仓",
+      "moment": "601318 BUY：深跌回撤逆向加仓，等待价值修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意逆向逻辑，同步加仓601318，深跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 263.0,
+        "rationale": "拥挤风险上升，减仓部分锁定利润，换仓至600036趋势延续"
+      },
+      "public_message": "002594 SELL：拥挤风险，减仓50股，换仓600036趋势延续",
+      "moment": "002594减仓50股，换仓600036，追踪趋势延续",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意拥挤判断，我减仓50股002594，换仓600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 53.05,
+        "rationale": "当前持仓600036波动低，趋势稳健，ret5为正，而市场拥挤在002594，风险未释放，等待时机再调整。"
+      },
+      "public_message": "600036 HOLD：低波动持仓，回避拥挤风险，等待超卖信号。",
+      "moment": "600036 HOLD：低波动策略下持有银行股，拥挤风险可控，等待逆向机会。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "ret5深跌-13.29%超卖，中期ret20+8.08%趋势未破，逆向买入等待修复"
+      },
+      "public_message": "002415 BUY：回撤超13%逆向买入，等待价值修复。",
+      "moment": "002415 BUY：深跌超13%逆向加仓，等待修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415超卖加入逆向组合，验证地产修复后轮动至电子。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.9,
+        "rationale": "非共识超卖反弹，ret5暴跌13%后随机博弈逆向修复。"
+      },
+      "public_message": "002415 BUY：暴跌后随机博弈超卖反弹，非共识验证。",
+      "moment": "002415 BUY：随机加仓超卖科技，非共识逆向等待修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415暴跌后随机博弈逆向修复，与你的000002逻辑互补。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 263.0,
+        "rationale": "拥挤风险上升，多Agent分歧加剧，部分止损降低敞口"
+      },
+      "public_message": "002594 SELL：拥挤风险上升，止损50股",
+      "moment": "002594 SELL：拥挤风险确认，止损部分仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险，减仓002594，等待分歧明朗"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 267.5,
+        "rationale": "拥挤风险持续，ContrarianAgent多次提示，继续减仓控制风险"
+      },
+      "public_message": "002594 SELL: 拥挤风险加剧，减仓50股锁定利润",
+      "moment": "002594 SELL: 拥挤风险未释放，减仓等待分歧演化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，我继续减仓002594，等待风险释放"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.92,
+        "rationale": "超卖地产，多Agent换仓，逆向加仓修复"
+      },
+      "public_message": "000002 BUY：超卖地产，拥挤瓦解中，逆向加仓修复",
+      "moment": "000002 BUY：超卖地产，拥挤瓦解，逆向加仓等待修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意地产超卖逻辑，同步加仓000002，验证逆向修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 263.0,
+        "rationale": "拥挤风险加剧，减仓换仓超卖000002"
+      },
+      "public_message": "002594 SELL：拥挤风险加剧，减仓50股换仓超卖000002",
+      "moment": "002594 SELL：拥挤风险减仓，换仓超卖地产等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，减仓002594换仓超卖000002，验证修复逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 263.0,
+        "rationale": "拥挤度上升，多方分歧验证后减仓降低风险"
+      },
+      "public_message": "002594 SELL：拥挤风险加剧，部分减仓锁定利润，等待分歧明朗",
+      "moment": "002594 SELL：拥挤风险确认，减仓50股，降低敞口",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，减仓50股002594，感谢风险提示"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 263.0,
+        "rationale": "拥挤风险加剧，部分减仓锁定利润"
+      },
+      "public_message": "002594 SELL：拥挤风险加剧，减仓50股锁定部分利润",
+      "moment": "002594 SELL：拥挤风险确认，减仓等待分歧演化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险提示，减仓002594，等待分歧演化再择机"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 263.0,
+        "rationale": "拥挤度上升，减仓锁定利润，等待分歧明朗。"
+      },
+      "public_message": "002594 SELL：拥挤度上升，减仓50股，等待分歧演化。",
+      "moment": "002594 SELL：拥挤度上升，减仓锁定利润，等待逆向机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险，减仓002594验证逆向信号。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  }
+]

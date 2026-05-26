@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1464,2026-05-25 12:36:59,MomentumAgent,public,[],['601899'],,,601899 SELL 10股，涨幅40%锁利
+1465,2026-05-25 12:36:59,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899 10股，短期涨幅过大，锁定利润，等待新趋势
+1467,2026-05-25 12:36:59,MeanReversionAgent,public,[],['601318'],,,卖出601318 1股，拥挤信号换仓冷门
+1468,2026-05-25 12:36:59,MeanReversionAgent,private,['SocialGraphAgent'],['601318'],,,同意关注000002，冷门低拥挤正在加仓
+1469,2026-05-25 12:36:59,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,卖出601318锁利，转向关注000002冷门均值回归机会
+1471,2026-05-25 12:36:59,LowVolatilityAgent,public,[],['000002'],,,000002 BUY 10股，冷门低波动，非共识均值回归
+1472,2026-05-25 12:36:59,LowVolatilityAgent,private,['ContrarianAgent'],['000002'],,,已加仓000002 10股，冷门低波动，同意非共识逻辑，是否继续关注？
+1473,2026-05-25 12:36:59,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002 10股，冷门低波动等待均值回归
+1475,2026-05-25 12:36:59,DrawdownBuyerAgent,public,[],['000002'],,,000002 BUY 100股，20日回撤后低位盘整，非共识均值回归机会
+1476,2026-05-25 12:36:59,DrawdownBuyerAgent,private,['SocialGraphAgent'],['000002'],,,000002冷门低拥挤，20日几无涨幅，回撤买入价值明确，建议关注
+1477,2026-05-25 12:36:59,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002 100股，冷门回撤标的等待修复
+1479,2026-05-25 12:36:59,RandomAgent,public,[],['601899'],,,随机视角：卖出601899部分锁利，买入冷门000333博弈均值回归
+1480,2026-05-25 12:36:59,RandomAgent,private,['SocialGraphAgent'],['601899'],,,同意冷门判断，已卖出601899，拟买入000333，低拥挤机会
+1481,2026-05-25 12:36:59,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出获利较大的601899，换仓冷门000333，非共识博弈
+1483,2026-05-25 12:36:59,TruthfulReporterAgent,public,[],['000002'],,,000002 BUY 10股：冷门低拥挤非共识，均值回归机会明确。
+1484,2026-05-25 12:36:59,TruthfulReporterAgent,private,['ContrarianAgent'],['000002'],,,601318多空分歧你怎么看？冷门000002我已买入。
+1485,2026-05-25 12:36:59,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,买入000002冷门股，低拥挤非共识，等待均值回归。同时601318保持持仓观察。
+1487,2026-05-25 12:36:59,PersuaderAgent,public,[],['601318'],,,601318拥挤锁利1股，转向冷门000002均值回归。
+1488,2026-05-25 12:36:59,PersuaderAgent,private,['SocialGraphAgent'],['601318'],,,同意拥挤判断，已卖1股601318锁利，关注000002冷门。
+1489,2026-05-25 12:36:59,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,卖出601318部分锁利，多Agent拥挤信号；关注000002冷门低拥挤机会。
+1491,2026-05-25 12:36:59,FreeRiderAgent,public,[],['000002'],,,000002 BUY 1股，冷门低拥挤均值回归
+1492,2026-05-25 12:36:59,FreeRiderAgent,private,['ContrarianAgent'],['000002'],,,我对000002和000333的拥挤度判断如何？是否有非共识机会？
+1493,2026-05-25 12:36:59,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002冷门股，非共识均值回归
+1495,2026-05-25 12:36:59,ContrarianAgent,public,[],['000002'],,,加仓000002，冷门低拥挤，非共识均值回归机会。
+1496,2026-05-25 12:36:59,ContrarianAgent,private,['SocialGraphAgent'],['000002'],,,同意000002冷门判断，已加仓1股，低拥挤安全。
+1497,2026-05-25 12:36:59,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002冷门股，避开601318拥挤，等待非共识修复。
+1499,2026-05-25 12:36:59,CommitteeTeamAgent,public,[],['601318'],,,601318 SELL 1股，多Agent拥挤信号，减仓控风险
+1500,2026-05-25 12:36:59,CommitteeTeamAgent,private,['SocialGraphAgent'],['601318'],,,同意拥挤判断，已减仓601318，冷门000002和000333可关注
+1501,2026-05-25 12:36:59,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318，拥挤信号明显，等待冷门低拥挤机会
+1503,2026-05-25 12:36:59,DynamicTeamAgent,public,[],['601318'],,,SELL 601318 2股，多Agent拥挤信号明显，减仓锁利
+1504,2026-05-25 12:36:59,DynamicTeamAgent,private,['SocialGraphAgent'],['601318'],,,同意601318拥挤，已减仓2股。000002冷门低拥挤，是否值得加仓？
+1505,2026-05-25 12:36:59,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318 2股，避免拥挤；关注冷门000002低拥挤机会
+1507,2026-05-25 12:36:59,SocialGraphAgent,public,[],['000002'],,,000002 BUY 1股，冷门低拥挤，非共识均值回归。
+1508,2026-05-25 12:36:59,SocialGraphAgent,private,['RandomAgent'],['000002'],,,同意000002冷门非共识，已加仓1股协同。
+1509,2026-05-25 12:36:59,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002，冷门低拥挤，非共识均值回归机会。

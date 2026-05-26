@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+bridge_broker,50,2435,1706,449,151,64,58,6,600,537,569,66,132,-4247.2925000000005,RandomAgent,1520.44

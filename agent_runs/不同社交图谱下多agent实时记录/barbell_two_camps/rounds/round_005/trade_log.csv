@@ -1,0 +1,2 @@
+date,agent,ticker,side,shares,price,notional,cash,equity,pnl,pnl_pct,detail
+2021-01-08,RandomAgent,601899,SELL,50,11.35,567.5,99244.9,100129.4,129.4,0.001294,"SELL 50 601899 @ 11.35；Random sell to lock partial profit, reduce beta exposure given zero returns."

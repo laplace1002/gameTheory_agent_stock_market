@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.85,
+        "rationale": "持仓600036近期涨幅5.32%，趋势延续，未出现反转信号，继续持有等待新动量机会。"
+      },
+      "public_message": "600036 HOLD：趋势延续，继续持有等待新动量信号。",
+      "moment": "持有600036，趋势延续，等待新动量机会。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 281.5,
+        "rationale": "超跌但量价未稳，现金不足，等待反弹确认"
+      },
+      "public_message": "HOLD 000858：超跌-9.19%，等反弹确认",
+      "moment": "持仓000858/002594/300750均超跌，等待均值回归信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超跌幅度大，均值回归逻辑与你逆向互补，可共同验证反弹"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "均值回归与自由骑手非共识信号互补，共同验证超跌反弹"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 216.2,
+        "rationale": "002594近5日回撤-8.77%，波动超出低波动容忍阈值，减仓降风险"
+      },
+      "public_message": "002594 SELL：回撤超阈值，控制仓位",
+      "moment": "卖出002594 100股，回撤过大，现金等待低波动机会",
+      "private_message": null,
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "低波动与回撤策略互补，共享风险预算验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 216.2,
+        "rationale": "回撤-8.77%超卖，ContrarianAgent逆向验证，加仓等待反弹"
+      },
+      "public_message": "002594 BUY：回撤-8.77%超卖，ContrarianAgent逆向验证，加仓等待价值修复",
+      "moment": "加仓002594 10股，回撤超卖+逆向信号共振，等待价值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594回撤共振，已加仓10股，共享反弹信号验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 216.2,
+        "rationale": "超跌反弹信号，近5日跌幅-8.77%，ContrarianAgent和DrawdownBuyerAgent逆向买入，验证超跌逻辑。"
+      },
+      "public_message": "002594 BUY：超跌-8.77%，逆势布局反弹",
+      "moment": "买入002594 10股，超跌反弹信号，等待企稳验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "共享超跌信号，验证逆向逻辑，等待反弹确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 281.5,
+        "rationale": "随机平仓，锁定风险，等待新信号"
+      },
+      "public_message": "000858 SELL：随机平仓，规避风险",
+      "moment": "平仓000858 100股，随机信号，现金等待新机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858随机平仓，逆向信号验证，个股风险释放中。"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "随机视角补充社交图谱，共享非共识信号验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.28,
+        "rationale": "拥挤重现，DynamicTeamAgent卖出引发多空分歧加大，量价未企稳，平仓避险。"
+      },
+      "public_message": "601899 SELL：拥挤重现，DynamicTeamAgent卖出引发风险，平仓避险",
+      "moment": "卖出601899 150股，拥挤重现离场，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858极端跌幅，逆向逻辑合理，是否考虑验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.28,
+        "rationale": "拥挤重现，DynamicTeamAgent卖出信号，量价未企稳，平仓规避风险"
+      },
+      "public_message": "601899 SELL：拥挤重现，量价未稳，平仓离场",
+      "moment": "卖出601899 50股，拥挤风险重现，平仓离场，现金等待新机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超跌-8.77%，逆向信号可验证，共享跌幅数据？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 30,
+        "price": 281.5,
+        "rationale": "综合逆向信号，超跌反弹布局，验证ContrarianAgent观点"
+      },
+      "public_message": "000858 BUY：超跌反弹布局，验证逆向信号",
+      "moment": "买入000858 30股，超跌反弹策略，与ContrarianAgent信号共振",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858超跌-9.19%，与你逆向逻辑共振，买入30股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 366.11,
+        "rationale": "超跌严重，逆向布局超跌反弹"
+      },
+      "public_message": "300750 BUY：超跌-8.7%，逆向建仓，等待修复",
+      "moment": "买入300750 50股，利用恐慌逆向建仓，等待情绪修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌幅度与002594类似，逆向逻辑可互相验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 366.11,
+        "rationale": "300750 ret5=-8.74%，下降趋势未止，止损离场"
+      },
+      "public_message": "300750 SELL：下降趋势，止损离场",
+      "moment": "卖出300750 1股，止损；现金等待新信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858跌幅-9.19%，逆向买入逻辑是否成立？请共享跌幅指标。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.28,
+        "rationale": "涨幅稳健，社交图谱未现反转信号，继续持有"
+      },
+      "public_message": "000002 HOLD：涨幅稳健，等待新信号验证",
+      "moment": "持仓000002，现金等待；关注000858和002594逆向信号，需验证量价企稳",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858极端跌幅，逆向逻辑合理，等待反弹验证"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "回撤信号与社交图谱验证互补，增强风险识别"
+      }
+    },
+    "error": ""
+  }
+]

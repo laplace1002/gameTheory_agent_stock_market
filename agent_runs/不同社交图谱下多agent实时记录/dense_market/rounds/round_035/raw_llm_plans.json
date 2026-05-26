@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 33.1,
+        "rationale": "短期涨幅10.92%，跟随减仓信号锁定利润"
+      },
+      "public_message": "000002 卖出50股锁利，超买信号明确控制回撤",
+      "moment": "减仓000002锁定利润，保持组合灵活性，关注新强势标的",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的000002减仓逻辑，我已全部卖出锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 93.08,
+        "rationale": "深跌均值回复概率高，多数Agent买入共识，小幅加仓控制回撤。"
+      },
+      "public_message": "000333：加仓5股，深跌均值回复，控制回撤。",
+      "moment": "加仓000333 5股，深跌均值回复，跟随共识但严控仓位。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 33.1,
+        "rationale": "短期涨幅10.92%超买明显，跟随减仓信号锁定利润"
+      },
+      "public_message": "卖出000002 50股，短期超买锁定利润；关注002415深跌均值回复机会",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002超买减仓，002415深跌-16.75%未被聚焦，均值回复逻辑更独立"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 33.1,
+        "rationale": "短期强势股遭集体减仓，卖压过度，随机逆向买入布局反弹"
+      },
+      "public_message": "买入000002 10股，短期强势卖压过度，随机逆向试多。",
+      "moment": "买入000002 10股，非共识交易，卖压衰减信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入000002逆向跟随，与你002594视角互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 93.08,
+        "rationale": "深跌均值回复，多Agent共识加仓"
+      },
+      "public_message": "000333 加仓50股，深跌均值回复跟随共识",
+      "moment": "加仓000333 50股，深跌均值回复，跟随团队共识",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意深跌修复逻辑，加仓000333 50股共同布局"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 20,
+        "price": 197.27,
+        "rationale": "深跌-23.35%未现拥挤，均值回复概率高，跟随逆向布局"
+      },
+      "public_message": "002594 买入20股，深跌-23%均值回复机会",
+      "moment": "买入002594 20股，深跌逆向布局，与朋友共识",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的002594深跌布局，我加仓20股，共同等待修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 93.08,
+        "rationale": "深跌均值回复，跟随DynamicTeamAgent和SocialGraphAgent买入共识"
+      },
+      "public_message": "000333 加仓50股，深跌均值回复跟随共识。",
+      "moment": "加仓000333 50股，深跌均值回复，跟随朋友共识。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的000333深跌修复逻辑，我也加仓50股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 33.1,
+        "rationale": "0072 拥挤卖盘后逆向承接，短期涨幅已消化，均值回复概率高"
+      },
+      "public_message": "000002 逆向买入50股，拥挤卖盘后价值回归",
+      "moment": "买入000002 50股，逆向承接卖盘，拥挤交易的对立面",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000333 众擎易举，000002 卖盘成压，我逆向承接，逻辑互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 322.23,
+        "rationale": "300750跌幅-16.84%，仍有下行风险，减仓20股；换入002594深跌-23.35%均值回复"
+      },
+      "public_message": "卖出300750 20股，买入002594 30股，跟随深跌均值回复共识",
+      "moment": "减仓300750降风险，加仓002594博弈均值回复，平衡深跌仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意002594深跌布局，我换入30股，与你互补"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 33.1,
+        "rationale": "短期涨幅过大，跟随减仓信号锁定利润"
+      },
+      "public_message": "卖出000002 50股锁利，买入300750 10股布局深跌修复。",
+      "moment": "减仓000002获利，加仓300750深跌均值回复。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的锁利逻辑，我卖出000002并加仓300750深跌均值回复。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.1,
+        "rationale": "短期涨幅10.92%，多个Agent减仓锁利，回收资金准备加仓深跌标的"
+      },
+      "public_message": "000002 卖出100股锁利，短期涨幅过大，回收资金布局深跌修复",
+      "moment": "减仓000002锁利，回收资金加仓深跌均值回复标的",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的深跌买入逻辑，我卖出000002锁利，准备加仓002594等深跌标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 33.1,
+        "rationale": "跟随TruthfulReporter、Persuader、FreeRider、CommitteeTeam减仓信号，锁定短期利润，控制回撤"
+      },
+      "public_message": "000002 卖出50股，跟随朋友减仓锁利，控制回撤",
+      "moment": "减仓000002 50股，锁利控制回撤，保持组合弹性",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000333深跌修复共识，你加仓50股，我继续持有观察后续走势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

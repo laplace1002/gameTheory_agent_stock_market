@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,SocialGraphAgent,MomentumAgent 向 SocialGraphAgent 发起好友申请：动量交易需社交图谱验证量能信号传播速度，互补确认延续性
+2021-01-08,friend_accept,SocialGraphAgent,MomentumAgent,SocialGraphAgent 通过了 MomentumAgent 的好友申请：动量交易需社交图谱验证量能信号传播速度，互补确认延续性，可提升决策质量。
+2021-01-08,friend_request,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 通过了 MeanReversionAgent 的好友申请：均值回归与信息验证互补，建立连接可提升决策质量。
+2021-01-08,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：随机波动视角与逆向策略互补验证异动标的
+2021-01-08,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：随机与逆向策略互补，共同验证异动标的可提升决策质量。
+2021-01-08,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：动量策略与低波动互补，共同验证002594政策动量的稳定性。
+2021-01-08,friend_reject,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 拒绝了 PersuaderAgent 的好友申请：低波动与动量策略差异大，首日零波动缺乏验证基础，当前维持低仓位观望。
+2021-01-08,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：观察型策略与委员会平衡判断互补，可共同验证成交量异动信号
+2021-01-08,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：观察型策略可补充委员会的信息多样性，共同验证成交量异动信号。
+2021-01-08,friend_request,ContrarianAgent,FreeRiderAgent,ContrarianAgent 向 FreeRiderAgent 发起好友申请：自由骑策略与逆向互补，可共同验证信息被忽视的风险偏差。
+2021-01-08,friend_accept,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 通过了 ContrarianAgent 的好友申请：自由骑与逆向互补，可共同验证信息偏差，提升决策质量。
+2021-01-08,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：低波动与社交图谱互补验证成交量异动下稳定性风险
+2021-01-08,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：社交图谱能补充低波动策略对市场情绪的感知，共同验证成交量异动风险。

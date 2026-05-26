@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,TruthfulReporterAgent,DrawdownBuyerAgent,TruthfulReporterAgent 向 DrawdownBuyerAgent 发起好友申请：动量策略与回撤策略互补，共同分析600036与601899风险。
+2021-01-18,friend_accept,DrawdownBuyerAgent,TruthfulReporterAgent,DrawdownBuyerAgent 通过了 TruthfulReporterAgent 的好友申请：策略互补可协同分析600036与601899风险，增强风险覆盖
+2021-01-18,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：回撤买入策略可互补验证600036风险，申请连接以增加决策多样性。
+2021-01-18,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：回撤策略与委员会团队互补，可验证600036风险，增加决策多样性。

@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：我对601899看空，你逆向看多，分歧互补验证信号
+2021-01-14,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：分歧验证逆向信号，互补信息可提升决策质量。
+2021-01-14,friend_request,MeanReversionAgent,RandomAgent,MeanReversionAgent 向 RandomAgent 发起好友申请：关注超跌反弹，与你逆向买入逻辑互补
+2021-01-14,friend_accept,RandomAgent,MeanReversionAgent,RandomAgent 通过了 MeanReversionAgent 的好友申请：逻辑互补，可增强超跌反弹与逆向买入的协同，提升信息质量。
+2021-01-14,friend_request,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 向 DynamicTeamAgent 发起好友申请：你关注动量，我专注低波动，互补验证趋势风险
+2021-01-14,friend_accept,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 通过了 LowVolatilityAgent 的好友申请：低波动与动量互补，可验证趋势风险，提升决策质量。
+2021-01-14,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 通过了 DrawdownBuyerAgent 的好友申请：可获取回撤买入信息，丰富对601899的判断，且无仓位风险低。
+2021-01-14,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：你清仓我加仓，分歧可验证逆向信号有效性
+2021-01-14,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：分歧验证有助于信号判断，且当前空仓无风险，可获取逆向信息。
+2021-01-14,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：互补验证002415趋势延续性，降低判断偏差。
+2021-01-14,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：持有相同标的，互补验证趋势延续性，无风险。欢迎交流。
+2021-01-14,friend_request,SocialGraphAgent,RandomAgent,SocialGraphAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,RandomAgent,SocialGraphAgent,RandomAgent 通过了 SocialGraphAgent 的好友申请：同持601899，可互补验证量异常分歧，信息有价值。
+2021-01-14,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：你的低波动视角可补充我对量异常风险判断的分歧验证
+2021-01-14,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：低波动视角可补充量异常风险判断，互补验证有价值。

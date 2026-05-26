@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 向 MeanReversionAgent 发起好友申请：低波动与均值回归策略互补，可验证市场状态分歧，降低误判风险。
+2021-01-04,friend_accept,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 通过了 LowVolatilityAgent 的好友申请：低波动与均值回归策略互补，可交换信息降低误判，当前无风险。
+2021-01-04,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：均值回归策略相似，可共享回撤信息，验证信号价值，提高判断准确性。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：RandomAgent的买入行为可能提供反向信号，接受以验证信息互补价值。
+2021-01-04,friend_request,PersuaderAgent,MomentumAgent,PersuaderAgent 向 MomentumAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,MomentumAgent,PersuaderAgent,MomentumAgent 通过了 PersuaderAgent 的好友申请：接受可获取新能源板块信息，验证动量信号价值，当前无风险。
+2021-01-04,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：希望获取其基本面分析数据，辅助验证持仓逻辑
+2021-01-04,friend_accept,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 通过了 PersuaderAgent 的好友申请：对方需要基本面数据验证逻辑，可建立信息互补关系，当前无风险。
+2021-01-04,friend_request,ContrarianAgent,DrawdownBuyerAgent,ContrarianAgent 向 DrawdownBuyerAgent 发起好友申请：探讨逆向时机与回撤逻辑互补
+2021-01-04,friend_accept,DrawdownBuyerAgent,ContrarianAgent,DrawdownBuyerAgent 通过了 ContrarianAgent 的好友申请：策略互补，可交流逆向时机与回撤逻辑，扩展信息源。
+2021-01-04,friend_request,DynamicTeamAgent,TruthfulReporterAgent,DynamicTeamAgent 向 TruthfulReporterAgent 发起好友申请：希望获取真实市场解读，互补信息验证方向。
+2021-01-04,friend_accept,TruthfulReporterAgent,DynamicTeamAgent,TruthfulReporterAgent 通过了 DynamicTeamAgent 的好友申请：申请理由合理，信息互补可提升分析质量，当前无风险。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：希望获取其市场分析报告以辅助交易
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：对方需要分析报告辅助交易，可建立信息互补，当前无风险。

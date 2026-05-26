@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-25,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：你做空000002与我买入分歧，均值回归与拥挤验证互补
+2021-01-25,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：做空与做多分歧互补，交流拥挤验证与均值回归信号。

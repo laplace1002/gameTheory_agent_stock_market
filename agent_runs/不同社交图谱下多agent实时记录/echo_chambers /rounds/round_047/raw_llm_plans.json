@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.32,
+        "rationale": "强势股回调买入，验证趋势延续，逆卖压加仓"
+      },
+      "public_message": "600036 BUY 1股：强势股回调买入，验证趋势延续",
+      "moment": "逆势加仓600036 1股，卖压中买入强势股，趋势延续待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "加仓600036，与逆向逻辑一致，共同验证强势股回调买入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 176.47,
+        "rationale": "轮次接近尾声，均值回归时间不足，持仓观望"
+      },
+      "public_message": "002594 HOLD：轮次尾声，均值回归时间不足，等待最后验证",
+      "moment": "002594持仓观望，均值回归需时间验证，轮次风险控制。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解你逆向逻辑，但轮次有限，我选择持仓观望，验证你的结果。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 176.47,
+        "rationale": "现金不足，无法加仓深回撤标的，持仓等待"
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 2,
+        "price": 54.32,
+        "rationale": "轮次尾声，减仓共识持续，降低银行集中度风险"
+      },
+      "public_message": "600036 SELL 2股：跟随减仓共识，降低银行集中度风险",
+      "moment": "卖出600036 2股，降低集中度，轮次尾声控制风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我减仓600036控制风险，你逆向加仓，策略分歧待验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "跟随多Agent减仓共识，降低银行集中度风险，保留部分观察逆向逻辑"
+      },
+      "public_message": "600036 SELL 1股：跟随减仓共识，降低集中度风险",
+      "moment": "卖出600036 1股，跟随共识降低风险，保留观察逆向逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我减仓600036跟随共识，你逆向持仓，验证分歧收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.32,
+        "rationale": "跟随多Agent减仓共识，降低银行集中度风险"
+      },
+      "public_message": "600036 SELL 1股：减仓共识延续，降低银行集中度风险",
+      "moment": "卖出600036 1股，跟随减仓共识，保留部分仓位观察逆向逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我减仓600036跟随共识，与你逆向加仓形成分歧，可验证均值回归情绪"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.47,
+        "rationale": "超跌共识持续但轮次接近尾声，减仓1股降低集中度风险，锁定部分利润"
+      },
+      "public_message": "002594 SELL 1股：轮次尾声，减仓控制集中度风险",
+      "moment": "卖出002594 1股，轮次尾声减仓降低风险，保留超跌仓位观察",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我减仓002594控制风险，你加仓验证超跌逻辑，分歧可观察后期均值回归效果"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.32,
+        "rationale": "跟随减仓共识，降低银行集中度风险，轮次接近尾声"
+      },
+      "public_message": "600036 SELL 1股：跟随减仓共识，降低银行集中度风险",
+      "moment": "减仓600036 1股，跟随多数降风险，保留部分观察逆向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我减仓600036控制风险，你逆向加仓验证均值回归，轮次有限，可观察分歧收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.32,
+        "rationale": "拥挤卖出延续，但轮次有限，暂不加仓，等待均值回归验证"
+      },
+      "public_message": "600036 HOLD：卖出拥挤但轮次有限，暂不加仓，观察均值回归信号",
+      "moment": "600036持仓不动，逆向逻辑需时间验证，注意轮次风险。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我逆向持有600036，你超跌买入002594，不同策略可对比验证收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.32,
+        "rationale": "轮次尾声，维持银行权重等待验证"
+      },
+      "public_message": "600036 HOLD：轮次尾声，维持现有仓位等待策略验证",
+      "moment": "HOLD 600036：轮次47/50，银行仓位不动，等待收盘验证逆向逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "轮次尾声，我选择HOLD，你的逆向加仓观察最终结果"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.32,
+        "rationale": "跟随多Agent减仓共识，降低银行集中度风险；轮次接近尾声，控制仓位。"
+      },
+      "public_message": "600036 SELL 1股：继续降低银行集中度风险，轮次少控制仓位。",
+      "moment": "减仓600036，降低集中度，轮次尾声。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "继续减仓600036，轮次少，控制集中度风险，逆向逻辑看后续验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "跟随多Agent减仓共识，控制银行集中度风险"
+      },
+      "public_message": "600036 SELL 1股：减仓共识延续，控制银行集中度风险",
+      "moment": "卖出600036 1股，跟随减仓共识，降低银行集中度",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓600036，我减仓控制风险，策略分歧待验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

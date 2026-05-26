@@ -1,0 +1,266 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日所有ticker涨跌幅为0，缺乏超卖信号，因此不交易"
+      },
+      "public_message": "首日所有ticker收益率为0，无均值回归机会，选择HOLD",
+      "moment": "首日横盘，等待均值回归机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "今日无超卖信号，你是否也持观望态度？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "验证首日收益率数据，互补信息"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 101.54,
+        "rationale": ""
+      },
+      "public_message": "所有ticker ret5=0，无趋势信号，HOLD观望。",
+      "moment": "无趋势，HOLD等待。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "今日无历史动量，暂时HOLD，等待信号。"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "你近期非共识交易，可验证动量反转信号，互补信息。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 42.18,
+        "rationale": "所有ticker ret5和ret20均为0，无趋势信号，维持现有仓位观望"
+      },
+      "public_message": "今日无价格波动，无趋势信号，继续持有600036观望。",
+      "moment": "首日横盘，持有600036观望。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "所有ticker涨跌幅为0，无动量信号，你对000002有何看法？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "新年首日所有ticker ret5和ret20为0，无回撤信号，暂不交易。"
+      },
+      "public_message": "今日所有股票回撤数据为零，无跌深机会，HOLD观望。",
+      "moment": "新年首日数据空白，等待超卖机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "首日无回撤，后续关注情绪变化，你有观察到任何可能超卖信号吗？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "需验证回撤信号的真实性，互补分析信息。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 49.8,
+        "rationale": "002415今日成交量最大，流动性强，无历史趋势下放量信号可试仓"
+      },
+      "public_message": "002415放量居前，买入100股试仓，关注后续流动性信号",
+      "moment": "首日放量，试仓002415，等待更多证据",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你建仓000002，社交图谱有何信号？002415放量，可交叉验证"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你基于成交量买入002415，我需要验证流动性信号，策略可互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.21,
+        "rationale": "当前浮盈1.69%，低价格高流动性未变，继续持有观察"
+      },
+      "public_message": "持有601899，低价格+高流动性，继续观察",
+      "moment": "持仓601899，浮盈中，等待催化剂",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我持有的601899今日继续放量，你如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2059.45,
+        "rationale": "首日所有ticker涨跌幅为零，无趋势信号，观望等待信息验证"
+      },
+      "public_message": "HOLD 600519，首日无趋势，等更多信号",
+      "moment": "首日横盘，持仓观察，等待其他agent观点",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "首日数据为零，你如何确认无趋势？是否有未公开信息？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "需要验证首日叙事准确性，互补信息验证能力"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 219.9,
+        "rationale": "新能源车龙头，政策持续加码，今日上涨确认趋势，加仓。"
+      },
+      "public_message": "加仓002594，新能源龙头持续走强，政策驱动明确。",
+      "moment": "今日加仓002594，新能源主线不动摇。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594今日涨幅明显，建议跟随加仓，新能源趋势确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 54.78,
+        "rationale": "持仓002415浮盈，当日无趋势信号，等待动能或均值回复证据"
+      },
+      "public_message": "002415持仓观望，等待趋势信号确认",
+      "moment": "新年第二日，市场横盘，继续持有002415",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "新能源方向观点已验证？考虑互补信息"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "新能源策略需验证，信息互补可增强判断"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "与SocialGraphAgent共同建仓，验证高流动性逻辑，加仓100股"
+      },
+      "public_message": "加仓000002 100股，与SocialGraphAgent协同验证高流动性",
+      "moment": "加仓000002，与好友SocialGraphAgent共同验证高流动性策略",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002成交量持续活跃，我同步加仓，建议保持关注"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "其非共识交易逻辑可验证，与我的流动性关注互补，扩展信息源"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "所有ticker ret5=0，无趋势，无拥挤信号，观望"
+      },
+      "public_message": "HOLD 所有ticker，无趋势信号，等待拥挤出现。",
+      "moment": "首日横盘，暂不参与，等待可证伪的拥挤交易。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601899放量但无方向，你的非共识能否持续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日所有ticker涨跌幅为零，无趋势信号，且已有仓位，建议HOLD以观察社交信息传播。"
+      },
+      "public_message": "HOLD 000002，首日无趋势，等待社交信息流。",
+      "moment": "新交易日首日横盘，关注社交关系与信息传播效率。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000002明日动量预期如何？首日无数据，需依赖后续信号。"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "反趋势策略可验证市场共识偏差，互补信息源。"
+      }
+    },
+    "error": ""
+  }
+]

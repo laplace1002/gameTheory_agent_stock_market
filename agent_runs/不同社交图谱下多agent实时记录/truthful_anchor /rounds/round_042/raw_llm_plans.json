@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 170.68,
+        "rationale": "拥挤风险上升，等待均值回归确认"
+      },
+      "public_message": "002594 深度回撤但拥挤度上升，暂时观望。",
+      "moment": "当前组合承受回撤，重点监控002594和002415拥挤变化。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415逆向机会，拥挤卖出过度，但需确认反弹动能。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.05,
+        "rationale": "逆势抗跌，5日正收益，趋势延续"
+      },
+      "public_message": "买入601318 10股，逆势抗跌趋势延续",
+      "moment": "加仓601318，逆势抗跌趋势延续",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你的判断，买入601318跟随趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 170.68,
+        "rationale": "002594拥挤度上升，多空分歧加大，减仓2股控制回撤风险"
+      },
+      "public_message": "002594 SELL 2股：拥挤度上升，减仓控险，保留部分观察",
+      "moment": "减仓002594 2股，拥挤风险上升，等待非共识信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤判断，减仓002594 2股，协同控险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 242.5,
+        "rationale": "深度回撤-20%+，低拥挤，非共识价值修复机会，小额验证"
+      },
+      "public_message": "000858 BUY 1股：深度回撤-20%+未拥挤，低接验证价值修复。",
+      "moment": "加仓000858 1股，深度回撤-20%+低拥挤，均值回归博弈验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858深度回撤低拥挤，与您逆向策略类似，验证非共识机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 81.99,
+        "rationale": "深跌超20日-16.83%未拥挤，非共识博弈均值回归"
+      },
+      "public_message": "买入000333 10股，深跌未拥挤，逆向均值回归博弈。",
+      "moment": "买入000333 10股，非共识深跌博弈，市场聚焦002594，这里可能有超额。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333深跌超16%无人问津，逆向机会类似你的002415，建议关注。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 170.68,
+        "rationale": "拥挤风险上升，多Agent卖出，减仓控制回撤"
+      },
+      "public_message": "002594 SELL 5股：拥挤度上升，减仓控险",
+      "moment": "减仓002594 5股，拥挤风险上升，等待非共识机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤风险判断，跟随减仓5股002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 20,
+        "price": 170.68,
+        "rationale": "拥挤度上升，多Agent卖出，控制回撤风险"
+      },
+      "public_message": "002594 SELL 20股：拥挤度上升，多Agent卖出，控制回撤风险",
+      "moment": "减仓002594 20股，拥挤度上升，锁定部分头寸，等待非共识机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的拥挤判断，跟随减仓20股，后续再协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 170.68,
+        "rationale": "拥挤风险上升，多Agent分歧，减持部分锁定利润，等待非共识机会"
+      },
+      "public_message": "002594 SELL 5股：拥挤度上升，减持部分锁定利润，等待非共识机会",
+      "moment": "减持002594 5股，拥挤度上升，等待非共识信号再行动",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "拥挤风险上升，我减持5股观望，均值回归逻辑仍在但需验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 170.68,
+        "rationale": "多Agent分歧显示拥挤度上升，减仓规避风险，等待非共识机会"
+      },
+      "public_message": "002594 SELL 10股：拥挤风险上升减仓规避",
+      "moment": "清仓002594 10股，拥挤上升减仓，等待非共识机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤风险判断，已清仓002594，后续协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 170.68,
+        "rationale": "拥挤卖出过度，逆向买入博弈均值回归"
+      },
+      "public_message": "002594 BUY 10股：拥挤卖出过度，逆向买入博弈均值回归",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 170.68,
+        "rationale": "拥挤风险上升，减仓控制回撤"
+      },
+      "public_message": "002594 SELL 1股：拥挤风险上升，减仓验证",
+      "moment": "减仓002594 1股，拥挤风险上升，锁定部分利润，关注后续",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "感谢拥挤提示，已跟随减仓1股002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 170.68,
+        "rationale": "拥挤风险上升，多Agent买入后均值回归博弈过度，减仓规避"
+      },
+      "public_message": "002594 SELL 10股：拥挤风险上升，均值回归博弈过度，减仓规避",
+      "moment": "清仓002594 10股，拥挤风险上升，等待非共识机会，关注002415逆向机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "拥挤风险确认，清仓002594，后续关注002415逆向机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

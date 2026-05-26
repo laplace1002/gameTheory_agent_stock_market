@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.26,
+        "rationale": "弱势资产，换仓强势"
+      },
+      "public_message": "002415 BUY 趋势延续，近5日涨幅13%",
+      "moment": "卖出000002 50股，买入002415 50股，追涨强势",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415追涨信号强，验证趋势延续，是否有拥挤风险？"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "追涨与超跌策略互补，验证趋势延续"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 295.56,
+        "rationale": "超跌反弹拥挤加剧，锁利降仓"
+      },
+      "public_message": "000858 SELL 10股，超跌拥挤风险上升，锁利降仓",
+      "moment": "减持000858，规避超跌拥挤风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意超跌拥挤判断，已减持000858"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 30,
+        "price": 295.56,
+        "rationale": "超跌反弹拥挤度上升，均值回归策略止盈，降低风险暴露"
+      },
+      "public_message": "000858 SELL 30股，超跌反弹拥挤风险增加，均值回归止盈",
+      "moment": "卖出000858 30股，均值回归策略应对超跌反弹拥挤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858拥挤上升，我已部分止盈，验证风险信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 295.56,
+        "rationale": "超跌反弹拥挤，随机止盈减仓"
+      },
+      "public_message": "000858 SELL 10股，超跌拥挤随机止盈",
+      "moment": "000858减仓10股，随机策略应对拥挤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "超跌拥挤加剧，我随机减仓000858，注意风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 295.56,
+        "rationale": "超跌反弹拥挤但未放量滞涨，继续持有等待明确止盈信号"
+      },
+      "public_message": "000858 HOLD：超跌反弹拥挤但未衰竭，继续持有等待量能确认",
+      "moment": "持000858和300750，超跌反弹拥挤但未到反转点，继续观望",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000858加仓信号已验证，我继续持仓，注意拥挤风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.26,
+        "rationale": "000002趋势待验证，超跌拥挤未缓解，继续观望"
+      },
+      "public_message": "000002 HOLD：趋势待验证，超跌拥挤未缓解，等待信号",
+      "moment": "持000002观望，超跌拥挤信号混杂，等待量能确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的601318逆向买入，避开拥挤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 242.92,
+        "rationale": "超跌拥挤风险蔓延，002594短期涨幅大，部分止盈锁定利润"
+      },
+      "public_message": "002594 SELL 100股，部分止盈应对超跌拥挤风险",
+      "moment": "002594减仓100股，超跌拥挤风险上升，先锁部分利润",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.44,
+        "rationale": "跟随逆向信号，避开超跌拥挤，金融蓝筹估值安全"
+      },
+      "public_message": "601318 BUY 10股，逆向跟随，规避超跌拥挤风险。",
+      "moment": "买入601318 10股，逆向跟随ContrarianAgent，分散超跌反弹拥挤风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向买入601318，规避超跌拥挤，已跟进。"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.8,
+        "rationale": "逆向加仓，超跌反弹拥挤后金融蓝筹被冷落，逢低吸纳等待均值回归"
+      },
+      "public_message": "601318 BUY：逆向加仓，超跌拥挤风险释放，金融蓝筹估值安全，等待修复",
+      "moment": "加仓601318 10股，逆向操作，避开超跌股拥挤，价值回归逻辑不变",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 295.56,
+        "rationale": "超跌反弹拥挤度上升，多个Agent止盈，减仓锁定利润"
+      },
+      "public_message": "000858 SELL 减仓10股，超跌拥挤风险增强",
+      "moment": "减仓000858，警惕超跌拥挤，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向思路，考虑跟进601318，规避拥挤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 408.0,
+        "rationale": "超跌反弹拥挤信号明显，跟随止盈控制风险"
+      },
+      "public_message": "300750 SELL 5股，止盈规避拥挤风险",
+      "moment": "卖出300750 5股，超跌拥挤风险加剧，锁定部分利润",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你的300750止盈判断，已跟随减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.26,
+        "rationale": "超跌拥挤信号增加，量能未确认，持仓观望"
+      },
+      "public_message": "000002 HOLD：社交超跌拥挤，量能不足，继续观望",
+      "moment": "持000002和000858，超跌逻辑未破但拥挤度上升，暂持谨慎",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "超跌拥挤风险上升，但反弹未衰竭，如何判断阈值？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

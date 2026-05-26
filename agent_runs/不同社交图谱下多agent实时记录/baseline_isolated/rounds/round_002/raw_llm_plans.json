@@ -1,0 +1,257 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 219.9,
+        "rationale": "跟随PersuaderAgent买入新能源龙头，预期动量延续"
+      },
+      "public_message": "002594 买入，新能源板块首日活跃，动量信号",
+      "moment": "买入002594，首日布局新能源动量",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已跟随买入002594，新能源板块是否还有催化？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日所有ret5/ret20为0，无过度抛售信号，等待趋势确认。"
+      },
+      "public_message": "000002 HOLD: 无历史数据，缺乏均值回归信号，观望。",
+      "moment": "HOLD 000002: 首日无波动，等待价格偏离均值机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "看到你买入000002，认为地产悲观过度。均值回归需验证信号，后续可交流逆向时机。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "需要真实市场数据验证均值回归信号，信息互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日无历史趋势信号，ret5/ret20为零，低波策略保持仓位不动，控制回撤风险。"
+      },
+      "public_message": "000002 HOLD: 首日信号缺失，低波策略观望。",
+      "moment": "低波动：当前持仓万科，无交易，等待趋势。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "短线获利了结，换仓随机测试其他标的"
+      },
+      "public_message": "卖出601899，获利了结，随机换仓000333",
+      "moment": "随机换仓：卖出601899，买入000333，测试家电板块",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我卖出了601899，随机买入000333，你的反向怎么看？"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "同为601899买入者，交流成交量逻辑，验证分歧"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.27,
+        "rationale": "首日无历史回撤数据，缺乏跌深信号，保持现金等待后续机会。"
+      },
+      "public_message": "HOLD：今日所有ticker ret5/ret20为0，无回撤信号，观望。",
+      "moment": "首日无历史跌幅，空仓等待价值修复机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你逆向买入000002，但我需等待明确回撤数据再行动。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "需要真实市场分析辅助识别未来回撤机会"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日所有股票ret5/ret20为0，缺乏历史趋势证据，成交量分布无优势信号，继续观察。"
+      },
+      "public_message": "000002 HOLD：首日无历史数据，成交量无异常，保持现金观望。",
+      "moment": "首日无历史趋势，HOLD所有。关注601899成交异常，但需更多信号。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594新能源逻辑基于长期还是近期动量？首日无回测，如何验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 219.9,
+        "rationale": "首日无价格变动，已持仓002594，新能源逻辑不变，继续持有观察。"
+      },
+      "public_message": "002594新能源龙头，首日布局后继续看好，长期增长逻辑未变。",
+      "moment": "今日建仓比亚迪，看好新能源主线，首日无异常，继续持有。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594首日成交量合理，新能源板块可能有动量效应，建议关注。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.27,
+        "rationale": "首日无历史回报数据，多个agent建仓方向分散，无一致信号，继续现金观望。"
+      },
+      "public_message": "观望所有ticker，等待更多数据。",
+      "moment": "今日多agent建仓不同板块，但信号不足，继续观察。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "您买入601899是基于成交量异常吗？短期博弈逻辑能否分享？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "希望获取真实市场解读，互补信息验证方向。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "地产过度悲观，逆向加仓"
+      },
+      "public_message": "加仓000002，继续逆向买入地产龙头",
+      "moment": "加仓万科，地产悲观过度，逆向布局",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你买601899量异常，我倾向谨慎，保持反向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 54.78,
+        "rationale": "现有持仓盈利10%，无明确反转信号，首日缺乏历史趋势，继续持有观察。"
+      },
+      "public_message": "HOLD 002415，首日盈利10%，等待更多信号确认趋势。",
+      "moment": "持有002415，首日浮盈10%，继续观察。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我持有002415，想获取你的基本面分析验证逻辑。能否交流？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "需要其基本面数据验证持仓逻辑，信息互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.21,
+        "rationale": "首日持仓观望，无历史趋势，等待更多信号"
+      },
+      "public_message": "601899：持有100股，关注高成交量后续表现，暂不操作。",
+      "moment": "持有601899，高成交开盘，静待趋势确认。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "请分析601899今日成交量异常是否可持续，谢谢。"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你建仓002415，我想探讨安防板块与资源股信息互补价值。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 402.0,
+        "rationale": "首日无历史回报数据，ret5/ret20均为0，缺乏方向性信号，风险较高，继续观望"
+      },
+      "public_message": "300750：继续观望，首日无历史趋势，等待数据积累。",
+      "moment": "第一天，零历史，空仓等待趋势信号。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "首日行情无参考，你如何看后续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

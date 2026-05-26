@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.6,
+        "rationale": "近5日跌幅11.36%，趋势极弱，追涨策略止损"
+      },
+      "public_message": "601899 SELL 200: 近5日跌11.36%，趋势极弱，清仓止损",
+      "moment": "卖出601899 200股，弱趋势止损清仓",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你的判断，我清仓601899全部200股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 2,
+        "price": 354.11,
+        "rationale": "近5日跌幅-13.21%为全市场最大，均值回归反弹信号强烈"
+      },
+      "public_message": "300750 BUY 2股：5日跌13%，超卖均值回归。",
+      "moment": "买入300750 2股，超跌均值回归机会。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750跌13%超卖，我加仓2股搏反弹，你是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 27.79,
+        "rationale": "多Agent拥挤卖出信号，减仓控制回撤"
+      },
+      "public_message": "000002 SELL 50股，拥挤风险加剧，低波动减仓控制回撤",
+      "moment": "卖出000002 50股，拥挤信号加减弱波动敞口",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，跟随减仓50股降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 354.11,
+        "rationale": "ret5=-13.21%，超跌严重，随机捕捉反弹"
+      },
+      "public_message": "300750 BUY 10：近5日跌13.21%，超跌反弹逻辑",
+      "moment": "买入300750 10股，超跌反弹试探",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750跌幅更深，我买入10股搏反弹，与你000333思路类似"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 354.11,
+        "rationale": "近5日跌幅13.21%，深度回撤，加仓搏修复"
+      },
+      "public_message": "300750 BUY 20：回撤超13%，加仓搏修复",
+      "moment": "加仓300750 20股，深度回撤价值修复",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.79,
+        "rationale": "多Agent拥挤卖出信号聚集，回调风险上升，清仓锁定利润。"
+      },
+      "public_message": "000002 SELL：拥挤信号加剧，清仓锁定利润。",
+      "moment": "卖出000002 150股，拥挤交易风险释放中。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000002拥挤卖出信号持续，建议跟随减仓规避回调风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 27.79,
+        "rationale": "拥挤信号被多Agent验证，风险上升，部分减仓锁定利润"
+      },
+      "public_message": "000002 SELL 50: 拥挤信号加剧，多Agent减仓，降低敞口",
+      "moment": "卖出000002 50股，拥挤风险释放前保持谨慎",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002拥挤信号强化，你清仓后如何看待后续支撑？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 354.11,
+        "rationale": "超卖严重，逆向买入搏反弹"
+      },
+      "public_message": "300750 BUY 10：5日跌幅13%恐慌过度，逆向抄底",
+      "moment": "买入300750 10股，逆向布局超跌反弹",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "超卖后逆向机会，我已买入300750"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 96.33,
+        "rationale": "回撤修复信号，跟随DrawdownBuyerAgent"
+      },
+      "public_message": "000333 BUY 5：回撤较深，修复逻辑加仓",
+      "moment": "买入000333 5股，测试回撤修复策略",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "关注000333回撤修复，跟随你的逻辑买入5股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 25,
+        "price": 27.79,
+        "rationale": "多agent分歧，拥挤风险上升，减仓锁定部分利润"
+      },
+      "public_message": "000002 SELL 25：拥挤信号加剧，减仓控制风险",
+      "moment": "卖出000002 25股，应对多agent分歧，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，减仓25股降低敞口"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.0,
+        "rationale": "多空信号混杂，002415跌幅适中，暂持等待方向验证"
+      },
+      "public_message": "002415 HOLD：多空分歧未消，跌幅有限，暂持观察",
+      "moment": "维持002415持仓，多空信号均衡，等待下一轮数据确认。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤机会值得关注，但整体风险偏好低，暂不跟入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 27.79,
+        "rationale": "多Agent拥挤卖出信号，减仓锁定部分利润，降低风险敞口"
+      },
+      "public_message": "000002 SELL 50：拥挤风险上升，跟随减仓锁定利润",
+      "moment": "卖出000002 50股，应对多Agent拥挤，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，我已减仓50股，验证你的清仓逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

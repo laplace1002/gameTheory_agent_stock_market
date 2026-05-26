@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.27,
+        "rationale": "首日无历史回报，无过度抛售标的，观望等待均值回归信号。"
+      },
+      "public_message": "HOLD 全部，首日数据不足，等待过度抛售机会。",
+      "moment": "首日无操作，观察各品种波动率，未来寻找回撤买入点。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交量最大，流动性好，预期动量延续"
+      },
+      "public_message": "买入601899，量能充足，追涨。",
+      "moment": "首日建仓601899，成交量异常，试多。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "601899成交量最大，我追涨，你如何看？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "动量策略与基本面信息互补，验证趋势。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 54.78,
+        "rationale": "跟随TruthfulReporterAgent基本面判断，分散持仓，控制回撤"
+      },
+      "public_message": "买入002415，分散配置，控制回撤",
+      "moment": "002415买入，低波动分散",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢分享，已跟随买入002415"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.91,
+        "rationale": "首日无历史回撤数据，无明确跌深修复信号，暂持现金等待机会"
+      },
+      "public_message": "今日无操作，等待市场回撤机会。",
+      "moment": "首日无回撤信号，保持现金，关注后续回调标的。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "首日信息不足，建议观察成交量异常标的，后续若有回撤可协同操作。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 101.54,
+        "rationale": "随机选中蓝筹，分散持仓"
+      },
+      "public_message": "随机买入000333，分散风险",
+      "moment": "随机建仓000333，观察非共识表现",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你我也持601899，讨论后续方向？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "基本面与随机策略互补，验证信息价值"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 219.9,
+        "rationale": "新能源板块趋势验证，加仓确认动量向上，长期增长逻辑不变"
+      },
+      "public_message": "加仓002594，新能源板块动量确认，长期看好",
+      "moment": "002594加仓，新能源趋势强化，持仓待涨",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "今日加仓002594，趋势确认，建议关注新能源产业链机会"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "基本面信息互补，验证新能源持仓方向"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "多家Agent建仓000002，跟随核心资产配置，分散当前单一保险持仓。"
+      },
+      "public_message": "000002 买入，核心资产低估，跟随配置。",
+      "moment": "观察首日资金流向，建仓000002对冲保险仓位。",
+      "private_message": null,
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "观察到您买入000002，希望交流验证核心资产走势，策略互补。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 54.78,
+        "rationale": "现价54.78高于成本49.80，盈利约10%，但基本面未变，成交量正常，无明确卖出信号，暂持观察。"
+      },
+      "public_message": "002415 HOLD，安防龙头基本面稳健，当前盈利继续持有。",
+      "moment": "002415持仓盈利，安防领域龙头，基本面未变，继续持有。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415现价54.78，我的成本49.80，盈利中。你关注的601899成交量今日异常，可关注后续走势。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2059.45,
+        "rationale": "首日信息不足，需观察市场共识是否过度乐观"
+      },
+      "public_message": "HOLD 600519，首日无明确逆向信号，等待拥挤交易迹象。",
+      "moment": "今日无操作，观察各标的资金流向，警惕一致看多品种超买。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交量持续放大，加仓验证趋势"
+      },
+      "public_message": "加仓601899，成交活跃，试探趋势",
+      "moment": "601899放量延续，加仓观察后续",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "请问您对601899基本面有何看法？"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "成交量策略与动量策略互补，共同验证趋势信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 54.78,
+        "rationale": "跟随TruthfulReporterAgent基本面信号，安防龙头成交量活跃"
+      },
+      "public_message": "买入002415，跟随TruthfulReporterAgent基本面分析，安防龙头。",
+      "moment": "关注002415，安防龙头成交活跃，基本面信号明确。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "已买入002415，可否交流您的分析逻辑？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "希望共享基本面信息，验证安防行业逻辑。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.91,
+        "rationale": "好友DynamicTeamAgent同步持仓，核心资产流动性好，首日建仓信号"
+      },
+      "public_message": "000002 加仓 万科核心资产 好友协同",
+      "moment": "关注000002 成交活跃 好友共识持仓",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "共持万科，后续可互换信息"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "基本面与社交网络互补，验证信息价值"
+      }
+    },
+    "error": ""
+  }
+]

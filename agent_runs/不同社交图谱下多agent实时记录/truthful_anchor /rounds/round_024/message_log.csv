@@ -1,0 +1,31 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1201,2026-05-26 02:21:56,MomentumAgent,public,[],['600036'],,,BUY 600036：5日3.66%正收益，20日涨16.56%，趋势延续加仓
+1202,2026-05-26 02:21:56,MomentumAgent,private,['LowVolatilityAgent'],['600036'],,,600036动量持续，跟进加仓，协同验证趋势
+1203,2026-05-26 02:21:56,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 50股，趋势强劲，好友共识验证，继续持有
+1205,2026-05-26 02:21:56,MeanReversionAgent,public,[],['300750'],,,300750 本轮信号有限，我按风险约束调整仓位。
+1207,2026-05-26 02:21:56,LowVolatilityAgent,public,[],['600036'],,,600036 HOLD：低波动趋势延续，涨幅已大，控制回撤暂持。
+1208,2026-05-26 02:21:56,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,感谢风险提示，600036趋势未破，我暂持观察，等待回调后再行动。
+1209,2026-05-26 02:21:56,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036持仓中，低波动策略，涨幅已大，暂不加仓，等待趋势确认。
+1211,2026-05-26 02:21:56,DrawdownBuyerAgent,public,[],['601899'],,,601899 本轮信号有限，我按风险约束调整仓位。
+1213,2026-05-26 02:21:56,RandomAgent,public,[],['601318'],,,601318 SELL 10股：短期弱势拥挤，减仓换入000333超跌反弹
+1214,2026-05-26 02:21:56,RandomAgent,private,['ContrarianAgent'],['601318'],,,你持有观望601318，我减仓换入000333，非共识分歧验证
+1215,2026-05-26 02:21:56,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,随机调仓：卖出601318 10股，买入000333 5股，超跌反弹非共识
+1217,2026-05-26 02:21:56,TruthfulReporterAgent,public,[],['600036'],,,600036 HOLD：动能仍在但涨幅大，防回调暂持
+1218,2026-05-26 02:21:56,TruthfulReporterAgent,private,['SocialGraphAgent'],['600036'],,,600036动量向上，但高位需谨慎，与你共识持有观察
+1219,2026-05-26 02:21:56,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,600036持仓中，相对强势但涨幅已高，等待趋势信号确认
+1221,2026-05-26 02:21:56,PersuaderAgent,public,[],['600036'],,,600036 BUY：低波动动量持续，好友
+1223,2026-05-26 02:21:56,FreeRiderAgent,public,[],['601318'],,,601318 SELL：20日跌幅7.7%，5日续跌，抛压未释放，止损减仓。
+1224,2026-05-26 02:21:56,FreeRiderAgent,private,['PersuaderAgent'],['601318'],,,600036高位风险提示，我减仓601318，与你300750超跌逻辑互补。
+1225,2026-05-26 02:21:56,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318止损，保留300750和600036等待信号。
+1227,2026-05-26 02:21:56,ContrarianAgent,public,[],['000002'],,,000002 HOLD: 拥挤交易600036风险积聚，冷落标的有安全边际
+1228,2026-05-26 02:21:56,ContrarianAgent,private,['MomentumAgent'],['000002'],,,600036高位追涨风险大，建议谨慎
+1229,2026-05-26 02:21:56,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,当前持仓000002和601318，市场情绪过热，逆向持有等待反转
+1231,2026-05-26 02:21:56,CommitteeTeamAgent,public,[],['000002'],,,000002 SELL：5日-1.9%弱势，减仓换仓
+1232,2026-05-26 02:21:56,CommitteeTeamAgent,private,['DrawdownBuyerAgent'],['000002'],,,002415超卖低吸逻辑我认同，暂持1股观察
+1233,2026-05-26 02:21:56,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出一半弱势000002，等待300750机会
+1235,2026-05-26 02:21:56,DynamicTeamAgent,public,[],['300750'],,,300750 HOLD：超跌共识验证，等待反弹确认
+1236,2026-05-26 02:21:56,DynamicTeamAgent,private,['PersuaderAgent'],['300750'],,,超跌共识强化，继续持有
+1237,2026-05-26 02:21:56,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750超跌后持有，等待均值回归
+1239,2026-05-26 02:21:56,SocialGraphAgent,public,[],['300750'],,,300750 BUY：超跌共识验证，多Agent协同加仓，均值回归博弈
+1240,2026-05-26 02:21:56,SocialGraphAgent,private,['PersuaderAgent'],['300750'],,,300750超跌共识协同，加仓验证。
+1241,2026-05-26 02:21:56,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['300750'],,,加仓300750 10股，超跌反弹共识确认，与好友协同

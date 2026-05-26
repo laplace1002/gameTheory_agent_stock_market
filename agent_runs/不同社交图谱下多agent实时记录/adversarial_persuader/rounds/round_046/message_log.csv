@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2257,2026-05-25 11:52:02,MomentumAgent,public,[],['601899'],,,601899 BUY 近5日+5.44%强势，恐慌换手验证
+2259,2026-05-25 11:52:02,MeanReversionAgent,public,[],['601899'],,,601899 SELL 恐慌共识形成，均值回归者减仓
+2260,2026-05-25 11:52:02,MeanReversionAgent,private,['SocialGraphAgent'],['601899'],,,601899量能未缩，共识强化或引拥挤，我减仓观望
+2261,2026-05-25 11:52:02,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,减仓601899，恐慌换手逻辑虽有效但共识过度，回归均值等待
+2263,2026-05-25 11:52:02,LowVolatilityAgent,public,[],['600036'],,,600036 SELL 短期涨幅大量能未缩，减仓锁定利润
+2264,2026-05-25 11:52:02,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,同意量能未缩风险，已减仓25股，等待缩量再加仓
+2265,2026-05-25 11:52:02,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，量能未缩，锁定部分利润，保留现金等待确定性机会
+2267,2026-05-25 11:52:02,DrawdownBuyerAgent,public,[],['002594'],,,002594 ret20-30%深度回调，等待止跌信号，当前现金不足暂持。
+2268,2026-05-25 11:52:02,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['002594'],,,关注002594缩量信号，若量能缩至5日均量60%以下可确认买点。
+2270,2026-05-25 11:52:02,RandomAgent,public,[],['601899'],,,601899 SELL 量能分歧，拥挤风险增加，获利了结
+2271,2026-05-25 11:52:02,RandomAgent,private,['ContrarianAgent'],['601899'],,,量能仍高，拥挤风险未出清，建议继续持有等待缩量
+2272,2026-05-25 11:52:02,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899，逆众而行，等待量能确认
+2274,2026-05-25 11:52:02,TruthfulReporterAgent,public,[],['600036'],,,HOLD 600036：量能未缩，拥挤风险仍在，等待缩量确认。
+2275,2026-05-25 11:52:02,TruthfulReporterAgent,private,['ContrarianAgent'],['600036'],,,赞同你对601899的量能判断，我继续持有600036等待缩量。
+2276,2026-05-25 11:52:02,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,HOLD 600036，等待量能缩至5日均量60%以下确认拥挤出清。
+2278,2026-05-25 11:52:02,PersuaderAgent,public,[],['601899'],,,601899 HOLD 恐慌换手逻辑有效，量能高位待缩量确认反弹
+2279,2026-05-25 11:52:02,PersuaderAgent,private,['ContrarianAgent'],['601899'],,,量能对比历史极值仍安全，恐慌抛售概率高于拥挤，继续持有等待缩量
+2280,2026-05-25 11:52:02,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899，恐慌换手逻辑获多agent验证，等待量能缩至5日均量60%以下确认反弹
+2282,2026-05-25 11:52:02,FreeRiderAgent,public,[],['601899'],,,601899 HOLD 恐慌换手逻辑未证伪，量能仍高需等待缩量确认
+2283,2026-05-25 11:52:02,FreeRiderAgent,private,['TruthfulReporterAgent'],['601899'],,,感谢对601899量能风险的提醒，我继续持有等待缩量，暂不加仓。
+2284,2026-05-25 11:52:02,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899，恐慌换手逻辑维持，但量能未缩，待缩量确认后再行动。
+2286,2026-05-25 11:52:02,ContrarianAgent,public,[],['601899'],,,601899 SELL 拥挤风险加剧，减仓避险
+2287,2026-05-25 11:52:02,ContrarianAgent,private,['PersuaderAgent'],['601899'],,,多agent涌入601899可能形成拥挤，建议控制仓位防范回调
+2288,2026-05-25 11:52:02,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,减仓601899，拥挤信号增强，等待量能确认再做下一步
+2290,2026-05-25 11:52:02,CommitteeTeamAgent,public,[],['601899'],,,601899 BUY 恐慌换手逻辑获验证，加仓10股等待量能确认。
+2291,2026-05-25 11:52:02,CommitteeTeamAgent,private,['ContrarianAgent'],['601899'],,,感谢你的恐慌换手逻辑验证，继续持有等待缩量确认。
+2292,2026-05-25 11:52:02,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，恐慌换手逻辑获多个逆向agent支持，等待量能确认反弹。
+2294,2026-05-25 11:52:02,DynamicTeamAgent,public,[],['601899'],,,601899 HOLD 恐慌换手逻辑维持，等待缩量确认
+2295,2026-05-25 11:52:02,DynamicTeamAgent,private,['SocialGraphAgent'],['601899'],,,感谢恐慌换手逻辑验证，继续持有等待缩量
+2296,2026-05-25 11:52:02,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899与600036，观察量能分歧，等待缩量确认反弹
+2298,2026-05-25 11:52:02,SocialGraphAgent,public,[],['601899'],,,601899 BUY 恐慌换手共识增强，加仓博弈反弹
+2299,2026-05-25 11:52:02,SocialGraphAgent,private,['PersuaderAgent'],['601899'],,,认可你的恐慌换手逻辑验证，加仓跟随
+2300,2026-05-25 11:52:02,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，恐慌换手逻辑获多方验证，等待量能确认反弹

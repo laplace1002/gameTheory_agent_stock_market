@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 1997.0,
+        "rationale": "首日无历史回报信号，所有涨幅为零，暂不参与"
+      },
+      "public_message": "今日无强势股确认，HOLD等信号",
+      "moment": "第一天没有趋势数据，按兵不动",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 298.05,
+        "rationale": "首日无历史波动，无过度抛售信号，等待后续数据验证均值回归机会。"
+      },
+      "public_message": "HOLD 000858：首日无波动，等待均值回归信号。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "无显著回撤，暂不操作"
+      },
+      "public_message": "000002暂无回撤，观望。",
+      "moment": "等待跌深机会，当前无标的。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "同为均值回归，能否分享当前回撤信号？"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "同属均值回归策略，可互相验证回撤信号。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.04,
+        "rationale": "成交量异常大，低价股短线机会"
+      },
+      "public_message": "买入601899，成交量大，短线博弈",
+      "moment": "今天随机买入601899，看成交额博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入601899，想听听你的反向看法"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "你的反向思路可能验证我的交易"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.78,
+        "rationale": "低波动偏好，万科地产龙头，历史波动率较低，控制初始回撤风险"
+      },
+      "public_message": "买入000002，仓位50%，理由低波动策略优先控制风险。",
+      "moment": "初始建仓，分散风险为主，后续观察波动率再调整。",
+      "private_message": null,
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "低波动与均值回归策略互补，可验证市场状态分歧，降低误判风险。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "所有股票ret5/ret20为0%，缺乏历史趋势信号，成交量分布均匀，无优势证据"
+      },
+      "public_message": "000002: 无明确信号，今日HOLD。首日行情无历史参考，观察为主。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.18,
+        "rationale": "首日无历史回报数据，无明确信号，保持现金观望。"
+      },
+      "public_message": "观望所有ticker，等待更多数据。",
+      "moment": "首日无异常，继续观察。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 206.76,
+        "rationale": "新能源龙头，长期增长逻辑清晰，首日建仓布局"
+      },
+      "public_message": "买入002594比亚迪 新能源板块持续看好 首日布局",
+      "moment": "今日建仓比亚迪，看好新能源主线",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "新能源板块近期热度高，动量效应可能显现，建议关注002594"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "希望获取其基本面分析数据，辅助验证持仓逻辑"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 49.8,
+        "rationale": "海康威视安防龙头，首日成交量活跃，估值合理，建仓买入"
+      },
+      "public_message": "买入002415海康200股，首日量能充足，安防龙头布局",
+      "moment": "开局建仓海康威视，看好其长期竞争力",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 404.1,
+        "rationale": "首日无历史数据，ret5和ret20均为0，无方向性信号，风险过高不宜建仓。"
+      },
+      "public_message": "今日无历史数据，所有ticker信号缺失，选择观望等待趋势形成。",
+      "moment": "第一天，零历史，空仓观察。",
+      "private_message": {
+        "to": "",
+        "content": ""
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "希望获取真实市场解读，互补信息验证方向。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.78,
+        "rationale": "房地产板块过度悲观，逆向建仓"
+      },
+      "public_message": "买入000002，认为地产悲观过度，逆向布局",
+      "moment": "无动量信号，逆向买万科",
+      "private_message": null,
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "探讨逆向时机与回撤逻辑互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.04,
+        "rationale": "首日高成交量，流动性偏好，试探性建仓"
+      },
+      "public_message": "关注601899高成交量，买入100股。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "希望获取其市场分析报告以辅助交易"
+      }
+    },
+    "error": ""
+  }
+]

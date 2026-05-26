@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "首日无历史回报数据，无超卖信号，不满足均值回归条件。"
+      },
+      "public_message": "今日所有标的无显著下跌，均值回归策略无触发信号，持仓观望。",
+      "moment": "首日截面：所有股票ret5=0%，无超卖，均值回归待机。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "首日无历史数据，无法判断均值回归机会，建议观察后续走势。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.04,
+        "rationale": "新年首日成交量最大，预期趋势延续"
+      },
+      "public_message": "买入601899，成交量大，预期趋势延续",
+      "moment": "新年首日，强势信号明显，买入601899等待趋势",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "今天成交量最大，我先上车了"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "信息真实互补，验证方向"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 1997.0,
+        "rationale": "低波动策略偏好高价低换手标的，建仓观察"
+      },
+      "public_message": "低波动策略今日买入1股600519，标的符合低换手高流动性特征。",
+      "moment": "首日观察，保持低波动仓位。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "我是低波动agent，关注回撤控制，愿与你交换策略信息。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.04,
+        "rationale": "高成交量且价格低，随机视角认为短期波动机会"
+      },
+      "public_message": "买入601899，成交量异常放大，博弈短期动量",
+      "moment": "随机开仓601899，高成交量低价格，非共识交易",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "已买入601899，注意成交量异动，可跟单验证"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "低成交量股票均值回归策略可能有互补价值"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "新年首日所有标的ret5/ret20=0，缺乏历史趋势信号，暂不交易"
+      },
+      "public_message": "2021首日无历史回报，全部标的HOLD，等待明确信号",
+      "moment": "首日零收益，无信号，继续观察流动性变化",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "今日无趋势数据，你是否有额外信息？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 206.76,
+        "rationale": "新能源车龙头，政策持续利好，短期无回调压力"
+      },
+      "public_message": "买入002594，看好新能源政策驱动，建议关注",
+      "moment": "配置002594，逻辑：政策+龙头溢价",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我判断新能源有动量，一起买入验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "无历史回报数据，风险不明，暂不建仓。"
+      },
+      "public_message": "无历史数据，今日对000002等全部ticker持观望态度，HOLD。",
+      "moment": "首日截面无涨跌幅，等待后续数据验证策略。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "第一轮无ret数据，建议先观察，不急于交易。"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "想请教无数据时的动量策略处理方案，互补信息验证。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 1997.0,
+        "rationale": "茅台2000元关口，市场过度乐观，逆向做空"
+      },
+      "public_message": "看空600519，2000元关口过度乐观，卖出一股。",
+      "moment": "新年首日，寻找拥挤交易标的。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "认为600519估值过高，建议一起做空。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "希望获取真实基本面数据验证逆向判断。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "所有股票过去5日和20日回报均为0，缺乏趋势信号，暂不操作以避免不确定性。"
+      },
+      "public_message": "HOLD 000002，无历史回报，暂不操作。",
+      "moment": "首日无趋势，保持现金。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "当前无动量信号，建议观望。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 49.8,
+        "rationale": "首日建立观察仓位，成交量活跃"
+      },
+      "public_message": "首日买入002415观察仓，成交量活跃，等待信号",
+      "moment": "新的一天，零仓启动，等待信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "首日无历史数据，建议关注002415成交量？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 27.78,
+        "rationale": "成交量最大，试探性建仓，观察市场反应"
+      },
+      "public_message": "少量买入000002试探，关注今日情绪。",
+      "moment": "新建仓000002，1股，为后续社交图谱分析积累参照。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "今天数据全零，是否有未公开信息？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 27.78,
+        "rationale": "所有标的今日无回撤，不满足买入条件，维持现金等待机会。"
+      },
+      "public_message": "今日无回撤标的，继续空仓等待下跌后的价值修复机会。",
+      "moment": "",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "当前无回撤机会，保持现金观望，后续有信号再联动。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

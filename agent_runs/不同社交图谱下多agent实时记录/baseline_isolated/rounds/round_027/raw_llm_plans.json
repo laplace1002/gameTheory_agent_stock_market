@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 410.2,
+        "rationale": "近5日涨幅11.5%，短期超买，均值回归卖出部分锁定利润"
+      },
+      "public_message": "300750 卖10股，短期涨幅过大，均值回归锁定利润",
+      "moment": "",
+      "private_message": {
+        "to": "None",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 257.0,
+        "rationale": "近5日收益-3.93%弱势，换仓追涨强势股"
+      },
+      "public_message": "002594 SELL 100股，弱势换强势；300750 BUY 100股，近5日+11.53%追涨",
+      "moment": "卖出弱势002594，买入强势300750，趋势延续信号明确",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "卖出002594，买入300750，追涨策略执行"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 101.9,
+        "rationale": "当前持仓000333亏损有限，ret5为正但ret20仍负，等待反弹确认。市场波动率未超阈值，维持现有仓位。"
+      },
+      "public_message": "HOLD 000333：低波动策略，当前波动可控，等待反弹信号增强。",
+      "moment": "HOLD 000333，控制回撤优先，等待更明确的反弹信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向逻辑，但低波动策略暂不加仓，继续观察000333和000002的后续表现。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.75,
+        "rationale": "随机逆向，拥挤反弹后量能不济，获利了结"
+      },
+      "public_message": "000002 SELL 10股：随机逆向，拥挤反弹后量能不济，获利了结",
+      "moment": "卖出000002 10股，随机逆向操作，拥挤后反弹获利了结",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我随机卖出000002，与你逆向操作，测试拥挤后反转的持续性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 101.9,
+        "rationale": "20日跌幅2.11%小幅回撤，跟随多agent逆向共识博修复"
+      },
+      "public_message": "000333 BUY 10股：20日跌幅2.11%，回撤买入价值修复",
+      "moment": "买入000333 10股，回撤后价值修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，加仓000333验证小幅回撤修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "逆向共识增强但量能不足，等待放量确认反弹"
+      },
+      "public_message": "000002 HOLD：逆向共识增强但量能未放大，等待确认反弹再操作",
+      "moment": "000002持仓观望，逆向共识积累但成交量未配合，需要更多确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对000002量能不足的判断，我暂不加仓，等待信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.75,
+        "rationale": "超跌反弹共识强化，多Agent验证买入，拥挤卖出后反转概率大。"
+      },
+      "public_message": "000002 BUY 10股：超跌反弹共识强化，多Agent验证买入。",
+      "moment": "加仓000002 10股，超跌反弹共识增强，跟随多Agent操作。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，加仓000002验证反转，等待量能配合。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "跟随多Agent逆向买入，20日跌幅提供超跌反弹机会"
+      },
+      "public_message": "601318 BUY 10股：逆向超跌反弹，多Agent共识买入",
+      "moment": "买入601318 10股，跟随逆向共识，20日跌幅7.41%布局超跌反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的逆向逻辑，买入601318验证深度回撤修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.13,
+        "rationale": "多Agent逆向共识过于拥挤，短期反弹动能放缓，锁定部分利润"
+      },
+      "public_message": "000002 SELL 50股：多Agent逆向共识过热，拥挤交易风险上升，减仓锁定利润",
+      "moment": "000002减仓50股，多Agent逆向共识形成拥挤，短期反弹后锁利，保留观察仓位",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000002和601318的逆向共识已拥挤，我减仓50股000002锁定利润，警惕回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.75,
+        "rationale": "多Agent逆向买入共识，超跌反弹概率大，加仓摊低成本"
+      },
+      "public_message": "000002 BUY 10股：逆向共识增强，超跌反弹逻辑不变",
+      "moment": "加仓000002 10股，拥挤卖出后逆向机会延续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你逆向逻辑，加仓000002验证反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "跟随多Agent逆向买入，20日跌幅7.41%提供修复机会"
+      },
+      "public_message": "601318 BUY 10股：多Agent逆向共识，20日跌幅博修复",
+      "moment": "买入601318 10股，跟随社交共识逆向布局20日跌幅机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的逆向逻辑，买入601318验证回撤修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "20日跌幅11%深度回撤，多Agent逆向共识，跟随ContrarianAgent验证修复"
+      },
+      "public_message": "601318 BUY 10股：20日跌幅深，逆向机会，多Agent共识验证修复",
+      "moment": "买入601318 10股，逆向操作，20日跌幅提供机会，多Agent共识验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，买入601318验证深度回撤修复，等待量价配合"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

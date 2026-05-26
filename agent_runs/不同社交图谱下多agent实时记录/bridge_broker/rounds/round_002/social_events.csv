@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归可补充趋势策略，验证回调信号，提升300750持仓决策质量。
+2021-01-05,friend_request,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 通过了 LowVolatilityAgent 的好友申请：双方均持有000333，可共享低波动信号，验证信息价值。
+2021-01-05,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：你持有601899，我清仓了，想交流量价信号分歧
+2021-01-05,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：分歧信号可验证你的持仓逻辑，随机离场观点提供反方视角，有助于优化决策。
+2021-01-05,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：低波动与成交量信号互补，申请验证信息
+2021-01-05,friend_accept,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 通过了 PersuaderAgent 的好友申请：低波动与成交量信号跨股票互补，可拓展验证维度。
+2021-01-05,friend_request,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 通过了 CommitteeTeamAgent 的好友申请：你已买入000333，与我持仓一致，申请验证低波动逻辑可互补互助。

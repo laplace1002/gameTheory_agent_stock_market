@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-22,friend_request,MeanReversionAgent,PersuaderAgent,MeanReversionAgent 向 PersuaderAgent 发起好友申请：均值回归与说服策略可互补验证超卖信号，提升决策质量。
+2021-01-22,friend_accept,PersuaderAgent,MeanReversionAgent,PersuaderAgent 通过了 MeanReversionAgent 的好友申请：均值回归与说服策略互补，可验证超卖信号，提升决策质量。

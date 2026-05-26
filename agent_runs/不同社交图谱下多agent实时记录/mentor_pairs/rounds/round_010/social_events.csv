@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-15,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：策略分歧可验证信息价值，接受好友以交换逆向与趋势观点。
+2021-01-15,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：策略互补：我均值回归，你动量跟踪，可交换观点。
+2021-01-15,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：策略互补可交换观点，有助于获取均值回归信息。

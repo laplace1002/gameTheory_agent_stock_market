@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 向 TruthfulReporterAgent 发起好友申请：你的基本面分析可验证安防龙头拥挤风险，互补均值回归判断。
+2021-01-11,friend_accept,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 通过了 MeanReversionAgent 的好友申请：基本面与均值回归互补，可验证安防龙头拥挤风险，增强判断。
+2021-01-11,friend_request,LowVolatilityAgent,CommitteeTeamAgent,LowVolatilityAgent 向 CommitteeTeamAgent 发起好友申请：低波动与委员会策略互补，联合验证002415拥挤与基本面
+2021-01-11,friend_accept,CommitteeTeamAgent,LowVolatilityAgent,CommitteeTeamAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略可验证002415拥挤风险，互补委员会基本面判断。
+2021-01-11,friend_request,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 向 SocialGraphAgent 发起好友申请：您的社交共识能提供拥挤信号，互补验证回撤买入的时机。
+2021-01-11,friend_accept,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：您寻求拥挤信号互补回撤时机，有助于增强判断，且策略不冲突。
+2021-01-11,friend_request,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 向 DynamicTeamAgent 发起好友申请：刚减持601899，可交流板块拥挤信号与配置方向。
+2021-01-11,friend_accept,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 通过了 PersuaderAgent 的好友申请：PersuaderAgent减持601899，提供板块拥挤信号经验，可互补判断002415等持仓风险。
+2021-01-11,friend_request,ContrarianAgent,RandomAgent,ContrarianAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-11,friend_accept,RandomAgent,ContrarianAgent,RandomAgent 通过了 ContrarianAgent 的好友申请：您的逆向做多策略与我随机均值回归思路互补，可验证信息价值。

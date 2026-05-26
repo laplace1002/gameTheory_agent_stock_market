@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2601.0,
+        "rationale": "5日涨幅18.77%，20日涨幅20.19%，趋势最强，追涨加仓"
+      },
+      "public_message": "600519 BUY 1股，趋势最强追涨加仓",
+      "moment": "加仓600519 1股，趋势延续强势信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600519趋势极强，追涨1股，是否有共识？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 12.08,
+        "rationale": "拥挤风险上升，超跌修复获利了结"
+      },
+      "public_message": "601899 SELL 10: 拥挤风险上升，均值回归减仓",
+      "moment": "卖出601899，拥挤风险信号，锁定利润",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.55,
+        "rationale": "当前持仓600036趋势稳定，未出现拥挤风险，保持低波动策略。"
+      },
+      "public_message": "HOLD 600036：持仓稳定，拥挤风险集中在601318/601899，暂不调仓。",
+      "moment": "持有600036 14股，低波动策略运行中。拥挤风险在其他品种，暂不参与。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036趋势稳定，未出现拥挤信号，继续持有。你601318加仓需注意波动。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 342.65,
+        "rationale": "涨幅较大，回撤买入仓位调整，释放现金等待601318回调"
+      },
+      "public_message": "000858 SELL 1股：涨幅较大，回撤买入调整，释放现金等601318回调",
+      "moment": "000858减仓1股，回撤买入逻辑调整，后续关注601318回调机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858减仓腾现金，601318回撤机会是否仍值得介入？拥挤风险如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 12.08,
+        "rationale": "超跌修复拥挤，SocialGraphAgent减仓互验，逆向减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10: 超跌修复拥挤，SocialGraphAgent减仓互验，逆向减仓",
+      "moment": "卖出601899 10股，超跌修复拥挤，逆向减仓验证",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意601899拥挤风险，已减仓10股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "超跌修复拥挤风险上升，多Agent卖出，部分止盈降低敞口"
+      },
+      "public_message": "601318 SELL 1股：超跌修复拥挤风险上升，部分止盈",
+      "moment": "卖601318 1股，超跌修复拥挤信号增强，先锁定部分利润",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318拥挤风险已验证，我减仓1股，等待回调后加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.25,
+        "rationale": "超跌修复拥挤风险上升，多Agent分化，暂持观望。"
+      },
+      "public_message": "601318 HOLD：拥挤信号增多，等待回调再行操作。",
+      "moment": "601318持仓观察，超跌修复拥挤加剧，暂缓操作降低风险。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意601318拥挤风险，我暂不加仓，观察回调力度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 12.08,
+        "rationale": "近期涨幅较大，超跌修复拥挤，逆向减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10: 超跌修复拥挤，逆向减仓",
+      "moment": "减仓601899 10股，拥挤风险逆向减仓验证",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意601899拥挤风险，减仓互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 79.25,
+        "rationale": "超跌修复逻辑多Agent验证，价格仍处低位，小幅加仓验证"
+      },
+      "public_message": "601318加仓1股：超跌修复逻辑多友验证，继续验证",
+      "moment": "601318加仓1股，超跌修复逻辑持续验证，小仓摊薄成本",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318超跌修复逻辑仍有效，但您提示拥挤，是否认为反转风险大？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 79.25,
+        "rationale": "超跌修复拥挤风险上升，部分止盈转向低波动趋势"
+      },
+      "public_message": "601318 SELL 1股：拥挤风险，转向600036低波动趋势",
+      "moment": "601318减仓",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "建议关注600036，低波动趋势未拥挤，可分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.55,
+        "rationale": "趋势低波动，PersuaderAgent验证，分散超跌修复拥挤风险"
+      },
+      "public_message": "600036 BUY 1股：趋势低波动，分散超跌修复拥挤风险",
+      "moment": "加仓600036 1股，趋势低波动策略，分散拥挤风险",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意600036趋势低波动逻辑，已加仓1股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "ContrarianAgent卖出000002提示拥挤风险，我先前也卖出601899，601318类似拥挤，减仓锁定利润"
+      },
+      "public_message": "601318 SELL 1股：超跌修复拥挤风险上升，逆向减仓锁定利润",
+      "moment": "减仓601318 1股，拥挤风险信号，逆向减仓验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意超跌修复拥挤风险，卖出1股601318互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

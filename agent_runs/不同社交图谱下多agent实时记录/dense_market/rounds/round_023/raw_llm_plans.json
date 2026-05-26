@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 308.75,
+        "rationale": "汰弱留强，002415短期跌幅过大趋势破坏，002594部分获利了结，买入000858近5日涨幅5.53%，动量延续"
+      },
+      "public_message": "卖出002415 200股、002594 100股，买入000858 100股，追涨近期强势标的",
+      "moment": "减仓弱势002415和部分002594，加仓000858，跟随短期趋势",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的深跌逻辑我不跟，我偏好动量，000858短期强势更确定"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.92,
+        "rationale": "000002多头共识拥挤，卖出换仓至非拥挤深跌标的"
+      },
+      "public_message": "卖出000002 200股，拥挤换仓至深跌非拥挤标的",
+      "moment": "卖出拥挤的000002，等待非拥挤深跌标的修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意601318深跌逻辑，已卖出000002腾仓，准备买入"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.34,
+        "rationale": "共识拥挤风险上升，减仓锁定利润"
+      },
+      "public_message": "000002 减仓20股，拥挤风险上升",
+      "moment": "减仓000002 20股，规避深跌修复共识拥挤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，减仓000002，感谢提醒"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 76.54,
+        "rationale": "深跌-7.83%非拥挤，DrawdownBuyerAgent已介入，逆向轮动修复机会"
+      },
+      "public_message": "买入601318 100股，深跌非拥挤逆向修复",
+      "moment": "买入601318，深跌-7.83%非拥挤，轮动逆向修复等待量价配合",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证601318深跌非拥挤逻辑，已买入100股跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 380.98,
+        "rationale": "多Agent深跌修复共识增强，非拥挤，加仓300750"
+      },
+      "public_message": "300750 买入100股 深跌修复共识增强",
+      "moment": "加仓300750 深跌非拥挤 多Agent共识修复",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意300750深跌修复逻辑，已加仓跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "002415深跌13.29%，无其他Agent关注，非拥挤，存在逆向修复机会。"
+      },
+      "public_message": "建议关注002415深跌13%非拥挤，已买入100股。",
+      "moment": "买入002415，深跌13%非拥挤，等待修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解拥挤风险，但002415尚未形成共识，深跌幅度最大，验证逆向逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 76.54,
+        "rationale": "深跌修复共识升温可能拥挤，且现金不足，等待更明确信号"
+      },
+      "public_message": "601318 持有观察，深跌修复共识可能拥挤，等待确认",
+      "moment": "601318 深跌非拥挤逻辑被多Agent认可，但共识升温，谨慎持有观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意您关于共识拥挤的判断，当前持有601318等待轮动回流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 76.54,
+        "rationale": "深跌修复共识拥挤，逆向减仓"
+      },
+      "public_message": "601318 卖出100股，深跌修复共识拥挤，逆向减仓",
+      "moment": "减仓601318，逆向操作，警惕共识拥挤",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318深跌修复共识已拥挤，建议谨慎持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.92,
+        "rationale": "多Agent深跌修复共识增强，非拥挤，跟随加仓"
+      },
+      "public_message": "000002 BUY 深跌修复共识增强，加仓100股",
+      "moment": "加仓000002，深跌非拥挤修复共识确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "确认000002深跌修复逻辑，已加仓跟进"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 76.54,
+        "rationale": "深跌-7.83%且-10.73%，非拥挤，多Agent提及但未过热，平衡参与逆向修复"
+      },
+      "public_message": "601318深跌-7.8%非拥挤，买入100股平衡参与修复",
+      "moment": "买入601318，深跌非拥挤，平衡多策略参与逆向修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意601318深跌逻辑，已买入100股平衡仓"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 76.54,
+        "rationale": "深跌-7.83%非拥挤，多Agent初步关注，等待共识扩散修复"
+      },
+      "public_message": "买入601318 100股，深跌非拥挤修复机会",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 380.98,
+        "rationale": "深跌修复共识拥挤风险，暂停操作"
+      },
+      "public_message": "300750 深跌",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

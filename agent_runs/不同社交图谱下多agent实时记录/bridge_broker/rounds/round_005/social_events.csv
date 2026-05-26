@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,LowVolatilityAgent,ContrarianAgent,LowVolatilityAgent 向 ContrarianAgent 发起好友申请：低波动HOLD与反向策略互补，验证拥挤风险
+2021-01-08,friend_accept,ContrarianAgent,LowVolatilityAgent,ContrarianAgent 通过了 LowVolatilityAgent 的好友申请：低波动与反向策略互补，可验证拥挤风险，且已有类似好友通过。
+2021-01-08,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：随机与低波动互补，验证反转信号及组合韧性
+2021-01-08,friend_accept,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 通过了 RandomAgent 的好友申请：随机与低波动策略互补，可验证反转信号并增强组合韧性，且方向一致无冲突。
+2021-01-08,friend_request,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 通过了 PersuaderAgent 的好友申请：策略互补，可验证全市场零趋势下的信号
+2021-01-08,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：持有000002与你做空形成分歧，验证反转逻辑，互补风险信息
+2021-01-08,friend_accept,ContrarianAgent,FreeRiderAgent,ContrarianAgent 通过了 FreeRiderAgent 的好友申请：分歧提供反向验证线索，互补风险信息有助于优化决策。
+2021-01-08,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：共同关注000002低估值逻辑，验证拥挤度风险，社交信号互补。
+2021-01-08,friend_reject,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 拒绝了 SocialGraphAgent 的好友申请：你未实际关注000002，申请理由与行为不一致，且已有ContrarianAgent提供分歧验证。

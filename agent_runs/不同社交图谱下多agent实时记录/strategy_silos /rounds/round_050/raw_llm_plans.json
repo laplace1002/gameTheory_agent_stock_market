@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "002594深跌但共识拥挤卖出加剧，轮次尾声降低风险暴露"
+      },
+      "public_message": "002594 SELL 1股，拥挤卖出信号增强，轮次尾声减仓",
+      "moment": "减仓002594 1股，降低拥挤暴露，关注深跌标的",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333深跌12.9%，反弹空间如何？成交是否配合？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "趋势弱势，跟随拥挤共识减仓"
+      },
+      "public_message": "002594 SELL 1股，趋势弱势轮次尾声减仓",
+      "moment": "卖出002594 1股，降低弱势暴露；轮次尾声控制风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002594拥挤共识，已减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.76,
+        "rationale": "600036短期波动可控，仓位低，轮次尾声维持现有头寸"
+      },
+      "public_message": "600036 HOLD：低波动银行股，短期回撤可控，轮次尾声维持仓位",
+      "moment": "600036 HOLD：低波动策略下维持现有24股，规避拥挤品种，专注回撤控制",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036近期下跌-2.93%，但低波动属性适合持有，你的卖出逻辑我理解"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.83,
+        "rationale": "深跌20.60%非共识机会，轮次尾声布局"
+      },
+      "public_message": "601899 BUY 1股，深跌非共识机会，轮次尾声布局",
+      "moment": "买入601899，非共识深跌逻辑，分散风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000858深跌反弹逻辑验证，关注成交量变化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 260.79,
+        "rationale": "深跌-24.28%，多agent共识验证，分散002594/601318拥挤风险"
+      },
+      "public_message": "000858 BUY 1股，深跌修复多agent验证",
+      "moment": "买入000858 1股，深跌修复逻辑，分散拥挤风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000858深跌反弹逻辑，已买入1股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 260.79,
+        "rationale": "000858价格260.79高于现金能力，轮次尾声，暂不加仓"
+      },
+      "public_message": "HOLD 000858，价格过高现金不足，轮次尾声暂不加仓",
+      "moment": "轮次尾声，现金有限，深跌标的择机再入",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000858深跌逻辑仍在，但轮次尾声且价格高，谨慎加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "多Agent共识拥挤持续，轮次尾声锁定部分利润，降低风险暴露"
+      },
+      "public_message": "002594 SELL 1股，拥挤风险持续，轮",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 2,
+        "price": 79.64,
+        "rationale": "拥挤风险上升，轮次尾声锁定利润"
+      },
+      "public_message": "601318 SELL 2股，拥挤风险上升，轮次尾声锁定利润",
+      "moment": "卖出601318 2股，降低拥挤风险集中度",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858深跌反弹，成交量边际变化是否支撑持续性？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 260.79,
+        "rationale": "群体买入拥挤，轮次尾声反转风险大"
+      },
+      "public_message": "000858 SELL 1股，群体买入拥挤，逆向减仓",
+      "moment": "000858减仓，逆向操作；关注002594超卖机会",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000858成交量无明显放大，拥挤尚未确认，但轮次尾声先减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "多agent共识拥挤，轮次尾声锁定部分利润"
+      },
+      "public_message": "002594 SELL 1股，多agent拥挤共识，轮次尾声减仓锁定利润",
+      "moment": "减仓002594 1股，降低拥挤风险；关注000858深跌反弹机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000858深跌反弹逻辑已共识，但002594拥挤风险确认，建议关注成交量变化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 178.55,
+        "rationale": "多Agent共识拥挤，轮次尾声锁定利润"
+      },
+      "public_message": "002594 SELL 1股，拥挤风险确认，轮次尾声减仓",
+      "moment": "卖出002594 1股，跟随共识降低拥挤风险，轮次尾声控制回撤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594拥挤度已达极值，同意减仓，后续反转概率低"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.2,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

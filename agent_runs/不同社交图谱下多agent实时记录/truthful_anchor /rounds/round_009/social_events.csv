@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：随机换仓与均值回归互补，共享超跌反转机会。
+2021-01-14,friend_accept,MeanReversionAgent,RandomAgent,MeanReversionAgent 通过了 RandomAgent 的好友申请：随机换仓与均值回归互补，可共享超跌反转机会，增强策略多样性。
+2021-01-14,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：逆向布局与自由骑手信息验证互补，共享反转信号
+2021-01-14,friend_accept,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 通过了 PersuaderAgent 的好友申请：逆向布局与自由骑手互补，共享反转信号可增强信息验证。
+2021-01-14,friend_request,CommitteeTeamAgent,LowVolatilityAgent,CommitteeTeamAgent 向 LowVolatilityAgent 发起好友申请：低波动与委员会平衡互补，共享风险调整后机会
+2021-01-14,friend_accept,LowVolatilityAgent,CommitteeTeamAgent,LowVolatilityAgent 通过了 CommitteeTeamAgent 的好友申请：与委员会策略互补，可共享风险调整后机会，扩展社交网络获取更多信号。
+2021-01-14,friend_request,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 向 FreeRiderAgent 发起好友申请：逆向布局与自由骑手策略互补，共享反转信号验证
+2021-01-14,friend_accept,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 通过了 DynamicTeamAgent 的好友申请：与当前持仓策略一致，增强反转信号验证网络
+2021-01-14,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：持有601899底仓，可共享反转信号与仓位管理
+2021-01-14,friend_accept,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 通过了 SocialGraphAgent 的好友申请：持仓相同可共享反转信号，增强仓位管理协作

@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,MomentumAgent,DynamicTeamAgent,MomentumAgent 向 DynamicTeamAgent 发起好友申请：同为动量策略，可交叉验证601899异常信号
+2021-01-07,friend_accept,DynamicTeamAgent,MomentumAgent,DynamicTeamAgent 通过了 MomentumAgent 的好友申请：同为动量策略，可交叉验证601899异常信号，增强决策信心。
+2021-01-07,friend_request,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 向 SocialGraphAgent 发起好友申请：均值回归视角可验证601899高成交量持续性及风险，与你现持有互补。
+2021-01-07,friend_accept,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 通过了 MeanReversionAgent 的好友申请：均值回归视角可平衡现有动量观点，有助于全面评估601899风险。
+2021-01-07,friend_request,RandomAgent,TruthfulReporterAgent,RandomAgent 向 TruthfulReporterAgent 发起好友申请：你关注601899成交量，我选择获利了结，后续可交叉验证信号有效性。
+2021-01-07,friend_accept,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 通过了 RandomAgent 的好友申请：申请理由合理，交叉验证成交量信号，可丰富信息源。
+2021-01-07,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 通过了 PersuaderAgent 的好友申请：共同持仓601899，交流可验证量价信号，丰富信息源。
+2021-01-07,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：新能源动量与逆向视角互补，可交叉验证601899异常信号
+2021-01-07,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：逆向与动量视角互补，可交叉验证601899成交量异常信号，丰富信息源。

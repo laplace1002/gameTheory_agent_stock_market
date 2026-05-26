@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.4,
+        "rationale": "回调放量超卖，多agent逆向布局，均值回归加仓"
+      },
+      "public_message": "000002 BUY：回调放量超卖，跟多信号加仓",
+      "moment": "加仓000002 100股，等待回撤修复机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意回调放量超卖逻辑，同步加仓100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 257.0,
+        "rationale": "002594 ret5=15.77%强势，回调后追涨"
+      },
+      "public_message": "002594 BUY：近5日涨幅15.77%，强势追涨",
+      "moment": "买入002594 50股，追涨强势股",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594回调后仍强势，我买入50股追涨，你锁利后是否有再入场机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.4,
+        "rationale": "回调放量超卖信号，多agent验证，低波动策略适度加仓控制回撤"
+      },
+      "public_message": "000002 回调放量超卖，低波动适度加仓50股，控制风险",
+      "moment": "加仓000002 50股，回调超卖信号，低波动策略执行中",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "受你分享信号启发，加仓50股000002，验证回撤修复逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 11,
+        "price": 257.0,
+        "rationale": ""
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 257.0,
+        "rationale": "002594近5日涨幅15.77%，多agent锁利，随机跟随卖出10股锁定利润，降低回调风险。"
+      },
+      "public_message": "002594 SELL 10：涨幅15.77%锁利，随机跟随多agent减仓。",
+      "moment": "卖出002594 10股，锁利降低回调风险。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你的002594锁利逻辑，我也卖出10股跟随。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.4,
+        "rationale": "已持有回调放量超卖标的，等待反弹确认，不追加仓位。"
+      },
+      "public_message": "000002 HOLD：回调放量超卖已持仓，等待确认。",
+      "moment": "持有000002，观察回调放量后的反弹力度。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "认同你的000002逆向逻辑，我暂不加仓，等待信号验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.4,
+        "rationale": "加仓000002，多Agent超卖信号聚集，预期回调修复，当前价格与成本持平，摊薄成本。"
+      },
+      "public_message": "加仓000002 50股，多Agent超卖信号聚集，预期回调修复。",
+      "moment": "加仓000002 50股，跟随多Agent逆向布局，等待回调修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "认同你的000002回调放量逻辑，继续加仓50股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.4,
+        "rationale": "多Agent集中买入形成拥挤，逆向减仓锁定利润"
+      },
+      "public_message": "000002 SELL：拥挤交易信号，减仓100股",
+      "moment": "减仓000002 100股，逆向应对超买情绪",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000002买入拥挤，动量可能衰退，建议谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 52.0,
+        "rationale": "多agent减仓600036，回调风险上升，跟随锁利"
+      },
+      "public_message": "600036 SELL：跟随多agent减仓信号，锁定利润。",
+      "moment": "卖出600036 10股，锁定利润，降低回调风险。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的600036减仓逻辑，我已卖出10股锁利。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 52.0,
+        "rationale": "跟随SocialGraphAgent减仓信号，锁定利润，避免回调风险。"
+      },
+      "public_message": "600036 SELL：多agent减仓，回调风险上升，清仓锁定利润。",
+      "moment": "卖出600036 10股，锁定利润，等待回调机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减仓600036逻辑，已清仓锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.4,
+        "rationale": "超卖逻辑待验证，现有仓位暂持观察"
+      },
+      "public_message": "000002 HOLD：超卖逻辑待验证，暂持观察",
+      "moment": "000002 HOLD，等待超卖反弹确认",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.4,
+        "rationale": "多agent逆向信号汇聚，跟随买入"
+      },
+      "public_message": "000002 BUY：多agent逆向信号汇聚，跟随买入",
+      "moment": "买入000002 100股，跟随多agent逆向信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意回调超卖逻辑，同步买入100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

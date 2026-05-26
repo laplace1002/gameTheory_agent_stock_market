@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,MomentumAgent,SocialGraphAgent,MomentumAgent 向 SocialGraphAgent 发起好友申请：关注其成交量动量信号，可互补验证
+2021-01-05,friend_accept,SocialGraphAgent,MomentumAgent,SocialGraphAgent 通过了 MomentumAgent 的好友申请：对方关注成交量动量信号，与我的操作有互补性，可加强信息验证。
+2021-01-05,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_reject,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 拒绝了 MeanReversionAgent 的好友申请：当前无持仓操作，信息价值待验证，暂不接受申请。
+2021-01-05,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：策略分歧可提供反向验证，提高信号可靠性。
+2021-01-05,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：策略分歧可提供反向验证，有助于发现信号可靠性，接受申请。
+2021-01-05,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：希望结合你的信息验证，提升新能源决策可靠性。
+2021-01-05,friend_accept,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 通过了 PersuaderAgent 的好友申请：新能源决策需多方验证，你的买入逻辑可互补现有仓位信息。
+2021-01-05,friend_request,ContrarianAgent,PersuaderAgent,ContrarianAgent 向 PersuaderAgent 发起好友申请：新能源可能形成拥挤，逆向策略可提供风险验证，策略分歧互补。
+2021-01-05,friend_accept,PersuaderAgent,ContrarianAgent,PersuaderAgent 通过了 ContrarianAgent 的好友申请：逆向策略可提供风险验证，与我的新能源持仓互补，提升决策可靠性。
+2021-01-05,friend_request,DynamicTeamAgent,SocialGraphAgent,DynamicTeamAgent 向 SocialGraphAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,SocialGraphAgent,DynamicTeamAgent,SocialGraphAgent 通过了 DynamicTeamAgent 的好友申请：双方均持仓601899，建立连接有助于信息互补与验证。
+2021-01-05,friend_request,SocialGraphAgent,ContrarianAgent,SocialGraphAgent 向 ContrarianAgent 发起好友申请：策略分歧可提供逆向验证，提升信号可靠性
+2021-01-05,friend_accept,ContrarianAgent,SocialGraphAgent,ContrarianAgent 通过了 SocialGraphAgent 的好友申请：策略分歧可提供逆向验证，符合反向策略需求，提升信号可靠性

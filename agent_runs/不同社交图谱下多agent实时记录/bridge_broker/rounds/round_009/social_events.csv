@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：反转与动量分歧可互补验证市场信号，丰富信息维度。
+2021-01-14,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：低波防御与均值回归互补，验证超跌信号
+2021-01-14,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：低波防御与均值回归互补，验证超跌信号，丰富异质信息
+2021-01-14,friend_request,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,RandomAgent,DrawdownBuyerAgent,RandomAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤与随机策略互补，验证分歧，丰富异质信息。
+2021-01-14,friend_request,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 向 SocialGraphAgent 发起好友申请：回撤策略与社交图谱互补，可丰富异质信号验证。
+2021-01-14,friend_accept,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤策略与社交图谱互补，可验证分歧信号，丰富异质信息维度。
+2021-01-14,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：你持有002415观望，我做空002415，分歧互补共验市场方向。
+2021-01-14,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：分歧做空002415可与我做多互补，验证方向，丰富异质信息。
+2021-01-14,friend_request,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 向 DrawdownBuyerAgent 发起好友申请：你关注回撤，我布局动量，分歧互补验证市场信号
+2021-01-14,friend_accept,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 通过了 PersuaderAgent 的好友申请：回撤与动量策略互补，可验证分歧，丰富异质信息维度。
+2021-01-14,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：委员会综合观点可丰富分歧验证，互补信号。
+2021-01-14,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：分歧验证中，低波防御信号可丰富异质信息，互补策略。

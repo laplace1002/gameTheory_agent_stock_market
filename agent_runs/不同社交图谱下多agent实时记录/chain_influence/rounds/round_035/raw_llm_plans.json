@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 55.56,
+        "rationale": "深度回撤延续，均值回归逻辑验证，加仓等待反弹。"
+      },
+      "public_message": "002415 BUY 50股：深度回撤延续，均值回归逻辑加仓。",
+      "moment": "002415加仓50股，ret20 -16.75%，均值回归布局。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002415超跌至-20%ret20，均值回归概率高，您观望等待企稳，我选择左侧布局，验证信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.1,
+        "rationale": "000002 ret5+10.92%强势延续，追涨加仓"
+      },
+      "public_message": "买入000002 1200股，短期强势，趋势延续",
+      "moment": "追涨000002，5日涨幅10.92%，趋势延续加仓",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601899短期回调但20日强势，你低吸逻辑一致，我加仓000002趋势股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 55.56,
+        "rationale": "002415超跌但未确认反转，拥挤风险未释放，等待量能信号"
+      },
+      "public_message": "002415 HOLD：超跌未企稳，拥挤风险持续，等待低波动机会",
+      "moment": "持有现金，等待拥挤风险释放后的低波动机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "贵司逆向买入601318，但卖出拥挤程度未减，多Agent仍在减仓，风险较高"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.18,
+        "rationale": "601318并非深度回撤标的，且多Agent卖出拥挤，减仓换仓至超跌002415"
+      },
+      "public_message": "SELL 601318 100股，换仓至超跌002415，深度回撤修复机会",
+      "moment": "减仓601318 100股，加仓002415 100股，深度回撤修复布局",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "同意002415超跌逻辑，我加仓100股，等待均值回归验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 55.56,
+        "rationale": "超跌修复逻辑获多agent验证，加仓等待反转确认。"
+      },
+      "public_message": "BUY 10股002415：超跌修复逻辑获多方验证，加仓等待反转。",
+      "moment": "加仓002415 10股，超跌修复逻辑一致性增强，等待确认反转。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002415超跌修复获多agent加仓验证，你观望是否等待量能信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 197.27,
+        "rationale": "极端超跌23%，无人关注，左侧试仓"
+      },
+      "public_message": "BUY 002594 100股：极端超跌，非共识修复机会",
+      "moment": "买入002594 100股，极端超跌左侧交易，与众不同的选择",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我买入极度超跌的002594，与你逆向601318互补，验证超跌多样性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.18,
+        "rationale": "拥挤卖出持续，多数Agent减仓，降低风险。"
+      },
+      "public_message": "加仓002415，超跌修复逻辑获多Agent验证，均值回归机会。",
+      "moment": "减仓601318控制拥挤风险，加仓002415布局超跌修复。平衡仓位。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "贵司加仓601318逆向，但多数Agent减仓持续，拥挤尚未出清，建议谨慎跟随。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 55.56,
+        "rationale": "多个Agent验证002415超跌修复逻辑，均值回归预期增强，跟随买入"
+      },
+      "public_message": "BUY 002415 50股：跟随超跌修复共识，均值回归策略。",
+      "moment": "买入002415 50股，超跌修复机会，多家Agent验证。继续观察601318逆向信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "贵司再次买入601318，我计划跟随买入002415超跌标的，想进一步了解您对601318卖出拥挤的量化判断。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.18,
+        "rationale": "现有601318仓位已逆向布局，继续持有等待卖出拥挤消退"
+      },
+      "public_message": "HOLD 601318：卖出拥挤持续但边际放缓，等待共识反转信号",
+      "moment": "HOLD 601318 150股，逆向仓位等待卖出拥挤释放后均值回归",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "关于601318卖出拥挤量化，近3轮卖出量占比约65%，但卖方力量衰减，可关注"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 55.56,
+        "rationale": "超跌修复逻辑被多个Agent验证，回撤买入等待均值回归"
+      },
+      "public_message": "买入002415 100股，超跌修复机会，跟随均值回归逻辑",
+      "moment": "买入002415，超跌修复布局，等待反转",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "验证你的002415逻辑，同步买入100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 20,
+        "price": 55.56,
+        "rationale": "超跌修复逻辑被多个Agent验证，均值回归概率增加，继续加仓摊低成本"
+      },
+      "public_message": "加仓002415 20股，超跌修复逻辑确认，等待均值回归",
+      "moment": "加仓002415 20股，超跌修复逻辑验证，与DrawdownBuyerAgent",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的002415超跌判断，我继续加仓20股，共持有30股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 55.56,
+        "rationale": "超跌修复共识形成，多个Agent买入验证，跟随均值回归"
+      },
+      "public_message": "002415 BUY 10股，超跌修复共识，等待均值回归",
+      "moment": "买入002415 10股，超跌修复共识，跟随均值回归",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "验证你的002415超跌逻辑，同步买入10股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

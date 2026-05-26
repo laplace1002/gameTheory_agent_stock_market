@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 234.86,
+        "rationale": "002594 ret5=13.59%，新能源趋势延续，加仓追涨。"
+      },
+      "public_message": "BUY 002594：ret5 13.59%量能配合，强势延续加仓。",
+      "moment": "加仓002594，新能源趋势确认，量价齐升。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "新能源趋势持续性如何？量能是否支撑延续？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.78,
+        "rationale": "持有获利7.2%，均值回归倾向止盈，首日无超卖信号，等待更佳跌深机会"
+      },
+      "public_message": "SELL 000002 获利了结，均值回归等待超卖反弹机会",
+      "moment": "卖出000002锁定利润，关注超卖标的如300750、601318，等待信号确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594新能源拥挤度上升，回撤风险需关注，建议等待实质回调再介入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 48.42,
+        "rationale": "持仓600036，近5日涨幅12.16%但银行业务稳定，回撤风险可控，继续持有"
+      },
+      "public_message": "600036 HOLD：近期涨幅较大但基本面稳健，无回撤风险，继续持有",
+      "moment": "当前持仓600036，现金为主，等待低波动机会。新能源拥挤，保持谨慎。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "新能源拥挤度上升，你的逆向信号如何？我持600036暂未参与"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.78,
+        "rationale": "无跌深信号，继续持有000002等待价值修复机会"
+      },
+      "public_message": "000002 HOLD：无回撤标的，持币观望等待跌深价值修复",
+      "moment": "2021-01-11 无回撤标的，继续持有000002观望，等待跌深机会。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我并未买入002594，目前仅持有000002等待回撤机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 234.86,
+        "rationale": "随机获利了结，规避新能源拥挤风险"
+      },
+      "public_message": "002594 SELL 随机止盈，新能源拥挤度上升",
+      "moment": "随机卖出002594，锁定部分利润，准备寻找下一个随机机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594我已止盈，拥挤度上升，短期回撤概率增加"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "5日涨幅18.47%，成交量放大，趋势信号明确。"
+      },
+      "public_message": "002415 BUY：5日涨幅18.47%，成交量放大，趋势信号强。",
+      "moment": "买入002415，5日涨幅18.47%，趋势确认。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415与002594趋势联动性如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 234.86,
+        "rationale": "新能源量能持续，拥挤度未极端，趋势延续，但需监控回调风险"
+      },
+      "public_message": "002594 HOLD 新能源量能验证，拥挤可控，趋势延续",
+      "moment": "002594持仓待涨，新能源主线量价齐升，关注后续轮动",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002594基于新能源产业趋势和资金流入，量能验证，趋势明确"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2099.73,
+        "rationale": "市场普涨，新能源拥挤，等待回调机会"
+      },
+      "public_message": "600519 HOLD：市场普涨，新能源拥挤，等待回调机会",
+      "moment": "持现金观望，新能源拥挤度上升，逆向等待回调",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594量能持续但拥挤度上升，注意短期回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 390.0,
+        "rationale": "300750 ret5为负，而002594趋势强劲且获多Agent验证，调仓至新能源龙头以跟踪动量"
+      },
+      "public_message": "SELL 300750 转入002594 跟随新能源趋势",
+      "moment": "切换仓位，卖出300750买入002594，跟踪动量。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "新能源趋势较强，短期回撤风险可控，但需关注量能持续性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "002415短期涨幅过大，ret5=18.47%，获利减仓降低风险，保留部分继续观察趋势。"
+      },
+      "public_message": "002415 SELL 获利减仓，短期涨幅18%后回调风险增加，保留半仓观察。",
+      "moment": "002415涨幅18%后减仓一半，新能源拥挤初现，后续观察板块轮动。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594新能源量能仍强，但拥挤度上升，短期回撤概率增加，建议控制仓位。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 234.86,
+        "rationale": "新能源拥挤度上升，减仓锁定部分利润"
+      },
+      "public_message": "002594 SELL 50股，新能源拥挤度上升，减仓锁定利润。",
+      "moment": "减仓002594，部分锁定新能源利润，控制拥挤风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你判断新能源回调风险多大？我减仓部分002594锁利。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 59.0,
+        "rationale": "002415近5日涨幅18.47%，获利了结，控制回撤风险。"
+      },
+      "public_message": "002415 SELL 部分获利了结，控制回撤风险。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

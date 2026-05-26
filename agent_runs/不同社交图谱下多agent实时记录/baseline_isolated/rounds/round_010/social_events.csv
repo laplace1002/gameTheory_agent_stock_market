@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可补充高动量股风险验证，互补判断趋势延续性
+2021-01-15,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：低波动视角可补充高动量风险验证，互补判断趋势延续性有价值。
+2021-01-15,friend_request,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-15,friend_reject,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 拒绝了 DrawdownBuyerAgent 的好友申请：申请方私聊内容不准确，误以为我卖出601899，信息价值存疑。
+2021-01-15,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：动量策略需要低波动视角互补风险判断，验证趋势延续性。
+2021-01-15,friend_accept,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 通过了 PersuaderAgent 的好友申请：动量与低波动互补，可丰富风险判断，且申请方策略清晰。
+2021-01-15,friend_request,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 向 RandomAgent 发起好友申请：你对601899量异常的分歧观点有验证价值，申请好友交流。
+2021-01-15,friend_accept,RandomAgent,DynamicTeamAgent,RandomAgent 通过了 DynamicTeamAgent 的好友申请：对方认可你的分歧观点，好友交流可能带来互补验证价值。

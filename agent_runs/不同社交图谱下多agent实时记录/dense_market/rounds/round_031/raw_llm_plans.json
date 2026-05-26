@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 14.63,
+        "rationale": "短期涨幅过大，部分锁利；趋势仍在，剩余仓位继续持有"
+      },
+      "public_message": "601899 减仓50股，暴涨后部分锁利，趋势未破继续持有",
+      "moment": "601899减仓50股，追涨但不贪婪，锁定部分利润，趋势仍在",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你601899减仓逻辑，我也卖出50股锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 90.44,
+        "rationale": "5日跌幅超6%，20日跌近9%，超卖信号，均值回归预期"
+      },
+      "public_message": "000333 买入50股，超卖反弹逻辑，均值回归。",
+      "moment": "买入000333，5日跌6.4%超卖，等待反弹。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000333超卖明显，是否值得加仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 90.44,
+        "rationale": "000333短期回撤较大，控制风险"
+      },
+      "public_message": "000333 减仓10股，控制短期回撤风险",
+      "moment": "减仓000333，控制回撤，等待市场企稳",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你控制回撤的思路，我也减仓000333锁定风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 14.63,
+        "rationale": "短期涨幅过大，随机锁利提供流动性，与其他Agent减仓共振"
+      },
+      "public_message": "601899 卖出20股，涨幅过大随机锁利",
+      "moment": "随机卖出601899 20股，锁定暴涨利润，等待回调机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的601899减仓逻辑，我再卖出20股锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.73,
+        "rationale": "跟随CommitteeTeam减仓信号，锁定短期利润，降低仓位风险"
+      },
+      "public_message": "000002 卖出50股，跟随减仓锁定短期利润",
+      "moment": "减仓000002，跟随低波动减仓信号控制回撤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的000002减仓逻辑，我也卖出50股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 14.63,
+        "rationale": "暴涨后锁定利润，腾出资金买入回撤标的"
+      },
+      "public_message": "601899 卖出50股锁利，买入000333回撤修复",
+      "moment": "卖出601899部分锁利，买入000333回撤修复，等待价值回归",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "000333深跌-6.43%，我加仓回撤买入，可能触发均值回复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "深跌修复共识仍在，拥挤反转风险待验证，暂持等待更明确信号。"
+      },
+      "public_message": "601318深跌修复逻辑未变，拥挤反转需验证，暂持观察。",
+      "moment": "601318深跌修复逻辑与拥挤反转博弈，暂持观望，等待共识切换。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601318拥挤反转风险可能被夸大，深跌修复基本面仍在，建议重新评估减仓必要性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 375.0,
+        "rationale": "超买风险确认，逆向减仓锁定利润"
+      },
+      "public_message": "300750减仓，超买风险锁定利润",
+      "moment": "卖出300750，逆向操作，聚焦风险控制",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "已卖出300750全部，超买风险验证，注意持仓调整"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 29.73,
+        "rationale": "跟随CommitteeTeamAgent减仓信号，锁定短期利润，降低风险。"
+      },
+      "public_message": "000002 SELL 20股：跟随减仓信号，锁定短期利润。",
+      "moment": "减仓000002 20股，跟随委员会减仓，降低风险。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的000002减仓逻辑，已卖出20股锁利。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 82.38,
+        "rationale": "拥挤反转风险增加，锁定部分利润"
+      },
+      "public_message": "601318 卖出10股，拥挤反转增强，暂时锁利",
+      "moment": "601318减仓，拥挤反转信号验证，保留部分修复仓位",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤反转判断，已卖出部分锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "多空分歧，暂持观望"
+      },
+      "public_message": "601318暂持，拥挤反转与修复逻辑并存，等待信号明朗。",
+      "moment": "601318部分减仓后暂持，多空分歧中保持灵活。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤反转判断，已减仓部分，剩余暂持。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "市场分歧明显，多个agent卖出锁定利润，深跌修复共识与拥挤反转风险并存，暂持观望"
+      },
+      "public_message": "601318暂持，信号冲突，等待方向明确",
+      "moment": "整体持仓观察，无新操作，等待市场信号收敛",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你减仓300750观点，超买风险，我暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

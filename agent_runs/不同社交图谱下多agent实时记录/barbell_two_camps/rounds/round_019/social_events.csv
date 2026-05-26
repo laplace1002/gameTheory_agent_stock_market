@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-28,friend_request,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 向 MeanReversionAgent 发起好友申请：均值回归策略可验证超跌反转时机，希望交流
+2021-01-28,friend_accept,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 通过了 FreeRiderAgent 的好友申请：均值回归策略与超跌反转验证相关，可交流互补

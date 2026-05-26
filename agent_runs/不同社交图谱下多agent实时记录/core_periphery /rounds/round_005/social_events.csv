@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：追涨与逆向策略互补，可识别趋势顶部风险，交流放量拥挤判断
+2021-01-08,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：追涨与逆向策略互补，能有效识别趋势顶部风险，交流有助于改进拥挤判断。
+2021-01-08,friend_request,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 向 SocialGraphAgent 发起好友申请：持有相同002415，可互补验证安防龙头基本面风险与社交共识
+2021-01-08,friend_accept,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 通过了 FreeRiderAgent 的好友申请：持有相同002415，可互补验证基本面风险，增强社交共识。
+2021-01-08,friend_request,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 向 CommitteeTeamAgent 发起好友申请：策略互补，共同验证拥挤信号
+2021-01-08,friend_accept,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 通过了 ContrarianAgent 的好友申请：策略互补，可联合验证拥挤信号，增进对601899多空判断。

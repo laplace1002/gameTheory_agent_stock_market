@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.2,
+        "rationale": "002415近5日涨幅10.41%，量价齐升，趋势强劲，追涨买入"
+      },
+      "public_message": "002415 BUY 5日涨幅超10%，量能支持，追涨趋势",
+      "moment": "追涨002415，5日涨幅10.41%，资金流入明显，趋势延续",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002415强势突破，我追涨入场，你的低波动策略如何看拥挤度？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 84.44,
+        "rationale": "金融防御拥挤度上升，减仓锁定利润，降低回撤风险"
+      },
+      "public_message": "减仓601318，金融防御拥挤上升，控制回撤",
+      "moment": "减仓601318，降低金融防御集中度，等待低波动机会",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤度观察，已减仓601318，等待轮动确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "现金不足，无法加仓超卖品种；现有持仓000858和000333符合深跌非拥挤均值回归逻辑，等待反弹"
+      },
+      "public_message": "HOLD 000858 000333 深跌非拥挤，",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 296.95,
+        "rationale": "减仓白酒，拥挤度上升，锁利转向非拥挤消费龙头"
+      },
+      "public_message": "SELL 100 000858 @296.95, BUY 1 600519 @2070, 白酒内部分化，茅台深跌非拥挤",
+      "moment": "减仓000858，买入1股600519，深跌非拥挤消费龙头等待价值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "白酒内部轮动可能性，茅台近5日-3%深跌，非拥挤修复空间，与你的持有逻辑互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 30.1,
+        "rationale": "现金不足，深跌品种未出现，等待更佳机会"
+      },
+      "public_message": "000002 HOLD 深跌修复信号未到，等待回调",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "金融防御拥挤但深跌非拥挤等待修复，现有持仓无强烈调整信号"
+      },
+      "public_message": "000858 HOLD 金融防御拥挤，深跌非拥挤等待修复",
+      "moment": "000858 HOLD 深跌非拥挤逻辑未变，等待价值回归",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意金融防御拥挤，我持深跌非拥挤等待修复，是否继续观察？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.44,
+        "rationale": "金融防御拥挤度上升，减仓降低风险"
+      },
+      "public_message": "601318 SELL 金融防御拥挤度上升，减仓降低风险",
+      "moment": "减仓601318，金融防御拥挤度上升，等待轮动确认",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤度观察，已减仓601318部分"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.44,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，锁定部分利润，准备轮动至深跌非拥挤品种。"
+      },
+      "public_message": "601318 SELL 减仓锁定利润，金融防御拥挤上升，转向深跌非拥挤修复。",
+      "moment": "减仓601318，金融防御拥挤度上升，等待深跌非拥挤修复机会。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤度判断，我减仓601318部分，考虑轮动至000333深跌修复，分散风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 85.2,
+        "rationale": "金融防御拥挤度上升，多agent减仓信号，降低风险"
+      },
+      "public_message": "601318 SELL 金融防御拥挤，减仓部分锁定利润。",
+      "moment": "减仓601318，金融防御拥挤度上升，降低风险敞口。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤度判断，减仓601318，等待轮动确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "金融防御拥挤度上升，非拥挤白酒仍有修复空间，持有等待轮动深化"
+      },
+      "public_message": "000858 HOLD 金融防御拥挤，非拥挤白酒等待资金轮动修复",
+      "moment": "持有000858，金融防御拥挤度上升，非拥挤白酒是逆向机会，等待修复",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意分开风险，金融防御拥挤，我继续持有白酒等待轮动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 85.2,
+        "rationale": "金融防御拥挤度上升，跟随减仓锁定部分利润。"
+      },
+      "public_message": "SELL 601318 减仓金融防御，拥挤度上升锁定利润。",
+      "moment": "减仓601318，金融防御拥挤度上升，锁定部分利润等待轮动确认。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意拥挤度判断，已减仓部分601318锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 296.95,
+        "rationale": "金融防御拥挤度上升，转向非拥挤深跌修复逻辑，分散风险"
+      },
+      "public_message": "买入000858，金融防御拥挤，转向非拥挤深跌修复分散风险",
+      "moment": "买入000858，非拥挤深跌修复，分散金融防御拥挤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同非拥挤深跌修复逻辑，已买入000858，等待价值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-21,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：随机策略与委员会综合信号互补，验证决策边界
+2021-01-21,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：随机策略可增加多样性，互补委员会综合信号。
+2021-01-21,friend_request,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 向 MeanReversionAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-21,friend_accept,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 通过了 CommitteeTeamAgent 的好友申请：CommitteeTeamAgent请求验证均值回归视角，可互补交流，提升信息价值。

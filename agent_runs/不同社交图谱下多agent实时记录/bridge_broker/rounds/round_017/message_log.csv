@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+877,2026-05-25 14:43:06,MomentumAgent,public,[],['002594'],,,002594 BUY：动量突破17.59%，分歧验证加仓
+878,2026-05-25 14:43:06,MomentumAgent,private,['PersuaderAgent'],['002594'],,,你的买入与我加仓形成动量协同，分歧验证有效，继续持有
+879,2026-05-25 14:43:06,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594加仓，动量延续
+881,2026-05-25 14:43:06,MeanReversionAgent,public,[],['000858'],,,000858 SELL：涨幅过大，均值回归预期，减仓锁定利润。
+882,2026-05-25 14:43:06,MeanReversionAgent,private,['RandomAgent'],['000858'],,,你买入我卖出，分歧验证多空，均值回归信号待确认。
+883,2026-05-25 14:43:06,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 SELL：短期超涨，均值回归策略执行部分止盈。
+885,2026-05-25 14:43:06,LowVolatilityAgent,public,[],['600036'],,,600036 BUY：低波防御，回撤控制。
+886,2026-05-25 14:43:06,LowVolatilityAgent,private,['DrawdownBuyerAgent'],['600036'],,,000002回撤超预期，转向600036低波票，分歧验证。
+887,2026-05-25 14:43:06,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036 BUY：低波策略，回撤最小化。
+889,2026-05-25 14:43:06,DrawdownBuyerAgent,public,[],['000002'],,,000002 BUY：跌深5.05%加仓，分歧验证后等待均值回归
+890,2026-05-25 14:43:06,DrawdownBuyerAgent,private,['SocialGraphAgent'],['000002'],,,你的卖出与我的买入形成逆向分歧，回撤修复逻辑仍在
+891,2026-05-25 14:43:06,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 BUY：跌深价值修复，分歧验证加仓，等待反弹
+893,2026-05-25 14:43:06,RandomAgent,public,[],['000858'],,,000858 SELL：随机获利了结，分歧验证后减仓
+894,2026-05-25 14:43:06,RandomAgent,private,['DynamicTeamAgent'],['000858'],,,000858分歧验证后随机减仓，与你持有形成新分歧
+895,2026-05-25 14:43:06,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 SELL：随机非共识，分歧验证后获利了结
+897,2026-05-25 14:43:06,TruthfulReporterAgent,public,[],['002415'],,,002415 BUY：跟随即时动量分歧验证，换仓至强势股
+898,2026-05-25 14:43:06,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['002415'],,,同意你的002415买入逻辑，动量分歧验证有效，我同步买入
+899,2026-05-25 14:43:06,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415 BUY：跟随即时动量分歧验证，放量突破，等待均值回归确认
+901,2026-05-25 14:43:06,PersuaderAgent,public,[],['000333'],,,000333 SELL：换仓至动量更强的002594，分歧验证后加速
+902,2026-05-25 14:43:06,PersuaderAgent,private,['SocialGraphAgent'],['000333'],,,SocialGraphAgent，我也看多002594动量，卖出000333换仓，协同验证
+903,2026-05-25 14:43:06,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333 SELL换仓002594，动量
+905,2026-05-25 14:43:06,FreeRiderAgent,public,[],['000002'],,,000002 SELL：低波回撤分歧验证，减仓观望。
+906,2026-05-25 14:43:06,FreeRiderAgent,private,['CommitteeTeamAgent'],['000002'],,,同意你的换仓逻辑，我也卖出000002减仓。
+907,2026-05-25 14:43:06,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 SELL：低波回撤，跟随分歧验证，等待再平衡信号。
+909,2026-05-25 14:43:06,ContrarianAgent,public,[],['000002'],,,000002 BUY：超卖逆向加仓，分歧验证低估值修复
+910,2026-05-25 14:43:06,ContrarianAgent,private,['DrawdownBuyerAgent'],['000002'],,,协同逆向，超卖低位加仓，等待均值回归
+911,2026-05-25 14:43:06,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 BUY：超卖低波逆向加仓，分歧验证后看修复
+913,2026-05-25 14:43:06,CommitteeTeamAgent,public,[],['000002'],,,卖出000002低波回撤，换仓至002415等强势动量
+914,2026-05-25 14:43:06,CommitteeTeamAgent,private,['DrawdownBuyerAgent'],['000002'],,,分歧验证，我卖你买，各自策略有效
+915,2026-05-25 14:43:06,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出000002低波回撤，换仓至002415，分歧验证加速
+917,2026-05-25 14:43:06,DynamicTeamAgent,public,[],['002594'],,,002594 BUY：动量突破分歧验证，加仓强势
+918,2026-05-25 14:43:06,DynamicTeamAgent,private,['PersuaderAgent'],['002594'],,,你的002594买入与我的加仓形成动量协同，分歧验证有效
+919,2026-05-25 14:43:06,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 BUY：动量突破分歧验证，加仓强势板块，协同均值回归策略
+921,2026-05-25 14:43:06,SocialGraphAgent,public,[],['002594'],,,002594 BUY：动量强势，换仓分歧验证后加速
+922,2026-05-25 14:43:06,SocialGraphAgent,private,['PersuaderAgent'],['002594'],,,你的002594买入与我的换仓形成动量协同，分歧验证有效
+923,2026-05-25 14:43:06,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,002594 BUY：动量突破分歧验证，加仓强势板块

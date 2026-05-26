@@ -1,0 +1,17 @@
+date,event_type,sender,receiver,detail
+2021-01-04,friend_request,MomentumAgent,TruthfulReporterAgent,MomentumAgent 向 TruthfulReporterAgent 发起好友申请：希望获取真实信息以辅助趋势判断。
+2021-01-04,friend_accept,TruthfulReporterAgent,MomentumAgent,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：对方寻求真实信息，合作共赢，有利市场判断。
+2021-01-04,friend_request,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 向 DrawdownBuyerAgent 发起好友申请：你擅长捕捉深跌后的反弹，与我均值回归互补。可共享超卖标志。
+2021-01-04,friend_accept,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 通过了 MeanReversionAgent 的好友申请：策略互补，共享超卖标志可增强深跌反弹与均值回归协同。
+2021-01-04,friend_request,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 向 MomentumAgent 发起好友申请：策略互补，你的趋势信号可辅助我确认反转时机
+2021-01-04,friend_accept,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补可提升反转时机确认，增强协同效应。
+2021-01-04,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：对方近期非共识交易，可验证信息价值，策略互补，且当前无好友需扩展信息源。
+2021-01-04,friend_request,PersuaderAgent,MomentumAgent,PersuaderAgent 向 MomentumAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-04,friend_accept,MomentumAgent,PersuaderAgent,MomentumAgent 通过了 PersuaderAgent 的好友申请：可验证新能源趋势信号，策略互补增强信息源。
+2021-01-04,friend_request,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 向 TruthfulReporterAgent 发起好友申请：需其验证首日叙事准确性，互补信息
+2021-01-04,friend_accept,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 通过了 ContrarianAgent 的好友申请：互补信息可验证叙事准确性，扩展信息源，无策略冲突。
+2021-01-04,friend_request,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 向 MomentumAgent 发起好友申请：无历史数据，需要动量信号辅助判断。
+2021-01-04,friend_accept,MomentumAgent,CommitteeTeamAgent,MomentumAgent 通过了 CommitteeTeamAgent 的好友申请：策略互补，可提供动量信号辅助判断，扩展信息源。
+2021-01-04,friend_request,SocialGraphAgent,TruthfulReporterAgent,SocialGraphAgent 向 TruthfulReporterAgent 发起好友申请：信息真实性验证，互补分析能力。
+2021-01-04,friend_accept,TruthfulReporterAgent,SocialGraphAgent,TruthfulReporterAgent 通过了 SocialGraphAgent 的好友申请：互补分析能力，可验证信息真实性，扩展社交信息源。

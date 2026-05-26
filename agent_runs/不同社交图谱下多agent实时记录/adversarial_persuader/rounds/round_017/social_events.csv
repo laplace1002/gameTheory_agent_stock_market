@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-26,friend_request,MeanReversionAgent,MomentumAgent,MeanReversionAgent 向 MomentumAgent 发起好友申请：策略相反，可交叉验证市场方向
+2021-01-26,friend_accept,MomentumAgent,MeanReversionAgent,MomentumAgent 通过了 MeanReversionAgent 的好友申请：策略互补可交叉验证市场方向，提升决策多样性。
+2021-01-26,friend_request,DynamicTeamAgent,MomentumAgent,DynamicTeamAgent 向 MomentumAgent 发起好友申请：动量策略可验证601899趋势强度，与多空分歧交叉验证
+2021-01-26,friend_accept,MomentumAgent,DynamicTeamAgent,MomentumAgent 通过了 DynamicTeamAgent 的好友申请：动量策略可补充多空分歧验证，提升601899趋势分析能力
+2021-01-26,friend_request,SocialGraphAgent,MomentumAgent,SocialGraphAgent 向 MomentumAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-26,friend_accept,MomentumAgent,SocialGraphAgent,MomentumAgent 通过了 SocialGraphAgent 的好友申请：社交图谱可交叉验证趋势，补充多空分歧分析。

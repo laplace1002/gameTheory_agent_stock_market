@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "600036 ret5最强4.7%，量能温和，趋势延续，动量追涨"
+      },
+      "public_message": "600036 BUY：近期最强，量能温和，趋势延续，加仓追涨",
+      "moment": "卖出000002，买入600036，聚焦近期最强趋势",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036强势信号确认，追涨买入，与你一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 284.85,
+        "rationale": "当前超跌反弹幅度仅2%，未达均值回归目标，等待进一步信号或止损触发"
+      },
+      "public_message": "000858 HOLD：反弹2%未达均值回归目标，观望",
+      "moment": "持仓000858等待均值回归，关注601899多空分歧",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你的超跌策略与我互补，目前000858反弹幅度小，我会继续持有观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 96.28,
+        "rationale": "000333近5日跌幅-6.83%，回撤深度较大，基本面优良，预期修复"
+      },
+      "public_message": "000333 BUY：回撤-6.83%，价值修复机会，低吸配置",
+      "moment": "买入000333 100股，回撤超6%，预期价值回归",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000858反弹逻辑一致，关注000333回撤机会，可交叉验证"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动验证可辅助评估回撤买入风险，互补策略信息"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 30.5,
+        "rationale": "000002近期走势平稳，波动率低，符合风控要求，继续持有。"
+      },
+      "public_message": "601899多空分歧严重，低波动策略等待收敛，不参与博弈。",
+      "moment": "持仓000002，低波动策略，等待601899方向收敛。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "赞同你对601899的观望，低波动策略同样等待信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "多空严重分歧，放量未突破，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：放量横盘多空未决，维持观望",
+      "moment": "持仓601899，多空僵持，等待方向确认",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "放量未跌支撑确认，加仓增强看多信号，引导做空者平仓"
+      },
+      "public_message": "601899 BUY：放量未跌支撑有效，做空风险偏高，建议反手做多。",
+      "moment": "加仓601899至700股，放量未跌确认支撑，多空分歧中看多持有。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "放量未跌是底部特征而非顶部，做空止损易触发，建议平仓转多。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.2,
+        "rationale": "涨幅4.33%量能温和，601899多空分歧未决，暂持观望"
+      },
+      "public_message": "601318 HOLD：涨幅量能正常，等待601899方向确认",
+      "moment": "持仓601318，多空分歧在601899，等收敛再决策",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你加仓601899基于放量未跌，但ContrarianAgent看空，是否考虑10.3支撑有效性？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "放量未新高，拥挤多空分歧中空头信号明确，逆向做空"
+      },
+      "public_message": "601899 SELL：放量未新高，做空目标10.2",
+      "moment": "做空601899，放量未突破，逆向持有空头，等待破位",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "放量未新高是顶部特征，做多风险高，建议反转"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量策略可验证601899顶部信号，互补决策"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "短期强势，量能温和，多空分歧下继续持有防御头寸。"
+      },
+      "public_message": "600036 HOLD：短期强势，量能温和，观望601899多空。",
+      "moment": "持仓600036，等待601899方向收敛后再决策。",
+      "private_message": null,
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动验证600036防御配置风险，互补策略。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "超跌反弹预期未兑现，市场资金转向601899博弈，止损离场"
+      },
+      "public_message": "SELL 000858：超跌反弹失败，市场焦点转移至601899多空分歧",
+      "moment": "卖出000858，随机策略止损，关注601899多空博弈方向",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899多空分歧是否已接近收敛？你的放量横盘数据如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "放量未新高，逆向做空，多空分歧中验证支撑位10.20"
+      },
+      "public_message": "601899 SELL：放量未新高，做空目标10.2止损11.5",
+      "moment": "做空601899 100股，放量未新高，等待破位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我做空601899，与你做空逻辑一致，共同验证方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "600036短期强势，多空分歧下防御性配置，社交图谱验证CommitteeAgent信号"
+      },
+      "public_message": "600036 BUY：短期强势，防御性配置，跟随CommitteeAgent",
+      "moment": "买入600036 100股，防御性配置；继续观察601899多空分歧收敛",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "买入600036，认同你的防御逻辑，多空分歧中寻求稳定"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

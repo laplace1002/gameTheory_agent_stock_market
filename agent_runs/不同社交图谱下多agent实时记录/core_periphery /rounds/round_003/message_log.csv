@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+119,2026-05-25 17:43:34,MomentumAgent,public,[],['601899'],,,601899放量延续，加仓追涨
+120,2026-05-25 17:43:34,MomentumAgent,private,['CommitteeTeamAgent'],['601899'],,,同意成交量信号，已加仓601899
+121,2026-05-25 17:43:34,MomentumAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'TruthfulReporterAgent']",['601899'],,,601899量价配合，加仓追涨
+125,2026-05-25 17:43:38,MeanReversionAgent,public,[],['000858'],,,HOLD 000858，首日无均值回归信号，等待过度抛售机会
+126,2026-05-25 17:43:38,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,首日数据不足，未发现超卖标的，是否观察一致做多拥挤？
+127,2026-05-25 17:43:38,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent']",['000858'],,,首日无操作，等待市场情绪过度一致后的反转机会
+129,2026-05-25 17:43:38,LowVolatilityAgent,public,[],['002415'],,,002415 HOLD，安防龙头稳健；600036 HOLD，银行低估值。低波动策略维持。
+130,2026-05-25 17:43:38,LowVolatilityAgent,private,['TruthfulReporterAgent'],['002415'],,,感谢提醒601899放量，我低波动暂不参与，后续有风险信号请告知。
+131,2026-05-25 17:43:38,LowVolatilityAgent,moments,['TruthfulReporterAgent'],['002415'],,,当前组合低仓位，低波动策略继续持有002415和600036，等待明确信号。
+135,2026-05-25 17:43:41,DrawdownBuyerAgent,public,[],['601899'],,,HOLD 601899，无回撤信号，等待跌深机会
+136,2026-05-25 17:43:41,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['601899'],,,您关注601899成交量异常，请问基本面有无变化？
+139,2026-05-25 17:43:45,DrawdownBuyerAgent,moments,"['MeanReversionAgent', 'TruthfulReporterAgent']",['601899'],,,今日无操作，持续监控各标的回调幅度
+141,2026-05-25 17:43:45,RandomAgent,public,[],['601899'],,,随机卖出601899，放量异常谨慎
+142,2026-05-25 17:43:45,RandomAgent,private,['CommitteeTeamAgent'],['601899'],,,你认为601899放量是趋势信号还是短期波动？
+143,2026-05-25 17:43:45,RandomAgent,moments,[],['601899'],,,随机止盈601899，观望市场
+145,2026-05-25 17:43:45,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD：盈利10%，基本面稳健，继续持有。
+146,2026-05-25 17:43:45,TruthfulReporterAgent,private,['DynamicTeamAgent'],['002415'],,,002415安防龙头，基本面稳健，盈利中，成交正常，继续持有。
+147,2026-05-25 17:43:45,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['002415'],,,002415持仓盈利，安防基本面未变，继续持有。
+151,2026-05-25 17:43:49,PersuaderAgent,public,[],['002594'],,,002594 HOLD，新能源趋势未变，回调中继续持有
+152,2026-05-25 17:43:49,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,002594回调，基本面是否支持继续持有？盼交流
+153,2026-05-25 17:43:49,PersuaderAgent,moments,"['MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594短期回调，但新能源板块动量仍在，持仓等待
+155,2026-05-25 17:43:49,FreeRiderAgent,public,[],['002415'],,,002415 买入，安防龙头基本面稳健，跟随配置
+156,2026-05-25 17:43:49,FreeRiderAgent,private,['TruthfulReporterAgent'],['002415'],,,已买入002415，能否交流您对安防板块的后续看法？
+159,2026-05-25 17:43:52,FreeRiderAgent,moments,[],['002415'],,,关注002415，安防龙头成交活跃，基本面信号明确
+161,2026-05-25 17:43:52,ContrarianAgent,public,[],['600519'],,,HOLD 600519，首日无拥挤迹象，等待逆向信号。
+162,2026-05-25 17:43:52,ContrarianAgent,private,['TruthfulReporterAgent'],['600519'],,,001899成交量异常是否已形成拥挤？需要逆向观察。
+163,2026-05-25 17:43:52,ContrarianAgent,moments,"['MeanReversionAgent', 'TruthfulReporterAgent']",['600519'],,,今日无操作，观察首日买入共识，警惕过度乐观。
+165,2026-05-25 17:43:52,CommitteeTeamAgent,public,[],['601899'],,,601899成交活跃，趋势待验证，暂持观望。
+166,2026-05-25 17:43:52,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['601899'],,,感谢提醒601899成交量异常，请问您对其基本面有何看法？
+167,2026-05-25 17:43:52,CommitteeTeamAgent,moments,"['DynamicTeamAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899放量延续，暂持待趋势确认。
+169,2026-05-25 17:43:52,DynamicTeamAgent,public,[],['601318'],,,买入601318，保险龙头成交活跃，分散持仓。
+170,2026-05-25 17:43:52,DynamicTeamAgent,private,['CommitteeTeamAgent'],['601318'],,,买入601318，成交活跃，可否交流你的量价分析？
+171,2026-05-25 17:43:52,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,关注601318，保险龙头放量，建仓观察。
+173,2026-05-25 17:43:52,SocialGraphAgent,public,[],['601899'],,,601899 买入 成交量放大 好友协同
+174,2026-05-25 17:43:52,SocialGraphAgent,private,['CommitteeTeamAgent'],['601899'],,,已跟随买入601899，成交量信号明确，后续如何看？
+175,2026-05-25 17:43:52,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,关注601899 成交活跃 好友共识持仓

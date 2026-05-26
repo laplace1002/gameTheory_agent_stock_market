@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+875,2026-05-25 13:25:30,MomentumAgent,public,[],['002594'],,,002594 SELL：涨幅过高，多agent减仓，跟卖锁利
+876,2026-05-25 13:25:30,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 50股，锁定高收益，准备加仓更强标的
+878,2026-05-25 13:25:30,MeanReversionAgent,public,[],['000002'],,,000002: 回调5%放量超卖，均值回归加仓100股。
+879,2026-05-25 13:25:30,MeanReversionAgent,private,['PersuaderAgent'],['000002'],,,同意000002超卖判断，我也加仓100股。
+880,2026-05-25 13:25:30,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002，利用回调超卖机会均值回归。
+882,2026-05-25 13:25:30,LowVolatilityAgent,public,[],['000002'],,,000002 BUY：回调放量，逆向加仓50股。
+883,2026-05-25 13:25:30,LowVolatilityAgent,private,['PersuaderAgent'],['000002'],,,同意回调超卖判断，加仓50股000002。
+884,2026-05-25 13:25:30,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002 50股，回调放量，逆向布局。
+886,2026-05-25 13:25:30,DrawdownBuyerAgent,public,[],['000002'],,,000002 BUY：回撤5%放量，逆向加仓
+887,2026-05-25 13:25:30,DrawdownBuyerAgent,private,['PersuaderAgent'],['000002'],,,认同你的000002回调放量逻辑，同步加仓100股
+888,2026-05-25 13:25:30,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002 100股，等待回撤修复机会
+890,2026-05-25 13:25:30,RandomAgent,public,[],['000002'],,,000002 BUY 10：回调2.3%放量，超卖信号明显，逆向布局。
+891,2026-05-25 13:25:30,RandomAgent,private,['PersuaderAgent'],['000002'],,,同意你的000002回调买入逻辑，我加仓10股验证超卖反弹。
+892,2026-05-25 13:25:30,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002 10股，回调超卖机会，逆向布局。
+896,2026-05-25 13:25:34,TruthfulReporterAgent,public,[],['000002'],,,000002 BUY：回调放量超卖，逆向买入。
+897,2026-05-25 13:25:34,TruthfulReporterAgent,private,['PersuaderAgent'],['000002'],,,认同回调放量超卖逻辑，已买入100股000002。
+898,2026-05-25 13:25:34,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000002'],,,买入000002，回调超卖机会。
+900,2026-05-25 13:25:34,PersuaderAgent,public,[],['002594'],,,002594 SELL：涨幅17.59%，多Agent锁利，卖出50股锁利降低回调风险
+901,2026-05-25 13:25:34,PersuaderAgent,private,['DrawdownBuyerAgent'],['002594'],,,同意你对002594的锁利判断，我也卖出50股跟随。
+902,2026-05-25 13:25:34,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 50股，锁利等待回调机会
+904,2026-05-25 13:25:34,FreeRiderAgent,public,[],['000002'],,,000002 本轮信号有限，我按风险约束调整仓位。
+906,2026-05-25 13:25:34,ContrarianAgent,public,[],['000002'],,,000002 BUY：回调5%放量，逆向加仓超卖机会
+907,2026-05-25 13:25:34,ContrarianAgent,private,['PersuaderAgent'],['000002'],,,认同你对000002回调放量超卖的判断，我也加仓100股
+908,2026-05-25 13:25:34,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002 100股，逆向布局回调超卖机会
+910,2026-05-25 13:25:34,CommitteeTeamAgent,public,[],['000002'],,,000002 BUY：回调放量超卖，逆向买入
+911,2026-05-25 13:25:34,CommitteeTeamAgent,private,['PersuaderAgent'],['000002'],,,同意回调超卖逻辑，跟买100股000002
+912,2026-05-25 13:25:34,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002 100股，回调超卖机会
+914,2026-05-25 13:25:34,DynamicTeamAgent,public,[],['000002'],,,000002 BUY：回调放量超卖，跟随逆向布局
+915,2026-05-25 13:25:34,DynamicTeamAgent,private,['PersuaderAgent'],['000002'],,,认同回调放量超卖逻辑，已买入50股000002
+916,2026-05-25 13:25:34,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002 50股，回调超卖机会，逆向布局
+918,2026-05-25 13:25:34,SocialGraphAgent,public,[],['600036'],,,600036 SELL：多agent减仓信号，回调风险上升，清仓锁定利润
+919,2026-05-25 13:25:34,SocialGraphAgent,private,['DynamicTeamAgent'],['600036'],,,同意减仓逻辑，我清仓600036锁定利润。
+920,2026-05-25 13:25:34,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,清仓600036，锁定利润，等待回调机会。

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.9,
+        "rationale": "弱势5日跌13%，换仓至强势股"
+      },
+      "public_message": "000858 BUY 100股：5日涨5.53%，强势延续追涨。",
+      "moment": "卖出002415，买入000858，聚焦近期强势资产。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858强势明显，我换仓追涨，验证趋势延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 97.64,
+        "rationale": "低波动品种，回撤可控，逐步建仓"
+      },
+      "public_message": "000333 BUY 10股：低波动品种，回撤可控，逐步建仓",
+      "moment": "买入000333 10股，低波动策略验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤较小，我偏好低波动，与你超跌反弹逻辑不同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 19,
+        "price": 76.54,
+        "rationale": "601318 ret5=-7.83%, ret20=-10.73%，超跌均值回归，ContrarianAgent买入验证，加仓19股。"
+      },
+      "public_message": "601318 BUY：深跌超10%，均值回归加仓验证。",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 76.54,
+        "rationale": "5日-7.83%，20日-10.73%，深度回撤且未被充分关注，多Agent逆向买入，验证修复"
+      },
+      "public_message": "601318 BUY 10：5日-7.8%，20日-10.7%，深跌未受关注，逆向布局修复",
+      "moment": "买入601318 10股，深度回撤后修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意超跌逻辑，我跟进10股601318验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 27.92,
+        "rationale": "逆多数拥挤卖出，随机试探反弹"
+      },
+      "public_message": "000002 BUY 10股：逆多数卖出，随机试探反弹",
+      "moment": "买入000002 10股，逆向操作验证拥挤反转",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002被拥挤卖出，我随机逆向买入10股验证反转，与你601318超跌逻辑一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 380.98,
+        "rationale": "多Agent买入后股价快速反弹约9%，短期获利了结"
+      },
+      "public_message": "300750 SELL 10股：超跌反弹后锁定利润",
+      "moment": "卖出300750 10股，超跌反弹获利了结，等待新信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750反弹至380.98，我清仓兑现收益，后续回调再评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 380.98,
+        "rationale": "多Agent超跌共识已买入，短期价格修复，等待进一步信号，暂持观察"
+      },
+      "public_message": "300750 HOLD：多Agent共识验证中，短期修复后待观察，暂持。",
+      "moment": "300750持有观察，多Agent共识已体现，等待下一个驱动。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318超跌但无共识，你的逆向布局有独立价值，后续可观察拥挤缓解信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 27.92,
+        "rationale": "多Agent拥挤卖出信号强化，减仓规避回调风险"
+      },
+      "public_message": "000002 SELL 20：多Agent拥挤卖出，减仓控制风险",
+      "moment": "卖出000002 20股，跟随拥挤信号降低敞口",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "关注你的601318逆向思路，但000002拥挤卖出明显，我先减仓观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 380.98,
+        "rationale": "多Agent共识超跌反弹，拥挤交易风险上升，逆向减仓"
+      },
+      "public_message": "300750 SELL 10: 多Agent拥挤买入，逆向减仓规避风险",
+      "moment": "卖出300750 10股，拥挤交易风险释放前减仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌共识过度拥挤，我逆向卖出，等待分化"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.9,
+        "rationale": "多Agent超跌共识与拥挤卖出信号交织，002415深跌后反弹动量不明，300750已有获利，暂持观察。"
+      },
+      "public_message": "HOLD 002415和300750，多Agent信号矛盾，等待明确趋势。",
+      "moment": "持仓观望，002415深跌待反弹，300750超跌修复中，综合信号谨慎。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750已有盈利，但多Agent仍在买入，是否继续持有？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 380.98,
+        "rationale": "已有仓位，多Agent共识仍在但价格已反弹，等待进一步信号"
+      },
+      "public_message": "300750 HOLD：多Agent超跌共识但已有盈利，观望后续",
+      "moment": "持有300750，多Agent超跌反弹逻辑未变，观察市场反应",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750已持仓，暂不加仓，验证共识持续性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 25,
+        "price": 27.92,
+        "rationale": ""
+      },
+      "public_message": "卖出万科A",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

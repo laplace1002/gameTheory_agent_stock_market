@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-04,MomentumAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；新年首日成交量最大，预期趋势延续,1,CommitteeTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史回报数据，无超卖信号，不满足均值回归条件。,1,CommitteeTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,LowVolatilityAgent,100000.0,98003.0,0.0,0.0,"{""600519"": 1}",600519 1,BUY 1 600519 @ 1997.00；低波动策略偏好高价低换手标的，建仓观察,1,DynamicTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有标的今日无回撤，不满足买入条件，维持现金等待机会。,1,DynamicTeamAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,RandomAgent,100000.0,99989.96,0.0,0.0,"{""601899"": 1}",601899 1,BUY 1 601899 @ 10.04；高成交量且价格低，随机视角认为短期波动机会,1,FreeRiderAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,TruthfulReporterAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：新年首日所有标的ret5/ret20=0，缺乏历史趋势信号，暂不交易,2,"MomentumAgent, SocialGraphAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,PersuaderAgent,100000.0,99793.24,0.0,0.0,"{""002594"": 1}",002594 1,BUY 1 002594 @ 206.76；新能源车龙头，政策持续利好，短期无回调压力,1,ContrarianAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,FreeRiderAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：无历史回报数据，风险不明，暂不建仓。,1,RandomAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,ContrarianAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：茅台2000元关口，市场过度乐观，逆向做空,1,PersuaderAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,CommitteeTeamAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有股票过去5日和20日回报均为0，缺乏趋势信号，暂不操作以避免不确定性。,2,"MeanReversionAgent, MomentumAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,DynamicTeamAgent,100000.0,99950.2,0.0,0.0,"{""002415"": 1}",002415 1,BUY 1 002415 @ 49.80；首日建立观察仓位，成交量活跃,2,"DrawdownBuyerAgent, LowVolatilityAgent",run_20260525_221314_125534_mentor_pairs_attempt1,round_001
+2021-01-04,SocialGraphAgent,100000.0,99972.22,0.0,0.0,"{""000002"": 1}",000002 1,BUY 1 000002 @ 27.78；成交量最大，试探性建仓，观察市场反应,1,TruthfulReporterAgent,run_20260525_221314_125534_mentor_pairs_attempt1,round_001

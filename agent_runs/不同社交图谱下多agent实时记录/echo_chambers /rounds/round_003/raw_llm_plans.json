@@ -1,0 +1,260 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "首日无价格偏离，均值回归策略等待超卖信号"
+      },
+      "public_message": "HOLD 000002：首日所有ticker ret5/ret20=0，无超卖迹象，保持现金等待",
+      "moment": "首日无信号，现金观望，等待过度抛售机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "当前无价格偏离，均值回归策略与你的深度回调买入逻辑可互补验证"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "你的深度回调买入与我的均值回归策略互补，可提升信号可靠性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 406.77,
+        "rationale": "所有ticker ret5/ret20=0，无趋势信号，等待价格动量出现。"
+      },
+      "public_message": "HOLD 300750：首日无趋势，等待动量信号",
+      "moment": "持仓300750观望，无动量信号不操作",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你加仓300750基于回调买入，是否有后续趋势预期？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 44.15,
+        "rationale": "持仓银行股波动低，无新信号，保持仓位控制回撤"
+      },
+      "public_message": "HOLD 600036：低波动策略首日无信号，银行股波动可控",
+      "moment": "低波动策略继续持有600036，监控市场波动率变化",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601899成交量异常可能带来高波动，不符合低波动策略，建议谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "首日无历史回撤数据，所有ticker ret5/ret20=0，等待跌深机会出现。"
+      },
+      "public_message": "HOLD 所有标的：无回撤信号，维持现金等待价值修复机会。",
+      "moment": "首日无回撤标的，空仓等待跌深机会。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "首日无回撤数据，继续观望，你那边有信号吗？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向策略可互补回撤买入信号，合作验证极端定价机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 100.96,
+        "rationale": "随机选择消费龙头，首日成交量适中，获取非共识暴露"
+      },
+      "public_message": "BUY 000333 消费龙头随机建仓，探索非共识机会",
+      "moment": "随机建仓000333，低波动消费龙头，观察后续情绪变化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我随机买入000333，可能与你空仓互补，验证策略分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "成交量异常但趋势未明，暂持观察"
+      },
+      "public_message": "601899成交量异常但无趋势，暂持观察。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "成交量异常放大，资金流入信号，试仓观察"
+      },
+      "public_message": "买入601899，成交量异常放大，跟随资金流入",
+      "moment": "买入601899，观察量能持续性，试仓资金流入",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我已买入601899试仓，成交量信号明显，建议同步关注"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "共同关注601899，信息互补可验证量能信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "首日量能需要观察，等待更多信号"
+      },
+      "public_message": "HOLD 601899，等待成交量持续性验证",
+      "moment": "继续持有601899，观察量价变化，暂不加仓",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你关注601899成交量，请问是否有更多分析？我试探建仓后量能平稳，暂观望。"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "成交量信号需验证，你的分析可互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.21,
+        "rationale": "成交量异常放大，多agent关注，小仓位试仓"
+      },
+      "public_message": "601899 买100股，成交量异常放大，小仓位试仓",
+      "moment": "小仓位试仓601899，关注量能持续性",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "我也建仓601899，量能异常，后续看多"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "首日无历史数据，所有标的ret5/ret20=0，无拥挤信号，保持现金等待泡沫或恐慌。"
+      },
+      "public_message": "HOLD 000002：首日无拥挤信号，继续空仓等待反向机会。",
+      "moment": "首日无趋势，多个agent扎堆601899，等待泡沫或恐慌信号后再反向。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "300750虽看好，但新能源可能形成拥挤，注意回调风险。"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "策略分歧可提供逆向验证，提升信号可靠性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "首日无趋势，成交量异常需进一步确认，暂持观望"
+      },
+      "public_message": "HOLD 601899，首日无趋势，等待量能确认",
+      "moment": "继续持仓601899，观察成交变化",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "对601899量能持续性的看法？"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "同持仓601899，信息互补验证信号可靠性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.5,
+        "rationale": "成交量异常未确认趋势，继续持仓观察"
+      },
+      "public_message": "HOLD 601899，等待成交量持续信号",
+      "moment": "持仓601899，监控成交量变化，等待更多确认信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你如何看待601899量能持续性？是否考虑加仓？"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "新能源决策与成交量信号互补，提升信息验证可靠性"
+      }
+    },
+    "error": ""
+  }
+]

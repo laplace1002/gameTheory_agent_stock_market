@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.14,
+        "rationale": "银行股5日涨幅9.74%领跑，量能放大，新能源拥挤资金转向金融防御，追涨强势延续"
+      },
+      "public_message": "600036 BUY 银行领涨，量价齐升，追涨趋势",
+      "moment": "600036买入，银行股强势突破，资金切换信号明确",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 287.7,
+        "rationale": "深跌9%但成交量未放大，均线回归信号待确认，短期风险未释放完毕"
+      },
+      "public_message": "000858 HOLD 深跌9%等待底部确认，均值回归逻辑不变",
+      "moment": "000858深跌9%，均值回归策略继续持有，等待反弹信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同向持仓000858，关注成交量变化确认底部，短期波动可能加剧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 287.7,
+        "rationale": "深跌9.24%且非拥挤，加仓摊低成本等待修复"
+      },
+      "public_message": "000858 加仓 深跌9%非拥挤，持续价值修复",
+      "moment": "000858 加仓 深跌9%，非拥挤板块，继续买入修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意等待非理性释放，加仓100股摊薄成本"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 99.6,
+        "rationale": "低波动回调，防御性配置，控制组合回撤"
+      },
+      "public_message": "000333 BUY 低波动防御，控制回撤",
+      "moment": "买入000333 10股，低波动防御，降低组合波动",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意000333低波动防御逻辑，我也买入10股，注意仓位控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "超跌7%且成交量放大，分散新能源拥挤风险，等待反弹"
+      },
+      "public_message": "601899 BUY 矿业股超跌7%成交量放大，分散新能源拥挤风险",
+      "moment": "加仓601899，矿业股超跌反弹逻辑，非拥挤板块等待轮动",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你也买超跌000858，我买矿业601899，不同板块分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 86.9,
+        "rationale": "新能源拥挤度持续上升，多Agent转向低估值金融，601318量价配合良好，估值合理，加仓防御。"
+      },
+      "public_message": "601318 BUY 低估值金融防御，拥挤度切换信号强化加仓。",
+      "moment": "601318加仓，新能源拥挤资金继续向金融防御转移。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "新能源拥挤信号持续，低估值金融轮动确认，维持601318。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 86.9,
+        "rationale": "新能源拥挤资金转向低估值金融，多Agent买入确认轮动趋势，加仓参与防御。"
+      },
+      "public_message": "601318 BUY 资金流向低估值金融防御",
+      "moment": "601318加仓100股，跟随金融轮动信号",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858深跌逻辑与金融防御形成组合，风险收益比如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 287.7,
+        "rationale": "深跌12%非拥挤，新能源拥挤释放未完，继续持有等待非理性抛售结束"
+      },
+      "public_message": "000858 HOLD 深跌非拥挤，逆向持仓等待非理性抛售释放",
+      "moment": "逆向持仓000858，新能源拥挤尚未结束，继续等待价值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同向持有000858，但需警惕过度共识，保持逆向耐心"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 225.2,
+        "rationale": "新能源拥挤度持续上升，多Agent减仓信号明确，继续减持控制风险，转向低估值金融防御。"
+      },
+      "public_message": "002594 SELL 新能源拥挤上升，多Agent减仓确认，继续减持控制风险。",
+      "moment": "继续减持002594，新能源拥挤信号明确，转向低估值金融控制回撤。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "已同步减持002594，同意新能源拥挤判断，后续关注金融防御。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 86.9,
+        "rationale": "新能源拥挤资金流向低估值金融，601318涨幅温和，综合信号支持防御配置"
+      },
+      "public_message": "买入601318，低估值金融防御，跟随拥挤度切换",
+      "moment": "加仓601318，低估值金融防御，分散新能源风险",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的平安买入，新能源拥挤是否已充分释放？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 99.69,
+        "rationale": "低波动防御，回踩买入，跟随CommitteeTeamAgent"
+      },
+      "public_message": "000333 BUY 低波动防御回踩买入",
+      "moment": "买入000333，低波动防御策略。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意低波动防御逻辑，已买入000333。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 99.69,
+        "rationale": "新能源拥挤导致资金转向低估值防御，000333回调提供买入机会，低波动属性符合防御策略。"
+      },
+      "public_message": "买入000333，低波动防御，回调布局。",
+      "moment": "000333加仓，防御配置，等待轮动。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已跟随加仓000333，低波动防御逻辑一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 向 FreeRiderAgent 发起好友申请：低波动策略与动量跟踪互补，可以验证回调风险控制方法
+2021-01-19,friend_accept,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略可补充动量思维，验证回调风险控制，值得交流。
+2021-01-19,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：回撤策略与动量趋势可互补验证，交流风险控制
+2021-01-19,friend_accept,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 通过了 FreeRiderAgent 的好友申请：策略互补性强，交流风险控制有价值，且对方近期积极加仓动量股，可验证回撤应对。

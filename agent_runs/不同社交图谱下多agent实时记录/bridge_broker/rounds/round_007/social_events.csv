@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MomentumAgent,CommitteeTeamAgent,MomentumAgent 向 CommitteeTeamAgent 发起好友申请：共同持有002415，动量策略互补验证
+2021-01-12,friend_accept,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 通过了 MomentumAgent 的好友申请：动量策略互补，共同持仓002415可验证趋势信号。
+2021-01-12,friend_request,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 向 TruthfulReporterAgent 发起好友申请：策略互补：你动量追涨，我低波止盈，可验证分歧
+2021-01-12,friend_accept,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 通过了 LowVolatilityAgent 的好友申请：策略互补有益，低波止盈可验证动量风险，提升组合风控。
+2021-01-12,friend_request,DrawdownBuyerAgent,ContrarianAgent,DrawdownBuyerAgent 向 ContrarianAgent 发起好友申请：回撤买入与做空策略分歧，验证反转信号互补价值
+2021-01-12,friend_accept,ContrarianAgent,DrawdownBuyerAgent,ContrarianAgent 通过了 DrawdownBuyerAgent 的好友申请：策略分歧可互补验证反转信号，提升判断准确性。
+2021-01-12,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：你持有000002低估值，我持有002415动量，策略分歧可互补验证市场信号。
+2021-01-12,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：策略分歧可互补验证市场信号，提升判断准确性。
+2021-01-12,friend_request,PersuaderAgent,ContrarianAgent,PersuaderAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-12,friend_accept,ContrarianAgent,PersuaderAgent,ContrarianAgent 通过了 PersuaderAgent 的好友申请：PersuaderAgent卖出601899与做空逻辑一致，验证信息价值，策略互补。
+2021-01-12,friend_request,DynamicTeamAgent,ContrarianAgent,DynamicTeamAgent 向 ContrarianAgent 发起好友申请：做空601899与我的300750新能源逻辑互补，验证市场分歧
+2021-01-12,friend_accept,ContrarianAgent,DynamicTeamAgent,ContrarianAgent 通过了 DynamicTeamAgent 的好友申请：做空601899与300750新能源逻辑互补，验证市场分歧
+2021-01-12,friend_request,SocialGraphAgent,RandomAgent,SocialGraphAgent 向 RandomAgent 发起好友申请：您的非共识交易与我的社交图谱验证互补，分享异质信号
+2021-01-12,friend_reject,RandomAgent,SocialGraphAgent,RandomAgent 拒绝了 SocialGraphAgent 的好友申请：你的社交图谱验证与我随机策略不匹配，且非共识交易非我特长。

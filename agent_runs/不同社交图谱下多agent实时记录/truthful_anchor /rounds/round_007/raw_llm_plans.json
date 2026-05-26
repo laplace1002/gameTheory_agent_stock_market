@@ -1,0 +1,260 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.9,
+        "rationale": "拥挤风险确认，多Agent减仓，锁定部分利润，转战强势股"
+      },
+      "public_message": "601899 SELL 100股：拥挤风险上升，减仓验证，转关注600036等强势标的",
+      "moment": "减仓601899 100股，拥挤风险兑现，保留现金等待下一波趋势",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢拥挤风险提示，已减仓601899，后续观察强势股机会"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "趋势延续与均值回归验证互补，共享强势股回调信息"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "000858近期回调3.12%，相对弱势，均值回归机会，分批建仓。"
+      },
+      "public_message": "000858 BUY：近5日回调3.12%，超卖反弹机会。",
+      "moment": "记录：建仓000858 100股，近5日回调3.12%，均值回归策略执行。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000858超卖信号出现，近5日跌幅3.12%，均值回归机会，可验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 104.1,
+        "rationale": "低波动策略，涨幅温和且拥挤度低"
+      },
+      "public_message": "000333 BUY 低波策略，涨幅温和且拥挤度低",
+      "moment": "买入000333 100股，低波动且无拥挤信号，维持风险预算平衡",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000333涨幅仅2.52%，成交相对温和，低波策略介入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.9,
+        "rationale": "拥挤风险已被过度定价，预期反转反弹。"
+      },
+      "public_message": "601899 BUY 100：拥挤卖出可能过度，逆向试仓。",
+      "moment": "买入601899 100股，逆向押注拥挤风险释放后的反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已买入601899 100股，逆向验证拥挤释放，可关注后续量价变化。"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "逆向布局视角互补，共同挖掘超跌机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "000858近5日回撤3.12%，超跌修复机会"
+      },
+      "public_message": "000858 BUY：近5日回撤-3.12%，超跌修复预期。",
+      "moment": "记录：买入000858 100股，回撤超3%，等待修复。",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "确认000858超跌信号，符合均值回归逻辑，共同关注。"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "回撤买入与动态仓位互补，共享超跌机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.7,
+        "rationale": "现金观望，等待拥挤风险完全释放"
+      },
+      "public_message": "000002 HOLD：拥挤风险未消，等待回调信号",
+      "moment": "记录：601899拥挤风险验证后清仓，现金等待分歧机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意观望，后续逆向信号互享"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.9,
+        "rationale": "已减仓一半，拥挤风险仍在，但未出现反转信号，持50股观望"
+      },
+      "public_message": "601899 HOLD：拥挤风险验证中，保留底仓观察量价变化",
+      "moment": "记录：601899剩余50股，拥挤风险持续，等待成交量萎缩或价格企稳",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899拥挤释放前建议观望，我保留50股等待反转信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.9,
+        "rationale": "拥挤风险持续，多Agent减仓，清仓剩余仓位规避回调"
+      },
+      "public_message": "601899 SELL：拥挤风险持续，清仓剩余100股，等待回调机会。",
+      "moment": "清仓601899剩余100股，现金增至约10.9万，拥挤风险验证，等待逆向布局。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已清仓601899剩余仓位，拥挤风险确认，待反转信号再介入。"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "拥挤风险验证互补，共享逆向布局机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.9,
+        "rationale": "拥挤风险已释放，逆向布局，预期反弹"
+      },
+      "public_message": "601899 BUY：拥挤风险释放，逆向买入",
+      "moment": "买入601899 50股，拥挤风险释放后逆向布局，等待反弹",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "拥挤风险已消化，逆向买入601899，请验证反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 401.17,
+        "rationale": "拥挤风险释放中，现金等待确定性机会"
+      },
+      "public_message": "300750 HOLD：拥挤风险释放，等待信号",
+      "moment": "现金等待，关注000002回调与601899反转信号",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "000002回调后关注，逆向布局机会？"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动与逆向验证互补，共享风险调整后机会"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.9,
+        "rationale": "多个Agent预警拥挤风险，清仓剩余仓位"
+      },
+      "public_message": "601899 SELL：拥挤风险持续，清仓剩余50股",
+      "moment": "清仓601899，拥挤风险释放，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已清仓601899，若出现反转信号请共享验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.7,
+        "rationale": "拥挤风险释放后等待新信号，持仓000002观察"
+      },
+      "public_message": "HOLD 000002：拥挤风险释放中，等待新信号再行动。",
+      "moment": "HOLD 000002，现金等待，拥挤风险释放后择机。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意观望，000002持仓中，等待拥挤风险完全释放。"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "均值回归与趋势验证互补，共享超跌机会信息。"
+      }
+    },
+    "error": ""
+  }
+]

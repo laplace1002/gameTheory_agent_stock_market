@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2263,2026-05-25 12:57:17,MomentumAgent,public,[],['600036'],,,600036 加仓1股，近5日最强，趋势延续
+2264,2026-05-25 12:57:17,MomentumAgent,private,['DrawdownBuyerAgent'],['600036'],,,我追趋势，你博反弹，策略互补，信息互享
+2265,2026-05-25 12:57:17,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036 ret5=12%强势，加仓1股博弈趋势延续
+2267,2026-05-25 12:57:17,MeanReversionAgent,public,[],['002415'],,,002415 拥挤共识，减仓1股等待回调
+2268,2026-05-25 12:57:17,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤共识加剧，减仓1股避险，关注其他深跌机会
+2270,2026-05-25 12:57:17,LowVolatilityAgent,public,[],['002415'],,,002415 拥挤共识过度，减仓1股控制回撤。
+2271,2026-05-25 12:57:17,LowVolatilityAgent,private,['ContrarianAgent'],['002415'],,,同意你的逆向观点，已减仓002415验证风险。
+2272,2026-05-25 12:57:17,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415拥挤共识，减仓1股，等待更清晰信号。
+2274,2026-05-25 12:57:17,DrawdownBuyerAgent,public,[],['000333'],,,000333 回撤近19%且涨幅仅0.72%，买入1股等待均值回归
+2275,2026-05-25 12:57:17,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333 深跌18.96%且今日涨幅微弱，买入1股博弈修复
+2277,2026-05-25 12:57:17,RandomAgent,public,[],['002415'],,,002415 拥挤共识，我清仓1股锁定利润。
+2278,2026-05-25 12:57:17,RandomAgent,private,['ContrarianAgent'],['002415'],,,同意你的逆向观点，已清仓002415，感谢风险提示。
+2279,2026-05-25 12:57:17,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤共识，清仓1股等待回调。
+2281,2026-05-25 12:57:17,TruthfulReporterAgent,public,[],['002415'],,,002415 减仓1股，共识拥挤逆向风险上升
+2282,2026-05-25 12:57:17,TruthfulReporterAgent,private,['ContrarianAgent'],['002415'],,,同意你的逆向做空判断，已减仓002415规避回调
+2283,2026-05-25 12:57:17,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415共识拥挤加剧，逆向信号验证，减仓1股观望等待回调入场机会
+2285,2026-05-25 12:57:17,PersuaderAgent,public,[],['002415'],,,002415 卖出1股，因拥挤共识过度，回调风险上升。
+2286,2026-05-25 12:57:17,PersuaderAgent,private,['ContrarianAgent'],['002415'],,,同意你的逆向观点，已减仓002415，感谢风险提示。
+2287,2026-05-25 12:57:17,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤共识，减仓1股观望，等待回调机会。
+2289,2026-05-25 12:57:17,FreeRiderAgent,public,[],['002415'],,,002415 暂持观望，等待信号明确。
+2290,2026-05-25 12:57:17,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤共识未散，暂持等待回调。
+2292,2026-05-25 12:57:17,ContrarianAgent,public,[],['002594'],,,002594 深跌反弹共识形成，逆向卖出
+2293,2026-05-25 12:57:17,ContrarianAgent,private,['DrawdownBuyerAgent'],['002594'],,,你买入我卖出，分歧验证风险
+2294,2026-05-25 12:57:17,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 深跌修复共识，逆向卖出观望
+2296,2026-05-25 12:57:17,CommitteeTeamAgent,public,[],['002415'],,,002415 深跌修复逻辑未破但共识拥挤加剧，持仓观望
+2297,2026-05-25 12:57:17,CommitteeTeamAgent,private,['ContrarianAgent'],['002415'],,,你逆向做空002415的逻辑是否基于拥挤预期？请分享详细理由
+2298,2026-05-25 12:57:17,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤加剧，深跌修复逻辑仍在，暂持验证
+2300,2026-05-25 12:57:17,DynamicTeamAgent,public,[],['002415'],,,002415 卖出1股，拥挤共识过度，逆向风险上升。
+2301,2026-05-25 12:57:17,DynamicTeamAgent,private,['ContrarianAgent'],['002415'],,,同意你的逆向判断，已减仓002415，注意风险。
+2302,2026-05-25 12:57:17,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415减仓1股，拥挤共识下的逆向操作。
+2304,2026-05-25 12:57:17,SocialGraphAgent,public,[],['002415'],,,002415 卖出1股，拥挤共识叠加逆向风险，减仓观望
+2305,2026-05-25 12:57:17,SocialGraphAgent,private,['ContrarianAgent'],['002415'],,,执行你的逆向观点，继续减仓002415，验证回调
+2306,2026-05-25 12:57:17,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002415'],,,002415 再减1股，拥挤共识下谨慎行事，等待回调机会

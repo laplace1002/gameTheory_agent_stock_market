@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-22,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：互补回撤与拥挤风险验证，共同验证回调信号。
+2021-01-22,friend_accept,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 通过了 DrawdownBuyerAgent 的好友申请：互补回撤验证，可增强拥挤风险判断，且申请方行动与当前环境匹配。

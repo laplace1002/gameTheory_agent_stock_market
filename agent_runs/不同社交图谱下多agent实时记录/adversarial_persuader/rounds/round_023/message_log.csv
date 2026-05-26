@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1179,2026-05-25 11:22:34,MomentumAgent,public,[],['002415'],,,SELL 002415 短期跌幅大，切换至强势标的
+1180,2026-05-25 11:22:34,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,减仓002415，聚焦趋势延续
+1182,2026-05-25 11:22:34,MeanReversionAgent,public,[],['002415'],,,002415 BUY: 短期超跌13%，均值回归机会，中期趋势向上。
+1183,2026-05-25 11:22:34,MeanReversionAgent,private,['DrawdownBuyerAgent'],['002415'],,,002415：短期超跌13%，均值回归弹性更大，分享逻辑。
+1184,2026-05-25 11:22:34,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，短期超跌13%，中期趋势向上，均值回归。
+1186,2026-05-25 11:22:34,LowVolatilityAgent,public,[],['600036'],,,BUY 600036 招商银行，趋势稳健低波动
+1187,2026-05-25 11:22:34,LowVolatilityAgent,private,['DrawdownBuyerAgent'],['600036'],,,601318回撤较大，但未出现企稳信号，低波动策略暂不参与
+1188,2026-05-25 11:22:34,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,买入600036，聚焦低波动与趋势稳定性，控制回撤
+1190,2026-05-25 11:22:34,DrawdownBuyerAgent,public,[],['002415'],,,002415 BUY：5日深跌13.29%，回撤买入博弈均值修复。
+1191,2026-05-25 11:22:34,DrawdownBuyerAgent,private,['DynamicTeamAgent'],['002415'],,,你对601899空头担忧与我的支撑逻辑互补，当前放量未跌但方向未明，我持观望，如何量化拥挤出清？
+1192,2026-05-25 11:22:34,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，深跌13%博弈修复。持有601899观望分歧。
+1194,2026-05-25 11:22:34,RandomAgent,public,[],['601899'],,,601899 SELL 随机止盈，多空分歧极致落袋为安
+1195,2026-05-25 11:22:34,RandomAgent,private,['ContrarianAgent'],['601899'],,,我的随机止盈验证你的空头逻辑，放量未跌未新高，拥挤出清前下行风险仍存
+1196,2026-05-25 11:22:34,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,卖出601899，随机止盈，多空激战中选择离场观望
+1198,2026-05-25 11:22:34,TruthfulReporterAgent,public,[],['601899'],,,601899 HOLD：多空分歧未决，放量未跌支撑有效但空头未证伪，等待收敛信号
+1199,2026-05-25 11:22:34,TruthfulReporterAgent,private,['ContrarianAgent'],['601899'],,,拥挤未出清阈值如何量化？放量未跌是否弱化顶部确认？
+1200,2026-05-25 11:22:34,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,持有601899，多空激战，放量未跌支撑有效但顶部未破，耐心等待方向
+1202,2026-05-25 11:22:34,PersuaderAgent,public,[],['601899'],,,601899 BUY 加仓：放量未跌支撑确认，多方积聚，突破概率上升
+1203,2026-05-25 11:22:34,PersuaderAgent,private,['ContrarianAgent'],['601899'],,,放量未跌支撑坚硬，拥挤多头未出清但已部分反映，平空转多可避免轧空
+1204,2026-05-25 11:22:34,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，放量未跌支撑有效，多空分歧中做多突破
+1206,2026-05-25 11:22:34,FreeRiderAgent,public,[],['601318'],,,601318 HOLD：短期下跌7.8%，中期下跌10.7%，量能平稳，等待企稳。
+1207,2026-05-25 11:22:34,FreeRiderAgent,private,['DrawdownBuyerAgent'],['601318'],,,成交量平稳，支撑位看前低75附近，若放量跌破则止损。
+1208,2026-05-25 11:22:34,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,持有601318，下跌中观望；601899多空分歧，放量
+1210,2026-05-25 11:22:34,ContrarianAgent,public,[],['601899'],,,601899 本轮信号有限，我按风险约束调整仓位。
+1212,2026-05-25 11:22:34,CommitteeTeamAgent,public,[],['601899'],,,601899 HOLD：多空分歧未消，放量未跌支撑有效但空头未证伪，观望
+1213,2026-05-25 11:22:34,CommitteeTeamAgent,private,['PersuaderAgent'],['601899'],,,你的看多基于放量未跌，但拥挤多头未出清是否已部分定价？如何定义出清阈值？
+1214,2026-05-25 11:22:34,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899和600036，多空激战中耐心等待收敛信号
+1216,2026-05-25 11:22:34,DynamicTeamAgent,public,[],['601899'],,,601899 HOLD：放量未跌支撑有效，空头未证伪，等待收敛信号
+1217,2026-05-25 11:22:34,DynamicTeamAgent,private,['DrawdownBuyerAgent'],['601899'],,,你的601318支撑逻辑与我的601899空头担忧如何协调？放量未跌是否弱化顶部？
+1218,2026-05-25 11:22:34,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899，多空激战，放量未跌支撑有效但顶部未破，耐心等待方向
+1220,2026-05-25 11:22:34,SocialGraphAgent,public,[],['601899'],,,601899 HOLD：放量未跌支撑有效，空头未证伪，多空僵持观望
+1221,2026-05-25 11:22:34,SocialGraphAgent,private,['ContrarianAgent'],['601899'],,,您的拥挤出清阈值如何量化？放量未跌是否弱化顶部确认？
+1222,2026-05-25 11:22:34,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601899'],,,持有601899与600036，多空分歧中等待方向

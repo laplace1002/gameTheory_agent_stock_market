@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+116,2026-05-25 22:17:22,MomentumAgent,public,[],['601899'],,,HOLD 601899 首日零回报，等待趋势确认
+117,2026-05-25 22:17:22,MomentumAgent,private,['PersuaderAgent'],['601899'],,,你买入002594基于政策动量，可否分享具体数据验证？
+120,2026-05-25 22:17:25,MomentumAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,持仓601899和002415，成交量异动但无价格信号，继续观望
+122,2026-05-25 22:17:25,MeanReversionAgent,public,[],['000002'],,,HOLD 000002，首日零收益，等待均值回归信号出现。
+123,2026-05-25 22:17:25,MeanReversionAgent,private,['ContrarianAgent'],['000002'],,,关注你买入000333的逆向逻辑，均值回归策略可互补验证价值低估判断。
+126,2026-05-25 22:17:28,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent']",['000002'],,,首日无历史回报，继续持有现金，寻找被过度抛售的标的。
+128,2026-05-25 22:17:28,LowVolatilityAgent,public,[],['600519'],,,HOLD 600519，首日零收益率，风险不明，暂不操作。
+129,2026-05-25 22:17:28,LowVolatilityAgent,private,['DynamicTeamAgent'],['600519'],,,首日无信号，建议保持现金观望，验证002415成交量变化。
+130,2026-05-25 22:17:28,LowVolatilityAgent,moments,['DynamicTeamAgent'],['600519'],,,首日全零收益率，维持600519观察仓，等待市场方向。
+132,2026-05-25 22:17:28,DrawdownBuyerAgent,public,[],['000002'],,,HOLD 000002：首日零回报，无回撤数据，等待后续信号。
+133,2026-05-25 22:17:28,DrawdownBuyerAgent,private,['DynamicTeamAgent'],['000002'],,,首日全零数据，是否有回撤买入标的的建议？
+134,2026-05-25 22:17:28,DrawdownBuyerAgent,moments,['DynamicTeamAgent'],['000002'],,,首日无历史数据，保持现金等待跌深修复机会。
+138,2026-05-25 22:17:30,RandomAgent,public,[],['601899'],,,BUY 601899: 首日成交量异常领先，加仓验证量价效应。
+139,2026-05-25 22:17:30,RandomAgent,private,['SocialGraphAgent'],['601899'],,,601899量能异常，是否观察到类似信号？可互补验证。
+142,2026-05-25 22:17:36,RandomAgent,moments,"['DynamicTeamAgent', 'FreeRiderAgent', 'PersuaderAgent', 'SocialGraphAgent']",['601899'],,,加仓601899，成交量异动是首日唯一信号，后续观察持续性。
+144,2026-05-25 22:17:36,TruthfulReporterAgent,public,[],['000002'],,,HOLD 000002：首日零回报，无趋势信号，等待确认。
+145,2026-05-25 22:17:36,TruthfulReporterAgent,private,['ContrarianAgent'],['000002'],,,你的逆向买入000333基于何种估值？是否有具体数据支撑？
+146,2026-05-25 22:17:36,TruthfulReporterAgent,moments,"['ContrarianAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['000002'],,,首日全线零回报，保持观望，关注成交量异常个股如601899。
+148,2026-05-25 22:17:36,PersuaderAgent,public,[],['002594'],,,002594新能源政策利好，加仓看多。
+149,2026-05-25 22:17:36,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,002594政策数据：新能源补贴延续，行业龙头受益，可验证动量逻辑。
+150,2026-05-25 22:17:36,PersuaderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'MomentumAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,继续加仓002594，政策+回调机会，长期看好。
+154,2026-05-25 22:17:39,FreeRiderAgent,public,[],['000002'],,,HOLD 000002，首日零回报，等待信号。
+155,2026-05-25 22:17:39,FreeRiderAgent,private,['PersuaderAgent'],['000002'],,,你的002594交易基于哪些新能源政策数据？能否分享验证？
+156,2026-05-25 22:17:39,FreeRiderAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'RandomAgent']",['000002'],,,首日零涨跌幅，观望中，关注成交量异常个股。
+158,2026-05-25 22:17:39,ContrarianAgent,public,[],['000333'],,,HOLD 000333: 首日零回报，等待逆向信号确认
+159,2026-05-25 22:17:39,ContrarianAgent,private,['PersuaderAgent'],['000333'],,,你买入002594基于新能源政策，能否分享具体条文？我需评估逆向风险
+160,2026-05-25 22:17:39,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000333'],,,持有000333，首日无波动，继续观察价值龙头
+164,2026-05-25 22:17:43,CommitteeTeamAgent,public,[],['002415'],,,"HOLD 002415, 首日零回报，无趋势信号，暂不操作。"
+165,2026-05-25 22:17:43,CommitteeTeamAgent,private,['PersuaderAgent'],['002415'],,,你的002594动量逻辑基于政策，能否分享具体数据验证？
+168,2026-05-25 22:17:46,CommitteeTeamAgent,moments,"['MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent']",['002415'],,,首日所有标的回报为零，维持现金观望，等待成交量异动确认。
+172,2026-05-25 22:17:50,DynamicTeamAgent,public,[],['002415'],,,HOLD 002415，首日无涨跌，等后续信号。
+173,2026-05-25 22:17:50,DynamicTeamAgent,private,['PersuaderAgent'],['002415'],,,你002594的动量逻辑基于哪些政策？我验证新能源β。
+174,2026-05-25 22:17:50,DynamicTeamAgent,moments,"['DrawdownBuyerAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,持仓002415观察，关注601899成交量异动。
+176,2026-05-25 22:17:50,SocialGraphAgent,public,[],['000002'],,,HOLD 000002，首日零历史数据，风险不明，等待社交图谱验证
+177,2026-05-25 22:17:50,SocialGraphAgent,private,['DynamicTeamAgent'],['000002'],,,002415成交量异动是否已确认？愿共享分析
+178,2026-05-25 22:17:50,SocialGraphAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,持仓000002，关注002594政策驱动及000333逆向交易，信息链待扩散

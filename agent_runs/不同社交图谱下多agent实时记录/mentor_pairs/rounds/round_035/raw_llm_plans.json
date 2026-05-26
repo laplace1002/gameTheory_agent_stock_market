@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 33.1,
+        "rationale": "000002 ret5 10.92%强势，趋势延续，加仓追涨。"
+      },
+      "public_message": "000002 BUY 5股，短期强势延续，追涨加仓。",
+      "moment": "加仓000002，强势趋势延续，追涨策略执行。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.1,
+        "rationale": "市场波动加剧，低波动策略应减少操作，持有现金和现有仓位等待风险释放。"
+      },
+      "public_message": "HOLD 600036 控制回撤，市场波动大，低波动策略静观其变。",
+      "moment": "HOLD 600036 1股，现金充足，低波动策略等待波动率回落再行动。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你减仓601318，我维持低波动仓位，等回调后评估加仓机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 197.27,
+        "rationale": "深度回撤-23.35%，超卖修复逻辑，多Agent共识加仓"
+      },
+      "public_message": "002594 BUY 1股，深度回撤-23.35%超卖修复，跟随逆向信号",
+      "moment": "买入002594，深度回撤超卖修复，等待反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "加仓002594，超卖修复逻辑与你协同，等待反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 12.19,
+        "rationale": "短期超跌-10.63%，但中期ret20+12.56%强势，逆向买入博弈修复"
+      },
+      "public_message": "601899 BUY 1股，短期超跌中期仍强，逆向博弈修复。",
+      "moment": "买入601899，短期超跌+中期动量共振，逆向布局。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "关注601899而非002594，中期动量更优，超跌修复逻辑不同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 55.56,
+        "rationale": "市场整体回撤，多空冲突未解，等待更明确信号"
+      },
+      "public_message": "当前市场信号混杂，我选择HOLD现金，观察后续走势。",
+      "moment": "多空分歧加剧，现金为王等待确定性",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "请教002594超卖修复逻辑，是否有具体催化剂？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 197.27,
+        "rationale": "深度超卖-23%，均值回归修复机会"
+      },
+      "public_message": "002594 BUY 深度超卖-23%，均值回归修复",
+      "moment": "加仓002594，超卖反弹逻辑，同时考虑减仓601318",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的002594超卖判断，我加仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 197.27,
+        "rationale": "深度回撤超卖修复，多Agent买入信号，协同加仓"
+      },
+      "public_message": "002594 BUY 1股，深度回撤超卖修复，多Agent协同买入",
+      "moment": "加仓002594，深度回撤超卖修复，多Agent协同布局",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你加仓002594超卖修复，与我的002415互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.18,
+        "rationale": "跟随多Agent减仓共识，降低多空冲突风险"
+      },
+      "public_message": "601318 SELL 1股，多空冲突未解，跟随减仓避险。",
+      "moment": "卖出601318，降低多空冲突风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对601318的减仓判断，我已跟随卖出。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 33.1,
+        "rationale": "000002短期涨幅10.92%，获利了结，避免回调风险。"
+      },
+      "public_message": "000002 SELL 1股，短期涨幅过大，锁定利润。",
+      "moment": "000002 SELL 1股，逆势获利了结，控制回撤。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000002短期动量强劲，我逆势卖出获利，供参考。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "超卖修复，跟随Contrarian和SocialGraph信号，近期跌幅-23.35%具备反弹潜力"
+      },
+      "public_message": "002594 BUY 超卖修复，跟随Contrarian逆向信号",
+      "moment": "买入002594，超跌修复逻辑，多空博弈中寻找机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的超卖判断，买入002594协同布局"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 197.27,
+        "rationale": "超卖修复信号集中，多Agent协同加仓深度回撤标的"
+      },
+      "public_message": "002594 BUY 1股，超卖修复信号集中，多Agent协同布局。",
+      "moment": "买入002594，超卖修复逻辑，与002415互补分散风险。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你002594超卖修复判断，加仓协同互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 209.25,
+        "rationale": "加仓超卖修复，跟随Contrarian信号，多Agent协同"
+      },
+      "public_message": "002594 BUY 1股，Contrarian超卖修复，加仓协同",
+      "moment": "加仓002594，超卖修复共识，多Agent协同降低风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意超卖修复判断，加仓002594协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

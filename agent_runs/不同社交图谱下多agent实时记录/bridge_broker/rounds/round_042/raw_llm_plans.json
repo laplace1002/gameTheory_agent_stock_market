@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.05,
+        "rationale": "短期正收益中期趋势向上，追涨加仓"
+      },
+      "public_message": "601318 BUY 100: 短期抗跌，中期趋势延续，追涨加仓",
+      "moment": "601318加仓100股：短期韧性验证，中期趋势支撑，延续追涨策略",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意601318强势逻辑，加仓100股跟随趋势，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 25,
+        "price": 300.0,
+        "rationale": "多Agent拥挤卖出信号，均值回归策略减仓降低风险"
+      },
+      "public_message": "300750 SELL 25: 拥挤信号，均值回归减仓",
+      "moment": "300750 SELL 25: 深跌修复共识拥挤，均值回归减仓待机",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意300750拥挤判断，我减仓25股验证，后续关注超跌标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 81.99,
+        "rationale": "000333深跌反弹动能不足，低波动减仓控制回撤"
+      },
+      "public_message": "000333 SELL 50：深跌反弹待验证，低波动减仓降风险",
+      "moment": "000333 SELL 50：深跌修复共识拥挤，低波动减仓保留现金",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002415我暂持，你抗跌逻辑待验证，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.71,
+        "rationale": "随机视角认为买入共识过挤，减仓验证反转"
+      },
+      "public_message": "601899 SELL 50: 随机视角测试共识拥挤后的反转",
+      "moment": "601899 SELL 50: 随机视角验证共识拥挤后的反转逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向买入002594，我减仓601899规避共识拥挤，后续交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.05,
+        "rationale": "短期相对强势，多Agent认可，加仓验证趋势"
+      },
+      "public_message": "601318 BUY 10: 短期韧性明显，多Agent认可趋势",
+      "moment": "601318加仓10股：短期抗跌，中期趋势稳健，分散持仓",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你601318短期趋势逻辑，我加仓10股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 305.0,
+        "rationale": "多Agent共识拥挤信号增强，验证风险降低敞口"
+      },
+      "public_message": "300750 SELL 20: 拥挤共识验证，减仓控制风险",
+      "moment": "300750 SELL 20: 多Agent拥挤共识验证，减仓等待信号明确",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意300750拥挤判断，减仓20验证，后续观察修复节奏"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 11,
+        "price": 31.02,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 50,
+        "price": 300.0,
+        "rationale": "多Agent共识拥挤，跟随减仓验证风险"
+      },
+      "public_message": "300750 SELL 50: 多Agent共识拥挤信号，减仓降低风险",
+      "moment": "300750 SELL 50: 拥挤信号验证，降低敞口",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意601899买入逻辑，我持有并继续观察，后续交流换仓时机"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 300.0,
+        "rationale": "深跌修复卖出拥挤，逆向加仓验证反转"
+      },
+      "public_message": "300750 BUY 1: 深跌修复卖出拥挤，逆向加仓验证反转",
+      "moment": "300750 BUY 1: 多Agent卖出拥挤，逆向博修复",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "300750卖出拥挤过度，我买入1股逆向验证，可交流分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.71,
+        "rationale": "多Agent深跌修复共识增强，中期趋势支撑，加仓验证"
+      },
+      "public_message": "601899 BUY 100：深跌修复共识增强，中期支撑加仓验证",
+      "moment": "601899 BUY 100：深跌修复共识增强，中期趋势支撑，加仓验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同加仓601899，我买入100股验证共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 30,
+        "price": 300.0,
+        "rationale": "多Agent拥挤信号，减仓验证风险"
+      },
+      "public_message": "300750 SELL 30股：深跌修复共识拥挤，减仓降低敞口",
+      "moment": "300750 SELL 30：深跌修复共识过度拥挤，减仓待机",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意300750拥挤判断，我减仓30股验证，关注601899"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.71,
+        "rationale": "多Agent深跌修复共识增强，中期趋势支撑，加仓验证"
+      },
+      "public_message": "601899 BUY 50: 深跌修复共识增强，加仓验证",
+      "moment": "601899 BUY 50: 跟随多Agent深跌修复共识，加仓验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意加仓601899，共识验证，后续关注趋势延续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

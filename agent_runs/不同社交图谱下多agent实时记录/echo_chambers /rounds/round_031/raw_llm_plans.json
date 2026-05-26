@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "5日涨幅5.64%强势延续，拥挤卖出提供入场点"
+      },
+      "public_message": "601318 BUY 1股：强势趋势延续，拥挤卖出中逆向加仓",
+      "moment": "买入601318 1股，利用拥挤卖出追涨强势趋势",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，拥挤卖出过度，强势股追涨"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.44,
+        "rationale": "近5日跌6.43%，超跌明显，均值回归预期"
+      },
+      "public_message": "000333 BUY 1股：超跌抛售，均值回归验证",
+      "moment": "加仓000333 1股，利用超跌抛售均值回归，分散拥挤风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333超跌，我加仓1股互验均值回归逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.2,
+        "rationale": "低波动趋势持续，多Agent验证，分散拥挤风险"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势确认，多Agent协同验证",
+      "moment": "加仓600036，低波动趋势策略，拥挤风险分散验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意600036低波动逻辑，加仓互验，后续协同风险分散"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.44,
+        "rationale": "20日跌幅8.76%，超跌修复机会，分散拥挤风险"
+      },
+      "public_message": "000333 BUY 1股：20日跌幅8.76%，超跌修复机会，分散拥挤风险",
+      "moment": "买入000333 1股，20日跌幅8.76%，超跌修复逻辑，分散拥挤风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌显著，与您的逆向逻辑一致，可协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 14.63,
+        "rationale": "拥挤风险多Agent验证，减仓锁定利润"
+      },
+      "public_message": "601899 SELL 10股：拥挤风险验证，减仓锁定部分利润",
+      "moment": "卖出601899 10股，拥挤信号强化，锁定部分利润等待回调",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你减仓逻辑，我同步卖出10股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.2,
+        "rationale": "低波动趋势持续，多Agent验证，分散拥挤风险，继续增持"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势多Agent验证，协同加仓分散风险",
+      "moment": "加仓600036 1股，低波动趋势策略，拥挤风险分散验证",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036低波动逻辑已验证，加仓互验，后续协同观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.2,
+        "rationale": "低波动趋势多Agent验证，拥挤风险分散，加仓"
+      },
+      "public_message": "600036 BUY：低波动趋势多Agent验证，加仓",
+      "moment": "600036低波动趋势，多Agent加仓，分散拥挤风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036低波动逻辑验证，加仓互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 55.2,
+        "rationale": "低波动趋势多Agent验证，加仓协同"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势多Agent验证，加仓协同",
+      "moment": "加仓600036 1股，低波动趋势策略，风险分散验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "您逆向加仓601318基于超跌修复逻辑？我减持601899后观望，后续可互换信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 14.63,
+        "rationale": "拥挤风险多Agent验证，锁定利润"
+      },
+      "public_message": "601899 SELL 10股：拥挤风险强化，锁定利润",
+      "moment": "卖出601899 10股，拥挤风险验证锁定利润",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意减仓，拥挤信号已验证，后续观察回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.73,
+        "rationale": "各标的信号分歧，持仓待观察"
+      },
+      "public_message": "HOLD：综合多信号，601318分歧、600036低波动共识，暂不操作",
+      "moment": "当前持仓000002/600036/601318，多信号平衡中，等待更明确方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的601318逆向逻辑有道理，但卖出信号更强，我暂持观察，后续可互换信息"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 54.2,
+        "rationale": "低波动趋势多Agent验证，分散拥挤风险"
+      },
+      "public_message": "600036 BUY 1股：低波动趋势多Agent验证，分散拥挤风险",
+      "moment": "加仓600036 1股，低波动趋势策略，风险分散验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意低波动逻辑，加仓1股互验，后续协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.2,
+        "rationale": "拥挤风险多Agent验证，减仓避险"
+      },
+      "public_message": "601318 SELL 1股：拥挤信号多Agent验证，减仓避险",
+      "moment": "卖出601318 1股，拥挤风险验证，跟随多数卖出信号，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "虽理解逆向逻辑，但当前卖出拥挤，我先减仓1股，后续回调再评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

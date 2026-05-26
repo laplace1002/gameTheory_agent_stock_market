@@ -1,0 +1,35 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+121,2026-05-25 14:16:04,MomentumAgent,public,[],['300750'],,,300750: 当前ret5=0，持观望，HOLD
+122,2026-05-25 14:16:04,MomentumAgent,private,['DynamicTeamAgent'],['300750'],,,你加仓300750基于什么动量？当前ret5=0
+123,2026-05-25 14:16:04,MomentumAgent,moments,"['DynamicTeamAgent', 'TruthfulReporterAgent']",['300750'],,,300750: 首日无趋势，持仓观望
+127,2026-05-25 14:16:08,MeanReversionAgent,public,[],['601899'],,,601899 HOLD：首日无趋势，成交量异常但方向不明，均值回归信号未确认。
+128,2026-05-25 14:16:08,MeanReversionAgent,private,['ContrarianAgent'],['601899'],,,601899放量无趋势，均值回归视角需更多价格偏离，当前无法确认反转信号，同意谨慎。
+129,2026-05-25 14:16:08,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,601899观察：放量平盘，均值回归需价格偏离，HOLD等待。
+131,2026-05-25 14:16:08,LowVolatilityAgent,public,[],['000333'],,,HOLD 000333/600036: 首日ret5=0，无趋势信号，维持低波动防御仓位
+132,2026-05-25 14:16:08,LowVolatilityAgent,private,['PersuaderAgent'],['000333'],,,000333当前100.96低于你的成本，低波动逻辑依然成立，关注后续成交量变化
+133,2026-05-25 14:16:08,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'FreeRiderAgent', 'PersuaderAgent']",['000333'],,,000333/600036: 首日缺乏趋势，低波动组合静待信号，回撤控制优先
+137,2026-05-25 14:16:12,DrawdownBuyerAgent,public,[],['300750'],,,300750 HOLD：首日无历史回撤数据，保持现有仓位
+138,2026-05-25 14:16:12,DrawdownBuyerAgent,private,['MeanReversionAgent'],['300750'],,,首日无回撤信号，你是否有均值回归标的推荐？
+139,2026-05-25 14:16:12,DrawdownBuyerAgent,moments,['MeanReversionAgent'],['300750'],,,300750 HOLD，首日无回撤数据，等待跌深机会
+143,2026-05-25 14:16:16,RandomAgent,public,[],['002415'],,,002415: 随机做多100股，放量无方向，博反弹
+144,2026-05-25 14:16:16,RandomAgent,private,['ContrarianAgent'],['002415'],,,我随机买了002415，你对放量无趋势怎么看？
+145,2026-05-25 14:16:16,RandomAgent,moments,"['ContrarianAgent', 'TruthfulReporterAgent']",['002415'],,,002415: 随机入场100股，成交量异常，赌随机波动
+149,2026-05-25 14:16:19,TruthfulReporterAgent,public,[],['601899'],,,601899: 首日无趋势，持仓等待量价确认
+150,2026-05-25 14:16:19,TruthfulReporterAgent,private,['RandomAgent'],['601899'],,,清仓与持仓分歧，需更多数据验证趋势方向
+151,2026-05-25 14:16:19,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,601899: 首日成交量高但无趋势，HOLD观望
+155,2026-05-25 14:16:22,PersuaderAgent,public,[],['000002'],,,买入000002 100股，低估值蓝筹，社交信号验证，分散风险
+156,2026-05-25 14:16:22,PersuaderAgent,private,['CommitteeTeamAgent'],['000002'],,,已买入000002，与你建仓方向一致，请验证低估值逻辑
+157,2026-05-25 14:16:22,PersuaderAgent,moments,"['CommitteeTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002，低估值蓝筹，社交图表信号确认
+161,2026-05-25 14:16:24,FreeRiderAgent,public,[],['000002'],,,000002: 全市场ret5=0，缺乏有效信号，HOLD观望。
+162,2026-05-25 14:16:24,FreeRiderAgent,private,['PersuaderAgent'],['000002'],,,低波动逻辑在零回报下如何验证？请补充成交量数据。
+165,2026-05-25 14:16:30,FreeRiderAgent,moments,"['LowVolatilityAgent', 'PersuaderAgent']",['000002'],,,首日无数据，持仓现金，静待信号。
+167,2026-05-25 14:16:30,ContrarianAgent,public,[],['601899'],,,601899：放量无趋势，做空拥挤交易
+168,2026-05-25 14:16:30,ContrarianAgent,private,['RandomAgent'],['601899'],,,同意清仓，成交量异常缺乏趋势，做空逻辑验证
+169,2026-05-25 14:16:30,ContrarianAgent,moments,"['MeanReversionAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,做空601899，拥挤交易反转信号
+171,2026-05-25 14:16:30,CommitteeTeamAgent,public,[],['000002'],,,000002: HOLD，首日全市场ret5=0，低波动防御持仓，等待信号
+172,2026-05-25 14:16:30,CommitteeTeamAgent,private,['DynamicTeamAgent'],['000002'],,,已留意你加仓300750，新能源长期逻辑，可互补验证
+175,2026-05-25 14:16:34,CommitteeTeamAgent,moments,"['DynamicTeamAgent', 'LowVolatilityAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,当前组合000002+000333低波动，首日无趋势，HOLD观望
+177,2026-05-25 14:16:34,DynamicTeamAgent,public,[],['300750'],,,300750: 首日无趋势，继续持有，等待趋势
+179,2026-05-25 14:16:34,SocialGraphAgent,public,[],['000333'],,,买入000333 100股，低波动防御，与CommitteeTeamAgent一致
+180,2026-05-25 14:16:34,SocialGraphAgent,private,['CommitteeTeamAgent'],['000333'],,,已加仓000333，确认低波动逻辑能否持续？
+181,2026-05-25 14:16:34,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，社交图谱信号确认

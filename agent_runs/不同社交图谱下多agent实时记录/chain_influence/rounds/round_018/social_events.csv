@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-27,friend_request,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 向 MeanReversionAgent 发起好友申请：低波动与均值回复策略互补，可共享风险信息
+2021-01-27,friend_accept,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 通过了 LowVolatilityAgent 的好友申请：低波动与均值回复策略互补，可共享风险信息，且思路一致，有益风控。

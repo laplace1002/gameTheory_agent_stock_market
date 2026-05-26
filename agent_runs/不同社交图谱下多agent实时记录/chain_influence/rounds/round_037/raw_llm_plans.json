@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 280.7,
+        "rationale": "000858 ret5=-10.89%超卖，成交量适中，未受过度关注，均值回归布局。"
+      },
+      "public_message": "BUY 000858 50股：近期超卖-10.89%，均值回归机会。",
+      "moment": "加仓000858 50股，超卖-10.89%均值回归，与主流002415形成非共识对冲。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我加仓000858超卖-10.89%，与你002594策略互补，验证均值回归多样性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.29,
+        "rationale": "重仓加仓000002，趋势延续强势，近5日涨幅10.93%，量能配合，继续持有。"
+      },
+      "public_message": "加仓000002 200股，强势趋势延续，动量信号确认。",
+      "moment": "加仓000002，追涨强势股，趋势延续信号明确。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002趋势强劲，逆向策略可能错过，验证动量延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 211.4,
+        "rationale": "深度回撤-16.84%继续加仓均值回归"
+      },
+      "public_message": "加仓002594 50股，深度回撤-16.84%继续左侧布局",
+      "moment": "加仓002594 50股，极端超跌修复机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "策略一致，加仓002594验证极端超跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.41,
+        "rationale": "超跌修复共识拥挤度上升，短期回撤风险增加，等待验证后决策。"
+      },
+      "public_message": "HOLD 002415 10股：超跌修复共识强化，但拥挤度上升，暂不加仓，等待回调确认。",
+      "moment": "002415 HOLD：超跌共识拥挤，控制回撤，等待更优入场点。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415成交量能否持续？短期超买信号需警惕，建议观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.41,
+        "rationale": "超跌修复共识被多次验证，均值回归概率上升"
+      },
+      "public_message": "002415超跌修复共识强化，加仓10股验证均值回归",
+      "moment": "002415超跌修复逻辑获多Agent验证，继续加仓等待反转确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌-18.88%，您左侧布局，我关注流动性是否配合"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 211.4,
+        "rationale": "002594深度回撤-6.04%，多家Agent验证极端超跌，均值回归概率高，加仓摊薄成本"
+      },
+      "public_message": "加仓002594 100股，极端超跌-6.04%非共识机会，跟随均值回归",
+      "moment": "加仓002594 100股，极端超跌布局，与002415超跌修复形成对冲",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证002594极端超跌逻辑，加仓100股共享修复收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.75,
+        "rationale": "短期极端超跌-15.16%，成交量495M显示恐慌，非共识反弹机会"
+      },
+      "public_message": "BUY 601899 100股：短期极端超跌-15%，成交量放大，非共识反弹",
+      "moment": "加仓601899 100股，极端超跌左侧布局，与主流002415形成非共识对冲",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆601318，我逆601899，两种超卖逆转互补，验证分歧价值"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.41,
+        "rationale": "多Agent验证超跌修复共识，跟随加仓等待均值回归"
+      },
+      "public_message": "002415 BUY 10股：超跌修复共识强化，跟随加仓",
+      "moment": "加仓002415，超跌修复共识验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "您看002415成交量能否持续配合反转？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.41,
+        "rationale": "超跌修复共识过度拥挤，逆向减仓"
+      },
+      "public_message": "卖出002415 100股，超跌修复共识过度拥挤，逆向减仓。",
+      "moment": "卖出002415 100股，拥挤交易逆向减仓；继续持有601318等待反转。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你卖出601318，我逆向加仓，等待卖出力量衰减后均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.41,
+        "rationale": "多个Agent验证超跌修复共识，均值回归概率上升，加仓摊低成本"
+      },
+      "public_message": "002415 BUY 10股，超跌修复共识强化，均值回归布局",
+      "moment": "加仓002415 10股，超跌修复逻辑获多Agent验证，等待反转确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我继续加仓002415超跌修复，您逆向持有601318，验证策略多样性，关注分歧变化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 211.4,
+        "rationale": "极端超跌-16.84%，多个Agent左侧布局，验证均值回归概率上升"
+      },
+      "public_message": "加仓002594 10股：极端超跌-16.84%，均值回归逻辑经多Agent验证",
+      "moment": "加仓002594 10股，极端超跌+共识验证，等待均值回归确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "验证你002594超跌逻辑，同步加仓10股，共享反转收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.41,
+        "rationale": "超跌修复共识强化，多Agent验证均值回归概率上升"
+      },
+      "public_message": "002415 BUY：超跌修复共识持续，加仓验证均值回归",
+      "moment": "加仓002415 10股，超跌修复共识多家验证，等待均值回归确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "验证002415成交量是否配合反转，加仓10股跟随共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

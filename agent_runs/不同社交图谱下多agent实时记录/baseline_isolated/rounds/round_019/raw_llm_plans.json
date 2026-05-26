@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.61,
+        "rationale": "多agent减仓信号，回调风险上升，锁定利润"
+      },
+      "public_message": "600036 SELL 100股：跟随减仓信号，锁定利润，回避回调风险",
+      "moment": "卖出600036 100股，锁定利润，等待回调机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的600036减仓逻辑，我已卖出100股锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 28.43,
+        "rationale": "加仓000002，回调超卖信号汇聚，低波动控制风险"
+      },
+      "public_message": "000002: 回调超卖信号汇聚，低波动适度加仓50股，控制风险",
+      "moment": "加仓000002 50股，回调超卖信号汇聚，低波动策略执行中",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解拥挤担忧，但超卖信号验证中，加仓50股测试。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 6,
+        "price": 95.16,
+        "rationale": "000333近5日跌幅4.94%，回撤较深，低仓位加仓搏修复"
+      },
+      "public_message": "000333 BUY 6：近5日跌4.94%，回撤较深，加仓搏修复",
+      "moment": "加仓000333 6股，回撤修复逻辑",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "000333也有回撤机会，我加仓6股，验证逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 244.36,
+        "rationale": "002594近5日涨幅3.75%，均值回归倾向，多agent减仓信号，锁定利润"
+      },
+      "public_message": "002594 SELL 10股：涨幅后均值回归预期，跟随减仓锁利",
+      "moment": "卖出002594 10股，均值回归策略，锁定涨幅利润",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "002594锁利逻辑清晰，已卖出10股跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.43,
+        "rationale": "回调放量超卖与拥挤信号并存，暂持观察多空验证"
+      },
+      "public_message": "000002 HOLD：回调超卖但多头拥挤，等待信号明确",
+      "moment": "持有000002，多空博弈待分晓",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 9.68,
+        "rationale": "超跌后未见企稳，随机减仓降低风险。"
+      },
+      "public_message": "601899 SELL 30：超跌风险未释放，随机减仓。",
+      "moment": "卖出601899 30股，超跌风险控制。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899超跌严重，我随机减仓30股，避免继续下跌。你如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.61,
+        "rationale": "多Agent减仓信号，回调风险上升，锁定利润减少敞口"
+      },
+      "public_message": "600036 SELL 50股：多Agent减仓信号，锁定利润降低回调风险",
+      "moment": "卖出600036 50股，跟随多Agent减仓锁定利润",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的600036减仓逻辑，我全部卖出锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.43,
+        "rationale": "多Agent拥挤信号，ContrarianAgent减仓，跟随降低风险"
+      },
+      "public_message": "000002 SELL 10: 拥挤信号加剧，跟随ContrarianAgent减仓锁利",
+      "moment": "卖出000002 10股，应对拥挤交易，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的拥挤判断，卖出10股000002跟随减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.43,
+        "rationale": "多Agent集中买入形成拥挤，逆向减仓剩余仓位，锁定利润"
+      },
+      "public_message": "000002 SELL：拥挤交易信号持续，清仓剩余100股",
+      "moment": "清仓000002，逆向应对超买拥挤",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002买入拥挤可能引发回调，我已清仓，注意风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 28.43,
+        "rationale": "多agent分歧，拥挤风险上升，部分获利了结"
+      },
+      "public_message": "000002 SELL：多agent分歧，拥挤风险上升，减仓50股锁定利润",
+      "moment": "卖出000002 50股，应对多agent分歧，锁定部分利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，我已减仓000002 50股跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.43,
+        "rationale": "超卖逻辑待验证，拥挤信号分歧，暂持观察"
+      },
+      "public_message": "000002 HOLD：超卖与拥挤信号并存，暂持等待方向",
+      "moment": "000002 HOLD，超卖与拥挤信号博弈，等待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同拥挤风险，暂持观察，待信号明确再调整"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.43,
+        "rationale": "信号混杂，多空分歧，暂持观望"
+      },
+      "public_message": "000002 HOLD：多空信号混杂，等待方向确认。",
+      "moment": "持有000002，关注拥挤消化。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤信号，暂持观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

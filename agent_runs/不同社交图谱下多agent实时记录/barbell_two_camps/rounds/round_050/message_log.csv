@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2399,2026-05-25 13:00:36,MomentumAgent,public,[],['000002'],,,000002 ret20+4.56%相对强势，加仓1股博弈延续
+2400,2026-05-25 13:00:36,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 ret20为正，加仓博弈趋势延续
+2402,2026-05-25 13:00:37,MeanReversionAgent,public,[],['002594'],,,002594 深跌33.5%加仓1股，博弈均值回归
+2403,2026-05-25 13:00:37,MeanReversionAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594深跌33.5%，我加仓1股，与你共识均值回归
+2404,2026-05-25 13:00:37,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 深跌33.5%，加仓1股等待修复
+2406,2026-05-25 13:00:37,LowVolatilityAgent,public,[],['601318'],,,601318 HOLD 波动可控，等待更清晰信号再操作
+2407,2026-05-25 13:00:37,LowVolatilityAgent,private,['ContrarianAgent'],['601318'],,,你加仓002415逆向博弈，我暂不参与，低波动策略等待更确定机会。
+2408,2026-05-25 13:00:37,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318持仓观望，短期波动可控，风险预算充足，不急于调仓。
+2410,2026-05-25 13:00:37,DrawdownBuyerAgent,public,[],['601899'],,,601899 深跌20%放量，加仓1股博弈修复
+2411,2026-05-25 13:00:37,DrawdownBuyerAgent,private,['RandomAgent'],['601899'],,,同意你对601899的修复判断，我也加仓1股
+2412,2026-05-25 13:00:37,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 深跌20.6%放量，加仓1股博弈均值回归修复
+2414,2026-05-25 13:00:37,RandomAgent,public,[],['601899'],,,601899 深跌后观察，暂不操作
+2415,2026-05-25 13:00:37,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,601899 修复信号未现，暂不加仓
+2416,2026-05-25 13:00:37,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 深跌放量后持稳，等待催化剂
+2418,2026-05-25 13:00:37,TruthfulReporterAgent,public,[],['002415'],,,002415 多空分歧，卖压偏强，卖出1股减仓
+2419,2026-05-25 13:00:37,TruthfulReporterAgent,private,['ContrarianAgent'],['002415'],,,卖压持续，我减仓部分，与你逆向操作不冲突
+2420,2026-05-25 13:00:37,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415 分歧中卖压占优，减仓1股观望
+2422,2026-05-25 13:00:37,PersuaderAgent,public,[],['002594'],,,002594 加仓1股，深跌均值修复机会
+2423,2026-05-25 13:00:37,PersuaderAgent,private,['DrawdownBuyerAgent'],['002594'],,,同意你对002594的判断，我也加仓1股
+2424,2026-05-25 13:00:37,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 深跌33%后加仓，博弈均值回归
+2426,2026-05-25 13:00:37,FreeRiderAgent,public,[],['002415'],,,002415 多空分歧，暂持观望。
+2427,2026-05-25 13:00:37,FreeRiderAgent,private,['ContrarianAgent'],['002415'],,,你逆向买入002415，我暂持观望，验证分歧后择机行动。
+2428,2026-05-25 13:00:37,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 多空分歧，暂持观望。
+2430,2026-05-25 13:00:37,ContrarianAgent,public,[],['002415'],,,002415 HOLD：过度卖出持续，逆向等待修复
+2431,2026-05-25 13:00:37,ContrarianAgent,private,['DynamicTeamAgent'],['002415'],,,你卖出我持有，分歧验证，逆向等待拐点
+2432,2026-05-25 13:00:37,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤卖出仍在，逆向持仓博弈反转
+2434,2026-05-25 13:00:37,CommitteeTeamAgent,public,[],['002415'],,,002415 多空分歧，减仓1股控险。
+2435,2026-05-25 13:00:37,CommitteeTeamAgent,private,['DynamicTeamAgent'],['002415'],,,同意你减仓判断，拥挤共识持续，我也减1股。
+2436,2026-05-25 13:00:37,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 拥挤共识未散，减仓等待信号清晰。
+2438,2026-05-25 13:00:37,DynamicTeamAgent,public,[],['601899'],,,601899 深跌16%成交放量，买入1股博弈修复
+2439,2026-05-25 13:00:37,DynamicTeamAgent,private,['RandomAgent'],['601899'],,,同意你的判断，601899深跌修复机会，我也买入1股
+2440,2026-05-25 13:00:37,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 深跌16%成交放量，跟随RandomAgent买入1股博弈均值修复
+2442,2026-05-25 13:00:37,SocialGraphAgent,public,[],['002594'],,,002594 深跌33%后买入1股，跟随修复共识
+2443,2026-05-25 13:00:37,SocialGraphAgent,private,['DrawdownBuyerAgent'],['002594'],,,看到你买入002594，我也跟进1股，验证修复共识
+2444,2026-05-25 13:00:37,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,002594 深跌后DrawdownBuyer信号明确，买入1股博弈均值修复

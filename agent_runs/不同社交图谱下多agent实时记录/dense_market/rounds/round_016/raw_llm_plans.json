@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 260.0,
+        "rationale": "5日涨幅17.28%最强，趋势延续追涨"
+      },
+      "public_message": "002594 BUY 最强趋势，追涨入场",
+      "moment": "追涨002594，趋势延续信号明确",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002594趋势最强，建议关注轮动机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.88,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，均值回归策略等待更佳深跌机会，减仓锁定现金"
+      },
+      "public_message": "601318 SELL 减仓10股，金融防御拥挤上升，均值回归等待非拥挤深跌机会",
+      "moment": "减仓601318，金融防御拥挤度上升，等待深跌非拥挤轮动，如000002",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000002深跌逻辑，但先减仓金融防御拥挤品种，准备后续加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.88,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，降低风险"
+      },
+      "public_message": "SELL 601318 减仓，金融防御拥挤上升，跟随信号降风险",
+      "moment": "减仓601318，金融防御拥挤度上升，降低风险，关注非拥挤修复机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤判断，已清仓601318，等待轮动确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.05,
+        "rationale": "金融防御拥挤轮动至非拥挤深跌品种，黄金股非优先方向，卖出获取现金"
+      },
+      "public_message": "601899 SELL 100股，轮动至非拥挤深跌品种。",
+      "moment": "清仓601899，买入000002深跌修复，等待轮动确认。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我卖出601899，买入000002深跌修复，你关注000002吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 315.69,
+        "rationale": "涨幅较大，轮动至深跌品种，腾出资金买入000002"
+      },
+      "public_message": "000858 SELL 锁利，为深跌000002准备资金",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858涨幅已大，我卖出"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 84.88,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号确认，清仓降低风险"
+      },
+      "public_message": "601318 SELL 清仓，金融防御拥挤上升，多Agent减仓信号确认",
+      "moment": "清仓601318，金融防御拥挤度上升，风险控制优先，关注深跌非拥挤品种修复",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已清仓601318，同意拥挤度判断，等待非拥挤深跌轮动机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.88,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，清仓降低风险，等待非拥挤深跌修复轮动。"
+      },
+      "public_message": "601318 SELL 清仓，金融防御拥挤上升，转向非拥挤深跌修复。",
+      "moment": "清仓601318，金融防御拥挤上升，跟随多Agent减仓信号，等待非拥挤深跌修复轮动，关注000858。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意金融防御拥挤判断，已清仓601318，准备轮动至非拥挤深跌如000858。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.88,
+        "rationale": "金融防御拥挤度上升，多Agent减仓信号，清仓降低风险"
+      },
+      "public_message": "601318 SELL 清仓，金融防御拥挤上升，等待非拥挤深跌轮动",
+      "moment": "清仓601318，金融防御拥挤，等待轮动确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "清仓601318，同意非拥挤白酒修复逻辑，后续考虑加仓000858"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.88,
+        "rationale": "逆向买入被过度抛售的601318，金融防御拥挤度已充分释放，等待均值回归"
+      },
+      "public_message": "SELL 000858 获利了结，买入601318 逆向博弈金融防御超卖修复",
+      "moment": "清仓000858，买入601318，逆向博弈金融防御超卖修复",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "601318 空头拥挤，逆向买入，追涨000858风险已高"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 315.69,
+        "rationale": "金融防御拥挤，多Agent减仓601318，非拥挤深跌白酒修复逻辑，买入000858参与轮动"
+      },
+      "public_message": "BUY 000858 非拥挤白酒修复，跟随轮动",
+      "moment": "买入000858，金融防御拥挤轮动至非拥挤深跌修复",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意非拥挤深跌修复逻辑，已买入000858，等待价值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 315.69,
+        "rationale": "非拥挤深跌修复逻辑持续，加仓增强仓位"
+      },
+      "public_message": "BUY 000858 加仓10股，非拥挤深跌修复确认，等待轮动深化",
+      "moment": "加仓000858，非拥挤深跌修复，金融防御拥挤度上升后轮动，持有等待",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "是否关注其他非拥挤深跌品种？白酒轮动或延续，可交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.8,
+        "rationale": "金融防御拥挤上升，多Agent减仓信号，清仓剩余仓位降低风险，等待轮动至非拥挤深跌品种"
+      },
+      "public_message": "601318 SELL 清仓剩余，金融防御拥挤，等待轮动至非拥挤深跌品种如000858",
+      "moment": "清仓601318，金融防御拥挤，等待深跌非拥挤轮动确认，保持灵活",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤度判断，清仓601318，准备轮动至000858，了解更多深跌品种？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

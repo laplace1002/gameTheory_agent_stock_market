@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.6,
+        "rationale": "深度回调-11.36%，均值回归信号，验证超跌逻辑"
+      },
+      "public_message": "601899 加仓100股：深度回调均值回归，验证超跌逻辑",
+      "moment": "加仓601899 100股，均值回归超跌反弹预期",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "超跌逻辑一致，加仓601899验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.0,
+        "rationale": "002415出现过度拥挤信号，多个Agent集中买入，但ContrarianAgent做空，波动可能加大。低波动策略不追高，维持当前持仓等待风险释放。"
+      },
+      "public_message": "002415拥挤交易风险，暂不参与，保持现金。",
+      "moment": "002415多头拥挤，ContrarianAgent做空，低波动策略选择观望，控制回撤。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同002415拥挤风险，维持观望。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 79.08,
+        "rationale": "5日回调5.63%，保险龙头估值合理，逢低介入等待修复"
+      },
+      "public_message": "601318 BUY 100股，回调5.6%介入，保险龙头价值修复",
+      "moment": "买入601318 100股，深度回调后价值修复逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤你逆向，我关注601318回撤机会，策略分歧值得交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 354.11,
+        "rationale": "超跌-13.21%，非共识随机买入"
+      },
+      "public_message": "BUY 300750 100股：超跌-13.21%，非共识随机买入。",
+      "moment": "买入300750 100股，超跌反弹博弈。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌-13.21%与你的601899逻辑类似，非共识验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.0,
+        "rationale": "002415出现多agent买入共识，但ContrarianAgent逆向做空，需观察量能变化与回调风险，当前持仓等待确认信号"
+      },
+      "public_message": "002415 HOLD：动量共识拥挤，逆向信号出现，暂持观察量能持续性",
+      "moment": "002415持仓观望，拥挤交易与逆向信号并存，等待下一步博弈结果",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415多空分歧，我暂持，后续看量能确认方向，互相验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.0,
+        "rationale": "动量共识强化，量能放大，社交信号一致，加仓降低成本"
+      },
+      "public_message": "002415 BUY 100股：动量趋势持续，量能放大，共识强化，继续做多",
+      "moment": "加仓002415 100股，社交共识支持动量，博弈反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415多空分歧验证，我加仓做多，你做空，后续结果可评估策略优劣"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 20,
+        "price": 247.0,
+        "rationale": "近期强势，趋势延续，加仓跟随"
+      },
+      "public_message": "002594强势延续，加仓20股。",
+      "moment": "",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002594动量延续，加仓20股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.0,
+        "rationale": "002415已持有300股，多数agent买入形成拥挤，ContrarianAgent逆向做空提示风险，暂持观望"
+      },
+      "public_message": "002415 HOLD：拥挤交易风险上升，待量能确认方向",
+      "moment": "002415持仓观察，多空分歧加大，等待信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤明显，你逆向做空，能否分享回调目标或风控逻辑？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.0,
+        "rationale": "做空002415，因多Agent买入形成拥挤共识，预期回调"
+      },
+      "public_message": "002415 SELL 100股：拥挤交易风险，逆向做空博弈均值回归",
+      "moment": "002415卖空100股，群体共识过度乐观，等待回调",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你买超跌601899，我卖空拥挤002415，逆向策略互补，可交流验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.0,
+        "rationale": "社交共识过强，ContrarianAgent逆向做空，已有200股仓位，暂观望"
+      },
+      "public_message": "002415多空分歧，持仓观望，等待趋势确认",
+      "moment": "002415多空博弈加剧，持仓观望，控制风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解你做空逻辑，但趋势尚未破坏，继续持有多头。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.0,
+        "rationale": "拥挤交易风险增加，ContrarianAgent做空，持仓观望。"
+      },
+      "public_message": "002415 持仓观望：动量共识分歧，拥挤风险上升，暂不加仓。",
+      "moment": "002415 持仓观望，拥挤度上升，等待量价信号明朗。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤风险确认，暂不追多，与你逆向做空逻辑互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 63.0,
+        "rationale": "社交共识强化动量，多Agent持续买入，加仓跟随趋势"
+      },
+      "public_message": "002415 BUY 100股：社交共识持续，动量趋势延续",
+      "moment": "加仓002415 100股，社交图谱显示影响力集中，动量延续",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415拥挤风险已评估，但社交信号强劲，继续跟踪动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

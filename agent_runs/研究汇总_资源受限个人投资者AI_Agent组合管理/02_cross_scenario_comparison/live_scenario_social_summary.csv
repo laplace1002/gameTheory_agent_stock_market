@@ -1,0 +1,13 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+adversarial_persuader,50,2486,1741,286,314,72,60,12,600,560,581,66,132,-3851.8633333333332,CommitteeTeamAgent,877.4
+barbell_two_camps,50,2444,1727,473,127,58,56,2,600,543,584,66,132,-47.70333333333334,PersuaderAgent,2137.88
+baseline_isolated,50,2443,1694,454,146,74,66,8,600,522,572,66,132,-1913.3149999999998,PersuaderAgent,4654.94
+bridge_broker,50,2435,1706,449,151,64,58,6,600,537,569,66,132,-4247.2925000000005,RandomAgent,1520.44
+chain_influence,50,2473,1724,441,159,74,63,11,600,553,571,66,132,-4761.503333333334,DynamicTeamAgent,4432.77
+core_periphery,50,2472,1713,461,139,79,63,16,600,546,567,66,132,-2723.859166666667,ContrarianAgent,4124.55
+dense_market,50,2304,1703,498,102,0,0,0,600,545,558,66,132,-291.3466666666668,PersuaderAgent,7116.13
+echo_chambers,50,2461,1730,468,132,65,61,4,600,557,573,66,132,-3090.4891666666667,LowVolatilityAgent,580.96
+mentor_pairs,50,2472,1741,438,162,65,59,6,600,559,582,66,132,-6.523333333333337,FreeRiderAgent,390.22
+star_social_hub,50,2477,1726,418,182,75,60,15,600,549,577,66,132,-3081.57,PersuaderAgent,6864.5
+strategy_silos,50,2454,1725,458,142,64,60,4,600,549,576,66,132,-4478.007500000001,CommitteeTeamAgent,924.86
+truthful_anchor,50,2448,1719,448,152,64,60,4,600,545,574,66,132,-3233.856666666667,ContrarianAgent,7854.63

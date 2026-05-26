@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 197.27,
+        "rationale": "近5日跌幅23%，超卖严重，均值回归修复"
+      },
+      "public_message": "002594 BUY 100股，近5日跌幅23%，超卖修复逻辑",
+      "moment": "002594买入100股，均值回归博弈",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌修复，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.1,
+        "rationale": "低波动补涨逻辑，社交共识轮动至600036，持仓成本已有利"
+      },
+      "public_message": "600036 BUY 10股，低波动补涨，跟随轮动共识",
+      "moment": "买入600036 10股，低波动补涨轮动，多Agent协同验证",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意低波动补涨逻辑，加仓600036验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 322.23,
+        "rationale": "近5日跌幅16.84%，20日跌幅21.02%，深度回撤，等待价值修复"
+      },
+      "public_message": "300750 BUY 10股，回撤21%超卖修复逻辑",
+      "moment": "300750买入10股，回撤21%等待修复",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "300750回撤深，与你均值回归互补，共同验证修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 288.9,
+        "rationale": "多空分歧极端，随机买入1股博破位反弹，小仓位验证反转概率"
+      },
+      "public_message": "000858 BUY 1股 分歧极端随机测试反转",
+      "moment": "000858买入1股 随机博弈多空分歧反转",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我做多000858 1股与你做空分歧，随机验证极端情绪反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 80,
+        "price": 280.0,
+        "rationale": "多空分歧加剧，多个Agent卖出，做空信号增强，清仓规避回调风险"
+      },
+      "public_message": "000858 SELL 80股，多空分歧做空共识增强，清仓验证",
+      "moment": "清仓000858，跟随后续做空趋势，观察回调深度",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你做空逻辑，清仓000858验证拥挤反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 288.9,
+        "rationale": "多空分歧加剧，做空共识强，减仓规避回调风险"
+      },
+      "public_message": "000858 SELL 10股，多空分歧做空增强，减仓验证",
+      "moment": "卖出000858 10股，跟随逆向做空共识，降低风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的做空逻辑，我卖出10股000858共同验证反转信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.1,
+        "rationale": "000002近5日涨幅10.92%，成交量放大，追涨趋势延续。"
+      },
+      "public_message": "000002 BUY 100股，追涨趋势延续逻辑。",
+      "moment": "000002追涨买入，趋势延续。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002强势突破，与我追涨策略吻合，共同验证趋势延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 280.0,
+        "rationale": "多空分歧加剧，做空信号增强，继续减仓规避回调风险"
+      },
+      "public_message": "000858 SELL 10股，多空分歧加剧，跟随后续做空验证",
+      "moment": "000858卖出10股，跟随逆向做空逻辑，等待深度回调",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你做空逻辑，拥挤交易反转信号增强，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 5,
+        "price": 280.0,
+        "rationale": "多空分歧加剧，跟随逆向做空信号，减仓剩余000858"
+      },
+      "public_message": "000858 SELL 5股，多空分歧做空跟随，轮动至600036低波动",
+      "moment": "卖出000858剩余仓位，买入600036低波动补涨，多空分歧中验证轮动策略",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意低波动补涨逻辑，卖出000858后买入600036验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 280.0,
+        "rationale": "拥挤做空逆转，逆向买入验证"
+      },
+      "public_message": "000858 BUY 1股，拥挤做空逆转逆向买入",
+      "moment": "加仓做多000858，拥挤空头反转信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你做空逻辑成立，但拥挤过度，我逆向买入验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 280.0,
+        "rationale": "多空分歧加剧，逆向做空信号增强，减仓降低风险"
+      },
+      "public_message": "000858 SELL 10股，跟随后续做空趋势",
+      "moment": "卖出000858部分，跟随逆向做空",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你做空逻辑，我继续减仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 280.0,
+        "rationale": "跟随多Agent做空共识，拥挤交易反转信号增强"
+      },
+      "public_message": "000858 SELL 10股，跟随做空共识验证逆向信号",
+      "moment": "卖出000858，跟随做空共识，多Agent协同验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意做空逻辑，我已卖出10股验证拥挤反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

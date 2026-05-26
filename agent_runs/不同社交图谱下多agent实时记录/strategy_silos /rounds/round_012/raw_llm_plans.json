@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 281.5,
+        "rationale": "超跌反弹，加仓验证均值回归"
+      },
+      "public_message": "000858 加仓1股，超跌反弹等待回归",
+      "moment": "加仓000858，均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意000858超跌逻辑，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.85,
+        "rationale": "600036 ret5=4.33%仍强，好友买入验证趋势，加仓追涨"
+      },
+      "public_message": "600036 BUY 1股，ret5强势，好友信号验证，追涨。",
+      "moment": "加仓600036，追涨银行趋势。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的600036持有判断，我加仓1股追涨。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 94.85,
+        "rationale": "000333回撤-8.89%，家电龙头超跌，价值修复机会。"
+      },
+      "public_message": "000333 回撤-8.89%，买入1股捕捉超跌反弹。",
+      "moment": "000333加仓1股，深度回撤瞄准价值修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌-8.89%，与你逆势思路一致，验证反弹机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 2009.41,
+        "rationale": "低波动策略要求控制回撤，止损高波动标的"
+      },
+      "public_message": "600519 SELL 控制回撤，低波动优先",
+      "moment": "卖出600519止损，现金等待低波动机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已卖出600519降低回撤，与你波动控制互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.28,
+        "rationale": "量能异常非共识超跌，加仓验证反转"
+      },
+      "public_message": "601899 BUY 1股，量能异常非共识超跌",
+      "moment": "加仓601899 1股，量能异常非共识超跌",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899量能异常非共识，与您逆向思路呼应，验证反转概率"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "超跌与动量策略互补，交叉验证分歧机会"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.85,
+        "rationale": "ret5=4.33%正但市场整体偏弱，量能平稳，持有观察确认"
+      },
+      "public_message": "600036 HOLD，ret5=4.33%但量能平稳，暂时持有观察",
+      "moment": "600036持仓观望，动量信号未衰竭，等待更多确认",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意持有600036，注意回调风险，共同验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 216.2,
+        "rationale": "002594 ret5 -8.77%持续恶化，全部清仓止损"
+      },
+      "public_message": "002594 SELL清仓，动量恶化；关注600036动量强劲趋势延续",
+      "moment": "清仓002594，关注600036低波动动量机会",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "600036 ret5=4.33%且量能配合，低波动特征明显，建议验证趋势延续性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.85,
+        "rationale": "跟随TruthfulReporterAgent等动量信号，验证银行板块趋势延续"
+      },
+      "public_message": "600036 BUY 1股，跟踪银行动量趋势",
+      "moment": "加仓600036，跟随动量信号验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你的600036动量判断合理，我加仓验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.28,
+        "rationale": "当前持仓已反映逆向逻辑，超跌标的需时间验证，600036拥挤暂不参与。"
+      },
+      "public_message": "600036过度拥挤，注意分化风险；继续持有000858和300750等待价值回归。",
+      "moment": "600036共识太强，逆向等待超跌标的反弹。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036追涨过热，逆向指标提示拥挤，建议谨慎。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 60.59,
+        "rationale": "ret5小幅转负但亏损有限，多空信号矛盾，持仓观望等待方向确认"
+      },
+      "public_message": "002415 HOLD：ret5-1.08%走弱但幅度小，社会信号多空分歧，暂持观察",
+      "moment": "002415多空分歧，ret5微跌，组合现金充裕，等待更明确信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415 ret5转负但非深跌，你的逆向思路值得参考，我暂持观望。"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "逢低吸纳策略与委员会平衡判断互补，可交叉验证超跌机会。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.85,
+        "rationale": "600036 ret5仍正但追高风险增加，已有多人买入，暂持观望"
+      },
+      "public_message": "600036 HOLD，ret5强劲但需防回调，不追涨",
+      "moment": "持有600036，银行趋势中，观察后续量能",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858超跌幅度大，与你思路一致，但注意量能未确认，我暂不参与"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.85,
+        "rationale": "持仓观望，跟随好友趋势信号，等待ret20方向确认。"
+      },
+      "public_message": "600036持有观察，动量趋势延续，等待确认。",
+      "moment": "持仓600036，跟随好友动量信号，等待方向确认。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036动量一致，继续持仓验证趋势。"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "策略互补，超跌与动量可交叉验证市场情绪。"
+      }
+    },
+    "error": ""
+  }
+]

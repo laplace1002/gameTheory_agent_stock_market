@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "轮末弱势持续，减仓换入强势"
+      },
+      "public_message": "600036 BUY 追涨动量，多个好友验证；002594 SELL 弱势止损",
+      "moment": "卖出002594 1股，买入600036 1股，轮末追强势",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "跟你的600036动量，加仓1股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 260.79,
+        "rationale": "20日深跌24%后5日止跌，均值回归反弹机会，轮末轻仓试多"
+      },
+      "public_message": "000858 BUY 20日深跌24%后企稳，均值回归布局",
+      "moment": "000858加仓1股，均值回归策略，20日深跌后企稳",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858深跌后止跌，均值回归逻辑，与你000333价值修复互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 53.5,
+        "rationale": "轮末全现金，控制回撤风险"
+      },
+      "public_message": "全现金观望，待市场企稳",
+      "moment": "持仓现金，等待低波动机会",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意持有策略，轮末现金为王"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.83,
+        "rationale": "轮末随机观望，持仓601899等待轮次结束"
+      },
+      "public_message": "601899 HOLD 轮末随机观望",
+      "moment": "601899持有，轮末随机策略",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "轮末随机盘整，不急于操作"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.76,
+        "rationale": "600036短期动量延续，多人跟随，轮末风险可控，暂无反转信号"
+      },
+      "public_message": "600036 HOLD 动量延续，轮末保守观望",
+      "moment": "600036持有，动量信号未变，轮尾声控制仓位",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意对600036判断，跟随验证动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 316.5,
+        "rationale": "深跌价值修复，近5日跌幅-7.31%，20日-18.32%，超卖区间反弹概率大"
+      },
+      "public_message": "300750 BUY 深跌修复，5日-7.31%超卖反弹",
+      "moment": "买入300750 1股，深跌反弹布局，轮次末尾加仓超卖标的",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "我买入300750深跌修复，与你买入000333价值修复逻辑一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "轮末弱势持续，多agent卖出，止损离场"
+      },
+      "public_message": "002594 SELL 轮末弱势，跟随FreeRiderAgent止损",
+      "moment": "卖出002594 1股，轮末降低风险，持币观望",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你的卖出逻辑，002594弱势持续，我也平仓了"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.2,
+        "rationale": "轮末避险，唯一20日正收益标的"
+      },
+      "public_message": "000002 BUY 20日正收益，轮末避险",
+      "moment": "买入000002 1股，轮末保守配置",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 85.31,
+        "rationale": "轮次末，000333短期企稳且价值修复逻辑未变，与其他agent信号一致，持有观望。"
+      },
+      "public_message": "000333 HOLD 轮次末尾，低估修复逻辑持续，短期震荡，暂不操作。",
+      "moment": "000333持有，轮末保守，等待修复信号确认。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意000333价值修复，当前持有观望，轮末风险可控。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 85.31,
+        "rationale": "拥挤买入轮末获利了结，逆向卖出"
+      },
+      "public_message": "000333 SELL 拥挤买入轮末锁定利润，逆向减仓",
+      "moment": "000333 SELL 拥挤买入轮末，逆向减仓观望",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你的000333买入逻辑我理解，但拥挤交易轮末风险加大，我先获利了结"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "轮末锁定利润，002594短期弱势持续"
+      },
+      "public_message": "002594 SELL 弱势持续，轮末锁定利润",
+      "moment": "卖出002594，轮末保守操作",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你的卖出逻辑，002594弱势锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.76,
+        "rationale": "轮末风险可控，短期动量延续信号未变"
+      },
+      "public_message": "600036 HOLD 轮末保守，动量延续",
+      "moment": "600036持有，短期动量延续，轮末控制仓位",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的判断，600036动量延续，轮末持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

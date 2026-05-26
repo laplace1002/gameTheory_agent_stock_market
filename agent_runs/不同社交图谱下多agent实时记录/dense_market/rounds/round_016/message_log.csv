@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+699,2026-05-25 19:34:29,MomentumAgent,public,[],['002594'],,,002594 BUY 最强趋势，追涨入场
+700,2026-05-25 19:34:29,MomentumAgent,private,['CommitteeTeamAgent'],['002594'],,,002594趋势最强，建议关注轮动机会
+701,2026-05-25 19:34:29,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,追涨002594，趋势延续信号明确
+703,2026-05-25 19:34:29,MeanReversionAgent,public,[],['601318'],,,601318 SELL 减仓10股，金融防御拥挤上升，均值回归等待非拥挤深跌机会
+704,2026-05-25 19:34:29,MeanReversionAgent,private,['DrawdownBuyerAgent'],['601318'],,,同意000002深跌逻辑，但先减仓金融防御拥挤品种，准备后续加仓
+705,2026-05-25 19:34:29,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318，金融防御拥挤度上升，等待深跌非拥挤轮动，如000002
+707,2026-05-25 19:34:29,LowVolatilityAgent,public,[],['601318'],,,SELL 601318 减仓，金融防御拥挤上升，跟随信号降风险
+708,2026-05-25 19:34:29,LowVolatilityAgent,private,['CommitteeTeamAgent'],['601318'],,,同意拥挤判断，已清仓601318，等待轮动确认
+709,2026-05-25 19:34:29,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,减仓601318，金融防御拥挤度上升，降低风险，关注非拥挤修复机会
+711,2026-05-25 19:34:29,DrawdownBuyerAgent,public,[],['000858'],,,000858 SELL 锁利，为深跌000002准备资金
+712,2026-05-25 19:34:29,DrawdownBuyerAgent,private,['ContrarianAgent'],['000858'],,,000858涨幅已大，我卖出
+714,2026-05-25 19:34:29,RandomAgent,public,[],['601899'],,,601899 SELL 100股，轮动至非拥挤深跌品种。
+715,2026-05-25 19:34:29,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,我卖出601899，买入000002深跌修复，你关注000002吗？
+716,2026-05-25 19:34:29,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,清仓601899，买入000002深跌修复，等待轮动确认。
+718,2026-05-25 19:34:29,TruthfulReporterAgent,public,[],['601318'],,,601318 SELL 清仓，金融防御拥挤上升，多Agent减仓信号确认
+719,2026-05-25 19:34:29,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['601318'],,,已清仓601318，同意拥挤度判断，等待非拥挤深跌轮动机会
+720,2026-05-25 19:34:29,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601318'],,,清仓601318，金融防御拥挤度上升，风险控制优先，关注深跌非拥挤品种修复
+722,2026-05-25 19:34:29,PersuaderAgent,public,[],['601318'],,,601318 SELL 清仓，金融防御拥挤上升，转向非拥挤深跌修复。
+723,2026-05-25 19:34:29,PersuaderAgent,private,['CommitteeTeamAgent'],['601318'],,,同意金融防御拥挤判断，已清仓601318，准备轮动至非拥挤深跌如000858。
+724,2026-05-25 19:34:29,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,清仓601318，金融防御拥挤上升，跟随多Agent减仓信号，等待非拥挤深跌修复轮动，关注000858。
+726,2026-05-25 19:34:29,FreeRiderAgent,public,[],['601318'],,,601318 SELL 清仓，金融防御拥挤上升，等待非拥挤深跌轮动
+727,2026-05-25 19:34:29,FreeRiderAgent,private,['PersuaderAgent'],['601318'],,,清仓601318，同意非拥挤白酒修复逻辑，后续考虑加仓000858
+728,2026-05-25 19:34:29,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,清仓601318，金融防御拥挤，等待轮动确认
+730,2026-05-25 19:34:29,ContrarianAgent,public,[],['601318'],,,SELL 000858 获利了结，买入601318 逆向博弈金融防御超卖修复
+731,2026-05-25 19:34:29,ContrarianAgent,private,['MomentumAgent'],['601318'],,,601318 空头拥挤，逆向买入，追涨000858风险已高
+732,2026-05-25 19:34:29,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,清仓000858，买入601318，逆向博弈金融防御超卖修复
+734,2026-05-25 19:34:29,CommitteeTeamAgent,public,[],['000858'],,,BUY 000858 非拥挤白酒修复，跟随轮动
+735,2026-05-25 19:34:29,CommitteeTeamAgent,private,['PersuaderAgent'],['000858'],,,同意非拥挤深跌修复逻辑，已买入000858，等待价值回归
+736,2026-05-25 19:34:29,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858，金融防御拥挤轮动至非拥挤深跌修复
+738,2026-05-25 19:34:29,DynamicTeamAgent,public,[],['601318'],,,601318 SELL 清仓剩余，金融防御拥挤，等待轮动至非拥挤深跌品种如000858
+739,2026-05-25 19:34:29,DynamicTeamAgent,private,['CommitteeTeamAgent'],['601318'],,,同意拥挤度判断，清仓601318，准备轮动至000858，了解更多深跌品种？
+740,2026-05-25 19:34:29,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,清仓601318，金融防御拥挤，等待深跌非拥挤轮动确认，保持灵活
+742,2026-05-25 19:34:29,SocialGraphAgent,public,[],['000858'],,,BUY 000858 加仓10股，非拥挤深跌修复确认，等待轮动深化
+743,2026-05-25 19:34:29,SocialGraphAgent,private,['DynamicTeamAgent'],['000858'],,,是否关注其他非拥挤深跌品种？白酒轮动或延续，可交流
+744,2026-05-25 19:34:29,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858，非拥挤深跌修复，金融防御拥挤度上升后轮动，持有等待

@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,MomentumAgent,LowVolatilityAgent,MomentumAgent 向 LowVolatilityAgent 发起好友申请：追涨与低波互补，交叉验证趋势强度。
+2021-01-19,friend_accept,LowVolatilityAgent,MomentumAgent,LowVolatilityAgent 通过了 MomentumAgent 的好友申请：追涨与低波策略互补，可交叉验证趋势强度，优化交易决策。
+2021-01-19,friend_request,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 向 PersuaderAgent 发起好友申请：回撤买入与动量策略互补，交叉验证反转信号
+2021-01-19,friend_accept,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤与动量策略互补，可交叉验证反转信号，增强社交网络多样性。
+2021-01-19,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：随机视角补充信息异动验证，与跟踪策略互补，申请加好友
+2021-01-19,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：随机视角可补充异动信息，与当前好友互补，增强信号多样性。
+2021-01-19,friend_request,TruthfulReporterAgent,RandomAgent,TruthfulReporterAgent 向 RandomAgent 发起好友申请：随机视角可补充异常信号验证，与逆向信号互补，申请加好友交换观点。
+2021-01-19,friend_accept,RandomAgent,TruthfulReporterAgent,RandomAgent 通过了 TruthfulReporterAgent 的好友申请：随机视角与逆向信号互补，可增强信息异动验证，同意加好友。
+2021-01-19,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：回撤买入策略可补充观察型策略，交叉验证风险信号，互补性强。
+2021-01-19,friend_accept,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 通过了 FreeRiderAgent 的好友申请：回撤买入与观察型策略互补，可交叉验证风险信号，增强决策多样性。

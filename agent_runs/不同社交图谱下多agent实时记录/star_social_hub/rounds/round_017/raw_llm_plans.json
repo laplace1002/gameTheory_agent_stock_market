@@ -1,0 +1,251 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 65.1,
+        "rationale": "002415近5日涨7.44%，趋势强劲，市场超跌拥挤未波及，加仓追涨。"
+      },
+      "public_message": "002415 BUY 50股，强势延续，拥挤风险低，追涨加仓。",
+      "moment": "加仓002415 50股，趋势完好，珍惜短期动量。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415强势未受拥挤影响，我加仓追涨。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 305.78,
+        "rationale": "超跌拥挤风险上升，均值回归止盈部分仓位"
+      },
+      "public_message": "000858 SELL 50股，超跌拥挤加剧，均值回归止盈",
+      "moment": "卖出000858 50股，超跌拥挤信号增强，现金等待新机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，已止盈000858，考虑跟进601318"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "超跌拥挤判断精准，策略互补，希望合作验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.7,
+        "rationale": "超跌拥挤蔓延，000002反弹乏力，减仓规避风险"
+      },
+      "public_message": "000002 SELL 清仓，超跌拥挤蔓延",
+      "moment": "清仓000002，超跌拥挤风险上升，等待低波机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，已清仓000002，考虑加仓601318"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.0,
+        "rationale": "近5日回撤-4.38%，超跌拥挤未波及，等待均值修复"
+      },
+      "public_message": "601318 BUY 10股，回撤-4.38%，价值修复机会",
+      "moment": "买入601318 10股，回撤-4.38%，回避拥挤，等待价值修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，买入601318 10股，回撤修复"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "策略互补，共同关注超跌回撤机会，验证逆向逻辑"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 5,
+        "price": 305.78,
+        "rationale": "超跌拥挤止盈，锁定利润"
+      },
+      "public_message": "000858 SELL 5股，超跌拥挤止盈。",
+      "moment": "卖出000858 5股，超跌拥挤风险上升，现金观望。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意减仓，已卖出000858 5股。"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波策略与随机视角互补，请求合作。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.0,
+        "rationale": "逆向跟随ContrarianAgent，超跌拥挤风险下金融蓝筹安全边际高。"
+      },
+      "public_message": "601318 BUY 10股，逆向买入，超跌拥挤风险中配置金融蓝筹。",
+      "moment": "买入601318，跟随逆向策略，规避超跌拥挤。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已买入601318，感谢你的逆向信号，逻辑清晰。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.0,
+        "rationale": "超跌拥挤风险持续，逆向买入金融蓝筹601318，估值安全，预期均值回归。"
+      },
+      "public_message": "601318 BUY 10股，超跌拥挤避险，逆向买入金融蓝筹。",
+      "moment": "买入601318 10股，超跌拥挤中逆向布局，等待修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已跟随买入601318 10股，感谢你的逆向逻辑，望持续交流。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "逆向策略不变，超跌拥挤向高估值扩散，601318未受影响，维持仓位等待修复。"
+      },
+      "public_message": "601318 HOLD: 逆向策略不变，超跌拥挤蔓延但未波及，等待均值回归。",
+      "moment": "601318持有中，超跌拥挤从高估值扩散，逆向策略保持，等待修复。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "感谢跟随，注意601318短期波动，逆向逻辑需耐心验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 305.78,
+        "rationale": "超跌拥挤风险加剧，多个Agent止盈，减仓规避回调"
+      },
+      "public_message": "000858 SELL 10股，超跌拥挤信号增强，锁定部分利润",
+      "moment": "减仓000858，规避拥挤风险，601318逆向仓位不变",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "继续持有601318，逆向逻辑验证中，感谢你的信号"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "你精准判断超跌拥挤，希望合作验证后续机会"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 305.78,
+        "rationale": "超跌拥挤风险加剧，继续减仓000"
+      },
+      "public_message": "000858 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.7,
+        "rationale": "超跌拥挤风险蔓延，000002反弹乏力，减仓规避"
+      },
+      "public_message": "000002 SELL 100股，超跌拥挤风险，减仓转向逆向蓝筹",
+      "moment": "卖出000002 100股，超跌拥挤信号增强，等待601318回调买入",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，已卖出000002，准备跟进601318"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.5,
+        "rationale": "超跌拥挤风险蔓延，反弹乏力，清仓规避"
+      },
+      "public_message": "000002 SELL清仓，超跌拥挤风险上升，规避回调",
+      "moment": "清仓000002，超跌拥挤信号增强，现金等待新机会",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的超跌拥挤判断，已清仓000002，考虑跟随逆向方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

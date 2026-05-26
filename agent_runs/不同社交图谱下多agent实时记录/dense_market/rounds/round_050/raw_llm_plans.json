@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 171.15,
+        "rationale": "深跌未止，轮末减仓控制风险"
+      },
+      "public_message": "卖出002594 10股，深跌未止，轮末减仓控制风险",
+      "moment": "卖出002594 10股，深跌未止，轮末减仓控制风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "轮末风险大，深跌修复时间不够，建议考虑减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.2,
+        "rationale": "momentum strategy"
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.76,
+        "rationale": "轮次尾声，持仓600036抗跌，现金充裕，保持低风险敞口"
+      },
+      "public_message": "HOLD 600036：轮次末期，持仓保持，控制回撤优先",
+      "moment": "轮次尾声，维持现金与持仓，低波动策略收官",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的判断，轮末持仓不动，现金为王"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 85.31,
+        "rationale": "深跌逆向买入，利用市场恐慌，博短期修复"
+      },
+      "public_message": "买入000333 10股，深跌逆向交易，博弈短期修复机会",
+      "moment": "买入000333 10股，深跌逆向交易，轮末博弈修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我逆势买入000333，深跌修复逻辑，与你持仓002594、300750形成分散"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.2,
+        "rationale": "现金不足且轮次尾声，持仓深跌标等待修复，不额外交易"
+      },
+      "public_message": "HOLD 000002: 现金不足，轮末持仓深跌标等待修复。",
+      "moment": "轮末HOLD，深跌持仓等待最后修复，控制风险。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你卖000002锁定利润，我深跌逻辑未变，但现金不足无法补仓，暂持。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 30,
+        "price": 86.71,
+        "rationale": "000333弱势，多Agent减仓共识，轮次尾声控制风险"
+      },
+      "public_message": "卖出000333 30股，弱势减仓控制风险",
+      "moment": "卖出000333 30股，轮末减仓控制风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "我已卖出剩余000333，同意你的减仓逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 316.5,
+        "rationale": "轮次尾声，300750近5日跌幅7.31%，弱势减仓控制尾盘风险"
+      },
+      "public_message": "卖出300750 10股，弱势减仓控制尾盘风险",
+      "moment": "卖出300750 10股，轮末控制风险，锁定部分利润。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "轮次尾声，300750跌幅较大，建议减仓控制风险，我也卖出10股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.2,
+        "rationale": "跟随ContrarianAgent锁定近期涨幅，轮末控制风险"
+      },
+      "public_message": "卖出000002 10股，锁定涨幅控制风险",
+      "moment": "减仓000002 10股，轮末控制风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的锁定利润逻辑，已卖出10股000002控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 86.71,
+        "rationale": "轮次尾声，000333弱势，多Agent减仓共识，继续控制风险。"
+      },
+      "public_message": "继续卖出000333 10股，弱势减仓控制轮末风险。",
+      "moment": "减仓000333 10股，弱势股跟随共识，轮末稳健优先。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减仓共识，已卖出10股000333控制尾盘风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 85.31,
+        "rationale": "逆向买入被过度抛售的000333，拥挤卖出后的均值回归机会"
+      },
+      "public_message": "买入000333 10股，逆向布局弱势股，拥挤卖出后的均值回归机会",
+      "moment": "逆向买入000333 10股，利用拥挤抛售，押注均值回复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我逆向买入000333 10股，补充你的深跌修复逻辑，分散持仓风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 20,
+        "price": 86.71,
+        "rationale": "跟随好友减仓共识，轮次尾声控制弱势股风险"
+      },
+      "public_message": "000333 卖出20股，跟随好友减仓共识，控制末期风险",
+      "moment": "卖出000333 20股，弱势减仓，轮次尾声控制组合风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意减仓000333，弱势股风险控制，我卖出20股跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 20,
+        "price": 85.31,
+        "rationale": "轮次尾声，弱势减仓控制风险，跟随多个Agent减仓共识"
+      },
+      "public_message": "卖出000333 20股，弱势减仓控制轮末风险。",
+      "moment": "减仓000333 20股，弱势反弹乏力，轮末风控优先。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已再减仓000333 20股，控制轮末组合风险，同意你的减仓逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

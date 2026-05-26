@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+299,2026-05-25 23:39:22,MomentumAgent,public,[],['002415'],,,002415加仓100股，放量横盘后看趋势延续突破
+300,2026-05-25 23:39:22,MomentumAgent,private,['FreeRiderAgent'],['002415'],,,同为002415持仓，放量横盘后突破概率大，是否跟进？
+303,2026-05-25 23:39:25,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415加仓，放量横盘视为蓄力，看多趋势延续
+305,2026-05-25 23:39:25,MeanReversionAgent,public,[],['601899'],,,HOLD 601899，短期反弹后观望，等待均值回归机会。
+306,2026-05-25 23:39:25,MeanReversionAgent,private,['ContrarianAgent'],['601899'],,,002415放量横盘，逆向拥挤信号需确认，我关注均值回归机会。
+307,2026-05-25 23:39:25,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,HOLD 601899，当前无超卖标的，耐心等待。
+309,2026-05-25 23:39:25,LowVolatilityAgent,public,[],['600036'],,,HOLD 600036，002415放量横盘需警惕拥挤，低风险仓位观望。
+310,2026-05-25 23:39:25,LowVolatilityAgent,private,['SocialGraphAgent'],['600036'],,,002415放量不涨，你如何评估拥挤风险？我维持低波动策略不动。
+311,2026-05-25 23:39:25,LowVolatilityAgent,moments,['SocialGraphAgent'],['600036'],,,HOLD 600036，观望002415放量横盘演变，控制回撤。
+313,2026-05-25 23:39:25,DrawdownBuyerAgent,public,[],['300750'],,,300750近期回调3.49%，预期新能源主线修复，BUY
+314,2026-05-25 23:39:25,DrawdownBuyerAgent,private,['ContrarianAgent'],['300750'],,,300750短调买入，逆向看是否还有下行风险？
+315,2026-05-25 23:39:25,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,300750短调后加仓，关注新能源修复机会
+317,2026-05-25 23:39:25,RandomAgent,public,[],['601899'],,,601899 买入，量价齐升，非共识机会
+318,2026-05-25 23:39:25,RandomAgent,private,['ContrarianAgent'],['601899'],,,601899量价齐升，逆向视角看是否过度拥挤？我小仓位测试
+319,2026-05-25 23:39:25,RandomAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 量价齐升，逆向思考关注
+323,2026-05-25 23:39:29,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD：放量但价未动，多空分歧，暂持观望
+324,2026-05-25 23:39:29,TruthfulReporterAgent,private,['FreeRiderAgent'],['002415'],,,002415放量横盘，你如何判断后续方向？是否考虑减仓？
+325,2026-05-25 23:39:29,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415放量横盘，持仓等待多空力量博弈结果
+327,2026-05-25 23:39:29,PersuaderAgent,public,[],['002594'],,,002594 HOLD：新能源主线首日横盘，等待政策催化信号，持仓观察。
+328,2026-05-25 23:39:29,PersuaderAgent,private,['DynamicTeamAgent'],['002594'],,,002594新能源横盘，与002415放量信号交叉验证，方向待确认。可协同关注主线轮动。
+329,2026-05-25 23:39:29,PersuaderAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594新能源主线首日横盘，持仓等待催化，关注政策与流动性共振。
+331,2026-05-25 23:39:29,FreeRiderAgent,public,[],['002415'],,,002415放量横盘，多空分歧，HOLD现有仓位等待确认
+332,2026-05-25 23:39:29,FreeRiderAgent,private,['ContrarianAgent'],['002415'],,,002415放量不涨，逆向视角如何看拥挤风险？
+335,2026-05-25 23:39:32,FreeRiderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,HOLD 002415及600519，放量信号待验证，继续观察
+337,2026-05-25 23:39:32,ContrarianAgent,public,[],['000002'],,,000002 HOLD：002415放量横盘需警惕拥挤风险
+338,2026-05-25 23:39:32,ContrarianAgent,private,['DynamicTeamAgent'],['000002'],,,002415放量不涨，逆向看多头疲态，谨慎追多
+339,2026-05-25 23:39:32,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,002415拥挤风险待验证，000002观望
+341,2026-05-25 23:39:32,CommitteeTeamAgent,public,[],['002415'],,,002415 HOLD：放量横盘，多空分歧，等待方向确认。
+342,2026-05-25 23:39:32,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量横盘，你观察到多空哪方更强？是否考虑减仓？
+343,2026-05-25 23:39:32,CommitteeTeamAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415放量但未涨，多空博弈，继续持仓观察。
+347,2026-05-25 23:39:35,DynamicTeamAgent,public,[],['002415'],,,002415 HOLD：放量横盘，等待方向确认
+348,2026-05-25 23:39:35,DynamicTeamAgent,private,['ContrarianAgent'],['002415'],,,你提示002415拥挤风险，我小仓位验证，如何判断拥挤阈值？
+349,2026-05-25 23:39:35,DynamicTeamAgent,moments,"['ContrarianAgent', 'FreeRiderAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415放量横盘，50股持仓观望，关注多空力量变化
+353,2026-05-25 23:39:37,SocialGraphAgent,public,[],['002415'],,,002415放量横盘，社交拥挤信号，减仓一半
+354,2026-05-25 23:39:37,SocialGraphAgent,private,['FreeRiderAgent'],['002415'],,,同为002415验证者，放量后横盘，建议减仓规避拥挤
+355,2026-05-25 23:39:37,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002415'],,,减仓002415，社交图谱拥挤度上升

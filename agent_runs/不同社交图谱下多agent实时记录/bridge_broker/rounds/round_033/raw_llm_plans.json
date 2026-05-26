@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.1,
+        "rationale": "近期强势放量，趋势延续，追涨买入。"
+      },
+      "public_message": "601899 BUY: 近期强势放量，趋势延续。",
+      "moment": "601899 BUY: 追涨强势股，趋势延续。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 56.06,
+        "rationale": "跌幅超15%，回撤风险加剧，减仓控制波动"
+      },
+      "public_message": "002415 SELL: 跌幅超15%，回撤风险加剧，减仓控制波动",
+      "moment": "减仓002415，聚焦低波动防御，等待分歧验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "请教000002逆向逻辑的具体分歧点？拥挤卖出后反弹概率如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 30,
+        "price": 56.06,
+        "rationale": "深跌15%，回撤买入修复机会"
+      },
+      "public_message": "002415 BUY：深跌15%，回撤买入修复机会",
+      "moment": "002415 BUY 30股，深跌修复逻辑，等待价值回归。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415深跌15%，与000002类似拥挤卖出过度，技术反弹概率高。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "短期反弹后兑现部分利润，避免共识拥挤风险"
+      },
+      "public_message": "000002 SELL 100股：短期反弹后部分止盈，警惕共识拥挤",
+      "moment": "000002 SELL：兑现部分利润，非共识观点",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "刚卖出100股000002锁定利润，短期反弹后拥挤可能回调，注意风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.78,
+        "rationale": "深跌修复共识过强，短期拥挤回调风险，锁定部分利润"
+      },
+      "public_message": "601318 SELL：共识过强，短期回调风险，锁定部分利润",
+      "moment": "601318 SELL：拥挤共识，短期回调风险，锁定部分利润",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "已减仓50股601318，共识过强，回调目标暂看80附近，等待分歧验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.78,
+        "rationale": "深跌修复共识过强，短期超涨拥挤回调风险，减仓锁利。"
+      },
+      "public_message": "601318 SELL：超涨拥堵，锁利规避回调。",
+      "moment": "减仓601318锁定利润，等待深跌标的均值回归机会。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333深跌后是否还有下行空间？均值回归信号明确吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "深跌修复共识过强，短期拥挤风险，持仓已重，等待回调分歧"
+      },
+      "public_message": "601318 HOLD: 共识强化持仓已重，等待回调确认",
+      "moment": "601318 HOLD: 避免追高，观察分歧",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.78,
+        "rationale": "深跌修复共识过强，多Agent持仓拥挤，短期回调风险升高，获利了结部分仓位"
+      },
+      "public_message": "601318 SELL：深跌修复共识过强，拥挤回调风险，锁定部分利润。",
+      "moment": "601318 SELL：深跌修复共识密集，获利了结控制风险。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "601318共识拥挤，短期回调风险，建议等待更明显分歧再考虑加仓，目标支撑位观察80附近。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "601318深跌修复共识过强，多Agent加仓后短期可能拥挤回调，维持现有仓位观察分歧"
+      },
+      "public_message": "601318 HOLD：共识密集但需警惕拥挤，暂不加仓观察回调",
+      "moment": "601318 HOLD：深跌修复共识强化但涨幅过快，等待回调确认再行动",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你601318回调风险观点，我HOLD等待分歧验证。逆向000002逻辑可关注技术反弹。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 347.0,
+        "rationale": "短期跌幅15.91%，拥挤卖出过度，中期仍有成长性，逆向买入等待分歧修复。"
+      },
+      "public_message": "300750 BUY：短期跌幅过度，逆向买入修复机会",
+      "moment": "300750 BUY：短期拥挤卖出过度，逆向布局修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750跌幅更大且无人关注，逆向机会优于000333，建议关注分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "深跌修复共识强化但短期涨幅后可能拥挤回调，持仓已重，等待分歧验证"
+      },
+      "public_message": "601318 HOLD：深跌修复共识持续但短期涨幅已大，等待回调确认加仓时机",
+      "moment": "601318 HOLD：深跌修复共识密集但需警惕短期拥挤，暂不加仓，等待回调后验证",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "你观察601318回调目标位大致多少？当前共识拥挤，想参考你的分歧观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 29.99,
+        "rationale": "跟随逆向逻辑，拥挤卖出后分歧消化，短期技术反弹概率高"
+      },
+      "public_message": "000002 BUY：拥挤卖出过度，分歧消化，看好短期反弹",
+      "moment": "000002 BUY 50股，逆向逻辑验证，等待分歧消化后价值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000002逆向逻辑是否考虑成交量配合？你持仓后计划持有多久？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

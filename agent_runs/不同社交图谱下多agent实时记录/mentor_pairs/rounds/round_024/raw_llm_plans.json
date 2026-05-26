@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 259.9,
+        "rationale": "低拥挤动量多Agent验证，趋势延续加仓"
+      },
+      "public_message": "002594 BUY 低拥挤动量多Agent验证趋势延续加仓",
+      "moment": "加仓002594，低拥挤动量信号强化，等多验证趋势延续",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "低拥挤动量信号巩固，趋势延续，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 313.6,
+        "rationale": "000858短期涨幅9.65%过大，均值回归倾向回调，止盈1股锁定利润"
+      },
+      "public_message": "000858 止盈1股防回调；002415 回撤-4.96%均值修复机会",
+      "moment": "卖出000858锁定短期利润，买入002415捕捉回撤反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "认同002415深度回撤逻辑，已跟买入1股均值修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 96.4,
+        "rationale": "低波动+回撤可控，近5日企稳，安全边际充足"
+      },
+      "public_message": "000333 BUY 低波动+安全边际，回撤可控",
+      "moment": "买入000333，低波动策略寻找安全边际，回撤可控",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤-8.03%提供安全边际，低波动逻辑验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 96.4,
+        "rationale": "随机非共识，低波动价值股未被关注，ret20=-8%提供安全边际"
+      },
+      "public_message": "000333 BUY 随机非共识，低波动价值等待补涨",
+      "moment": "买入000333，随机策略覆盖家电板块，分散持仓",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333 ret20=-8% 低波动，逆向补涨可能，随机验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 259.9,
+        "rationale": "低拥挤动量信号多Agent验证，趋势延续但价格较高，控制仓位暂不加仓"
+      },
+      "public_message": "002594 HOLD 低拥挤动量多验证，趋势延续但价格高位，控制风险",
+      "moment": "002594 HOLD 低拥挤动量多Agent验证，趋势延续但涨幅已大，等待回调机会加仓",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594低拥挤动量信号一致，但价格已接近短期阻力，建议继续观察成交量确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 60.78,
+        "rationale": "等待回撤修复，暂不加减仓"
+      },
+      "public_message": "002415 HOLD 等待回撤修复，暂无新机会",
+      "moment": "持仓002415，等待回撤修复，关注新的深度回撤标的",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415我们同步持仓，回撤-13.29%安全边际，继续等待均值修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 259.9,
+        "rationale": "低拥挤动量多Agent验证趋势延续，持仓合理，维持现状"
+      },
+      "public_message": "002594 HOLD 低拥挤动量验证，趋势延续，控制仓位",
+      "moment": "002594 HOLD 低拥挤动量信号巩固，多Agent验证，趋势延续，静待收益",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002594低拥挤动量多Agent验证，趋势延续，建议考虑加仓巩固信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 27.89,
+        "rationale": "跟随即时止损，控制回撤"
+      },
+      "public_message": "000002 SELL 弱趋势止损，控制回撤",
+      "moment": "卖出000002，弱趋势止损，等待002594动量延续",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意卖出000002止损，降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 60.78,
+        "rationale": "多Agent验证均值回归逻辑，控制仓位"
+      },
+      "public_message": "002415 BUY 多Agent验证均值回归，风险可控",
+      "moment": "买入002415，多Agent协同，均值回归预期",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意均值回归逻辑，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 8,
+        "price": 79.62,
+        "rationale": ""
+      },
+      "public_message": "601318 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 59.9,
+        "rationale": "深度回撤-13.29%逆回购，与DrawdownBuyerAgent和ContrarianAgent协作，博弈均值修复"
+      },
+      "public_message": "002415 BUY 深度回撤-13.29%逆向，与多Agent协作均值修复",
+      "moment": "买入002415，深度回撤逆向协作，等待均值修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意逆向逻辑，已买入002415验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 259.9,
+        "rationale": "低拥挤动量信号多Agent验证，趋势延续，加仓1股"
+      },
+      "public_message": "002594加仓1股，低拥挤动量多Agent验证趋势延续",
+      "moment": "加仓002594，低拥挤动量信号强化，等待趋势延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "加仓002594，多Agent验证趋势延续，与您观点一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

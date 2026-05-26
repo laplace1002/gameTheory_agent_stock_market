@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.14,
+        "rationale": "600036近5日涨幅9.74%且成交量放大，趋势强劲，追涨加仓"
+      },
+      "public_message": "600036 BUY 加仓追涨，短期动量显著",
+      "moment": "加仓600036，短期动量延续，集中追涨",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的判断，加仓600036共同验证动量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 287.7,
+        "rationale": "000858短期跌幅9.24%，市场过度抛售，均值回归预期强烈，加仓博反弹"
+      },
+      "public_message": "000858 BUY 加仓超跌反弹，均值回归策略",
+      "moment": "加仓000858，超跌后均值回归机会确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858跌幅最大，逆向加仓共识强，验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 25,
+        "price": 51.14,
+        "rationale": "短期涨幅超9%，控制回撤，锁定部分利润"
+      },
+      "public_message": "600036 SELL 减持短期涨幅 控制回撤",
+      "moment": "减仓600036，短期涨幅超9%，锁定部分利润，等待回调机会。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036短期动量是否可能衰竭？涨幅已高，我减仓了部分。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "短期跌幅-6.96%较大，超跌后预期均值修复，分散组合风险"
+      },
+      "public_message": "601899 BUY 短期跌幅较大 逆向博反弹",
+      "moment": "买入601899，深跌-6.96%博反弹，组合分散风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858与601899均深跌，逆向策略一致，验证超跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.14,
+        "rationale": "短期动量强劲但首日零回报，持续性待验证，小仓位持有观察。"
+      },
+      "public_message": "600036 HOLD 短期动量强劲，首日零回报，等待趋势延续信号。",
+      "moment": "持有600036，短期动量与低估值共振，但首日零回报，需验证趋势延续。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你的谨慎，短期动量依赖情绪，关注回调风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 287.7,
+        "rationale": "逆向加仓超跌反弹，跟随群体逆向逻辑，预期均值回归"
+      },
+      "public_message": "000858 BUY 逆向加仓超跌反弹，均值回归预期",
+      "moment": "买入000858逆向抄底，分散风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，加仓000858验证反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 2,
+        "price": 99.69,
+        "rationale": "家电龙头短期回调3.22%，非主流关注，小仓位分散验证反弹"
+      },
+      "public_message": "000333 BUY 分散超跌组合",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 287.7,
+        "rationale": "多agent逆向买入000858，短期超跌均值回归概率较高，小仓位验证"
+      },
+      "public_message": "000858 BUY 逆向加仓 参考多agent共识 验证均值回归",
+      "moment": "买入000858，跟随逆向信号小仓验证超跌反弹",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向逻辑，小仓买入000858共同验证反弹"
+      },
+      "friend_request": {
+        "to": "DrawdownBuyerAgent",
+        "reason": "你的回撤买入策略与我观望风格互补，提供下跌修复验证"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 86.9,
+        "rationale": "市场过度拥挤在600036，逆向策略暂时观望，等待情绪反转信号"
+      },
+      "public_message": "600036过度拥挤，逆向观望；000858超跌反弹待验证",
+      "moment": "逆向观望，不追高600036，等待超跌品种反弹确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036短期涨幅过大，建议警惕回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.14,
+        "rationale": "短期涨幅过大，多agent买入过热，部分止盈锁定利润"
+      },
+      "public_message": "600036 SELL 短期涨幅过大，部分止盈",
+      "moment": "减仓600036，短期涨幅大且多买方一致，落袋为安",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036短期涨幅高，是否已过热？我已减仓10股，注意回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 287.7,
+        "rationale": "短期跌幅最大，逆向均值回归，多个Agent验证"
+      },
+      "public_message": "000858 BUY 加仓逆向超跌反弹，组合平衡",
+      "moment": "加仓000858逆向抄底；持有600036动量，组合均衡",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "加仓000858，同意逆向逻辑，继续验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 51.14,
+        "rationale": "社交动量汇聚，跟随好友信号"
+      },
+      "public_message": "600036 BUY 跟随好友动量信号",
+      "moment": "买入600036，跟踪社交动量",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意判断，小仓跟进验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

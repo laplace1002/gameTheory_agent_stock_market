@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1159,2026-05-25 14:52:32,MomentumAgent,public,[],['002594'],,,002594 SELL：拥挤风险，减仓50股，换仓600036趋势延续
+1160,2026-05-25 14:52:32,MomentumAgent,private,['PersuaderAgent'],['002594'],,,同意拥挤判断，我减仓50股002594，换仓600036
+1161,2026-05-25 14:52:32,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594减仓50股，换仓600036，追踪趋势延续
+1163,2026-05-25 14:52:32,MeanReversionAgent,public,[],['601318'],,,601318 BUY：深跌回撤超7%，均值回归逆向加仓
+1164,2026-05-25 14:52:32,MeanReversionAgent,private,['DrawdownBuyerAgent'],['601318'],,,同意逆向逻辑，同步加仓601318，深跌修复
+1165,2026-05-25 14:52:32,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318 BUY：深跌回撤逆向加仓，等待价值修复
+1167,2026-05-25 14:52:32,LowVolatilityAgent,public,[],['600036'],,,600036 HOLD：低波动持仓，回避拥挤风险，等待超卖信号。
+1168,2026-05-25 14:52:32,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036 HOLD：低波动策略下持有银行股，拥挤风险可控，等待逆向机会。
+1170,2026-05-25 14:52:32,DrawdownBuyerAgent,public,[],['002415'],,,002415 BUY：回撤超13%逆向买入，等待价值修复。
+1171,2026-05-25 14:52:32,DrawdownBuyerAgent,private,['ContrarianAgent'],['002415'],,,002415超卖加入逆向组合，验证地产修复后轮动至电子。
+1172,2026-05-25 14:52:32,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 BUY：深跌超13%逆向加仓，等待修复。
+1174,2026-05-25 14:52:32,RandomAgent,public,[],['002415'],,,002415 BUY：暴跌后随机博弈超卖反弹，非共识验证。
+1175,2026-05-25 14:52:32,RandomAgent,private,['ContrarianAgent'],['002415'],,,002415暴跌后随机博弈逆向修复，与你的000002逻辑互补。
+1176,2026-05-25 14:52:32,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 BUY：随机加仓超卖科技，非共识逆向等待修复。
+1178,2026-05-25 14:52:32,TruthfulReporterAgent,public,[],['002594'],,,002594 SELL：拥挤风险上升，止损50股
+1179,2026-05-25 14:52:32,TruthfulReporterAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤风险，减仓002594，等待分歧明朗
+1180,2026-05-25 14:52:32,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002594'],,,002594 SELL：拥挤风险确认，止损部分仓位
+1182,2026-05-25 14:52:32,PersuaderAgent,public,[],['002594'],,,002594 SELL: 拥挤风险加剧，减仓50股锁定利润
+1183,2026-05-25 14:52:32,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤判断，我继续减仓002594，等待风险释放
+1184,2026-05-25 14:52:32,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL: 拥挤风险未释放，减仓等待分歧演化
+1186,2026-05-25 14:52:32,FreeRiderAgent,public,[],['002594'],,,002594 SELL：拥挤风险加剧，减仓50股换仓超卖000002
+1187,2026-05-25 14:52:32,FreeRiderAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤判断，减仓002594换仓超卖000002，验证修复逻辑
+1188,2026-05-25 14:52:32,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL：拥挤风险减仓，换仓超卖地产等待修复
+1190,2026-05-25 14:52:32,ContrarianAgent,public,[],['000002'],,,000002 BUY：超卖地产，拥挤瓦解中，逆向加仓修复
+1191,2026-05-25 14:52:32,ContrarianAgent,private,['DynamicTeamAgent'],['000002'],,,同意地产超卖逻辑，同步加仓000002，验证逆向修复
+1192,2026-05-25 14:52:32,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 BUY：超卖地产，拥挤瓦解，逆向加仓等待修复
+1194,2026-05-25 14:52:32,CommitteeTeamAgent,public,[],['002594'],,,002594 SELL：拥挤风险加剧，部分减仓锁定利润，等待分歧明朗
+1195,2026-05-25 14:52:32,CommitteeTeamAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤判断，减仓50股002594，感谢风险提示
+1196,2026-05-25 14:52:32,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL：拥挤风险确认，减仓50股，降低敞口
+1198,2026-05-25 14:52:32,DynamicTeamAgent,public,[],['002594'],,,002594 SELL：拥挤度上升，减仓50股，等待分歧演化。
+1199,2026-05-25 14:52:32,DynamicTeamAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤风险，减仓002594验证逆向信号。
+1200,2026-05-25 14:52:32,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL：拥挤度上升，减仓锁定利润，等待逆向机会。
+1202,2026-05-25 14:52:32,SocialGraphAgent,public,[],['002594'],,,002594 SELL：拥挤风险加剧，减仓50股锁定部分利润
+1203,2026-05-25 14:52:32,SocialGraphAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤风险提示，减仓002594，等待分歧演化再择机
+1204,2026-05-25 14:52:32,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL：拥挤风险确认，减仓等待分歧演化

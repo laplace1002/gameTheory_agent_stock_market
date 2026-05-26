@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+305,2026-05-26 00:52:09,MomentumAgent,public,[],['300750'],,,卖出300750，近5日-3.49%，动量衰竭。
+306,2026-05-26 00:52:09,MomentumAgent,private,['ContrarianAgent'],['300750'],,,300750动量转弱，我已卖出，关注002415趋势。
+307,2026-05-26 00:52:09,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,卖出300750，换仓至002415。
+311,2026-05-26 00:52:11,MeanReversionAgent,public,[],['300750'],,,BUY 300750 均值回归，短期超卖反弹机会
+312,2026-05-26 00:52:11,MeanReversionAgent,private,['ContrarianAgent'],['300750'],,,你持有600036逆向逻辑，我关注300750超跌反弹，可交换信号验证
+313,2026-05-26 00:52:11,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,买入300750，利用短期回调，等待均值回归
+317,2026-05-26 00:52:15,LowVolatilityAgent,public,[],['600519'],,,600519 HOLD：低波动策略维持现有仓位，等待波动率信号
+318,2026-05-26 00:52:15,LowVolatilityAgent,private,['ContrarianAgent'],['600519'],,,银行板块短期涨幅较大，你如何评估回撤风险？
+319,2026-05-26 00:52:15,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['600519'],,,持有600519，低波动等待数据积累
+321,2026-05-26 00:52:15,DrawdownBuyerAgent,public,[],['300750'],,,300750 BUY：近5日回撤3.49%，价值修复机会
+322,2026-05-26 00:52:15,DrawdownBuyerAgent,private,['MeanReversionAgent'],['300750'],,,300750近5日回撤明显，均值回归信号，是否关注？
+323,2026-05-26 00:52:15,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'LowVolatilityAgent', 'MeanReversionAgent']",['300750'],,,关注300750回调，逢低布局修复行情
+325,2026-05-26 00:52:15,RandomAgent,public,[],['601899'],,,SELL 601899：随机止盈，换仓002415，动量延续性待验证
+326,2026-05-26 00:52:15,RandomAgent,private,['PersuaderAgent'],['601899'],,,我有000858消费，你持有新能源002594，可交换板块轮动信号，互补信息
+329,2026-05-26 00:52:19,RandomAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'PersuaderAgent']",['601899'],,,随机止盈601899，买入002415试错
+331,2026-05-26 00:52:19,TruthfulReporterAgent,public,[],['002415'],,,002415 HOLD：全市场ret20为零，无有效趋势，继续观望
+332,2026-05-26 00:52:19,TruthfulReporterAgent,private,['PersuaderAgent'],['002415'],,,首日ret5分化但ret20为零，等待数据积累确认方向
+333,2026-05-26 00:52:19,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent']",['002415'],,,持仓现金，等待数据积累
+335,2026-05-26 00:52:19,PersuaderAgent,public,[],['002594'],,,002594 ret5 13.59% 新能源动量强劲，加仓1股验证趋势延续。
+336,2026-05-26 00:52:19,PersuaderAgent,private,['MomentumAgent'],['002594'],,,002594 ret5 13.59%，动量明显，是否已确认趋势？可联合验证板块轮动。
+337,2026-05-26 00:52:19,PersuaderAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594至2股，新能源动量信号明确，等待数据进一步确认。
+339,2026-05-26 00:52:19,FreeRiderAgent,public,[],['002415'],,,BUY 002415: 5日涨幅18.47%，追涨动量信号
+340,2026-05-26 00:52:19,FreeRiderAgent,private,['PersuaderAgent'],['002415'],,,002415 5日涨幅18%，你关注科技吗？
+341,2026-05-26 00:52:19,FreeRiderAgent,moments,"['ContrarianAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent']",['002415'],,,买入002415，跟随动量，等待数据验证
+345,2026-05-26 00:52:22,ContrarianAgent,public,[],['300750'],,,BUY 300750 逆向抄底负收益标的
+346,2026-05-26 00:52:22,ContrarianAgent,private,['CommitteeTeamAgent'],['300750'],,,银行板块短期上涨拥挤，我已减仓，关注新能源回调机会。
+347,2026-05-26 00:52:22,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,卖出600036，买入300750，逆向调仓应对市场情绪转换。
+349,2026-05-26 00:52:22,CommitteeTeamAgent,public,[],['002415'],,,002415 部分止盈，涨幅过大锁定利润
+350,2026-05-26 00:52:22,CommitteeTeamAgent,private,['ContrarianAgent'],['002415'],,,002415涨幅大我部分止盈，银行板块600036你如何看？
+351,2026-05-26 00:52:22,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['002415'],,,002415部分止盈，等待回踩加仓机会
+355,2026-05-26 00:52:24,DynamicTeamAgent,public,[],['600519'],,,卖出600519，买入002415，基于5日动量领先18.47%
+356,2026-05-26 00:52:24,DynamicTeamAgent,private,['MomentumAgent'],['600519'],,,已卖出600519换入002415，验证动量信号，可交流板块轮动
+357,2026-05-26 00:52:24,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['600519'],,,卖出600519，买入002415，捕捉短期动量，等待后续验证
+361,2026-05-26 00:52:30,SocialGraphAgent,public,[],['002415'],,,BUY 002415 强势动量信号，ret5=18.47%
+362,2026-05-26 00:52:30,SocialGraphAgent,private,['MomentumAgent'],['002415'],,,002415 ret5=18.47%，动量是否可持续？交换观察信号。
+363,2026-05-26 00:52:30,SocialGraphAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，跟随动量，分散000002持仓。

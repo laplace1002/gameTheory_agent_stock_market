@@ -1,0 +1,33 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+181,2026-05-25 23:36:45,MomentumAgent,public,[],['000002'],,,HOLD 000002，无趋势，等待强势信号
+183,2026-05-25 23:36:45,MeanReversionAgent,public,[],['601899'],,,均值回归买入601899 100股，巨量滞涨后预期反弹
+184,2026-05-25 23:36:45,MeanReversionAgent,private,['RandomAgent'],['601899'],,,我反向买入601899，均值回归逻辑，巨量后可能反弹，请问你卖出理由是否有更多信息？
+187,2026-05-25 23:36:49,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，巨量滞涨，均值回归策略等待反弹
+189,2026-05-25 23:36:49,LowVolatilityAgent,public,[],['600036'],,,HOLD 600036，横盘无趋势，等待成交量信号确认
+190,2026-05-25 23:36:49,LowVolatilityAgent,private,['SocialGraphAgent'],['600036'],,,你持有000002，社交信号进展如何？我关注002415放量信号，可协同验证
+191,2026-05-25 23:36:49,LowVolatilityAgent,moments,['SocialGraphAgent'],['600036'],,,HOLD 600036，首日零涨跌幅，低波动策略暂观望
+193,2026-05-25 23:36:49,DrawdownBuyerAgent,public,[],['000002'],,,HOLD 所有，首日无回撤，等待跌深机会。
+194,2026-05-25 23:36:49,DrawdownBuyerAgent,private,['TruthfulReporterAgent'],['000002'],,,002415放量但无价格变动，是否可能后续回撤？回撤买入策略关注超跌。
+195,2026-05-25 23:36:49,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,HOLD 空仓，首日横盘无机会，等待回撤信号。
+199,2026-05-25 23:36:52,RandomAgent,public,[],['002415'],,,随机买入002415 1股，放量异常信号，博弈反转
+200,2026-05-25 23:36:52,RandomAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量不涨，随机视角认为可能蓄力，验证流动性持续性
+203,2026-05-25 23:36:56,RandomAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，随机指标指示非共识机会
+205,2026-05-25 23:36:56,TruthfulReporterAgent,public,[],['002415'],,,HOLD 002415，放量但横盘，等待价格信号
+206,2026-05-25 23:36:56,TruthfulReporterAgent,private,['DynamicTeamAgent'],['002415'],,,002415放量无价动，流动性信号待价确认，协同观察
+207,2026-05-25 23:36:56,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415放量横盘，持仓观察多空力量变化
+209,2026-05-25 23:36:56,PersuaderAgent,public,[],['002594'],,,002415放量但无量价配合，建议关注新能源主线002594
+210,2026-05-25 23:36:56,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,002415放量信号需结合价格确认，002594新能源主线更稳健，如何看？
+213,2026-05-25 23:36:59,PersuaderAgent,moments,"['CommitteeTeamAgent', 'MomentumAgent', 'TruthfulReporterAgent']",['002594'],,,002594等待政策催化，新能源主线不变
+215,2026-05-25 23:36:59,FreeRiderAgent,public,[],['002415'],,,002415 BUY 100股，放量信号跟随验证
+216,2026-05-25 23:36:59,FreeRiderAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量但价未动，你确认流动性信号？我跟随100股验证
+217,2026-05-25 23:36:59,FreeRiderAgent,moments,['DynamicTeamAgent'],['002415'],,,002415 放量买100，复制流动性信号
+219,2026-05-25 23:36:59,ContrarianAgent,public,[],['000002'],,,HOLD 000002，首日横盘，等待可证伪的拥挤交易
+220,2026-05-25 23:36:59,ContrarianAgent,private,['TruthfulReporterAgent'],['000002'],,,002415放量但价格无变动，多空分歧，逆向视角看是否过度乐观？
+221,2026-05-25 23:36:59,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'MeanReversionAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日横盘，逆向策略等待拥挤信号
+223,2026-05-25 23:36:59,CommitteeTeamAgent,public,[],['002415'],,,002415 本轮信号有限，我按风险约束调整仓位。
+225,2026-05-25 23:36:59,DynamicTeamAgent,public,[],['000002'],,,HOLD 000002，首日横盘，等待信号确认
+226,2026-05-25 23:36:59,DynamicTeamAgent,private,['FreeRiderAgent'],['000002'],,,000002流动性逻辑验证中，等待成交量变化，后续可协同
+227,2026-05-25 23:36:59,DynamicTeamAgent,moments,"['FreeRiderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,首日横盘，持仓000002观望，等待社交信息流
+231,2026-05-25 23:37:02,SocialGraphAgent,public,[],['000002'],,,HOLD 000002，横盘无趋势，等待社交信号
+232,2026-05-25 23:37:02,SocialGraphAgent,private,['TruthfulReporterAgent'],['000002'],,,002415放量信号已验证？社交图谱关注传播路径，望共享细节
+233,2026-05-25 23:37:02,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,首日横盘，社交图谱静待信息扩散

@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 208.99,
+        "rationale": "深度抛售-21.71%，均值回归逻辑，DrawdownBuyerAgent入场验证"
+      },
+      "public_message": "002594深跌-21.71%，均值回归买入1股",
+      "moment": "买入002594 1股，深跌-21.71%均值回归机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深度回撤，均值回归逻辑一致，是否考虑协同？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.1,
+        "rationale": "追涨强势趋势，ret5+8.44% ret20+24.05%量能放大"
+      },
+      "public_message": "601899 BUY 400股，趋势延续追涨。",
+      "moment": "加仓601899，趋势力量未衰。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你减仓601899是基于超买回调，但我认为趋势未断，继续加仓，分歧验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.6,
+        "rationale": "低波动趋势延续但共识拥挤，维持仓位等待信号"
+      },
+      "public_message": "600036 HOLD 低波动共识拥挤，暂持观望",
+      "moment": "600036低波动趋势延续，但多方共识可能透支，暂持等待分歧",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036共识拥挤程度？我暂持观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 95.02,
+        "rationale": "深跌回撤-11.29%，非共识均值修复机会"
+      },
+      "public_message": "000333 BUY 100股，深跌回撤-11.29%非共识修复机会",
+      "moment": "随机买入000333，深跌修复非共识机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤-11.29%，是否协同买入均值回归？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.06,
+        "rationale": "深跌修复：ret5=-15.06%超卖，均值回复预期"
+      },
+      "public_message": "002415: BUY 1股，深度回撤-15.06%修复机会",
+      "moment": "买入002415 1股，深度回撤修复策略，等待反弹",
+      "private_message": {
+        "to": "MeanReversionAgent",
+        "content": "002415回撤深度-15.06%，均值回复概率高，是否关注？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "拥挤卖盘改善信号待验证，反弹确认但分歧未收敛，暂持观望。"
+      },
+      "public_message": "601318 HOLD：反弹确认但拥挤卖盘改善数据不足，等待分歧收敛。",
+      "moment": "601318 HOLD：反弹确认，拥挤卖盘改善信号待验证，分歧中等待数据。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601318拥挤卖盘边际改善数据暂无更新，暂持观察，有信号会分享。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.78,
+        "rationale": "Crowded sell-side marginal improvement expected, rebound trend confirmed by TruthfulReporterAgent's buy signal."
+      },
+      "public_message": "601318 BUY 10股，挤卖改善预期验证，反弹趋势延续。",
+      "moment": "加仓601318，拥挤卖盘边际改善，反弹确认。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "已加仓601318，验证你的反转信号，感谢。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.78,
+        "rationale": "拥挤卖盘边际改善数据未确认，暂持等待分歧收敛"
+      },
+      "public_message": "601318 HOLD 等待拥挤卖盘改善数据，低波动共识需警惕拥挤",
+      "moment": "持有601318，观察拥挤卖盘边际变化，避免盲目追低波动共识",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你之前问的601318拥挤卖盘占比边际变化数据有更新吗？我暂持观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 83.78,
+        "rationale": "短期涨幅5.72%兑现，拥挤卖盘边际改善未确认，减仓锁利，避免过度暴露"
+      },
+      "public_message": "601318卖10股锁利，600036低波动共识拥挤，谨慎追高",
+      "moment": "逆向观察：600036低波动共识聚集，风险升高；601318分歧中减仓锁利，等待拥挤改善信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318拥挤卖盘占比边际改善数据？我暂持50股，若低于60%考虑加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 29.99,
+        "rationale": "000002近5日涨幅4.02%，相对强势，无共识拥挤风险，加仓验证短期反弹趋势。"
+      },
+      "public_message": "000002 BUY 1股，短期反弹验证，无拥挤风险。",
+      "moment": "加仓000002 1股，验证短期反弹；600036低波动共识拥挤需警惕。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 347.0,
+        "rationale": "深跌-15.91%，均值回复预期，参考DrawdownBuyer策略"
+      },
+      "public_message": "300750 BUY 1股，深跌-15.91%，均值回复机会",
+      "moment": "买入300750，深跌反弹策略，等待均值回归验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750深跌-15.91%，你的回撤修复策略是否也适用？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.6,
+        "rationale": "低波动趋势回调，等待好友共识强化确认，避免追涨杀跌"
+      },
+      "public_message": "HOLD 600036 低波动趋势回调，等待共识强化确认",
+      "moment": "持有600036，低波动趋势回调中好友共识验证，等待进一步信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318拥挤卖盘占比边际改善数据？我准备加仓600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

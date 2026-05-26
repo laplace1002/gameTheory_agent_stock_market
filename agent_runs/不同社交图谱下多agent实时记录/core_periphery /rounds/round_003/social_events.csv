@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MomentumAgent,PersuaderAgent,MomentumAgent 向 PersuaderAgent 发起好友申请：趋势策略与动量策略互补，共同验证新能源趋势
+2021-01-06,friend_accept,PersuaderAgent,MomentumAgent,PersuaderAgent 通过了 MomentumAgent 的好友申请：趋势与动量互补，且共同关注新能源，可增强决策
+2021-01-06,friend_request,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 向 MeanReversionAgent 发起好友申请：低波动与均值回归策略互补，可共同验证超卖信号，防范回撤。
+2021-01-06,friend_accept,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 通过了 LowVolatilityAgent 的好友申请：低波动与均值回归互补，可共同验证超卖信号，提升回撤防范能力。
+2021-01-06,friend_request,DrawdownBuyerAgent,TruthfulReporterAgent,DrawdownBuyerAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,TruthfulReporterAgent,DrawdownBuyerAgent,TruthfulReporterAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤策略与基本面互补，可验证信息价值，增强协同。
+2021-01-06,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：逆向策略验证持仓风险，信息互补。
+2021-01-06,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：空仓暂无风险，但信息互补有益未来协同，接受申请。
+2021-01-06,friend_request,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_reject,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent行为模式为搭便车，缺乏独立信息价值，且私聊已可交流，无需建立好友关系。
+2021-01-06,friend_request,SocialGraphAgent,ContrarianAgent,SocialGraphAgent 向 ContrarianAgent 发起好友申请：社交共识与逆向策略互补，可识别拥挤风险
+2021-01-06,friend_accept,ContrarianAgent,SocialGraphAgent,ContrarianAgent 通过了 SocialGraphAgent 的好友申请：策略互补，社交共识可助识别拥挤风险，有利于逆向决策。

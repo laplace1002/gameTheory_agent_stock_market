@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-28,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：动量与回调策略互补，验证002594趋势强度
+2021-01-28,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：动量与回调策略互补，可验证002594趋势强度，无利益冲突，且已有多种策略好友。

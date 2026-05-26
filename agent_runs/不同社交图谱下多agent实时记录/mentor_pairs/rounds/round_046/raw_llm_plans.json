@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "5日涨幅6.37%，强势放量，追涨趋势延续。"
+      },
+      "public_message": "600036 BUY 追涨趋势，5日涨6.37%，量能放大。",
+      "moment": "买入600036，追涨趋势延续。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意你的风险控制，我转向追涨600036。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.11,
+        "rationale": "拥挤风险持续，多空分歧加剧，减仓锁定利润"
+      },
+      "public_message": "601318 SELL 拥挤风险上升，减仓控制回撤",
+      "moment": "减仓601318 1股，规避多空分歧拥挤风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的判断，拥挤交易风险上升，我也减仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "深跌30%后超卖，均值回归预期，加仓博反弹。"
+      },
+      "public_message": "002594 BUY 深跌30%超卖，加仓博弈均值回归。",
+      "moment": "加仓002594，深跌超卖等待均值回归。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的超卖逻辑，我也加仓002594。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.55,
+        "rationale": "拥挤风险上升，随机减仓锁定利润"
+      },
+      "public_message": "601318 SELL 拥挤风险上升，随机减仓锁定利润，同时买入601899",
+      "moment": "随机调仓：卖出拥挤的601318，买入稳健的601899，博弈非共识收益",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "注意你卖出002594买入000002的逆向操作，我选择减仓601318并买入601899，不同视角下优化组合"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.11,
+        "rationale": "多空分歧加剧，但中期趋势稳健，继续持仓观望"
+      },
+      "public_message": "601318 HOLD 多空分歧中等待趋势明朗",
+      "moment": "持有601318，多空博弈中控制仓位",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "拥挤风险上升你已减仓，我暂时持有观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600519",
+        "shares": 1,
+        "price": 1975.45,
+        "rationale": "深跌-16.61%，价值修复机会"
+      },
+      "public_message": "600519 BUY 深跌-16.6% 价值修复机会",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.11,
+        "rationale": "多空分歧加剧，拥挤风险上升，减仓1股锁定利润"
+      },
+      "public_message": "601318 SELL 拥挤风险上升，减仓控制回撤",
+      "moment": "卖出601318 1股，回避拥挤，控制风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你卖出判断，拥挤风险确认，我也减仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 174.26,
+        "rationale": "逆向卖出深跌拥挤标的，避免群体博弈修复陷阱"
+      },
+      "public_message": "000002 BUY 逆向买入，002594 SELL 深跌拥挤离场",
+      "moment": "卖出002594，买入000002，逆向调仓，规避群体共识",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌后拥挤度上升，反弹概率降低，建议谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，拥挤风险上升，跟随卖出锁定利润"
+      },
+      "public_message": "601318 SELL 多空分歧加剧，拥挤风险上升，减仓锁定利润",
+      "moment": "卖出601318，降低风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的拥挤交易风险判断，卖出601318锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，拥挤风险上升，减仓锁定利润"
+      },
+      "public_message": "601318 SELL 拥挤风险上升减仓；300750 BUY 反弹动能延续",
+      "moment": "卖出601318，买入300750，分散拥挤风险并捕捉反弹",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的拥挤风险判断，卖出601318，同时买入300750博反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 2,
+        "price": 53.99,
+        "rationale": "002415持续下跌，弱势明显，减仓规避风险"
+      },
+      "public_message": "002415 SELL 弱势下跌，减仓控制回撤",
+      "moment": "卖出002415，观察000002机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你000002买入逻辑，先卖出002415腾资金"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "深跌超30%，多个agent买入形成共识，博弈超卖反弹"
+      },
+      "public_message": "002594 BUY 深跌超30%多个agent买入，博弈反弹",
+      "moment": "买入002594 1股，跟踪超卖反弹共识",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你的深跌价值修复逻辑，跟随买入1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

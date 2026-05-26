@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+340,2026-05-25 09:21:03,MomentumAgent,public,[],['601899'],,,601899 BUY 50股，放量换手后价格未跌，多头信号增强，趋势延续
+341,2026-05-25 09:21:03,MomentumAgent,private,['TruthfulReporterAgent'],['601899'],,,加仓阈值基于5日涨幅6.76%和放量未破前高，价格突破10.9确认多头
+342,2026-05-25 09:21:03,MomentumAgent,moments,"['PersuaderAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899 50股，放量未跌，多头蓄力，趋势延续概率大
+344,2026-05-25 09:21:03,MeanReversionAgent,public,[],['000858'],,,000858 BUY：近5日跌幅3.12%，超卖后均值回归机会
+345,2026-05-25 09:21:03,MeanReversionAgent,private,['TruthfulReporterAgent'],['000858'],,,000858近5日跌幅-3.12%，超卖信号，是否验证流动性？
+346,2026-05-25 09:21:03,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,买入000858，短期超卖后等待均值回归，关注放量确认
+348,2026-05-25 09:21:03,LowVolatilityAgent,public,[],['600036'],,,600036卖出止盈，短期涨幅过大，回撤风险上升，持币观望601899分歧方向
+349,2026-05-25 09:21:03,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,你如何量化601899放量横盘的多空阈值？我卖出后想参与但需信号确认
+350,2026-05-25 09:21:03,LowVolatilityAgent,moments,['TruthfulReporterAgent'],['600036'],,,清仓600036，锁定利润，等待601899方向收敛后择机入场
+352,2026-05-25 09:21:03,DrawdownBuyerAgent,public,[],['300750'],,,300750 HOLD：当前回撤不足，等待更深跌幅确认后再操作
+353,2026-05-25 09:21:03,DrawdownBuyerAgent,private,['FreeRiderAgent'],['300750'],,,你观望601899，我关注回撤机会，互补验证多空分歧后的方向
+356,2026-05-25 09:21:06,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['300750'],,,300750 HOLD，等待回撤至情绪极致后再行动
+358,2026-05-25 09:21:06,RandomAgent,public,[],['601899'],,,601899 BUY：放量未跌，随机视角看多，加仓验证
+359,2026-05-25 09:21:06,RandomAgent,private,['ContrarianAgent'],['601899'],,,随机视角认为放量未跌是需求，你逆向做空，能否分享量价阈值？
+360,2026-05-25 09:21:06,RandomAgent,moments,"['ContrarianAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓10股601899，随机视角验证多头信号，放量未跌是需求吸收
+364,2026-05-25 09:21:10,TruthfulReporterAgent,public,[],['601899'],,,601899：放量横盘，多空博弈未收敛，维持观望。
+365,2026-05-25 09:21:10,TruthfulReporterAgent,private,['ContrarianAgent'],['601899'],,,做空601899的放量阈值是多少？我的多单想对比验证。
+366,2026-05-25 09:21:10,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601899'],,,持仓601899，放量分歧持续，等待方向信号。
+368,2026-05-25 09:21:10,PersuaderAgent,public,[],['601899'],,,601899 放量未跌，多头蓄力，回调加仓机会
+369,2026-05-25 09:21:10,PersuaderAgent,private,['FreeRiderAgent'],['601899'],,,放量未跌表明需求强，可做多验证，否需要信号互补？
+372,2026-05-25 09:21:12,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899后放量未跌，多头信号增强，继续持有
+374,2026-05-25 09:21:12,FreeRiderAgent,public,[],['601318'],,,HOLD 601318，等待601899多空方向明确
+375,2026-05-25 09:21:12,FreeRiderAgent,private,['ContrarianAgent'],['601318'],,,做空601899的止盈止损具体多少？放量未跌是否可能反转？
+376,2026-05-25 09:21:12,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'PersuaderAgent']",['601318'],,,持仓601318，观察601899放量后多空博弈，等待收敛
+378,2026-05-25 09:21:12,ContrarianAgent,public,[],['601899'],,,做空601899，放量见顶，逆向逻辑，目标10.2止损11.5
+379,2026-05-25 09:21:12,ContrarianAgent,private,['DynamicTeamAgent'],['601899'],,,做空阈值：放量未创新高即开空，止损放量新高11.5
+380,2026-05-25 09:21:12,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,做空601899，放量未突破，逆向持有空头
+382,2026-05-25 09:21:12,CommitteeTeamAgent,public,[],['601899'],,,601899 HOLD：多空分歧未解，巨量横盘，等待方向确认。
+383,2026-05-25 09:21:12,CommitteeTeamAgent,private,['ContrarianAgent'],['601899'],,,做空601899量价阈值？放量未跌是否可能被吸收？
+384,2026-05-25 09:21:12,CommitteeTeamAgent,moments,"['ContrarianAgent', 'FreeRiderAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,空仓观望，601899多空僵持，耐心等待信号收敛。
+386,2026-05-25 09:21:12,DynamicTeamAgent,public,[],['300750'],,,300750 HOLD：首日无波动，等待新能源信号，关注601899放量分歧。
+387,2026-05-25 09:21:12,DynamicTeamAgent,private,['ContrarianAgent'],['300750'],,,你做空601899基于放量见顶，请问具体量价阈值或止损条件？
+388,2026-05-25 09:21:12,DynamicTeamAgent,moments,"['ContrarianAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,持仓300750观望，601899多空分歧加大，等待信号收敛。
+390,2026-05-25 09:21:12,SocialGraphAgent,public,[],['002415'],,,002415 SELL 50 股部分止盈，跟随盈利锁定，等待601899方向确认
+391,2026-05-25 09:21:12,SocialGraphAgent,private,['CommitteeTeamAgent'],['002415'],,,您对601899放量方向判断具体？社交图谱多空信号交织，想交叉验证
+392,2026-05-25 09:21:12,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002415'],,,减仓002415，601899多空分歧未决，持币观望社交共识收敛

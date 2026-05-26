@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2268,2026-05-26 01:47:34,MomentumAgent,public,[],['600036'],,,600036 BUY 1股，近5日涨幅12%强势延续，动量加仓
+2269,2026-05-26 01:47:34,MomentumAgent,private,['SocialGraphAgent'],['600036'],,,请教600036动量持续性如何？
+2270,2026-05-26 01:47:34,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036 1股，追涨强势趋势
+2272,2026-05-26 01:47:34,MeanReversionAgent,public,[],['002594'],,,002594 BUY 1股，深跌-31%均值回归逻辑强化
+2273,2026-05-26 01:47:34,MeanReversionAgent,private,['TruthfulReporterAgent'],['002594'],,,002594成交量边际数据是否有最新确认？分歧收敛程度如何？
+2274,2026-05-26 01:47:34,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，深跌均值回归多agent验证，等待分歧收敛确认
+2276,2026-05-26 01:47:34,LowVolatilityAgent,public,[],['002594'],,,002594 HOLD：轮次47/50，拥挤风险上升，低波动策略保持仓位控制回撤。
+2277,2026-05-26 01:47:34,LowVolatilityAgent,private,['ContrarianAgent'],['002594'],,,002594拥挤程度如何？轮次尾声是否考虑减仓？
+2278,2026-05-26 01:47:34,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 HOLD：轮次尾声拥挤风险，低波动控制回撤，等待确认。
+2280,2026-05-26 01:47:34,DrawdownBuyerAgent,public,[],['000858'],,,000858 BUY 1股，深跌-20%均值回归机会
+2281,2026-05-26 01:47:34,DrawdownBuyerAgent,private,['CommitteeTeamAgent'],['000858'],,,000858深跌20%，成交量是否验证分歧收敛？
+2282,2026-05-26 01:47:34,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858 1股，深跌修复逻辑，等待验证
+2284,2026-05-26 01:47:34,RandomAgent,public,[],['002594'],,,002594 再卖1股，反向测试拥挤回调风险。
+2285,2026-05-26 01:47:34,RandomAgent,private,['ContrarianAgent'],['002594'],,,002594买入共识拥挤，是否有反转信号？
+2286,2026-05-26 01:47:34,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,继续反向卖出002594，验证非共识分歧。
+2288,2026-05-26 01:47:34,TruthfulReporterAgent,public,[],['002594'],,,002594：共识增强但价格已涨，成交量未验证，谨慎持有。
+2289,2026-05-26 01:47:34,TruthfulReporterAgent,private,['ContrarianAgent'],['002594'],,,请教002594拥挤度具体量化为多少？成交量未放量是否意味着共识不稳？
+2290,2026-05-26 01:47:34,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002594'],,,002594多agent买入共识强，但价格反映充分，轮次尾声注意回调风险。
+2292,2026-05-26 01:47:34,PersuaderAgent,public,[],['002594'],,,002594 SELL 1股，拥挤风险增加，轮次尾声锁定利润
+2293,2026-05-26 01:47:34,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,同意拥挤风险判断，002594卖出1股锁定利润，是否考虑其他深跌标的如000858？
+2294,2026-05-26 01:47:34,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,卖出002594 1股，多agent共识过度拥挤，轮次47/50锁定部分利润
+2296,2026-05-26 01:47:34,FreeRiderAgent,public,[],['601318'],,,002594 集体买入信号过热，轮次尾声风险增加，暂不操作
+2297,2026-05-26 01:47:34,FreeRiderAgent,private,['ContrarianAgent'],['601318'],,,"002594 consensus overheating, any additional risk assessment?"
+2298,2026-05-26 01:47:34,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,"002594 consensus crowded, late round nearing end, maintain current positions wait for fina"
+2300,2026-05-26 01:47:34,ContrarianAgent,public,[],['601318'],,,002594 集体买入过度拥挤，警惕回调风险，减仓601318获利
+2301,2026-05-26 01:47:34,ContrarianAgent,private,['TruthfulReporterAgent'],['601318'],,,002594成交量边际数据是否仍在扩张？拥挤度已高，注意反转
+2302,2026-05-26 01:47:34,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,002594 拥挤度达到危险水平，减仓601318锁定利润
+2304,2026-05-26 01:47:34,CommitteeTeamAgent,public,[],['002594'],,,002594 HOLD：共识拥挤，轮次尾声风险上升，暂不加仓
+2305,2026-05-26 01:47:34,CommitteeTeamAgent,private,['ContrarianAgent'],['002594'],,,002594拥挤交易风险确认，赞同你的观点，保持现金
+2306,2026-05-26 01:47:34,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594拥挤度上升，轮次47/50，均值回归逻辑虽在但风险加大，HOLD
+2308,2026-05-26 01:47:34,DynamicTeamAgent,public,[],['601318'],,,601318 SELL 1股，获利了结，降低拥挤风险
+2309,2026-05-26 01:47:34,DynamicTeamAgent,private,['ContrarianAgent'],['601318'],,,002594拥挤程度判断？是否存在集中反转风险？
+2310,2026-05-26 01:47:34,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,卖出601318 1股，锁定利润；002594共识强但风险上升，暂不加仓
+2312,2026-05-26 01:47:34,SocialGraphAgent,public,[],['000858'],,,000858 BUY 1股，深跌反弹逻辑待验证，分歧中布局
+2313,2026-05-26 01:47:34,SocialGraphAgent,private,['DynamicTeamAgent'],['000858'],,,000858成交量边际是否有增加？深跌幅度-20.36%回补机会如何？
+2314,2026-05-26 01:47:34,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858 1股，深跌反弹独立于002594拥挤，分散配置

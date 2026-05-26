@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.72,
+        "rationale": "ret5 4.70%最强，追涨趋势延续"
+      },
+      "public_message": "BUY 600036：近期强势，趋势延续，加仓追涨",
+      "moment": "BUY 600036：追涨近期最强，趋势延续，分歧验证中",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "我买600036追涨强势，与你买000858超卖分歧，验证不同方向"
+      },
+      "friend_request": {
+        "to": "MeanReversionAgent",
+        "reason": "追涨与均值回归策略分歧，可互补验证市场效率"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.5,
+        "rationale": "低波正收益，多个Agent防御性持有，分歧验证后买入"
+      },
+      "public_message": "000002 BUY：低波正收益2.01%，分歧中防御买入",
+      "moment": "000002 BUY：低波正收益，分歧验证中",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "一致持有000002，低波防御等待分歧验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 96.28,
+        "rationale": "000333 ret5 -6.83%超卖放量，均值回归预期，分散持仓"
+      },
+      "public_message": "000333 BUY：超卖放量，均值回归预期，分散持仓",
+      "moment": "加仓000333超卖，分散000858集中风险，等待修复",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "赞同你的000333超卖操作，一起等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 284.85,
+        "rationale": "深跌放量，多重agent逆向共识，预期均值回归"
+      },
+      "public_message": "000858加仓：深跌价值修复，分歧验证中",
+      "moment": "000858加仓：深跌放量，价值修复预期，等待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "共同加仓000858超卖，分歧验证逆向机会，继续持有待回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 391.4,
+        "rationale": "随机反向验证正收益顶部，分歧交易"
+      },
+      "public_message": "300750 SELL：随机反向验证正收益顶部分歧",
+      "moment": "300750 SELL：随机反向验证正收益顶部，等待市场确认",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "卖出300750验证正收益顶部，与你的低波持有分歧互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "超卖放量逆向共识，分歧验证买入"
+      },
+      "public_message": "000858 BUY：超卖放量逆向，加仓共识验证",
+      "moment": "加仓000858超卖，逆向共识等待修复",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "跟随你买入000858，超卖放量逆向共识。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 30.5,
+        "rationale": "低波正收益但超买分歧，等待验证"
+      },
+      "public_message": "000002 HOLD：低波正收益但超买分歧，等待验证。",
+      "moment": "000002 HOLD，低波防御，分歧验证中。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你加仓000858深跌，我持有000002低波防御，分歧验证策略方向。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "超卖放量分歧验证，多个逆向信号确认，加仓等待均值回归"
+      },
+      "public_message": "000858 BUY加仓：超卖放量分歧验证，逆向信号确认",
+      "moment": "000858 BUY加仓：超卖放量分歧验证，逆向信号确认，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "共同加仓000858，超卖验证，继续持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "多空拥挤，逆向减仓锁利"
+      },
+      "public_message": "000858 SELL：超卖反弹后拥挤，逆向减仓",
+      "moment": "000858 SELL：拥挤交易逆向减仓，等待新信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000858拥挤强化，我们分歧验证，我减仓部分"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "超卖放量，多个逆向信号验证，预期均值回归"
+      },
+      "public_message": "000858 BUY：超卖放量，分歧验证逆向机会",
+      "moment": "000858 BUY：超卖放量，分歧验证，等待均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "跟随你的逆向信号，买入000858超卖放量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 96.28,
+        "rationale": "超卖放量，均值回归预期，与其他agent协作分歧验证"
+      },
+      "public_message": "000333 BUY：超卖放量，均值回归预期，分歧验证",
+      "moment": "000333 BUY加仓，超卖放量，分歧验证均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "加仓000333，与你协作验证超卖均值回归方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.85,
+        "rationale": "跟随社交共识，超卖放量逆向信号验证"
+      },
+      "public_message": "000858 BUY：社交共识超卖逆向，分歧验证",
+      "moment": "000858 BUY：社交网络确认超卖逆向，等待修复",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢你的000858信号，社交共识增强，继续持有待回归"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波策略与社交信号互补，分歧验证市场方向"
+      }
+    },
+    "error": ""
+  }
+]

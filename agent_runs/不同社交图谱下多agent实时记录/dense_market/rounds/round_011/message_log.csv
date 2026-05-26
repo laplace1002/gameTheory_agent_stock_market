@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+470,2026-05-25 19:26:05,MomentumAgent,public,[],['600036'],,,600036 BUY 强势银行股，追涨金融防御趋势。
+471,2026-05-25 19:26:05,MomentumAgent,private,['TruthfulReporterAgent'],['600036'],,,加仓600036，与你的金融防御逻辑一致，但更偏向强势股追涨。
+472,2026-05-25 19:26:05,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,加仓600036，强势银行股，金融防御+趋势延续。
+474,2026-05-25 19:26:05,MeanReversionAgent,public,[],['000858'],,,000858 加仓 深跌5.5%均值回归，非拥挤等待反弹。
+475,2026-05-25 19:26:05,MeanReversionAgent,private,['ContrarianAgent'],['000858'],,,同意000858深跌修复逻辑，加仓50股摊薄成本。
+476,2026-05-25 19:26:05,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858，深跌均值回归，非拥挤板块。
+478,2026-05-25 19:26:05,LowVolatilityAgent,public,[],['000333'],,,加仓000333，低波动防御回调买入
+479,2026-05-25 19:26:05,LowVolatilityAgent,private,['DynamicTeamAgent'],['000333'],,,同意低波动防御逻辑，已加仓000333
+480,2026-05-25 19:26:05,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，低波动防御配置，等待轮动修复
+482,2026-05-25 19:26:05,DrawdownBuyerAgent,public,[],['000858'],,,000858 加仓 深跌5.5% 非拥挤 持续价值修复
+483,2026-05-25 19:26:05,DrawdownBuyerAgent,private,['FreeRiderAgent'],['000858'],,,000858深跌修复与金融防御形成互补，风险收益比可控
+484,2026-05-25 19:26:05,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858，深跌非拥挤板块，等待轮动修复
+486,2026-05-25 19:26:05,RandomAgent,public,[],['000858'],,,000858 BUY 深跌12%非拥挤，加仓摊薄成本
+487,2026-05-25 19:26:05,RandomAgent,private,['DrawdownBuyerAgent'],['000858'],,,同意深跌非拥挤逻辑，已加仓100股，共同等待价值回归
+488,2026-05-25 19:26:05,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858，深跌非拥挤板块，逆势布局等待反弹
+490,2026-05-25 19:26:05,TruthfulReporterAgent,public,[],['000333'],,,000333 BUY 低波动防御，分散金融集中风险。
+491,2026-05-25 19:26:05,TruthfulReporterAgent,private,['DynamicTeamAgent'],['000333'],,,同意你的000333低波动防御逻辑，已同步买入分散风险。
+492,2026-05-25 19:26:05,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000333'],,,000333加仓，低波动防御等待轮动。
+494,2026-05-25 19:26:05,PersuaderAgent,public,[],['002594'],,,002594 SELL 新能源拥挤持续，清仓转向金融防御。
+495,2026-05-25 19:26:05,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,持续减持新能源，转向金融防御，你的000858深跌逻辑与防御如何组合？
+496,2026-05-25 19:26:05,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,清仓002594，低估值金融防御，拥挤度切换确认。
+498,2026-05-25 19:26:05,FreeRiderAgent,public,[],['601318'],,,601318 BUY 加仓低估值防御 跟随轮动
+499,2026-05-25 19:26:05,FreeRiderAgent,private,['CommitteeTeamAgent'],['601318'],,,新能源拥挤是否已充分释放？继续加仓601318，防御配置一致
+500,2026-05-25 19:26:05,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318，低估值金融防御，跟随资金轮动
+502,2026-05-25 19:26:05,ContrarianAgent,public,[],['000858'],,,000858 BUY 深跌非拥挤，逆向加仓等待修复
+503,2026-05-25 19:26:05,ContrarianAgent,private,['FreeRiderAgent'],['000858'],,,000858深跌提供安全边际，金融防御可能形成拥挤，组合风险收益比尚可
+504,2026-05-25 19:26:05,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,逆向加仓000858，深跌非拥挤，等待价值回归
+506,2026-05-25 19:26:05,CommitteeTeamAgent,public,[],['000333'],,,000333 BUY 低估值防御回调买入
+507,2026-05-25 19:26:05,CommitteeTeamAgent,private,['DynamicTeamAgent'],['000333'],,,赞同低波动防御逻辑，已加仓000333。
+508,2026-05-25 19:26:05,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，低估值防御等待轮动。
+510,2026-05-25 19:26:05,DynamicTeamAgent,public,[],['601318'],,,买入601318，低估值金融防御，跟随拥挤度切换。
+511,2026-05-25 19:26:05,DynamicTeamAgent,private,['CommitteeTeamAgent'],['601318'],,,新能源拥挤是否已充分释放？金融防御仍有空间？
+512,2026-05-25 19:26:05,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,买入601318，防御配置，等待轮动。
+514,2026-05-25 19:26:05,SocialGraphAgent,public,[],['601318'],,,601318 BUY 跟随资金流入低估值金融防御，分散新能源风险
+515,2026-05-25 19:26:05,SocialGraphAgent,private,['CommitteeTeamAgent'],['601318'],,,同意金融防御轮动，加仓601318 50股
+516,2026-05-25 19:26:05,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318，低估值金融防御，拥挤度切换确认

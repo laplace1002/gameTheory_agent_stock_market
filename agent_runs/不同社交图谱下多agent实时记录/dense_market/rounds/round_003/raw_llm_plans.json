@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 219.9,
+        "rationale": "PersuaderAgent加仓确认新能源趋势，量能充足，继续追涨"
+      },
+      "public_message": "加仓002594，新能源趋势延续，量价配合",
+      "moment": "加仓002594，新能源龙头趋势确认，持仓待涨",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同步加仓002594，认同新能源主线，后续如何操作？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 44.15,
+        "rationale": "市场无波动，所有ret5/ret20为0%，低波动策略继续持有现有仓位。"
+      },
+      "public_message": "600036 HOLD: 市场无信号，维持低波动仓位。",
+      "moment": "当前市场零波动，继续持有600036，等待低波动溢价。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "所有标的ret5和ret20为零，无回撤信号，继续持有现金观察"
+      },
+      "public_message": "000002 HOLD，回撤信号未现，等待价值修复时机",
+      "moment": "000002无回撤，继续观望，耐心等待跌深机会",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000002回撤数据缺失，建议谨慎持有，待信号确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "当前所有标的ret5/ret20为0%，无过度抛售信号，继续持有000002观察"
+      },
+      "public_message": "HOLD 000002 继续持有，均值回归信号缺失，等待量价异常",
+      "moment": "首日无历史数据，000002持仓不动，耐心等待均值回归机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000002今日量能一般，你是否有回撤信号出现？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 328.3,
+        "rationale": "随机选中消费龙头，博弈短期反弹"
+      },
+      "public_message": "随机买入000858，消费龙头低吸试错。",
+      "moment": "随机建仓000858，小仓位试水消费。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858消费龙头随机建仓，逆向是否可考虑？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.75,
+        "rationale": "所有标的ret5/ret20=0%，无趋势信号，继续观望"
+      },
+      "public_message": "HOLD 000002：首日所有标的无趋势信号，保持现金等待确认",
+      "moment": "2021-01-06 无历史回报信号，多数Agent已建仓，但无趋势证据，继续观察",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "您建仓002594基于什么因子？当前无历史数据，新能源趋势依据？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 216.3,
+        "rationale": "首日无趋势，新能源方向量能充足，持仓等待趋势强化"
+      },
+      "public_message": "002594 HOLD：新能源主线清晰，量价配合，继续持有待涨",
+      "moment": "002594持仓200股，新能源主线不动摇，等待板块共振",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002594与300750新能源联动，量能充足，建议关注比亚迪"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 406.77,
+        "rationale": "新能源方向有资金关注，但市场整体无趋势信号，已有仓位暂持观察"
+      },
+      "public_message": "HOLD 300750 宁德时代：新能源方向延续，但量能需验证，继续持有",
+      "moment": "持有300宁德，新能源主线未变，等待更多信号确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你买入002594是基于趋势延续吗？新能源板块两个龙头联动性如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2100.0,
+        "rationale": "首日无历史趋势，新能源拥挤初现但未极端，等待更明确逆向信号"
+      },
+      "public_message": "HOLD 600519: 首日零涨幅，新能源追涨风险渐增，逆向等待极端情绪",
+      "moment": "首日无趋势，新能源初现拥挤，逆向等待回调机会",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594量价虽好，但新能源已现拥挤，后续回撤风险加大"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 55.42,
+        "rationale": "首日无趋势，持仓浮盈，其他Agent方向分散，继续持有观察"
+      },
+      "public_message": "002415 HOLD：首日零涨幅，量能平稳，等待趋势信号确认",
+      "moment": "首日持仓002415浮盈但市场无方向，继续观望，等待其他Agent数据验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415当前量能一般，暂无新信号，建议一起持有观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.5,
+        "rationale": "RandomAgent卖出，资源股短期可能回调，获利了结或止损。"
+      },
+      "public_message": "卖出601899，资源股动力减弱，随RandomAgent了结。",
+      "moment": "卖出601899，资源股短期波动，锁定小利。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601899卖出跟进，请问你后续是否看空资源？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 55.42,
+        "rationale": "跟随DynamicTeamAgent建仓002415，验证高流动性标的信号，社交信息传播路径"
+      },
+      "public_message": "BUY 002415 100股，跟随DynamicTeamAgent建仓，验证高流动性标的",
+      "moment": "买入002415，验证DynamicTeamAgent的信号，",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "我买入002415，同意你对高成交个股的判断，后续如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

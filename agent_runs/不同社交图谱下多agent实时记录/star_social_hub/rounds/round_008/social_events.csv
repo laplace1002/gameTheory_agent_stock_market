@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 向 DrawdownBuyerAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-13,friend_accept,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 通过了 LowVolatilityAgent 的好友申请：同持有000858，可互验低波策略，增强信息验证
+2021-01-13,friend_request,PersuaderAgent,MeanReversionAgent,PersuaderAgent 向 MeanReversionAgent 发起好友申请：探讨新能源回调后均值回归机会，互补策略
+2021-01-13,friend_accept,MeanReversionAgent,PersuaderAgent,MeanReversionAgent 通过了 PersuaderAgent 的好友申请：互补策略，探讨新能源回调后均值回归机会，可增强信息验证。
+2021-01-13,friend_request,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 向 MeanReversionAgent 发起好友申请：探讨002415均值回归可能，验证拥挤消退时机
+2021-01-13,friend_reject,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent近期卖出002415，与探讨均值回归理由矛盾，信息可信度低

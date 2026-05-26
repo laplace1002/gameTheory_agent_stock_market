@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "600036近5日+4.33%强势延续，资金向金融防御切换，加仓追涨"
+      },
+      "public_message": "加仓600036，趋势延续金融防御",
+      "moment": "加仓600036，趋势+防御双逻辑",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意金融防御方向，600036趋势强，加仓追击"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 94.85,
+        "rationale": "深跌8.89%且非拥挤，低估值防御，分散现有持仓风险"
+      },
+      "public_message": "000333 BUY 深跌8.89% 低估值防御 分散持仓",
+      "moment": "买入000333，深跌防御分散，等待均值回归",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 86.8,
+        "rationale": "多Agent加仓低估值金融防御，自身金融仓位集中，买入601318分散风险且跟随拥挤度切换"
+      },
+      "public_message": "601318买入50股，低估值防御轮动",
+      "moment": "买入601318，低估值金融防御，跟随资金轮动",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同金融防御逻辑，加仓601318分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 94.85,
+        "rationale": "深跌8.89%且非拥挤板块，分散单一持仓风险，等待价值修复"
+      },
+      "public_message": "000333 BUY 深跌8.89% 非拥挤 分散风险等待修复",
+      "moment": "买入000333，深跌修复分散持仓",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意深跌非拥挤逻辑，已买入000333分散000858风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 281.5,
+        "rationale": "深跌12%非拥挤，多agent买入修复逻辑，分散防御配置"
+      },
+      "public_message": "000858 BUY 深跌非拥挤，跟随修复逻辑",
+      "moment": "买入000858，深跌非拥挤，等待价值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌修复逻辑，已买入000858分散防御风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 86.8,
+        "rationale": "低估值金融防御，拥挤度切换确认，跟随资金轮动"
+      },
+      "public_message": "601318 BUY 低估值金融防御，拥挤度切换确认",
+      "moment": "买入601318，低估值金融防御，跟随拥挤度切换",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意金融防御轮动，加仓601318 100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 86.8,
+        "rationale": "跟随多Agent低估值金融防御轮动，加仓分散风险"
+      },
+      "public_message": "601318 BUY 加仓低估值防御 跟随轮动",
+      "moment": "加仓601318，低估值金融防御配置持续",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意金融防御轮动判断，加仓601318 100股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 281.5,
+        "rationale": "深跌12%接近安全边际，金融防御拥挤，继续逆向加仓非拥挤白酒"
+      },
+      "public_message": "000858 BUY 深跌非拥挤，逆向加仓等待修复",
+      "moment": "逆向加仓000858，深跌非拥挤，等待价值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌非拥挤逻辑，继续加仓，但需警惕金融防御转为拥挤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.28,
+        "rationale": "黄金股逆势下跌，资金流向金融防御，减仓转至低估值保险股"
+      },
+      "public_message": "601899 SELL 减仓黄金，转向低估值金融防御601318",
+      "moment": "黄金股下跌缺乏避险买盘，减仓转防御，买入601318等待轮动",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "黄金防守性减弱，跟您加仓601318的轮动逻辑，是否认同切换时机？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 86.8,
+        "rationale": "跟随多Agent低估值金融防御轮动，分散新能源风险，增强组合防御性。"
+      },
+      "public_message": "601318 BUY 跟随资金转向低估值金融防御，增强组合防御性。",
+      "moment": "加仓601318，低估值金融防御，跟随拥挤度切换。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意金融防御轮动信号，已加仓601318。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.85,
+        "rationale": "跟随资金轮动至金融防御，600036近5日逆势上涨，分散持仓风险"
+      },
+      "public_message": "买入600036，金融防御轮动，分散风险",
+      "moment": "加仓600036，金融防御等待轮动",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "赞同金融防御轮动，已买入600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 86.8,
+        "rationale": "当前金融防御拥挤度上升，暂不调整"
+      },
+      "public_message": "601318 HOLD 观察金融防御拥挤度演变",
+      "moment": "等待拥挤度确认，维持现有防御组合",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

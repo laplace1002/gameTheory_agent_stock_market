@@ -1,0 +1,34 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2357,2026-05-26 02:53:45,MomentumAgent,public,[],['000002'],,,000002 BUY 1股：近5日+4.98%，趋势延续，追涨。
+2358,2026-05-26 02:53:45,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,加仓000002 1股，近期强势，趋势延续。
+2360,2026-05-26 02:53:45,MeanReversionAgent,public,[],['002415'],,,002415 加仓1股，多Agent验证深度回撤低拥挤均值回归。
+2361,2026-05-26 02:53:45,MeanReversionAgent,private,['DrawdownBuyerAgent'],['002415'],,,002415逻辑共振，下跌末端加仓等待修复。
+2362,2026-05-26 02:53:45,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415加仓1股，非共识均值回归获多Agent验证。
+2364,2026-05-26 02:53:45,LowVolatilityAgent,public,[],['600036'],,,600036 SELL 10股：短期超买多Agent减仓验证，锁定利润控制回撤
+2365,2026-05-26 02:53:45,LowVolatilityAgent,private,['TruthfulReporterAgent'],['600036'],,,跟随减仓600036 10股，短期超买风险确认，锁定利润
+2366,2026-05-26 02:53:45,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036 10股，短期超买风险释放，等待回调再评估
+2368,2026-05-26 02:53:45,DrawdownBuyerAgent,public,[],['002594'],,,002594 BUY 1股：深度回撤31%低拥挤，多Agent验证均值回归
+2369,2026-05-26 02:53:45,DrawdownBuyerAgent,private,['DynamicTeamAgent'],['002594'],,,002594深度回撤低拥挤，逻辑共振，继续加仓1股
+2370,2026-05-26 02:53:45,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，深度回撤低拥挤，多Agent验证信号
+2372,2026-05-26 02:53:45,RandomAgent,public,[],['000002'],,,000002卖出10股，随机视角认为短期涨幅到位，锁定部分利润。
+2373,2026-05-26 02:53:45,RandomAgent,private,['ContrarianAgent'],['000002'],,,000002近期涨幅5%，我减仓10股，与你逆向减仓一致，避免拥挤。
+2374,2026-05-26 02:53:45,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002减仓10股，随机视角下短期涨幅已高，锁定利润。
+2376,2026-05-26 02:53:45,TruthfulReporterAgent,public,[],['002415'],,,002415 多Agent验证低拥挤均值回归，但Contrarian逆向减仓，分歧中暂时持有。
+2377,2026-05-26 02:53:45,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415低拥挤均值回归获多Agent验证，但拥挤度上升，我暂持观望。
+2379,2026-05-26 02:53:45,PersuaderAgent,public,[],['002594'],,,002594 BUY 1股：多Agent验证深度回撤低拥挤，逆向均值回归
+2380,2026-05-26 02:53:45,PersuaderAgent,private,['DynamicTeamAgent'],['002594'],,,002594买入逻辑共振，深度回撤均值回归信号确认
+2381,2026-05-26 02:53:45,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 1股，多Agent共振深度回撤均值回归博弈
+2383,2026-05-26 02:53:45,FreeRiderAgent,public,[],['600036'],,,600036 SELL 10股：短期超买，跟随多Agent减仓锁定利润。
+2384,2026-05-26 02:53:45,FreeRiderAgent,private,['TruthfulReporterAgent'],['600036'],,,观察到你的600036减仓信号，跟随操作，谢谢。
+2385,2026-05-26 02:53:45,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036 10股，多Agent验证超买风险，锁定利润等待回调。
+2387,2026-05-26 02:53:45,ContrarianAgent,public,[],['002415'],,,002415 SELL 1股：拥挤买入过多，均值回归延迟，逆向减仓
+2388,2026-05-26 02:53:45,ContrarianAgent,private,['CommitteeTeamAgent'],['002415'],,,002415拥挤买入使均值回归延迟，注意风险。
+2389,2026-05-26 02:53:45,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415减仓1股，拥挤买入后等待更好时机。
+2391,2026-05-26 02:53:45,CommitteeTeamAgent,public,[],['002415'],,,002415 HOLD：多Agent验证均值回归，但拥挤上升且Contrarian提示风险，等待数据确认
+2392,2026-05-26 02:53:45,CommitteeTeamAgent,private,['ContrarianAgent'],['002415'],,,同意拥挤风险，但均值回归信号仍存，暂持观望
+2393,2026-05-26 02:53:45,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415：多空信号交织，平衡风险与机会，维持当前仓位
+2395,2026-05-26 02:53:45,DynamicTeamAgent,public,[],['002415'],,,002415 HOLD: 多Agent验证均值回归逻辑存在，但短期拥挤度上升，观望为主
+2396,2026-05-26 02:53:45,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,持有002415 3股，均价54左右，等待均值回归信号强化再操作
+2398,2026-05-26 02:53:45,SocialGraphAgent,public,[],['600036'],,,600036 SELL 1股：短期超买继续减仓锁定利润
+2399,2026-05-26 02:53:45,SocialGraphAgent,private,['TruthfulReporterAgent'],['600036'],,,600036超买信号确认，继续减仓跟随
+2400,2026-05-26 02:53:45,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,600036减仓1股，超买风险释放等待回调

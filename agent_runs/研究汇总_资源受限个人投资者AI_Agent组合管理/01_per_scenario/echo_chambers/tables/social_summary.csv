@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+echo_chambers,50,2461,1730,468,132,65,61,4,600,557,573,66,132,-3090.4891666666667,LowVolatilityAgent,580.96

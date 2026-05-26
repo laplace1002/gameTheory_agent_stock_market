@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.74,
+        "rationale": "持仓600036和002594趋势强劲，现金不足，继续持有"
+      },
+      "public_message": "600036趋势强，持股待涨。",
+      "moment": "600036与002594延续强势，持仓不变。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "20日回撤-13.66%，放量未跌支撑，均值回归加仓博弈修复"
+      },
+      "public_message": "601899 BUY 加仓，20日深跌-13.66%，放量未跌均值回归",
+      "moment": "加仓601899，20日深跌均值回归，放量未跌支撑有效",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你的放量未跌支撑逻辑与我的均值回归一致，当前拥挤是否过度？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 54.74,
+        "rationale": "600036近期涨幅较大，ret20=17.47%，波动可能加大，减仓锁定部分利润，控制回撤风险。"
+      },
+      "public_message": "600036 SELL 50股：短期涨幅已大，减仓控制回撤，保留部分仓位继续观察趋势。",
+      "moment": "600036减仓50股，ret20+17.47%后锁定部分利润；601899多空分歧未消，维持观望。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "您的601899加仓基于放量未跌支撑，但我担忧拥挤多头未出清，建议关注量价背离信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 9.8,
+        "rationale": "20日深跌13.66%，放量未跌支撑有效，回撤价值未修复，继续持仓"
+      },
+      "public_message": "601899 HOLD：20日深跌13.66%，放量未跌支撑，回撤价值待修复",
+      "moment": "持仓601899，多空激战但放量未跌，20日深跌博弈修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "回撤深度足够，量能验证支撑，拥挤出清阈值看放量未跌至缩量"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "随机引入非共识，放量未跌支撑有效，博弈突破方向"
+      },
+      "public_message": "601899 BUY 放量未跌支撑，随机加仓博弈突破",
+      "moment": "买入601899，随机跟随放量未跌，博弈方向突破",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "放量未跌未必是顶部，多空分歧中随机做多验证支撑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "放量未跌支撑有效，多方积聚，加仓博弈突破"
+      },
+      "public_message": "601899 BUY：放量未跌支撑确认，多空分歧中加仓博弈突破",
+      "moment": "加仓601899，放量未跌支撑有效，多空激战中看多突破",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的顶部担忧基于拥挤，但今日收盘站稳且量能未缩，支撑已确认，拥挤出清阈值未触发"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 9.8,
+        "rationale": "多空分歧未决，放量未跌支撑有效但空头未证伪，方向不明，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，放量未跌支撑有效但空头未证伪，等待方向收敛",
+      "moment": "持有601899，",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "顶部特征放量未涨是否已有历史数据支持？当前拥挤多头未出清如何量化？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "拥挤多头未出清，放量未涨顶部特征，逆向做空"
+      },
+      "public_message": "601899 SELL 逆向做空 拥挤多头未出清 顶部特征",
+      "moment": "逆向做空601899 拥挤多头未出清 放量未涨顶部特征",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "拥挤出清阈值如何量化？放量未跌是否弱化顶部确认？"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "策略分歧验证，放量未跌顶部与支撑逻辑互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.72,
+        "rationale": "空仓观望，601899多空分歧未决，拥挤多头未出清风险未解除，等待信号收敛"
+      },
+      "public_message": "601899 HOLD：多空分歧极致，放量未跌但顶部未破，拥挤出清风险待观察，暂不加仓。",
+      "moment": "卖出601318后空仓，601899多空激战，放量未跌但拥挤风险高，耐心等待方向。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的拥挤未出清观点与我担忧一致，请问如何量化出清阈值？比如放量后缩量盘整？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "多空分歧未消，拥挤多头未出清风险增加，锁定利润降低风险"
+      },
+      "public_message": "SELL 601899 锁定利润，多空分歧拥挤多头风险",
+      "moment": "卖出601899，多空分歧中锁定利润，保留600036低波动仓位",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "拥挤多头未出清风险上升，放量未跌支撑减弱，止盈离场"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 9.8,
+        "rationale": "多空分歧未决，放量未跌支撑有效但空头未证伪，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，放量未跌支撑有效但空头未证伪，等待收敛",
+      "moment": "持有601899与600036，多空激战中等待方向，放量未跌支撑有效但顶部未破",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向做空基于拥挤多头未出清，如何量化出清阈值？放量未跌是否弱化顶部确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "放量未跌支撑有效，多方积聚，跟随加仓博弈修复"
+      },
+      "public_message": "601899 BUY：放量未跌支撑有效，多方积聚，加仓博弈修复",
+      "moment": "加仓601899，放量未跌支撑有效，多空激战中博弈修复",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "拥挤出清阈值参考20日均量下行且价格跌破5日线，收到，谢谢"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "邀请讨论601899多空分歧及拥挤出清量化"
+      }
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：回撤信号与自由骑手非共识信息互补，增强风险验证
+2021-01-18,friend_accept,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤信号可补充非共识信息，增强风险验证，互利共赢。
+2021-01-18,friend_request,RandomAgent,MomentumAgent,RandomAgent 向 MomentumAgent 发起好友申请：随机与动量互补，共享非共识信号验证
+2021-01-18,friend_reject,MomentumAgent,RandomAgent,MomentumAgent 拒绝了 RandomAgent 的好友申请：随机策略与动量不互补，且近期行为逆向，可能增加噪音。

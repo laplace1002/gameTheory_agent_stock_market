@@ -1,0 +1,254 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 287.7,
+        "rationale": "ret5=-9.24%跌幅较大，接近均值回归区间，但未确认反转信号，谨慎持有"
+      },
+      "public_message": "000858 HOLD：-9.24%跌幅或过度，等待量价确认",
+      "moment": "持有000858，-9%跌幅等待均值回归信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858已跌9%，是否符合你逆向买入条件？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.95,
+        "rationale": "持仓000002近期波动低，收益为正，无显著回撤风险，维持当前仓位。"
+      },
+      "public_message": "000002 HOLD：低波动稳收益，等待市场明朗。",
+      "moment": "持有000002，低波动策略继续有效，组合风险可控。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同持000002，低波动下保持稳定，你如何看待后市？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.14,
+        "rationale": "追涨强势趋势，ret5=9.74%量能放大，动量延续"
+      },
+      "public_message": "600036 BUY：趋势强9.7%，量能驱动，加仓动量。",
+      "moment": "加仓600036，趋势延续。",
+      "private_message": null,
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "低波动视角可补充高动量股风险验证，互补判断趋势延续性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "回撤-6.96%超卖，量异常后价值修复机会。"
+      },
+      "public_message": "601899 买入：回撤-6.96%超卖，量异常后价值修复。",
+      "moment": "加仓601899，回撤-6.96%超卖，分歧中寻找价值修复。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "我买入601899逆向操作，你卖出我买入，可验证其回撤深度与修复空间。"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "分歧验证601899回撤深度与价值修复机会，互补判断。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.95,
+        "rationale": "多数个股近5日下跌，市场偏弱；600036超买风险，000002量异常未确认趋势，保持现金观望。"
+      },
+      "public_message": "000002 HOLD：市场偏弱，多数个股下跌，缺乏强信号，继续现金观望。",
+      "moment": "HOLD 000002：量异常未确认，市场整体偏弱，等待更明确证据。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002415分歧明显，你买入但DynamicTeamAgent止损，我暂不参与。"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向视角可验证601899量异常是否极端，互补判断分歧价值。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.56,
+        "rationale": "基于技术分析看跌"
+      },
+      "public_message": "601899 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 30,
+        "price": 51.14,
+        "rationale": "近5日涨幅9.74%，成交量显著放大，动量强劲且趋势确认，银行板块近期强势，预计继续上行。"
+      },
+      "public_message": "BUY 600036：动量强+量能确认，趋势明确，加仓。",
+      "moment": "买入600036，动量9.74%且量能放大，趋势确认。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "600036动量更强，建议关注，可与我一起验证趋势延续性。"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "动量策略需要低波动视角互补风险判断，验证趋势延续性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 58.9,
+        "rationale": "局部调整信号出现，但趋势仍强，继续持有观察"
+      },
+      "public_message": "002415 HOLD：局部调整信号与动量并存，继续持有观察确认",
+      "moment": "持有002415，趋势调整信号与动量共存，等待验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你卖出002415基于趋势转弱，但收盘数据仍涨2.72%，是否需重新评估？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.95,
+        "rationale": "当前持仓000002涨幅温和，未出现极端拥挤或一致看多，继续等待逆向信号峰值。"
+      },
+      "public_message": "000002 HOLD：未极端拥挤，等待逆向信号",
+      "moment": "持有000002，耐心等待601899分歧极端化再行动。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你卖出601899，我仍观望，量异常未极致，可能酝酿反弹。"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "你持有601899，我关注逆向机会，互补验证量异常拐点。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 58.9,
+        "rationale": "002415近5日+2.72%，趋势未破坏，量能稳定，继续持有观察。"
+      },
+      "public_message": "002415 HOLD：趋势+2.72%未破坏，等待量能确认。",
+      "moment": "持有002415，趋势稳定，等待更明确信号。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你的止损基于回撤，但我看5日涨幅2.72%，趋势仍在，暂持观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.14,
+        "rationale": "近5日涨幅9.74%且成交量巨大，趋势确认，跟随动量买入。"
+      },
+      "public_message": "600036 BUY：量价齐升，趋势强劲，买入。",
+      "moment": "买入600036，量价配合确认趋势，跟随动量。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "关注600036，近5日涨幅9.74%且放量，趋势确认，你怎么看？"
+      },
+      "friend_request": {
+        "to": "RandomAgent",
+        "reason": "你对601899量异常的分歧观点有验证价值，申请好友交流。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.56,
+        "rationale": "量异常未确认趋势，近5日跌幅6.96%，部分减仓控制风险"
+      },
+      "public_message": "601899 SELL：量异常未确认趋势，跌幅大，减仓50股",
+      "moment": "减仓601899，量异常分歧，等待更明确信号",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "我减仓601899，量异常风险待验证，你的低波动视角如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

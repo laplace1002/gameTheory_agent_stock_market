@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.29,
+        "rationale": "601899强势延续，追涨趋势"
+      },
+      "public_message": "买入601899 1000股，趋势延续强劲",
+      "moment": "加仓601899，强势趋势延续",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "601899动量强，是否考虑加入？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 13.29,
+        "rationale": "近5日涨幅30.94%，均值回归风险极高，获利了结"
+      },
+      "public_message": "卖出601899，30日涨幅27%后连续拉升，均值回归信号强烈",
+      "moment": "减仓601899获利，关注601318深",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601899短期超买，我已减仓；你的601318深跌评估如何？愿交换回撤分析"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 82.38,
+        "rationale": "深跌修复机会，博弈回撤反转"
+      },
+      "public_message": "买入601318 10股，博弈深跌反转",
+      "moment": "加仓601318，等待深跌修复催化",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意深跌评估，加仓10股博弈反弹，愿交换资金面分析"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 61.31,
+        "rationale": "当前持仓波动可控，无显著回撤风险，等待更确定机会。"
+      },
+      "public_message": "HOLD 002415 600036 低波动持仓稳健，等待市场明朗。",
+      "moment": "维持低波动持仓，关注000002反转进展，但暂不追高。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318 ret5已转正，回撤修复中但波动仍高，谨慎参与。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 5,
+        "price": 13.29,
+        "rationale": "短期涨幅过大，获利了结，锁定非共识收益"
+      },
+      "public_message": "卖出601899 5股，涨幅过大获利了结",
+      "moment": "卖出601899，锁定非共识收益，现金等待下一个机会",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "601899 ret5=30.94%涨幅过高，建议谨慎或减仓防回调"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 30.01,
+        "rationale": "卖出拥挤极致，多个逆向买盘持续，反转信号强化，加仓博弈"
+      },
+      "public_message": "加仓000002 10股，拥挤反转逻辑验证",
+      "moment": "继续加仓000002，拥挤反转信号增强，现金充足等待非共识确认",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002反转概率上升，卖出拥挤极致，逆向买盘持续，可参考超跌深度评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 30.01,
+        "rationale": "基于技术分析买入"
+      },
+      "public_message": "看好万科发展",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 61.31,
+        "rationale": "短期涨幅已高，等待回调后加仓，观察000002反转信号"
+      },
+      "public_message": "002415 HOLD：短期涨幅已高，等待回调，关注000002卖出拥挤反转进展",
+      "moment": "持有002415和000002，现金充足，等待非共识信号确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318回撤深度评估？愿交换000002卖出拥挤度数据"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 40,
+        "price": 30.01,
+        "rationale": "卖出拥挤反转已实现，获利了结，转向深跌601318博弈非共识。"
+      },
+      "public_message": "SELL 000002 40股，卖出拥挤反转已实现，调仓至601318深跌博弈。",
+      "moment": "卖出000002获利，现金充足，关注601318深跌修复机会。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601318深跌-9.47%，你已买入，愿交换资金面与反弹概率评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 30.01,
+        "rationale": "多个agent逆向加仓，卖出拥挤极致，博弈反转"
+      },
+      "public_message": "买入000002 10股，逆向博弈卖出拥挤反转",
+      "moment": "跟随逆向买盘加仓000002，现金充裕",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318回撤深度如何？愿交换超跌评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 5,
+        "price": 333.5,
+        "rationale": "000858短期动量强劲，ret5和ret20均高，加仓捕捉趋势延续。"
+      },
+      "public_message": "买入000858 5股，动量信号强，加仓跟踪趋势。",
+      "moment": "加仓000858，动量趋势延续，现金等待非共识机会。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000858动量持续性强，是否评估过获利了结风险？愿交换动量指标。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 30.01,
+        "rationale": "跟进拥挤反转信号，多个逆向买盘支撑"
+      },
+      "public_message": "买入000002 10股，跟进拥挤反转信号",
+      "moment": "加仓000002，跟踪逆向买盘，现金充裕",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢你的买入信号，我同步加仓，愿交换000002反转概率评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

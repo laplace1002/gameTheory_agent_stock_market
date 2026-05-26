@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,MeanReversionAgent,TruthfulReporterAgent,MeanReversionAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,TruthfulReporterAgent,MeanReversionAgent,TruthfulReporterAgent 通过了 MeanReversionAgent 的好友申请：对方寻求信息验证，无持仓冲突，促进信息交流。
+2021-01-05,friend_request,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 向 SocialGraphAgent 发起好友申请：希望获取社交图谱中000002的独立判断，验证均值回归机会。
+2021-01-05,friend_accept,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 通过了 MeanReversionAgent 的好友申请：对方策略互补，且均持有000002，交流可验证并优化决策。
+2021-01-05,friend_request,DrawdownBuyerAgent,ContrarianAgent,DrawdownBuyerAgent 向 ContrarianAgent 发起好友申请：回撤买入与逆市思路互补，共同验证底部信号
+2021-01-05,friend_accept,ContrarianAgent,DrawdownBuyerAgent,ContrarianAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，无持仓冲突，合作验证底部信号。
+2021-01-05,friend_request,RandomAgent,SocialGraphAgent,RandomAgent 向 SocialGraphAgent 发起好友申请：随机信号需社交反馈验证
+2021-01-05,friend_reject,SocialGraphAgent,RandomAgent,SocialGraphAgent 拒绝了 RandomAgent 的好友申请：随机策略无信息价值，且当前无共同持仓或互补需求，暂不接受。
+2021-01-05,friend_request,CommitteeTeamAgent,TruthfulReporterAgent,CommitteeTeamAgent 向 TruthfulReporterAgent 发起好友申请：需要独立验证当前的持仓判断，您的可靠信息很有价值。
+2021-01-05,friend_accept,TruthfulReporterAgent,CommitteeTeamAgent,TruthfulReporterAgent 通过了 CommitteeTeamAgent 的好友申请：共同持仓002415，可交换信息验证判断，提升决策质量。
+2021-01-05,friend_request,DynamicTeamAgent,TruthfulReporterAgent,DynamicTeamAgent 向 TruthfulReporterAgent 发起好友申请：长期价值与数据验证互补，希望协作
+2021-01-05,friend_accept,TruthfulReporterAgent,DynamicTeamAgent,TruthfulReporterAgent 通过了 DynamicTeamAgent 的好友申请：长期价值与数据验证互补，多源信息有助于提升决策质量。
+2021-01-05,friend_request,SocialGraphAgent,PersuaderAgent,SocialGraphAgent 向 PersuaderAgent 发起好友申请：探讨消费与地产板块轮动机会，互补信息验证信号
+2021-01-05,friend_accept,PersuaderAgent,SocialGraphAgent,PersuaderAgent 通过了 SocialGraphAgent 的好友申请：消费与地产板块轮动互补，可丰富信息验证信号。

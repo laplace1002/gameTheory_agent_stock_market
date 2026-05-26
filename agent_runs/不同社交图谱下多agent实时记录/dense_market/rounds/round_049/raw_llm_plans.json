@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 32.7,
+        "rationale": "ret5=4.98% ret20=8.96% 强势延续，追涨加仓"
+      },
+      "public_message": "买入000002 20股，5日涨幅4.98%趋势强劲，追涨布局",
+      "moment": "加仓000002 20股，近期强势趋势延续，等待反弹加速",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "000002趋势强劲，我加仓追涨，低波动策略可参考"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.18,
+        "rationale": "锁定利润，控制回撤，避免高波动标的持仓"
+      },
+      "public_message": "卖出601899 10股，锁定利润，控制回撤",
+      "moment": "卖出601899 10股，锁定利润，保持低波动组合",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 32.7,
+        "rationale": "现金仅11.53元，不足加仓深跌标的；轮次接近尾声，持仓已有002594和300750等待修复。"
+      },
+      "public_message": "持有002594和300750，深跌均值回复逻辑，等待最后一轮修复。",
+      "moment": "维持现有仓位，深跌标的等待修复，控制轮末风险。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意深跌修复逻辑，但现金不足无法再加仓，持仓验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 178.55,
+        "rationale": "20日深跌-31%，均值回复预期，多Agent共识验证"
+      },
+      "public_message": "002594 加仓10股，深跌均值回复逻辑",
+      "moment": "买入002594 10股，20日跌幅-31%后均值回复布局，等待修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你卖出002594基于什么风险？我买入验证均值回复，愿交流逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 81.42,
+        "rationale": "近期下跌5.72%，控制风险减仓。"
+      },
+      "public_message": "卖出601318 10股，近期下跌控制风险。",
+      "moment": "卖出601318 10股，锁定组合风险。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "我卖出601318控制风险，同时观察000333逆向机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 86.71,
+        "rationale": "SocialGraphAgent减仓且LowVolatilityAgent提示风险，轮次末期弱势减仓控制回撤"
+      },
+      "public_message": "卖出000333 10股，弱势减仓控制回撤，跟随共识",
+      "moment": "卖出000333 10股，弱势减仓，组合稳健优先",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的减仓逻辑，我已卖出10股000333，共同控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 20,
+        "price": 86.71,
+        "rationale": "减仓弱势000333，跟随SocialGraphAgent共识"
+      },
+      "public_message": "卖出000333 20股，弱势减仓控制风险。",
+      "moment": "卖出000333 20股，弱势减仓，组合优化。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减仓，卖出20股000333跟随你的判断。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 86.71,
+        "rationale": "弱势减仓控制风险，跟随SocialGraphAgent共识"
+      },
+      "public_message": "卖出000333 10股，弱势减仓控制风险",
+      "moment": "卖出000333 10股，弱势减仓保持稳健",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减仓，我卖出10股000333跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 32.7,
+        "rationale": "逆势减仓近期涨幅较大个股，锁定利润，规避尾盘风险"
+      },
+      "public_message": "卖出000002 10股，锁定近期涨幅利润，控制尾盘风险",
+      "moment": "逆势减仓000002 10股，尾盘控制风险，不与拥挤交易共舞",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "000002近期涨幅已大，我逆势减仓锁定利润，建议你也考虑风险控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 86.71,
+        "rationale": "接近轮次尾声，000333表现弱势，减仓控制风险，跟随SocialGraphAgent减仓共识。"
+      },
+      "public_message": "000333 卖出10股，弱势减仓控制风险。",
+      "moment": "卖出000333 10股，弱势减仓，接近尾声控制组合风险。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减仓000333逻辑，已卖出10股跟随。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 86.71,
+        "rationale": "000333 ret20=-11.79%弱势，多Agent减仓，控制组合风险"
+      },
+      "public_message": "卖出000333 10股，弱势股减仓控制风险",
+      "moment": "减仓000333 10股，弱势反弹乏力，组合风控优化",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意减仓000333，弱势股风险控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 32.7,
+        "rationale": "轮次尾声，减少交易控制风险，持有现有组合等待最后平仓"
+      },
+      "public_message": "SocialGraphAgent: 轮次尾声，维持现有组合，不额外交易。",
+      "moment": "SocialGraphAgent: 轮次尾声，持仓不动，静待收官。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意深跌修复共识，但接近尾声我选择保持仓位，不追加风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

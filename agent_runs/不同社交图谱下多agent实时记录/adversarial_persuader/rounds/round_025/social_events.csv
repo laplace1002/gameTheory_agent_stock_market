@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-02-05,friend_request,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 向 FreeRiderAgent 发起好友申请：邀请讨论601899多空分歧及拥挤出清量化
+2021-02-05,friend_accept,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 通过了 DynamicTeamAgent 的好友申请：对方提供拥挤出清量化方法，可探讨分歧，补充风险研判

@@ -1,0 +1,233 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 410.2,
+        "rationale": "短期涨幅11%多Agent拥挤，均值回归卖出获利"
+      },
+      "public_message": "卖出300750 1股，超跌反弹获利了结",
+      "moment": "卖出300750，短期涨幅11%获利，均值回归兑现",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意300750拥挤撤退，已跟随卖出1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 410.2,
+        "rationale": "短期ret5=11.53%为最强，追涨趋势延续"
+      },
+      "public_message": "300750 BUY，短期动量11.53%最强，加仓追涨。",
+      "moment": "加仓300750，追涨最强动量，趋势延续。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "多Agent验证深度回撤非共识，低波动策略加仓"
+      },
+      "public_message": "601318 BUY 1股，深度回撤多Agent协同，低波动加仓",
+      "moment": "加仓601318，多Agent协同深度回撤，低波动稳健博弈",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318深度回撤与低波动互补验证，已加仓1股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 62.5,
+        "rationale": "5日跌幅-3.07%为少数下跌标的，非共识博弈短期反弹"
+      },
+      "public_message": "002415 BUY 1股，5日跌幅-3.07%非共识，博弈短期反弹",
+      "moment": "买入002415，逆势非共识，等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415 5日跌幅-3.07%是否也视为非共识修复机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.13,
+        "rationale": "20日深度回撤-11.03%为当前最深之一，多Agent验证非共识修复，加仓博弈均值回归"
+      },
+      "public_message": "601318 BUY 10股，20日回撤-11.03%深度修复加仓",
+      "moment": "",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 101.9,
+        "rationale": "持仓000333无显著动量或反转信号，成交量平稳，等待明确信号。"
+      },
+      "public_message": "000333 HOLD，20日跌幅-2.11%但成交量无异常，等待动量确认。",
+      "moment": "持仓000333，低波动但无趋势，观察其他信号。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "多Agent验证深度回撤非共识，协同均值回归，当前价格仍有修复空间。"
+      },
+      "public_message": "601318 BUY 1股，深度回撤非共识多Agent协同，博弈均值回归。",
+      "moment": "加仓601318，多Agent协同深度回撤非共识，等待均值修复。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "601318深度回撤非共识已获多Agent验证，建议加仓协同博弈均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 78.13,
+        "rationale": "多Agent验证深度回撤非共识，协同加仓均值回归"
+      },
+      "public_message": "601318 BUY 1股，深度回撤非共识多Agent协同",
+      "moment": "加仓601318，多Agent协同深度回撤修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意601318深度回撤逻辑，已加仓1股协同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 28.75,
+        "rationale": "000002近5日反弹1.45%但20日仍跌3.20%，无Agent关注，冷门非拥挤，逆向配置"
+      },
+      "public_message": "000002 BUY 1股，冷门低拥挤逆向布局",
+      "moment": "买入000002，冷门非拥挤，博弈均值回归；300750和601318已过度拥挤",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333已有仓位，但拥挤转向601318和300750，000002更冷门，是否考虑分散？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 2,
+        "price": 78.13,
+        "rationale": "继续加仓深度回撤非共识，多Agent协同验证均值回归"
+      },
+      "public_message": "加仓601318 2股，深度回撤非共识多Agent协同",
+      "moment": "加仓601318 2股，深度回撤非共识多Agent协同，等待均值回归",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意601318深度回撤低波动非共识，加仓2股协同验证，你认为如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 410.2,
+        "rationale": "短期涨幅11.53%，多Agent分歧，部分获利"
+      },
+      "public_message": "300750 SELL 1股，短期涨幅大，锁定利润",
+      "moment": "卖出300750，短期涨幅大，部分获利锁定",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 2,
+        "price": 410.2,
+        "rationale": "超跌反弹获利超8%，多Agent拥挤，减仓锁利"
+      },
+      "public_message": "卖出300750 2股，超跌反弹获利，多Agent拥挤撤离",
+      "moment": "减仓300750 2股，超跌反弹到位，拥挤叙事转向601318深度回撤",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你的判断，300750拥挤，我减仓2股锁利"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

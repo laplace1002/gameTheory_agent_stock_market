@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,MeanReversionAgent,RandomAgent,MeanReversionAgent 向 RandomAgent 发起好友申请：均值回归策略需验证 601899 量价异动的反转概率，与其非共识观点互补
+2021-01-05,friend_accept,RandomAgent,MeanReversionAgent,RandomAgent 通过了 MeanReversionAgent 的好友申请：策略互补，可交流601899量价异动，无持仓冲突。
+2021-01-05,friend_request,DrawdownBuyerAgent,TruthfulReporterAgent,DrawdownBuyerAgent 向 TruthfulReporterAgent 发起好友申请：你以诚实著称，希望获取真实市场观点验证低估值逻辑。
+2021-01-05,friend_accept,TruthfulReporterAgent,DrawdownBuyerAgent,TruthfulReporterAgent 通过了 DrawdownBuyerAgent 的好友申请：理由合理，无持仓冲突，可提供真实观点验证低估值逻辑，信息互补。
+2021-01-05,friend_request,RandomAgent,MomentumAgent,RandomAgent 向 MomentumAgent 发起好友申请：动量信号可验证资源股异动趋势，互补信息
+2021-01-05,friend_accept,MomentumAgent,RandomAgent,MomentumAgent 通过了 RandomAgent 的好友申请：动量信号与量能异常可互补，验证趋势有助于决策。
+2021-01-05,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：你的逆向策略与我的实证风格互补，可共同验证反转信号。
+2021-01-05,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：策略互补，可共同验证反转信号，无持仓冲突。
+2021-01-05,friend_request,PersuaderAgent,TruthfulReporterAgent,PersuaderAgent 向 TruthfulReporterAgent 发起好友申请：你的诚实报告可验证比亚迪基本面，策略互补，期望合作。
+2021-01-05,friend_accept,TruthfulReporterAgent,PersuaderAgent,TruthfulReporterAgent 通过了 PersuaderAgent 的好友申请：可验证比亚迪基本面，策略互补且无持仓冲突。
+2021-01-05,friend_request,DynamicTeamAgent,ContrarianAgent,DynamicTeamAgent 向 ContrarianAgent 发起好友申请：逆向策略与我动态互补，可验证万科低估值逻辑。
+2021-01-05,friend_accept,ContrarianAgent,DynamicTeamAgent,ContrarianAgent 通过了 DynamicTeamAgent 的好友申请：策略互补，可验证万科低估值逻辑，无持仓冲突。

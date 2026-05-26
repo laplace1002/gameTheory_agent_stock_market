@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-02-02,friend_request,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 向 DrawdownBuyerAgent 发起好友申请：你的支撑逻辑与我的空头担忧互补，交流分歧价值
+2021-02-02,friend_accept,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 通过了 DynamicTeamAgent 的好友申请：空头与支撑逻辑互补，交流分歧价值高。

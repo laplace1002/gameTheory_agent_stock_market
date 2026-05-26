@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.4,
+        "rationale": "ret5=8.43%领涨，量能放大，趋势延续加仓"
+      },
+      "public_message": "600036 BUY 1股：近5日涨幅8.43%领涨，量能配合，聚焦强势",
+      "moment": "600036加仓1股，ret5领涨，轮次末期聚焦强势股",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036 ret5=8.43%趋势强，建议调仓至该标的，规避弱势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.4,
+        "rationale": "近5日涨幅8.43%，轮次末期锁定利润，控制回撤"
+      },
+      "public_message": "600036 SELL 1股：近期涨幅较大，轮次末锁定利润控制回撤",
+      "moment": "600036减仓1股，涨幅背景下谨慎锁定利润，防范回调",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594拥挤分歧大，注意风险控制"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 264.31,
+        "rationale": "均值回归逻辑，深跌后反弹初步，加仓博弈修复"
+      },
+      "public_message": "000858 BUY 1股：深跌22%后反弹4.6%，均值回归加仓",
+      "moment": "000858加仓1股，深跌22%后均值回归博弈反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000858深跌反弹，均值回归逻辑加仓1股，共振修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.88,
+        "rationale": "拥挤卖出潮持续，轮次末期随机跟随减仓控制风险，非共识但符合实盘波动管理"
+      },
+      "public_message": "002594 SELL 1股：拥挤分歧中随机减仓，轮末控风险",
+      "moment": "002594减仓1股，拥挤浪潮中随机应变，轮末谨慎。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解逆向修复逻辑，但多数Agent减仓，我先随机减1股观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 264.31,
+        "rationale": "深跌22.86%后5日反弹4.64%，修复动力较强，轮次末期小仓位博弈修复。"
+      },
+      "public_message": "000858 BUY 1股：深跌22%后反弹4.6%，回撤买入博弈修复",
+      "moment": "000858加仓1股，深跌22%后反弹启动，回撤买入待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858深跌22%后反弹，回撤买入博弈修复，与你002594逆向逻辑一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.88,
+        "rationale": "拥挤卖出持续，轮次末期继续减仓控风险"
+      },
+      "public_message": "002594 SELL 1股：拥挤卖出未散，末期继续控风险",
+      "moment": "002594再减1股，拥挤分歧中保持谨慎，末期控回撤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤卖出共识强，逆向加仓风险仍高，建议等待企稳。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "短线弱势，轮次末减仓控风险"
+      },
+      "public_message": "002415 SELL 1股：短线弱于大盘，轮次末锁定。",
+      "moment": "002415减仓1股，弱势回调，轮次末控制波动。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意002415弱势判断，减仓1股控风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.3,
+        "rationale": "短线弱势，轮次末锁定利润"
+      },
+      "public_message": "002415 SELL 1股：短线弱势，轮次末锁定利润",
+      "moment": "减仓002415 1股，弱势股轮次末锁定利润",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意002415弱势判断，我也减仓1股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.88,
+        "rationale": "拥挤卖出持续，逆势加仓博弈深跌修复，轮次末控制仓位仅加1股。"
+      },
+      "public_message": "002594 BUY 1股：拥挤卖出未散，逆向加仓博弈修复。",
+      "moment": "逆流加仓002594，拥挤卖出中博弈修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意您的修复逻辑，我也再加1股002594，共振博弈。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.47,
+        "rationale": "拥挤卖出潮持续，多位Agent减仓，轮次末期控制波动风险。"
+      },
+      "public_message": "002594 SELL 1股：拥挤未散，减仓控风险。",
+      "moment": "002594减仓1股，拥挤分歧中保持谨慎，轮次末期控回撤。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "理解逆向修复逻辑，但拥挤卖出共识仍强，我暂减仓1股防范波动，后续若企稳再考虑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.09,
+        "rationale": "量能放大趋势向好，多Agent确认，加仓博弈延续"
+      },
+      "public_message": "601899 BUY 1股：量能放大趋势向好，加仓跟进",
+      "moment": "601899加仓1股，趋势向好量能充沛",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意601899趋势加仓，我也跟进买入1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.09,
+        "rationale": "量能充沛趋势向好，多Agent买入确认，跟进加仓"
+      },
+      "public_message": "601899 BUY 1股：量能充沛趋势向好，跟进加仓",
+      "moment": "601899加仓1股，趋势向好量能充沛",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意601899量价趋势，我也跟进买入1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

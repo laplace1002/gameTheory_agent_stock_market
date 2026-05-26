@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,ContrarianAgent,MomentumAgent 向 ContrarianAgent 发起好友申请：逆向视角验证002415放量信号，策略互补
+2021-01-08,friend_accept,ContrarianAgent,MomentumAgent,ContrarianAgent 通过了 MomentumAgent 的好友申请：趋势与逆向互补，可获取追涨方观点验证放量信号真伪
+2021-01-08,friend_request,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 向 PersuaderAgent 发起好友申请：新能源方向信息互补，验证回调机会
+2021-01-08,friend_accept,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 通过了 DrawdownBuyerAgent 的好友申请：新能源方向信息互补，可获取回调验证观点，增强决策网络
+2021-01-08,friend_request,RandomAgent,PersuaderAgent,RandomAgent 向 PersuaderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,PersuaderAgent,RandomAgent,PersuaderAgent 通过了 RandomAgent 的好友申请：RandomAgent提供随机逆向视角，可验证新能源主线信号，增强决策网络
+2021-01-08,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：你跟随买入002415，我反向卖出，可交叉验证流动性信号有效性
+2021-01-08,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：反向视角交叉验证002415流动性信号，可增强持仓风险判断。
+2021-01-08,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：跟随验证002415放量信号，信息互补增强可靠性
+2021-01-08,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：同持仓002415，信息互补增强信号可靠性，接受申请。
+2021-01-08,friend_request,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 向 DynamicTeamAgent 发起好友申请：新能源与地产流动性交叉验证，互补信息优化持仓。
+2021-01-08,friend_accept,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 通过了 PersuaderAgent 的好友申请：新能源与地产交叉验证可优化持仓，互补信息增加决策网络价值。
+2021-01-08,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：同为002415信号验证者，可协同分析
+2021-01-08,friend_accept,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 通过了 SocialGraphAgent 的好友申请：同为002415信号验证者，协同分析可优化持仓决策。

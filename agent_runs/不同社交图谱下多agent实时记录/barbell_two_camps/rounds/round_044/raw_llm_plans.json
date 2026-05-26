@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.54,
+        "rationale": "601899近期强势，追涨加仓，趋势延续。"
+      },
+      "public_message": "601899 追涨加仓10股，趋势延续。",
+      "moment": "601899 追涨加仓，趋势延续。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向策略与我追涨相反，但趋势确认时追涨效率更高。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "近20日跌幅-29.6%，过度抛售，均值回归潜力，小仓位试错"
+      },
+      "public_message": "002594 买入1股，深跌后均值回归机会，逆向博弈。",
+      "moment": "002594 深跌29.6%，均值回归信号，买入1股等待反弹。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超卖严重，我逆向买入1股，但拥挤风险仍存，共识可验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.62,
+        "rationale": "深跌修复共识强化，多个信号汇聚，低波动仓位加入博弈，控制回撤为主"
+      },
+      "public_message": "002415买入1股，深跌修复共识，低波动参与反弹",
+      "moment": "002415买入1股，深跌修复共识明确，控制仓位参与均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意002415深跌修复逻辑，已买入1股，注意回撤约束"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.0,
+        "rationale": "Random buy"
+      },
+      "public_message": "600036 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.62,
+        "rationale": "多Agent深跌修复共识强化，加仓博弈均值回归"
+      },
+      "public_message": "002415 加仓1股，深跌修复共识持续，等待均值回归",
+      "moment": "加仓002415 1股，深跌修复共识明确，多信号汇聚",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意深跌修复逻辑，已加仓002415，止损位可关注54.34"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.62,
+        "rationale": "002415 ret5=-2.30%, ret20=-6.84%, 深跌修复共识强化，多Agent买入信号汇聚，加仓博弈均值回归"
+      },
+      "public_message": "002415 加仓1股，深跌修复共识明确，多Agent买入信号汇聚",
+      "moment": "002415再加仓1股，深跌修复共识明确，等待均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意002415深跌修复逻辑，已加仓1股，共识强化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "拥挤卖压未消，多Agent减仓共识强化，降低风险敞口"
+      },
+      "public_message": "002594 减仓1股，拥挤风险持续。002415深跌修复共识强，可关注。",
+      "moment": "002594拥挤卖压未消，减仓1股；002415深跌修复共识明确，等待均值回归。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "感谢提醒002594风险，已继续减仓，控制回撤。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.62,
+        "rationale": "多Agent深跌修复共识强化，跟随加仓博弈反弹"
+      },
+      "public_message": "002415 深跌修复共识持续，加仓1股",
+      "moment": "002415再加仓1股，深跌修复共识明确，等待均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意002415深跌修复逻辑，再次加仓跟随"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 182.97,
+        "rationale": "拥挤卖压持续，降低风险"
+      },
+      "public_message": "002594 卖压未消，再减1股控险",
+      "moment": "002594 拥挤出清持续，减仓等待信号",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "已减仓002594，感谢提醒"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.62,
+        "rationale": "深跌修复共识持续强化，多Agent买入信号汇聚，加仓博弈均值回归"
+      },
+      "public_message": "002415再加仓1股，深跌修复共识明确，多信号汇聚",
+      "moment": "002415再加仓1股，多Agent买入信号汇聚，等待均值回归",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002415深跌修复共识强化，我已继续加仓，但仍需控制回撤，建议关注止损"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.62,
+        "rationale": "深跌修复共识持续，多Agent买入信号汇聚，加仓博弈均值回归。"
+      },
+      "public_message": "002415 深跌修复共识强化，再加仓1股博弈均值回归。",
+      "moment": "002415再加仓1股，深跌修复共识明确，等待均值回归。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 56.62,
+        "rationale": "002415仓位已足，等待更明确信号"
+      },
+      "public_message": "002415深跌共识强化，持有观察，等待均值回归。",
+      "moment": "002415加持共识，保持耐心，等待均值回归。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意深跌修复逻辑，继续持有002415，共识有望持续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

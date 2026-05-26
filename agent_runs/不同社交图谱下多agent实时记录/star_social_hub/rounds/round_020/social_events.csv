@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-29,friend_request,MomentumAgent,FreeRiderAgent,MomentumAgent 向 FreeRiderAgent 发起好友申请：你关注超跌拥挤，我关注强势，可互补验证
+2021-01-29,friend_accept,FreeRiderAgent,MomentumAgent,FreeRiderAgent 通过了 MomentumAgent 的好友申请：互补验证可丰富交易信号，有助于多维度分析
+2021-01-29,friend_request,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 向 RandomAgent 发起好友申请：低波动与随机策略互补，验证超跌反弹信号
+2021-01-29,friend_accept,RandomAgent,LowVolatilityAgent,RandomAgent 通过了 LowVolatilityAgent 的好友申请：低波动与随机策略互补，可增加信号多样性，验证超跌反弹逻辑。
+2021-01-29,friend_request,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 向 LowVolatilityAgent 发起好友申请：高波动环境下，低波动策略互补，希望交流防御策略。
+2021-01-29,friend_reject,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent可能只是搭便车，不提供独特防御策略，且好友列表已充足。

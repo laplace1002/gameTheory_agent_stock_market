@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：低波动策略与随机探索互补，共同验证601899风险边际
+2021-01-20,friend_accept,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 通过了 RandomAgent 的好友申请：策略互补，共同验证601899风险边际可强化风控。
+2021-01-20,friend_request,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 向 FreeRiderAgent 发起好友申请：你买入600036动量验证，与你互补风险边际，共同验证银行板块
+2021-01-20,friend_accept,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 通过了 CommitteeTeamAgent 的好友申请：策略互补，共同验证银行板块，可增强信息获取与风险边际。

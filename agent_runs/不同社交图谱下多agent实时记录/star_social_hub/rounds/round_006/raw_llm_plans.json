@@ -1,0 +1,263 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.67,
+        "rationale": "持仓601899，短期涨幅6.27%，但均值回归条件未触发，等待超卖信号。"
+      },
+      "public_message": "HOLD 601899，短期反弹后观望，等待均值回归机会。",
+      "moment": "HOLD 601899，当前无超卖标的，耐心等待。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415放量横盘，逆向拥挤信号需确认，我关注均值回归机会。"
+      },
+      "friend_request": {
+        "to": "None",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "放量横盘但趋势延续，加仓押注突破"
+      },
+      "public_message": "002415加仓100股，放量横盘后看趋势延续突破",
+      "moment": "002415加仓，放量横盘视为蓄力，看多趋势延续",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同为002415持仓，放量横盘后突破概率大，是否跟进？"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "同为002415持仓者，协同验证趋势延续信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 48.42,
+        "rationale": "当前市场波动较大，002415放量横盘存在拥挤风险，600036近期涨幅已高但未出现反转信号，维持现有仓位控制回撤。"
+      },
+      "public_message": "HOLD 600036，002415放量横盘需警惕拥挤，低风险仓位观望。",
+      "moment": "HOLD 600036，观望002415放量横盘演变，控制回撤。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002415放量不涨，你如何评估拥挤风险？我维持低波动策略不动。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 390.0,
+        "rationale": "300750近5日回调3.49%，新能源板块景气度高，预期价值修复"
+      },
+      "public_message": "300750近期回调3.49%，预期新能源主线修复，BUY",
+      "moment": "300750短调后加仓，关注新能源修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750短调买入，逆向看是否还有下行风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.0,
+        "rationale": "放量横盘，多空分歧未解，等待价格方向确认"
+      },
+      "public_message": "002415 HOLD：放量但价未动，多空分歧，暂持观望",
+      "moment": "002415放量横盘，持仓等待多空力量博弈结果",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002415放量横盘，你如何判断后续方向？是否考虑减仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.67,
+        "rationale": "紫金矿业近5日上涨6.27%，成交量异常放大，可能延续趋势，小仓位测试非共识信号"
+      },
+      "public_message": "601899 买入，量价齐升，非共识机会",
+      "moment": "601899 量价齐升，逆向思考关注",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899量价齐升，逆向视角看是否过度拥挤？我小仓位测试"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "紫金矿业低波动中寻找趋势，交叉验证信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 234.86,
+        "rationale": "新能源主线首日横盘，持仓等待政策催化，无明确风险信号需调整。"
+      },
+      "public_message": "002594 HOLD：新能源主线首日横盘，等待政策催化信号，持仓观察。",
+      "moment": "002594新能源主线首日横盘，持仓等待催化，关注政策与流动性共振。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594新能源横盘，与002415放量信号交叉验证，方向待确认。可协同关注主线轮动。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.0,
+        "rationale": "放量横盘多空分歧，等待价格方向确认"
+      },
+      "public_message": "002415放量横盘，多空分歧，HOLD现有仓位等待确认",
+      "moment": "HOLD 002415及600519，放量信号待验证，继续观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415放量不涨，逆向视角如何看拥挤风险？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向视角验证002415拥挤风险，信息互补优化持仓"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.78,
+        "rationale": "拥挤信号未确认，保持现金等待机会"
+      },
+      "public_message": "000002 HOLD：002415放量横盘需警惕拥挤风险",
+      "moment": "002415拥挤风险待验证，000002观望",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002415放量不涨，逆向看多头疲态，谨慎追多"
+      },
+      "friend_request": {
+        "to": "FreeRiderAgent",
+        "reason": "逆向视角与跟随交叉验证，优化决策"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.0,
+        "rationale": "放量横盘，多空分歧未消，拥挤风险与流动性信号并存，暂持观望。"
+      },
+      "public_message": "002415 HOLD：放量横盘，多空分歧，等待方向确认。",
+      "moment": "002415放量但未涨，多空博弈，继续持仓观察。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415放量横盘，你观察到多空哪方更强？是否考虑减仓？"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "逆向视角验证002415拥挤风险，互补信号提升决策稳健性。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 59.0,
+        "rationale": "放量横盘信号未确认，刚建仓观察多空博弈"
+      },
+      "public_message": "002415 HOLD：放量横盘，等待方向确认",
+      "moment": "002415放量横盘，50股持仓观望，关注多空力量变化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你提示002415拥挤风险，我小仓位验证，如何判断拥挤阈值？"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "同为002415持仓者，协同分析放量信号验证有效性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 59.0,
+        "rationale": "放量横盘多空分歧，SocialGraph显示拥挤风险，减仓50股锁定部分利润"
+      },
+      "public_message": "002415放量横盘，社交拥挤信号，减仓一半",
+      "moment": "减仓002415，社交图谱拥挤度上升",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同为002415验证者，放量后横盘，建议减仓规避拥挤"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

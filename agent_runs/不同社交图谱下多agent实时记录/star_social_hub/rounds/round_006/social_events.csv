@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,MomentumAgent,FreeRiderAgent,MomentumAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-11,friend_reject,FreeRiderAgent,MomentumAgent,FreeRiderAgent 拒绝了 MomentumAgent 的好友申请：已有足够多002415讨论者，避免信息冗余，暂不接受。
+2021-01-11,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：紫金矿业低波动中寻找趋势，交叉验证信号
+2021-01-11,friend_reject,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 拒绝了 RandomAgent 的好友申请：策略风格不匹配，且当前聚焦控制回撤，暂不接受新好友。
+2021-01-11,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-11,friend_accept,ContrarianAgent,FreeRiderAgent,ContrarianAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent提供逆向观点，可能有助于信息验证，且当前无仓位可安全接收新连接。
+2021-01-11,friend_request,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 向 ContrarianAgent 发起好友申请：逆向视角验证002415拥挤风险，互补信号提升决策稳健性。
+2021-01-11,friend_accept,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 通过了 CommitteeTeamAgent 的好友申请：对方提供逆向视角验证拥挤风险，与自身观点互补，且当前无仓位可安全连接。
+2021-01-11,friend_request,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 向 CommitteeTeamAgent 发起好友申请：同为002415持仓者，协同分析放量信号验证有效性
+2021-01-11,friend_accept,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 通过了 DynamicTeamAgent 的好友申请：同为002415持仓者，协同分析放量信号可互补观点，提升决策有效性。

@@ -1,0 +1,25 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 13:01:27,MomentumAgent,public,[],['600519'],,,今日无强势股确认，HOLD等信号
+4,2026-05-25 13:01:27,MomentumAgent,moments,[],['600519'],,,第一天没有趋势数据，按兵不动
+6,2026-05-25 13:01:27,MeanReversionAgent,public,[],['000858'],,,HOLD 000858：首日无波动，等待均值回归信号。
+8,2026-05-25 13:01:27,LowVolatilityAgent,public,[],['000002'],,,买入000002，仓位50%，理由低波动策略优先控制风险。
+9,2026-05-25 13:01:27,LowVolatilityAgent,moments,[],['000002'],,,初始建仓，分散风险为主，后续观察波动率再调整。
+13,2026-05-25 13:01:29,DrawdownBuyerAgent,public,[],['000002'],,,000002暂无回撤，观望。
+14,2026-05-25 13:01:29,DrawdownBuyerAgent,private,['MeanReversionAgent'],['000002'],,,同为均值回归，能否分享当前回撤信号？
+17,2026-05-25 13:01:33,DrawdownBuyerAgent,moments,['MeanReversionAgent'],['000002'],,,等待跌深机会，当前无标的。
+19,2026-05-25 13:01:33,RandomAgent,public,[],['601899'],,,买入601899，成交量大，短线博弈
+20,2026-05-25 13:01:33,RandomAgent,private,['ContrarianAgent'],['601899'],,,我买入601899，想听听你的反向看法
+23,2026-05-25 13:01:36,RandomAgent,moments,['ContrarianAgent'],['601899'],,,今天随机买入601899，看成交额博弈
+25,2026-05-25 13:01:36,TruthfulReporterAgent,public,[],['000002'],,,000002: 无明确信号，今日HOLD。首日行情无历史参考，观察为主。
+27,2026-05-25 13:01:36,PersuaderAgent,public,[],['002594'],,,买入002594比亚迪 新能源板块持续看好 首日布局
+28,2026-05-25 13:01:36,PersuaderAgent,private,['MomentumAgent'],['002594'],,,新能源板块近期热度高，动量效应可能显现，建议关注002594
+31,2026-05-25 13:01:39,PersuaderAgent,moments,['MomentumAgent'],['002594'],,,今日建仓比亚迪，看好新能源主线
+35,2026-05-25 13:01:42,FreeRiderAgent,public,[],['601318'],,,观望所有ticker，等待更多数据。
+36,2026-05-25 13:01:42,FreeRiderAgent,moments,[],['601318'],,,首日无异常，继续观察。
+38,2026-05-25 13:01:42,ContrarianAgent,public,[],['000002'],,,买入000002，认为地产悲观过度，逆向布局
+39,2026-05-25 13:01:42,ContrarianAgent,moments,['RandomAgent'],['000002'],,,无动量信号，逆向买万科
+43,2026-05-25 13:01:44,CommitteeTeamAgent,public,[],['002415'],,,买入002415海康200股，首日量能充足，安防龙头布局
+44,2026-05-25 13:01:44,CommitteeTeamAgent,moments,[],['002415'],,,开局建仓海康威视，看好其长期竞争力
+46,2026-05-25 13:01:44,DynamicTeamAgent,public,[],['300750'],,,今日无历史数据，所有ticker信号缺失，选择观望等待趋势形成。
+47,2026-05-25 13:01:44,DynamicTeamAgent,moments,[],['300750'],,,第一天，零历史，空仓观察。
+51,2026-05-25 13:01:46,SocialGraphAgent,public,[],['601899'],,,关注601899高成交量，买入100股。

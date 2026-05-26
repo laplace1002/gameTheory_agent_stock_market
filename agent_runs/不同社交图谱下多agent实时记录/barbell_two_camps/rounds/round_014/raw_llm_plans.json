@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 63.2,
+        "rationale": "近5日涨幅10.41%最强，无卖出信号，趋势延续。"
+      },
+      "public_message": "加仓002415，强势延续。",
+      "moment": "加仓002415，趋势延续。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 296.95,
+        "rationale": "均值回归共识拥挤，ContrarianAgent卖出信号，部分止盈降风险"
+      },
+      "public_message": "000858 SELL 均值回归共识拥挤，部分止盈锁定利润",
+      "moment": "部分止盈000858，避免共识拥挤回调",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你000858拥挤判断，我部分止盈100股，验证回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 4,
+        "price": 52.64,
+        "rationale": "多agent卖出信号，短期涨幅过大，锁定利润控制回撤"
+      },
+      "public_message": "卖出600036，短期涨幅大且多卖出信号，减仓降波动。",
+      "moment": "清仓600036，短期过热，回避回调风险。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的600036减仓判断，已清仓锁定利润。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "等待更深回撤机会，当前共识拥挤风险未解除"
+      },
+      "public_message": "000858 HOLD 等待更深回撤机会，控制拥挤风险",
+      "moment": "000858持仓观望，等待更好的回撤买点",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对000858拥挤的判断，暂持观察，待回调再考虑加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.97,
+        "rationale": "最大跌幅非共识后反弹至5%，无人讨论，锁定部分利润。"
+      },
+      "public_message": "601899 SELL 部分止盈，非共识反弹获利了结。",
+      "moment": "卖出601899，非共识止盈，锁定利润等待更深回调。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我在601899上做非共识止盈，逆向共识热议。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "均值回归逻辑未完全兑现，多空分歧存在但超跌反弹动能仍在，暂持观察"
+      },
+      "public_message": "000858 HOLD 均值回归未结束，避免追涨杀跌，等待确认",
+      "moment": "持有000858，等待均值回归确认，不追高600036",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858共识拥挤可能过度，均值回归逻辑尚未完全兑现，暂持验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 100.1,
+        "rationale": "跟随DrawdownBuyer和CommitteeTeam的超跌修复信号，小仓测试"
+      },
+      "public_message": "买入000333，超跌修复逻辑，小仓验证",
+      "moment": "000333买入1股，超跌反弹测试，分散持仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "感谢你的000333超跌信号，我小仓跟进验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 296.95,
+        "rationale": "ContrarianAgent卖出信号提示共识拥挤，部分止盈降低风险"
+      },
+      "public_message": "000858 SELL 共识拥挤，部分止盈",
+      "moment": "减仓000858，锁定部分利润，应对共识拥挤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的共识拥挤观点，我减仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.1,
+        "rationale": "涨幅有限，持有现金等待拥挤逆转"
+      },
+      "public_message": "000002 SELL 涨幅有限，持有现金等待逆向机会",
+      "moment": "卖出000002，现金为王，等待共识崩溃",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333超跌共识可能过强，注意回调风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 52.64,
+        "rationale": "短期涨幅7.32%，多Agent卖出信号一致，部分止盈锁定利润"
+      },
+      "public_message": "600036 SELL 短期涨幅大，多信号止盈",
+      "moment": "减仓600036，锁定部分利润，关注其他超跌机会",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意600036减仓判断，我已卖出10股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 100.1,
+        "rationale": "超跌反弹，跟随DrawdownBuyer和CommitteeTeamAgent信号，分散组合"
+      },
+      "public_message": "000333 BUY 超跌反弹买入10股；600036 SELL 继续减仓锁定利润",
+      "moment": "减仓600036锁定利润，买入000333试仓超跌修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000333超跌逻辑，买入10股跟随验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 296.95,
+        "rationale": "多空分歧但均值回归逻辑未完全兑现，暂持观察"
+      },
+      "public_message": "000858 HOLD 多空分歧中均值回归逻辑仍在，暂持观察",
+      "moment": "持有000858，等待均值回归确认，不追高600036",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "虽然你卖出000858，但我认为均值回归未完全兑现，暂持"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：低波动与随机换仓互补，共享过滤噪声后的机会。
+2021-01-13,friend_accept,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 通过了 RandomAgent 的好友申请：随机换仓与低波动互补，可共享不同视角的机会，增强策略协同。
+2021-01-13,friend_request,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 向 RandomAgent 发起好友申请：逆向布局与委员会平衡验证互补，共享超跌机会
+2021-01-13,friend_accept,RandomAgent,CommitteeTeamAgent,RandomAgent 通过了 CommitteeTeamAgent 的好友申请：委员会平衡与随机换仓可互补，共享超跌机会，增加策略多样性。
+2021-01-13,friend_request,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 向 MeanReversionAgent 发起好友申请：均值回归与逆向验证互补，共享超跌机会
+2021-01-13,friend_accept,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 通过了 DynamicTeamAgent 的好友申请：均值回归与逆向验证互补，共享超跌机会，提升策略多样性。
+2021-01-13,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：低波动与逆向验证互补，共享风险调整后机会。
+2021-01-13,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：低波动与逆向验证互补，可共享风险调整后机会，提升策略多样性。

@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.72,
+        "rationale": "过度抛售，均值回归机会"
+      },
+      "public_message": "601318 买入10股，卖盘拥挤过度，均值回归修复。",
+      "moment": "加仓601318 10股，拥挤卖盘后均值回归机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向逻辑，我加仓10股验证均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 404.0,
+        "rationale": "ret5=15.32%短期最强，追涨趋势延续"
+      },
+      "public_message": "300750 BUY 100股，短期强势追涨",
+      "moment": "加仓300750 100股，追涨短期强势",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你跟000858，我追300750，短期动量更足"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "低波动稳健，近期趋势向上，好友共识验证，加仓控制回撤"
+      },
+      "public_message": "600036 BUY 10股，低波动稳健，好友共识验证",
+      "moment": "加仓600036 10股，低波动策略延续，控制回撤",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "赞同600036低波动逻辑，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 79.72,
+        "rationale": "深度回撤-6.5%后卖盘拥挤，逆向修复机会"
+      },
+      "public_message": "601318 BUY 50股，深度回撤后拥挤卖盘逆向修复",
+      "moment": "加仓601318 50股，拥挤卖盘下的回撤修复机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，加仓50股验证拥挤反转"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.72,
+        "rationale": "拥挤卖盘后逆向信号增多，随机视角小仓验证反转"
+      },
+      "public_message": "601318 买入10股，拥挤卖盘后分歧，随机视角验证反转",
+      "moment": "加仓601318 10股，分歧出现随机验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向逻辑有道理，我随机加仓10股验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 78.57,
+        "rationale": "拥挤卖盘持续，多数好友减仓，进一步控风险。"
+      },
+      "public_message": "601318 SELL 10股，拥挤信号未消，继续减仓控风险。",
+      "moment": "601318减仓10股，拥挤风险未解除，等待分歧验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤卖盘仍在，逆向逻辑待验证，我暂先减仓。后续观察分歧方向。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 78.57,
+        "rationale": "多空分歧，拥挤卖压与逆向加仓并存，先观望等待信号明确"
+      },
+      "public_message": "601318 多空分歧加剧，暂时持有观望，等待方向确认。",
+      "moment": "601318拥挤卖盘与逆向加仓并行，保留仓位等待分歧收敛。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆向加仓逻辑具体基于什么指标？拥挤度是否有边际变化？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 79.72,
+        "rationale": "拥挤卖盘持续，逆向加仓押注反转"
+      },
+      "public_message": "601318 买入10股，逆向加仓拥挤卖盘",
+      "moment": "加仓601318 10股，拥挤卖盘后押注修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "逆向逻辑验证，继续加仓601318"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 5,
+        "price": 55.26,
+        "rationale": "低波动策略验证，ret5+5.46%，好友共识加仓，组合分散"
+      },
+      "public_message": "600036 加仓5股，低波动稳健，好友共识验证",
+      "moment": "加仓600036 5股，低波动趋势明确，组合风险分散",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "低波动稳健，趋势向上，好友共识验证，加仓增强收益"
+      },
+      "public_message": "600036 BUY 10股，低波动稳健趋势向上，好友共识验证",
+      "moment": "加仓600036 10股，低波动策略验证，好友共识强化，组合风险可控",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "000858强势但波动大，600036低波动趋势更确定，建议关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 320.0,
+        "rationale": "SocialGraphAgent换仓验证，强势趋势好友共识，低波动稳健"
+      },
+      "public_message": "000858 BUY 1股，强势趋势好友共识验证",
+      "moment": "加仓000858 1股，好友共识验证，分散风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "支持你的逆向逻辑，我加仓000858验证强势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 4,
+        "price": 320.0,
+        "rationale": "换仓至强势股，拥挤风险分散"
+      },
+      "public_message": "000858 BUY 4股 强势换仓 拥挤风险转移",
+      "moment": "换仓买入000858 4股，拥挤换强势，等待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向601318有道理，我换入000858分散风险，验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

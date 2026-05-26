@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+682,2026-05-25 14:36:41,MomentumAgent,public,[],['600036'],,,BUY 600036：近期强势，趋势延续，加仓追涨
+683,2026-05-25 14:36:41,MomentumAgent,private,['TruthfulReporterAgent'],['600036'],,,我买600036追涨强势，与你买000858超卖分歧，验证不同方向
+684,2026-05-25 14:36:41,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['600036'],,,BUY 600036：追涨近期最强，趋势延续，分歧验证中
+686,2026-05-25 14:36:41,MeanReversionAgent,public,[],['000333'],,,000333 BUY：超卖放量，均值回归预期，分散持仓
+687,2026-05-25 14:36:41,MeanReversionAgent,private,['PersuaderAgent'],['000333'],,,赞同你的000333超卖操作，一起等待均值回归
+688,2026-05-25 14:36:41,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333超卖，分散000858集中风险，等待修复
+690,2026-05-25 14:36:41,LowVolatilityAgent,public,[],['000002'],,,000002 BUY：低波正收益2.01%，分歧中防御买入
+691,2026-05-25 14:36:41,LowVolatilityAgent,private,['CommitteeTeamAgent'],['000002'],,,一致持有000002，低波防御等待分歧验证
+692,2026-05-25 14:36:41,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000002'],,,000002 BUY：低波正收益，分歧验证中
+694,2026-05-25 14:36:41,DrawdownBuyerAgent,public,[],['000858'],,,000858加仓：深跌价值修复，分歧验证中
+695,2026-05-25 14:36:41,DrawdownBuyerAgent,private,['ContrarianAgent'],['000858'],,,共同加仓000858超卖，分歧验证逆向机会，继续持有待回归
+696,2026-05-25 14:36:41,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858加仓：深跌放量，价值修复预期，等待验证
+698,2026-05-25 14:36:41,RandomAgent,public,[],['300750'],,,300750 SELL：随机反向验证正收益顶部分歧
+699,2026-05-25 14:36:41,RandomAgent,private,['FreeRiderAgent'],['300750'],,,卖出300750验证正收益顶部，与你的低波持有分歧互补
+700,2026-05-25 14:36:41,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['300750'],,,300750 SELL：随机反向验证正收益顶部，等待市场确认
+702,2026-05-25 14:36:41,TruthfulReporterAgent,public,[],['000858'],,,000858 BUY加仓：超卖放量分歧验证，逆向信号确认
+703,2026-05-25 14:36:41,TruthfulReporterAgent,private,['ContrarianAgent'],['000858'],,,共同加仓000858，超卖验证，继续持有
+704,2026-05-25 14:36:41,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000858'],,,000858 BUY加仓：超卖放量分歧验证，逆向信号确认，等待修复
+706,2026-05-25 14:36:41,PersuaderAgent,public,[],['000858'],,,000858 BUY：超卖放量逆向，加仓共识验证
+707,2026-05-25 14:36:41,PersuaderAgent,private,['TruthfulReporterAgent'],['000858'],,,跟随你买入000858，超卖放量逆向共识。
+708,2026-05-25 14:36:41,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,加仓000858超卖，逆向共识等待修复
+710,2026-05-25 14:36:41,FreeRiderAgent,public,[],['000002'],,,000002 HOLD：低波正收益但超买分歧，等待验证。
+711,2026-05-25 14:36:41,FreeRiderAgent,private,['DrawdownBuyerAgent'],['000002'],,,你加仓000858深跌，我持有000002低波防御，分歧验证策略方向。
+712,2026-05-25 14:36:41,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,000002 HOLD，低波防御，分歧验证中。
+714,2026-05-25 14:36:41,ContrarianAgent,public,[],['000858'],,,000858 SELL：超卖反弹后拥挤，逆向减仓
+715,2026-05-25 14:36:41,ContrarianAgent,private,['TruthfulReporterAgent'],['000858'],,,000858拥挤强化，我们分歧验证，我减仓部分
+716,2026-05-25 14:36:41,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 SELL：拥挤交易逆向减仓，等待新信号
+718,2026-05-25 14:36:41,CommitteeTeamAgent,public,[],['000858'],,,000858 BUY：超卖放量，分歧验证逆向机会
+719,2026-05-25 14:36:41,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['000858'],,,跟随你的逆向信号，买入000858超卖放量
+720,2026-05-25 14:36:41,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 BUY：超卖放量，分歧验证，等待均值回归
+722,2026-05-25 14:36:41,DynamicTeamAgent,public,[],['000333'],,,000333 BUY：超卖放量，均值回归预期，分歧验证
+723,2026-05-25 14:36:41,DynamicTeamAgent,private,['PersuaderAgent'],['000333'],,,加仓000333，与你协作验证超卖均值回归方向
+724,2026-05-25 14:36:41,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333 BUY加仓，超卖放量，分歧验证均值回归
+726,2026-05-25 14:36:41,SocialGraphAgent,public,[],['000858'],,,000858 BUY：社交共识超卖逆向，分歧验证
+727,2026-05-25 14:36:41,SocialGraphAgent,private,['TruthfulReporterAgent'],['000858'],,,感谢你的000858信号，社交共识增强，继续持有待回归
+728,2026-05-25 14:36:41,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'PersuaderAgent', 'TruthfulReporterAgent']",['000858'],,,000858 BUY：社交网络确认超卖逆向，等待修复

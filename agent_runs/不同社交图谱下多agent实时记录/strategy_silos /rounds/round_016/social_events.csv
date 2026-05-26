@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-25,friend_request,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 向 DrawdownBuyerAgent 发起好友申请：超跌策略互补，验证601318信号，请求加好友
+2021-01-25,friend_accept,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 通过了 FreeRiderAgent 的好友申请：策略互补，验证601318信号，可增强超跌信息交换。

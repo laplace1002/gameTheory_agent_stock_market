@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 57.24,
+        "rationale": "ret5转负-1.8%，趋势弱化，止盈止损"
+      },
+      "public_message": "002415 SELL 100股，5日动量转弱，换入强势600036",
+      "moment": "清仓002415，聚焦600036银行动量6.86%",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415趋势转弱，已止损，建议同步减仓"
+      },
+      "friend_request": {
+        "to": "TruthfulReporterAgent",
+        "reason": "共享600036动量信号，验证趋势延续性"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.4,
+        "rationale": "5日跌幅12.3%超卖，均值回归预期，加仓降低成本"
+      },
+      "public_message": "000858 超卖反弹，加仓1股验证均值回归",
+      "moment": "加仓000858，超卖后均值回归机会，等待反弹验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750我仍持有，同意你的逆向布局，但需警惕继续下探"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.99,
+        "rationale": "现有仓位风险可控，ret20为零，观望为主。"
+      },
+      "public_message": "当前市场多空分歧，高波动品种追高风险大，空仓观望。",
+      "moment": "持仓000002和600519，现金为主，等待回撤机会。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415动量持续性待验证，低波动策略暂不参与，关注ret20方向。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.4,
+        "rationale": "深度回撤-12.30%，价值修复机会"
+      },
+      "public_message": "000858 回撤-12.30%加仓1股搏修复",
+      "moment": "加仓000858，深度回调价值修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858 deep drawdown, adding position for rebound."
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 289.4,
+        "rationale": "000858 ret5=-12.30%超跌，非共识反转概率提升，逆向验证"
+      },
+      "public_message": "买入000858超跌非共识验证",
+      "moment": "买入000858超跌，非共识逆向验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858超跌与你的300750逆向思路呼应，共同验证超跌反弹"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 57.24,
+        "rationale": "ret5转负至-1.8%，ret20为零，动量信号减弱，止损规避回调风险"
+      },
+      "public_message": "002415 SELL 1股，ret5转负，动量减弱止损",
+      "moment": "止损002415，ret5转负，等待更好入场点",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415今日ret5=-1.8%，已转负，我止损了，你如何评估风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 57.24,
+        "rationale": "002415 ret5转负，动量信号减弱，减仓降低风险"
+      },
+      "public_message": "002415 SELL 50股，ret5转负，降低动量风险",
+      "moment": "减仓002415 50股，动量减弱，等待确认。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415 ret5转负，你仍持有观望？我减仓50股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.05,
+        "rationale": "短期涨幅过高，逆向获利了结"
+      },
+      "public_message": "600036 SELL 获利了结，涨幅过度需警惕回调",
+      "moment": "卖出600036，短期涨6.86%不可持续，逆向兑现利润",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415实际ret5=-1.8%而非8.1%，你的数据可能有误"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 289.4,
+        "rationale": "ret5大跌12.3%，趋势走弱，止损规避进一步回调风险。"
+      },
+      "public_message": "000858 卖出止损，ret5大跌12.3%，控制回撤。",
+      "moment": "止损000858，回笼资金等待下一个动量机会，当前002594持有观察。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002594 ret5转弱至-0.48%，是否考虑减仓？我的仓位暂时持有观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 57.24,
+        "rationale": "ret5转负，动量失效，止损离场"
+      },
+      "public_message": "002415 动量衰减，已平仓止损，转向银行股趋势",
+      "moment": "平仓002415，止损，转向600036银行趋势",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "002415实际ret5=-1.8%，动量已弱，建议止损"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 57.24,
+        "rationale": "ret5转负，减仓控制回撤，保留主要仓位观察"
+      },
+      "public_message": "002415 ret5转负，减仓1股控制回撤，保留主要仓位等待反弹。",
+      "moment": "",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 14,
+        "price": 223.95,
+        "rationale": ""
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

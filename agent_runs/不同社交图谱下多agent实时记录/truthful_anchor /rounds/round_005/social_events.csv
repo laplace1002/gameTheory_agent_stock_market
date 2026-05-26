@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,FreeRiderAgent,MomentumAgent 向 FreeRiderAgent 发起好友申请：你观望601899持续性，我追涨加仓，互补验证趋势方向
+2021-01-08,friend_accept,FreeRiderAgent,MomentumAgent,FreeRiderAgent 通过了 MomentumAgent 的好友申请：动量视角可补充趋势验证，与现有逆向互补。
+2021-01-08,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：均值回归与回撤买入互补，可共同验证超跌机会
+2021-01-08,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，回撤买入与均值回归协同，可共同验证超跌机会。
+2021-01-08,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：成交量信号验证互补，共享信息
+2021-01-08,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：成交量信号可补充趋势验证，与现有策略互补。
+2021-01-08,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：动量趋势与观望策略互补，共同验证601899持续性。
+2021-01-08,friend_reject,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 拒绝了 PersuaderAgent 的好友申请：PersuaderAgent刚减仓601899，策略与当前拥挤风险氛围不符，且已有类似动量好友。

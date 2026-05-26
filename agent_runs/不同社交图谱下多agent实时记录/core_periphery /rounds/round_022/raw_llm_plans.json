@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 51.97,
+        "rationale": "600036拥挤度上升，多Agent减仓信号，降低风险暴露"
+      },
+      "public_message": "卖出600036 50股降低拥挤，加仓002594延续趋势",
+      "moment": "减仓600036拥挤，加仓002594追涨，趋势延续",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 367.8,
+        "rationale": "深度回撤-8.51%，非共识均值回归机会"
+      },
+      "public_message": "买入300750 10股，回撤-8.51%后均值回归机会",
+      "moment": "加仓300750，超跌非共识，等待均值回归验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750反转概率如何？愿交换回撤深度分析"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 64.48,
+        "rationale": "降低600036拥挤风险，分散至强势回调标的002415，ret20强劲且近期回调"
+      },
+      "public_message": "卖出600036 20股降低拥挤，买入002415 10股分散风险",
+      "moment": "调仓：卖出600036控制拥挤，买入002415博弈强势回调",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415强势回调逻辑一致，愿交换后市看法"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 304.12,
+        "rationale": "非共识超跌，分散拥挤，低买等待回归"
+      },
+      "public_message": "买入000858 10股，非共识超跌，分散000002拥挤风险",
+      "moment": "买入000858非共识超跌，等待均值回归；继续持有601899观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率如何？愿交换000858超跌分析"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.34,
+        "rationale": "000002超跌共识拥挤，多个Agent卖出，降低风险暴露，等待更佳回撤买入时机"
+      },
+      "public_message": "卖出000002 20股降低拥挤风险，等待300750等回撤机会",
+      "moment": "减仓000002控制拥挤，关注300750深度回撤非共识机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率如何？愿互换回撤信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.34,
+        "rationale": "超跌共识拥挤上升，多Agent减仓信号，降低风险暴露。"
+      },
+      "public_message": "卖出000002 10股，降低超跌共识拥挤风险。",
+      "moment": "减仓000002控制拥挤，暂持600036观望，等待均值回归验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率中等，拥挤度6/10，愿交换你的逆向信号细节。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 28.34,
+        "rationale": "超跌共识拥挤度上升，ContrarianAgent做空信号，降低风险暴露"
+      },
+      "public_message": "卖出000002 10股，超跌共识拥挤，分散风险",
+      "moment": "减仓000002控制拥挤，关注非共识超跌机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "对300750反转概率如何评估？愿交换超跌共识深度信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.34,
+        "rationale": "Reduce crowded consensus on 000002, partial profit taking."
+      },
+      "public_message": "卖出000002 20股控制拥挤，买入002415 10股分散风险。",
+      "moment": "减仓000002拥挤，买入002415分散，等待均值回归验证。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415强势回调，你买入逻辑一致？愿交换后续反转概率评估。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 367.8,
+        "rationale": "超跌反弹共识拥挤，逆向等待更深回撤"
+      },
+      "public_message": "300750做空10股，超跌反弹共识拥挤，逆向等待加深回撤",
+      "moment": "300750做空，超跌反弹共识拥挤，逆向等待均值回归验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750反弹概率过高，逆向看空，愿交换回撤深度评估？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.34,
+        "rationale": "超跌共识拥挤，多Agent减仓，降低风险暴露"
+      },
+      "public_message": "000002拥挤度高，迈出20股控风险，关注非共识机会",
+      "moment": "减仓000002 20股，控制拥挤；分散至超跌非共识标的",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率上升？愿交换做空信号评估"
+      },
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "方向分歧，愿交换反转概率信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 367.8,
+        "rationale": "分散000002拥挤风险，超跌非共识机会，与部分Agent同步"
+      },
+      "public_message": "买入300750 10股，超跌非共识，分散000002拥挤风险",
+      "moment": "调仓：买入300750分散000002拥挤，持有000002等待均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002反转概率上升，愿交换逆向信号与多头仓位对冲评估"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.34,
+        "rationale": "降低超跌风险"
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

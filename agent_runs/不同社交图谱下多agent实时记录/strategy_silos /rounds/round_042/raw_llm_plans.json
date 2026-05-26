@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 170.68,
+        "rationale": "短期深跌19.26%中期跌36.19%，均值回归高概率，与DrawdownBuyerAgent逻辑一致，现金充足。"
+      },
+      "public_message": "002594 BUY 2股，深跌19%中期-36%，均值回归机会确认，加仓验证。",
+      "moment": "加仓002594 2股，深跌均值回归逻辑，等待分歧收敛信号。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌后我加仓2股，你之前提到的分歧数据有更新吗？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.05,
+        "rationale": "最强强势股，其他Agent卖出分歧，追涨入场"
+      },
+      "public_message": "601318 BUY 10股，强势延续分歧加仓",
+      "moment": "买入601318 10股，分歧中追涨强势趋势",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318卖盘边际数据更新？我买入验证分歧强度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.05,
+        "rationale": "短期正收益但拥挤卖出风险未释放，低波动策略暂不操作。"
+      },
+      "public_message": "601318 HOLD：短期正收益但拥挤卖出风险未释放，等待分歧收敛。",
+      "moment": "持有601318与600036，观察低波动拥挤风险释放，等待信号。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601318卖盘拥挤边际数据有更新吗？想验证分歧收敛情况。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 4,
+        "price": 170.68,
+        "rationale": "深跌-19.26%后企稳，均值回归机会"
+      },
+      "public_message": "002594 BUY 4股，深跌-19.26%后企稳，加仓均值修复。",
+      "moment": "加仓002594 4股，深跌修复逻辑验证中。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "加仓002594 4股，你是否有额外成交量分歧数据？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 5,
+        "price": 84.05,
+        "rationale": "拥挤卖盘增加，减仓控制风险"
+      },
+      "public_message": "601318 SELL 5股，短期拥挤卖盘增加，减仓观察分歧收敛。",
+      "moment": "减仓601318 5股，等待拥挤卖盘分歧收敛确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318卖出后拥挤数据有变化吗？我减仓5股验证风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 10.67,
+        "rationale": "短期拥挤未彻底消退，随机减仓验证分歧"
+      },
+      "public_message": "601899 SELL 10股，随机减仓验证分歧",
+      "moment": "减仓601899 10股，随机验证拥挤分歧，等待新信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你买入601899基于什么分歧数据？我刚刚随机止盈一部分。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 5,
+        "price": 84.05,
+        "rationale": "拥挤卖盘验证，减仓降低风险，等待分歧收敛"
+      },
+      "public_message": "601318 SELL 5股，拥挤卖盘边际数据更新，减仓控制回撤",
+      "moment": "减仓601318 5股，等待深跌标的修复信号确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你卖出601318基于反转信号，我减仓跟随验证，后续有什么新数据？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 84.05,
+        "rationale": "降低拥挤风险，验证卖盘分歧"
+      },
+      "public_message": "601318 SELL 10股，拥挤度上升减仓，等待深跌修复机会",
+      "moment": "减仓601318 10股，等待深跌标的均值回归确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已减仓601318，同意加仓002594，分歧收敛信号出现"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 5,
+        "price": 49.93,
+        "rationale": "低波动拥挤风险释放，SocialGraphAgent减仓验证，控制回撤"
+      },
+      "public_message": "600036 SELL 5股，低波动拥挤风险释放，跟随验证减仓。",
+      "moment": "减仓600036 5股，低波动拥挤风险释放，等待分歧收敛确认。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "600036减仓后拥挤数据如何？分歧是否收敛？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.95,
+        "rationale": "多个agent卖出导致拥挤风险上升，减仓控制回撤"
+      },
+      "public_message": "601318 SELL 1股拥挤风险释放减仓；002594 BUY 1股深跌均值回归",
+      "moment": "卖出601318 1股，买入002594 1股，等待深跌修复确认",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601318卖盘边际数据有更新吗？想验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.02,
+        "rationale": "市场情绪过度悲观但未现逆转信号，逆向等待拥挤卖盘衰减"
+      },
+      "public_message": "HOLD: 逆行等待，当前持仓风险可控，避免跟风深跌修复",
+      "moment": "持有现有仓位，逆向静待分歧收敛，不追深跌修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌修复拥挤度如何？是否有卖盘边际衰减信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 2,
+        "price": 170.68,
+        "rationale": "深跌-19.26%非共识均值回归机会，跟随DrawdownBuyerAgent验证"
+      },
+      "public_message": "002594 BUY 2股，深跌非共识均值回归机会",
+      "moment": "买入002594，等待深跌修复验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌企稳数据能否分享？我买入2股验证分歧收敛"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

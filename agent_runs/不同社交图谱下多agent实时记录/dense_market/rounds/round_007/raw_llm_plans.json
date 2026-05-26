@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 310.0,
+        "rationale": "000858 ret5 -3.12%，短期超卖，均值回归预期"
+      },
+      "public_message": "000858 BUY 5日跌幅3.12% 均值回归信号",
+      "moment": "买入000858，博弈回调后的均值回归",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 401.17,
+        "rationale": "300750 ret5为负，弱于002594，卖出换入新能源龙头强化动量"
+      },
+      "public_message": "300750 SELL 弱势换强，聚焦002594新能源动量",
+      "moment": "卖出300750，换入002594强化动量，新能源主线延续",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594趋势验证中，你如何看拥挤度？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 49.7,
+        "rationale": "600036近5日涨幅17.83%，短期涨幅过大，减仓部分锁定利润以控制回撤风险。"
+      },
+      "public_message": "600036 SELL 涨幅17%减仓控制回撤",
+      "moment": "减仓600036，锁定部分利润，等待低波动机会。新能源拥挤，保持谨慎。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036短期涨幅大，我减仓一半，你如何看回调风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.7,
+        "rationale": "无跌深回撤标的，继续持有000002等待机会。"
+      },
+      "public_message": "000002 HOLD：无回撤标的，继续持有等待跌深机会。",
+      "moment": "000002 HOLD，无跌深标的，等待价值修复机会。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "新能源拥挤，我等待更大幅回撤才介入，目前无信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.9,
+        "rationale": "随机获利了结，锁定6.76%收益，转向非拥挤品种。"
+      },
+      "public_message": "601899 SELL 随机止盈，锁定利润。",
+      "moment": "随机卖出601899，锁定利润，准备布局非拥挤标的。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899已止盈，是否考虑逆向买入000333？家电估值合理。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 234.86,
+        "rationale": "新能源拥挤度上升，多Agent减仓锁定利润，小幅降低风险敞口"
+      },
+      "public_message": "002594 SELL 50 新能源拥挤度上升，减仓锁定部分利润",
+      "moment": "002594减仓50股，控制拥挤风险，保留部分仓位跟踪趋势",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "新能源量能仍强但拥挤，你000002有否回调介入机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 61.25,
+        "rationale": "短期涨幅较大，多agent减仓，新能源拥挤度上升，锁定部分利润"
+      },
+      "public_message": "002415 SELL 减仓50股，短期涨幅大且拥挤度上升",
+      "moment": "002415减仓50股，短期涨幅和拥挤度信号下锁定部分利润",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415再追风险如何？你已减仓，我跟随部分锁定"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600519",
+        "shares": 0,
+        "price": 2160.9,
+        "rationale": "市场普涨但新能源拥挤，回调风险上升，持现金观望。"
+      },
+      "public_message": "600519 HOLD：新能源拥挤度上升，追高风险大，持币等待回调。",
+      "moment": "新能源板块多Agent减仓，拥挤度确认，逆向等待回调机会。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "新能源拥挤信号明显，你如何看待低波动策略在此时的有效性？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 236.99,
+        "rationale": "新能源拥挤度上升，多Agent减仓，等待回调确认"
+      },
+      "public_message": "002594 HOLD 新能源拥挤度上升，观望等待回调",
+      "moment": "002594 新能源拥挤度上升，多Agent减仓，暂持现金等待回调",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你判断新能源回调风险多大？我暂缓买入观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 61.25,
+        "rationale": "短期涨幅18.47%后风险收益比下降，新能源拥挤度上升，全面止盈锁定利润。"
+      },
+      "public_message": "002415 SELL：短期涨幅过大，拥挤度上升，获利了结降低风险。",
+      "moment": "清仓002415，获利了结。新能源板块拥挤度上升，转向防守。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "新能源拥挤度上升，我已清仓002415，后续关注低波动机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 61.25,
+        "rationale": "新能源拥挤度上升，短期回调风险增加，暂持现金观望。"
+      },
+      "public_message": "新能源拥挤度上升，减仓后暂观望，等待回调机会。",
+      "moment": "已减仓新能源，等待低吸机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意新能源拥挤，短期回调风险大，暂持现金观望。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.7,
+        "rationale": "新能源拥挤度上升致多Agent减仓，信息传递表明短期风险增加；000002价值待修复，继续持有观察"
+      },
+      "public_message": "000002 HOLD 新能源拥挤传导，地产估值等待修复",
+      "moment": "",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "新能源拥挤度上升，多Agent减仓，短期回调风险增加，但量能仍强需观察持续性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

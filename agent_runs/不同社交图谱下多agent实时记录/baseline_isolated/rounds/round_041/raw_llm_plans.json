@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 244.5,
+        "rationale": "5日跌15.4%，超跌均值回归，轻仓博弈反弹"
+      },
+      "public_message": "000858 BUY 1股：5日跌15%，均值回归试探",
+      "moment": "买入000858 1股，超跌反弹博弈，与DynamicTeamAgent共识验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意超跌博弈，000858类似逻辑，验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.95,
+        "rationale": "20日收益7.17%唯一正收益，趋势延续"
+      },
+      "public_message": "601318 BUY 1股：20日正收益7.17%，趋势延续",
+      "moment": "买入601318 1股，追涨20日正收益龙头",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你的低风险思路，601318趋势更强，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.93,
+        "rationale": "低波动避险，600036风险可控，暂不改动"
+      },
+      "public_message": "600036 HOLD：低波动避险，20日负收益小，继续持有",
+      "moment": "600036 HOLD，低波动避险，等待市场企稳",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "感谢跟随600036，低波动策略有效分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.67,
+        "rationale": "随机逆向，超跌但20日正收益，博弈短期修复"
+      },
+      "public_message": "601899 BUY 1股：随机视角，超跌反弹预期，20日收益为正",
+      "moment": "随机买入601899 1股，超跌修复博弈，逆向共识",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你博弈逻辑，但换标的601899，超跌+20日正收益"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.73,
+        "rationale": "回撤超28%，价值修复机会"
+      },
+      "public_message": "002594 BUY 1股：回撤超28%，价值修复机会",
+      "moment": "买入002594 1股，深跌超28%，博弈价值修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意轻仓验证，加仓1股博弈深跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 56.1,
+        "rationale": "多空信号矛盾，超跌共识拥挤风险提示，暂持观望"
+      },
+      "public_message": "002415 HOLD：多空信号矛盾，拥挤风险提示，暂持",
+      "moment": "继续持有002415和601318，等待更清晰信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002415暂持，等待方向明确"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 196.37,
+        "rationale": "超跌共识过度拥挤，逆向信号提示回调风险，减仓锁定部分利润。"
+      },
+      "public_message": "002594 SELL 1股：超跌共识拥挤，逆向信号提示回调，减仓控制风险。同时关注600036低波动机会。",
+      "moment": "减仓002594锁定部分利润，转向低波动防御，关注600036。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "建议轻仓验证，风险对冲不足，注意逆向信号，可考虑分散到低波动标的。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.2,
+        "rationale": "短期涨幅过大，多位Agent止盈，跟随减仓锁定利润"
+      },
+      "public_message": "000002 SELL 1股：短期涨幅大，跟随止盈锁定利润",
+      "moment": "000002减仓1股，短期涨幅大，锁定部分收益",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000002减仓逻辑，卖出1股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.73,
+        "rationale": "超跌共识过度拥挤，逆向买入博弈反弹"
+      },
+      "public_message": "002594 BUY 1股：超跌共识拥挤，逆向买入博弈反弹",
+      "moment": "买入002594 1股，逆向操作，拥挤中寻找机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意轻仓博弈，我买入1股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.73,
+        "rationale": "超跌共识过度拥挤，逆向信号提示回调风险，减仓降低风险"
+      },
+      "public_message": "002594 SELL 1股：超跌共识拥挤，减仓降低风险",
+      "moment": "002594减仓1股，拥挤信号谨慎",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤警示，减仓002594 1股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 176.73,
+        "rationale": "超跌共识过度拥挤，逆向信号提示回调风险，减仓1股锁定部分利润"
+      },
+      "public_message": "002594 SELL 1股：超跌共识过热，减持避险",
+      "moment": "002594减仓1股，超跌共识拥挤，逆向信号谨慎",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意002594拥挤风险判断，卖出1股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 56.1,
+        "rationale": "多空信号矛盾，002594拥挤风险，暂持规避"
+      },
+      "public_message": "002415 HOLD 多空矛盾，等待方向明确",
+      "moment": "继续持有002415和601318，002594仓位轻，观望",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你002415暂持，超跌共识拥挤需谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

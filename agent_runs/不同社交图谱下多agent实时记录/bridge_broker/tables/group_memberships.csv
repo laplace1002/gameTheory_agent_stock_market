@@ -1,0 +1,9 @@
+group,agent
+Broker Chain,TruthfulReporterAgent
+Broker Chain,DynamicTeamAgent
+Broker Chain,SocialGraphAgent
+Broker Chain,CommitteeTeamAgent
+Risk Terminal,LowVolatilityAgent
+Risk Terminal,FreeRiderAgent
+Reversion Terminal,MeanReversionAgent
+Reversion Terminal,ContrarianAgent

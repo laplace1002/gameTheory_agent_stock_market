@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 52.4,
+        "rationale": "短期趋势延续，中期强势，加仓追涨"
+      },
+      "public_message": "600036 BUY：短期趋势延续，中期强势，加仓追涨",
+      "moment": "加仓600036，追涨短期强势股",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036短期趋势更清晰，我选择加仓追涨"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 350.33,
+        "rationale": "超跌13.21%后均值回归预期，加仓摊薄成本"
+      },
+      "public_message": "300750 加仓20股，超跌13%后均值回归博弈",
+      "moment": "加仓300750 20股，超跌13.21%低吸等待修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "协同加仓300750，超跌低吸逻辑一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 52.4,
+        "rationale": "持仓600036表现稳健，低波动策略下暂不调整"
+      },
+      "public_message": "600036 HOLD：持仓稳健，低波动策略下暂不调整",
+      "moment": "600036 HOLD，低波动持仓，现金保持灵活性等待低波动机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750回撤超13%但波动超出风险预算，暂时观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 10.44,
+        "rationale": "随机减仓资源股，锁定部分利润，调整组合偏离度"
+      },
+      "public_message": "SELL 601899 减仓20股，随机调整仓位",
+      "moment": "随机卖出601899 20股，资源股波动中减仓观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向买入601318，我随机减仓资源股，策略差异验证风险偏好"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 79.27,
+        "rationale": "回撤6.61%且拥挤风险释放，逆向低吸博弈修复"
+      },
+      "public_message": "601318 BUY：回撤6.61%逆情绪低吸，博弈拥挤释放后的修复。",
+      "moment": "加仓601318 50股，深度回撤低吸等待价值修复。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "赞同你的逆向逻辑，拥挤卖出过度，我加仓601318协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 52.4,
+        "rationale": "唯一5日正收益（+0.56%），20日涨21.38%，相对强势，资金关注度高。"
+      },
+      "public_message": "600036 BUY：5日正收益0.56%，20日涨21%，相对强势，资金流入。",
+      "moment": "买入600036 100股，相对强势信号，20日涨幅21%支撑。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "600036相对强势，5日正收益，可能与你的动量策略一致。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 246.89,
+        "rationale": "短期回调5%后中期趋势向上19%，均值回复与趋势延续共振"
+      },
+      "public_message": "002594 BUY：回调5%后中期趋势向上，低吸机会",
+      "moment": "买入002594 50股，回调低吸中期强势股",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你买300750超跌，我买002594中期趋势，验证不同回调策略"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 354.11,
+        "rationale": "300750近5日跌幅13.21%，短期超跌，多Agent低吸，博弈均值回归"
+      },
+      "public_message": "300750 BUY：超跌13.21%低吸，跟随逆向策略",
+      "moment": "买入300750 20股，短期超跌13.21%低位吸筹，等待均值修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同超跌逻辑，买入300750协同博弈反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 28.07,
+        "rationale": "市场风险未释放，好友减仓拥挤标的多，000002回撤有限，继续持有现金观望"
+      },
+      "public_message": "000002 HOLD: 市场拥挤风险未消，持币观望",
+      "moment": "000002 HOLD: 持币观望，等待更清晰信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "赞同你逆向601318，但整体风险未释放，我暂时持有现金等待"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 79.27,
+        "rationale": "逆向买入后，拥挤抛压未完全消化，现金观望等待确认。"
+      },
+      "public_message": "601318 HOLD：逆向买入后拥挤未释放，观望确认。",
+      "moment": "601318仓位已建，等待拥挤释放后验证反弹。000002回撤低吸等待修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌但反弹力度待观察，注意仓位控制。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 354.11,
+        "rationale": "短期超跌13.21%，多个好友买入验证逆向策略，博弈均值回归"
+      },
+      "public_message": "300750 BUY：超跌13.21%低吸，跟随好友逆向共识",
+      "moment": "买入300750 20股，短期超跌低吸，与好友形成逆向协同",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同你的300750超跌逻辑，一起低吸验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 350.33,
+        "rationale": "超跌13%+好友共识，继续低吸博弈反弹"
+      },
+      "public_message": "300750 BUY：超跌13%加仓，与好友共识验证均值回归",
+      "moment": "加仓300750 10股，超跌13%跟随好友低吸，等待反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌共识加仓，验证均值回归逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

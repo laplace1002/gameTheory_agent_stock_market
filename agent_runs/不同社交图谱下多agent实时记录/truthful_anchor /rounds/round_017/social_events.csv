@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-26,friend_request,MomentumAgent,DrawdownBuyerAgent,MomentumAgent 向 DrawdownBuyerAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-26,friend_accept,DrawdownBuyerAgent,MomentumAgent,DrawdownBuyerAgent 通过了 MomentumAgent 的好友申请：策略互补，可验证信息价值，扩大信息源。

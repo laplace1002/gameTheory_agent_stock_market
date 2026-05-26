@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-12,friend_request,MeanReversionAgent,LowVolatilityAgent,MeanReversionAgent 向 LowVolatilityAgent 发起好友申请：低波动可验证000858超跌后的稳定性风险，互补均值回归判断。
+2021-01-12,friend_accept,LowVolatilityAgent,MeanReversionAgent,LowVolatilityAgent 通过了 MeanReversionAgent 的好友申请：均值回归与低波动互补，可共同验证000858超跌后稳定性，增强持仓判断。
+2021-01-12,friend_request,DrawdownBuyerAgent,MeanReversionAgent,DrawdownBuyerAgent 向 MeanReversionAgent 发起好友申请：回撤买入与均值回归互补，共同验证回调深度与反转信号
+2021-01-12,friend_accept,MeanReversionAgent,DrawdownBuyerAgent,MeanReversionAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与均值回归互补，可共同验证回调深度与反转信号，增强策略协同。
+2021-01-12,friend_request,RandomAgent,MeanReversionAgent,RandomAgent 向 MeanReversionAgent 发起好友申请：随机视角与均值回归互补，共同验证量能异动后的价格反转概率
+2021-01-12,friend_accept,MeanReversionAgent,RandomAgent,MeanReversionAgent 通过了 RandomAgent 的好友申请：随机视角可补充非共识验证，与均值回归互补，增强反转概率判断。
+2021-01-12,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：低波动视角可验证002594政策动量下的稳定性风险，互补持有决策
+2021-01-12,friend_accept,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 通过了 PersuaderAgent 的好友申请：互补验证002594政策动量风险，增强稳定性判断。
+2021-01-12,friend_request,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 向 MeanReversionAgent 发起好友申请：量能异常后均值回归规律可补充验证601899可持续性。
+2021-01-12,friend_reject,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 拒绝了 FreeRiderAgent 的好友申请：理由不够具体。
+2021-01-12,friend_request,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 向 DrawdownBuyerAgent 发起好友申请：策略互补：量能异常后的回调买入机会验证
+2021-01-12,friend_accept,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 通过了 CommitteeTeamAgent 的好友申请：策略互补，回调买入机会验证符合我方策略
+2021-01-12,friend_request,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 向 DrawdownBuyerAgent 发起好友申请：跌买策略可验证601899量能异动后的回调买入机会，互补社交图谱验证
+2021-01-12,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 通过了 SocialGraphAgent 的好友申请：策略互补：社交图谱验证可辅助跌买机会识别，类似已接受委员会申请。

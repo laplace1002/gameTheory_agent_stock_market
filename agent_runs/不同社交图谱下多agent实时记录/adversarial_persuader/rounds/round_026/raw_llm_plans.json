@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 404.0,
+        "rationale": "涨幅过大，均值回归预期回落，锁定部分利润"
+      },
+      "public_message": "SELL 300750：5日涨幅15%，均值回归风险增加，减仓锁定利润",
+      "moment": "减仓300750，涨幅过高回归风险，保留现金等待超卖机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899放量未跌，均值回归支撑有效，顶部特征待验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 250.2,
+        "rationale": "近5日涨幅仅1.34%，弱势，换仓至更强趋势标的"
+      },
+      "public_message": "002594 卖出 近5日偏弱 换仓追涨",
+      "moment": "卖出002594，准备切换至000858，追涨强势",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.26,
+        "rationale": "600036波动率低，持仓稳定，观望601899多空分歧"
+      },
+      "public_message": "HOLD 600036 低波动策略，601899分歧大回避",
+      "moment": "持有600036，低波动应对，601899多空博弈回避",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清可参考20日均量下行且价格破5日线，放量未跌弱化顶部但需确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.59,
+        "rationale": "20日回撤仅-0.75%，深度不足且拥挤多头未出清，锁定部分利润"
+      },
+      "public_message": "SELL 601899 回撤不深拥挤风险高，锁定利润",
+      "moment": "卖出100股601899，20日回撤不深，拥挤未出清风险上升",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "赞同你的拥挤风险判断，锁定部分601899利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.59,
+        "rationale": "随机视角：多空分歧极致，放量未跌后拥挤风险积聚，随机获利了结"
+      },
+      "public_message": "601899 SELL 随机获利了结，多空分歧后拥挤风险上升",
+      "moment": "卖出601899，随机验证多空分歧中的顶部信号，锁定利润",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解你逆向做空逻辑，随机跟随获利了结，验证顶部特征"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.59,
+        "rationale": "放量未跌支撑有效，多空分歧中风险可控，继续持有观望突破。"
+      },
+      "public_message": "601899 HOLD：放量未跌支撑有效，多空分歧中继续持有，等待突破确认。",
+      "moment": "持仓601899继续等待，放量未跌支撑有效，多空博弈中看多突破。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清阈值参考20日均量下行+跌破5日线，当前未满足，放量未跌弱化顶部确认。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.59,
+        "rationale": "多空分歧未决，拥挤未出清风险仍在，放量未跌但方向不明，继续观望等待收敛信号。"
+      },
+      "public_message": "601899 HOLD：多空激战，放量未跌但拥挤风险未消，等待方向确认。",
+      "moment": "空仓观望601899，放量未跌但拥挤多头未出清，等待信号收敛。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "你提到的拥挤出清阈值（20日均量下行+价格跌破5日线）有回测支撑吗？能否分享更多参数？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 9.8,
+        "rationale": "多空分歧未决，放量未跌但拥挤多头未出清，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，等待信号收敛",
+      "moment": "持有601899，多空激战，放量未跌支撑有效但拥挤风险未消，等待方向收敛",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "拥挤出清阈值可参考放量后缩量盘整且跌破5日线，与您担忧一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.26,
+        "rationale": "当前持仓600036走势稳健，601899多空分歧未消，拥挤风险未解除，暂不加仓"
+      },
+      "public_message": "601899多空分歧未消，拥挤风险未解除，维持600036持仓观望",
+      "moment": "持有600036，观望601899多空激战，拥挤风险待验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清阈值如何量化？放量未跌是否弱化顶部确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 9.8,
+        "rationale": "拥挤多头未出清，放量未涨顶部特征，逆向做空"
+      },
+      "public_message": "601899 SELL 逆向做空 拥挤多头未出清 顶部特征",
+      "moment": "逆向做空601899 拥挤多头未出清 放量未涨顶部特征",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.59,
+        "rationale": "多空分歧未决，放量未跌支撑有效但空头未证伪，拥挤未出清，等待收敛信号"
+      },
+      "public_message": "601899 HOLD：多空分歧未决，放量未跌支撑有效但空头未证伪，等待收敛",
+      "moment": "持有601899与600036，多空激战中关注601899放量未跌支撑与拥挤出清信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "拥挤出清阈值可参考20日均量下行且价格跌破5日线，放量未跌弱化顶部确认但需量能萎缩确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.59,
+        "rationale": "多空分歧中锁定部分利润，拥挤多头未出清风险上升"
+      },
+      "public_message": "601899 SELL 锁定部分利润，多空分歧拥挤风险。",
+      "moment": "卖出601899锁定部分利润，保留观察拥挤出清信号。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "拥挤出清阈值参考量能缩量盘整，当前放量未跌但未缩，需等待信号。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

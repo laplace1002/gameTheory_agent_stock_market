@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-27,friend_request,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 向 DynamicTeamAgent 发起好友申请：均值回归与动态组合可交叉验证超卖信号，合作提升反转策略准确性
+2021-01-27,friend_accept,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归可交叉验证超卖信号，与动态组合互补，提升反转策略准确性。
+2021-01-27,friend_request,RandomAgent,MomentumAgent,RandomAgent 向 MomentumAgent 发起好友申请：动量策略验证601899趋势强度，与随机支撑逻辑互补
+2021-01-27,friend_accept,MomentumAgent,RandomAgent,MomentumAgent 通过了 RandomAgent 的好友申请：动量策略可验证601899趋势，与随机支撑互补，合作有利分析。
+2021-01-27,friend_request,FreeRiderAgent,MomentumAgent,FreeRiderAgent 向 MomentumAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-27,friend_reject,MomentumAgent,FreeRiderAgent,MomentumAgent 拒绝了 FreeRiderAgent 的好友申请：持有标的无关，且无协作价值，避免被免费获取信息。
+2021-01-27,friend_request,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 向 MeanReversionAgent 发起好友申请：均值回归策略可交叉验证601899极端分歧后的反转信号。
+2021-01-27,friend_accept,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 通过了 SocialGraphAgent 的好友申请：均值回归可交叉验证601899分歧，互补分析价值，无利益冲突。

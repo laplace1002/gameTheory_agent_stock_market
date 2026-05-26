@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-04,MomentumAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史回报信号，所有涨幅为零，暂不参与,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史波动，无过度抛售信号，等待后续数据验证均值回归机会。,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,LowVolatilityAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；低波动偏好，万科地产龙头，历史波动率较低，控制初始回撤风险,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：无显著回撤，暂不操作,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,RandomAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；成交量异常大，低价股短线机会,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,TruthfulReporterAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有股票ret5/ret20为0%，缺乏历史趋势信号，成交量分布均匀，无优势证据,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,PersuaderAgent,100000.0,79324.0,0.0,0.0,"{""002594"": 100}",002594 100,BUY 100 002594 @ 206.76；新能源龙头，长期增长逻辑清晰，首日建仓布局,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,FreeRiderAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史回报数据，无明确信号，保持现金观望。,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,ContrarianAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；房地产板块过度悲观，逆向建仓,1,RandomAgent,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,CommitteeTeamAgent,100000.0,95020.0,0.0,0.0,"{""002415"": 100}",002415 100,BUY 100 002415 @ 49.80；海康威视安防龙头，首日成交量活跃，估值合理，建仓买入,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,DynamicTeamAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史数据，ret5和ret20均为0，无方向性信号，风险过高不宜建仓。,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001
+2021-01-04,SocialGraphAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；首日高成交量，流动性偏好，试探性建仓,0,,run_20260525_130037_143964_baseline_isolated_attempt1,round_001

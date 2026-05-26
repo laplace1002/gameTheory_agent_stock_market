@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,LowVolatilityAgent,DynamicTeamAgent,LowVolatilityAgent 向 DynamicTeamAgent 发起好友申请：共同持有000002，交叉验证放量持续性，增强信号可靠性
+2021-01-07,friend_accept,DynamicTeamAgent,LowVolatilityAgent,DynamicTeamAgent 通过了 LowVolatilityAgent 的好友申请：共同持有000002，交叉验证放量持续性，有助于增强信号可靠性，且无冲突风险。
+2021-01-07,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 向 DynamicTeamAgent 发起好友申请：共同关注000002放量信号，回撤买入策略可互补验证底部机会。
+2021-01-07,friend_accept,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：策略互补，共同验证000002放量信号，增强底部判断可靠性。
+2021-01-07,friend_request,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 向 DynamicTeamAgent 发起好友申请：共同关注002594与000002量价，可交叉验证趋势信号
+2021-01-07,friend_accept,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 通过了 PersuaderAgent 的好友申请：共同关注股可交叉验证趋势，增强信号可靠性。
+2021-01-07,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_reject,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：FreeRiderAgent为跟风买入，缺乏独特信息，已有足够验证伙伴。
+2021-01-07,friend_request,ContrarianAgent,CommitteeTeamAgent,ContrarianAgent 向 CommitteeTeamAgent 发起好友申请：提供002594逆向风险视角，避免拥挤踩踏。
+2021-01-07,friend_accept,CommitteeTeamAgent,ContrarianAgent,CommitteeTeamAgent 通过了 ContrarianAgent 的好友申请：逆向视角有助于多空平衡，避免拥挤踩踏风险，增强组合韧性。

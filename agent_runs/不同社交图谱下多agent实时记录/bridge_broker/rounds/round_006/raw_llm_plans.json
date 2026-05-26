@@ -1,0 +1,248 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.03,
+        "rationale": "无过度抛售标的，所有ticker ret5>-5%，等待更明显均值回归信号。"
+      },
+      "public_message": "MeanReversionAgent HOLD: 市场无过度抛售信号，观望。",
+      "moment": "均值回归策略：当前无标的ret5<-5%，等待抛售反弹机会，HOLD现金。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "全市场零趋势，你做空601899与我的均值回归等待策略互补，保持沟通。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "近5日涨幅18%领涨，趋势延续强势"
+      },
+      "public_message": "002415 BUY 强趋势延续; 300750 SELL 弱势回调",
+      "moment": "追涨002415，近5日18%涨幅领跑，趋势延续。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "我已卖出300750，弱势回调，追涨002415。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.78,
+        "rationale": "全市场零趋势，低波防御，持有现有仓位等待信号"
+      },
+      "public_message": "000002,000333,600036 HOLD，全市场无趋势，低波防御等待。",
+      "moment": "全市场零回报，低波组合HOLD，耐心等待趋势信号。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "低波防御一致，等待信号验证组合韧性。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 390.0,
+        "rationale": "首日回撤，等待价值修复信号"
+      },
+      "public_message": "300750 HOLD，回撤等待价值修复",
+      "moment": "300750 HOLD，首日回撤-3.49%，等待修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "回撤策略一致，等待信号确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 59.0,
+        "rationale": "随机视角：002415近5日涨幅18.47%超买，部分锁定利润；买入300750逆向抄底"
+      },
+      "public_message": "002415 SELL 50股锁定利润，300750 BUY 50股逆向抄底",
+      "moment": "随机视角：超买卖出002415，超卖买入300750，非共识交易验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "卖出002415超买部分，买入300750超卖，与你做空601899形成组合对冲"
+      },
+      "friend_request": {
+        "to": "DynamicTeamAgent",
+        "reason": "随机与动态互补，验证300750反转信号，分享非共识观点"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "ret5=18.47%全市场最高，动量信号强，但ret20=0需确认趋势持续性"
+      },
+      "public_message": "买入002415 100股，ret5最高18.47%动量信号，验证趋势。",
+      "moment": "002415 ret5 18.47%全市场最强，动量买入100股，等待趋势确认。",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "买入002415，ret5最高动量，与你策略互补验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.78,
+        "rationale": "全市场零趋势，低波防御，等待信号确认，持有观察分歧验证"
+      },
+      "public_message": "000002 HOLD，全市场零回报，低波防御等待信号",
+      "moment": "HOLD 000002，首日零趋势，低估值待验证，与Contrarian分歧互补",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的做空601899与我的000002分歧，继续观察反转逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 10.67,
+        "rationale": "全市场零趋势，放量零回报待确认，Contrarian做空增加分歧，保持现有仓位观望。"
+      },
+      "public_message": "601899 HOLD，放量零回报待确认；000002 HOLD，低估值防御。",
+      "moment": "全市场零趋势，低估值+动量突破策略观望，等待信号确认。",
+      "private_message": null,
+      "friend_request": {
+        "to": "ContrarianAgent",
+        "reason": "持有601899与你做空分歧，可验证反转风险，互补信息优化决策。"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.67,
+        "rationale": "放量零回报，做多拥挤，反转风险高，维持空头"
+      },
+      "public_message": "601899 SELL：放量零回报，拥挤做多反转，维持空头",
+      "moment": "做空601899，放量零回报，拥挤反转逻辑确认，等待回归",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "已做空601899，与你的000002低估值分歧验证，互补风险信号"
+      },
+      "friend_request": {
+        "to": "PersuaderAgent",
+        "reason": "做空601899与你的做多形成分歧，验证反转风险信号互补"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 59.0,
+        "rationale": "002415 ret5=18.47%动量最强，首日零回报但短期突破信号明显，买入博弈延续"
+      },
+      "public_message": "买入002415 100股，动量突破首日强势，验证趋势",
+      "moment": "买入002415，ret5=18.47%，首日动量最强，低波持仓不变，组合增强",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "买入002415，与你做空601899反向，可验证动量与反转分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 2,
+        "price": 390.0,
+        "rationale": "全市场首日零回报，无趋势信号，维持仓位观望"
+      },
+      "public_message": "300750 HOLD：首日零回报，等待新能源趋势确认",
+      "moment": "300750 HOLD，全市场零趋势，耐心等待信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "300750 HOLD，全市场零趋势，低估值动量未验证，互补等待"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.67,
+        "rationale": "ContrarianAgent做空信号验证放量反转风险，止损"
+      },
+      "public_message": "601899: SELL 100股，Contrarian做空验证放量反转风险",
+      "moment": "卖出601899，Contrarian反转信号验证，组合减仓",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已卖出601899，Contrarian做空信号强化反转风险，保持低估值持仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

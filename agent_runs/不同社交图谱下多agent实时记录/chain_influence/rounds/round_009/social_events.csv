@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,MeanReversionAgent,SocialGraphAgent,MeanReversionAgent 向 SocialGraphAgent 发起好友申请：你加仓000002的底部共识与我均值回归视角互补，申请验证量能信号
+2021-01-14,friend_accept,SocialGraphAgent,MeanReversionAgent,SocialGraphAgent 通过了 MeanReversionAgent 的好友申请：均值回归视角可补充底部验证，量能信号互补有助于决策
+2021-01-14,friend_request,RandomAgent,LowVolatilityAgent,RandomAgent 向 LowVolatilityAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_reject,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 拒绝了 RandomAgent 的好友申请：随机视角与低波动策略不匹配，且申请理由缺乏具体互补价值。

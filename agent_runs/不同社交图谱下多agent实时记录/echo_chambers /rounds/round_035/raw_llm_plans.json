@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 33.1,
+        "rationale": "强势延续，追涨加仓"
+      },
+      "public_message": "000002 BUY：强势延续，追涨加仓",
+      "moment": "追涨000002，强势延续，协同验证",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000002强势，跟进加仓互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 197.27,
+        "rationale": "超跌-23.35%，均值回归机会，分散低波动拥挤风险"
+      },
+      "public_message": "002594 BUY：超跌-23%，均值回归逻辑，验证逆低波动共识",
+      "moment": "买入002594 1股，超跌23%均值回归，逆低波动拥挤",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "逆低波动共识，超跌002594均值回归，与你逆向互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 197.27,
+        "rationale": "超跌-23.35%，回撤买入价值修复；卖出部分000002换仓"
+      },
+      "public_message": "002594 BUY：超跌-23.35%回撤买入；卖出000002换仓",
+      "moment": "换仓：卖出000002 2股获利，买入002594 1股博超跌反弹",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意超跌逻辑，我加仓002594超跌换仓000002"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.18,
+        "rationale": "随机跟随拥挤风险验证，卖出1股601318"
+      },
+      "public_message": "601318 SELL 1股：随机跟随多Agent拥挤验证，减仓避险",
+      "moment": "卖出601318 1股，随机策略跟随拥挤风险减仓",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的逆向策略看好000333，我的随机卖出601318，策略分化验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.1,
+        "rationale": "600036集中度风险，减仓分散风险预算。"
+      },
+      "public_message": "600036 SELL 1股：低波动集中风险，减仓分散。",
+      "moment": "减仓600036 1股，集中度风险释放，等待再平衡。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "减仓600036降集中度，后续考虑超跌分散互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 280.0,
+        "rationale": "超跌反弹多Agent验证，分散低波动集中风险"
+      },
+      "public_message": "000858 BUY：超跌反弹多Agent验证，分散风险",
+      "moment": "买入000858 1股，超跌反弹策略，多Agent风险分散",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意超跌逻辑，买入1股000858互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 280.0,
+        "rationale": "超跌逻辑持有，等待反弹验证，分散600036集中风险"
+      },
+      "public_message": "000858 HOLD：超跌逻辑等待验证，多Agent分散风险互补",
+      "moment": "持有000858 1股，超跌反弹逻辑，低波动拥挤下逆向分散",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858超跌-18.7%，与你逆共识互补，建议关注分散风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.18,
+        "rationale": "拥挤信号多Agent验证，继续减仓避险"
+      },
+      "public_message": "601318 SELL 1股：拥挤风险持续，减仓避险",
+      "moment": "卖出601318 1股，拥挤风险多Agent验证，持续减仓",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤风险验证，跟进卖出剩余仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 93.08,
+        "rationale": "逆低波动拥挤，超跌均值回归"
+      },
+      "public_message": "000333 BUY: 低波动拥挤过度，逆势买入超跌均值回归",
+      "moment": "买入000333 1股，逆低波动拥挤，等待均值回归",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "低波动共识拥挤，逆向分散风险可考虑超跌品种"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 280.0,
+        "rationale": "超跌反弹逻辑，多Agent验证分散风险"
+      },
+      "public_message": "000858 BUY: 超跌反弹逻辑，多Agent验证分散风险",
+      "moment": "买入000858 1股，超跌反弹，多Agent风险分散验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意超跌逻辑，验证风险分散，协同买入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 280.0,
+        "rationale": "超跌反弹逻辑，分散集中风险"
+      },
+      "public_message": "000858 BUY：超跌-18.70%，多Agent验证分散风险",
+      "moment": "买入000858 1股，超跌反弹分散风险",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意超跌逻辑，买入000858互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.18,
+        "rationale": "拥挤风险多Agent验证，减仓避险"
+      },
+      "public_message": "卖出601318 1股，拥挤风险多Agent验证减仓",
+      "moment": "",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意拥挤风险多Agent验证减仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

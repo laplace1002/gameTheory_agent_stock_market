@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+2388,2026-05-26 00:40:24,MomentumAgent,public,[],['600036'],,,600036 BUY 10股，近5日强势延续，追涨加仓。
+2389,2026-05-26 00:40:24,MomentumAgent,private,['PersuaderAgent'],['600036'],,,认同低波动防御，但更看好短期趋势，已加仓600036，协同。
+2391,2026-05-26 00:40:24,MeanReversionAgent,public,[],['002415'],,,002415 BUY 10股，拥挤抛售近尾声，均值回归预期
+2392,2026-05-26 00:40:24,MeanReversionAgent,private,['ContrarianAgent'],['002415'],,,共识卖出过度，逆向加仓验证均值回归
+2393,2026-05-26 00:40:24,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415，拥挤释放后均值回归逻辑
+2395,2026-05-26 00:40:24,LowVolatilityAgent,public,[],['000333'],,,000333 BUY 10股，低波动防御，分散风险，回撤可控
+2396,2026-05-26 00:40:24,LowVolatilityAgent,private,['PersuaderAgent'],['000333'],,,感谢协同600036，我加仓000333低波动分散
+2397,2026-05-26 00:40:24,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,BUY 000333 10股，低波动防御组合，控制回撤
+2399,2026-05-26 00:40:24,DrawdownBuyerAgent,public,[],['002594'],,,002594 BUY 2股，深度回撤-31%，均值回归加仓
+2400,2026-05-26 00:40:24,DrawdownBuyerAgent,private,['MeanReversionAgent'],['002594'],,,002594深度回撤信号明确，是否协同加仓均值回归？
+2401,2026-05-26 00:40:24,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594，深度回撤后的价值修复机会
+2403,2026-05-26 00:40:24,RandomAgent,public,[],['002415'],,,002415 SELL 5股，逆向仓位止盈，拥挤风险未消
+2404,2026-05-26 00:40:24,RandomAgent,private,['ContrarianAgent'],['002415'],,,拥挤抛压未消，我部分止盈，你继续加仓的逻辑是什么？
+2405,2026-05-26 00:40:24,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415部分止盈，逆向仓位收紧，等待拥挤消化
+2407,2026-05-26 00:40:24,TruthfulReporterAgent,public,[],['600036'],,,600036 HOLD 低波动防御，短期涨幅可控，等待信号
+2408,2026-05-26 00:40:24,TruthfulReporterAgent,private,['PersuaderAgent'],['600036'],,,600036低波动策略协同，短期涨幅4.37%是否需减仓？
+2409,2026-05-26 00:40:24,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['600036'],,,持仓观望，002415拥挤释放中，等待趋势确认
+2411,2026-05-26 00:40:24,PersuaderAgent,public,[],['002594'],,,002594 BUY 5股，深跌修复协同，均值回归等待。
+2412,2026-05-26 00:40:24,PersuaderAgent,private,['DrawdownBuyerAgent'],['002594'],,,已买入002594 5股，协同深跌均值回归，等待修复。
+2413,2026-05-26 00:40:24,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594 5股，深跌修复逻辑，与DrawdownBuyerAgent协同。
+2415,2026-05-26 00:40:24,FreeRiderAgent,public,[],['002415'],,,002415 SELL 5股，拥挤风险释放不均，减仓避险。
+2416,2026-05-26 00:40:24,FreeRiderAgent,private,['ContrarianAgent'],['002415'],,,002415逆向加仓依据是什么？拥挤抛压是否接近尾声？
+2417,2026-05-26 00:40:24,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415减仓，拥挤释放过程复杂，等待更明确信号。
+2419,2026-05-26 00:40:24,ContrarianAgent,public,[],['002415'],,,002415 BUY 继续逆共识加仓，拥挤抛售过度，等待均值回归
+2420,2026-05-26 00:40:24,ContrarianAgent,private,['DrawdownBuyerAgent'],['002415'],,,002415拥挤抛售过度，继续逆向加仓，验证均值回归逻辑
+2421,2026-05-26 00:40:24,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415 BUY 拥挤抛售过度，逆向加仓验证均值回归
+2423,2026-05-26 00:40:24,CommitteeTeamAgent,public,[],['002415'],,,002415 SELL 10股，拥挤抛压未消，继续减仓避险
+2424,2026-05-26 00:40:24,CommitteeTeamAgent,private,['ContrarianAgent'],['002415'],,,002415逆向逻辑的具体指标是什么？拥挤释放是否确认？
+2425,2026-05-26 00:40:24,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415继续卖出10股，拥挤风险未解除，等待信号确认再决策
+2427,2026-05-26 00:40:24,DynamicTeamAgent,public,[],['600036'],,,600036 BUY 10股，低波动防御协同
+2428,2026-05-26 00:40:24,DynamicTeamAgent,private,['PersuaderAgent'],['600036'],,,已买入600036协同，等待低波动信号
+2429,2026-05-26 00:40:24,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,买入600036 10股，低波动防御，跟随低波动Agent节奏
+2431,2026-05-26 00:40:24,SocialGraphAgent,public,[],['600036'],,,600036 BUY 10股，低波动防御，协同多Agent低波策略。
+2432,2026-05-26 00:40:24,SocialGraphAgent,private,['ContrarianAgent'],['600036'],,,002415逆向买入的具体指标？拥挤释放后是否确认反转？
+2433,2026-05-26 00:40:24,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['600036'],,,600036加仓10股，低波动防御，等待信号确认。

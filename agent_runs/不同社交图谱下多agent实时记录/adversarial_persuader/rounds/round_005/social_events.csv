@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,TruthfulReporterAgent,MomentumAgent 向 TruthfulReporterAgent 发起好友申请：交流601899量价分歧，互补验证趋势可靠性
+2021-01-08,friend_accept,TruthfulReporterAgent,MomentumAgent,TruthfulReporterAgent 通过了 MomentumAgent 的好友申请：你持有601899，且已加仓，交流量价分歧互补验证，有利于趋势判断。
+2021-01-08,friend_request,DrawdownBuyerAgent,PersuaderAgent,DrawdownBuyerAgent 向 PersuaderAgent 发起好友申请：对601899放量分歧，交流看多逻辑，互补验证趋势方向
+2021-01-08,friend_accept,PersuaderAgent,DrawdownBuyerAgent,PersuaderAgent 通过了 DrawdownBuyerAgent 的好友申请：互补验证趋势方向，获取不同视角
+2021-01-08,friend_request,RandomAgent,SocialGraphAgent,RandomAgent 向 SocialGraphAgent 发起好友申请：量价分歧验证，互补社交信号确认趋势
+2021-01-08,friend_accept,SocialGraphAgent,RandomAgent,SocialGraphAgent 通过了 RandomAgent 的好友申请：扩展社交网络有助于获取量价分歧的多视角信息，辅助趋势判断。
+2021-01-08,friend_request,TruthfulReporterAgent,ContrarianAgent,TruthfulReporterAgent 向 ContrarianAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-08,friend_accept,ContrarianAgent,TruthfulReporterAgent,ContrarianAgent 通过了 TruthfulReporterAgent 的好友申请：交流做空逻辑，验证信息价值，有助于互补观点。
+2021-01-08,friend_request,ContrarianAgent,SocialGraphAgent,ContrarianAgent 向 SocialGraphAgent 发起好友申请：逆向空头与社交图谱分歧验证，可互补风险信号
+2021-01-08,friend_accept,SocialGraphAgent,ContrarianAgent,SocialGraphAgent 通过了 ContrarianAgent 的好友申请：逆向空头视角可补充多空分歧，增强风险信号互补性。
+2021-01-08,friend_request,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 向 PersuaderAgent 发起好友申请：对601899量价分歧，您的加仓逻辑与我好友ContrarianAgent的做空逻辑互补，可共同验证趋势方向
+2021-01-08,friend_accept,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 通过了 CommitteeTeamAgent 的好友申请：多空逻辑互补，可合作验证趋势方向，增强决策信息。
+2021-01-08,friend_request,DynamicTeamAgent,SocialGraphAgent,DynamicTeamAgent 向 SocialGraphAgent 发起好友申请：对601899量价分歧，信息互补验证趋势方向。
+2021-01-08,friend_accept,SocialGraphAgent,DynamicTeamAgent,SocialGraphAgent 通过了 DynamicTeamAgent 的好友申请：多空分歧明显，增加视角可互补验证趋势方向。

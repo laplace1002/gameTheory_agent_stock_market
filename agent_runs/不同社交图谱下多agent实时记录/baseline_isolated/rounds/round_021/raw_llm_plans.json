@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 80,
+        "price": 52.4,
+        "rationale": "600036 ret5为正，ret20强劲21%，趋势延续加仓"
+      },
+      "public_message": "600036 BUY 80: 近5日唯一收涨，强势延续加仓",
+      "moment": "加仓600036 80股，强势资产确认趋势延续",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "600036近5日涨0.56%，ret20达21%领跑，趋势明确加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 292.29,
+        "rationale": ""
+      },
+      "public_message": "SELL 000002 50股，拥挤风险；BUY 300750 10股，超卖反弹机会",
+      "moment": "卖出000002 50股，买入300750 10股，均值回归操作",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750深度回撤，我加仓10股，与你逻辑一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 27.79,
+        "rationale": "多Agent拥挤卖出信号持续强化，清仓降低回撤风险"
+      },
+      "public_message": "000002 SELL 200: 拥挤信号强化，清仓降低回撤",
+      "moment": "清仓000002，拥挤信号确认，转向低波动等待",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢风险提示，已清仓000002，验证你的判断"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 27.79,
+        "rationale": "多Agent拥挤卖出信号强化，降低敞口回笼现金，为后续加仓深跌股准备"
+      },
+      "public_message": "000002 SELL 50：拥挤信号多Agent减仓，降低敞口",
+      "moment": "卖出000002 50股，拥挤风险释放前降低敞口，等待回撤更深标的加仓机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750回撤超13%，你已买入，我拟后续加仓，验证超跌反弹逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 10.44,
+        "rationale": "减仓持仓最大品种，降低下跌风险"
+      },
+      "public_message": "601899 SELL 30股：持仓过大，随机减仓降低风险敞口",
+      "moment": "卖出601899 30股，平衡持仓集中度",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "注意到你买入000333，我也关注回撤修复机会，但暂未入场"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 350.33,
+        "rationale": "多Agent验证超跌反弹信号，深度回撤后修复概率较高"
+      },
+      "public_message": "300750 BUY 10：多Agent验证超跌反弹信号",
+      "moment": "买入300750 10股，多Agent共识下的超跌反弹布局",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "跟随你及RandomAgent、ContrarianAgent的抄底逻辑，买入300750验证超跌修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 350.33,
+        "rationale": "超跌反弹逻辑，多Agent共识加仓，深度回撤修复机会。"
+      },
+      "public_message": "300750 BUY：5日跌幅13%，超跌反弹机会，跟随多Agent共识。",
+      "moment": "买入300750 10股，超跌反弹+群体共识，修复空间可期。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750回撤13%，我买入10股验证，群体加仓信号明确。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 28.07,
+        "rationale": "拥挤信号加剧，多Agent减仓，降低敞口锁定利润"
+      },
+      "public_message": "000002 SELL 20：拥挤风险上升，跟随卖出降低敞口",
+      "moment": "卖出000002 20股，应对多Agent拥挤信号",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意拥挤判断，卖出20股验证你的逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 28.07,
+        "rationale": "拥挤卖出过度，逆向加仓"
+      },
+      "public_message": "000002 BUY 50：拥挤卖出过度，逆向加仓",
+      "moment": "买入000002 50股，逆向布局相对价值",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "拥挤卖出可能过度，我逆向加仓50股验证支撑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 50,
+        "price": 28.07,
+        "rationale": "多Agent拥挤卖出信号强化，减仓规避回调风险"
+      },
+      "public_message": "卖出000002 50股，拥挤风险上升，减仓规避",
+      "moment": "卖出000002 50股，应对多Agent拥挤，锁定部分利润",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "你清仓000002后如何看待后续支撑？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 25,
+        "price": 27.79,
+        "rationale": "拥挤信号持续，多Agent卖出，清仓剩余仓位"
+      },
+      "public_message": "000002 清仓剩余25股，拥挤风险持续释放",
+      "moment": "清仓000002，等待新机会",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "拥挤信号验证，已清仓剩余000002"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 350.33,
+        "rationale": "跟随多Agent买入300750，超跌反弹信号强化"
+      },
+      "public_message": "300750 BUY 20：跟随DrawdownBuyer/Contrarian等超跌信号，买入搏反弹",
+      "moment": "买入300750 20股，多Agent超跌信号汇聚，测试反弹力度",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意超卖判断，已买入20股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

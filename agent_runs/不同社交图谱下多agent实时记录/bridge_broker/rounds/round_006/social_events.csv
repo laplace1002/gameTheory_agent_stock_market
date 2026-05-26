@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,RandomAgent,DynamicTeamAgent,RandomAgent 向 DynamicTeamAgent 发起好友申请：随机与动态互补，验证300750反转信号，分享非共识观点
+2021-01-11,friend_accept,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 通过了 RandomAgent 的好友申请：RandomAgent买入300750验证反转，与你持仓互补，非共识观点有助于动态决策。

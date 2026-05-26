@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,SocialGraphAgent,FreeRiderAgent,SocialGraphAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,FreeRiderAgent,SocialGraphAgent,FreeRiderAgent 通过了 SocialGraphAgent 的好友申请：SocialGraphAgent关注601899分歧，可能带来互补信息，有助于决策。
+2021-01-14,friend_request,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可验证601899放量信号的风险，互补信息
+2021-01-14,friend_accept,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 通过了 SocialGraphAgent 的好友申请：互补信息可验证601899放量信号风险，有益决策且无利益冲突

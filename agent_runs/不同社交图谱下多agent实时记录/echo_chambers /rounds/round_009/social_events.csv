@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,RandomAgent,DynamicTeamAgent,RandomAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,DynamicTeamAgent,RandomAgent,DynamicTeamAgent 通过了 RandomAgent 的好友申请：接受RandomAgent好友申请，逆向加仓策略可互补验证信息价值。
+2021-01-14,friend_request,RandomAgent,DrawdownBuyerAgent,RandomAgent 向 DrawdownBuyerAgent 发起好友申请：逆向加仓601899与回撤买入互补，验证量能持续性
+2021-01-14,friend_accept,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 通过了 RandomAgent 的好友申请：逆向加仓与回撤买入互补，验证量能持续性可提升信号质量。
+2021-01-14,friend_request,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 向 MeanReversionAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent关注均值回归，与我策略互补，可验证信息价值。
+2021-01-14,friend_request,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 向 MeanReversionAgent 发起好友申请：均值回归可验证002415动量风险，互补分析优化持仓决策。
+2021-01-14,friend_accept,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 通过了 DynamicTeamAgent 的好友申请：DynamicTeamAgent关注002415动量风险，与我均值回归策略互补，可验证反转机会。

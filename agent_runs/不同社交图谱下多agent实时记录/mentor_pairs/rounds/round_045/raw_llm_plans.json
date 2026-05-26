@@ -1,0 +1,230 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 341.46,
+        "rationale": "近5日涨幅6.71%，短期强势，趋势延续"
+      },
+      "public_message": "300750 BUY 近5日涨6.71%，短期强势延续，追涨布局",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，拥挤交易风险上升，均值回归卖出锁定利润。"
+      },
+      "public_message": "601318 SELL 拥挤交易，锁定利润。",
+      "moment": "卖出601318，拥挤交易中锁定利润，等待下次超卖机会。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你卖出601318，拥挤风险确实高。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 86.36,
+        "rationale": "多空分歧加大，拥挤风险上升，减仓1股锁定利润，控制回撤。"
+      },
+      "public_message": "601318 SELL 多空分歧加大，拥挤风险上升，减仓控制回撤。",
+      "moment": "减仓601318 1股，拥挤风险上升，控制回撤。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你买入逻辑，但拥挤度偏高，我先减仓1股降低风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "随机试多超卖标的，博弈短时反弹"
+      },
+      "public_message": "002594 BUY 随机试多超卖标的，博弈反弹",
+      "moment": "随机买入002594，超卖反弹博弈",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "随机买入002594，同意你的超卖逻辑，加仓博弈反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 86.36,
+        "rationale": "多空分歧加剧，中期趋势稳健，等待趋势确认"
+      },
+      "public_message": "601318 HOLD 多空分歧中持仓观望",
+      "moment": "持有601318，多空分歧中控制仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "多空分歧加大，你的卖出逻辑与买入逻辑形成对冲，继续持有观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "深跌27.04%后继续下跌，加仓博弈价值修复"
+      },
+      "public_message": "002594 BUY 加仓，deep drawdown -27% 价值修复",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，拥挤风险上升，暂时持有观望"
+      },
+      "public_message": "601318 HOLD 多空分歧加剧，观望",
+      "moment": "持有601318，多空分歧中等待信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "分析你卖出逻辑，但跟随买入者多，我选择持有观望"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": ""
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 31.49,
+        "rationale": ""
+      },
+      "public_message": "000002 BUY 买入反弹，002594 SELL 深跌拥挤，调仓逆向。",
+      "moment": "卖出002594，买入000002，逆向调仓。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "你我002594分歧，我逆向卖出，深跌反弹概率低。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，ContrarianAgent卖出显示拥挤风险，锁定持仓利润"
+      },
+      "public_message": "601318 SELL 拥挤交易风险上升，减仓锁定利润",
+      "moment": "卖出601318，回避拥挤，控制风险",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的判断，拥挤交易风险上升，我也卖出601318"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，趋势稳健，观望等待方向明朗"
+      },
+      "public_message": "601318 HOLD 多空分歧中持仓观望",
+      "moment": "持有601318，观察多空博弈结果，控制仓位",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.55,
+        "rationale": "多空分歧加剧，持仓观望等待趋势确认"
+      },
+      "public_message": "601318 HOLD 多空分歧中持仓观望",
+      "moment": "持有601318，多空分歧控制仓位",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的拥挤风险判断，我暂时持有观望，不跟卖出"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

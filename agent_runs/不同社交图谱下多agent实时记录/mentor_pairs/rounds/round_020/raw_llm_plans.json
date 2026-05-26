@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 354.11,
+        "rationale": "300750 ret5=-13.21% 过度抛售，博弈均值修复"
+      },
+      "public_message": "300750 BUY 回撤-13.21% 均值修复机会",
+      "moment": "买入300750，-13%回撤博弈均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750 跌幅-13% 大于 000333，均值修复空间更足"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 247.0,
+        "rationale": "002594强势，ret5=1.68%正向，多个Agent买入验证动量延续，加仓1股"
+      },
+      "public_message": "002594 BUY 加仓，动量延续，多个Agent验证。",
+      "moment": "加仓002594，",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的002594动量判断，我已加仓跟进。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 51.1,
+        "rationale": "600036回撤可控（ret5=-1.05%），SocialGraph卖出导致拥挤下降，低波动策略介入"
+      },
+      "public_message": "600036 BUY 回撤可控，拥挤下降，低波动布局",
+      "moment": "600036 BUY 1股，低波动策略，利用分歧",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "认同600036拥挤下降逻辑，低波动加仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 354.11,
+        "rationale": "随机博弈超跌反弹，ret5=-13.21%属非共识机会"
+      },
+      "public_message": "300750 BUY 随机博弈超跌反弹，-13%跌幅吸引",
+      "moment": "买入300750，随机捕捉超跌反弹机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750大幅超卖，随机买入博弈反弹，验证你的回撤逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 63.0,
+        "rationale": "缺乏强信号，现金观望"
+      },
+      "public_message": "002415 HOLD 多空分歧大，等待信号",
+      "moment": "现金观望，等待多空信号明朗",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002594动量确认？我暂持现金"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 63.0,
+        "rationale": "回撤-5.6%符合回撤买入标准，博弈均值修复"
+      },
+      "public_message": "002415 BUY 回撤-5.6% 价值修复机会",
+      "moment": "买入002415，回撤-5.6%提供安全边际，等待均值回复。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "002415 ret5=-5.6% 回撤买入测试，验证修复信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 247.0,
+        "rationale": "低拥挤动量延续，多个交易者买入验证，预期短期趋势延续"
+      },
+      "public_message": "002594 BUY 低拥挤动量延续，跟随加仓1股",
+      "moment": "002594 BUY 低拥挤动量，趋势验证，加仓1股",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "认可你002594动量分析，已加仓，建议关注拥挤度变化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 247.0,
+        "rationale": "低拥挤动量延续，跟随CommitteeTeam和DynamicTeam信号"
+      },
+      "public_message": "002594 BUY 跟随低拥挤动量，买入1股",
+      "moment": "买入002594，低拥挤动量策略执行，等待进一步信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002594 BUY 跟随你的低拥挤动量信号，验证趋势延续"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 354.11,
+        "rationale": "过度恐慌下跌13.21%，逆向买入博弈均值修复"
+      },
+      "public_message": "300750 BUY 大跌13.21%过度恐慌，逆向买入等待修复",
+      "moment": "买入300750，逆向捕捉过度恐慌机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750回撤幅度更大，逆向买入博弈修复，与你000333逻辑类似"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.1,
+        "rationale": "SocialGraphAgent等卖出强化拥挤信号，减仓控制风险"
+      },
+      "public_message": "600036 SELL 多Agent卖出拥挤，减仓控制风险",
+      "moment": "600036 SELL 拥挤强化，减仓锁定利润",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "逆向逻辑有分歧，但拥挤信号强化，先减仓观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 27.79,
+        "rationale": "000002 ret5=-5%，弱势，止损释放现金"
+      },
+      "public_message": "000002 SELL 止损5%下跌，换入000858逆向机会",
+      "moment": "卖出000002止损，准备买入000858逆向布局",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858逆向逻辑验证，我卖出000002后跟随买入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 96.33,
+        "rationale": "跟随DrawdownBuyerAgent回撤修复逻辑，好友信号增强，买入博弈反弹"
+      },
+      "public_message": "000333 BUY 好友回撤买入信号，博弈修复反弹",
+      "moment": "000333 BUY 1股，跟随DrawdownBuyer回撤修复策略，拥挤度未增",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤-4.94%，跟随你价值修复逻辑，已买入1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

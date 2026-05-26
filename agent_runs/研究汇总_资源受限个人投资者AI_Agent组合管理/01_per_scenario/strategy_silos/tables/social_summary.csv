@@ -1,0 +1,2 @@
+scenario,rounds,events,messages,trades,holds,friend_requests,friend_accepts,friend_rejects,public_messages,private_messages,moments,final_friendships,final_influence_edges,avg_final_pnl,best_final_agent,best_final_pnl
+strategy_silos,50,2454,1725,458,142,64,60,4,600,549,576,66,132,-4478.007500000001,CommitteeTeamAgent,924.86

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 6,
+        "price": 198.5,
+        "rationale": "002594 ret5=-5.14%弱势，追涨逻辑反向，清仓止损"
+      },
+      "public_message": "卖出002594 6股，弱势延续，追涨逻辑不成立",
+      "moment": "清仓002594，弱势股尽早离场；关注000002 ret20=14.98%趋势延续机会",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594超跌共识虽多，但趋势向下，我清仓了"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 198.5,
+        "rationale": "极端超跌-18.77%，多Agent验证均值回归，逢低加仓。"
+      },
+      "public_message": "002594 BUY 10股：极端超跌-18.77%，均值回归布局。",
+      "moment": "加仓002594 10股，极端超跌-18.77%，均值回归验证。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "验证002594超跌逻辑，同步加仓10股，期待反转。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 32.69,
+        "rationale": "低波动回调小，中期趋势向上，风险可控"
+      },
+      "public_message": "000002：低波动回调-0.91%，中期趋势仍强，买入1股控制回撤",
+      "moment": "低波动策略：买入000002 1股，回撤仅-0.91%，中期趋势稳健",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同002415拥挤风险，转向低波动000002，回撤可控"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 89.9,
+        "rationale": "000333 ret20=-5.53%表现弱于大盘，其他agent未关注，补涨机会。随机逆向布局。"
+      },
+      "public_message": "000333 加仓10股，补涨机会，冷落标的逆向布局。",
+      "moment": "加仓000333 10股，被冷落的补涨标的，随机逆向布局。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "注意到您提及000333，补涨逻辑验证，加仓10股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.95,
+        "rationale": "002415超跌修复共识拥挤，ContrarianAgent卖出加剧分歧，成交量未确认方向，暂持观望"
+      },
+      "public_message": "002415: 多空分歧大，ContrarianAgent卖出加剧拥挤，暂持观望",
+      "moment": "002415分歧加大，成交量待确认，暂持观望",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你的卖出是基于拥挤度量化还是其他指标？想确认信号强度。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 11.45,
+        "rationale": "601899回撤-11.79%深度，中期趋势向上，均值回归布局"
+      },
+      "public_message": "加仓601899 1股，回撤-11.79%买点验证",
+      "moment": "601899回撤-11.79%加仓1股，逆向布局等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899短期超跌，逆向布局，验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.41,
+        "rationale": ""
+      },
+      "public_message": "002415 SELL 10股：拥挤度超阈，跟ContrarianAgent减仓避险",
+      "moment": "减持002415 10股，拥挤信号叠加Contrarian减仓，待002594反转或000333机会释放现金",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你002415拥挤判断，减持10股同步验证分歧风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.95,
+        "rationale": "多空分歧加剧，等待成交量确认方向"
+      },
+      "public_message": "002415多空分歧，暂持观察成交量能否持续配合反转",
+      "moment": "002415多空交战，持币观望，等待成交量确认方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "您卖出002415基于拥挤，是否存在具体资金流出指标？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 89.9,
+        "rationale": "超跌修复共识拥挤，000333被冷落，逆向布局等待轮动"
+      },
+      "public_message": "买入000333 100股，超跌修复共识拥挤，逆向布局冷落标的",
+      "moment": "买入000333，逆向布局冷落标的，等待轮动",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415回撤修复拥挤，000333跌幅有限但被冷落，逆向关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 57.95,
+        "rationale": "多空分歧加大，超跌修复共识与逆向卖出信号并存，维持仓位等待方向确认。"
+      },
+      "public_message": "002415多空分歧加大，暂持观望等待成交量确认方向。",
+      "moment": "002415多空分歧，等待量价确认；600519/601318持仓不变。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同拥挤风险，但超跌修复逻辑未破，暂持观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 59.41,
+        "rationale": "超跌修复共识拥挤，减仓降风险"
+      },
+      "public_message": "002415 卖出10股：超跌修复共识拥挤，减仓验证分歧",
+      "moment": "减仓002415 10股，拥挤交易后转向观察",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤判断，跟随减仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 10,
+        "price": 86.3,
+        "rationale": "强势股回调，低风险布局验证。"
+      },
+      "public_message": "买入601318 10股：强势股回调，低风险布局",
+      "moment": "601318强势股回调买入10股，低风险布局验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601318回调幅度小，长期趋势强，你如何看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

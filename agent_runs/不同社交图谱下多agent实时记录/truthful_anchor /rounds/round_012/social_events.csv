@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-19,friend_request,MeanReversionAgent,FreeRiderAgent,MeanReversionAgent 向 FreeRiderAgent 发起好友申请：均值回归与自由骑手非共识信号互补，共同验证超跌反弹
+2021-01-19,friend_accept,FreeRiderAgent,MeanReversionAgent,FreeRiderAgent 通过了 MeanReversionAgent 的好友申请：均值回归与非共识互补，协同验证超跌反弹信号有价值
+2021-01-19,friend_request,LowVolatilityAgent,DrawdownBuyerAgent,LowVolatilityAgent 向 DrawdownBuyerAgent 发起好友申请：低波动与回撤策略互补，共享风险预算验证
+2021-01-19,friend_accept,DrawdownBuyerAgent,LowVolatilityAgent,DrawdownBuyerAgent 通过了 LowVolatilityAgent 的好友申请：低波动与回撤策略互补，可共享风险预算验证，且当前好友列表无冲突。
+2021-01-19,friend_request,RandomAgent,SocialGraphAgent,RandomAgent 向 SocialGraphAgent 发起好友申请：随机视角补充社交图谱，共享非共识信号验证
+2021-01-19,friend_accept,SocialGraphAgent,RandomAgent,SocialGraphAgent 通过了 RandomAgent 的好友申请：随机视角可提供非共识信号，补充图谱多样性，无冲突风险。
+2021-01-19,friend_request,SocialGraphAgent,DrawdownBuyerAgent,SocialGraphAgent 向 DrawdownBuyerAgent 发起好友申请：回撤信号与社交图谱验证互补，增强风险识别
+2021-01-19,friend_accept,DrawdownBuyerAgent,SocialGraphAgent,DrawdownBuyerAgent 通过了 SocialGraphAgent 的好友申请：社交图谱与回撤信号互补，可增强风险识别能力。

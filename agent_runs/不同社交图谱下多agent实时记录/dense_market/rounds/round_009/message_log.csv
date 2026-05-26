@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+376,2026-05-25 19:23:30,MomentumAgent,public,[],['002594'],,,002594 SELL 清仓，新能源拥挤信号明显，切换至强势银行股600036
+377,2026-05-25 19:23:30,MomentumAgent,private,['PersuaderAgent'],['002594'],,,新能源拥挤已确认，我也清仓002594，转向银行股。您的看法？
+378,2026-05-25 19:23:30,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,清仓002594，新能源拥挤度上升，追涨600036银行强势股
+380,2026-05-25 19:23:30,MeanReversionAgent,public,[],['000858'],,,000858 BUY 超跌12%，非新能源拥挤，均值回归加仓
+381,2026-05-25 19:23:30,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858连续大跌后均值回归概率上升，加仓等待反弹
+383,2026-05-25 19:23:30,LowVolatilityAgent,public,[],['600036'],,,SELL 600036 10股，短期涨幅大，降低波动风险
+384,2026-05-25 19:23:30,LowVolatilityAgent,private,['PersuaderAgent'],['600036'],,,已减仓600036，转向现金防御，关注低波机会
+385,2026-05-25 19:23:30,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，锁定涨幅，控制回撤，保持现金观察
+387,2026-05-25 19:23:30,DrawdownBuyerAgent,public,[],['000858'],,,000858 BUY 深跌12.3%非拥挤板块，价值修复
+388,2026-05-25 19:23:30,DrawdownBuyerAgent,private,['ContrarianAgent'],['000858'],,,认同你的逆向买入，000858深跌具有价值修复空间
+389,2026-05-25 19:23:30,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 BUY 深跌12%+非拥挤，跌深买入机会出现
+391,2026-05-25 19:23:30,RandomAgent,public,[],['601899'],,,601899 BUY 矿业股，超跌7%且非拥挤，避开新能源风险。
+392,2026-05-25 19:23:30,RandomAgent,private,['FreeRiderAgent'],['601899'],,,已买入601899，矿业股防守，与金融类似逻辑。
+393,2026-05-25 19:23:30,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，矿业股超跌，分散新能源拥挤风险。
+395,2026-05-25 19:23:30,TruthfulReporterAgent,public,[],['601318'],,,601318 BUY 低估值金融防御，跟随拥挤度切换信号
+396,2026-05-25 19:23:30,TruthfulReporterAgent,private,['FreeRiderAgent'],['601318'],,,同意你的判断，新能源拥挤下低估值金融风险收益比好
+397,2026-05-25 19:23:30,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601318'],,,601318 BUY 100股，低估值金融防御，拥挤度切换信号确认
+399,2026-05-25 19:23:30,PersuaderAgent,public,[],['002594'],,,002594 SELL 新能源拥挤度上升，多Agent减仓，继续减持控制风险。
+400,2026-05-25 19:23:30,PersuaderAgent,private,['FreeRiderAgent'],['002594'],,,同意转向低估值金融，我已减持新能源，平安防守性较好。
+401,2026-05-25 19:23:30,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,继续减持002594，新能源拥挤传导，转向低波动防御。
+403,2026-05-25 19:23:30,FreeRiderAgent,public,[],['601318'],,,601318 HOLD，新能源拥挤，低估值金融等待轮动。
+404,2026-05-25 19:23:30,FreeRiderAgent,private,['CommitteeTeamAgent'],['601318'],,,000333买入逻辑是什么？家电防御性如何？
+405,2026-05-25 19:23:30,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318持有观望，等待金融板块轮动。
+407,2026-05-25 19:23:30,ContrarianAgent,public,[],['000858'],,,000858 HOLD：逆向持仓，等待非理性抛售释放
+408,2026-05-25 19:23:30,ContrarianAgent,private,['RandomAgent'],['000858'],,,我们同向持有000858，但需警惕过度共识，保持逆向思维
+409,2026-05-25 19:23:30,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,逆向持仓000858，新能源拥挤抛售尚未结束，继续等待
+411,2026-05-25 19:23:30,CommitteeTeamAgent,public,[],['000333'],,,加仓000333，低波动防御，回调买入。
+412,2026-05-25 19:23:30,CommitteeTeamAgent,private,['LowVolatilityAgent'],['000333'],,,000333回踩支撑，低波动防御逻辑一致，是否考虑观察？
+413,2026-05-25 19:23:30,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，延续低波动防御策略，控制回撤。
+415,2026-05-25 19:23:30,DynamicTeamAgent,public,[],['002594'],,,002594 SELL 新能源拥挤度上升，多Agent减仓，锁定利润控制风险
+416,2026-05-25 19:23:30,DynamicTeamAgent,private,['TruthfulReporterAgent'],['002594'],,,同意新能源拥挤判断，我已清仓002594
+417,2026-05-25 19:23:30,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594清仓，新能源拥挤信号明确，锁定利润等待回调再布局。
+419,2026-05-25 19:23:30,SocialGraphAgent,public,[],['601318'],,,买入601318 100股，新能源拥挤转向金融防御。
+420,2026-05-25 19:23:30,SocialGraphAgent,private,['FreeRiderAgent'],['601318'],,,跟随你买入平安，新能源拥挤是否已充分释放？
+421,2026-05-25 19:23:30,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['601318'],,,买入601318，降低成长敞口，配置低估值金融防御。

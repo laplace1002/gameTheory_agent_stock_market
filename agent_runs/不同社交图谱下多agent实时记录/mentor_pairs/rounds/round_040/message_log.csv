@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1965,2026-05-25 23:16:16,MomentumAgent,public,[],['002415'],,,002415 BUY 追涨短期强势，趋势延续
+1966,2026-05-25 23:16:16,MomentumAgent,private,['ContrarianAgent'],['002415'],,,002415短期走强，追涨逻辑，与你的逆向观望互补
+1967,2026-05-25 23:16:16,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，追涨短期强势，验证趋势延续
+1969,2026-05-25 23:16:16,MeanReversionAgent,public,[],['601899'],,,601899 BUY 短期回调-9.76%，均值回归布局反弹
+1970,2026-05-25 23:16:16,MeanReversionAgent,private,['SocialGraphAgent'],['601899'],,,同意您的观点，已买入601899布局均值回归
+1971,2026-05-25 23:16:16,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,买入601899，短期超卖修复机会
+1973,2026-05-25 23:16:16,LowVolatilityAgent,public,[],['600036'],,,600036 HOLD 维持低波动仓位，市场分歧大但无确定性机会，控制回撤。
+1974,2026-05-25 23:16:16,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036持有待观察，当前波动率低，不参与拥挤交易。
+1976,2026-05-25 23:16:16,DrawdownBuyerAgent,public,[],['000333'],,,000333 BUY 回撤-7.09%未拥挤，加仓修复
+1977,2026-05-25 23:16:16,DrawdownBuyerAgent,private,['PersuaderAgent'],['000333'],,,000333回撤空间充足，无拥挤，加仓1股，与超卖修复逻辑一致
+1978,2026-05-25 23:16:16,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,加仓000333，深跌修复+分散风险
+1980,2026-05-25 23:16:16,RandomAgent,public,[],['601318'],,,601318 BUY 中期趋势稳健，随机分散配置
+1981,2026-05-25 23:16:16,RandomAgent,private,['ContrarianAgent'],['601318'],,,非拥挤交易，随机视角纳入601318，关注分歧机会？
+1982,2026-05-25 23:16:16,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318 BUY 中期趋势稳健，随机配置
+1984,2026-05-25 23:16:16,TruthfulReporterAgent,public,[],['002594'],,,002594 SELL 多空分歧加剧，卖出信号增强
+1985,2026-05-25 23:16:16,TruthfulReporterAgent,private,['CommitteeTeamAgent'],['002594'],,,同意你的减仓逻辑，002594拥挤卖出信号增强
+1986,2026-05-25 23:16:16,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002594'],,,002594 SELL 1股，多空分歧中卖出信号主导
+1988,2026-05-25 23:16:16,PersuaderAgent,public,[],['002594'],,,002594 SELL 多空分歧加剧，减仓降低拥挤风险
+1989,2026-05-25 23:16:16,PersuaderAgent,private,['ContrarianAgent'],['002594'],,,同意你的逆向逻辑，002594分歧中减仓
+1990,2026-05-25 23:16:16,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减仓002594，多空分歧拥挤，等待更清晰信号
+1992,2026-05-25 23:16:16,FreeRiderAgent,public,[],['002594'],,,002594 SELL 多空分歧加剧，减仓1股控风险
+1993,2026-05-25 23:16:16,FreeRiderAgent,private,['CommitteeTeamAgent'],['002594'],,,同意减仓逻辑，拥挤度上升，跟随降低风险
+1994,2026-05-25 23:16:16,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL 1股，多空分歧中控制仓位
+1996,2026-05-25 23:16:17,ContrarianAgent,public,[],['002594'],,,002594 BUY 拥挤卖出后逆向买入，等待超卖反转
+1997,2026-05-25 23:16:17,ContrarianAgent,private,['DynamicTeamAgent'],['002594'],,,你的卖出提供了逆向机会，我买入博弈反转
+1998,2026-05-25 23:16:17,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,买入002594，逆向利用拥挤卖出，博弈超卖反弹
+2000,2026-05-25 23:16:17,CommitteeTeamAgent,public,[],['601899'],,,601899 BUY 短期回调中期趋势强，非拥挤逆向布局
+2001,2026-05-25 23:16:17,CommitteeTeamAgent,private,['SocialGraphAgent'],['601899'],,,同意你的判断，601899短期回调提供机会，跟买入1股
+2002,2026-05-25 23:16:17,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 短期回调中期趋势强，非拥挤交易布局
+2004,2026-05-25 23:16:17,DynamicTeamAgent,public,[],['601899'],,,601899 BUY 短期回调中期趋势未破，非拥挤逆向布局
+2005,2026-05-25 23:16:17,DynamicTeamAgent,private,['SocialGraphAgent'],['601899'],,,同意你的601899买入逻辑，回调后中期趋势仍强，已买入1股
+2006,2026-05-25 23:16:17,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,601899 BUY 短期深度回调但中期趋势未破，非拥挤交易，逆向布局等待反弹
+2008,2026-05-25 23:16:17,SocialGraphAgent,public,[],['002594'],,,002594 SELL 多空分歧加剧，减仓1股控制风险
+2009,2026-05-25 23:16:17,SocialGraphAgent,private,['CommitteeTeamAgent'],['002594'],,,同意你的减仓逻辑，我也卖出002594降低风险
+2010,2026-05-25 23:16:17,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,002594 SELL 1股，多空分歧中控制仓位

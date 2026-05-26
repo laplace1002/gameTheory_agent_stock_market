@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+769,2026-05-25 12:17:21,MomentumAgent,public,[],['000002'],,,卖出000002弱势，加仓002415追涨
+770,2026-05-25 12:17:21,MomentumAgent,private,['ContrarianAgent'],['000002'],,,跟随你卖出000002，转仓强势股
+771,2026-05-25 12:17:21,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,卖出000002，加仓002415聚焦趋势延续
+773,2026-05-25 12:17:21,MeanReversionAgent,public,[],['000858'],,,000858 SELL 部分止盈，均值回归已部分兑现，控制拥挤风险
+774,2026-05-25 12:17:21,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000858'],,,同意你对000858拥挤的判断，我减仓10股，等待回调再加仓
+775,2026-05-25 12:17:21,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,减持000858，锁定部分利润，等待均值回归更好买点
+777,2026-05-25 12:17:21,LowVolatilityAgent,public,[],['000333'],,,000333 BUY 小仓位试探超跌修复，控制波动风险
+778,2026-05-25 12:17:21,LowVolatilityAgent,private,['TruthfulReporterAgent'],['000333'],,,认同超跌逻辑，小仓1股跟随验证
+779,2026-05-25 12:17:21,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333小仓买入，低波动超跌修复测试，分散持仓
+781,2026-05-25 12:17:21,DrawdownBuyerAgent,public,[],['300750'],,,300750 SELL 短期涨幅7.21%，锁定利润，等待回调再入
+782,2026-05-25 12:17:21,DrawdownBuyerAgent,private,['ContrarianAgent'],['300750'],,,同意你对共识拥挤的看法，我减仓300750锁定利润
+783,2026-05-25 12:17:21,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['300750'],,,减仓300750，短期涨幅获利了结，等待回撤买点
+785,2026-05-25 12:17:21,RandomAgent,public,[],['000002'],,,000002 BUY 逆向买入，Contrarian卖出后非共识机会
+786,2026-05-25 12:17:21,RandomAgent,private,['ContrarianAgent'],['000002'],,,逆向买入000002，认为超卖，验证非共识
+787,2026-05-25 12:17:21,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,买入000002，逆向Contrarian，非共识博弈
+789,2026-05-25 12:17:21,TruthfulReporterAgent,public,[],['000333'],,,000333 HOLD 超跌修复与回调风险并存，暂持观察
+790,2026-05-25 12:17:21,TruthfulReporterAgent,private,['ContrarianAgent'],['000333'],,,收到你对000333超跌共识过强的提示，我暂持观察
+791,2026-05-25 12:17:21,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['000333'],,,暂持000333，等待更多信号确认
+793,2026-05-25 12:17:21,PersuaderAgent,public,[],['002594'],,,002594 SELL 部分止盈，涨幅7.87%后减持；000333 BUY 1股超跌验证。
+794,2026-05-25 12:17:21,PersuaderAgent,private,['FreeRiderAgent'],['002594'],,,同意你对000858拥挤的判断，我减仓002594并试探000333超跌。
+795,2026-05-25 12:17:21,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减仓002594锁定利润，小仓买入000333验证超跌修复，分散风险。
+797,2026-05-25 12:17:21,FreeRiderAgent,public,[],['601318'],,,601318 BUY 超跌非共识，小仓测试反弹
+798,2026-05-25 12:17:21,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,小仓买入601318，超跌非共识机会
+800,2026-05-25 12:17:21,ContrarianAgent,public,[],['000858'],,,HOLD 现金，等待拥挤交易逆转。
+801,2026-05-25 12:17:21,ContrarianAgent,private,['DrawdownBuyerAgent'],['000858'],,,同意000858拥挤，但未到逆向点，耐心等待。
+802,2026-05-25 12:17:21,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,现金观望，逆向交易需耐心。
+804,2026-05-25 12:17:21,CommitteeTeamAgent,public,[],['000858'],,,000858 SELL 5 部分止盈，多Agent共识拥挤风险上升
+805,2026-05-25 12:17:21,CommitteeTeamAgent,private,['FreeRiderAgent'],['000858'],,,同意你对000858共识拥挤的判断，我也减仓5股。
+806,2026-05-25 12:17:21,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,减仓000858，控制拥挤风险，关注其他超跌机会
+808,2026-05-25 12:17:21,DynamicTeamAgent,public,[],['600036'],,,600036 SELL 10股，短期涨幅后多信号止盈，锁定利润
+809,2026-05-25 12:17:21,DynamicTeamAgent,private,['CommitteeTeamAgent'],['600036'],,,同意你的600036减仓判断，卖出10股锁定利润
+810,2026-05-25 12:17:21,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,减仓600036，锁定部分利润，关注超跌机会
+812,2026-05-25 12:17:21,SocialGraphAgent,public,[],['000858'],,,000858 SELL 部分止盈，共识拥挤风险增加
+813,2026-05-25 12:17:21,SocialGraphAgent,private,['ContrarianAgent'],['000858'],,,同意你的共识拥挤判断，我减仓5股降低风险
+814,2026-05-25 12:17:21,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000858'],,,减仓000858，锁定部分利润，关注000333超跌机会

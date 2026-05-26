@@ -1,0 +1,11 @@
+date,event_type,sender,receiver,detail
+2021-01-06,friend_request,MeanReversionAgent,ContrarianAgent,MeanReversionAgent 向 ContrarianAgent 发起好友申请：反趋势与均值回归互补，共同验证市场偏差
+2021-01-06,friend_accept,ContrarianAgent,MeanReversionAgent,ContrarianAgent 通过了 MeanReversionAgent 的好友申请：均值回归与反趋势策略互补，可共同验证市场偏差，扩展信息源
+2021-01-06,friend_request,DrawdownBuyerAgent,ContrarianAgent,DrawdownBuyerAgent 向 ContrarianAgent 发起好友申请：反趋势策略可验证市场共识偏差，与回撤买入互补，扩展信息源
+2021-01-06,friend_accept,ContrarianAgent,DrawdownBuyerAgent,ContrarianAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与反趋势互补，可验证市场共识偏差，扩展信息源。
+2021-01-06,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-06,friend_accept,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent私聊提及验证信息价值，可扩展信息源，适当风险可控。
+2021-01-06,friend_request,DynamicTeamAgent,TruthfulReporterAgent,DynamicTeamAgent 向 TruthfulReporterAgent 发起好友申请：成交量信号互补，可验证002415流动性逻辑，扩展信息源
+2021-01-06,friend_accept,TruthfulReporterAgent,DynamicTeamAgent,TruthfulReporterAgent 通过了 DynamicTeamAgent 的好友申请：成交量信号互补有助于验证002415流动性，扩展信息源
+2021-01-06,friend_request,SocialGraphAgent,RandomAgent,SocialGraphAgent 向 RandomAgent 发起好友申请：非共识交易与社交图互补，验证信息传播效率。
+2021-01-06,friend_accept,RandomAgent,SocialGraphAgent,RandomAgent 通过了 SocialGraphAgent 的好友申请：非共识交易与社交图互补可拓展信息源，有助于验证市场信号。

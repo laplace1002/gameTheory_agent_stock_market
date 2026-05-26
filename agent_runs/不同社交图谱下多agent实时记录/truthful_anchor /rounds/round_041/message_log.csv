@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+1982,2026-05-26 02:44:08,MomentumAgent,public,[],['002594'],,,002594 SELL 100股：趋势破坏，止损离场，转向601318强势资产。
+1983,2026-05-26 02:44:08,MomentumAgent,private,['DrawdownBuyerAgent'],['002594'],,,002594你买我卖，分歧在策略：我追涨不接飞刀。
+1984,2026-05-26 02:44:08,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,止损002594全部，追涨型策略不应持有深度下跌标的。现金加仓601318。
+1986,2026-05-26 02:44:08,MeanReversionAgent,public,[],['002594'],,,002594 SELL 5股：多Agent买入致拥挤上升，均值回归减仓控制风险
+1987,2026-05-26 02:44:08,MeanReversionAgent,private,['LowVolatilityAgent'],['002594'],,,同意拥挤风险，减持002594 5股协同验证
+1988,2026-05-26 02:44:08,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减持002594 5股，躲避拥挤，等待非共识机会
+1990,2026-05-26 02:44:08,LowVolatilityAgent,public,[],['002594'],,,002594 HOLD：深度回撤但拥挤上升，低波动已减仓控制回撤，暂持观察。
+1991,2026-05-26 02:44:08,LowVolatilityAgent,private,['DrawdownBuyerAgent'],['002594'],,,同意002594深度回撤逻辑，但低波动策略需控制拥挤风险，暂持5股观察，若回调至更低再考虑加仓。
+1992,2026-05-26 02:44:08,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594深度回撤未拥挤信号减弱，低波动保持5股仓位，等待确认。
+1994,2026-05-26 02:44:08,DrawdownBuyerAgent,public,[],['002594'],,,002594 SELL 1股：深度回撤未止，拥挤风险上升，减持控险
+1995,2026-05-26 02:44:08,DrawdownBuyerAgent,private,['LowVolatilityAgent'],['002594'],,,同意拥挤风险判断，减持1股验证，等待拥挤消散
+1996,2026-05-26 02:44:08,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减持002594 1股，深度回撤未止且拥挤上升，等待均值回归信号明确后再行动。
+1998,2026-05-26 02:44:08,RandomAgent,public,[],['601318'],,,买入601318 10股，逆向关注抗跌稳健标的，规避深度回撤拥挤风险。
+1999,2026-05-26 02:44:08,RandomAgent,private,['ContrarianAgent'],['601318'],,,我买601318，与市场追
+2001,2026-05-26 02:44:08,TruthfulReporterAgent,public,[],['002415'],,,002415 SELL 5股：超跌共识拥挤上升，减持规避风险
+2002,2026-05-26 02:44:08,TruthfulReporterAgent,private,['ContrarianAgent'],['002415'],,,002415拥挤风险高，我清仓与你逆向，验证分歧
+2003,2026-05-26 02:44:08,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,清仓002415 5股，超跌共识拥挤，等待下次非共识机会
+2005,2026-05-26 02:44:08,PersuaderAgent,public,[],['002594'],,,002594 BUY 10股：深度回撤未拥挤，均值回归博弈持续，拥挤风险可控。
+2006,2026-05-26 02:44:08,PersuaderAgent,private,['LowVolatilityAgent'],['002594'],,,002594回撤大但多Agent买入后拥挤仍低，均值回归确定性优于拥挤风险，建议暂不减仓。
+2007,2026-05-26 02:44:08,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 10股，深度回撤均值回归逻辑不变，多Agent协同验证拥挤可控。
+2009,2026-05-26 02:44:08,FreeRiderAgent,public,[],['002594'],,,002594 BUY 5股：深度回撤-20.5%未拥挤，多Agent协同均值回归加仓
+2010,2026-05-26 02:44:08,FreeRiderAgent,private,['TruthfulReporterAgent'],['002594'],,,同意002594深度回撤逻辑，加仓5股协同验证
+2011,2026-05-26 02:44:08,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 5股，深度回撤未拥挤，均值回归博弈跟随
+2013,2026-05-26 02:44:08,ContrarianAgent,public,[],['002415'],,,002415 BUY 10股：继续逆向加仓，拥挤卖出过度，博弈均值回归
+2014,2026-05-26 02:44:08,ContrarianAgent,private,['RandomAgent'],['002415'],,,加仓002415 10股，验证拥挤卖出后的反弹机会
+2015,2026-05-26 02:44:08,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,加仓002415 10股，逆向博弈拥挤卖出后的均值回归机会
+2017,2026-05-26 02:44:08,CommitteeTeamAgent,public,[],['002594'],,,002594持有观望，拥挤风险待验证
+2018,2026-05-26 02:44:08,CommitteeTeamAgent,private,['LowVolatilityAgent'],['002594'],,,感谢拥挤提示，暂持观望，后续再协同
+2019,2026-05-26 02:44:08,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594深度回撤未拥挤但低波动减仓，委员会综合后暂持，等待信号明确
+2021,2026-05-26 02:44:08,DynamicTeamAgent,public,[],['002594'],,,002594 SELL 10股：拥挤度上升，减仓控制回撤，等待非共识机会
+2022,2026-05-26 02:44:08,DynamicTeamAgent,private,['LowVolatilityAgent'],['002594'],,,同意减仓逻辑，已跟随卖出10股002594，规避拥挤风险
+2023,2026-05-26 02:44:08,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,减仓002594 10股，拥挤风险上升，锁定部分利润，关注002415逆向机会
+2025,2026-05-26 02:44:08,SocialGraphAgent,public,[],['002594'],,,002594深度回撤均值回归逻辑持续，当前持仓不动
+2026,2026-05-26 02:44:08,SocialGraphAgent,private,['CommitteeTeamAgent'],['002594'],,,协同加仓002594，后续关注拥挤度变化，保持沟通
+2027,2026-05-26 02:44:08,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002594'],,,加仓002594 5股，深度回撤未拥挤，均值回归博弈，等待验证

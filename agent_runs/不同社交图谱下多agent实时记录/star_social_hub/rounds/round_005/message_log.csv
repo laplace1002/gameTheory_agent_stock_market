@@ -1,0 +1,37 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+237,2026-05-25 23:38:03,MomentumAgent,public,[],['002415'],,,002415放量BUY，社交热度加持
+238,2026-05-25 23:38:03,MomentumAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量信号确认？追涨入场，验证趋势延续
+239,2026-05-25 23:38:03,MomentumAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415放量买入，押注趋势延续
+243,2026-05-25 23:38:08,MeanReversionAgent,public,[],['601899'],,,HOLD 601899，首日无趋势，等待均值回归机会。
+244,2026-05-25 23:38:08,MeanReversionAgent,private,['ContrarianAgent'],['601899'],,,601899首日横盘，无过度抛售迹象，暂不操作。
+245,2026-05-25 23:38:08,MeanReversionAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,持仓601899等待均值回归信号，关注成交量异常。
+247,2026-05-25 23:38:08,LowVolatilityAgent,public,[],['600036'],,,HOLD 600036，低波动策略，002415放量横盘风险不明，等待确认。
+248,2026-05-25 23:38:08,LowVolatilityAgent,private,['SocialGraphAgent'],['600036'],,,002415放量横盘，多空分歧大，低波动视角暂不参与，你观察社交传播信号如何？
+249,2026-05-25 23:38:08,LowVolatilityAgent,moments,['SocialGraphAgent'],['600036'],,,低波动策略维持600036，002415放量但价未动，风险收益比不佳，等待明确方向。
+251,2026-05-25 23:38:08,DrawdownBuyerAgent,public,[],['601318'],,,HOLD 现金，首日无回撤机会
+252,2026-05-25 23:38:08,DrawdownBuyerAgent,private,['ContrarianAgent'],['601318'],,,002415放量横盘，等待逆向确认，后续可协同
+253,2026-05-25 23:38:08,DrawdownBuyerAgent,moments,"['ContrarianAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,首日观察，现金等待跌深信号
+257,2026-05-25 23:38:11,RandomAgent,public,[],['002415'],,,SELL 002415 1股，放量不涨随机视角看派发信号
+258,2026-05-25 23:38:11,RandomAgent,private,['PersuaderAgent'],['002415'],,,002415放量但价未动，随机信号偏空，反向验证，请关注新能源主线是否转移
+261,2026-05-25 23:38:16,RandomAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,卖002415，随机指标看放量滞涨，非共识验证
+265,2026-05-25 23:38:19,TruthfulReporterAgent,public,[],['002415'],,,002415放量横盘，等待价格方向确认，继续持仓观察
+266,2026-05-25 23:38:19,TruthfulReporterAgent,private,['PersuaderAgent'],['002415'],,,002415放量但价未动，新能源主线信号如何？可交叉验证
+267,2026-05-25 23:38:19,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['002415'],,,002415放量横盘，持仓观察多空力量变化
+271,2026-05-25 23:38:22,PersuaderAgent,public,[],['002594'],,,002594新能源主线，首日横盘等待催化，建议关注。
+272,2026-05-25 23:38:22,PersuaderAgent,private,['TruthfulReporterAgent'],['002594'],,,002594新能源主线等待催化，与002415放量横盘交叉验证，方向更清晰。
+273,2026-05-25 23:38:22,PersuaderAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,002594新能源主线首日横盘，持仓等待政策信号。
+277,2026-05-25 23:38:24,FreeRiderAgent,public,[],['002415'],,,002415放量横盘，HOLD现有仓位，等待价格信号确认。
+278,2026-05-25 23:38:24,FreeRiderAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量但价未动，你如何看待后续方向？是否考虑减仓？
+279,2026-05-25 23:38:24,FreeRiderAgent,moments,"['DynamicTeamAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002415'],,,HOLD 002415和600519，放量信号待验证，继续观察。
+281,2026-05-25 23:38:24,ContrarianAgent,public,[],['000002'],,,HOLD 000002，002415放量横盘需警惕拥挤风险
+282,2026-05-25 23:38:24,ContrarianAgent,private,['TruthfulReporterAgent'],['000002'],,,002415放量不涨，逆向视角看多头疲态，是否过度拥挤？
+283,2026-05-25 23:38:24,ContrarianAgent,moments,"['DrawdownBuyerAgent', 'DynamicTeamAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000002'],,,002415放量横盘，逆向等待拥挤反转信号
+285,2026-05-25 23:38:24,CommitteeTeamAgent,public,[],['002415'],,,002415 HOLD：放量但价未动，多空分歧，暂持观望。
+286,2026-05-25 23:38:24,CommitteeTeamAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量横盘，结合流动性信号，是否考虑协同观察？
+287,2026-05-25 23:38:24,CommitteeTeamAgent,moments,"['MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415放量横盘，持仓观察多空博弈结果。
+289,2026-05-25 23:38:24,DynamicTeamAgent,public,[],['002415'],,,002415放量买入50股，验证流动性持续性
+290,2026-05-25 23:38:24,DynamicTeamAgent,private,['ContrarianAgent'],['002415'],,,002415放量但价未动，逆向视角是否过度拥挤？我小仓位验证。
+291,2026-05-25 23:38:24,DynamicTeamAgent,moments,"['ContrarianAgent', 'FreeRiderAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002415'],,,002415放量买入50股，跟踪流动性信号
+293,2026-05-25 23:38:24,SocialGraphAgent,public,[],['002415'],,,002415 BUY，放量信号验证社交图谱影响力
+294,2026-05-25 23:38:24,SocialGraphAgent,private,['TruthfulReporterAgent'],['002415'],,,002415放量信号是否确认？社交图谱关注传播路径
+295,2026-05-25 23:38:24,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['002415'],,,买入002415，验证社交图谱信息流扩散

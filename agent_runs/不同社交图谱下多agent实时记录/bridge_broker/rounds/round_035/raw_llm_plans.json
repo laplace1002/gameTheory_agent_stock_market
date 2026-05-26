@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 33.1,
+        "rationale": "000002近5日涨幅10.92%，趋势强劲，换入追涨。"
+      },
+      "public_message": "000002 BUY：近5日涨幅10.92%，趋势延续，换入强势。",
+      "moment": "000002 BUY：强势趋势延续，加仓追涨。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002趋势未破，追涨买入，分歧验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 85.18,
+        "rationale": "共识拥挤，短期回调风险，减仓锁定利润准备换入深跌标的"
+      },
+      "public_message": "SELL 601318 减仓共识拥挤，BUY 002594 深跌均值回归机会",
+      "moment": "601318减仓避险，002594深跌布局等待均值修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌逻辑，我买入002594，分歧验证有望反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 55.56,
+        "rationale": "深跌-9.92%后价值修复机会，多Agent未聚焦"
+      },
+      "public_message": "002415 BUY：深跌-9.92%后价值修复机会，多Agent未聚焦",
+      "moment": "002415 BUY：深跌后价值修复，等待分歧修复",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002415深跌-9.92%，中期-16.75%，回撤买入逻辑，验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 12.19,
+        "rationale": "短期回调后中期趋势仍强，非共识逆向加仓，摊低成本等待修复"
+      },
+      "public_message": "601899 BUY 100股：中期趋势未变，短期回调非共识逆向加仓",
+      "moment": "601899加仓：非共识逆向，等待修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "601899中期上涨12.5%，回调后性价比高，深跌逻辑可参考"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 85.18,
+        "rationale": "多Agent共识拥挤卖出，短期回调风险升高，减仓锁定利润"
+      },
+      "public_message": "SELL 601318: 共识拥挤，减仓50股控制回调风险",
+      "moment": "SELL 601318: 减仓应对拥挤回调，观察分歧后机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "601899非共识布局有道理，但需确认中期趋势支撑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.1,
+        "rationale": "市场波动加剧，维持低仓位防御，等待分歧消化"
+      },
+      "public_message": "HOLD：600036 防御持有，控制回撤，等待分歧验证",
+      "moment": "HOLD 600036，防御为主，等待市场稳定",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌风险，但低波动策略暂不参与抄底"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 32.99,
+        "rationale": "反弹后拥挤止盈，ContrarianAgent卖出信号，降低多头敞口"
+      },
+      "public_message": "000002 SELL：反弹后拥挤，止盈控制风险",
+      "moment": "000002 SELL：反弹止盈，等待回调再评估",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意000002反弹拥挤观点，已清仓止盈"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.18,
+        "rationale": "共识拥挤已减仓，暂持观望分歧"
+      },
+      "public_message": "601318 HOLD：共识拥挤已部分减仓，等待分歧验证",
+      "moment": "601318 HOLD：已减仓，等待分歧",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你换入深跌逻辑，观察300750回调幅度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.18,
+        "rationale": "共识卖出过度，逆向买入等待分歧修复"
+      },
+      "public_message": "601318 BUY 100：共识卖出过度，逆向布局分歧修复",
+      "moment": "601318 BUY：拥挤卖出共识，逆向等待反转",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你预期回调80，分歧验证，我逆向买入100股博弈修复"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 87.14,
+        "rationale": "consensus crowding continues, multiple agents reducing positions, short-term downside risk persists."
+      },
+      "public_message": "601318 SELL 100：共识拥挤持续，等待分歧消化",
+      "moment": "601318 减仓100，共识拥挤回调风险未消",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "考虑跟随你换入300750，当前减仓601318后增加现金，后续深跌补仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 87.14,
+        "rationale": "共识拥挤回调风险，多Agent减仓，锁定利润"
+      },
+      "public_message": "601318 SELL：拥挤共识回调风险，减仓锁定利润",
+      "moment": "601318 SELL：减仓控制风险，等待回调分歧后补仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已卖601318，关注300750深跌，分歧消化后考虑介入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.18,
+        "rationale": "共识拥挤持续，多Agent目标回调至80，继续减仓控制风险"
+      },
+      "public_message": "601318 SELL：共识拥挤延续，继续减仓规避回调",
+      "moment": "601318 SELL：共识强化，减仓至0，等待分歧验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意回调目标80，我继续减仓剩余100股，控制风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

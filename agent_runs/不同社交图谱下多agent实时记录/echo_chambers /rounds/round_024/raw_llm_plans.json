@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 313.6,
+        "rationale": "短期涨9.65%最强，追涨趋势延续"
+      },
+      "public_message": "000858 BUY 1股，短强9.65%追涨",
+      "moment": "加仓000858，追涨最强趋势",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036趋势好，但000858更强，关注追涨机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 20,
+        "price": 380.98,
+        "rationale": "拥挤卖出信号验证，止盈部分仓位"
+      },
+      "public_message": "300750 SELL 20股：拥挤卖出信号验证，均值回归止盈",
+      "moment": "300750 SELL 20股，拥挤卖出验证，降低风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤卖出逻辑，卖出20股300750互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.5,
+        "rationale": "趋势稳健，当前仓位合理，风险可控"
+      },
+      "public_message": "600036 HOLD：趋势延续，低波动持有",
+      "moment": "600036趋势稳健，低波动策略继续持有",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "600036趋势互验有效，我剩余仓位继续持有"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 10.15,
+        "rationale": "短期涨4.86%后锁定部分利润，20日仍跌9.21%，非共识减仓"
+      },
+      "public_message": "601899 SELL 20股：短期涨4.86%后锁定利润，非共识减仓",
+      "moment": "卖出601899 20股，短期上涨后非共识减仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "关于601318，我选择卖出601899锁定短期利润，与你超跌修复逻辑不同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 79.62,
+        "rationale": "20日跌幅-7.70%且短期续跌，超跌修复机会"
+      },
+      "public_message": "601318 BUY 1股：20日-7.70%且短期续跌，超跌加仓",
+      "moment": "加仓601318 1股，20日跌幅-7.70%短期续跌，超跌修复持续",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意超跌逻辑，再加1股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 388.5,
+        "rationale": "拥挤卖出信号增强，超跌反弹已部分实现，获利了结"
+      },
+      "public_message": "300750 SELL：拥挤卖出信号验证，获利了结",
+      "moment": "卖出300750 1股，拥挤卖出信号确认，锁定利润",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤卖出逻辑，清仓300750互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.5,
+        "rationale": "趋势延续但多空分歧，等待更明确信号"
+      },
+      "public_message": "600036 HOLD：趋势强但有Agent减仓，分歧中观望",
+      "moment": "600036持有20股，趋势与分歧并存，等待确认",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意趋势逻辑，但LowVolatilityAgent减仓，我暂持观望，后续再决定是否加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 100,
+        "price": 388.5,
+        "rationale": "CommitteeTeamAgent和SocialGraphAgent卖出拥挤信号互验，短期反弹5%后获利了结，规避回调风险。"
+      },
+      "public_message": "300750 SELL：拥挤卖出信号互验，短期反弹到位，止盈。",
+      "moment": "卖出300750 100股，拥挤信号互验，锁定利润。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤卖出逻辑，已卖出300750 100股互验。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.5,
+        "rationale": "趋势延续，低波动策略验证，与DynamicTeamAgent互验"
+      },
+      "public_message": "600036 BUY 10股，趋势延续，低波动有效",
+      "moment": "加仓600036 10股，趋势延续",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的加仓逻辑，我也买入10股600036互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 388.5,
+        "rationale": "拥挤卖出信号增加，CommitteeTeamAgent和SocialGraphAgent互验，减仓5股降低拥挤风险"
+      },
+      "public_message": "300750 SELL 5股：拥挤卖出信号验证，减仓锁定部分利润",
+      "moment": "卖出300750 5股，拥挤信号强化，减仓降低风险",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意拥挤卖出逻辑，卖出300750 5股互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 79.62,
+        "rationale": "超跌修复互验，与DrawdownBuyerAgent一致"
+      },
+      "public_message": "BUY 601318 1股，超跌修复逻辑，与DrawdownBuyerAgent互验",
+      "moment": "买入601318 1股，超跌修复验证，与DrawdownBuyer一致",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌逻辑，买入1股601318互验"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 388.5,
+        "rationale": "拥挤卖出过度，逆向买入验证"
+      },
+      "public_message": "300750 BUY 1股：拥挤卖出过度，逆向买入",
+      "moment": "买入300750 1股，逆向挑战拥挤卖出",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "拥挤卖出可能过度，我逆向买入验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

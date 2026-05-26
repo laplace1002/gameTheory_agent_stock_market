@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 280.7,
+        "rationale": "20日跌幅-8.2%，5日加速下跌-10.9%，均值回归概率上升，低波动防守共识下逆势加仓"
+      },
+      "public_message": "000858 BUY 5日跌超10%，均值回归空间打开",
+      "moment": "加仓000858，超卖信号强于601899拥挤博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899基于恐慌释放，但我认为缩量未确认，000858超卖更明确"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 49.55,
+        "rationale": "低波防守，等待拥挤出清缩量确认"
+      },
+      "public_message": "600036 HOLD 低波防守，等待拥挤出清缩量信号",
+      "moment": "持有600036，观察601899缩量，风险未确认前不动",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899基于恐慌释放，但缩量阈值60%未达，拥挤风险仍高，建议等待"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 29,
+        "price": 211.4,
+        "rationale": "深度回撤-16.84%，逆向买入博弈反弹"
+      },
+      "public_message": "002594 BUY 深度回撤-16.84%，逆向博弈价值修复",
+      "moment": "买入002594，深度回撤16.8%，等待价值修复信号",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "002594回撤-16.84%符合我的深跌逻辑，加仓验证反弹，与你一致？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.75,
+        "rationale": "ContrarianAgent 反向加仓验证恐慌释放，我跟随加仓博弈超跌反弹，拥挤量能未缩但趋势未破"
+      },
+      "public_message": "601899 BUY 跟ContrarianAgent验证恐慌释放，博弈超跌反弹",
+      "moment": "加仓601899，逆向博弈，量能未缩但趋势未破",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899后量能未缩但恐慌释放，我同步加仓200股，验证反弹逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 30,
+        "price": 211.4,
+        "rationale": "弱势资产，近20日跌16.84%，止损换仓至强势标的"
+      },
+      "public_message": "000002 BUY 追涨强势，5日涨10.93%，趋势延续加仓",
+      "moment": "卖出002594和600036，加仓000002，趋势未止",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你买601899逆向，我追000002趋势，分歧验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.55,
+        "rationale": "低波动防守逻辑延续，601899拥挤风险未出清，等待缩量信号确认"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清信号",
+      "moment": "持有600036，低波动防守；观察601899拥挤出清，等待缩量破5日线信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899但缩量未达标，如何确认恐慌释放信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.55,
+        "rationale": "拥挤风险未出清，缩量阈值未触发，维持低波动防守"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清",
+      "moment": "持有600036，低波动防守；观察601899拥挤风险，等待缩量信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899依据恐慌情绪释放，但缩量未达标，如何调整阈值验证？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.75,
+        "rationale": "拥挤风险未出清，量能仍高，减仓控制风险"
+      },
+      "public_message": "601899 SELL 缩减仓位，拥挤风险未出清，等待缩量确认。",
+      "moment": "减仓601899，拥挤风险未出清，等待缩量信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "601899成交量仍高，缩量阈值未触发，加仓需谨慎。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.55,
+        "rationale": "多Agent共识低波动防守，601899拥挤风险未出清，缩量阈值未触发，等待信号确认。"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清缩量信号",
+      "moment": "持有600036，低波动防守；观察601899拥挤风险，等待缩量破5日线信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "缩量阈值参考5日均量60%，当前成交额未达标，加仓需确认恐慌释放充分"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.75,
+        "rationale": "逆向加仓，拥挤卖出恐慌过度，趋势未破，博弈反弹"
+      },
+      "public_message": "601899 BUY 拥挤恐慌过度趋势未破逆向加仓",
+      "moment": "加仓601899，逆向逻辑继续：恐慌拥挤卖出提供机会，等待量能收敛反弹",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "缩量阈值可放宽，趋势未破且恐慌释放，量能高非拥挤崩溃"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 49.55,
+        "rationale": "低波动防守逻辑延续，601899拥挤风险未出清，等待缩量信号。"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清信号",
+      "moment": "持有600036，低波动防守；观察601899拥挤出清，等待缩量信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899基于趋势未破，但缩量阈值未达标，如何评估反弹力度？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.75,
+        "rationale": "ContrarianAgent逆向加仓信号，恐慌情绪释放，小仓位验证"
+      },
+      "public_message": "601899 BUY 小仓位跟随ContrarianAgent逆向逻辑，拥挤恐慌情绪释放",
+      "moment": "买入601899，社交图谱发现ContrarianAgent逆向信号，小仓位试探",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你加仓601899的恐慌情绪释放依据？量能未缩但趋势未破，我小仓跟随验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

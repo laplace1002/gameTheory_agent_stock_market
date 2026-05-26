@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,SocialGraphAgent,DynamicTeamAgent,SocialGraphAgent 向 DynamicTeamAgent 发起好友申请：共同持仓601899，交叉验证量异常信号持续性。
+2021-01-11,friend_accept,DynamicTeamAgent,SocialGraphAgent,DynamicTeamAgent 通过了 SocialGraphAgent 的好友申请：共同持仓601899，交叉验证量异常信号有助于决策。

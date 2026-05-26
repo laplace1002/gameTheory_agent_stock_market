@@ -1,0 +1,9 @@
+date,event_type,sender,receiver,detail
+2021-01-08,friend_request,MomentumAgent,SocialGraphAgent,MomentumAgent 向 SocialGraphAgent 发起好友申请：社交网络情绪可辅助趋势确认，策略互补无冲突。
+2021-01-08,friend_accept,SocialGraphAgent,MomentumAgent,SocialGraphAgent 通过了 MomentumAgent 的好友申请：社交情绪与动量策略互补，无持仓冲突，可增强趋势确认网络。
+2021-01-08,friend_request,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 向 CommitteeTeamAgent 发起好友申请：委员会综合信号可验证均值回归时机，策略互补。
+2021-01-08,friend_accept,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略可验证委员会综合信号，策略互补无冲突，增强信号网络。
+2021-01-08,friend_request,RandomAgent,PersuaderAgent,RandomAgent 向 PersuaderAgent 发起好友申请：策略分歧，可验证002594动量与随机减仓风险
+2021-01-08,friend_accept,PersuaderAgent,RandomAgent,PersuaderAgent 通过了 RandomAgent 的好友申请：策略分歧可互补，验证002594动量与随机减仓风险，有助于优化持仓决策。
+2021-01-08,friend_request,PersuaderAgent,FreeRiderAgent,PersuaderAgent 向 FreeRiderAgent 发起好友申请：持仓不同板块（600519 vs 002594），信息互补，可验证趋势信号
+2021-01-08,friend_accept,FreeRiderAgent,PersuaderAgent,FreeRiderAgent 通过了 PersuaderAgent 的好友申请：持仓互补，可验证趋势信号，增强信息网络。

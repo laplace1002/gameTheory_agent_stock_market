@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 242.92,
+        "rationale": "Strong momentum, continuation play."
+      },
+      "public_message": "002594 BUY：近5日涨幅7.87%，动量延续。",
+      "moment": "002594 BUY：强势追涨，趋势延续。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002594 BUY：动量信号，与你的社交共识互补。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 295.56,
+        "rationale": "超卖反弹后多头拥挤，分歧加剧，均值回归信号转弱，锁利减仓"
+      },
+      "public_message": "000858 SELL：超卖反弹后分歧加剧，均值回归减仓锁利",
+      "moment": "000858 SELL：超卖反弹分歧，均值回归锁利",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "我减仓000858，分歧验证中，你持有观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 0,
+        "price": 29.26,
+        "rationale": "低波防御，000002回撤可控，市场分歧加剧，等待信号"
+      },
+      "public_message": "000002 HOLD：低波防御，回撤可控，分歧验证中",
+      "moment": "000002 HOLD：低波防御，分歧验证，回撤可控",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你的000002防御策略，低波持有待方向"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 10.83,
+        "rationale": "随机反向减仓锁定利润，分歧验证"
+      },
+      "public_message": "601899 SELL：随机反向减仓锁定利润，分歧验证",
+      "moment": "601899 SELL：随机反向减仓，分歧验证中，等待新信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你的000333买入与我的随机反向形成分歧，验证均值回归信号，继续观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.8,
+        "rationale": "回撤-3.57%价值修复机会"
+      },
+      "public_message": "601318 BUY：回撤3.57%价值修复，分歧验证",
+      "moment": "601318 BUY：跌深价值修复，等待均值回归",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "买入601318，赞同你的持有逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 295.56,
+        "rationale": "超卖反弹后多空分歧加剧，但放量支撑仍存，等待进一步验证"
+      },
+      "public_message": "000858 HOLD：超卖反弹后分歧加剧，等待验证信号",
+      "moment": "000858 HOLD：分歧验证中，等待均值回归或突破确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你的HOLD观点与减仓者形成分歧，放量支撑尚在，我继续观察"
+      },
+      "friend_request": {
+        "to": "MomentumAgent",
+        "reason": "动量信号可补充分歧验证，增强趋势判断"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 100.1,
+        "rationale": "跟随CommitteeTeamAgent均值回归信号，分歧验证后认为有向上修复空间"
+      },
+      "public_message": "000333 BUY：均值回归分歧验证，跟随委员会信号",
+      "moment": "000333 BUY：分歧验证，均值回归，与委员会协同",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的000333均值回归判断，分歧验证有效，我跟随买入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.26,
+        "rationale": "低波回撤，换仓至动量标的"
+      },
+      "public_message": "000002 SELL：低波防御失效，换仓至强势板块",
+      "moment": "000002 SELL：低波防御回撤，分歧验证后转向动量",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002低波回撤，建议卖出换仓至002594等动量股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 100.57,
+        "rationale": "超卖均值回归分歧验证中，组合风险可控，等待进一步信号"
+      },
+      "public_message": "000333 HOLD：超卖均值回归分歧验证，等待确认",
+      "moment": "000333 HOLD：超卖均值回归分歧验证，等待修复信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000333分歧验证中，继续持有观察，感谢协作"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.26,
+        "rationale": "逆向买入超卖低波，分歧验证"
+      },
+      "public_message": "000002 BUY：超卖低波逆向买入，分歧验证",
+      "moment": "000002 BUY：超卖低波逆向，分歧验证",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "我在000002与你分歧验证，超卖逆向买入"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 295.56,
+        "rationale": "多空分歧加剧，减仓锁定部分利润，降低风险敞口"
+      },
+      "public_message": "000858 SELL：多空分歧加剧，减仓锁定利润",
+      "moment": "000858 SELL：多空分歧，减仓降风险，等待新信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "000858卖出减仓，分歧验证中，你继续持有观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 100.57,
+        "rationale": "跟从CommitteeTeamAgent均值回归信号，超卖放量分歧验证，加仓"
+      },
+      "public_message": "000333 BUY：超卖放量均值回归，分歧验证加仓",
+      "moment": "000333 BUY：超卖放量均值回归，分歧验证加仓",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的000333均值回归判断，协作加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

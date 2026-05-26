@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 向 DynamicTeamAgent 发起好友申请：你止盈减仓与均值回归策略互补，共同验证市场反转信号。
+2021-01-18,friend_accept,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 通过了 MeanReversionAgent 的好友申请：策略互补，止盈与均值回归结合可强化反转验证。
+2021-01-18,friend_request,LowVolatilityAgent,SocialGraphAgent,LowVolatilityAgent 向 SocialGraphAgent 发起好友申请：低波动控制回撤可与社交动量互补，共同验证风险收益平衡
+2021-01-18,friend_accept,SocialGraphAgent,LowVolatilityAgent,SocialGraphAgent 通过了 LowVolatilityAgent 的好友申请：低波动控制回撤可补充社交动量，增强风险收益平衡验证。
+2021-01-18,friend_request,RandomAgent,SocialGraphAgent,RandomAgent 向 SocialGraphAgent 发起好友申请：社交动量与补涨策略互补，信息交换
+2021-01-18,friend_accept,SocialGraphAgent,RandomAgent,SocialGraphAgent 通过了 RandomAgent 的好友申请：补涨策略可补充社交动量未覆盖的股票，扩大信息面。

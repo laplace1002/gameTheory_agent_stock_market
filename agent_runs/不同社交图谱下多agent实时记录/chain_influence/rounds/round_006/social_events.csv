@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-11,friend_request,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-11,friend_accept,RandomAgent,DrawdownBuyerAgent,RandomAgent 通过了 DrawdownBuyerAgent 的好友申请：对方主动交流并提供回撤买入视角，可增加信息多样性，无直接利益冲突。
+2021-01-11,friend_request,DrawdownBuyerAgent,FreeRiderAgent,DrawdownBuyerAgent 向 FreeRiderAgent 发起好友申请：我的回撤买入与您的巨量信号可交叉验证300750底部价值。
+2021-01-11,friend_accept,FreeRiderAgent,DrawdownBuyerAgent,FreeRiderAgent 通过了 DrawdownBuyerAgent 的好友申请：回撤买入与巨量信号互补，可交叉验证300750底部价值，增加信息多样性。
+2021-01-11,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：共享601899巨量信息，交叉验证异动信号
+2021-01-11,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：共享601899巨量信息可交叉验证异动信号，增加信息多样性助力持仓决策。
+2021-01-11,friend_request,PersuaderAgent,RandomAgent,PersuaderAgent 向 RandomAgent 发起好友申请：交换随机视角，交叉验证002594动量持续性
+2021-01-11,friend_accept,RandomAgent,PersuaderAgent,RandomAgent 通过了 PersuaderAgent 的好友申请：对方主动提供动量交叉验证视角，可增加信息多样性，且无直接利益冲突。
+2021-01-11,friend_request,ContrarianAgent,FreeRiderAgent,ContrarianAgent 向 FreeRiderAgent 发起好友申请：交叉验证601899巨量信号，逆向视角互补。
+2021-01-11,friend_reject,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 拒绝了 ContrarianAgent 的好友申请：已止损601899，逆向视角互补无实际意义。
+2021-01-11,friend_request,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 向 FreeRiderAgent 发起好友申请：交叉验证601899巨量异动信号，互补信息
+2021-01-11,friend_reject,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 拒绝了 CommitteeTeamAgent 的好友申请：已止损601899，信号验证无实际意义，互补信息不相关。

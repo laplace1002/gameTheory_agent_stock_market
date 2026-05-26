@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.2,
+        "rationale": "中期趋势唯一正收益，追涨趋势延续"
+      },
+      "public_message": "000002 BUY 1股，中期趋势唯一正收益，追涨延续",
+      "moment": "000002加仓，中期趋势向上，追涨逻辑",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 1,
+        "price": 10.83,
+        "rationale": "深跌超20%且量能充沛，均值回归博弈修复"
+      },
+      "public_message": "601899 BUY 1股：深跌20%后量能回稳，均值回归博修复",
+      "moment": "601899加仓1股，深跌均值回归布局",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌后回归逻辑，加仓601899共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.2,
+        "rationale": "轮次最后一日，持仓风险可控，000002稳健，601318已减仓，波动可控，维持低波动仓位。"
+      },
+      "public_message": "LowVolatilityAgent HOLD 仓位：轮末低波动持仓，风险可控。",
+      "moment": "低波动持仓不变，轮次末控制回撤。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 79.64,
+        "rationale": "轮次末随机减仓1股601318，跟随LowVolatilityAgent减仓信号控风险。"
+      },
+      "public_message": "601318 SELL 1股：轮末随机减仓，跟随低波动信号。",
+      "moment": "601318减仓1股，轮次末随机配置控风险。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意您的减仓逻辑，轮末控波动，我同步减1股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "多位Agent减仓，002415短线弱势，轮次末控制回撤"
+      },
+      "public_message": "002415 SELL 1股：弱势回调，轮次末减仓控风险",
+      "moment": "002415减仓1股，短线弱势轮末控回撤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002415弱势判断，轮末减仓1股控波动"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 51.76,
+        "rationale": "近5日弱势6.91%，轮次末降低波动，减仓1股控风险"
+      },
+      "public_message": "601318 SELL 1股：弱势回调，轮次末减仓控风险",
+      "moment": "601318减仓1股，弱势回调轮末控回撤",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "理解逆向逻辑，但轮末我减仓601318控波动，建议平衡"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "轮次末弱势股减仓控风险，多Agent卖出共识"
+      },
+      "public_message": "002415 SELL 1股：轮次末弱势减仓控风险",
+      "moment": "002415减仓1股，弱势轮末控回撤",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002415弱势判断，减仓1股控风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 53.5,
+        "rationale": "拥挤卖出过度，逆向加仓博弈反弹"
+      },
+      "public_message": "002415 BUY 1股：拥挤卖出过度，逆向加仓博弈反弹",
+      "moment": "002415加仓1股，拥挤卖出中逆势买入，博弈反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415拥挤卖出过度，加仓1股逆向博弈，与您的002594逆向共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "深跌33.5%后拥挤卖出持续，逆向修复逻辑延续，轮次末博弈反弹"
+      },
+      "public_message": "002594 BUY 1股：深跌33.5%后拥挤卖出未散，逆向修复布局",
+      "moment": "002594加仓1股：深跌33.5%后逆向买入，拥挤卖出中布局修复，轮次末控仓但坚定逻辑",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "拥挤卖出正是逆向机会，深跌33%后安全边际高，轮末修复概率大"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "深跌33.5%，拥挤卖出信号未散，轮次末减仓控风险。"
+      },
+      "public_message": "002594 SELL 1股：深跌且拥挤卖出未散，轮末减仓控风险。",
+      "moment": "002594减仓1股，拥挤分歧中轮末控回撤。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意谨慎，先减仓1股002594观察。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 2,
+        "price": 53.5,
+        "rationale": "弱势回调，多Agent减仓，轮末控风险"
+      },
+      "public_message": "002415 SELL 2股：短线弱势，多Agent减仓，轮末控风险。",
+      "moment": "002415减仓2股，弱势轮末锁定利润。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意002415弱势减仓逻辑，轮末控制回撤，再减2股。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 171.15,
+        "rationale": "拥挤卖出分歧大，轮次末减仓控风险。"
+      },
+      "public_message": "002594 SELL 1股：拥挤卖出分歧大，轮次末减仓控风险。",
+      "moment": "002594减仓1股，轮次末控制回撤。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意拥挤卖出压力，跟减1股002594。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

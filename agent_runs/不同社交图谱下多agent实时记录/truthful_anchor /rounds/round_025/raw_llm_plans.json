@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 373.45,
+        "rationale": "超跌反弹未确认，市场聚焦动量，暂持等待均值回归"
+      },
+      "public_message": "300750 HOLD：超跌-7.68%但反弹力度有限，暂持等待确认",
+      "moment": "持仓300750和601318，超跌均值回归策略，等待信号确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750和601318超跌逻辑一致，但需耐心等待市场回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 54.74,
+        "rationale": "低波动趋势延续但涨幅已大，控制回撤暂持，等待回调确认后再加仓"
+      },
+      "public_message": "600036 HOLD：低波动趋势延续，涨幅已大，控制回撤暂持",
+      "moment": "600036持仓中，低波动策略，涨幅已大，暂不加仓，等待趋势确认",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036趋势信号明确，我控制回撤暂不加仓，与你的加仓互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 319.76,
+        "rationale": "5日涨幅9.83%强势延续，追涨加仓"
+      },
+      "public_message": "000858 BUY：5日涨幅9.83%强势延续，追涨加仓",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 90,
+        "price": 97.25,
+        "rationale": "20日回撤5.59%，超跌反弹共识，随机Agent验证，买入博弈均值回归"
+      },
+      "public_message": "000333 BUY：20日回撤5.59%，随机Agent验证，博弈超跌反弹",
+      "moment": "减仓601318和000858弱势股，加仓000333，回撤买入逻辑落地",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "认同你的000333超跌逻辑，我加仓验证，低吸博弈反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 54.74,
+        "rationale": "涨幅已大，多Agent信号分歧，减仓锁定部分利润"
+      },
+      "public_message": "600036 SELL 50股：涨幅已大，分歧加大，减仓锁定利润",
+      "moment": "600036减仓50股，高位止盈，等待回调再补",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "600036涨幅已高，拥挤风险，赞同你谨慎观点"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 97.25,
+        "rationale": "RandomAgent非共识：000333超跌20日-5.59%，5日止跌，加仓博弈均值回归。"
+      },
+      "public_message": "000333 BUY 5股：超跌反弹非共识，冷门标的等待均值回归。",
+      "moment": "加仓000333 5股，非共识超跌反弹，冷门股布局。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌5%，与你的冷门策略一致，可关注。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 54.74,
+        "rationale": "低波动动量持续但涨幅已大，多Agent共识验证，暂持观察等待回调确认"
+      },
+      "public_message": "600036 HOLD：趋势延续但涨幅已大，等待回调确认后再行动",
+      "moment": "持有600036和300750，等待信号调整",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "600036持仓共识，高位风险与趋势并存，暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 373.45,
+        "rationale": "超跌共识验证，多Agent协同买入，均值回归博弈"
+      },
+      "public_message": "300750 BUY：超跌共识验证，加仓博弈均值回归，与SocialGraphAgent协同",
+      "moment": "300750加仓10股，超跌均值回归博弈，与好友协同",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "300750超跌共识协同，加仓验证，与你策略一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 28.88,
+        "rationale": "市场过度聚焦600036等高动量股，冷落标的具安全边际，逆向持有等待均值回归"
+      },
+      "public_message": "000002 HOLD：拥挤交易600036风险积聚，冷落标的有安全边际",
+      "moment": "当前持仓000002和601318，市场情绪过热，逆向持有等待反转",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036涨幅已大，追涨风险高，建议谨慎"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 5,
+        "price": 373.45,
+        "rationale": "超跌共识验证，多Agent协同加仓"
+      },
+      "public_message": "300750 BUY：超跌共识强化，加仓验证",
+      "moment": "300750加仓5股，超跌反弹共识确认",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "300750超跌共识协同，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 2,
+        "price": 373.45,
+        "rationale": "超跌反弹共识验证，多Agent协同买入，均值回归博弈"
+      },
+      "public_message": "300750 BUY：超跌共识验证，多Agent协同加仓",
+      "moment": "加仓300750 2股，超跌反弹共识确认，与好友协同",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "协同加仓300750，超跌共识验证，感谢确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "300750",
+        "shares": 0,
+        "price": 373.45,
+        "rationale": "超跌共识未证伪，多Agent协同持有，等待反弹确认，600036高位暂持观察"
+      },
+      "public_message": "300750 HOLD：超跌共识验证，多Agent协同，等待反弹确认，600036高位暂持控制回撤",
+      "moment": "持仓300750和600036，300750超跌共识强化，600036趋势延续但高位，控制仓位等待信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "600036虽强势但涨幅已大，超买风险累积，建议谨慎加仓，我暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

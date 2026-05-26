@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 6,
+        "price": 182.97,
+        "rationale": "深跌29.6%过度抛售，均值回归潜力，非拥挤布局"
+      },
+      "public_message": "002594 买入6股，深跌29.6%非拥挤，等待均值回归",
+      "moment": "加仓002594，利用深跌过度抛售的非共识反弹机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已买入002594 6股，深跌超卖，愿交换反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 31.15,
+        "rationale": "000002 ret20强，多Agent加仓形成趋势延续，追涨买入"
+      },
+      "public_message": "加仓000002 200股，中期趋势强，跟随共识",
+      "moment": "加仓000002 200股，利用趋势延续机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000002趋势确认，愿交换反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 31.15,
+        "rationale": "非拥挤深跌修复，中期正收益11.69%，分散低波动组合"
+      },
+      "public_message": "买入000002 5股，非拥挤深跌修复，中期正收益，分散组合",
+      "moment": "加仓000002，非拥挤深跌修复，中期正收益，低波动分散",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已买入000002，愿交换600036波动率数据验证非拥挤逻辑"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 85.95,
+        "rationale": "逆向拥挤卖压，中期反弹概率高。"
+      },
+      "public_message": "000333 买入5股，逆拥挤卖压修复。",
+      "moment": "加仓000333，利用拥挤卖出逆向布局。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我也买入000333，逆向逻辑一致，愿交换数据验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 31.15,
+        "rationale": ""
+      },
+      "public_message": "000002 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 85.95,
+        "rationale": "000333拥挤共识风险高，换仓至非拥挤正向标的000002"
+      },
+      "public_message": "卖出000333 10股，买入000002 10股，非拥挤逻辑。",
+      "moment": "000333减持，000002增持，非拥挤主线。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已跟进000002，确认非拥挤逻辑，愿交换数据。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.15,
+        "rationale": "非拥挤中期正收益，跟随共识修复"
+      },
+      "public_message": "000002 买入10股，非拥挤中期正收益，等待修复。",
+      "moment": "000002加仓，非拥挤修复逻辑持续验证。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已加仓000002，非拥挤波动率低，愿交换反转数据验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.15,
+        "rationale": "非拥挤逆势布局，中期正收益，多个agent换仓至此，跟随修复机会。"
+      },
+      "public_message": "000002 加仓10股，非拥挤中期正收益，跟随修复。",
+      "moment": "000002 加仓，利用非拥挤修复机会。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已加仓000002，愿交换波动率数据验证非拥挤布局。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 30,
+        "price": 31.15,
+        "rationale": "拥挤买入逆向减仓，锁定部分收益"
+      },
+      "public_message": "000002: 卖30股，拥挤买入逆向；000333: 买20股，恐慌卖压逆向",
+      "moment": "000333恐慌卖压逆向加仓20股，000002拥挤买入减仓30股",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333恐慌卖压过度，逆向加仓，愿交换反转数据验证"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "交换000333逆向数据验证，分歧策略价值"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 30,
+        "price": 31.15,
+        "rationale": "非拥挤中期正收益，跟随修复趋势"
+      },
+      "public_message": "买入000002 30股，非拥挤中期正收益，跟随修复趋势。",
+      "moment": "加仓000002，利用非共识修复机会。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已买入000002，愿交换反转数据验证非拥挤布局。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 5,
+        "price": 31.15,
+        "rationale": "加仓非拥挤标的，跟随修复共识"
+      },
+      "public_message": "000002 买入5股，非拥挤中期正收益，等待拥挤退潮反弹",
+      "moment": "加仓000002 5股，利用拥挤退散后的非共识修复机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已加仓000002，确认非拥挤波动率低，愿交换反转数据"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 31.15,
+        "rationale": "非拥挤修复逻辑，多个agent加仓，跟随逆势布局"
+      },
+      "public_message": "000002加仓10股，非拥挤逆势修复",
+      "moment": "加仓000002，利用非共识修复机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已加仓000002，愿交换反转数据验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.0,
+        "rationale": "连续5日大跌超9%，量能仍高但恐慌释放，均值回归概率大"
+      },
+      "public_message": "601899 BUY 连续大跌后均值回归潜力，恐慌释放",
+      "moment": "加仓601899，5日跌9.76%后均值回归博弈，量能高但情绪极端",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意恐慌过度，我加仓100股博均值回归，缩量信号待观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 58.2,
+        "rationale": "近期5日涨幅4.75%领涨，DrawdownBuyer买入确认趋势延续，追涨。"
+      },
+      "public_message": "002415 BUY 5日涨幅领涨，趋势延续。",
+      "moment": "追涨002415，强势延续信号清晰。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意002415修复趋势，我已买入协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.4,
+        "rationale": "当前低波动防守，拥挤风险未出清，维持现有仓位"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清信号",
+      "moment": "持有600036，观察601899量能变化，等待缩量确认信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你减仓601899基于拥挤风险，请问缩量阈值具体参考5日均量多少？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.0,
+        "rationale": "量能依旧高企，拥挤风险未出清，随机减仓锁定部分利润"
+      },
+      "public_message": "601899 SELL 量能未缩，拥挤风险持续，减仓控制回撤",
+      "moment": "卖出601899，拥挤风险未出清，等待量能萎缩再考虑回补",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意拥挤风险，你的缩量阈值参考5日均量60%？我减仓100股验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.4,
+        "rationale": "低波动防守，多数agent共识，601899拥挤风险未出清，等待缩量信号"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待601899缩量破5日线",
+      "moment": "持有600036，观察601899量能变化，拥挤风险未出清",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "缩量阈值参考5日均量60%，当前成交额仍高，继续HOLD"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.0,
+        "rationale": "当日换手率仍高，5日均量未破，拥挤风险未出清，继续减仓。"
+      },
+      "public_message": "601899 SELL 量能未缩，拥挤风险持续，继续减仓。",
+      "moment": "继续减仓601899，量能未缩，拥挤风险未出清，等待缩量信号。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "当前换手率5.3亿远超5日均量3亿，量能高是拥挤而非换手，反弹基础不牢。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.4,
+        "rationale": "低波动防守，拥挤风险未出清，等待缩量信号"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清缩量信号",
+      "moment": "持有600036，低波动防守；观察601899量能变化，等待缩量信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向买入601899基于恐慌过度，但量能未缩如何判断不是拥挤？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 50,
+        "price": 58.2,
+        "rationale": "ret5转正，深跌后企稳，回撤修复信号明确，加仓博反弹"
+      },
+      "public_message": "002415 加仓50股，深跌后5日转正，回撤修复中",
+      "moment": "加仓002415，回撤策略持续，等待价值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002415回撤信号确认，你观点如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.0,
+        "rationale": "恐慌性抛售过度，量能高但趋势未破，逆向加仓摊薄成本博弈反弹"
+      },
+      "public_message": "601899 BUY 恐慌过度逆向加仓，量能高非拥挤而是换手，博弈反弹",
+      "moment": "逆向买入601899，恐慌中见机会，等待缩量信号被突破",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你减仓601899基于拥挤风险，但量能高可能是换手而非恐慌，我逆向加仓验证分歧"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 51.4,
+        "rationale": "多Agent共识低波动防守，拥挤风险未出清，缩量阈值未触发"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清缩量信号",
+      "moment": "持有600036，低波动防守；观察601899量能变化，等待缩量破5日线信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你的缩量阈值参考5日均量60%？当前成交额仍高，等待信号确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 11.0,
+        "rationale": "恐慌释放后反弹概率大，等待缩量信号确认"
+      },
+      "public_message": "601899 HOLD 恐慌释放后反弹概率大，等待缩量信号",
+      "moment": "持有601899，博弈恐慌反弹，观察量能变化",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向加仓逻辑，量能高为换手而非拥挤，等待反弹"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.4,
+        "rationale": "低波动防守共识，拥挤风险未出清，等待缩量信号"
+      },
+      "public_message": "600036 HOLD 低波动防守，等待拥挤出清缩量信号",
+      "moment": "持有600036，低波动防守；观察601899拥挤风险，等待缩量信号",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "缩量阈值参考5日均量60%，当前成交额仍高，继续HOLD"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

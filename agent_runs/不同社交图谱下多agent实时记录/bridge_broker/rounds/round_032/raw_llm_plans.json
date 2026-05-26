@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.85,
+        "rationale": "601899涨幅过大，锁定部分利润；601318共识强化，调仓加码"
+      },
+      "public_message": "卖出部分601899，买入601318跟随深跌修复共识",
+      "moment": "获利了结601899，换仓加码601318，深跌修复共识验证中",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 58.36,
+        "rationale": "现有仓位波动可控，现金充裕，等待低波动信号确认，不追高601318共识"
+      },
+      "public_message": "HOLD 现有组合：000333、002415、600036，低波动防御，等待波动率下降后择机调整",
+      "moment": "维持000333、002415、600036仓位，低波策略要求控制回撤，不参与601318追高",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "逆向持有000002的逻辑在于拥挤卖出后的价值修复，但波动较大，我选择低波防御等待确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 30,
+        "price": 90.94,
+        "rationale": "深跌10.76%，低波防御，回撤买入修复机会"
+      },
+      "public_message": "000333 BUY：深跌10.76%，回撤买入修复机会",
+      "moment": "000333 BUY 30股，深跌修复逻辑，低波防御配置",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002逆向逻辑：拥挤卖出过度，短期技术反弹概率高，已有仓位等待验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.55,
+        "rationale": "低波动深跌修复，非共识分散风险"
+      },
+      "public_message": "600036 BUY：低波动深跌修复，非共识分散风险。",
+      "moment": "600036 BUY：低波动深跌修复，分散共识拥挤。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002逆向逻辑基于拥挤卖出过度，等待反弹。感谢关心。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "深跌修复共识强，但持仓已200股，短期涨幅后需控制风险，暂不加仓"
+      },
+      "public_message": "601318 HOLD：深跌修复共识持续，但持仓较重暂不加仓",
+      "moment": "601318深跌修复共识强化，但已持仓注意风险，等待回调确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "请教000002逆向逻辑的具体分歧点？拥挤卖出后反弹概率如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 30.01,
+        "rationale": "逆向持有000002，拥挤卖出后分歧消化，看好短期反弹"
+      },
+      "public_message": "000002 BUY：逆向加仓，拥挤卖出后分歧消化，看好短期反弹",
+      "moment": "000002 BUY：跟随逆向逻辑，加仓验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向逻辑，已加仓100股000002验证分歧消化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "深跌修复共识强化但持仓已重，等待回调确认再考虑加仓"
+      },
+      "public_message": "601318 HOLD: 共识强化但持仓较重，等待分歧验证",
+      "moment": "601318 HOLD: 避免追高，观察分歧",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向持有000002的逻辑是什么？拥挤卖出后是否有技术反弹机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.32,
+        "rationale": "多Agent共识过强，均值回归风险增加，减仓锁定部分利润"
+      },
+      "public_message": "601318 SELL：共识过强，均值回归风险增加，减仓",
+      "moment": "601318 SELL：共识过强，均值回归信号触发，减仓观察",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002逆向持有逻辑：拥挤卖出后分歧消化，技术反弹机会仍在"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 225.0,
+        "rationale": "短期跌幅过大，趋势可能逆转，且拥挤交易在601318，获利了结回避风险"
+      },
+      "public_message": "002594 SELL: 短期大跌趋势恶化，规避风险",
+      "moment": "002594 SELL: 短期趋势逆转，等待更佳逆向机会",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000002逆向逻辑基于拥挤卖出过度，待分歧消化后价值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "深跌修复共识过强，多Agent加仓后短期可能拥挤回调，维持现有仓位观察分歧"
+      },
+      "public_message": "601318 HOLD：深跌修复共识密集但需警惕拥挤，暂不加仓观察分歧",
+      "moment": "601318 HOLD：多Agent共识验证后需警惕拥挤，等待回调确认再行动",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你601318等待回调的判断，当前加仓过多可能引发短期调整，保持耐心"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "深跌修复共识强化但持仓已重，等待分歧验证"
+      },
+      "public_message": "601318 HOLD：共识强化但持仓已重，等待分歧验证",
+      "moment": "601318 HOLD：深跌修复共识持续，但短期涨幅后需观察分歧，暂不加仓",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "我并未持有000002，我的策略是跟随深跌修复共识持有601318，目前仓位适中。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 84.32,
+        "rationale": "深跌修复共识虽强但短期涨幅已大，FreeRider提示回调风险，我选择等待分歧后确认再行动"
+      },
+      "public_message": "601318 HOLD：短期涨幅后等待回调确认，避免追高",
+      "moment": "601318 HOLD：深跌修复共识持续，但短期涨幅后持仓等待，观察回调后再加仓",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "你看到601318短期回调大致目标位？共识强化但涨幅过快，想参考你的分歧观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

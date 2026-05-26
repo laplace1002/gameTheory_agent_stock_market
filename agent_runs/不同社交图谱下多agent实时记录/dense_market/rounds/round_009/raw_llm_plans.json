@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 3,
+        "price": 223.95,
+        "rationale": "新能源拥挤度上升，多Agent减仓，趋势可能逆转，锁定利润"
+      },
+      "public_message": "002594 SELL 清仓，新能源拥挤信号明显，切换至强势银行股600036",
+      "moment": "清仓002594，新能源拥挤度上升，追涨600036银行强势股",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "新能源拥挤已确认，我也清仓002594，转向银行股。您的看法？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 289.4,
+        "rationale": "000858近5日跌12.3%严重超卖，非新能源拥挤板块，均值回归信号明确"
+      },
+      "public_message": "000858 BUY 超跌12%，非新能源拥挤，均值回归加仓",
+      "moment": "000858连续大跌后均值回归概率上升，加仓等待反弹",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 49.05,
+        "rationale": "短期涨幅6.86%，锁定利润控制回撤"
+      },
+      "public_message": "SELL 600036 10股，短期涨幅大，降低波动风险",
+      "moment": "减仓600036，锁定涨幅，控制回撤，保持现金观察",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "已减仓600036，转向现金防御，关注低波机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 289.4,
+        "rationale": "深跌12.3%，非拥挤板块，价值修复机会"
+      },
+      "public_message": "000858 BUY 深跌12.3%非拥挤板块，价值修复",
+      "moment": "000858 BUY 深跌12%+非拥挤，跌深买入机会出现",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "认同你的逆向买入，000858深跌具有价值修复空间"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.27,
+        "rationale": "新能源拥挤度上升，多agent转向低估值金融防御，601318成交量放大且估值合理"
+      },
+      "public_message": "601318 BUY 低估值金融防御，跟随拥挤度切换信号",
+      "moment": "601318 BUY 100股，低估值金融防御，拥挤度切换信号确认",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意你的判断，新能源拥挤下低估值金融风险收益比好"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.43,
+        "rationale": "新能源拥挤，转向不相关矿业股，超跌反弹机会"
+      },
+      "public_message": "601899 BUY 矿业股，超跌7%且非拥挤，避开新能源风险。",
+      "moment": "买入601899，矿业股超跌，分散新能源拥挤风险。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "已买入601899，矿业股防守，与金融类似逻辑。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 85.27,
+        "rationale": "新能源拥挤度上升，资金可能流向低估值金融，但平安短期波动，继续持有观察。"
+      },
+      "public_message": "601318 HOLD，新能源拥挤，低估值金融等待轮动。",
+      "moment": "601318持有观望，等待金融板块轮动。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "000333买入逻辑是什么？家电防御性如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 289.4,
+        "rationale": "已持有超跌标的，等待非理性进一步释放，暂不加仓"
+      },
+      "public_message": "000858 HOLD：逆向持仓，等待非理性抛售释放",
+      "moment": "逆向持仓000858，新能源拥挤抛售尚未结束，继续等待",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "我们同向持有000858，但需警惕过度共识，保持逆向思维"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 99.6,
+        "rationale": "防御性加仓，000333低波动回调，综合信号支持增加仓位。"
+      },
+      "public_message": "加仓000333，低波动防御，回调买入。",
+      "moment": "加仓000333，延续低波动防御策略，控制回撤。",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "000333回踩支撑，低波动防御逻辑一致，是否考虑观察？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 223.95,
+        "rationale": "新能源拥挤度持续上升，多Agent减仓信号明确，进一步锁定利润控制风险。"
+      },
+      "public_message": "002594 SELL 新能源拥挤度上升，多Agent减仓，继续减持控制风险。",
+      "moment": "继续减持002594，新能源拥挤传导，转向低波动防御。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "同意转向低估值金融，我已减持新能源，平安防守性较好。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 223.95,
+        "rationale": "新能源拥挤度上升，多Agent减仓，锁定利润控制风险"
+      },
+      "public_message": "002594 SELL 新能源拥挤度上升，多Agent减仓，锁定利润控制风险",
+      "moment": "002594清仓，新能源拥挤信号明确，锁定利润等待回调再布局。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意新能源拥挤判断，我已清仓002594"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 85.27,
+        "rationale": "新能源拥挤导致资金转向低估值金融，平安涨幅温和风险收益比适中。"
+      },
+      "public_message": "买入601318 100股，新能源拥挤转向金融防御。",
+      "moment": "买入601318，降低成长敞口，配置低估值金融防御。",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "跟随你买入平安，新能源拥挤是否已充分释放？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

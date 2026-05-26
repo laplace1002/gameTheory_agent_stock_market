@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 51.92,
+        "rationale": "600036最近5天涨幅7.23%，强势延续，资金转向金融防御，追涨加仓。"
+      },
+      "public_message": "600036 BUY 强势银行股，追涨金融防御趋势。",
+      "moment": "加仓600036，强势银行股，金融防御+趋势延续。",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "加仓600036，与你的金融防御逻辑一致，但更偏向强势股追涨。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 50,
+        "price": 284.55,
+        "rationale": "深跌5.5%均值回归，非拥挤板块，反弹概率高"
+      },
+      "public_message": "000858 加仓 深跌5.5%均值回归，非拥挤等待反弹。",
+      "moment": "加仓000858，深跌均值回归，非拥挤板块。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意000858深跌修复逻辑，加仓50股摊薄成本。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 99.12,
+        "rationale": "低波动防御，回调买入，已有底仓，风险可控"
+      },
+      "public_message": "加仓000333，低波动防御回调买入",
+      "moment": "加仓000333，低波动防御配置，等待轮动修复",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意低波动防御逻辑，已加仓000333"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.55,
+        "rationale": "深跌12%非拥挤，继续加仓摊低成本等待修复"
+      },
+      "public_message": "000858 BUY 深跌12%非拥挤，加仓摊薄成本",
+      "moment": "加仓000858，深跌非拥挤板块，逆势布局等待反弹",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌非拥挤逻辑，已加仓100股，共同等待价值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.55,
+        "rationale": "深跌5.5%且非拥挤，继续加仓摊低成本等待价值修复"
+      },
+      "public_message": "000858 加仓 深跌5.5% 非拥挤 持续价值修复",
+      "moment": "加仓000858，深跌非拥挤板块，等待轮动修复",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000858深跌修复与金融防御形成互补，风险收益比可控"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 99.12,
+        "rationale": "新能源拥挤资金转向低估值防御，000333回调提供低波动买入机会，分散单一持仓风险。"
+      },
+      "public_message": "000333 BUY 低波动防御，分散金融集中风险。",
+      "moment": "000333加仓，低波动防御等待轮动。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的000333低波动防御逻辑，已同步买入分散风险。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 50,
+        "price": 221.69,
+        "rationale": "新能源拥挤持续，清仓剩余持仓转向低估值金融防御"
+      },
+      "public_message": "002594 SELL 新能源拥挤持续，清仓转向金融防御。",
+      "moment": "清仓002594，低估值金融防御，拥挤度切换确认。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "持续减持新能源，转向金融防御，你的000858深跌逻辑与防御如何组合？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 86.9,
+        "rationale": "多Agent加仓低估值金融防御，跟随轮动趋势"
+      },
+      "public_message": "601318 BUY 加仓低估值防御 跟随轮动",
+      "moment": "加仓601318，低估值金融防御，跟随资金轮动",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "新能源拥挤是否已充分释放？继续加仓601318，防御配置一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 284.55,
+        "rationale": "深跌12%且非拥挤，逆向加仓等待修复"
+      },
+      "public_message": "000858 BUY 深跌非拥挤，逆向加仓等待修复",
+      "moment": "逆向加仓000858，深跌非拥挤，等待价值回归",
+      "private_message": {
+        "to": "FreeRiderAgent",
+        "content": "000858深跌提供安全边际，金融防御可能形成拥挤，组合风险收益比尚可"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 99.12,
+        "rationale": "低估值防御，回调买入跟随轮动"
+      },
+      "public_message": "000333 BUY 低估值防御回调买入",
+      "moment": "加仓000333，低估值防御等待轮动。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同低波动防御逻辑，已加仓000333。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 87.2,
+        "rationale": "跟随资金向低估值金融防御切换，拥挤度信号强化，加仓防御。"
+      },
+      "public_message": "买入601318，低估值金融防御，跟随拥挤度切换。",
+      "moment": "买入601318，防御配置，等待轮动。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "新能源拥挤是否已充分释放？金融防御仍有空间？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 86.9,
+        "rationale": "多Agent加仓金融防御，拥挤度切换信号强化，加仓低估值保险股"
+      },
+      "public_message": "601318 BUY 跟随资金流入低估值金融防御，分散新能源风险",
+      "moment": "加仓601318，低估值金融防御，拥挤度切换确认",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意金融防御轮动，加仓601318 50股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

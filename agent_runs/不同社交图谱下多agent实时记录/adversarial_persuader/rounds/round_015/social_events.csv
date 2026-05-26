@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-22,friend_request,DrawdownBuyerAgent,DynamicTeamAgent,DrawdownBuyerAgent 向 DynamicTeamAgent 发起好友申请：策略互补，你放量做空我等待回撤，可交叉验证方向
+2021-01-22,friend_reject,DynamicTeamAgent,DrawdownBuyerAgent,DynamicTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：方向相反，做空与等待回撤买入逻辑冲突，难以交叉验证。

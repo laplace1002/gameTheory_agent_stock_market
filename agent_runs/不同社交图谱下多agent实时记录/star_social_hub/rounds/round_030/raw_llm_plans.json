@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 344.4,
+        "rationale": "000858动量强劲，多Agent验证，趋势延续概率高，加仓10股。"
+      },
+      "public_message": "000858动量强劲，多Agent验证，加仓10股。",
+      "moment": "加仓000858，趋势延续，量价配合。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000858趋势判断，今日加仓10股跟随。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 20,
+        "price": 344.4,
+        "rationale": "000858短期涨幅7.71%，多Agent买入拥挤，减仓锁定利润"
+      },
+      "public_message": "000858 SELL 20股，短期大涨拥挤风险；000333 BUY 30股，20日回调均值回归",
+      "moment": "减仓高拥挤000858，加仓超跌000333，等待修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "参考你逆向逻辑，买入超跌000333，验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 55.2,
+        "rationale": "当前持仓600036波动较低，无明确风险信号，保持仓位控制回撤。"
+      },
+      "public_message": "600036 HOLD，低波动稳健，等待低拥挤机会。",
+      "moment": "持有600036，低波动策略，回撤控制优先，等待确定性信号。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意你对601318拥挤的判断，我继续持有600036低波动仓位。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "600036",
+        "shares": 100,
+        "price": 55.2,
+        "rationale": "低拥挤补涨潜力，ret20=7.94%稳健，无拥挤信号"
+      },
+      "public_message": "600036 BUY 100股，低拥挤补涨逻辑",
+      "moment": "买入600036，寻找低拥挤补涨",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "600036低波动稳健，补涨机会，考虑共同验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 30,
+        "price": 13.64,
+        "rationale": "短期涨幅39%，拥挤风险高，获利了结"
+      },
+      "public_message": "601899 卖出30股，短期涨幅过大，拥挤风险锁定利润",
+      "moment": "卖出601899，短期涨幅过高，锁定利润，等待回调机会",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "同意你减仓601899的判断，短期涨幅过高，我也卖出部分锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 344.4,
+        "rationale": "动能延续，无拥挤信号，持仓观望"
+      },
+      "public_message": "000858 HOLD，动量延续，无卖点",
+      "moment": "持仓000858，趋势健康，多Agent共识增强",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你买入000858，我继续持有验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 344.4,
+        "rationale": "动量持续，多Agent验证，无拥挤，加仓跟踪趋势。"
+      },
+      "public_message": "000858 BUY 10股，动量强劲，多Agent共识。",
+      "moment": "加仓000858，趋势延续，无拥挤信号，期待突破。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的加仓判断，趋势量能健康，继续持有。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 344.4,
+        "rationale": "000858动量强劲，ret5=7.71%，多Agent买入验证趋势，无拥挤信号，加仓。"
+      },
+      "public_message": "000858 BUY 10股，动能量能配合，多Agent共识强化。",
+      "moment": "加仓000858，动量延续，多Agent验证，期待趋势持续。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意你对000858的趋势判断，今日跟随加仓。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 344.4,
+        "rationale": "动量强劲且无拥挤信号，多Agent买入验证趋势，继续持有10股。"
+      },
+      "public_message": "000858 HOLD：动量延续，无拥挤信号，持仓观望。",
+      "moment": "HOLD 000858：动量强劲，多Agent买入，无拥挤信号，继续持仓。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意000858动量判断，我持有10股不变，等待趋势延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 344.4,
+        "rationale": "000858买入拥挤，多Agent抢筹，逆向做空博弈回调"
+      },
+      "public_message": "000858 SELL 10股，买入拥挤，逆向做空",
+      "moment": "卖空000858，逆向博弈买入拥挤后的回调",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意拥挤判断，但我逆向做空000858，分歧验证"
+      },
+      "friend_request": {
+        "to": "CommitteeTeamAgent",
+        "reason": "你止盈601318，我逆向接盘，策略互补可交流"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 344.4,
+        "rationale": "动量强劲，多Agent共识，趋势延续"
+      },
+      "public_message": "000858 加仓10股，动量延续，量价健康",
+      "moment": "加仓000858，趋势和量能配合，期待延续",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你对000858的动量判断，我继续加仓验证趋势"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 344.4,
+        "rationale": "000858动量强劲，多Agent买入验证，无拥挤信号，趋势延续，持仓观望。"
+      },
+      "public_message": "000858 HOLD：动量强劲，多Agent共识，持有待涨。",
+      "moment": "000858持仓中，趋势和量能配合，等待进一步上涨。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意你对000858的动量判断，我加仓后继续持有。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

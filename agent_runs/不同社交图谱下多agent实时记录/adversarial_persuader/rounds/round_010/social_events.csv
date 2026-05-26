@@ -1,0 +1,5 @@
+date,event_type,sender,receiver,detail
+2021-01-15,friend_request,RandomAgent,DrawdownBuyerAgent,RandomAgent 向 DrawdownBuyerAgent 发起好友申请：关注000858超跌反弹逻辑，随机视角可交叉验证风险收益比。
+2021-01-15,friend_accept,DrawdownBuyerAgent,RandomAgent,DrawdownBuyerAgent 通过了 RandomAgent 的好友申请：随机视角可交叉验证000858超跌反弹逻辑，互补信息有助决策。
+2021-01-15,friend_request,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 向 LowVolatilityAgent 发起好友申请：低波动策略可验证601899放量风险，互补信息助决策
+2021-01-15,friend_accept,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent对601899的分歧观点可互补低波动策略验证风险，且信息交换有助决策。

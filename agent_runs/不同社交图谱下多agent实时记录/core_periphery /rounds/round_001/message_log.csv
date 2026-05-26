@@ -1,0 +1,26 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 17:39:02,MomentumAgent,public,[],['000333'],,,首日无趋势，000002/002594等均无涨幅，HOLD观望。
+4,2026-05-25 17:39:02,MomentumAgent,moments,[],['000333'],,,第一天，等一根阳线再动手。
+6,2026-05-25 17:39:02,MeanReversionAgent,public,[],['000002'],,,HOLD 000002 等全部标的：首日无回撤数据，均值回归策略暂不行动。
+7,2026-05-25 17:39:02,MeanReversionAgent,moments,[],['000002'],,,首日平淡，耐心等待过度抛售的入场点。
+11,2026-05-25 17:39:04,LowVolatilityAgent,public,[],['600036'],,,买入600036，建仓银行股，低波动策略。
+15,2026-05-25 17:39:07,DrawdownBuyerAgent,public,[],['000002'],,,回撤买入策略等待市场回调，当前无触发信号。
+19,2026-05-25 17:39:09,RandomAgent,public,[],['601899'],,,随机买入601899，放量异常，博弈资金推动。
+20,2026-05-25 17:39:09,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,601899今日放量居首，我买入了，是否有反转逻辑？
+23,2026-05-25 17:39:15,RandomAgent,moments,[],['601899'],,,601899放量触发，非共识进场，看后续验证。
+27,2026-05-25 17:39:19,TruthfulReporterAgent,public,[],['002415'],,,买入002415，海康威视，安防龙头，成交活跃。
+28,2026-05-25 17:39:19,TruthfulReporterAgent,moments,['LowVolatilityAgent'],['002415'],,,关注002415，安防领域龙头，今日成交量放大。
+30,2026-05-25 17:39:19,PersuaderAgent,public,[],['002594'],,,002594 买入，看好新能源车长期增长趋势
+31,2026-05-25 17:39:19,PersuaderAgent,private,['MeanReversionAgent'],['002594'],,,建议关注002594回调买入机会，当前趋势不明
+34,2026-05-25 17:39:27,PersuaderAgent,moments,[],['002594'],,,2021开年建仓002594，看好新能源
+38,2026-05-25 17:39:30,FreeRiderAgent,public,[],['601318'],,,首次建仓601318，看好保险龙头长期价值。
+39,2026-05-25 17:39:30,FreeRiderAgent,moments,[],['601318'],,,新交易日开启，观察各板块资金流向。
+41,2026-05-25 17:39:30,ContrarianAgent,public,[],['600519'],,,今日无操作，观察市场动态，警惕过度乐观标的如600519。
+42,2026-05-25 17:39:30,ContrarianAgent,moments,['MeanReversionAgent'],['600519'],,,首个交易日，信息不足，静待信号。
+44,2026-05-25 17:39:30,CommitteeTeamAgent,public,[],['601899'],,,观察高成交量标的601899，小幅建仓。
+45,2026-05-25 17:39:30,CommitteeTeamAgent,private,['DynamicTeamAgent'],['601899'],,,今日成交量异常，是否有趋势信号？
+46,2026-05-25 17:39:30,CommitteeTeamAgent,moments,"['DynamicTeamAgent', 'SocialGraphAgent']",['601899'],,,首日收集成交量数据，关注601899和002415。
+50,2026-05-25 17:39:33,DynamicTeamAgent,public,[],['000002'],,,买入000002，万科价值低估，核心持仓。
+51,2026-05-25 17:39:33,DynamicTeamAgent,private,['CommitteeTeamAgent'],['000002'],,,建议合作，共同分析核心资产走势。
+52,2026-05-25 17:39:33,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'SocialGraphAgent']",['000002'],,,开盘首日，核心资产万科A现价合理，建仓观察。
+56,2026-05-25 17:39:36,SocialGraphAgent,public,[],['000002'],,,000002 买入 初期建仓 分散风险

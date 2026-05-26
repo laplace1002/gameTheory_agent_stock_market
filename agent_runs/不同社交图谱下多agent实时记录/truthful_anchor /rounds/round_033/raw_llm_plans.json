@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 50,
+        "price": 13.1,
+        "rationale": "近期强势趋势延续，量能放大，追涨加仓"
+      },
+      "public_message": "601899 BUY 50股：强势趋势延续，量能放大，追涨博弈",
+      "moment": "加仓601899 50股，强势趋势延续，量能放大，追涨博弈",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601899趋势强劲，量价配合，建议关注追涨机会"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 95.02,
+        "rationale": "超跌共识拥挤，减仓降低波动"
+      },
+      "public_message": "000333 SELL 5股：超跌共识拥挤，减仓控制回撤",
+      "moment": "减仓000333 5股，规避超跌共识拥挤风险，等待更清晰信号",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的拥挤判断，我减仓5股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 208.99,
+        "rationale": "近5日跌幅-21.71%，为当前最大超跌标的，均值回归预期强。"
+      },
+      "public_message": "002594 BUY 10股：深度回撤，均值回归博弈",
+      "moment": "买入002594 10股，深度回撤标的，等待均值回归验证",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意002594超跌逻辑，协同加仓10股等待均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 208.99,
+        "rationale": "002594近5日跌幅最大(-21.71%)，均值回归预期强，分散超跌仓位。"
+      },
+      "public_message": "002594 BUY 10股：最大超跌标的，均值回归博弈。",
+      "moment": "买入002594 10股，分散超跌持仓，等待均值回归验证。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "同意002594超跌逻辑，加仓10股协同等待均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 20,
+        "price": 13.1,
+        "rationale": "涨幅过大获利了结，非共识回调风险"
+      },
+      "public_message": "601899 SELL 20股：涨幅过大获利了结，非共识回调风险",
+      "moment": "卖出601899 20股，锁定强势股利润，非共识博弈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "共赢利了结部分601899，强势股回调风险，逆向机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 95.02,
+        "rationale": "超跌共识拥挤加剧，减仓避险"
+      },
+      "public_message": "000333 SELL 10股：超跌共识拥挤，减仓避险",
+      "moment": "000333减仓10股，超跌共识拥挤，等待更清晰信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤风险，减仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 95.02,
+        "rationale": "超跌共识拥挤风险上升，减仓避险"
+      },
+      "public_message": "000333 SELL 10股：超跌共识拥挤风险上升，减仓避险",
+      "moment": "减仓000333 10股，规避超跌共识拥挤风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意你的拥挤风险判断，我减仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 56.06,
+        "rationale": "002415近5日跌幅-15.06%，为当前最大超跌标的之一，且未出现共识拥挤，分散风险，均值回归预期强。"
+      },
+      "public_message": "002415 BUY 10股：超跌幅度大且未拥挤，分散均值回归博弈",
+      "moment": "",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002415超跌更深且未拥挤，建议关注"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 20,
+        "price": 83.78,
+        "rationale": "超跌共识拥挤，减仓止盈规避回调风险"
+      },
+      "public_message": "601318 SELL 20股：超跌共识拥挤，减仓止盈规避回调风险",
+      "moment": "601318减仓20股，回归逆向防御，等待拥挤分歧",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "赞同你减仓000333的决策，我同步减仓601318止盈"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 2,
+        "price": 95.02,
+        "rationale": "超跌共识拥挤风险上升，DynamicTeamAgent已减仓，ContrarianAgent提示风险，适当减仓避险"
+      },
+      "public_message": "000333 SELL 2股：超跌共识拥挤，减仓避险",
+      "moment": "000333超跌共识拥挤，减仓2股降低风险敞口",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤风险判断，我减仓2股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 95.02,
+        "rationale": "超跌共识拥挤风险上升，减仓避险"
+      },
+      "public_message": "000333 SELL 10股：超跌共识拥挤，减仓避险",
+      "moment": "减仓000333 10股，规避超跌共识拥挤风险",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意拥挤风险判断，减仓10股协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 347.0,
+        "rationale": "市场超跌共识拥挤加剧，减仓300750避险，锁定部分利润"
+      },
+      "public_message": "300750 SELL 10股：超跌共识拥挤，减仓避险",
+      "moment": "清仓300750，规避超跌共识拥挤风险，等待新信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你对超跌拥挤的判断，我清仓剩余仓位，进一步降低风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

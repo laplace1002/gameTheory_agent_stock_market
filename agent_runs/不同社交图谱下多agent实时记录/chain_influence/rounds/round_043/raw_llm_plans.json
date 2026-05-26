@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.28,
+        "rationale": "601318 ret20正收益，跌幅最小，趋势延续信号强。"
+      },
+      "public_message": "601318 ret20+8.81%跌幅仅-4%，加仓100股验证趋势延续。",
+      "moment": "加仓601318 100股，近期相对强势，等待轮动回升。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594超跌修复逻辑你考虑跟进？我关注601318强势延续。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 53.48,
+        "rationale": "拥挤信号强化，释放风险，腾出资金关注超跌标的"
+      },
+      "public_message": "002415 卖出10股：拥挤释放，腾出资金关注超跌标的",
+      "moment": "卖出002415，等待000333超跌修复时机",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌-14%，拥挤度低，是否建议加仓？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 83.66,
+        "rationale": "000333超跌至-14%，拥挤度低，逆向布局验证均值回归，仓位轻风险可控"
+      },
+      "public_message": "买入000333 1股：超跌-14%布局，拥挤度低，验证均值修复",
+      "moment": "000333买入1股，超跌逆向布局，等待轮动修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌修复逻辑可行，拥挤度低，跟进验证，请评估下行风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 83.66,
+        "rationale": "超跌-10.51% ret5，拥挤度低，均值修复概率大于随机噪声"
+      },
+      "public_message": "000333 买入10股：超跌+低拥挤，随机逆向配置",
+      "moment": "000333超跌逆向加仓10股，随机分散超跌组合",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000333超跌测试均值回归，你验证000333时关注什么信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 53.48,
+        "rationale": "拥挤信号持续，减仓避险，换仓至深度超跌002594"
+      },
+      "public_message": "002415减仓10股，拥挤风险释放；002594加仓3股，超跌修复逻辑强化",
+      "moment": "减仓002415换入002594，超跌组合优化，等待均值回归",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "002594超跌共识验证，我同步加仓3股，感谢信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 170.68,
+        "rationale": "超跌-36%拥挤度低，多Agent逆向布局验证均值回归"
+      },
+      "public_message": "002594 BUY 1股：超跌-36%拥挤度低，多Agent逆向布局验证均值回归",
+      "moment": "买入002594 1股，跟随超跌均值回归信号。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌信号验证，目前下行风险如何？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 53.48,
+        "rationale": "拥挤信号持续，多Agent减仓，跟随降低风险"
+      },
+      "public_message": "002415 卖出10股：拥挤风险释放，转向超跌修复",
+      "moment": "002415减仓10股，拥挤退散，继续持有002594等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌逻辑验证中，你加仓3股，我持仓284股，下行风险需控制仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 30,
+        "price": 53.48,
+        "rationale": "拥挤信号持续，多数Agent减仓，清仓避险"
+      },
+      "public_message": "002415 卖出30股：拥挤信号持续，清仓避险",
+      "moment": "清仓002415，观望超跌标的轮动",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌-36%已加仓，如何评估继续下行风险？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 100,
+        "price": 83.66,
+        "rationale": "超跌逆向布局，拥挤度低，均值回归验证"
+      },
+      "public_message": "000333 买入100股 超跌逆向 拥挤度低 均值修复",
+      "moment": "加仓000333超跌逆向，拥挤度低，等待均值修复，控制整体仓位风险",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594超跌至-36%，下行空间有限，但需关注流动性风险，建议控制仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 177.19,
+        "rationale": "超跌-36%拥挤度低，多Agent逆向布局，验证均值回归机会"
+      },
+      "public_message": "002594 BUY 1股：超跌-36%拥挤度低，逆向布局验证均值回归",
+      "moment": "002594买入1股，超跌逆向布局，等待均值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594超跌逻辑已验证，你加仓后表现如何？考虑同步仓位"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002415",
+        "shares": 10,
+        "price": 54.34,
+        "rationale": "拥挤信号持续，多家Agent减仓，继续降低风险"
+      },
+      "public_message": "002415 卖出10股：拥挤信号持续，减仓避险",
+      "moment": "002415继续减仓，关注000333超跌修复机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "002594深跌逻辑强，但短期波动大，我持有30股，暂不加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 177.19,
+        "rationale": "跟随多Agent超跌共识，加仓验证均值修复，分散风险。"
+      },
+      "public_message": "002594 BUY 1股：超跌-32.63%均值修复逻辑强化，加仓验证。",
+      "moment": "加仓002594 1股，超跌组合等待轮动修复。",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "002594超跌-32%已加仓验证，下行风险可控，但需控制仓位。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

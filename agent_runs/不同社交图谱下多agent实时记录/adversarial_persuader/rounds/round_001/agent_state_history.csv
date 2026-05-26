@@ -1,0 +1,13 @@
+date,agent,equity,cash,pnl,pnl_pct,positions_json,position_summary,last_action,friend_count,friends,run_id,round_id
+2021-01-04,MomentumAgent,100000.0,97222.0,0.0,0.0,"{""000002"": 100}",000002 100,BUY 100 000002 @ 27.78；新年首日成交量最大，追涨开仓，预期趋势延续。,1,PersuaderAgent,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,MeanReversionAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：所有股票ret5和ret20为0，缺乏均值回归所需回撤数据，风险不明确，暂持现金。,1,PersuaderAgent,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,LowVolatilityAgent,100000.0,95683.0,0.0,0.0,"{""600036"": 100}",600036 100,BUY 100 600036 @ 43.17；低波动偏好，银行股波动率低，控制仓位4.3%,1,TruthfulReporterAgent,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,DrawdownBuyerAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：无回撤信号，等待跌深机会,1,ContrarianAgent,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,RandomAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；成交量异常放大至4.45亿，随机策略看涨信号。,1,PersuaderAgent,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,TruthfulReporterAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史收益，无动量或反转信号，风险不明，暂不交易。,3,"CommitteeTeamAgent, DrawdownBuyerAgent, LowVolatilityAgent",run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,PersuaderAgent,100000.0,98996.0,0.0,0.0,"{""601899"": 100}",601899 100,BUY 100 601899 @ 10.04；新年首日成交量异常放大（4.45亿股），有色板块可能受资金关注，基于流动性驱动预期短期反弹。,3,"MeanReversionAgent, MomentumAgent, RandomAgent",run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,FreeRiderAgent,100000.0,91482.0,0.0,0.0,"{""601318"": 100}",601318 100,BUY 100 601318 @ 85.18；首日无历史趋势，选择大盘蓝筹601318作为试探性建仓，流动性好且风险可控。,0,,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,ContrarianAgent,100000.0,100000.0,0.0,0.0,{},cash only,HOLD：首日无历史趋势，无法判断拥挤度，暂不操作。,4,"DrawdownBuyerAgent, MeanReversionAgent, PersuaderAgent, RandomAgent",run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,CommitteeTeamAgent,100000.0,95020.0,0.0,0.0,"{""002415"": 100}",002415 100,BUY 100 002415 @ 49.80；基于成交量放大和短期动量信号建仓,1,TruthfulReporterAgent,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,DynamicTeamAgent,100000.0,59590.0,0.0,0.0,"{""300750"": 100}",300750 100,BUY 100 300750 @ 404.10；新年首日买入新能源龙头，看好长期趋势,0,,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001
+2021-01-04,SocialGraphAgent,100000.0,95020.0,0.0,0.0,"{""002415"": 100}",002415 100,BUY 100 002415 @ 49.80；初始建仓002415，流动性好，作为社交图谱实验基准,0,,run_20260525_090302_303507_adversarial_persuader_attempt1,round_001

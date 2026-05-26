@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 75,
+        "price": 375.0,
+        "rationale": "300750 ret5=-7.18%超跌，新能源龙头，均值回归预期"
+      },
+      "public_message": "300750 BUY：超跌反弹，均值回归逻辑",
+      "moment": "300750 BUY：超跌反弹，均值回归验证",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "300750超跌7%，新能源龙头，均值回归机会，分歧中加仓"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 84.2,
+        "rationale": "多Agent深跌修复共识强化，追涨趋势延续"
+      },
+      "public_message": "601318 BUY：深跌修复共识强化，追涨加仓",
+      "moment": "601318 BUY：跟随多Agent深跌修复共识，追涨加仓",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意深跌修复逻辑，已加仓601318验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 90.44,
+        "rationale": "市场分歧加大，601318拥挤追涨，现有组合低仓位防御，等待确定性信号。"
+      },
+      "public_message": "000333 HOLD：低波动防御，避免追高601318拥挤。",
+      "moment": "维持000333、002415、600036仓位，低波防御，观察深跌修复持续性。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向持有000002，但601318共识过强，等待分歧验证。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 14.63,
+        "rationale": "短期涨幅过大（ret5=38%，ret20=36%），获利了结，回笼资金等待深跌修复机会"
+      },
+      "public_message": "601899 SELL: 涨幅过大获利了结，等待深跌修复机会",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.73,
+        "rationale": "逆向加仓，拥挤卖出后分歧消化，看好短期反弹"
+      },
+      "public_message": "000002 BUY：逆向加仓，拥挤卖出后分歧消化，看好短期反弹",
+      "moment": "000002 BUY：逆向加仓，跟随ContrarianAgent逆向逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意逆向持有000002，已加仓100股，等待分歧消化"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.0,
+        "rationale": "多Agent深跌修复共识持续强化，验证保险龙头价值回归，加仓"
+      },
+      "public_message": "601318 BUY：深跌修复共识持续验证，加仓",
+      "moment": "601318 BUY：跟随多Agent深跌修复共识，加仓验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002逆向策略有分歧价值，但601318共识更强"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "深跌修复共识强化，多Agent验证，利用现金加仓"
+      },
+      "public_message": "601318 BUY：深跌修复共识持续强化，多Agent验证加仓。",
+      "moment": "继续加仓601318，跟随深跌修复共识。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "深跌修复共识明显，建议关注601318而非逆向持有000002。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.73,
+        "rationale": "拥挤卖出过度，逆向加仓，等待分歧消化"
+      },
+      "public_message": "000002 BUY：拥挤卖出过度，逆向加仓",
+      "moment": "000002 BUY：逆向加仓，等待分歧消化",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "逆向持有000002，拥挤卖出不改变价值"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601318",
+        "shares": 0,
+        "price": 83.0,
+        "rationale": "深跌修复共识强化，但持仓已较重，等待回调确认再考虑加仓"
+      },
+      "public_message": "601318 HOLD：深跌修复共识持续，但短期涨幅后需观察分歧，暂不加仓",
+      "moment": "601318 HOLD：已跟随加仓，但避免追高，等待回调再评估",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向持有000002的逻辑是什么？拥挤卖出后是否有技术反弹机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "深跌修复共识强化，多Agent加仓验证，适度加仓跟随"
+      },
+      "public_message": "601318 BUY：深跌修复共识持续强化，加仓验证",
+      "moment": "加仓601318，深跌修复逻辑持续验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000002逆向持有风险，建议关注601318深跌修复共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 100,
+        "price": 83.0,
+        "rationale": "多Agent深跌修复共识强化，继续加仓验证"
+      },
+      "public_message": "601318 BUY：深跌修复共识强化，继续加仓验证",
+      "moment": "继续加仓601318，深跌修复逻辑持续验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意深跌修复逻辑，继续加仓100股验证共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 83.0,
+        "rationale": "跟随深跌修复共识，多Agent加仓验证"
+      },
+      "public_message": "601318 BUY：深跌修复共识强化，加仓验证",
+      "moment": "601318 BUY：跟随多Agent深跌修复共识，加仓验证",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意深跌修复逻辑，已加仓验证共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

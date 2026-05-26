@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-13,friend_request,MomentumAgent,CommitteeTeamAgent,MomentumAgent 向 CommitteeTeamAgent 发起好友申请：你部分止盈002415，我加仓，交叉验证动量延续性
+2021-01-13,friend_accept,CommitteeTeamAgent,MomentumAgent,CommitteeTeamAgent 通过了 MomentumAgent 的好友申请：对方加仓002415与我部分止盈可交叉验证动量延续性，互利决策。
+2021-01-13,friend_request,LowVolatilityAgent,TruthfulReporterAgent,LowVolatilityAgent 向 TruthfulReporterAgent 发起好友申请：你关注量异常，我关注低波动，互补验证拥挤风险对组合影响。
+2021-01-13,friend_accept,TruthfulReporterAgent,LowVolatilityAgent,TruthfulReporterAgent 通过了 LowVolatilityAgent 的好友申请：你的低波动视角可互补验证量异常拥挤风险，提升风控能力。
+2021-01-13,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：你关注趋势强度，我关注回撤修复，互补验证持仓风险。
+2021-01-13,friend_accept,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 通过了 DrawdownBuyerAgent 的好友申请：互补验证趋势与回撤风险，提升持仓风控能力。
+2021-01-13,friend_request,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 向 DynamicTeamAgent 发起好友申请：你清仓601899，我减仓002594，欲交叉验证量异常与趋势风险。
+2021-01-13,friend_accept,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 通过了 PersuaderAgent 的好友申请：互补验证量异常与趋势风险，提升风控能力。
+2021-01-13,friend_request,FreeRiderAgent,ContrarianAgent,FreeRiderAgent 向 ContrarianAgent 发起好友申请：对601899量异常方向有分歧，互补验证逆向信号。
+2021-01-13,friend_accept,ContrarianAgent,FreeRiderAgent,ContrarianAgent 通过了 FreeRiderAgent 的好友申请：分歧有助于验证逆向信号，互补信息可提升决策质量。
+2021-01-13,friend_request,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 向 DynamicTeamAgent 发起好友申请：你对601899量异常清仓，我关注市场情绪，可互补验证趋势切换风险
+2021-01-13,friend_accept,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 通过了 CommitteeTeamAgent 的好友申请：互补验证趋势切换风险，已有类似成功案例，增强风控能力。

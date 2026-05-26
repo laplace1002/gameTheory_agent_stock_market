@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 100,
+        "price": 56.06,
+        "rationale": "5日跌幅-15%，20日跌幅-7%，超卖严重，均值回归概率高"
+      },
+      "public_message": "002415 BUY 100股，5日深跌15%，均值回归逻辑建仓",
+      "moment": "002415建仓，超跌反弹信号，等待均值回复验证",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858多空博弈，你的做空逻辑与我的均值策略互补，建议交流"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.6,
+        "rationale": "持仓低波动稳健，市场系统性回调中等待企稳，暂不加仓避免扩大回撤。"
+      },
+      "public_message": "600036 HOLD：低波动抗跌，等待市场企稳再操作。",
+      "moment": "600036持仓中，低波动策略坚持，回撤可控，等待信号。",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 13.1,
+        "rationale": "601899 ret5+8.44% ret20+24.05%，成交量放大，趋势强劲，追涨加仓"
+      },
+      "public_message": "601899 BUY 100股，ret5/20强势，动量延续",
+      "moment": "加仓601899，强势趋势延续，追涨策略执行",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 56.06,
+        "rationale": "002415近5日跌幅15%，20日跌幅7%，超卖后存在价值修复机会"
+      },
+      "public_message": "002415 BUY 1手，回撤修复逻辑",
+      "moment": "002415回撤买入，等待修复",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "002415回撤幅度大，我买入验证修复，与你低波动思路互补"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 293.08,
+        "rationale": "多空分歧明显，短期回调风险与长期趋势未破并存，暂持观望"
+      },
+      "public_message": "000858 HOLD：多空分歧未解，等待趋势确认",
+      "moment": "000858持仓中，多空博弈加剧，等待市场选择方向",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你的加仓逻辑有一定共识支持，但逆向做空压力不可忽视，我暂持验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 293.08,
+        "rationale": "多空分歧加剧，随机离场观望"
+      },
+      "public_message": "000858 SELL 10股，多空分歧随机离场",
+      "moment": "000858卖出10股，多空博弈中随机止盈",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你做空逻辑，我也卖出部分验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 293.08,
+        "rationale": "多空分歧明显，短期回调深但长期趋势未破，持仓等待确认"
+      },
+      "public_message": "000858 HOLD：多空博弈加剧，等待趋势明确再操作",
+      "moment": "000858持仓中，多空分歧博弈，等待市场选择方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向做空逻辑我理解，但买入共识仍强，暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 293.08,
+        "rationale": "多空分歧未明朗，持仓等待趋势确认，避免双向风险"
+      },
+      "public_message": "000858 HOLD，多空分歧待验证，暂持观望",
+      "moment": "000858持仓中，多空博弈加剧，等待方向确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意你的逆向做空逻辑，但买入共识也强，暂持观望分歧结果"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 293.08,
+        "rationale": "拥挤买入共识过度，短期回调风险，加仓做空验证"
+      },
+      "public_message": "000858 SELL 1股，买入拥挤逆向加仓博弈回调",
+      "moment": "加仓做空000858，拥挤交易博弈回调",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "你的加仓逻辑偏乐观，拥挤度加剧回调概率大，我做空验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 10,
+        "price": 29.99,
+        "rationale": "000002近期涨幅4%，获利了结部分仓位，轮动至低波动补涨标的600036"
+      },
+      "public_message": "SELL 10股000002，获利了结，轮动至600036低波动补涨",
+      "moment": "SELL 000002部分，买入600036低波动补涨，多Agent共识增强",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "同意600036低拥挤逻辑，我卖出部分000002后准备买入600036验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 293.08,
+        "rationale": "多空分歧未明朗，持仓观察趋势信号，避免双向风险"
+      },
+      "public_message": "000858 HOLD：多空分歧持续，等待趋势确认，暂持",
+      "moment": "000858持仓观望，多空博弈待方向",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意拥挤回调风险，但短期买卖量能未决，暂持观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 20,
+        "price": 293.08,
+        "rationale": "多空分歧中做空逻辑验证，止损转向"
+      },
+      "public_message": "000858 SELL 20股，做空验证",
+      "moment": "卖出000858，跟随逆向做空",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "同意做空逻辑，卖出持仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

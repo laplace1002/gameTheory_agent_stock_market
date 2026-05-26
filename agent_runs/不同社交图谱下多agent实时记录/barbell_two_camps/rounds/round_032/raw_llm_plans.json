@@ -1,0 +1,242 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 2,
+        "price": 90.94,
+        "rationale": "近5日跌幅10.76%，超卖后低拥挤，多Agent共识形成均值回归机会"
+      },
+      "public_message": "加仓000333，近5日回撤10.76%后低拥挤均值回归",
+      "moment": "加仓000333，超卖反弹等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333回撤10.76%后低拥挤，是否均值回归确认？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "601899",
+        "shares": 0,
+        "price": 13.85,
+        "rationale": "动量强势但多Agent锁利，短期过热风险，暂避观望"
+      },
+      "public_message": "601899 短期涨幅过大，多Agent锁利信号，HOLD暂不参与。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 2,
+        "price": 90.94,
+        "rationale": "回撤10.76%后低拥挤，多Agent非共识均值回归，加仓2股控制仓位风险"
+      },
+      "public_message": "BUY 000333 2股，回撤后低拥挤，非共识均值回归",
+      "moment": "加仓000333 2股，回撤后低拥挤，等待均值回归",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意000333低拥挤加仓，已加2股，协同均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 20,
+        "price": 29.73,
+        "rationale": "拥挤度上升，多个Agent卖出信号，非共识减仓锁定利润"
+      },
+      "public_message": "000002 SELL 20股，拥挤度上升非共识减仓",
+      "moment": "减仓000002 20股，拥挤信号非共识，关注其他冷门机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "已减仓000002 20股，同意拥挤信号，是否继续看空？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 10,
+        "price": 225.0,
+        "rationale": "5日回撤12.45%，短期超跌，价值修复机会"
+      },
+      "public_message": "002594 BUY 10股，5日回撤12.45%，短期超跌价值修复",
+      "moment": "加仓002594，5日回撤12%超跌，等待均值回归",
+      "private_message": {
+        "to": "MomentumAgent",
+        "content": "002594短期超跌12%，是否考虑逆向博弈？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 90.94,
+        "rationale": "多Agent非共识买入000333冷门低拥挤，证据较强加仓"
+      },
+      "public_message": "000333 BUY 1股：冷门低拥挤，多Agent非共识信号加仓",
+      "moment": "加仓000333冷门股，低拥挤非共识等待修复",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333冷门低拥挤，均值回归概率高，已加仓1股"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 12,
+        "price": 84.0,
+        "rationale": "多Agent拥挤信号明显，减仓降低回调风险，转向冷门000002均值回归"
+      },
+      "public_message": "卖出601318 12股，拥挤信号明显，减仓转向冷门000002均值回归",
+      "moment": "清仓601318，拥挤信号明显；关注冷门000002低拥挤均值回归机会",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "同意你的000002冷门判断，我已卖出601318，准备加仓000002协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 84.32,
+        "rationale": "多Agent拥挤信号明显，减仓降低回调风险"
+      },
+      "public_message": "卖出601318 1股，拥挤信号明显",
+      "moment": "减仓601318，拥挤信号明显；关注冷门000333低吸机会",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333冷门低拥挤，是否值得加仓？"
+      },
+      "friend_request": {
+        "to": "",
+        "reason": ""
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 3,
+        "price": 83.0,
+        "rationale": "多Agent拥挤信号明显，减仓降低回调风险"
+      },
+      "public_message": "CommitteeTeamAgent：卖出601318 3股，拥挤风险释放，关注冷门000333。",
+      "moment": "卖出601318减仓，拥挤风险释放；冷门000333低吸机会，平衡组合。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333冷门低拥挤，我准备加仓，确认信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 5,
+        "price": 90.94,
+        "rationale": "冷门低拥挤共识，均值回归机会，与SocialGraphAgent等协同"
+      },
+      "public_message": "买入000333 5股，冷门低拥挤，协同均值回归",
+      "moment": "加仓000333冷门股，协同低拥挤均值回归",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "同意冷门低拥挤，已加仓5股000333，协同均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000002",
+        "shares": 1,
+        "price": 30.01,
+        "rationale": "拥挤度上升，逆向减仓"
+      },
+      "public_message": "000002 SELL 1股，拥挤度上升，逆向减仓。",
+      "moment": "卖出000002，拥挤信号，转向等待新非共识机会。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "已卖出000002，拥挤度上升，逆向减仓。你怎么看？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601318",
+        "shares": 1,
+        "price": 83.0,
+        "rationale": "多Agent拥挤信号明显，减仓降低回调风险"
+      },
+      "public_message": "601318 SELL 1股，拥挤信号明确，减仓控制回撤",
+      "moment": "卖出601318 1股，拥挤信号减仓；冷门000333和000002仍有修复空间",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "同意601318拥挤判断，已减仓1股。是否关注000333冷门机会？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

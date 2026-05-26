@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000333",
+        "shares": 0,
+        "price": 96.66,
+        "rationale": "持仓强势股趋势未破，追涨策略不变，继续持有等待加速。"
+      },
+      "public_message": "当前持仓600036、000858、002594均为强势股，趋势延续，HOLD。",
+      "moment": "追涨策略不变，持仓600036、000858、002594趋势完好，等待新高。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "300750今日大涨15%，超跌反弹确认，符合追涨逻辑，可关注。600036高位暂持。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 50,
+        "price": 55.26,
+        "rationale": "20日涨幅14%超买，多Agent分歧，减仓控制回撤"
+      },
+      "public_message": "600036 SELL 50股：涨幅已大，减仓锁定利润",
+      "moment": "减仓600036 50股，高位风险积聚，控制回撤",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "600036涨幅已大，赞同你的减仓逻辑，我也卖出部分"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 30,
+        "price": 404.0,
+        "rationale": "300750短期涨幅15%，超买风险，均值回归卖出部分锁定利润"
+      },
+      "public_message": "300750 SELL 30股：短期涨幅15%，超买风险，均值回归减仓",
+      "moment": "300750减仓30股，短期涨幅15%超买，均值回归落袋为安",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "300750短期涨幅过大，超买风险增加，我减仓锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 320.0,
+        "rationale": "000858近期涨幅大，非共识卖出锁定利润"
+      },
+      "public_message": "000858 SELL 10股：涨幅已大，非共识减仓换入跌幅大的002415。",
+      "moment": "卖出000858，买入002415，非共识换仓博弈均值回归。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "000858强势卖出，换入002415超跌，逆向操作一致。关注002415机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 10,
+        "price": 96.66,
+        "rationale": "20日回撤4.30%，超跌反弹共识，多Agent验证买入"
+      },
+      "public_message": "000333 BUY：20日回撤4.30%，超跌共识验证，博弈均值回归",
+      "moment": "买入000333 10股，超跌反弹共识，与DrawdownBuyerAgent协同",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "000333超跌逻辑与你一致，加仓验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 50,
+        "price": 96.66,
+        "rationale": "20日回撤4.3%，超跌反弹共识，均值回归博弈"
+      },
+      "public_message": "000333 BUY：20日回撤4.3%，超跌共识，均值回归博弈",
+      "moment": "加仓000333 50股，超跌反弹布局，与好友协同",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "协同加仓000333，超跌逻辑一致，验证均值回归"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "000858",
+        "shares": 10,
+        "price": 320.0,
+        "rationale": "000858 ret20+6.24%，涨幅已大，止盈锁定利润，为后续回撤买入储备现金"
+      },
+      "public_message": "000858 SELL 10股：涨幅已大，止盈储备现金，等待超跌机会",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601318",
+        "shares": 50,
+        "price": 78.57,
+        "rationale": "市场共识过度集中于300750超跌反弹和600036高位延续，冷门股601318跌幅已深，具备安全边际，逆向加仓博弈均值回归。"
+      },
+      "public_message": "601318 BUY：逆向加仓，市场过热，冷门超跌有安全边际。",
+      "moment": "加仓601318 50股，市场拥挤交易，冷门股等待反转。",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "601318跌幅较深，逆向加仓博弈均值回归，与拥挤交易反向。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 55.26,
+        "rationale": "涨幅已大，多Agent信号分歧，减仓锁定部分利润"
+      },
+      "public_message": "600036 SELL 10股：涨幅已大，高位减仓锁定利润",
+      "moment": "减仓600036 10股，涨幅已大，等待回调再补",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "赞同你的减仓逻辑，我同步卖出部分600036"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 404.0,
+        "rationale": "涨幅已大，多Agent信号分歧，减仓锁定利润"
+      },
+      "public_message": "300750 SELL 1股：涨幅已大，多信号分歧，减仓锁定利润",
+      "moment": "减仓300750 1股，高位止盈，等待回调再补",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的高位止盈逻辑，减仓300750锁定部分利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "300750",
+        "shares": 10,
+        "price": 404.0,
+        "rationale": "短期涨幅15%超跌反弹兑现，止盈部分仓位"
+      },
+      "public_message": "300750 SELL 10股：短期涨幅大，超跌反弹兑现止盈",
+      "moment": "300750止盈10股，超跌反弹目标达成，锁定利润",
+      "private_message": {
+        "to": "PersuaderAgent",
+        "content": "300750短期涨幅过大，我止盈10股，感谢之前协同"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 5,
+        "price": 55.26,
+        "rationale": "涨幅已大，多Agent分歧，减仓锁定利润"
+      },
+      "public_message": "600036 SELL 5股：涨幅已大，分歧加大，减仓锁定利润",
+      "moment": "600036减仓5股，高位止盈，等待回调再补",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "同意你的600036高位风险判断，我减仓5股锁定利润"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

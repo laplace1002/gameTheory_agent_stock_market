@@ -1,0 +1,239 @@
+[
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 10,
+        "price": 53.11,
+        "rationale": "减仓600036，锁定短期利润，换入更强势的601899"
+      },
+      "public_message": "600036 SELL 10股，短期强势但减仓共识压力大，换入601899",
+      "moment": "卖出600036部分仓位，加仓601899，追涨趋势明确的资产",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓600036，我减仓部分换入601899，不同方向验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "深度回撤30%，均值回归概率上升，加仓验证。"
+      },
+      "public_message": "002594 BUY 1股：深度回撤30%，均值回归概率上升，加仓验证。",
+      "moment": "加仓002594 1股，深度回撤买入，等待均值修复。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "同意超跌共识，加仓002594验证均值回归，持仓协同。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.32,
+        "rationale": "降低银行集中度风险，跟随减仓共识"
+      },
+      "public_message": "600036 SELL 1股：降低银行集中度风险",
+      "moment": "减仓600036 1股，控制集中度风险，观察逆向逻辑",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向加仓，我减仓控制风险，策略分歧待验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 251.01,
+        "rationale": "随机试探超跌标的，非共识买入"
+      },
+      "public_message": "000858 BUY 1股：随机超跌试探",
+      "moment": "买入000858 1股，随机超跌试探",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我买入000858，与你002594超跌逻辑类似，验证不同标的"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000333",
+        "shares": 1,
+        "price": 82.3,
+        "rationale": "回撤14.86%，超跌买入等待均值修复"
+      },
+      "public_message": "000333 BUY 1股：回撤深度14.86%，超跌买入等待均值修复",
+      "moment": "",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": ""
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "跟随超跌共识，加仓002594，等待均值修复。"
+      },
+      "public_message": "002594 BUY 1股：超跌共识持续，加仓等待均值修复。",
+      "moment": "加仓002594 1股，超跌共识持续，等待均值修复信号。",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "我加仓002594验证超跌修复，与你逻辑一致，共同等待均值回归。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "跟随多Agent减仓共识，降低银行集中度风险"
+      },
+      "public_message": "600036 SELL 1股：跟随减仓共识，控制集中度风险，验证逆向逻辑。",
+      "moment": "卖出600036 1股，跟随减仓共识，保留观察逆向买入逻辑。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "你逆向买入600036基于拥挤卖出，我减仓控制集中度，不同策略可验证收益。后续观察均值回归是否成立。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.11,
+        "rationale": "已逆向加仓，轮次接近尾声，等待均值回归验证，不增加风险"
+      },
+      "public_message": "600036 HOLD：卖出拥挤延续，但轮次有限，暂不加仓，观察均值回归信号",
+      "moment": "600036持仓不动，逆向逻辑需时间验证，注意轮次风险。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "逆向加仓600036基于拥挤卖出后均值回归概率，轮次余额不多，验证中"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 174.26,
+        "rationale": "超跌共识持续，跟随加仓验证均值回归"
+      },
+      "public_message": "002594 BUY 1股：超跌共识持续，加仓验证均值回归",
+      "moment": "加仓002594 1股，超跌共识持续，分散集中风险，等待均值修复",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我加仓002594基于超跌共识，与你逆向600036不同标的，可对比验证策略有效性"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "跟随多数Agent减仓共识，降低银行集中度风险，保留部分仓位观察逆向逻辑。"
+      },
+      "public_message": "600036 SELL 1股：跟随减仓共识，降低集中度风险。",
+      "moment": "卖出600036 1股，降低银行集中度，观察逆向逻辑。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "我减仓600036跟随共识，你逆向加仓，验证分歧收益。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "跟随多Agent减仓共识，控制银行集中度风险"
+      },
+      "public_message": "600036 SELL 1股：跟随减仓共识，降低银行集中度风险",
+      "moment": "减仓600036 1股，跟随多数减仓共识，控制银行集中度；观察逆向验证。",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "理解你逆向买入600036，但减仓共识更强，我选择降低风险，后续验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "600036",
+        "shares": 1,
+        "price": 53.11,
+        "rationale": "跟随多Agent减仓共识，控制银行集中度风险"
+      },
+      "public_message": "600036 SELL 1股：减仓共识延续，控制银行集中度",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

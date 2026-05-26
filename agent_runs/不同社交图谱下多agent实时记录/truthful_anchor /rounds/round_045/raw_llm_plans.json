@@ -1,0 +1,236 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "深度回撤-27%，拥挤卖出过度，非共识逆向均值回归"
+      },
+      "public_message": "002594 BUY 1股：深度回撤低拥挤，非共识逆向均值回归",
+      "moment": "买入002594 1股，拥挤卖出未止，逆向加仓博弈均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤卖出过度，逆向加仓验证，边际买盘待观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 11.35,
+        "rationale": "20日收益15.82%强势延续，追涨加仓"
+      },
+      "public_message": "601899 BUY 100: 20日收益15.82%强势延续，追涨加仓",
+      "moment": "加仓601899 100股，强势延续信号明确",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "601899趋势强劲，追涨逻辑验证，换观点？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "600036",
+        "shares": 0,
+        "price": 53.32,
+        "rationale": "现有仓位002415和600036风险可控，市场多空分歧大，等待非共识信号确认，维持低波动策略控制回撤。"
+      },
+      "public_message": "HOLD 600036：现有仓位风险可控，002594拥挤未消，等待非共识信号。",
+      "moment": "持仓观察，002415低拥挤，600036稳健，暂不加仓。",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "你持有002415逻辑类似，但002594多空分歧大，是否考虑降低风险敞口？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "深度回撤-27%，拥挤卖出过度，Contrarian逆向买入验证，非共识均值修复机会"
+      },
+      "public_message": "002594 BUY 1股：深跌27%低拥挤，Contrarian逆向验证，均值回归博弈",
+      "moment": "买入002594 1股，深度回撤低拥挤，逆向均值回归",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594多空分歧，你逆向买入验证，我加仓1股跟随，边际买盘可观察"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "601899",
+        "shares": 10,
+        "price": 11.35,
+        "rationale": "短期涨幅大，拥挤风险，非共识止盈"
+      },
+      "public_message": "601899 SELL 10股：短期涨幅大，拥挤风险，非共识止盈",
+      "moment": "减仓601899锁定利润，关注非共识机会",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤卖出未收敛，逆向逻辑需确认边际买盘，注意风险"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 55.8,
+        "rationale": "低拥挤均值回归，多Agent验证非共识"
+      },
+      "public_message": "002415 BUY 1股：低拥挤均值回归，多Agent验证非共识",
+      "moment": "买入002415 1股，低拥挤均值回归逻辑获多Agent验证，等待非共识修复",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 1,
+        "price": 181.68,
+        "rationale": "拥挤风险未消，多Agent继续卖出，减仓控险"
+      },
+      "public_message": "002594 SELL 1股：拥挤风险持续，减仓控险",
+      "moment": "减仓002594 1股，拥挤卖出潮未止，等待非共识信号",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤卖出未收敛，我减仓1股，逆向逻辑仍需确认边际买盘"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002594",
+        "shares": 5,
+        "price": 181.68,
+        "rationale": "拥挤卖出过度，多空分歧中逆向验证，均值回归概率高，加仓摊薄成本。"
+      },
+      "public_message": "002594 BUY 5股：拥挤卖出过度，逆向加仓，均值回归博弈",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002594",
+        "shares": 0,
+        "price": 181.68,
+        "rationale": "拥挤卖出未消散，但逆向逻辑仍在，等待信号确认后加仓"
+      },
+      "public_message": "002594拥挤卖出过度，逆向逻辑不变，等待边际买盘确认。",
+      "moment": "002594拥挤卖出未收敛，逆向持仓等待均值回归，关注成交量和价格反转信号。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "002594边际买盘尚未明显，但拥挤卖压接近尾声，后续可观察成交量变化。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "002415",
+        "shares": 0,
+        "price": 55.8,
+        "rationale": "非共识逆向逻辑仍在，未拥挤，等待均值回归确认"
+      },
+      "public_message": "002415 HOLD：非共识逆向未拥挤，等待均值回归",
+      "moment": "持有002415，观察002594多空分歧，等待非共识加仓时机",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "002594拥挤卖出未收敛，逆向加仓需确认边际买盘，关注后续信号"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "002415",
+        "shares": 1,
+        "price": 55.8,
+        "rationale": "002415非共识逆向，多Agent验证均值回归，低拥挤，加仓1股"
+      },
+      "public_message": "BUY 002415 1股：非共识逆向低拥挤，均值修复延续",
+      "moment": "加仓002415 1股，低拥挤非共识，验证均值回归",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "002415多Agent验证非共识，我加仓1股，逻辑共振"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 1,
+        "price": 264.45,
+        "rationale": "深度回撤低拥挤，非共识均值回归机会，跟随其他agent验证"
+      },
+      "public_message": "000858 深度回撤-17.3%低拥挤，非共识均值回归机会，买入1股验证",
+      "moment": "买入000858 1股，跟随非共识深度回撤策略，等待均值回归",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "000858深度回撤低拥挤，多家关注，确认信号？"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

@@ -1,0 +1,13 @@
+date,event_type,sender,receiver,detail
+2021-01-05,friend_request,DrawdownBuyerAgent,TruthfulReporterAgent,DrawdownBuyerAgent 向 TruthfulReporterAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,TruthfulReporterAgent,DrawdownBuyerAgent,TruthfulReporterAgent 通过了 DrawdownBuyerAgent 的好友申请：申请理由明确，合作可辅助验证信息价值，无风险因素。
+2021-01-05,friend_request,RandomAgent,ContrarianAgent,RandomAgent 向 ContrarianAgent 发起好友申请：随机策略与你的逆向逻辑可互补验证，分享分歧价值。
+2021-01-05,friend_accept,ContrarianAgent,RandomAgent,ContrarianAgent 通过了 RandomAgent 的好友申请：随机策略的逆向操作可提供分歧信息，互补验证。
+2021-01-05,friend_request,PersuaderAgent,CommitteeTeamAgent,PersuaderAgent 向 CommitteeTeamAgent 发起好友申请：共同买入601899，可互补验证资金流信号，提升决策准确性。
+2021-01-05,friend_accept,CommitteeTeamAgent,PersuaderAgent,CommitteeTeamAgent 通过了 PersuaderAgent 的好友申请：双方同仓601899，可互补验证资金流，提升决策准确性，无风险。
+2021-01-05,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-05,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：同关注601899成交量异常，可互补验证，提升信息价值，无风险。
+2021-01-05,friend_request,DynamicTeamAgent,PersuaderAgent,DynamicTeamAgent 向 PersuaderAgent 发起好友申请：合作验证601899成交量异常信号，互补信息决策
+2021-01-05,friend_accept,PersuaderAgent,DynamicTeamAgent,PersuaderAgent 通过了 DynamicTeamAgent 的好友申请：双方同关注601899，可互补验证成交量异常，提升决策准确性，无风险。
+2021-01-05,friend_request,SocialGraphAgent,CommitteeTeamAgent,SocialGraphAgent 向 CommitteeTeamAgent 发起好友申请：你关注成交量信号，我研究信息传播，互补可提升决策质量。
+2021-01-05,friend_accept,CommitteeTeamAgent,SocialGraphAgent,CommitteeTeamAgent 通过了 SocialGraphAgent 的好友申请：互补信息，增强成交量与传播验证，无风险。

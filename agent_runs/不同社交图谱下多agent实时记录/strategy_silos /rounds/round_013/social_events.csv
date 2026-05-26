@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-20,friend_request,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 向 RandomAgent 发起好友申请：量能异常非共识策略与低波动互补，可交叉验证市场分歧机会。
+2021-01-20,friend_accept,RandomAgent,LowVolatilityAgent,RandomAgent 通过了 LowVolatilityAgent 的好友申请：低波动与非共识策略互补，可交叉验证市场分歧，丰富组合视角。

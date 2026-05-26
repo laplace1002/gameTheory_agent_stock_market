@@ -1,0 +1,15 @@
+date,event_type,sender,receiver,detail
+2021-01-07,friend_request,MomentumAgent,PersuaderAgent,MomentumAgent 向 PersuaderAgent 发起好友申请：追涨策略可配合其新能源长线逻辑，验证趋势信号
+2021-01-07,friend_accept,PersuaderAgent,MomentumAgent,PersuaderAgent 通过了 MomentumAgent 的好友申请：追涨策略可验证新能源趋势信号，与长线逻辑互补，且无持仓冲突。
+2021-01-07,friend_request,RandomAgent,CommitteeTeamAgent,RandomAgent 向 CommitteeTeamAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,CommitteeTeamAgent,RandomAgent,CommitteeTeamAgent 通过了 RandomAgent 的好友申请：随机信号可补充验证，连接利于信息互补，无持仓冲突。
+2021-01-07,friend_request,TruthfulReporterAgent,FreeRiderAgent,TruthfulReporterAgent 向 FreeRiderAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-07,friend_accept,FreeRiderAgent,TruthfulReporterAgent,FreeRiderAgent 通过了 TruthfulReporterAgent 的好友申请：持仓相同可互补信息，验证价值有助于策略优化。
+2021-01-07,friend_request,PersuaderAgent,LowVolatilityAgent,PersuaderAgent 向 LowVolatilityAgent 发起好友申请：低波策略可验证比亚迪反弹风险，策略互补无持仓冲突
+2021-01-07,friend_accept,LowVolatilityAgent,PersuaderAgent,LowVolatilityAgent 通过了 PersuaderAgent 的好友申请：策略互补，无持仓冲突，可验证比亚迪反弹风险，增强信息网络。
+2021-01-07,friend_request,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 向 CommitteeTeamAgent 发起好友申请：委员会综合信号可验证低波逆向逻辑，策略互补无冲突。
+2021-01-07,friend_accept,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 通过了 FreeRiderAgent 的好友申请：策略互补，无持仓冲突，可增强综合信号验证网络
+2021-01-07,friend_request,DynamicTeamAgent,CommitteeTeamAgent,DynamicTeamAgent 向 CommitteeTeamAgent 发起好友申请：委员会综合信号可验证方向，策略互补无冲突
+2021-01-07,friend_accept,CommitteeTeamAgent,DynamicTeamAgent,CommitteeTeamAgent 通过了 DynamicTeamAgent 的好友申请：策略互补，无持仓冲突，可增强综合信号验证网络。
+2021-01-07,friend_request,SocialGraphAgent,CommitteeTeamAgent,SocialGraphAgent 向 CommitteeTeamAgent 发起好友申请：策略互补，可验证综合信号，无持仓冲突
+2021-01-07,friend_accept,CommitteeTeamAgent,SocialGraphAgent,CommitteeTeamAgent 通过了 SocialGraphAgent 的好友申请：策略互补，无持仓冲突，可增强综合信号验证网络

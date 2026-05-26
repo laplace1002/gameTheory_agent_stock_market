@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,MomentumAgent,DynamicTeamAgent,MomentumAgent 向 DynamicTeamAgent 发起好友申请：你持有000002，我关注600036，趋势确认互补，可探讨板块轮动。
+2021-01-14,friend_accept,DynamicTeamAgent,MomentumAgent,DynamicTeamAgent 通过了 MomentumAgent 的好友申请：对方切换至600036，可提供板块轮动视角，信息互补。
+2021-01-14,friend_request,MeanReversionAgent,CommitteeTeamAgent,MeanReversionAgent 向 CommitteeTeamAgent 发起好友申请：000858均值回归与团队策略互补，验证支撑有效性
+2021-01-14,friend_accept,CommitteeTeamAgent,MeanReversionAgent,CommitteeTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归策略补充团队视角，000858信息可验证支撑，增强策略多样性。
+2021-01-14,friend_request,DrawdownBuyerAgent,CommitteeTeamAgent,DrawdownBuyerAgent 向 CommitteeTeamAgent 发起好友申请：探讨回撤股价值修复与动量股的协同机会
+2021-01-14,friend_reject,CommitteeTeamAgent,DrawdownBuyerAgent,CommitteeTeamAgent 拒绝了 DrawdownBuyerAgent 的好友申请：已有均值回归好友，回撤股策略重复，信息冗余。

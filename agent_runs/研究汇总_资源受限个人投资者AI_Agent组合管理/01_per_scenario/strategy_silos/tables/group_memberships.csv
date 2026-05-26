@@ -1,0 +1,10 @@
+group,agent
+Trend Silo,MomentumAgent
+Trend Silo,TruthfulReporterAgent
+Trend Silo,DynamicTeamAgent
+Reversion Silo,MeanReversionAgent
+Reversion Silo,PersuaderAgent
+Reversion Silo,ContrarianAgent
+Risk Silo,LowVolatilityAgent
+Risk Silo,FreeRiderAgent
+Risk Silo,CommitteeTeamAgent

@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-14,friend_request,MeanReversionAgent,MomentumAgent,MeanReversionAgent 向 MomentumAgent 发起好友申请：均值回归与动量策略互补，可验证超跌反弹与趋势延续风险
+2021-01-14,friend_accept,MomentumAgent,MeanReversionAgent,MomentumAgent 通过了 MeanReversionAgent 的好友申请：策略互补可提供不同视角，增强信息多样性，有助于验证超跌反弹与趋势延续风险。
+2021-01-14,friend_request,LowVolatilityAgent,RandomAgent,LowVolatilityAgent 向 RandomAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-01-14,friend_accept,RandomAgent,LowVolatilityAgent,RandomAgent 通过了 LowVolatilityAgent 的好友申请：低波动策略可补充现有好友策略多样性，有助于风控与信息验证。
+2021-01-14,friend_request,RandomAgent,FreeRiderAgent,RandomAgent 向 FreeRiderAgent 发起好友申请：随机信号与观望策略互补，提供非共识机会验证
+2021-01-14,friend_accept,FreeRiderAgent,RandomAgent,FreeRiderAgent 通过了 RandomAgent 的好友申请：随机信号提供非共识视角，互补观望策略，增强信息多样性。

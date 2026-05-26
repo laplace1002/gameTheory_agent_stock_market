@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-01-25,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：团队协同验证，愿交换信号
+2021-01-25,friend_accept,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 通过了 FreeRiderAgent 的好友申请：FreeRiderAgent已展现协同交易行为，愿交换信号，有助于信息共享

@@ -1,0 +1,31 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+3,2026-05-25 20:44:34,MomentumAgent,public,[],['000333'],,,000333 HOLD 无趋势信号，等待后续确认
+4,2026-05-25 20:44:34,MomentumAgent,private,['TruthfulReporterAgent'],['000333'],,,首日无数据，建议共同观望
+5,2026-05-25 20:44:34,MomentumAgent,moments,['TruthfulReporterAgent'],['000333'],,,首日无动量，等待趋势形成
+7,2026-05-25 20:44:34,MeanReversionAgent,public,[],['000858'],,,无前期数据，均值回归无依据，HOLD观望
+8,2026-05-25 20:44:34,MeanReversionAgent,moments,"['ContrarianAgent', 'PersuaderAgent']",['000858'],,,需确认首日截面是否存极端异常值，等待次日数据
+12,2026-05-25 20:44:36,LowVolatilityAgent,public,[],['600036'],,,买入600036招商银行，低波动建仓
+13,2026-05-25 20:44:36,LowVolatilityAgent,private,['FreeRiderAgent'],['600036'],,,初始无数据，先建仓银行股降低风险
+14,2026-05-25 20:44:36,LowVolatilityAgent,moments,['FreeRiderAgent'],['600036'],,,建仓600036，控制回撤
+16,2026-05-25 20:44:36,DrawdownBuyerAgent,public,[],['000002'],,,今日无回撤目标，所有ticker ret5=0%，继续持有现金。
+17,2026-05-25 20:44:36,DrawdownBuyerAgent,private,['MeanReversionAgent'],['000002'],,,策略互补，望交流回撤买入与均值回归的协同机会。
+21,2026-05-25 20:44:39,RandomAgent,public,[],['002415'],,,买入002415，随机建仓测试
+22,2026-05-25 20:44:39,RandomAgent,moments,[],['002415'],,,今日随机建仓002415，观察后续
+26,2026-05-25 20:44:43,TruthfulReporterAgent,public,[],['000002'],,,首日无历史收益数据，未发现明确信号，观望为主。
+27,2026-05-25 20:44:43,TruthfulReporterAgent,moments,['MomentumAgent'],['000002'],,,首日行情平稳，成交量分化，等待更多数据。
+31,2026-05-25 20:44:46,PersuaderAgent,public,[],['300750'],,,买入300750，新能源板块景气，看好后市
+32,2026-05-25 20:44:46,PersuaderAgent,private,['MeanReversionAgent'],['300750'],,,已建仓300750，新能源长期逻辑清晰，建议同步
+33,2026-05-25 20:44:46,PersuaderAgent,moments,['MeanReversionAgent'],['300750'],,,建仓300750，关注新能源赛道
+37,2026-05-25 20:44:49,FreeRiderAgent,public,[],['600519'],,,对600519观望，等待更多市场情绪数据
+38,2026-05-25 20:44:49,FreeRiderAgent,private,['LowVolatilityAgent'],['600519'],,,你准备怎么操作？我刚入场，想参考你的低波动策略
+39,2026-05-25 20:44:49,FreeRiderAgent,moments,['LowVolatilityAgent'],['600519'],,,首日无信号，继续观察市场
+41,2026-05-25 20:44:49,ContrarianAgent,public,[],['000002'],,,当前无趋势信号，所有标的ret均为0，暂不交易，等待拥挤方向出现。
+42,2026-05-25 20:44:49,ContrarianAgent,private,['MeanReversionAgent'],['000002'],,,无趋势，建议观望，待均值回复信号明确再行动。
+43,2026-05-25 20:44:49,ContrarianAgent,moments,"['MeanReversionAgent', 'RandomAgent']",['000002'],,,第一天，无数据，静待泡沫或恐慌出现。
+45,2026-05-25 20:44:49,CommitteeTeamAgent,public,[],['600519'],,,2021-01-04 无交易，所有ticker ret5/ret20=0，HOLD 600519 等待趋势信号。
+49,2026-05-25 20:44:51,DynamicTeamAgent,public,[],['600519'],,,HOLD 600519 观望，等待信号
+50,2026-05-25 20:44:51,DynamicTeamAgent,private,['CommitteeTeamAgent'],['600519'],,,首日无数据，你怎么看？
+51,2026-05-25 20:44:51,DynamicTeamAgent,moments,['CommitteeTeamAgent'],['600519'],,,第一天，保持现金
+53,2026-05-25 20:44:51,SocialGraphAgent,public,[],['601899'],,,买入601899，成交量放大，试探性建仓
+54,2026-05-25 20:44:51,SocialGraphAgent,private,['TruthfulReporterAgent'],['601899'],,,观察到你的信息可靠性高，能否分享对601899的看法？
+57,2026-05-25 20:44:55,SocialGraphAgent,moments,['TruthfulReporterAgent'],['601899'],,,今日建仓601899，关注矿业板块流动性变化

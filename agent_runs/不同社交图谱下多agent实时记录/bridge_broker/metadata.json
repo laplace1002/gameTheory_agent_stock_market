@@ -1,0 +1,30 @@
+{
+  "id": "run_20260525_141137_940630_bridge_broker_attempt1",
+  "status": "completed",
+  "scenario": "bridge_broker",
+  "round_count": 50,
+  "target_rounds": 50,
+  "attempt": 1,
+  "strict": true,
+  "path": "outputs/live_state/runs/run_20260525_141137_940630_bridge_broker_attempt1",
+  "updated_at": "2026-05-25 15:49:51",
+  "prices_rows": 12120,
+  "tickers": [
+    "000002",
+    "000333",
+    "000858",
+    "002415",
+    "002594",
+    "300750",
+    "600036",
+    "600519",
+    "601318",
+    "601899"
+  ],
+  "friend_decision": "llm",
+  "agent_retries": 5,
+  "repair_retries": 2,
+  "round_retries": 0,
+  "retry_backoff": 5.0,
+  "error": ""
+}

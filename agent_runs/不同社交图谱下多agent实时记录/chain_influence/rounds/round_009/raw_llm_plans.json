@@ -1,0 +1,245 @@
+[
+  {
+    "sender": "MeanReversionAgent",
+    "plan": {
+      "trade": {
+        "side": "HOLD",
+        "ticker": "000858",
+        "shares": 0,
+        "price": 289.4,
+        "rationale": "000858近5日跌幅12.30%，已超跌，均值回归策略应等待反弹而非止损；300750亦超跌10.70%，持有观察。无明确风险信号需切换。继续持有现有仓位。"
+      },
+      "public_message": "000858/300750: 超跌10%+，均值回归待反弹，暂不操作",
+      "moment": "持仓000858和300750不动，超跌幅度大但无量能异常，均值回归仍需时间验证。关注000002底部共识形成。",
+      "private_message": {
+        "to": "RandomAgent",
+        "content": "你的000858买入逻辑我认可，但持有成本可能较高？我继续持仓等待确认"
+      },
+      "friend_request": {
+        "to": "SocialGraphAgent",
+        "reason": "你加仓000002的底部共识与我均值回归视角互补，申请验证量能信号"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "LowVolatilityAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "底部共识强化，多Agent验证，低波动加仓"
+      },
+      "public_message": "000002 BUY 100股：底部共识验证，低风险加仓",
+      "moment": "加仓000002至220股，底部共识渐强",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "加仓000002与你共振，等待量能确认"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DrawdownBuyerAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000858",
+        "shares": 100,
+        "price": 289.4,
+        "rationale": "超跌反弹，5日跌幅12.3%且量能正常，加仓摊低成本"
+      },
+      "public_message": "000858 BUY 100股：超跌反弹，5日跌幅12%量能正常，加仓验证",
+      "moment": "加仓000858至200股，超跌反弹逻辑延续，等待量能确认",
+      "private_message": {
+        "to": "ContrarianAgent",
+        "content": "感谢好友申请，我加仓000858 100股，逆势买入与做空互补验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "RandomAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "601899",
+        "shares": 100,
+        "price": 10.43,
+        "rationale": "超跌巨量，5日跌幅6.7%，随机视角看反弹"
+      },
+      "public_message": "601899 BUY 100股，巨量超跌，随机视角看反弹",
+      "moment": "买入601899，超跌巨量，随机博弈",
+      "private_message": {
+        "to": "LowVolatilityAgent",
+        "content": "贵司低波策略，我逆势买入601899超跌，验证风险？"
+      },
+      "friend_request": {
+        "to": "LowVolatilityAgent",
+        "reason": "超跌与低波动视角互补，验证风险"
+      }
+    },
+    "error": ""
+  },
+  {
+    "sender": "MomentumAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 223.95,
+        "rationale": "多空分歧加剧，趋势转弱，出清回避拥挤风险，转向底部共识标的"
+      },
+      "public_message": "002594：卖出170股，多空分歧加大，趋势走弱，出清换仓",
+      "moment": "清仓002594，回避拥挤，关注000002底部",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "已清仓002594，同意你的观点，准备加仓000002底部共识"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "TruthfulReporterAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "底部共识强化，多agent验证，量能持稳"
+      },
+      "public_message": "000002 BUY 100股：底部共识强化，量能稳定，多agent验证",
+      "moment": "买入000002 100股，底部共识强化，等待进一步信号",
+      "private_message": {
+        "to": "CommitteeTeamAgent",
+        "content": "已买入000002，与你底部共识一致，验证量能持稳"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "FreeRiderAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "底部共识强化，多个agent加仓，跟随趋势"
+      },
+      "public_message": "000002 BUY 100股：底部共识验证，加仓跟随",
+      "moment": "加仓000002至300股，底部共识逐步强化",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "加仓000002与你一致，底部共识确认中"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "PersuaderAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 223.95,
+        "rationale": ""
+      },
+      "public_message": "002594 本轮信号有限，我按风险约束调整仓位。",
+      "moment": "",
+      "private_message": null,
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "ContrarianAgent",
+    "plan": {
+      "trade": {
+        "side": "SELL",
+        "ticker": "002594",
+        "shares": 100,
+        "price": 223.95,
+        "rationale": "拥挤多头释放中，逆向做空，拥挤风险尚未完全消化"
+      },
+      "public_message": "002594 SELL 100股：拥挤释放未结束，逆向做空",
+      "moment": "做空002594 100股，拥挤风险持续，等待回调确认",
+      "private_message": {
+        "to": "DrawdownBuyerAgent",
+        "content": "继续做空002594，拥挤风险仍在释放，验证回调深度"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "CommitteeTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "底部共识强化，加仓跟随"
+      },
+      "public_message": "000002 BUY 100股：底部共识验证，加仓跟随",
+      "moment": "加仓000002至200股，底部共识逐步确认",
+      "private_message": {
+        "to": "DynamicTeamAgent",
+        "content": "000002量能持稳，加仓验证底部，与你一致"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "SocialGraphAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "000002",
+        "shares": 100,
+        "price": 29.99,
+        "rationale": "底部共识强化，社交图谱验证，加仓跟随"
+      },
+      "public_message": "000002 BUY 100股：底部共识验证，加仓跟随",
+      "moment": "加仓000002至400股，底部共识渐强",
+      "private_message": {
+        "to": "TruthfulReporterAgent",
+        "content": "感谢共享底部信号，已加仓000002验证"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  },
+  {
+    "sender": "DynamicTeamAgent",
+    "plan": {
+      "trade": {
+        "side": "BUY",
+        "ticker": "300750",
+        "shares": 1,
+        "price": 369.01,
+        "rationale": "超跌反弹机会，5日跌幅10.7%量能正常，加仓1股等待确认。"
+      },
+      "public_message": "BUY 300750 1股：超跌反弹，5日跌幅10.7%量能正常",
+      "moment": "加仓300750 1股，等待反弹确认，保持现金弹性。",
+      "private_message": {
+        "to": "SocialGraphAgent",
+        "content": "你对000002底部共识如何看？我加仓300750捕捉超跌机会。"
+      },
+      "friend_request": null
+    },
+    "error": ""
+  }
+]

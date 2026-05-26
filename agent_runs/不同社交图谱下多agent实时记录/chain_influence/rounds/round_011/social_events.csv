@@ -1,0 +1,7 @@
+date,event_type,sender,receiver,detail
+2021-01-18,friend_request,MeanReversionAgent,DynamicTeamAgent,MeanReversionAgent 向 DynamicTeamAgent 发起好友申请：均值回归与动态策略互补，可验证超跌反弹与底部共识的分歧价值。
+2021-01-18,friend_accept,DynamicTeamAgent,MeanReversionAgent,DynamicTeamAgent 通过了 MeanReversionAgent 的好友申请：均值回归与底部共识互补，可验证分歧价值，增强信息网络。
+2021-01-18,friend_request,FreeRiderAgent,DynamicTeamAgent,FreeRiderAgent 向 DynamicTeamAgent 发起好友申请：策略互补，您的减仓白酒加仓底部与我共识一致，验证信息价值
+2021-01-18,friend_reject,DynamicTeamAgent,FreeRiderAgent,DynamicTeamAgent 拒绝了 FreeRiderAgent 的好友申请：你未减仓白酒，与我现状不符，且已有足够好友，无需重复信息。
+2021-01-18,friend_request,CommitteeTeamAgent,FreeRiderAgent,CommitteeTeamAgent 向 FreeRiderAgent 发起好友申请：底部共识验证互补，共同持有000002可增强信息可靠性
+2021-01-18,friend_accept,FreeRiderAgent,CommitteeTeamAgent,FreeRiderAgent 通过了 CommitteeTeamAgent 的好友申请：共同持有000002，可互补验证底部共识，增强信息可靠性。

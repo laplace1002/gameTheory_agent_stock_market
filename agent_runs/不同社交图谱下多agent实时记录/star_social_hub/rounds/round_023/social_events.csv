@@ -1,0 +1,3 @@
+date,event_type,sender,receiver,detail
+2021-02-03,friend_request,FreeRiderAgent,LowVolatilityAgent,FreeRiderAgent 向 LowVolatilityAgent 发起好友申请：私聊触达非好友，申请建立连接以验证信息价值。
+2021-02-03,friend_accept,LowVolatilityAgent,FreeRiderAgent,LowVolatilityAgent 通过了 FreeRiderAgent 的好友申请：之前有私聊互动，双方可交换低波动策略观点，有助于信息价值验证。

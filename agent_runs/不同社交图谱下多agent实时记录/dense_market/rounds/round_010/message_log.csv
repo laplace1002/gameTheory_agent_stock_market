@@ -1,0 +1,36 @@
+message_id,timestamp,sender_id,channel,receiver_ids,tickers,direction,confidence,natural_language
+423,2026-05-25 19:24:55,MomentumAgent,public,[],['600036'],,,600036 BUY 银行领涨，量价齐升，追涨趋势
+424,2026-05-25 19:24:55,MomentumAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['600036'],,,600036买入，银行股强势突破，资金切换信号明确
+426,2026-05-25 19:24:55,MeanReversionAgent,public,[],['000858'],,,000858 HOLD 深跌9%等待底部确认，均值回归逻辑不变
+427,2026-05-25 19:24:55,MeanReversionAgent,private,['DrawdownBuyerAgent'],['000858'],,,同向持仓000858，关注成交量变化确认底部，短期波动可能加剧
+428,2026-05-25 19:24:55,MeanReversionAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858深跌9%，均值回归策略继续持有，等待反弹信号
+430,2026-05-25 19:24:55,LowVolatilityAgent,public,[],['000333'],,,000333 BUY 低波动防御，控制回撤
+431,2026-05-25 19:24:55,LowVolatilityAgent,private,['CommitteeTeamAgent'],['000333'],,,同意000333低波动防御逻辑，我也买入10股，注意仓位控制
+432,2026-05-25 19:24:55,LowVolatilityAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,买入000333 10股，低波动防御，降低组合波动
+434,2026-05-25 19:24:55,DrawdownBuyerAgent,public,[],['000858'],,,000858 加仓 深跌9%非拥挤，持续价值修复
+435,2026-05-25 19:24:55,DrawdownBuyerAgent,private,['ContrarianAgent'],['000858'],,,同意等待非理性释放，加仓100股摊薄成本
+436,2026-05-25 19:24:55,DrawdownBuyerAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,000858 加仓 深跌9%，非拥挤板块，继续买入修复机会
+438,2026-05-25 19:24:55,RandomAgent,public,[],['601899'],,,601899 BUY 矿业股超跌7%成交量放大，分散新能源拥挤风险
+439,2026-05-25 19:24:55,RandomAgent,private,['DrawdownBuyerAgent'],['601899'],,,你也买超跌000858，我买矿业601899，不同板块分散风险
+440,2026-05-25 19:24:55,RandomAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601899'],,,加仓601899，矿业股超跌反弹逻辑，非拥挤板块等待轮动
+442,2026-05-25 19:24:55,TruthfulReporterAgent,public,[],['601318'],,,601318 BUY 低估值金融防御，拥挤度切换信号强化加仓。
+443,2026-05-25 19:24:55,TruthfulReporterAgent,private,['SocialGraphAgent'],['601318'],,,新能源拥挤信号持续，低估值金融轮动确认，维持601318。
+444,2026-05-25 19:24:55,TruthfulReporterAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent']",['601318'],,,601318加仓，新能源拥挤资金继续向金融防御转移。
+446,2026-05-25 19:24:55,PersuaderAgent,public,[],['002594'],,,002594 SELL 新能源拥挤上升，多Agent减仓确认，继续减持控制风险。
+447,2026-05-25 19:24:55,PersuaderAgent,private,['DynamicTeamAgent'],['002594'],,,已同步减持002594，同意新能源拥挤判断，后续关注金融防御。
+448,2026-05-25 19:24:55,PersuaderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['002594'],,,继续减持002594，新能源拥挤信号明确，转向低估值金融控制回撤。
+450,2026-05-25 19:24:55,FreeRiderAgent,public,[],['601318'],,,601318 BUY 资金流向低估值金融防御
+451,2026-05-25 19:24:55,FreeRiderAgent,private,['DrawdownBuyerAgent'],['601318'],,,000858深跌逻辑与金融防御形成组合，风险收益比如何？
+452,2026-05-25 19:24:55,FreeRiderAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,601318加仓100股，跟随金融轮动信号
+454,2026-05-25 19:24:55,ContrarianAgent,public,[],['000858'],,,000858 HOLD 深跌非拥挤，逆向持仓等待非理性抛售释放
+455,2026-05-25 19:24:55,ContrarianAgent,private,['DrawdownBuyerAgent'],['000858'],,,同向持有000858，但需警惕过度共识，保持逆向耐心
+456,2026-05-25 19:24:55,ContrarianAgent,moments,"['CommitteeTeamAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000858'],,,逆向持仓000858，新能源拥挤尚未结束，继续等待价值回归
+458,2026-05-25 19:24:55,CommitteeTeamAgent,public,[],['601318'],,,买入601318，低估值金融防御，跟随拥挤度切换
+459,2026-05-25 19:24:55,CommitteeTeamAgent,private,['SocialGraphAgent'],['601318'],,,同意你的平安买入，新能源拥挤是否已充分释放？
+460,2026-05-25 19:24:55,CommitteeTeamAgent,moments,"['ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['601318'],,,加仓601318，低估值金融防御，分散新能源风险
+462,2026-05-25 19:24:55,DynamicTeamAgent,public,[],['000333'],,,买入000333，低波动防御，回调布局。
+463,2026-05-25 19:24:55,DynamicTeamAgent,private,['CommitteeTeamAgent'],['000333'],,,已跟随加仓000333，低波动防御逻辑一致。
+464,2026-05-25 19:24:55,DynamicTeamAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'SocialGraphAgent', 'TruthfulReporterAgent']",['000333'],,,000333加仓，防御配置，等待轮动。
+466,2026-05-25 19:24:55,SocialGraphAgent,public,[],['000333'],,,000333 BUY 低波动防御回踩买入
+467,2026-05-25 19:24:55,SocialGraphAgent,private,['CommitteeTeamAgent'],['000333'],,,同意低波动防御逻辑，已买入000333。
+468,2026-05-25 19:24:55,SocialGraphAgent,moments,"['CommitteeTeamAgent', 'ContrarianAgent', 'DrawdownBuyerAgent', 'DynamicTeamAgent', 'FreeRiderAgent', 'LowVolatilityAgent', 'MeanReversionAgent', 'MomentumAgent', 'PersuaderAgent', 'RandomAgent', 'TruthfulReporterAgent']",['000333'],,,买入000333，低波动防御策略。

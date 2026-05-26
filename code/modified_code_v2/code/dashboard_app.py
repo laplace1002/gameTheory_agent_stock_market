@@ -6,6 +6,7 @@ import json
 import math
 import os
 import re
+import socket
 import time
 import urllib.error
 import urllib.request
@@ -19,6 +20,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 import yaml
 
+from data_loader import load_prices
+
 
 LIVE_SOURCE_LABEL = "LLM API 实时交互"
 REPLAY_SOURCE_LABEL = "本地事件回放"
@@ -29,8 +32,11 @@ LIVE_RUNS_DIR = LIVE_STATE_DIR / "runs"
 DEFAULT_LIVE_SCENARIO = "core_periphery"
 DEFAULT_STARTING_CASH = 100_000.0
 LIVE_STATE_SCHEMA_VERSION = 3
+LIVE_MARKET_DATA_PATH = Path(
+    os.getenv("LIVE_MARKET_DATA_PATH", Path(__file__).resolve().parent.parent / "data" / "TRD_Dalyr.xlsx")
+)
 
-LIVE_TICKER_PRICES = {
+FALLBACK_LIVE_TICKER_PRICES = {
     "AAPL": 190.0,
     "MSFT": 430.0,
     "NVDA": 920.0,
@@ -40,6 +46,31 @@ LIVE_TICKER_PRICES = {
     "XLE": 95.0,
     "UUP": 29.0,
 }
+
+
+def load_live_market_history_once(path: Path = LIVE_MARKET_DATA_PATH) -> tuple[pd.DataFrame, str]:
+    try:
+        market = load_prices(str(path))
+    except Exception as exc:
+        return pd.DataFrame(), f"{exc.__class__.__name__}: {exc}"
+    return market, ""
+
+
+LIVE_MARKET_HISTORY, LIVE_MARKET_LOAD_ERROR = load_live_market_history_once()
+
+
+def latest_live_ticker_prices(market: pd.DataFrame = LIVE_MARKET_HISTORY) -> dict[str, float]:
+    if market.empty:
+        return dict(FALLBACK_LIVE_TICKER_PRICES)
+    latest = market.sort_values("date").groupby("ticker", as_index=False).tail(1)
+    return {
+        str(row["ticker"]): round(float(row["close"]), 2)
+        for _, row in latest.sort_values("ticker").iterrows()
+        if pd.notna(row.get("close"))
+    }
+
+
+LIVE_TICKER_PRICES = latest_live_ticker_prices()
 
 RELATIONSHIP_LABELS = {
     "friendship": "好友关系",
@@ -318,6 +349,16 @@ def main():
 
     data_source = st.sidebar.radio("数据源", [LIVE_SOURCE_LABEL, REPLAY_SOURCE_LABEL], index=0)
     live_api_mode = data_source == LIVE_SOURCE_LABEL
+    if live_api_mode:
+        if LIVE_MARKET_HISTORY.empty:
+            st.sidebar.warning(f"实时行情读取失败，已回退备用价格：{LIVE_MARKET_LOAD_ERROR}")
+        else:
+            dates = live_market_dates()
+            st.sidebar.caption(
+                f"实时行情：{LIVE_MARKET_DATA_PATH.name} | "
+                f"{len(live_tradable_tickers())} tickers | "
+                f"{pd.Timestamp(dates[0]).strftime('%Y-%m-%d')} 至 {pd.Timestamp(dates[-1]).strftime('%Y-%m-%d')}"
+            )
 
     if live_api_mode:
         OUT_DIR = Path("LLM API realtime")
@@ -554,7 +595,7 @@ def load_live_api_tables():
         live_social_events_table(event_log),
         event_log,
         state_history,
-        pd.DataFrame(),
+        LIVE_MARKET_HISTORY.copy(),
         registry,
         pd.DataFrame(),
     )
@@ -957,10 +998,12 @@ def pause_live_run() -> None:
         write_live_run_metadata(run)
 
 
-def live_event_context() -> dict:
+def live_event_context(event_id: int | None = None) -> dict:
+    market_date = live_market_date_for_event(event_id or next_live_event_id())
     return {
         "run_id": st.session_state.get("live_active_run_id", ""),
         "round_id": st.session_state.get("live_active_round_id", ""),
+        "market_date": market_date.strftime("%Y-%m-%d") if market_date is not None else "",
     }
 
 
@@ -979,6 +1022,7 @@ def export_live_tables(state: dict) -> None:
     live_trades_table(events).to_csv(LIVE_TABLE_DIR / "trade_log.csv", index=False)
     live_equity_table(state_history).to_csv(LIVE_TABLE_DIR / "equity_curve.csv", index=False)
     live_metrics_table(state_history).to_csv(LIVE_TABLE_DIR / "performance_metrics.csv", index=False)
+    LIVE_MARKET_HISTORY.to_csv(LIVE_TABLE_DIR / "market_history.csv", index=False)
 
 
 def live_groups_dataframe(groups: dict | None = None) -> pd.DataFrame:
@@ -1096,10 +1140,11 @@ def live_metrics_table(state_history: pd.DataFrame) -> pd.DataFrame:
 def append_live_message_event(agent: str, channel: str, receivers: list[str], detail: str, ticker: str = "") -> None:
     now = current_event_timestamp()
     event_id = next_live_event_id()
+    market_date = live_market_date_string(event_id, now[:10])
     st.session_state.live_events.append(
         {
             "event_id": event_id,
-            "date": now[:10],
+            "date": market_date,
             "event_time": now,
             "source": "llm_api",
             "event_type": "message",
@@ -1117,7 +1162,7 @@ def append_live_message_event(agent: str, channel: str, receivers: list[str], de
             "pnl_pct": 0.0,
             "detail": detail,
             "payload": json.dumps({"receiver_ids": receivers, "llm_generated": True}, ensure_ascii=False),
-            **live_event_context(),
+            **live_event_context(event_id),
         }
     )
     update_live_agent_action(agent, f"{channel}: {truncate(detail, 90)}")
@@ -1162,6 +1207,7 @@ def append_live_trade_event(agent: str, trade_plan: dict, detail_prefix: str = "
     pnl = round(equity - DEFAULT_STARTING_CASH, 2)
     pnl_pct = pnl / DEFAULT_STARTING_CASH if DEFAULT_STARTING_CASH else 0.0
     now = current_event_timestamp()
+    market_date = live_market_date_string(event_id, now[:10])
     rationale = trade.get("rationale", "")
     detail = f"{side} {shares} {ticker} @ {price:.2f}"
     if rationale:
@@ -1171,7 +1217,7 @@ def append_live_trade_event(agent: str, trade_plan: dict, detail_prefix: str = "
     st.session_state.live_events.append(
         {
             "event_id": event_id,
-            "date": now[:10],
+            "date": market_date,
             "event_time": now,
             "source": "llm_api",
             "event_type": "trade",
@@ -1189,7 +1235,7 @@ def append_live_trade_event(agent: str, trade_plan: dict, detail_prefix: str = "
             "pnl_pct": pnl_pct,
             "detail": detail,
             "payload": json.dumps({"positions": positions, "llm_generated": True}, ensure_ascii=False),
-            **live_event_context(),
+            **live_event_context(event_id),
         }
     )
     append_live_state_snapshot(agent, cash, equity, pnl, pnl_pct, positions, detail)
@@ -1206,14 +1252,15 @@ def append_live_hold_event(agent: str, trade_plan: dict, reason: str = "") -> No
     pnl = round(equity - DEFAULT_STARTING_CASH, 2)
     pnl_pct = pnl / DEFAULT_STARTING_CASH if DEFAULT_STARTING_CASH else 0.0
     now = current_event_timestamp()
-    ticker = str(trade_plan.get("ticker") or "").upper()
+    market_date = live_market_date_string(event_id, now[:10])
+    ticker = normalize_ticker(trade_plan.get("ticker") or default_ticker_for_agent(agent))
     detail = reason or trade_plan.get("rationale") or "HOLD：等待更清晰的信号。"
     if not str(detail).upper().startswith("HOLD"):
         detail = f"HOLD：{detail}"
     st.session_state.live_events.append(
         {
             "event_id": event_id,
-            "date": now[:10],
+            "date": market_date,
             "event_time": now,
             "source": "llm_api",
             "event_type": "hold",
@@ -1231,7 +1278,7 @@ def append_live_hold_event(agent: str, trade_plan: dict, reason: str = "") -> No
             "pnl_pct": pnl_pct,
             "detail": detail,
             "payload": json.dumps({"positions": positions, "llm_generated": True}, ensure_ascii=False),
-            **live_event_context(),
+            **live_event_context(event_id),
         }
     )
     append_live_state_snapshot(agent, cash, equity, pnl, pnl_pct, positions, detail)
@@ -1250,7 +1297,7 @@ def append_live_state_snapshot(
 ) -> None:
     st.session_state.live_state_history.append(
         {
-            "date": current_event_timestamp()[:10],
+            "date": live_market_date_string(max(1, next_live_event_id() - 1), current_event_timestamp()[:10]),
             "agent": agent,
             "equity": round(equity, 2),
             "cash": round(cash, 2),
@@ -1261,7 +1308,7 @@ def append_live_state_snapshot(
             "last_action": truncate(last_action, 140),
             "friend_count": 0,
             "friends": "",
-            **live_event_context(),
+            **live_event_context(max(1, next_live_event_id() - 1)),
         }
     )
     refresh_live_friend_counts()
@@ -1683,20 +1730,19 @@ def infer_trade_side_from_text(text: str) -> str:
 
 def infer_ticker_from_text(text: str) -> str:
     work = str(text or "").upper()
-    for ticker in LIVE_TICKER_PRICES:
+    for ticker in live_tradable_tickers():
         if ticker in work:
             return ticker
-    lowered = work.lower()
     if any(term in work for term in ["AI", "半导体", "芯片", "算力"]):
-        return "NVDA"
+        return default_ticker_for_theme("growth")
     if any(term in work for term in ["能源", "原油", "石油", "OIL"]):
-        return "XLE"
+        return default_ticker_for_theme("cyclical")
     if any(term in work for term in ["美元", "避险", "USD"]):
-        return "UUP"
+        return default_ticker_for_theme("defensive")
     if any(term in work for term in ["科技", "纳指", "NASDAQ", "QQQ"]):
-        return "QQQ"
+        return default_ticker_for_theme("growth")
     if any(term in work for term in ["大盘", "指数", "标普", "SPY"]):
-        return "SPY"
+        return default_ticker_for_theme("market")
     return ""
 
 
@@ -1715,20 +1761,92 @@ def infer_shares_from_text(agent: str, ticker: str, text: str) -> int:
 
 def normalize_ticker(value) -> str:
     ticker = "".join(ch for ch in str(value or "").upper() if ch.isalnum() or ch in {".", "-"}).strip(".-")
-    if ticker in LIVE_TICKER_PRICES:
+    if ticker in live_ticker_prices():
         return ticker
-    return list(LIVE_TICKER_PRICES)[stable_index(ticker or "SPY", len(LIVE_TICKER_PRICES))]
+    tickers = live_tradable_tickers()
+    return tickers[stable_index(ticker or tickers[0], len(tickers))]
 
 
 def default_ticker_for_agent(agent: str) -> str:
-    tickers = list(LIVE_TICKER_PRICES)
+    tickers = live_tradable_tickers()
     return tickers[stable_index(agent, len(tickers))]
 
 
+def default_ticker_for_theme(theme: str) -> str:
+    tickers = live_tradable_tickers()
+    preferred = {
+        "growth": ["300750", "002594", "002415", "000333"],
+        "cyclical": ["601899", "000002"],
+        "defensive": ["600036", "601318", "600519"],
+        "market": ["000333", "600036", "601318"],
+    }.get(theme, [])
+    for ticker in preferred:
+        if ticker in tickers:
+            return ticker
+    return tickers[stable_index(theme, len(tickers))]
+
+
+def live_ticker_prices() -> dict[str, float]:
+    return LIVE_TICKER_PRICES or dict(FALLBACK_LIVE_TICKER_PRICES)
+
+
+def live_tradable_tickers() -> list[str]:
+    return sorted(live_ticker_prices())
+
+
+def live_market_dates() -> list[pd.Timestamp]:
+    if LIVE_MARKET_HISTORY.empty:
+        return []
+    return sorted(pd.to_datetime(LIVE_MARKET_HISTORY["date"]).dropna().unique())
+
+
+def live_market_step(event_id: int) -> int:
+    active_round = str(st.session_state.get("live_active_round_id", ""))
+    match = re.search(r"round_(\d+)", active_round)
+    if match:
+        return max(0, int(match.group(1)) - 1)
+    round_number = int(st.session_state.get("live_auto_round", 0) or 0)
+    if round_number > 0:
+        return max(0, round_number - 1)
+    events_per_step = max(1, len(LIVE_AGENT_PROFILES))
+    return max(0, (max(1, int(event_id)) - 1) // events_per_step)
+
+
+def live_market_date_for_event(event_id: int) -> pd.Timestamp | None:
+    dates = live_market_dates()
+    if not dates:
+        return None
+    step = min(live_market_step(event_id), len(dates) - 1)
+    return pd.Timestamp(dates[step])
+
+
+def live_market_date_string(event_id: int, fallback: str = "") -> str:
+    market_date = live_market_date_for_event(event_id)
+    return market_date.strftime("%Y-%m-%d") if market_date is not None else fallback
+
+
+def live_market_row(ticker: str, event_id: int) -> pd.Series | None:
+    if LIVE_MARKET_HISTORY.empty:
+        return None
+    normalized = str(ticker)
+    target_date = live_market_date_for_event(event_id)
+    work = LIVE_MARKET_HISTORY[LIVE_MARKET_HISTORY["ticker"].astype(str) == normalized].copy()
+    if work.empty:
+        return None
+    work["date"] = pd.to_datetime(work["date"])
+    if target_date is not None:
+        eligible = work[work["date"] <= target_date]
+        if not eligible.empty:
+            return eligible.sort_values("date").iloc[-1]
+    return work.sort_values("date").iloc[-1]
+
+
 def live_reference_price(ticker: str, event_id: int) -> float:
-    base = LIVE_TICKER_PRICES.get(ticker, LIVE_TICKER_PRICES["SPY"])
-    drift = ((stable_index(f"{ticker}-{event_id}", 17) - 8) / 1000.0) + ((event_id % 7) - 3) / 2000.0
-    return round(max(1.0, base * (1 + drift)), 2)
+    normalized = normalize_ticker(ticker)
+    row = live_market_row(normalized, event_id)
+    if row is not None and pd.notna(row.get("close")):
+        return round(max(0.01, float(row["close"])), 2)
+    return round(max(0.01, live_ticker_prices().get(normalized, next(iter(live_ticker_prices().values())))), 2)
 
 
 def calculate_live_equity(cash: float, positions: dict[str, int], event_id: int) -> float:
@@ -1809,6 +1927,8 @@ def call_llm_agent(agent: str, channel: str, receivers: list[str], instruction: 
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
         raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except (TimeoutError, socket.timeout) as exc:
+        raise RuntimeError(f"LLM API 读取超时：超过 {env_int('LLM_TIMEOUT', 60)} 秒未返回。") from exc
     except urllib.error.URLError as exc:
         raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
     try:
@@ -1835,6 +1955,7 @@ def call_llm_agent_plan(
 
     peers = [name for name in agents if name != agent]
     friends = friends_for_agent(friendships_df, agent)
+    ticker_example = default_ticker_for_agent(agent)
     payload = {
         "model": model,
         "temperature": env_float("LLM_TEMPERATURE", 0.35),
@@ -1853,14 +1974,16 @@ def call_llm_agent_plan(
                 "role": "user",
                 "content": (
                     "本轮需要一次性决定你的所有行为：交易、公聊、私聊、朋友圈、好友申请。\n"
-                    f"可交易 ticker：{', '.join(LIVE_TICKER_PRICES)}\n"
+                    f"行情数据源：{LIVE_MARKET_DATA_PATH}\n"
+                    f"可交易 ticker：{', '.join(live_tradable_tickers())}\n"
+                    f"当前真实历史行情截面：\n{live_market_context(next_live_event_id())}\n"
                     f"其他 Agent：{', '.join(peers)}\n"
                     f"当前好友：{', '.join(friends) if friends else '暂无'}\n"
                     f"你的组合状态：{agent_portfolio_context(agent)}\n"
                     f"最近事件：\n{recent_event_context(recent_events)}\n\n"
                     "输出 JSON schema：\n"
                     "{\n"
-                    '  "trade": {"side": "BUY|SELL|HOLD", "ticker": "AAPL", "shares": 1, "price": 0, "rationale": "交易理由"},\n'
+                    f'  "trade": {{"side": "BUY|SELL|HOLD", "ticker": "{ticker_example}", "shares": 1, "price": 0, "rationale": "交易理由"}},\n'
                     '  "public_message": "发到群聊的一句话",\n'
                     '  "private_message": {"to": "某个 Agent", "content": "私聊内容"},\n'
                     '  "moment": "朋友圈动态",\n'
@@ -1893,6 +2016,8 @@ def call_llm_agent_plan(
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
         raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except (TimeoutError, socket.timeout) as exc:
+        raise RuntimeError(f"LLM API 读取超时：超过 {env_int('LLM_TIMEOUT', 60)} 秒未返回。") from exc
     except urllib.error.URLError as exc:
         raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
     try:
@@ -1903,6 +2028,27 @@ def call_llm_agent_plan(
     if not plan:
         plan = {"trade": {"side": "HOLD", "rationale": "LLM 输出不是 JSON，已回退 HOLD。"}, "public_message": content}
     return normalize_agent_plan(agent, plan)
+
+
+def fallback_llm_plan(agent: str, reason: str) -> dict:
+    ticker = default_ticker_for_agent(agent)
+    short_reason = truncate(str(reason or "LLM 调用失败"), 120)
+    return normalize_agent_plan(
+        agent,
+        {
+            "trade": {
+                "side": "HOLD",
+                "ticker": ticker,
+                "shares": 0,
+                "price": 0,
+                "rationale": f"LLM 本轮不可用，回退 HOLD：{short_reason}",
+            },
+            "public_message": f"{ticker} 本轮 LLM 响应超时，我先保持观望。",
+            "private_message": None,
+            "moment": None,
+            "friend_request": None,
+        },
+    )
 
 
 def call_llm_friend_decision(agent: str, receiver: str, reason: str, recent_events: pd.DataFrame) -> dict:
@@ -1955,6 +2101,8 @@ def call_llm_friend_decision(agent: str, receiver: str, reason: str, recent_even
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
         raise RuntimeError(f"LLM API HTTP {exc.code}: {detail}") from exc
+    except (TimeoutError, socket.timeout) as exc:
+        raise RuntimeError(f"LLM API 读取超时：超过 {env_int('LLM_TIMEOUT', 60)} 秒未返回。") from exc
     except urllib.error.URLError as exc:
         raise RuntimeError(f"LLM API 连接失败：{exc.reason}") from exc
     try:
@@ -2023,6 +2171,47 @@ def recent_event_context(events: pd.DataFrame, limit: int = 28) -> str:
             f"{row.get('agent', '')} {side} {ticker}: {detail}"
         )
     return "\n".join(lines)
+
+
+def live_market_context(event_id: int, max_tickers: int = 12) -> str:
+    if LIVE_MARKET_HISTORY.empty:
+        prices = live_ticker_prices()
+        return "真实行情文件读取失败，临时使用备用价格：" + ", ".join(
+            f"{ticker} close={price:.2f}" for ticker, price in list(prices.items())[:max_tickers]
+        )
+    target_date = live_market_date_for_event(event_id)
+    tickers = live_tradable_tickers()[:max_tickers]
+    lines = []
+    for ticker in tickers:
+        work = LIVE_MARKET_HISTORY[LIVE_MARKET_HISTORY["ticker"].astype(str) == ticker].copy()
+        if work.empty:
+            continue
+        work["date"] = pd.to_datetime(work["date"])
+        if target_date is not None:
+            work = work[work["date"] <= target_date]
+        work = work.sort_values("date")
+        if work.empty:
+            continue
+        close = float(work["close"].iloc[-1])
+        ret5 = period_return(work["close"], 5)
+        ret20 = period_return(work["close"], 20)
+        volume = float(work["volume"].iloc[-1]) if "volume" in work.columns else 0.0
+        lines.append(
+            f"{ticker}: date={work['date'].iloc[-1].strftime('%Y-%m-%d')}, "
+            f"close={close:.2f}, ret5={ret5:.2%}, ret20={ret20:.2%}, volume={volume:.0f}"
+        )
+    if not lines:
+        return "暂无可用真实行情截面。"
+    return "\n".join(lines)
+
+
+def period_return(series: pd.Series, periods: int) -> float:
+    values = pd.to_numeric(series, errors="coerce").dropna()
+    if len(values) <= periods:
+        return 0.0
+    start = float(values.iloc[-periods - 1])
+    end = float(values.iloc[-1])
+    return (end / start - 1.0) if start else 0.0
 
 
 def agent_portfolio_context(agent: str) -> str:
@@ -2221,6 +2410,11 @@ def render_live_sidebar_controls(events: pd.DataFrame, agents: list[str], friend
 
     st.sidebar.slider("自动轮次间隔秒", 3, 120, step=1, key="live_auto_interval")
     st.sidebar.number_input("一键启动轮数", min_value=1, max_value=50, value=1, step=1, key="live_start_rounds")
+    st.sidebar.caption(
+        f"LLM_TIMEOUT={env_int('LLM_TIMEOUT', 60)} 秒；"
+        f"LLM_MAX_WORKERS={env_int('LLM_MAX_WORKERS', len(agents))}。"
+        "如果频繁超时，建议在 env.txt 设置 LLM_TIMEOUT=120、LLM_MAX_WORKERS=3。"
+    )
     auto_enabled = st.sidebar.toggle("持续自动运行全部行为", key="live_auto_agents_enabled")
     st.session_state.live_auto_agents = bool(auto_enabled)
     st.sidebar.caption("每轮会并发调用所有 Agent，并生成交易、公聊、私聊、朋友圈和好友申请。")
@@ -2861,6 +3055,8 @@ def generate_live_agent_round(
     st.session_state.live_active_round_id = round_id
     start_event_id = next_live_event_id()
     context = events_until.copy()
+    if not context.empty and "run_id" in context.columns:
+        context = context[context["run_id"].astype(str) == str(run["id"])].copy()
     jobs = [{"sender": sender} for sender in usable_agents]
 
     max_workers = max(1, min(len(jobs), env_int("LLM_MAX_WORKERS", len(jobs))))
@@ -2878,7 +3074,11 @@ def generate_live_agent_round(
         }
         for future in as_completed(futures):
             job = futures[future]
-            results.append({**job, "plan": future.result()})
+            try:
+                results.append({**job, "plan": future.result(), "error": ""})
+            except Exception as exc:
+                error = f"{exc.__class__.__name__}: {exc}"
+                results.append({**job, "plan": fallback_llm_plan(job["sender"], error), "error": error})
 
     order = {job["sender"]: index for index, job in enumerate(jobs)}
     for row in sorted(results, key=lambda item: order[item["sender"]]):
@@ -2953,6 +3153,7 @@ def export_live_run_round(run: dict, round_id: str, start_event_id: int, end_eve
     live_trades_table(round_events).to_csv(round_dir / "trade_log.csv", index=False)
     live_messages_table(round_events).to_csv(round_dir / "message_log.csv", index=False)
     live_social_events_table(round_events).to_csv(round_dir / "social_events.csv", index=False)
+    LIVE_MARKET_HISTORY.to_csv(round_dir / "market_history.csv", index=False)
     (round_dir / "raw_llm_plans.json").write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
 
     tables_dir = run_dir / "tables"
@@ -2962,6 +3163,7 @@ def export_live_run_round(run: dict, round_id: str, start_event_id: int, end_eve
     live_trades_table(run_events).to_csv(tables_dir / "trade_log.csv", index=False)
     live_messages_table(run_events).to_csv(tables_dir / "message_log.csv", index=False)
     live_social_events_table(run_events).to_csv(tables_dir / "social_events.csv", index=False)
+    LIVE_MARKET_HISTORY.to_csv(tables_dir / "market_history.csv", index=False)
     live_social_edges_dataframe().to_csv(tables_dir / "social_graph_edges.csv", index=False)
     pd.DataFrame(st.session_state.get("live_friendships", []), columns=["agent_a", "agent_b"]).to_csv(
         tables_dir / "friendships.csv",

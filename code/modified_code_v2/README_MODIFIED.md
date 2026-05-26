@@ -4,6 +4,8 @@
 
 当前默认模式是 **LLM API 实时交互**：ChatLab 不再依赖模拟消息数据集。左侧边栏的 `一键启动所有 Agent` 会并发调用所有 Agent 的 LLM API，每个 Agent 在同一轮里生成交易、公聊、私聊、朋友圈和好友申请等完整行为，并写入实时统一事件流。旧的 `outputs/tables/unified_event_log.csv` 仍保留为“本地事件回放”模式。
 
+实时 LLM 模式的股票池和交易价格默认读取 `data/TRD_Dalyr.xlsx`。Dashboard 会把 Excel 中的真实 ticker 作为可交易范围，并按轮次推进到对应历史交易日，用当日 close 做成交校验、持仓估值和 LLM prompt 中的行情截面。需要切换行情文件时，可在环境变量中设置 `LIVE_MARKET_DATA_PATH`。
+
 ## 主要新增文件
 
 - `outputs/tables/unified_event_log.csv`：统一事件时间轴，包含交易、PnL、群聊、私聊、朋友圈、好友申请、接受/拒绝、社交策略选择。
@@ -44,6 +46,7 @@ OPENAI_MODEL=你的模型名
 OPENAI_BASE_URL=https://api.openai.com/v1
 LLM_TEMPERATURE=0.7
 LLM_TIMEOUT=60
+LLM_MAX_WORKERS=3
 ```
 
 `.env` 和 `env.txt` 都已加入 `.gitignore`，不要提交到 GitHub。
@@ -88,6 +91,8 @@ outputs/live_state/runs/run_YYYYMMDD_HHMMSS_xxxxxx/
 
 `ChatLab` 页内只保留折叠的 `单 Agent 调试`，用于临时测试一个 Agent 的单条消息；正常自动交互应使用边栏总控。
 
+如果实时模式出现 API timeout，单个超时 Agent 会自动回退为 HOLD，不会中断整轮。频繁超时时，建议把 `env.txt` 里的 `LLM_TIMEOUT` 调到 `120`，并把 `LLM_MAX_WORKERS` 调到 `3`，减少并发请求压力。
+
 实时模式会从 YAML 场景加载初始社交图谱。之后私聊、好友申请、通过好友等事件会动态更新社交图谱；实时事件流、好友关系、群组和最终社交图谱会保存到 `outputs/live_state/`。该目录已被 `.gitignore` 忽略，不会提交到 GitHub。刷新 dashboard 后会从这个状态继续，不会重新从空会话开始。
 
 播放模式：
@@ -124,3 +129,49 @@ ChatLab 中点击左侧 Agent 按钮后，可以查看：
 - `drawdown_constrained_agent_portfolio`：加入单 agent 权重上限、回撤和 CVaR 惩罚。
 
 Dashboard 中的 `Portfolio Hall` 可以查看 manager 权益曲线、meta weight 历史、agent 收益相关热力图、策略契约版本、walk-forward 训练参数、Hedge loss 分解、proper scoring 和 Black-Litterman agent views。
+
+## 从实时 LLM run 生成报告研究表
+
+如果已经用 dashboard 跑完 12 个实时社交图谱场景，可以一键把这些 live 结果转成 Portfolio Hall 和论文报告可用的分类输出：
+
+```bash
+/Users/ella/miniforge3/bin/python code/build_live_research_outputs.py \
+  --runs-root /Users/ella/Desktop/agent_runs/不同社交图谱下多agent实时记录 \
+  --output-root /Users/ella/Desktop/agent_runs/研究汇总_资源受限个人投资者AI_Agent组合管理
+```
+
+输出目录结构：
+
+- `01_per_scenario/<scenario>/tables/`：每个社交图谱的 Portfolio Hall 兼容表，可在 dashboard 的“本地事件回放”中选择。
+- `02_cross_scenario_comparison/`：跨社交图谱的 manager、single agent 和社交活动比较 CSV。
+- `03_figures/`：报告可直接引用的跨场景图。
+- `04_report_tables/README_REPORT_OUTPUTS.md`：报告写作时优先看的摘要表。
+
+## 不开 Dashboard 批量跑实时 LLM 场景
+
+如果要直接跑完 12 个社交图谱，每个图谱 50 轮，并把每个 run 保存到 `outputs/live_state/runs/`：
+
+```bash
+/Users/ella/miniforge3/bin/python code/run_live_social_grid.py \
+  --prices data/TRD_Dalyr.xlsx \
+  --config config/social_scenarios.yaml \
+  --out outputs/live_state/runs \
+  --scenario all \
+  --rounds 50 \
+  --max-workers 2 \
+  --friend-decision llm \
+  --agent-retries 5 \
+  --repair-retries 2 \
+  --round-retries 0 \
+  --retry-backoff 5 \
+  --max-retries 3 \
+  --resume
+```
+
+这个脚本按社交图谱顺序串行执行：一个 scenario 完整跑完后才会进入下一个。默认是严格有效 run 模式：每一轮必须 12 个 agent 都成功返回可解析 JSON 并参与本轮；任一 agent 或好友判断中途报错，会先按 `--agent-retries` 原地重试该单次调用。若该轮仍失败，脚本会回滚到本轮开始前并继续重跑同一轮；`--round-retries 0` 表示一直重试到该轮通过，不删除整个 run。
+
+每个有效 scenario 会创建独立 run 目录，结构与 dashboard 实时 run 一致：`metadata.json`、`rounds/round_*/` 和 `tables/`。脚本还会在 `outputs/live_state/runs/RUN_RECORDS.md` 中记录每个 run_id 对应的社交图谱、尝试次数、完成轮数和路径。
+
+失败 round 的重试记录会写入该 run 目录下的 `ROUND_RETRY_LOG.md`。
+
+如果中途失败或手动停止，推荐用同一条命令加 `--resume` 继续。它会先读取 `RUN_RECORDS.md` 跳过已经完成 50 轮的 scenario；如果当前 scenario 有未完成 run 目录，则读取该 run 的 `tables/`，恢复事件、持仓、好友图谱和已完成轮数，从下一轮继续。也可以用 `--start-at barbell_two_camps` 从指定场景开始。
